@@ -1,0 +1,121 @@
+[
+  {
+    "route": "/",
+    "perf": 99,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/fc27-fut-snipe-bot",
+    "perf": 97,
+    "a11y": 100,
+    "bp": 96,
+    "seo": 100
+  },
+  {
+    "route": "/sbc-solver",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/ai-sbc-solver",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/tools/tax-calculator",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/tools/sniping-guide",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/tools/comparison-guide",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/blog",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/article/tactical-intel",
+    "perf": 100,
+    "a11y": 93,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/affiliate",
+    "perf": 100,
+    "a11y": 95,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/volt-velocity",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/bakers-bot-developer",
+    "perf": 99,
+    "a11y": 100,
+    "bp": 96,
+    "seo": 100
+  },
+  {
+    "route": "/contact",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/bio",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/links",
+    "perf": 100,
+    "a11y": 100,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/terms",
+    "perf": 100,
+    "a11y": 96,
+    "bp": 100,
+    "seo": 100
+  },
+  {
+    "route": "/privacy",
+    "perf": 100,
+    "a11y": 96,
+    "bp": 100,
+    "seo": 100
+  }
+]
