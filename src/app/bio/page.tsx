@@ -50,7 +50,7 @@ export default function BioPage() {
       title: "Follow Our TikTok",
       subtitle: "Watch daily FC 26 & FC 27 sniping bot clips & results",
       handle: "@elitefutbotx",
-      href: "https://www.tiktok.com/@elitefutbotx",
+      href: "https://www.tiktok.com/@elitefutbot",
       badge: "CLIPS",
       icon: (
         <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">

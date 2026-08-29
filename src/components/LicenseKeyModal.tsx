@@ -12,7 +12,15 @@ import {
 import { authFetch } from "@/lib/auth/authClient";
 import { emitRefresh } from "@/lib/firebase/refreshBus";
 
-const GUMROAD_PRODUCT_URL = "https://futbotelite.gumroad.com/l/elitebotfc";
+// Payment Link for the live "Elite FUT SNIPER — Pro" product
+// (pdt_0NmKLEkBOT5JF3qkdNt0t) in the Dodo Payments dashboard. Override with
+// NEXT_PUBLIC_DODO_PRODUCT_URL in .env.local to point local dev at the test
+// product (pdt_0NmKMwTS7eKZaFbE8kbzE) instead — its keys only validate
+// against test.dodopayments.com, so the backend's DODO_ENVIRONMENT must be
+// set to "test" in the same environment for activation to work.
+const DODO_PRODUCT_URL =
+  process.env.NEXT_PUBLIC_DODO_PRODUCT_URL ??
+  "https://checkout.dodopayments.com/buy/pdt_0NmKLEkBOT5JF3qkdNt0t?quantity=1";
 
 export function LicenseKeyModal({
   open,
@@ -68,8 +76,8 @@ export function LicenseKeyModal({
             Activate your license
           </DialogTitle>
           <DialogDescription>
-            Paste the license key from your Gumroad purchase confirmation
-            email.
+            Paste the license key from your Dodo Payments purchase
+            confirmation email.
           </DialogDescription>
         </DialogHeader>
 
@@ -79,7 +87,7 @@ export function LicenseKeyModal({
             autoFocus
             value={licenseKey}
             onChange={(e) => setLicenseKey(e.target.value)}
-            placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
+            placeholder="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
             className="w-full px-4 py-3 rounded-xl bg-surface border border-white/10 font-mono text-sm text-white placeholder:text-gray-500 focus:outline-none focus:ring-2 focus:ring-primary/40"
           />
 
@@ -95,12 +103,12 @@ export function LicenseKeyModal({
         </form>
 
         <a
-          href={GUMROAD_PRODUCT_URL}
+          href={DODO_PRODUCT_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center justify-center gap-1 text-sm text-gray-400 hover:text-primary transition-colors"
         >
-          Don&apos;t have a license key? Get one on Gumroad
+          Don&apos;t have a license key? Get one on Dodo Payments
           <ArrowUpRight className="size-3.5" />
         </a>
       </DialogContent>

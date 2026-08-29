@@ -1,10 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { Download, Loader2 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 type Status = "idle" | "loading" | "error";
 
-export function DownloadExtensionButton() {
+export function DownloadExtensionButton({
+  className,
+}: {
+  className?: string;
+}) {
   const [status, setStatus] = useState<Status>("idle");
   const [error, setError] = useState<string | null>(null);
 
@@ -48,19 +54,25 @@ export function DownloadExtensionButton() {
   };
 
   return (
-    <div className="relative">
+    <div className="relative w-full sm:w-auto">
       <button
         type="button"
         onClick={handleDownload}
         disabled={status === "loading"}
-        className="shrink-0 px-3 sm:px-4 py-2 rounded-full bg-primary text-dark font-black text-[10px] uppercase tracking-widest hover:scale-105 transition-transform disabled:opacity-60 disabled:hover:scale-100"
+        className={cn(
+          "px-6 py-3 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 text-primary font-black text-xs uppercase tracking-widest hover:bg-primary/20 hover:border-primary/50 transition-colors disabled:opacity-60 disabled:hover:bg-primary/10",
+          className,
+        )}
       >
         {status === "loading" ? (
-          "Preparing…"
+          <>
+            <Loader2 className="size-4 animate-spin" />
+            <span>Preparing…</span>
+          </>
         ) : (
           <>
-            <span className="hidden sm:inline">Download Extension</span>
-            <span className="sm:hidden">Download</span>
+            <Download className="size-4" />
+            <span>Download Extension</span>
           </>
         )}
       </button>

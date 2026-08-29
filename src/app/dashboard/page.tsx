@@ -218,25 +218,26 @@ function DashboardContent() {
 
   return (
     <div className="min-h-screen bg-dark text-white font-sans">
-      <nav className="border-b border-white/10 bg-card/60 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-3">
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <Image src="/logo-elite.png" alt="" width={24} height={24} priority className="h-6 w-auto object-contain" />
-            <span className="text-lg font-black tracking-tighter uppercase text-white">
-              Elite FUT <span className="text-primary">SNIPER</span>
-            </span>
-          </Link>
-          <div className="flex items-center gap-2 sm:gap-4">
-            <DownloadExtensionButton />
-            <div className="flex items-center gap-2">
-              <span className="size-7 rounded-full bg-primary/10 border border-primary/30 grid place-items-center font-display text-xs text-primary">
-                {displayName.charAt(0)}
+      <nav className="sticky top-0 z-50 bg-dark/85 backdrop-blur-xl border-b border-white/5 supports-[backdrop-filter]:bg-dark/70">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex h-16 items-center justify-between gap-3">
+            <Link href="/" className="flex items-center gap-2.5 shrink-0 group">
+              <Image src="/logo-elite.png" alt="Elite FUT SNIPER Logo" width={40} height={40} priority className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
+              <span className="text-lg font-black tracking-tighter uppercase text-white">
+                Elite FUT <span className="text-primary">SNIPER</span>
               </span>
-              <span className="font-mono text-[10px] text-primary font-bold uppercase tracking-widest hidden sm:inline">
-                {displayName}
-              </span>
+            </Link>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <div className="h-9 flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full pl-1.5 pr-3">
+                <span className="size-6 rounded-full bg-primary/20 grid place-items-center font-display text-xs text-primary shrink-0">
+                  {displayName.charAt(0)}
+                </span>
+                <span className="font-mono text-[10px] text-primary font-bold uppercase tracking-widest hidden sm:inline">
+                  {displayName}
+                </span>
+              </div>
+              <SignOutButton />
             </div>
-            <SignOutButton />
           </div>
         </div>
       </nav>
@@ -275,13 +276,16 @@ function DashboardContent() {
                   )}
                 </div>
                 {!isPaid && (
-                  <button
-                    type="button"
-                    onClick={() => setUpgradeModalOpen(true)}
-                    className="shrink-0 px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)]"
-                  >
-                    Upgrade Now
-                  </button>
+                  <div className="shrink-0 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                    <DownloadExtensionButton className="w-full sm:w-auto justify-center" />
+                    <button
+                      type="button"
+                      onClick={() => setUpgradeModalOpen(true)}
+                      className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)]"
+                    >
+                      Upgrade Now
+                    </button>
+                  </div>
                 )}
               </div>
             </div>

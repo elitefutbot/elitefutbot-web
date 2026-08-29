@@ -44,3 +44,6 @@ next-env.d.ts
 /lh-results/
 lh-*.json
 all-pages-audit-summary.json
+
+.vercel
+.env*
