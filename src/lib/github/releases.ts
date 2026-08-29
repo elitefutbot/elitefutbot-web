@@ -1,5 +1,5 @@
 const GITHUB_API_BASE = "https://api.github.com";
-const RELEASE_REPO = "bytesquadlabs/fifa-snipe-bot";
+const RELEASE_REPO = "elitefutbot/elitefutbot-extension";
 
 // Avoid hitting GitHub's API on every button click.
 const CACHE_TTL_MS = 5 * 60 * 1000;
