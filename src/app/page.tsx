@@ -462,66 +462,62 @@ export default function Home() {
                   Best Value
                 </div>
               </div>
-              <div className="mb-8 relative z-10">
-                <h3 className="text-xl font-bold mb-2 flex items-center gap-2 text-white">
-                  Pro Sniper
-                  <span className="text-primary text-[10px] bg-primary/20 border border-primary/20 px-2 py-0.5 rounded uppercase tracking-wide">Limited Spots</span>
-                </h3>
+              <div className="mb-6 relative z-10">
+                <h3 className="text-xl font-bold mb-3 text-white">Pro Sniper</h3>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-black text-white">$19.99</span>
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
-                <div className="mt-4 rounded-xl border border-primary/30 bg-primary/5 px-4 py-3">
-                  <div className="flex items-center gap-2 text-primary font-black text-sm uppercase tracking-wide">
-                    <span className="material-symbols-outlined text-lg">verified</span>
-                    One-Time Payment · 365 Days Access
+                <p className="text-sm text-gray-300 mt-2 flex items-center gap-1.5">
+                  <span className="material-symbols-outlined text-primary text-base">verified</span>
+                  One-time payment for 365 days · FC 26 &amp; FC 27 · no subscription
+                </p>
+
+                <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5">
+                  <div className="flex items-center justify-between text-xs text-gray-400 mb-2">
+                    <span className="font-bold text-white">{PRICE_TIER.threshold - PRICE_TIER.sold} spots left at $19.99</span>
+                    <span>{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold</span>
                   </div>
-                  <p className="text-xs text-gray-300 mt-1">
-                    Works with FC 26 &amp; FC 27 — no recurring subscription.
-                  </p>
-                </div>
-                <div className="mt-4">
-                  <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-wide text-gray-400 mb-1.5">
-                    <span>Price rises $10 every 10 sales</span>
-                    <span className="text-primary">{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold at ${PRICE_TIER.currentPrice}</span>
-                  </div>
-                  <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                  <div className="w-full h-1.5 bg-gray-800 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-gradient-to-r from-primary to-emerald-400 shadow-[0_0_8px_rgba(204,255,0,0.5)] transition-all"
+                      className="h-full bg-primary transition-all"
                       style={{ width: `${(PRICE_TIER.sold / PRICE_TIER.threshold) * 100}%` }}
                     ></div>
                   </div>
-                  <p className="text-[11px] text-gray-500 mt-1.5">
-                    Next price: ${PRICE_TIER.nextPrice} — lock in ${PRICE_TIER.currentPrice} now.
+                  <p className="text-xs text-gray-500 mt-2">
+                    Price rises $10 every 10 sales — next tier ${PRICE_TIER.nextPrice}.
                   </p>
                 </div>
               </div>
-              <ul className="space-y-4 mb-10 flex-grow relative z-10">
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+              <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-4 relative z-10">
+                What&apos;s included
+              </p>
+              <ul className="space-y-3.5 mb-8 flex-grow relative z-10 divide-y divide-white/5">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Advanced Logic &amp; Multi-Filters
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Unlimited Multi-Account Support
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Multi-Tab Local Sniping
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Stealth Anti-Ban Behavioral Tech
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Paid-Member Discord Access
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   10M+ Coins Earning Potential
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-amber-400 text-base">schedule</span>
                   AI SBC Solver
                   <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
