@@ -1,24 +1,25 @@
 # Pricing — Elite FUT SNIPER
 
-## Free Open Beta Tier (Active)
-- Price: $0 (Free Community Access)
-- Access: Instant download & key via official Discord
+## 7-Day Free Trial Tier (Active)
+- Price: $0 (No Credit Card Required)
+- Access: Instant activation upon account registration
 - Features: 
-  - 100% Local Chrome Extension (Zero password sharing)
+  - 100% Local Chrome Extension (Zero EA password sharing)
   - Sub-20ms market search triggers
-  - Real-time AI SBC Solver & Untradeable Optimizer
-  - Gaussian Anti-Detection Behavioral Jitter
-  - Chrome Side Panel HUD with Live Profit Tracking
-  - Full Day-One Support for EA Sports FC 26 & FC 27
+  - Humanization++ Anti-Ban Mode (Bézier mouse curves, randomized micro-jitter, 0 bans to date)
+  - Futbin Live Price reference overlay
+  - Chrome Side Panel HUD with Live Profit & Coin Tracking
+  - Full Cross-Title Support for EA Sports FC 26 & FC 27
 
-## Pro Lifetime Tier (Releasing Soon)
-- Price: Flat License (~$19 one-time / seasonal)
+## Pro Sniper Tier (365-Day Full Access)
+- Price: $19.99 One-Time Payment (365 Days Access, No Monthly Subscriptions)
 - Features:
-  - All Free Beta features included
-  - Advanced Multi-Profile Filter Automation
-  - Priority AI SBC Chemistry Solving Engine
-  - 1-Click Mass Repeatable SBC Batch Solver
-  - VIP 1-on-1 Trading Strategy Discord Channel
+  - All Free Trial features included
+  - Unlimited Multi-Account & Multi-Tab local execution
+  - Advanced Multi-Profile Filter Automation (Rating, Rarity, Position, League)
+  - Auto-List & Auto-Sell with 5% EA Tax Net Profit Calculation
+  - Priority Discord VIP Member Access & Daily Sniping Filter Drops
+  - Free Feature Updates (including upcoming AI SBC Solver Module)
   - Continuous Forward-Compatible FC 27 Updates (Zero Upgrade Fees)
 
 ## Affiliate & Creator Partner Program
@@ -28,8 +29,12 @@
 - Payout Methods: Crypto (USDT), PayPal, Direct Bank Wire
 - Cookie Duration: 90 Days Persistent Attribution
 
-## Security & Compatibility
-- Execution Model: 100% Local In-Browser (Home Residential IP)
-- Password Requirement: Never Required (Zero Credential Handover)
+## Security & Architectural Superiority
+- Execution Model: 100% Local In-Browser (Home Residential IP, 0ms Datacenter Latency)
+- Dev Pedigree: Engineered by former developer of the legendary Baker's Bot
+- Password Requirement: Never Required (Zero Credential or Cookie Handover)
 - Compatibility: EA Sports FC 27, FC 26, and FC 25 Web App (Windows, Mac, Linux, ChromeOS)
-- Anti-Ban Protocol: Dynamic Gaussian Randomization & Micro-Pauses
+- Anti-Ban Protocol: Humanization++ Bézier Physics & Adaptive Gaussian Randomization
+
+## Official Features Documentation
+- Feature Breakdown: https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features

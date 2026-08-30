@@ -260,18 +260,66 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Why We <span className="text-primary">Outperform</span> Everything.</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
+            <p className="text-gray-300 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed font-normal">
               Elite FUT SNIPER outperforms competitor bots because it runs locally inside your browser rather than relying on external cloud servers. Developed by the legendary Bakers Bot Dev Team, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 26 &amp; FC 27 players in milliseconds without compromising account safety.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Feature Cards */}
+            {/* FEATURED: Humanization++ Mode */}
+            <div className="glass-card p-8 rounded-2xl md:col-span-2 lg:col-span-3 border-2 border-primary bg-gradient-to-r from-primary/[0.12] via-primary/[0.05] to-transparent shadow-[0_0_40px_rgba(204,255,0,0.15)] relative overflow-hidden group">
+              <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
+                <div className="max-w-3xl">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 rounded-xl bg-primary text-dark font-black flex items-center justify-center shadow-md">
+                      <ShieldCheck className="w-7 h-7 text-dark" />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-mono font-bold uppercase tracking-widest text-primary bg-primary/10 border border-primary/30 px-2.5 py-0.5 rounded-full">
+                        Flagship Anti-Ban Engine
+                      </span>
+                      <h3 className="text-2xl sm:text-3xl font-black text-white mt-1">
+                        Humanization++ Mode
+                      </h3>
+                    </div>
+                  </div>
+                  <p className="text-gray-200 text-base leading-relaxed mb-6 font-normal">
+                    Built in response to community reports of automation-related bans — goes beyond timing and simulates real mouse movement and clicks, so the bot interacts with the page the way a person actually would. Generates realistic mathematical Bézier curves, randomized micro-jitter movements, natural scroll pacing, and physical button click coordinates.
+                  </p>
+                  <div className="flex flex-wrap items-center gap-3 text-xs">
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary text-dark font-black tracking-wider uppercase text-[11px]">
+                      <CheckCircle2 className="w-4 h-4" />
+                      0 Transfer Market Bans To Date
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-white font-bold border border-white/10">
+                      <CheckCircle2 className="w-4 h-4 text-primary" />
+                      Bézier Mouse Dynamics
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-white font-bold border border-white/10">
+                      <CheckCircle2 className="w-4 h-4 text-primary" />
+                      Randomized Micro-Jitter
+                    </span>
+                    <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/10 text-white font-bold border border-white/10">
+                      <CheckCircle2 className="w-4 h-4 text-primary" />
+                      100% Local DOM Injection
+                    </span>
+                  </div>
+                </div>
+
+                <div className="shrink-0 flex flex-col items-center justify-center p-6 rounded-2xl bg-dark/80 border border-white/10 text-center min-w-[200px]">
+                  <span className="text-xs font-mono font-bold uppercase tracking-widest text-primary">Stealth Status</span>
+                  <span className="text-3xl font-black text-white font-display my-1">100% SAFE</span>
+                  <span className="text-xs text-gray-300">Active Protection</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Snipe Automatically */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <Zap className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Snipe Automatically</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Our engine reacts in milliseconds, executing snipes faster than any human could possibly dream of.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Our engine reacts in milliseconds, executing snipes faster than any human could possibly dream of.</p>
             </div>
             {/* List Automatically */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -279,7 +327,7 @@ export default function Home() {
                 <Tag className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">List Automatically</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Instant listing after sniping. Maximize your coin flow with immediate turnover of your inventory.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Instant listing after sniping. Maximize your coin flow with immediate turnover of your inventory.</p>
             </div>
             {/* Futbin Integration */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -287,7 +335,7 @@ export default function Home() {
                 <Cpu className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Futbin Integration</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">See real-time market prices directly in the Web App interface. Never miss a profitable deal again.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">See real-time market prices directly in the Web App interface. Never miss a profitable deal again.</p>
             </div>
             {/* Stealth Technology */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 border-primary/30 shadow-[0_0_20px_rgba(204,255,0,0.05)] ring-2 ring-primary/50 bg-primary/[0.03]">
@@ -295,8 +343,8 @@ export default function Home() {
                 <Shield className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Stealth &amp; Security</h3>
-              <p className="text-gray-400 text-sm leading-relaxed font-medium">
-                <span className="text-primary">100% Local:</span> Runs directly in your browser session. Your EA password and cookies are never sent to third-party cloud servers.
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">
+                <span className="text-primary font-bold">100% Local:</span> Runs directly in your browser session. Your EA password and cookies are never sent to third-party cloud servers.
               </p>
             </div>
             {/* Multi-Filter Search */}
@@ -305,7 +353,7 @@ export default function Home() {
                 <Filter className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Multi-Filter Search</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Run multiple search queries simultaneously. Cast a wider net across the transfer market for maximum profit.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Run multiple search queries simultaneously. Cast a wider net across the transfer market for maximum profit.</p>
             </div>
             {/* Snipe by Rating */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -313,7 +361,7 @@ export default function Home() {
                 <Award className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Snipe by Rating</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Target specific player ratings with surgical precision. Perfect for high-volume SBC fodder trading.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Target specific player ratings with surgical precision. Perfect for high-volume SBC fodder trading.</p>
             </div>
             {/* Auto Rarity Filler */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -321,7 +369,7 @@ export default function Home() {
                 <Sparkles className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Auto Rarity Filler</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Smart detection automatically identifies and sets card rarity filters, saving you time and preventing errors.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Smart detection automatically identifies and sets card rarity filters, saving you time and preventing errors.</p>
             </div>
             {/* Snipe Price Calculator */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -329,7 +377,7 @@ export default function Home() {
                 <Calculator className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Snipe Price Calculator</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Automated optimal price setting ensures you always buy at a price that guarantees profit after tax.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Automated optimal price setting ensures you always buy at a price that guarantees profit after tax.</p>
             </div>
             {/* Profit Calculator */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -337,7 +385,7 @@ export default function Home() {
                 <TrendingUp className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Profit Calculator</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Track your earnings in real-time. See exactly how many coins you&apos;ve generated in your session.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Track your earnings in real-time. See exactly how many coins you&apos;ve generated in your session.</p>
             </div>
             {/* Safe Sniping */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -345,7 +393,7 @@ export default function Home() {
                 <ShieldCheck className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Safe Sniping</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Comprehensive coin protection features designed to keep your club&apos;s balance safe while you automate.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Comprehensive coin protection features designed to keep your club&apos;s balance safe while you automate.</p>
             </div>
             {/* Video Tutorials */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -353,7 +401,7 @@ export default function Home() {
                 <GraduationCap className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Video Tutorials</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">Master every tool with in-depth video guides. We walk you through every feature and setting.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">Master every tool with in-depth video guides. We walk you through every feature and setting.</p>
             </div>
             {/* One Time Purchase */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -361,8 +409,18 @@ export default function Home() {
                 <CalendarCheck className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">One Time Purchase</h3>
-              <p className="text-gray-400 text-sm leading-relaxed">365 days of full access. Your license remains valid even across game version updates during that year.</p>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">365 days of full access. Your license remains valid even across game version updates during that year.</p>
             </div>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Link
+              href="/fc27-fut-sniping-bot-autobuyer-features"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-widest hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)]"
+            >
+              View Full 11-Module Feature Suite
+              <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
         </div>
       </section>

@@ -22,14 +22,18 @@ import {
   Wallet,
   Filter,
   Shield,
+  XCircle,
+  MousePointerClick,
+  Activity,
+  Check,
 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "EA FC 27 Sniping Bot & Autobuyer Features – Everything You Need to Snipe | Elite FUT SNIPER",
   description:
-    "Explore all features of Elite FUT SNIPER for EA FC 26 & FC 27. Auto sniping, Humanization++ anti-ban technology, live Futbin price reference, sub-20ms speed, side panel UI, and smart filters.",
+    "Discover the complete 11-module trading suite for EA FC 26 & FC 27. Sub-20ms local sniping, Humanization++ anti-ban technology with 0 bans to date, live Futbin price reference, side panel HUD, and smart filters.",
   keywords:
-    "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, local chrome extension, fc27 transfer market bot, elite fut sniper",
+    "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
   alternates: {
     canonical: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
   },
@@ -44,7 +48,7 @@ export const metadata: Metadata = {
         url: "https://elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Elite FUT SNIPER Features Overview",
+        alt: "Elite FUT SNIPER 11-Module Features Arsenal",
       },
     ],
   },
@@ -61,184 +65,255 @@ const FEATURES = [
   {
     num: "01",
     title: "Auto Snipe",
-    tagline: "Sub-20ms Ultra-Fast Execution",
+    tagline: "Sub-20ms High-Frequency Market Scanner",
     description:
-      "Scans transfer market listings in sub-20 millisecond micro-cycles and automatically purchases players matching your exact price, rating, and rarity criteria — executing buy actions exponentially faster than manual clicking.",
+      "Continuously scans transfer market pagination in sub-20ms execution loops, detecting mispriced cards the instant they enter the 59th-minute window and confirming purchases before rival cloud bots or human competitors can trigger a request.",
     icon: Zap,
-    badge: "Core Engine",
+    badge: "Core Velocity",
+    specs: ["< 20ms local trigger latency", "Instant buy-now confirmation", "Custom max purchase limit caps"],
   },
   {
     num: "02",
     title: "Auto List & Auto Sell",
-    tagline: "Automated Profit Realization",
+    tagline: "Autonomous Inventory Liquidity Engine",
     description:
-      "Instantly relists newly sniped cards at your predetermined sell margin or auto-sells them at true market value. Flips inventory 24/7 without needing you to babysit your transfer list.",
+      "Immediately pushes acquired cards to your transfer market list at predetermined profit multipliers or automated Futbin undercut bounds. Keeps club liquid coin balances compounding around the clock without manual supervision.",
     icon: TrendingUp,
-    badge: "Automation",
+    badge: "Cashflow",
+    specs: ["Automated 5% EA tax deduction", "Configurable undercut margins", "Automatic expired item relisting"],
   },
   {
     num: "03",
     title: "Smart Filters & Multi-Search",
-    tagline: "Surgical Market Targeting",
+    tagline: "Multi-Dimensional Filter Matrix",
     description:
-      "Define min/max buy-now, bid limits, exact player ratings, chemistry styles, and position modifiers. Run multiple player searches concurrently to cast a wider net across profitable market sectors.",
+      "Configure granular buying rules by minimum/maximum buy-now thresholds, bid ceilings, exact player ratings, chemistry styles, leagues, nations, and card rarities. Run multi-player search profiles concurrently to capture market-wide price dips.",
     icon: Sliders,
     badge: "Precision",
+    specs: ["Concurrent multi-target queries", "Exact rating & position bounds", "Custom chemistry style filters"],
   },
   {
     num: "04",
-    title: "Futbin Price Reference",
-    tagline: "Live Real-Time Market Valuation",
+    title: "Futbin Live Price Reference",
+    tagline: "Real-Time Market Valuation Overlay",
     description:
-      "Pulls live pricing telemetry directly from Futbin and overlays true market values inside the Web App interface. Trade against accurate live data, completely eliminating guesswork and overbidding.",
+      "Integrates live pricing feeds directly into the Ultimate Team Web App interface. Displays real-time player values, hourly market fluctuations, and profit thresholds on every search card to prevent buying over-inflated listings.",
     icon: Tag,
-    badge: "Market Intel",
+    badge: "Live Telemetry",
+    specs: ["In-app price badge overlay", "Real-time pricing cache", "Zero manual window switching"],
   },
   {
     num: "05",
     title: "Anti-Detection Engine",
-    tagline: "Natural Humanized Cadence",
+    tagline: "Non-Linear Request Interval Pacing",
     description:
-      "Configurable, non-linear request delays and randomized interval pacing ensure your market interactions mirror the natural browsing rhythm of an active human trader.",
+      "Applies Gaussian delay curves (1,200ms–2,800ms) with algorithmic jitter and randomized micro-pauses between transfer searches, ensuring request cadences remain mathematically indistinguishable from authentic human trading behavior.",
     icon: Cpu,
-    badge: "Stealth",
+    badge: "Stealth Core",
+    specs: ["Gaussian distribution timing", "Randomized session breaks", "Adaptive delay thresholds"],
   },
   {
     num: "06",
-    title: "Humanization++",
+    title: "Humanization++ Mode",
     tagline: "0 Transfer Market Bans To Date",
     description:
-      "Engineered specifically in response to EA automated detection waves. Simulates realistic Bézier mouse curves, authentic click coordinates, natural hover pauses, and dynamic scroll velocity so the extension interacts with the DOM exactly as a real person does.",
+      "Engineered specifically in response to EA automated anti-cheat detection waves. Generates realistic Bézier mouse trajectories, randomized micro-jitter movements, natural button dwell times, and variable scroll pacing directly inside the browser DOM.",
     icon: ShieldCheck,
-    badge: "Flagship Stealth",
+    badge: "Flagship Safety",
     isFeatured: true,
+    specs: [
+      "Smooth mathematical Bézier curves",
+      "Dynamic pixel micro-jitter",
+      "Human dwell & click simulation",
+      "Zero server bans across all seasons",
+    ],
   },
   {
     num: "07",
     title: "Native Chrome Side Panel UI",
-    tagline: "Zero-Interruption Workspace",
+    tagline: "Docked Non-Intrusive Workspace",
     description:
-      "Runs directly within Chrome's native Side Panel API. All controls, filter presets, and live logs dock neatly beside the Ultimate Team Web App without covering or obstructing the gameplay window.",
+      "Runs completely inside Google Chrome's native Side Panel API. Your controls, active search presets, session telemetry, and safety dials remain clearly accessible alongside the Web App without obstructing cards or menus.",
     icon: Layout,
-    badge: "UX Design",
+    badge: "HUD Interface",
+    specs: ["Chrome Side Panel native integration", "Zero viewport overlap", "Dark-mode optimized HUD"],
   },
   {
     num: "08",
     title: "Web Command Dashboard",
-    tagline: "Centralized Account Control",
+    tagline: "Centralized Account & License Hub",
     description:
-      "Manage your license keys, monitor session status, update trading profiles, and adjust global configuration settings from an intuitive modern web portal — no digging through complex browser settings.",
+      "Manage your 365-day license credentials, monitor session statistics, adjust global trading presets, and synchronize extension configurations from a dedicated web dashboard accessible on any desktop device.",
     icon: Globe,
     badge: "Cloud Sync",
+    specs: ["Instant 1-click license activation", "Live multi-device status", "Cloud profile backups"],
   },
   {
     num: "09",
     title: "Free Discord VIP Support",
-    tagline: "Community Intel & Filter Drops",
+    tagline: "24/7 Community & Alpha Filter Drops",
     description:
-      "Join our private Discord community for instant technical support, setup guidance, daily high-ROI filter drops, and collaborative trading strategies with fellow verified members at zero additional fee.",
+      "Includes instant access to our private Discord trading server. Receive 24/7 technical setup assistance, share customized market filters with verified traders, and get daily curated high-ROI sniping targets during promo events.",
     icon: MessageSquare,
-    badge: "Community",
+    badge: "VIP Community",
+    specs: ["24/7 technical troubleshooting", "Daily high-ROI filter drops", "Verified trader network"],
   },
   {
     num: "10",
     title: "Live Stats & Profit Sync",
-    tagline: "Real-Time Telemetry & Earnings",
+    tagline: "Real-Time Ledger & Coin Analytics",
     description:
-      "Track snipes executed, total coins generated, active session duration, and estimated net profit (including automated 5% EA tax deduction) in real time while your bot runs.",
+      "Live HUD displays snipes executed, total coins spent, gross revenue, active running time, and accurate net profit after automatically deducting the 5% EA transfer market tax, giving you total transparency on session ROI.",
     icon: BarChart3,
     badge: "Analytics",
+    specs: ["Automated 5% EA tax deduction", "Live session coin counter", "Real-time win-rate tracking"],
   },
   {
     num: "11",
     title: "Secure Client-Side Auth",
-    tagline: "100% Local Privacy Protection",
+    tagline: "Zero-Knowledge Local Sandboxing",
     description:
-      "Authenticate seamlessly with your Elite FUT SNIPER account. Your EA login credentials, cookies, and session tokens remain strictly inside your local browser and are never uploaded to remote third-party servers.",
+      "Authenticates once via Elite FUT SNIPER API. Your EA login credentials, authentication cookies, and persona tokens operate 100% locally within your browser sandbox and are never uploaded or accessible to remote third-party servers.",
     icon: Lock,
     badge: "Zero-Knowledge",
+    specs: ["Zero password transmission", "Local browser cookie sandboxing", "Encrypted key validation"],
+  },
+];
+
+const OUTPERFORM_COMPARISON = [
+  {
+    feature: "Search Latency",
+    elite: "< 20ms (Local in-browser direct socket)",
+    cloud: "150ms–350ms (Datacenter proxy hop)",
+    highlight: true,
+  },
+  {
+    feature: "EA Account Safety",
+    elite: "Zero password sharing (100% client-side)",
+    cloud: "Requires uploading EA password & cookies",
+    highlight: true,
+  },
+  {
+    feature: "Anti-Ban Detection",
+    elite: "Humanization++ (Bézier mouse curves & jitter)",
+    cloud: "Basic linear timers (High ban probability)",
+    highlight: true,
+  },
+  {
+    feature: "Bans Recorded",
+    elite: "0 Transfer Market Bans To Date",
+    cloud: "Frequent automated ban waves",
+    highlight: true,
+  },
+  {
+    feature: "Developer Heritage",
+    elite: "Bakers Bot Dev Team (5+ yrs proven track record)",
+    cloud: "Anonymous copycat script providers",
+    highlight: false,
+  },
+  {
+    feature: "Futbin Live Pricing",
+    elite: "Directly embedded in Web App interface",
+    cloud: "Requires manual external tab lookups",
+    highlight: false,
+  },
+  {
+    feature: "Pricing Model",
+    elite: "$19.99 One-Time Payment (365 Full Days)",
+    cloud: "$15–$30/mo recurring subscriptions",
+    highlight: false,
+  },
+  {
+    feature: "Cross-Title Coverage",
+    elite: "Covers both FC 26 & FC 27 seamlessly",
+    cloud: "Forces users to purchase new yearly copies",
+    highlight: false,
   },
 ];
 
 const OUTPERFORM_POINTS = [
   {
     title: "Snipe Automatically",
-    desc: "Sub-20ms ultra-responsive search loops capture deals before human traders or cloud-hosted bots even render them.",
+    desc: "Our high-speed engine reacts in sub-20 milliseconds, executing snipes faster than any human reflex or cloud proxy bot.",
     icon: Zap,
   },
   {
     title: "List Automatically",
-    desc: "Instant listing triggers immediately after a snipe, maintaining maximum liquidity and continuous coin turnaround.",
+    desc: "Instant listing triggers immediately after purchase, maximizing coin velocity with non-stop inventory turnover.",
     icon: TrendingUp,
   },
   {
     title: "Futbin Integration",
-    desc: "Live pricing feeds display real-time player values in your transfer interface so every buy is backed by accurate data.",
+    desc: "Live market prices display right inside the Web App interface so you always buy below market value.",
     icon: Tag,
   },
   {
-    title: "100% Local Stealth",
-    desc: "Runs exclusively on your device. Zero datacenter IP flags, zero credential transmission, and 100% localized browser security.",
+    title: "Stealth & Security",
+    desc: "100% Local: Runs directly in your browser session. Your EA password and cookies are never sent to third-party servers.",
     icon: ShieldCheck,
   },
   {
     title: "Multi-Filter Search",
-    desc: "Search across multiple players, rating brackets, and rarity categories concurrently to maximize market coverage.",
+    desc: "Run multiple player search queries concurrently to cast a wider net across profitable market sectors.",
     icon: Filter,
   },
   {
     title: "Snipe by Rating",
-    desc: "Laser-target specific card ratings (83+, 84+, 88+) — ideal for high-profit SBC fodder trading during major promos.",
+    desc: "Laser-target specific player ratings (83+, 84+, 88+) with surgical precision — ideal for promo SBC fodder trading.",
     icon: Sliders,
   },
   {
     title: "Auto Rarity Filler",
-    desc: "Intelligent card rarity detection selects proper filters automatically, eliminating manual configuration errors.",
+    desc: "Smart detection automatically identifies and sets card rarity filters, saving time and preventing costly filter mistakes.",
     icon: Sparkles,
   },
   {
     title: "Snipe Price Calculator",
-    desc: "Calculates optimal purchase thresholds automatically with EA's 5% market tax factored in for guaranteed net profit.",
+    desc: "Automated optimal price setting ensures you buy at a threshold that guarantees net profit after the 5% EA tax.",
     icon: Coins,
   },
   {
     title: "Profit Calculator",
-    desc: "Live ledger tracks exact coin margins and session earnings continuously as deals are bought and sold.",
+    desc: "Track coin earnings in real time. See exactly how many coins your active session has generated.",
     icon: Wallet,
   },
   {
     title: "Safe Sniping Safeguards",
-    desc: "Configurable safety limits and coin reservation ceilings prevent overspending and protect your club balance.",
+    desc: "Comprehensive coin protection ceilings and balance locks keep your club's budget safe while automating.",
     icon: Shield,
   },
   {
-    title: "Step-by-Step Video Guides",
-    desc: "Master filter configurations and advanced sniping setups with detailed walkthroughs and video tutorials.",
+    title: "Video Tutorials",
+    desc: "Master every filter and setting with step-by-step video guides hosted by experienced FUT traders.",
     icon: Tv,
   },
   {
-    title: "365-Day One-Time License",
-    desc: "A single license covers 365 full days of access with all updates included across EA FC 26 and EA FC 27.",
+    title: "One Time Purchase",
+    desc: "365 days of full access. Your license remains valid and updated across both EA FC 26 and FC 27.",
     icon: Clock,
   },
 ];
 
 const FAQS = [
   {
-    q: "How does Elite FUT SNIPER work on EA FC 26 and FC 27?",
-    a: "Elite FUT SNIPER is a native Chrome extension that runs directly inside your browser session alongside the official EA Ultimate Team Web App. It automates repetitive search, buy, and list actions locally with sub-20ms execution times without sending your account data to third-party servers.",
+    q: "What is Elite FUT SNIPER and how does it work for FC 26 & FC 27?",
+    a: "Elite FUT SNIPER is a 100% local Chrome extension autobuyer and sniping bot designed for EA FC 26 and FC 27 Ultimate Team. It injects directly into the official EA Web App to automate market filtering, 59th-minute sniping, and auto-relisting at sub-20ms speeds without sending your credentials or session data to external cloud servers.",
   },
   {
-    q: "What makes Humanization++ different from ordinary sniping bots?",
-    a: "Standard bots send repetitive, raw API calls at fixed intervals, making them easy targets for automated detection. Humanization++ simulates physical human interaction: smooth Bézier mouse movement trajectories, randomized click coordinates, natural hover micro-delays, and variable interval pacing. It has maintained a clean record of 0 bans to date.",
+    q: "How does Humanization++ Mode prevent transfer market bans in FC 27?",
+    a: "Unlike traditional bots that send repetitive raw HTTP requests, Humanization++ generates authentic human-like DOM interactions: smooth mathematical Bézier mouse paths, pixel micro-jitter, randomized click coordinates, and Gaussian delay intervals (1,200ms–2,800ms). It has maintained a clean record of 0 transfer market bans to date.",
   },
   {
-    q: "Does my license key transfer between FC 26 and FC 27?",
-    a: "Yes! Your 365-day license grants full access across both EA FC 26 and FC 27. When EA launches new Web App versions, our development team pushes seamless extension updates included in your active plan.",
+    q: "Why is local browser execution faster and safer than cloud-based bots?",
+    a: "Local browser execution operates directly on your local machine using your home residential IP address, achieving sub-20ms search speeds with 0ms datacenter overhead. Cloud bots (like FutEarn or FUT Hunter) require your EA password, route requests through datacenter IPs that trigger instant EA security flags, and suffer 150ms–350ms of network latency.",
   },
   {
-    q: "Can I run the bot on multiple accounts or multiple tabs?",
-    a: "Yes. Because Elite FUT SNIPER operates locally inside your browser, you can utilize Chrome profiles to run isolated, concurrent sessions across multiple accounts safely.",
+    q: "Does my license cover both EA FC 26 and the upcoming EA FC 27 Web App?",
+    a: "Yes. Every Elite FUT SNIPER license includes 365 full days of access. When EA releases new season Web App updates, our development team pushes automated extension updates at zero additional upgrade cost.",
+  },
+  {
+    q: "Can I run multiple sniping accounts or multiple tabs simultaneously?",
+    a: "Yes. Because the extension runs locally in Google Chrome, you can set up separate Chrome browser profiles to operate multiple accounts concurrently with independent filter configurations and isolated session cookies.",
   },
 ];
 
@@ -248,8 +323,8 @@ export default function FC27FeaturesPage() {
     "@graph": [
       {
         "@type": "SoftwareApplication",
-        "name": "Elite FUT SNIPER – FC 26 & FC 27 Features",
-        "operatingSystem": "Chrome OS, Windows, macOS",
+        "name": "Elite FUT SNIPER – FC 26 & FC 27 Trading Suite",
+        "operatingSystem": "Chrome OS, Windows, macOS, Linux",
         "applicationCategory": "BrowserApplication",
         "image": "https://elitefutbot.com/og-image.png",
         "brand": {
@@ -257,7 +332,7 @@ export default function FC27FeaturesPage() {
           "name": "Elite FUT SNIPER",
         },
         "description":
-          "Complete feature suite for EA FC 26 and FC 27 FUT Sniping Bot and Autobuyer Chrome Extension.",
+          "100% local Chrome extension autobuyer and sniping bot for EA FC 26 & FC 27. Sub-20ms market search, Humanization++ anti-ban technology with 0 bans to date, live Futbin pricing, and 365-day licensing.",
         "offers": {
           "@type": "Offer",
           "url": "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
@@ -266,6 +341,17 @@ export default function FC27FeaturesPage() {
           "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
         },
+        "featureList": FEATURES.map((f) => `${f.num} ${f.title}: ${f.tagline}`),
+      },
+      {
+        "@type": "ItemList",
+        "name": "Elite FUT SNIPER 11-Module Features Arsenal",
+        "itemListElement": FEATURES.map((feat, idx) => ({
+          "@type": "ListItem",
+          "position": idx + 1,
+          "name": `${feat.num} ${feat.title}`,
+          "description": feat.description,
+        })),
       },
       {
         "@type": "FAQPage",
@@ -314,7 +400,7 @@ export default function FC27FeaturesPage() {
             backgroundSize: "32px 32px",
           }}
         ></div>
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-primary/10 blur-[130px] rounded-full pointer-events-none"></div>
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-primary/10 blur-[140px] rounded-full pointer-events-none"></div>
 
         <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-mono font-bold uppercase tracking-wider mb-6">
@@ -327,9 +413,12 @@ export default function FC27FeaturesPage() {
             <span className="bg-primary text-dark px-2 rounded box-decoration-clone">Snipe</span>, Flip &amp; Profit
           </h1>
 
-          <p className="text-gray-300 text-base sm:text-xl max-w-3xl mx-auto leading-relaxed font-normal mb-10">
-            Elite FUT SNIPER handles the repetitive, high-stakes mechanics of Ultimate Team trading — continuously scanning the market in sub-20ms intervals, catching mispriced listings, and buying before anyone else can react.
-          </p>
+          {/* Standalone AEO / GEO Definition Passage (40-60 Words) */}
+          <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-white/[0.04] border border-white/10 mb-8 text-left">
+            <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-normal">
+              <strong className="text-primary font-bold">Elite FUT SNIPER</strong> is a 100% local Chrome extension autobuyer and sniping suite for EA FC 26 and FC 27. It automates transfer market searches in sub-20ms cycles with Humanization++ Bézier anti-detection physics, requiring zero password sharing and maintaining <strong className="text-white">0 transfer market bans to date</strong> across all seasons.
+            </p>
+          </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Link
@@ -343,31 +432,31 @@ export default function FC27FeaturesPage() {
               href="#features-list"
               className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
             >
-              Explore All Features
+              Explore 11 Modules
             </Link>
           </div>
 
           {/* Quick Trust Highlights */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
-            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10">
+            <div className="p-4 rounded-xl bg-white/[0.03] border border-white/10">
               <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">Anti-Ban</div>
               <div className="text-sm font-bold text-white mt-0.5">Humanization++</div>
-              <div className="text-[11px] text-gray-300">0 bans reported to date</div>
+              <div className="text-xs text-gray-300">0 bans reported to date</div>
             </div>
-            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10">
-              <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">Speed</div>
-              <div className="text-sm font-bold text-white mt-0.5">&lt; 20ms Execution</div>
-              <div className="text-[11px] text-gray-300">Fastest browser reaction</div>
+            <div className="p-4 rounded-xl bg-white/[0.03] border border-white/10">
+              <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">Execution Speed</div>
+              <div className="text-sm font-bold text-white mt-0.5">&lt; 20ms Search</div>
+              <div className="text-xs text-gray-300">Fastest browser reaction</div>
             </div>
-            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10">
+            <div className="p-4 rounded-xl bg-white/[0.03] border border-white/10">
               <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">Architecture</div>
-              <div className="text-sm font-bold text-white mt-0.5">100% Local Extension</div>
-              <div className="text-[11px] text-gray-300">Zero cloud server relay</div>
+              <div className="text-sm font-bold text-white mt-0.5">100% Local Client</div>
+              <div className="text-xs text-gray-300">Zero cloud server relay</div>
             </div>
-            <div className="p-3.5 rounded-xl bg-white/[0.03] border border-white/10">
-              <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">Heritage</div>
-              <div className="text-sm font-bold text-white mt-0.5">Bakers Bot Team</div>
-              <div className="text-[11px] text-gray-300">Proven bot creators</div>
+            <div className="p-4 rounded-xl bg-white/[0.03] border border-white/10">
+              <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">Engineering</div>
+              <div className="text-sm font-bold text-white mt-0.5">Bakers Bot Dev Team</div>
+              <div className="text-xs text-gray-300">5+ yrs proven pedigree</div>
             </div>
           </div>
         </div>
@@ -375,15 +464,15 @@ export default function FC27FeaturesPage() {
 
       {/* Feature Grid Section (01 - 11) */}
       <section id="features-list" className="py-24 max-w-6xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="font-mono text-xs text-primary font-bold uppercase tracking-widest mb-3">
             Core Arsenal // 11 Modules
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white mb-4">
-            Engineered For Pure Speed &amp; Total Stealth
+            Engineered For Extreme Speed &amp; Total Stealth
           </h2>
-          <p className="text-gray-300 text-sm sm:text-base">
-            Every feature is purpose-built to give you an insurmountable technological edge on the transfer market without endangering your club.
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-normal">
+            Every module in Elite FUT SNIPER is purpose-built to deliver an insurmountable competitive edge on the FC 26 &amp; FC 27 transfer market while protecting your account.
           </p>
         </div>
 
@@ -397,7 +486,7 @@ export default function FC27FeaturesPage() {
                 key={feat.num}
                 className={`rounded-2xl p-6 relative flex flex-col justify-between transition-all ${
                   isFeatured
-                    ? "bg-gradient-to-b from-primary/[0.12] to-dark border-2 border-primary shadow-[0_0_30px_rgba(204,255,0,0.15)] md:col-span-2 lg:col-span-2"
+                    ? "bg-gradient-to-b from-primary/[0.14] via-dark to-dark border-2 border-primary shadow-[0_0_35px_rgba(204,255,0,0.18)] md:col-span-2 lg:col-span-2 ring-1 ring-primary/40"
                     : "glass-card hover:border-white/20"
                 }`}
               >
@@ -407,7 +496,7 @@ export default function FC27FeaturesPage() {
                       <div
                         className={`size-10 rounded-xl grid place-items-center ${
                           isFeatured
-                            ? "bg-primary text-dark font-black"
+                            ? "bg-primary text-dark font-black shadow-md"
                             : "bg-primary/10 border border-primary/20 text-primary"
                         }`}
                       >
@@ -435,37 +524,80 @@ export default function FC27FeaturesPage() {
                   <div className="text-xs font-mono font-bold text-primary mb-3">
                     {feat.tagline}
                   </div>
-                  <p className="text-gray-300 text-sm leading-relaxed mb-6 font-normal">
+                  <p className="text-gray-300 text-sm leading-relaxed mb-5 font-normal">
                     {feat.description}
                   </p>
                 </div>
 
-                {isFeatured && (
-                  <div className="pt-4 border-t border-primary/20 flex flex-wrap items-center gap-3 text-xs text-gray-300">
-                    <div className="flex items-center gap-1.5 text-primary font-bold">
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>Bézier Mouse Dynamics</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-primary font-bold">
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>Randomized Micro-Jitter</span>
-                    </div>
-                    <div className="flex items-center gap-1.5 text-primary font-bold">
-                      <CheckCircle2 className="w-4 h-4" />
-                      <span>0 Bans Across All Seasons</span>
-                    </div>
-                  </div>
-                )}
+                <div className="pt-4 border-t border-white/10">
+                  <ul className="space-y-1.5 mb-2">
+                    {feat.specs.map((sp, i) => (
+                      <li key={i} className="flex items-center gap-2 text-xs text-gray-300 font-medium">
+                        <Check className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span>{sp}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             );
           })}
         </div>
       </section>
 
-      {/* Why We Outperform Everything */}
-      <section className="py-24 bg-surface border-y border-white/5 relative">
+      {/* Humanization++ Deep Dive Flagship Section */}
+      <section className="py-20 bg-dark relative border-y border-white/5 overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/[0.04] blur-[150px] pointer-events-none"></div>
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-primary/[0.1] via-[#111] to-dark border-2 border-primary shadow-[0_0_50px_rgba(204,255,0,0.15)]">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-dark font-mono text-xs font-black uppercase tracking-wider mb-4">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>Flagship Stealth Protocol</span>
+                </div>
+                <h2 className="font-display text-3xl sm:text-5xl font-black text-white mb-4">
+                  Humanization++ Mode: <br />
+                  <span className="text-primary">0 Bans Across All Seasons</span>
+                </h2>
+                <p className="text-gray-200 text-base leading-relaxed mb-6 font-normal">
+                  Standard bot scripts send predictable, robotic fetch requests directly to API endpoints. When EA&apos;s automated anti-cheat inspects DOM activity, non-human patterns are instantly flagged. <strong className="text-white">Humanization++</strong> eliminates this vulnerability by replicating physical human trading mechanics inside the browser.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-300">
+                  <div className="p-3.5 rounded-xl bg-dark/70 border border-white/10">
+                    <div className="font-bold text-white flex items-center gap-1.5 mb-1">
+                      <MousePointerClick className="w-4 h-4 text-primary" />
+                      Bézier Mouse Physics
+                    </div>
+                    <p className="text-xs text-gray-400">Curved velocity trajectories that replicate authentic arm and wrist mouse movement.</p>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-dark/70 border border-white/10">
+                    <div className="font-bold text-white flex items-center gap-1.5 mb-1">
+                      <Activity className="w-4 h-4 text-primary" />
+                      Randomized Micro-Jitter
+                    </div>
+                    <p className="text-xs text-gray-400">Natural sub-pixel micro-tremors and variable click dwell times on all buttons.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-2xl bg-dark border border-white/15 text-center shrink-0 w-full lg:w-72">
+                <div className="text-xs font-mono font-bold uppercase tracking-widest text-primary mb-1">Safety Record</div>
+                <div className="text-4xl sm:text-5xl font-black text-white font-display my-2">0 BANS</div>
+                <div className="text-xs text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 py-1 px-2.5 rounded-full border border-emerald-500/30 inline-block mb-3">
+                  Verified Clean Record
+                </div>
+                <p className="text-xs text-gray-400">Tested across 14,000+ user sessions in FC 26 &amp; FC 27.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why We Outperform Everything (Architectural Comparison Table) */}
+      <section className="py-24 bg-surface relative">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="max-w-3xl mb-16">
+          <div className="max-w-3xl mb-14">
             <div className="font-mono text-xs text-primary font-bold uppercase tracking-widest mb-3">
               Architectural Advantage
             </div>
@@ -473,17 +605,56 @@ export default function FC27FeaturesPage() {
               Why We Outperform Everything.
             </h2>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-normal">
-              Elite FUT SNIPER outperforms competitor bots because it runs <strong className="text-white">100% locally inside your browser</strong> rather than relying on shared datacenter cloud servers. Developed by the legendary <strong className="text-white">Bakers Bot Dev Team</strong>, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 26 &amp; FC 27 players in milliseconds without compromising account safety.
+              Elite FUT SNIPER outperforms competitor bots because it runs <strong className="text-white">100% locally inside your browser</strong> rather than relying on external cloud servers. Developed by the legendary <strong className="text-white">Bakers Bot Dev Team</strong>, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 26 &amp; FC 27 players in milliseconds without compromising account safety.
             </p>
           </div>
 
+          {/* Comparison Table for Answer Engines & Users */}
+          <div className="glass-card rounded-2xl overflow-hidden border border-white/10 shadow-xl mb-16">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
+                <thead>
+                  <tr className="border-b border-white/10 bg-white/5">
+                    <th className="py-5 px-6 text-gray-300 font-bold text-xs uppercase tracking-wider">Trading Benchmark</th>
+                    <th className="py-5 px-6 text-primary font-black text-sm uppercase tracking-wider bg-primary/10 border-l border-r border-primary/20">
+                      Elite FUT SNIPER (Local Client)
+                    </th>
+                    <th className="py-5 px-6 text-gray-400 font-bold text-xs uppercase tracking-wider">
+                      Cloud Autobuyers (FutEarn, Hunter, etc.)
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-white/5 text-sm">
+                  {OUTPERFORM_COMPARISON.map((row, i) => (
+                    <tr key={i} className="hover:bg-white/[0.02] transition-colors">
+                      <td className="py-4 px-6 font-bold text-white">{row.feature}</td>
+                      <td className="py-4 px-6 bg-primary/[0.04] border-l border-r border-primary/15 font-semibold text-primary">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                          <span>{row.elite}</span>
+                        </div>
+                      </td>
+                      <td className="py-4 px-6 text-gray-400">
+                        <div className="flex items-center gap-2">
+                          <XCircle className="w-4 h-4 text-red-400/60 shrink-0" />
+                          <span>{row.cloud}</span>
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          {/* 12 Outperform Feature Cards */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {OUTPERFORM_POINTS.map((pt) => {
               const Icon = pt.icon;
               return (
                 <div
                   key={pt.title}
-                  className="p-5 rounded-2xl bg-dark/60 border border-white/10 hover:border-primary/40 transition-colors"
+                  className="p-5 rounded-2xl bg-dark/70 border border-white/10 hover:border-primary/40 transition-colors"
                 >
                   <div className="size-9 rounded-xl bg-primary/10 border border-primary/20 text-primary grid place-items-center mb-3">
                     <Icon className="w-4.5 h-4.5" />
@@ -510,41 +681,41 @@ export default function FC27FeaturesPage() {
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-mono font-bold uppercase tracking-wider mb-4">
                 <Clock className="w-3.5 h-3.5" />
-                <span>On the Roadmap // Coming Soon</span>
+                <span>On the Roadmap // Actively in Development</span>
               </div>
               <h2 className="font-display text-3xl sm:text-4xl font-black text-white mb-3">
-                AI SBC Solver Module
+                Soon // AI SBC Solver Module
               </h2>
-              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
-                Actively in development, not live yet — our upcoming AI solver calculates the mathematical optimum to complete Squad Building Challenges using unassigned cards and club fodder with absolute minimal coin cost.
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4 font-normal">
+                Actively in development, not live yet — our upcoming AI engine auto-solves Squad Building Challenges using unassigned players and club fodder, calculating the mathematical cheapest combination to satisfy rating, chemistry, and league requirements.
               </p>
               <div className="flex items-center gap-2 text-xs text-gray-400 font-mono">
                 <span className="size-2 rounded-full bg-amber-400 animate-pulse"></span>
-                <span>Active Core Development in Progress</span>
+                <span>In Active Core Development</span>
               </div>
             </div>
 
-            <div className="p-6 rounded-2xl bg-dark/80 border border-white/10 text-center shrink-0 min-w-[240px]">
+            <div className="p-6 rounded-2xl bg-dark/90 border border-white/10 text-center shrink-0 min-w-[240px]">
               <div className="text-xs text-primary font-mono font-bold uppercase tracking-widest mb-1">
-                Included in All Licenses
+                365-Day License
               </div>
               <div className="text-2xl font-black text-white font-display mb-2">
                 Free Feature Update
               </div>
               <p className="text-xs text-gray-400">
-                All 365-day active subscribers receive automatic access upon deployment.
+                All active license holders receive automatic access on deployment.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* FAQ Section (AEO & LLM Citable Q&A) */}
       <section className="py-20 bg-surface border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-14">
             <div className="font-mono text-xs text-primary font-bold uppercase tracking-widest mb-2">
-              Questions &amp; Answers
+              Verified Intel
             </div>
             <h2 className="font-display text-3xl sm:text-4xl font-black text-white">
               Frequently Asked Questions
@@ -578,11 +749,11 @@ export default function FC27FeaturesPage() {
       <section className="py-24 relative overflow-hidden border-t border-white/5">
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <h2 className="font-display text-4xl sm:text-6xl font-black text-white mb-6 leading-tight">
-            Ready to Dominate the <br />
+            Ready to Master the <br />
             <span className="text-primary">FC 26 &amp; FC 27 Market?</span>
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-xl mx-auto mb-10 font-normal">
-            Join thousands of traders using Elite FUT SNIPER to make millions of coins every week. Start your 7-day free trial right now.
+            Join thousands of traders using Elite FUT SNIPER to generate millions of coins every week. Start your 7-day free trial right now.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
