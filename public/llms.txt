@@ -72,6 +72,8 @@ Yes. Every 365-day license covers full access across EA FC 26 and upcoming FC 27
 - [EA Tax Calculator](https://elitefutbot.com/tools/tax-calculator) — 5% transfer market tax & profit calculator
 - [FUT Sniping Guide — FC 26 Filters & Methods](https://elitefutbot.com/tools/sniping-guide) — Market filters and 59th-minute methods
 - [Affiliate Program (50% Lifetime Commission, Instant Daily Payouts for FC 26 & FC 27)](https://elitefutbot.com/affiliate) — 50% lifetime recurring commissions
+- [Referral Program](https://elitefutbot.com/referral) — Personal referral program and signup credit
+- [Install Guide](https://elitefutbot.com/install) — Step-by-step Chrome extension installation walkthrough
 - [Pricing Documentation](https://elitefutbot.com/pricing.md) — Machine-readable plan specifications
 - [Discord VIP Community](https://discord.gg/Rkb9nF6WG6) — 24/7 live support and trading alpha
 
