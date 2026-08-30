@@ -1,6 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 
+// Placeholder for the "$10 price increase every 10 sales" plan — not yet wired
+// to real sale counts from Dodo Payments. Update these numbers manually until
+// that's automated (would need a Dodo webhook feeding this from the backend).
+const PRICE_TIER = {
+  sold: 4,
+  threshold: 10,
+  currentPrice: 19.99,
+  nextPrice: 29.99,
+};
+
 export default function Home() {
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -132,7 +142,7 @@ export default function Home() {
             <Link className="group relative px-7 py-3.5 bg-primary text-dark font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
               <div className="absolute inset-0 w-full h-full bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               <span className="relative flex items-center gap-2">
-                Claim Your Free Beta Slot
+                View Pricing Plans
                 <span className="material-symbols-outlined text-xl">arrow_forward</span>
               </span>
             </Link>
@@ -144,7 +154,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 font-medium border-t border-white/5 pt-6 sm:pt-8 max-w-4xl mx-auto">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-primary text-lg">verified_user</span>
-              Undetected Since Launch
+              Human++ Anti-Ban Technology · 0 Bans To Date
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
@@ -412,7 +422,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-4">Choose Your <span className="text-primary">Weapon</span></h2>
-            <p className="text-gray-400">Simple pricing. No hidden fees. Cancel anytime.</p>
+            <p className="text-gray-400">Simple pricing. No hidden fees. No subscriptions.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
@@ -442,8 +452,8 @@ export default function Home() {
                   Multi-Tab Sniping
                 </li>
               </ul>
-              <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="https://discord.gg/Rkb9nF6WG6">
-                Join Discord to Start
+              <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">
+                Start Free Trial
               </Link>
             </div>
             <div className="glass-card rounded-3xl p-8 flex flex-col border-primary/40 bg-primary/5 relative overflow-hidden shadow-[0_0_40px_rgba(204,255,0,0.05)] transform md:-translate-y-4" data-purpose="pricing-card">
@@ -452,42 +462,87 @@ export default function Home() {
                   Best Value
                 </div>
               </div>
-              <div className="mb-8 relative z-10">
-                <h3 className="text-xl font-bold mb-2 flex items-center gap-2 text-white">
-                  Pro Sniper
-                  <span className="text-primary text-[10px] bg-primary/20 border border-primary/20 px-2 py-0.5 rounded uppercase tracking-wide">Limited Spots</span>
-                </h3>
+              <div className="mb-6 relative z-10">
+                <h3 className="text-xl font-bold mb-3 text-white">Pro Sniper</h3>
                 <div className="flex items-baseline gap-2">
                   <span className="text-5xl font-black text-white">$19.99</span>
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
-                <p className="text-sm text-primary mt-4 font-bold bg-primary/10 inline-block px-2 py-1 rounded">Currently FREE for Early Beta Testers!</p>
+                <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                  <span className="material-symbols-outlined text-base">verified</span>
+                  One-Time Payment · 365 Days · FC 26 &amp; FC 27
+                </div>
+
+                <div className="mt-5 rounded-xl border border-amber-400/30 bg-amber-400/[0.06] px-4 py-3.5">
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <span className="material-symbols-outlined text-amber-400 text-lg">local_fire_department</span>
+                    <span className="text-amber-400 font-black text-sm uppercase tracking-wide">
+                      {PRICE_TIER.threshold - PRICE_TIER.sold} Spots Left at $19.99
+                    </span>
+                  </div>
+                  <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-amber-400 to-red-500 transition-all"
+                      style={{ width: `${(PRICE_TIER.sold / PRICE_TIER.threshold) * 100}%` }}
+                    ></div>
+                  </div>
+                  <div className="flex items-center justify-between text-xs mt-2">
+                    <span className="text-gray-400">{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold</span>
+                    <span className="font-bold text-white">Next price: ${PRICE_TIER.nextPrice}</span>
+                  </div>
+                </div>
               </div>
-              <ul className="space-y-4 mb-10 flex-grow relative z-10">
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+              <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-4 relative z-10">
+                What&apos;s included
+              </p>
+              <ul className="space-y-3.5 mb-8 flex-grow relative z-10 divide-y divide-white/5">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Advanced Logic &amp; Multi-Filters
+                  Advanced Logic
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  Free Player Snipe Filters
+                </li>
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Unlimited Multi-Account Support
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Multi-Tab Local Sniping
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Stealth Anti-Ban Behavioral Tech
+                <li className="flex items-start gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <span className="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+                  <span>
+                    Human++ Anti-Ban Technology
+                    <span className="block text-xs text-gray-400 font-normal mt-0.5">
+                      Zero bans reported to date — a stealth method no one else has
+                    </span>
+                  </span>
                 </li>
-                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Priority Discord Support
+                  Paid-Member Discord Access
+                </li>
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  10M+ Coins Earning Potential
+                </li>
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <span className="material-symbols-outlined text-amber-400 text-base">schedule</span>
+                  AI SBC Solver
+                  <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
                 </li>
               </ul>
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
-              <Link className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]" href="https://discord.gg/Rkb9nF6WG6">
-                Join Discord for Free Beta Access
+              <Link
+                className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]"
+                href="https://checkout.dodopayments.com/buy/pdt_0NmKLEkBOT5JF3qkdNt0t?quantity=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Pro Sniper Access
               </Link>
             </div>
           </div>
@@ -661,7 +716,7 @@ export default function Home() {
               Join 5,000+ Traders on Discord
             </Link>
             <Link 
-              href="https://github.com/getwebgrowth/elitefutbot" 
+              href="https://github.com/elitefutbot/elitefutbot-web"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all hover:scale-105 text-sm border border-white/10 w-full sm:w-auto justify-center"
@@ -770,8 +825,8 @@ export default function Home() {
             Join the 87 early testers who are already dominating the market. Beta slots are closing soon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="https://discord.gg/Rkb9nF6WG6">
-              JOIN THE BETA
+            <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="/register">
+              ACTIVATE YOUR TRIAL
               <span className="material-symbols-outlined font-black">arrow_forward</span>
             </Link>
           </div>
