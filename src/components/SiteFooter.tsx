@@ -119,6 +119,7 @@ export default function SiteFooter() {
               <h2 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools &amp; Intel</h2>
               <ul className="space-y-2 text-sm font-medium">
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fc27-fut-snipe-bot">FC 27 Snipe Bot</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fc27-fut-sniping-bot-autobuyer-features">FC 27 Bot Features</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/blog">Tactical Intel Hub</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/article/tactical-intel">Latest Briefing</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/tools/comparison-guide">Comparison Hub</Link></li>
