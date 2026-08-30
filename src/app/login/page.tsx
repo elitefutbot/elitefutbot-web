@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { ArrowRight } from "lucide-react";
 import { login } from "@/lib/auth/authClient";
 
 export default function LoginPage() {
@@ -96,16 +97,21 @@ export default function LoginPage() {
             </button>
           </form>
 
-          <p className="text-xs text-gray-400 text-center mt-6">
-            Don&apos;t have an account?{" "}
-            <Link
-              href="/register"
-              className="text-primary font-bold hover:text-primary/80 transition-colors"
-            >
-              Create one
-            </Link>{" "}
-            with your license key.
-          </p>
+          <div className="mt-6 pt-5 border-t border-white/10 text-center">
+            <div className="flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-sm text-gray-400">
+              <span>New here?</span>
+              <Link
+                href="/register"
+                className="inline-flex items-center gap-1 text-primary font-bold hover:text-primary/80 transition-colors"
+              >
+                Create an account
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+            <p className="text-xs text-gray-500 mt-1.5">
+              Free 7-day trial, no license key required.
+            </p>
+          </div>
         </div>
       </div>
     </div>
