@@ -154,7 +154,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 font-medium border-t border-white/5 pt-6 sm:pt-8 max-w-4xl mx-auto">
             <div className="flex items-center gap-2">
               <span className="material-symbols-outlined text-primary text-lg">verified_user</span>
-              Undetected Since Launch
+              Human++ Anti-Ban Technology · 0 Bans To Date
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
