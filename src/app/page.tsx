@@ -142,7 +142,7 @@ export default function Home() {
             <Link className="group relative px-7 py-3.5 bg-primary text-dark font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
               <div className="absolute inset-0 w-full h-full bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               <span className="relative flex items-center gap-2">
-                Claim Your Free Beta Slot
+                View Pricing Plans
                 <span className="material-symbols-outlined text-xl">arrow_forward</span>
               </span>
             </Link>
