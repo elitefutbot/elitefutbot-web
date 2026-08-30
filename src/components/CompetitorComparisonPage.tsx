@@ -24,8 +24,164 @@ import {
   Server,
   Smartphone,
   Flame,
+  TrendingUp,
+  Sliders,
+  Layout,
+  Globe,
+  MessageSquare,
+  BarChart3,
+  Lock,
+  Shield,
 } from "lucide-react";
 import type { CompetitorData } from "@/data/competitors/types";
+
+interface ElevenModuleSpec {
+  num: string;
+  name: string;
+  tagline: string;
+  icon: any;
+  eliteSpec: string;
+  competitorSpec: (compType: string, compName: string) => string;
+}
+
+const ELEVEN_MODULES: ElevenModuleSpec[] = [
+  {
+    num: "01",
+    name: "Auto Snipe (Sub-20ms Engine)",
+    tagline: "High-Frequency Market Scanner",
+    icon: Zap,
+    eliteSpec: "Sub-20ms direct in-memory WebSocket response; captures 59th-minute deals before cloud relays.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "cloud" || compType === "web-app")
+        return `${compName} relies on remote proxy queues adding 150ms–350ms latency, losing high-demand meta snipes.`;
+      if (compType === "desktop-app")
+        return `${compName} runs through heavy desktop wrapper virtualization with 70ms–140ms macro lag.`;
+      if (compType === "userscript")
+        return `${compName} injects scripts into the main render thread with 50ms–100ms script lag and frequent crashes.`;
+      if (compType === "informational" || compType === "discord-alerts")
+        return `${compName} does not support automated sniping; relies on manual clicking with 400ms–800ms human reaction time.`;
+      return `${compName} uses standard DOM polling (60ms–120ms) without native in-memory WebSocket acceleration.`;
+    },
+  },
+  {
+    num: "02",
+    name: "Auto List & Auto Sell",
+    tagline: "Automated Profit Realization",
+    icon: TrendingUp,
+    eliteSpec: "Automatically computes 5% EA transfer tax and relists sniped cards at target profit margins 24/7.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "informational" || compType === "discord-alerts")
+        return `${compName} provides no automated listing; cards must be listed manually one-by-one.`;
+      return `${compName} provides basic relisting without automated 5% EA tax net profit margin calculation.`;
+    },
+  },
+  {
+    num: "03",
+    name: "Smart Filters & Multi-Search",
+    tagline: "Multi-Dimensional Filter Matrix",
+    icon: Sliders,
+    eliteSpec: "Granular min/max buy-now, bid ceilings, exact rating bounds (83+, 84+, 88+), chemistry styles, and concurrent multi-card queries.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "informational")
+        return `${compName} provides database filters but cannot execute searches inside the Web App.`;
+      return `${compName} supports single-player search filters only, missing concurrent multi-target query execution.`;
+    },
+  },
+  {
+    num: "04",
+    name: "Futbin Live Price Reference",
+    tagline: "Real-Time Market Valuation Overlay",
+    icon: Tag,
+    eliteSpec: "Integrates real-time Futbin market valuations directly on Web App card tiles to prevent overpaying.",
+    competitorSpec: (compType, compName) => {
+      if (compName === "FUT Genie" || compName === "Paletools" || compName === "FUT.GG")
+        return `${compName} provides price badge lookups, but lacks automated 20ms execution on price drops.`;
+      return `${compName} lacks real-time Futbin price integration, requiring manual price checks in separate tabs.`;
+    },
+  },
+  {
+    num: "05",
+    name: "Anti-Detection Engine",
+    tagline: "Gaussian Behavioral Jitter",
+    icon: Cpu,
+    eliteSpec: "Statistical Gaussian distribution curves with randomized micro-pauses (1,200ms–2,800ms) mimicking organic human rhythms.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "cloud")
+        return `${compName} runs from shared datacenter IP subnets easily flagged by EA cluster detection.`;
+      return `${compName} uses rigid linear millisecond timers (e.g. fixed intervals) that create detectable square-wave patterns.`;
+    },
+  },
+  {
+    num: "06",
+    name: "Humanization++ Mode (Flagship Stealth)",
+    tagline: "0 Bans Record Across All Seasons",
+    icon: MousePointerClick,
+    eliteSpec: "Authentic Bézier mouse curve physics, randomized click coordinates, and human dwell times. Verified 0 bans to date.",
+    competitorSpec: (compType, compName) => {
+      return `${compName} lacks Bézier mouse physics and natural coordinate randomization, firing raw programmatic events.`;
+    },
+  },
+  {
+    num: "07",
+    name: "Native Chrome Side Panel HUD",
+    tagline: "Docked Zero-Clutter Interface",
+    icon: Layout,
+    eliteSpec: "Docks cleanly inside Chrome's Side Panel API, keeping the Web App completely unobstructed at 60 FPS.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "desktop-app")
+        return `${compName} operates in a separate desktop window that takes over your screen.`;
+      if (compType === "cloud" || compType === "web-app")
+        return `${compName} uses an external web dashboard separate from the Web App.`;
+      return `${compName} injects floating banners and overlay buttons directly onto the Web App screen, causing UI clutter.`;
+    },
+  },
+  {
+    num: "08",
+    name: "Web Command Dashboard",
+    tagline: "Centralized Device Management",
+    icon: Globe,
+    eliteSpec: "Centralized cloud dashboard to manage device activations, monitor live session telemetry, and view license details.",
+    competitorSpec: (compType, compName) => {
+      return `${compName} lacks centralized cloud session overview or relies on disconnected local files.`;
+    },
+  },
+  {
+    num: "09",
+    name: "Free Discord VIP Support & Strategy Drops",
+    tagline: "24/7 Technical Setup & Daily Alpha",
+    icon: MessageSquare,
+    eliteSpec: "Included 24/7 technical setup assistance, verified trader channels, and daily high-ROI filter drops at no extra cost.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "discord-alerts")
+        return `${compName} charges monthly subscription fees ($20–$30/mo) for signal callouts alone.`;
+      return `${compName} provides limited community forum support without verified daily trading filter drops.`;
+    },
+  },
+  {
+    num: "10",
+    name: "Live Stats & Profit Sync",
+    tagline: "Automated Net Profit Tracking",
+    icon: BarChart3,
+    eliteSpec: "Real-time live session counter tracking snipes completed, gross profit, EA 5% tax deduction, and net coins/hr.",
+    competitorSpec: (compType, compName) => {
+      return `${compName} displays basic buy count counters only, requiring manual math to calculate true net profit after EA tax.`;
+    },
+  },
+  {
+    num: "11",
+    name: "Secure Client-Side Auth",
+    tagline: "100% Local Zero-Knowledge Privacy",
+    icon: Lock,
+    eliteSpec: "Zero EA password or 2FA handover. Authenticates via local browser session tokens in Google Chrome.",
+    competitorSpec: (compType, compName) => {
+      if (compType === "cloud" || compType === "web-app")
+        return `${compName} requires uploading your EA password and 2FA backup codes to third-party servers.`;
+      if (compType === "desktop-app")
+        return `${compName} requires installing unsigned executables with full administrative disk access.`;
+      return `${compName} operates locally but lacks isolated Manifest V3 extension sandboxing.`;
+    },
+  },
+];
 
 const FEATURE_DESCRIPTIONS: Record<string, string> = {
   "Execution Location": "Where the automation runs (your local browser vs a remote external server).",
@@ -738,6 +894,97 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             </div>
           </section>
 
+          {/* Complete 11-Module Feature Suite Breakdown vs Competitor */}
+          <section className="space-y-6" aria-label="11-Module Feature Breakdown">
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary font-mono text-xs font-bold uppercase tracking-wider">
+                <Sparkles className="w-3.5 h-3.5" />
+                <span>11-Module Capability Audit</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                How Elite FUT SNIPER&apos;s 11 Features Outperform {data.competitorName}
+              </h2>
+              <p className="text-sm text-gray-300 max-w-3xl leading-relaxed font-normal">
+                A systematic module-by-module feature audit evaluating automation speed, anti-ban stealth, pricing transparency, and UI ergonomics against {data.competitorName}.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {ELEVEN_MODULES.map((mod) => {
+                const Icon = mod.icon;
+                return (
+                  <div
+                    key={mod.num}
+                    className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-primary/30 hover:bg-white/[0.03] transition-all space-y-4 shadow-sm"
+                  >
+                    <div className="flex items-start justify-between gap-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-9 h-9 rounded-xl bg-primary/10 border border-primary/30 flex items-center justify-center text-primary shrink-0 font-mono font-bold text-xs">
+                          {mod.num}
+                        </div>
+                        <div>
+                          <h3 className="text-sm font-bold text-white font-headline uppercase tracking-tight flex items-center gap-1.5">
+                            <Icon className="w-4 h-4 text-primary shrink-0" />
+                            <span>{mod.name}</span>
+                          </h3>
+                          <span className="text-[11px] font-mono text-primary font-semibold block">
+                            {mod.tagline}
+                          </span>
+                        </div>
+                      </div>
+                      <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/40 px-2 py-0.5 rounded-full text-primary shrink-0">
+                        ELITE ADVANTAGE
+                      </span>
+                    </div>
+
+                    <div className="space-y-2 text-xs">
+                      <div className="p-3 rounded-xl bg-primary/[0.04] border border-primary/20 space-y-1">
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+                          <Check className="w-3.5 h-3.5 text-primary shrink-0" />
+                          Elite FUT SNIPER
+                        </span>
+                        <p className="text-gray-200 leading-relaxed font-normal">{mod.eliteSpec}</p>
+                      </div>
+                      <div className="p-3 rounded-xl bg-black/40 border border-white/5 space-y-1">
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-gray-400 font-bold flex items-center gap-1.5">
+                          <X className="w-3.5 h-3.5 text-gray-500 shrink-0" />
+                          {data.competitorName}
+                        </span>
+                        <p className="text-gray-400 leading-relaxed font-normal">
+                          {mod.competitorSpec(data.competitorType, data.competitorName)}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* AI SBC Solver Roadmap Highlight */}
+            <div className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-primary/[0.08] via-surface to-surface border border-primary/30 shadow-[0_0_30px_rgba(204,255,0,0.06)] flex flex-col sm:flex-row items-center justify-between gap-5">
+              <div className="space-y-1.5 max-w-2xl">
+                <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-primary/20 text-primary font-mono text-[10px] font-bold uppercase tracking-wider">
+                  <Cpu className="w-3 h-3" />
+                  <span>Roadmap Highlight</span>
+                </div>
+                <h3 className="text-lg font-bold text-white font-headline uppercase">
+                  Integrated Neural AI SBC Solver vs {data.competitorName}
+                </h3>
+                <p className="text-xs text-gray-300 leading-relaxed font-normal">
+                  While {data.competitorName} requires manual card puzzle solving or external blueprint copying, Elite FUT SNIPER features an integer linear programming AI engine that scans your club untradeables and builds chemistry-compliant squads in 1 click.
+                </p>
+              </div>
+              <Link
+                href="/fc27-fut-sniping-bot-autobuyer-features"
+                aria-label="Explore all 11 EA FC 27 sniping bot and autobuyer features"
+                className="shrink-0 px-6 py-3 rounded-xl bg-primary text-black font-black text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_20px_rgba(204,255,0,0.25)] flex items-center gap-2"
+              >
+                Explore 11 Features
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          </section>
+
           {/* Frequently Asked Questions */}
           <section className="space-y-6" aria-label="Frequently Asked Questions">
             <div className="space-y-1">
@@ -852,6 +1099,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link
                 href="/register"
+                aria-label="Start your 7-day free trial of Elite FUT SNIPER"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)] inline-flex items-center justify-center gap-2"
               >
                 Start Free 7-Day Trial
@@ -859,6 +1107,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </Link>
               <Link
                 href="/#pricing"
+                aria-label="View Elite FUT SNIPER pricing plans"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/20 transition-all"
               >
                 View Pricing Plans
