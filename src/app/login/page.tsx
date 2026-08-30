@@ -108,7 +108,7 @@ export default function LoginPage() {
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>
-            <p className="text-xs text-gray-500 mt-1.5">
+            <p className="text-xs text-gray-300 mt-1.5">
               Free 7-day trial, no license key required.
             </p>
           </div>

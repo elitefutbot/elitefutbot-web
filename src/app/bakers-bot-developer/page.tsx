@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import LiteYouTubeEmbed from '@/components/LiteYouTubeEmbed';
+import { Terminal, Network, Cpu, Laptop, Zap, Shield, Brain, Code2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: "Baker's Bot Developer Creates Elite FUT SNIPER",
@@ -142,7 +143,7 @@ export default function BakersBotDeveloperPage() {
             <section className="space-y-4 p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-primary">
-                  <span className="material-symbols-outlined font-black">terminal</span>
+                  <Terminal className="w-6 h-6" />
                   <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">
                     Five Years Engineering Baker&apos;s Bot&apos;s Core Logic
                   </h2>
@@ -166,7 +167,7 @@ export default function BakersBotDeveloperPage() {
             <section className="space-y-4 p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all flex flex-col justify-between">
               <div className="space-y-4">
                 <div className="flex items-center gap-3 text-primary">
-                  <span className="material-symbols-outlined font-black">hub</span>
+                  <Network className="w-6 h-6" />
                   <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">
                     Why I Went Independent in 2025
                   </h2>
@@ -190,7 +191,7 @@ export default function BakersBotDeveloperPage() {
           {/* Section 3 */}
           <section className="space-y-6 p-8 sm:p-10 rounded-2xl bg-white/[0.03] border border-primary/20 shadow-[0_0_40px_rgba(204,255,0,0.05)]">
             <div className="flex items-center gap-3 text-primary">
-              <span className="material-symbols-outlined font-black text-2xl">memory</span>
+              <Cpu className="w-7 h-7" />
               <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">
                 What I Built Differently With Elite FUT SNIPER
               </h2>
@@ -203,28 +204,28 @@ export default function BakersBotDeveloperPage() {
             <ul className="grid sm:grid-cols-2 gap-4 text-sm font-medium">
               <li className="p-5 rounded-xl bg-black/50 border border-white/5 space-y-2 hover:border-primary/30 transition-all">
                 <span className="text-primary font-bold block uppercase tracking-wider text-xs flex items-center gap-2">
-                  <span className="material-symbols-outlined text-sm">laptop</span>
+                  <Laptop className="w-4 h-4" />
                   100% Local Execution
                 </span>
                 <p className="text-gray-400 leading-relaxed">All search loops and calculations execute directly inside your browser. No middleman cloud servers process your requests.</p>
               </li>
               <li className="p-5 rounded-xl bg-black/50 border border-white/5 space-y-2 hover:border-primary/30 transition-all">
                 <span className="text-primary font-bold block uppercase tracking-wider text-xs flex items-center gap-2">
-                  <span className="material-symbols-outlined text-sm">bolt</span>
+                  <Zap className="w-4 h-4" />
                   20ms Response Speeds
                 </span>
                 <p className="text-gray-400 leading-relaxed">Direct DOM and network hook triggers allow sub-millisecond market evaluation for maximum speed on competitive listings.</p>
               </li>
               <li className="p-5 rounded-xl bg-black/50 border border-white/5 space-y-2 hover:border-primary/30 transition-all">
                 <span className="text-primary font-bold block uppercase tracking-wider text-xs flex items-center gap-2">
-                  <span className="material-symbols-outlined text-sm">shield</span>
+                  <Shield className="w-4 h-4" />
                   Zero Credential Sharing
                 </span>
                 <p className="text-gray-400 leading-relaxed">Works seamlessly with your existing, logged-in Web App session. Never asks for or stores EA account passwords.</p>
               </li>
               <li className="p-5 rounded-xl bg-black/50 border border-white/5 space-y-2 hover:border-primary/30 transition-all">
                 <span className="text-primary font-bold block uppercase tracking-wider text-xs flex items-center gap-2">
-                  <span className="material-symbols-outlined text-sm">psychology</span>
+                  <Brain className="w-4 h-4" />
                   Integrated AI SBC Solver
                 </span>
                 <p className="text-gray-400 leading-relaxed">Calculates optimal SBC card combinations locally using real-time club inventory without relying on external solver queues.</p>
@@ -239,7 +240,7 @@ export default function BakersBotDeveloperPage() {
           {/* Section 4 */}
           <section className="space-y-4 p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all">
             <div className="flex items-center gap-3 text-primary mb-2">
-              <span className="material-symbols-outlined font-black">code</span>
+              <Code2 className="w-6 h-6" />
               <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">
                 Built By an Engineer, Not a Marketing Team
               </h2>

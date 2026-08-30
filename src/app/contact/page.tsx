@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export default function ContactPage() {
   const [formState, setFormState] = useState({
@@ -143,7 +144,7 @@ export default function ContactPage() {
                 </h2>
                 <Link href="/bio" className="text-[11px] font-bold text-primary hover:underline flex items-center gap-1">
                   <span>View Bio Hub</span>
-                  <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                  <ArrowRight className="w-3 h-3" />
                 </Link>
               </div>
 
@@ -168,9 +169,7 @@ export default function ContactPage() {
                         <p className="text-[10px] text-gray-400 line-clamp-1">{s.desc}</p>
                       </div>
                     </div>
-                    <span className="material-symbols-outlined text-sm text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all">
-                      arrow_forward
-                    </span>
+                    <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-primary group-hover:translate-x-1 transition-all" />
                   </a>
                 ))}
               </div>
@@ -179,7 +178,7 @@ export default function ContactPage() {
             {/* Merchant Guarantee Notice */}
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 space-y-2">
               <h2 className="text-xs font-headline font-bold text-white uppercase tracking-wider flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-sm">verified</span>
+                <CheckCircle2 className="w-4 h-4 text-primary" />
                 7-Day Money-Back Guarantee
               </h2>
               <p className="text-xs text-gray-400 leading-relaxed">

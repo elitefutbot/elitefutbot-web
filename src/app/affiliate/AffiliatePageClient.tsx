@@ -2,6 +2,36 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import {
+  Award,
+  Medal,
+  CheckCircle2,
+  Rocket,
+  ArrowRight,
+  Calculator,
+  TrendingUp,
+  Zap,
+  Clock,
+  DollarSign,
+  Wallet,
+  Check,
+  Copy,
+  Sparkles,
+  Percent,
+  Video,
+  Tv,
+  Users,
+  ShieldCheck,
+  Lock,
+  Gauge,
+  Bot,
+  Shield,
+  UserPlus,
+  Share2,
+  Minus,
+  Plus,
+  MessageSquare,
+} from "lucide-react";
 
 interface FAQ {
   q: string;
@@ -36,7 +66,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
         border: "border-primary/50",
         badgeBg: "bg-primary/15 text-primary border-primary/40 shadow-[0_0_15px_rgba(204,255,0,0.2)]",
         badge: "VIP CREATOR (60%)",
-        icon: "workspace_premium",
+        icon: Award,
       };
     }
     if (count >= 100) {
@@ -49,7 +79,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
         border: "border-amber-500/40",
         badgeBg: "bg-amber-500/15 text-amber-300 border-amber-500/40 shadow-[0_0_15px_rgba(245,158,11,0.2)]",
         badge: "GOLD AMBASSADOR (50%)",
-        icon: "military_tech",
+        icon: Medal,
       };
     }
     if (count >= 30) {
@@ -62,7 +92,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
         border: "border-blue-500/40",
         badgeBg: "bg-blue-500/15 text-blue-300 border-blue-500/40 shadow-[0_0_15px_rgba(59,130,246,0.2)]",
         badge: "SILVER PARTNER (50%)",
-        icon: "verified",
+        icon: CheckCircle2,
       };
     }
     return {
@@ -74,7 +104,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
       border: "border-white/10",
       badgeBg: "bg-white/10 text-gray-200 border-white/20",
       badge: "STARTER TIER (50%)",
-      icon: "rocket_launch",
+      icon: Rocket,
     };
   };
 
@@ -135,14 +165,14 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                   className="group relative inline-flex items-center justify-center px-8 py-4 font-black text-dark bg-primary rounded-xl overflow-hidden transition-transform duration-200 hover:scale-105 active:scale-95 cursor-pointer shadow-[0_0_30px_rgba(204,255,0,0.35)] min-h-[48px]"
                 >
                   <span className="relative flex items-center gap-2 uppercase tracking-wider text-sm font-black">
-                    Become a Partner <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform" aria-hidden="true">arrow_forward</span>
+                    Become a Partner <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>
                 <a
                   href="#calculator"
                   className="group inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-white/[0.05] border border-white/15 rounded-xl hover:bg-white/[0.08] hover:border-primary/40 transition-colors uppercase tracking-wider text-sm gap-2 cursor-pointer min-h-[48px]"
                 >
-                  <span className="material-symbols-outlined text-primary" aria-hidden="true">calculate</span>
+                  <Calculator className="w-4 h-4 text-primary" />
                   <span>Estimate Earnings</span>
                 </a>
               </div>
@@ -151,7 +181,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t border-white/10">
                 <div className="bg-[#121212] border border-white/10 rounded-2xl p-4 shadow-sm">
                   <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="material-symbols-outlined text-sm text-primary" aria-hidden="true">trending_up</span>
+                    <TrendingUp className="w-3.5 h-3.5 text-primary" />
                     <span className="text-[10px] text-gray-300 font-bold uppercase tracking-wider">Avg Conversion</span>
                   </div>
                   <div className="text-2xl font-black text-white font-technical">14.8%</div>
@@ -159,7 +189,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
                 <div className="bg-[#121212] border border-emerald-500/25 rounded-2xl p-4 shadow-sm">
                   <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="material-symbols-outlined text-sm text-emerald-400" aria-hidden="true">bolt</span>
+                    <Zap className="w-3.5 h-3.5 text-emerald-400" />
                     <span className="text-[10px] text-emerald-400 font-bold uppercase tracking-wider">Daily Payouts</span>
                   </div>
                   <div className="text-2xl font-black text-emerald-400 font-technical">Instant</div>
@@ -167,7 +197,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
                 <div className="bg-[#121212] border border-white/10 rounded-2xl p-4 shadow-sm">
                   <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="material-symbols-outlined text-sm text-blue-400" aria-hidden="true">schedule</span>
+                    <Clock className="w-3.5 h-3.5 text-blue-400" />
                     <span className="text-[10px] text-gray-300 font-bold uppercase tracking-wider">Cookie Life</span>
                   </div>
                   <div className="text-2xl font-black text-white font-technical">90 Days</div>
@@ -175,7 +205,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
                 <div className="bg-[#121212] border border-primary/25 rounded-2xl p-4 shadow-sm">
                   <div className="flex items-center gap-1.5 mb-1.5">
-                    <span className="material-symbols-outlined text-sm text-primary" aria-hidden="true">payments</span>
+                    <DollarSign className="w-3.5 h-3.5 text-primary" />
                     <span className="text-[10px] text-gray-300 font-bold uppercase tracking-wider">Cut Per Sale</span>
                   </div>
                   <div className="text-2xl font-black text-primary font-technical">$10–$17.50</div>
@@ -212,7 +242,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-3.5">
                         <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/30 text-primary shadow-[0_0_15px_rgba(204,255,0,0.15)]">
-                          <span className="material-symbols-outlined text-2xl" aria-hidden="true">account_balance_wallet</span>
+                          <Wallet className="w-6 h-6" />
                         </div>
                         <div>
                           <div className="text-[10px] text-gray-300 font-bold uppercase tracking-widest mb-0.5">Total Paid Out</div>
@@ -270,9 +300,11 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                       onClick={copySampleLink}
                       className="px-3.5 py-1.5 bg-primary text-dark rounded-lg text-xs font-black transition-transform shrink-0 flex items-center gap-1 shadow-[0_0_15px_rgba(204,255,0,0.3)] hover:scale-105 active:scale-95 cursor-pointer min-h-[36px]"
                     >
-                      <span className="material-symbols-outlined text-sm" aria-hidden="true">
-                        {copiedLink ? "check" : "content_copy"}
-                      </span>
+                      {copiedLink ? (
+                        <Check className="w-3.5 h-3.5" />
+                      ) : (
+                        <Copy className="w-3.5 h-3.5" />
+                      )}
                       <span>{copiedLink ? "Copied!" : "Copy Link"}</span>
                     </button>
                   </div>
@@ -369,7 +401,10 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               
               <div className="w-full md:w-auto bg-[#161616] border border-white/10 rounded-2xl p-4 text-left md:text-right shadow-sm">
                 <div className="flex items-center gap-2 justify-start md:justify-end mb-1">
-                  <span className="material-symbols-outlined text-primary text-sm" aria-hidden="true">{currentTier.icon}</span>
+                  {(() => {
+                    const TierIcon = currentTier.icon;
+                    return <TierIcon className="w-4 h-4 text-primary" />;
+                  })()}
                   <span className={`text-xs font-black px-2.5 py-0.5 rounded-md border ${currentTier.badgeBg}`}>
                     {currentTier.badge}
                   </span>
@@ -434,14 +469,14 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
 
               <div className="p-7 rounded-2xl bg-[#141414] border-2 border-primary text-center relative overflow-hidden shadow-[0_0_30px_rgba(204,255,0,0.15)] flex flex-col justify-center">
                 <div className="text-xs font-black text-primary uppercase tracking-widest mb-2 flex items-center justify-center gap-1.5">
-                  <span className="material-symbols-outlined text-sm" aria-hidden="true">stars</span>
+                  <Sparkles className="w-4 h-4 text-primary" />
                   <span>ESTIMATED MONTHLY PAYOUT</span>
                 </div>
                 <div className="text-4xl sm:text-5xl font-black text-primary font-technical drop-shadow-[0_0_15px_rgba(204,255,0,0.35)]">
                   ${monthlyEarnings}
                 </div>
                 <div className="text-xs text-emerald-400 font-bold mt-2 flex items-center justify-center gap-1">
-                  <span className="material-symbols-outlined text-sm" aria-hidden="true">payments</span>
+                  <DollarSign className="w-4 h-4 text-emerald-400" />
                   <span>Instant Daily Payouts (Crypto/PayPal)</span>
                 </div>
               </div>
@@ -461,7 +496,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
             {/* Formula Breakdown Bar */}
             <div className="p-4 rounded-xl bg-white/[0.03] border border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-300">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-base" aria-hidden="true">functions</span>
+                <Percent className="w-4 h-4 text-primary" />
                 <span>
                   <strong>Formula:</strong> {referrals} Sales × ${priceTier}.00 × {commissionPercentage}% Commission = <span className="text-primary font-bold font-technical">${monthlyEarnings} / Month</span>
                 </span>
@@ -473,7 +508,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 className="text-primary hover:underline font-bold flex items-center gap-1 shrink-0 cursor-pointer min-h-[44px]"
               >
                 <span>Lock In Your 50% Rate</span>
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
 
@@ -506,7 +541,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <div>
                 <div className="flex items-center justify-between mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 group-hover:bg-pink-500 group-hover:text-black transition-colors">
-                    <span className="material-symbols-outlined text-2xl" aria-hidden="true">movie</span>
+                    <Video className="w-6 h-6" />
                   </div>
                   <span className="text-[10px] font-black uppercase tracking-wider bg-pink-500/10 text-pink-400 border border-pink-500/20 px-3 py-1 rounded-md">
                     SHORT-FORM
@@ -518,22 +553,22 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </p>
                 <ul className="space-y-2.5 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-pink-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-pink-400 shrink-0" />
                     <span>Custom vanity promo code</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-pink-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-pink-400 shrink-0" />
                     <span>Viral hook &amp; script templates</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-pink-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-pink-400 shrink-0" />
                     <span>Est. Yield: $850–$2,400/mo</span>
                   </li>
                 </ul>
               </div>
               <div className="text-xs font-bold text-pink-400 flex items-center gap-1 border-t border-white/5 pt-4">
                 <span>Instant Daily Payouts</span>
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                <ArrowRight className="w-4 h-4" />
               </div>
             </div>
 
@@ -542,7 +577,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <div>
                 <div className="flex items-center justify-between mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-red-500/10 border border-red-500/20 flex items-center justify-center text-red-400 group-hover:bg-red-500 group-hover:text-black transition-colors">
-                    <span className="material-symbols-outlined text-2xl" aria-hidden="true">video_library</span>
+                    <Video className="w-6 h-6" />
                   </div>
                   <span className="text-[10px] font-black uppercase tracking-wider bg-red-500/10 text-red-400 border border-red-500/20 px-3 py-1 rounded-md">
                     LONG-FORM
@@ -554,22 +589,22 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </p>
                 <ul className="space-y-2.5 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-red-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>Free review bot license</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-red-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>Upfront sponsorship bonuses</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-red-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-red-400 shrink-0" />
                     <span>Est. Yield: $1,800–$6,500/mo</span>
                   </li>
                 </ul>
               </div>
               <div className="text-xs font-bold text-red-400 flex items-center gap-1 border-t border-white/5 pt-4">
                 <span>Free Bot License + Sponsorship</span>
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                <ArrowRight className="w-4 h-4" />
               </div>
             </div>
 
@@ -578,7 +613,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <div>
                 <div className="flex items-center justify-between mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 group-hover:bg-purple-500 group-hover:text-black transition-colors">
-                    <span className="material-symbols-outlined text-2xl" aria-hidden="true">live_tv</span>
+                    <Tv className="w-6 h-6" />
                   </div>
                   <span className="text-[10px] font-black uppercase tracking-wider bg-purple-500/10 text-purple-400 border border-purple-500/20 px-3 py-1 rounded-md">
                     STREAMERS
@@ -590,22 +625,22 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </p>
                 <ul className="space-y-2.5 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-purple-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
                     <span>Automated stream chat triggers</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-purple-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
                     <span>Subscriber exclusive discount</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-purple-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-purple-400 shrink-0" />
                     <span>Est. Yield: $1,200–$4,100/mo</span>
                   </li>
                 </ul>
               </div>
               <div className="text-xs font-bold text-purple-400 flex items-center gap-1 border-t border-white/5 pt-4">
                 <span>Chatbot &amp; Sub Perks</span>
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                <ArrowRight className="w-4 h-4" />
               </div>
             </div>
 
@@ -614,7 +649,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <div>
                 <div className="flex items-center justify-between mb-5">
                   <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-500 group-hover:text-black transition-colors">
-                    <span className="material-symbols-outlined text-2xl" aria-hidden="true">groups</span>
+                    <Users className="w-6 h-6" />
                   </div>
                   <span className="text-[10px] font-black uppercase tracking-wider bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-3 py-1 rounded-md">
                     COMMUNITIES
@@ -626,22 +661,22 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 </p>
                 <ul className="space-y-2.5 mb-6 text-xs text-gray-300">
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-indigo-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
                     <span>Automated signal webhooks</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-indigo-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
                     <span>Bulk member discount tiers</span>
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-indigo-400 text-sm" aria-hidden="true">check_circle</span>
+                    <CheckCircle2 className="w-4 h-4 text-indigo-400 shrink-0" />
                     <span>Est. Yield: $3,200–$11,000+/mo</span>
                   </li>
                 </ul>
               </div>
               <div className="text-xs font-bold text-indigo-400 flex items-center gap-1 border-t border-white/5 pt-4">
                 <span>Community Webhook Rates</span>
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                <ArrowRight className="w-4 h-4" />
               </div>
             </div>
 
@@ -690,7 +725,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               className="px-7 py-4 bg-primary text-dark font-black text-xs uppercase tracking-wider rounded-xl hover:scale-105 transition-transform shadow-[0_0_20px_rgba(204,255,0,0.3)] shrink-0 flex items-center gap-2 whitespace-nowrap cursor-pointer min-h-[48px]"
             >
               <span>Apply for VIP Creator Deal</span>
-              <span className="material-symbols-outlined text-sm" aria-hidden="true">rocket_launch</span>
+              <Rocket className="w-4 h-4" />
             </Link>
           </div>
 
@@ -718,14 +753,14 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
           {/* Card 1: Local Chrome Extension */}
           <div className="md:col-span-2 bg-[#111111] border border-white/10 rounded-[2.5rem] p-8 sm:p-10 relative overflow-hidden group hover:border-primary/40 transition-colors shadow-md">
             <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/25 flex items-center justify-center text-primary mb-6">
-              <span className="material-symbols-outlined text-3xl" aria-hidden="true">verified_user</span>
+              <ShieldCheck className="w-7 h-7" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Zero Password Sharing (100% Local Browser Session)</h3>
             <p className="text-gray-300 text-sm leading-relaxed max-w-2xl font-medium">
               Unlike cloud bots (FutEarn, FUT Hunter) that demand user EA login credentials, our local Chrome extension operates directly in the user&apos;s active browser session. Instant user trust translates into immediate purchases and zero refund chargebacks.
             </p>
             <div className="mt-8 inline-flex items-center gap-2 text-xs font-bold text-primary bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-lg">
-              <span className="material-symbols-outlined text-sm" aria-hidden="true">lock</span>
+              <Lock className="w-3.5 h-3.5" />
               <span>100% Account Safety = Unmatched Conversion Rate</span>
             </div>
           </div>
@@ -733,7 +768,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
           {/* Card 2: 20ms Market Dominance */}
           <div className="bg-[#111111] border border-white/10 rounded-[2.5rem] p-8 sm:p-10 group hover:border-emerald-400/40 transition-colors shadow-md">
             <div className="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/25 flex items-center justify-center text-emerald-400 mb-6">
-              <span className="material-symbols-outlined text-3xl" aria-hidden="true">speed</span>
+              <Gauge className="w-7 h-7" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Sub-20ms FC 26 &amp; FC 27 Sniping</h3>
             <p className="text-gray-300 text-sm leading-relaxed font-medium">
@@ -744,7 +779,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
           {/* Card 3: AI SBC Solver */}
           <div className="bg-[#111111] border border-white/10 rounded-[2.5rem] p-8 sm:p-10 group hover:border-primary/40 transition-colors shadow-md">
             <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/25 flex items-center justify-center text-primary mb-6">
-              <span className="material-symbols-outlined text-3xl" aria-hidden="true">smart_toy</span>
+              <Bot className="w-7 h-7" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">AI SBC Solver Included</h3>
             <p className="text-gray-300 text-sm leading-relaxed font-medium">
@@ -755,7 +790,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
           {/* Card 4: Anti-Ban Algorithms */}
           <div className="md:col-span-2 bg-[#111111] border border-white/10 rounded-[2.5rem] p-8 sm:p-10 group hover:border-blue-500/40 transition-colors shadow-md">
             <div className="w-14 h-14 rounded-2xl bg-blue-500/10 border border-blue-500/25 flex items-center justify-center text-blue-400 mb-6">
-              <span className="material-symbols-outlined text-3xl" aria-hidden="true">shield</span>
+              <Shield className="w-7 h-7" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Anti-Ban Behavioral Jitter Architecture</h3>
             <p className="text-gray-300 text-sm leading-relaxed max-w-2xl font-medium">
@@ -865,9 +900,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 border border-primary/25 px-3.5 py-1.5 rounded-xl">
                 STEP 01
               </span>
-              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-3xl" aria-hidden="true">
-                person_add
-              </span>
+              <UserPlus className="w-7 h-7 text-gray-400 group-hover:text-primary transition-colors" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Join Partner Network</h3>
             <p className="text-gray-300 text-sm leading-relaxed font-medium">
@@ -880,9 +913,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 border border-primary/25 px-3.5 py-1.5 rounded-xl">
                 STEP 02
               </span>
-              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-3xl" aria-hidden="true">
-                share
-              </span>
+              <Share2 className="w-7 h-7 text-gray-400 group-hover:text-primary transition-colors" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Share With Your Audience</h3>
             <p className="text-gray-300 text-sm leading-relaxed font-medium">
@@ -895,9 +926,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
               <span className="text-xs font-black uppercase tracking-widest text-primary bg-primary/10 border border-primary/25 px-3.5 py-1.5 rounded-xl">
                 STEP 03
               </span>
-              <span className="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors text-3xl" aria-hidden="true">
-                account_balance_wallet
-              </span>
+              <Wallet className="w-7 h-7 text-gray-400 group-hover:text-primary transition-colors" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-3">Collect 50% Daily</h3>
             <p className="text-gray-300 text-sm leading-relaxed font-medium">
@@ -935,9 +964,11 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                   className="w-full p-6 text-left flex justify-between items-center gap-4 hover:bg-white/[0.02] transition-colors cursor-pointer min-h-[48px]"
                 >
                   <span className="font-bold text-white text-sm sm:text-base">{faq.q}</span>
-                  <span className="material-symbols-outlined text-primary text-xl shrink-0" aria-hidden="true">
-                    {openFaq === index ? "remove" : "add"}
-                  </span>
+                  {openFaq === index ? (
+                    <Minus className="w-5 h-5 text-primary shrink-0" />
+                  ) : (
+                    <Plus className="w-5 h-5 text-primary shrink-0" />
+                  )}
                 </button>
                 {openFaq === index && (
                   <div id={`affiliate-faq-answer-${index}`} className="px-6 pb-6 text-xs sm:text-sm text-gray-300 border-t border-white/5 pt-4 leading-relaxed font-medium">
@@ -976,7 +1007,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 className="w-full sm:w-auto px-10 py-4 bg-primary text-dark font-black text-base uppercase tracking-wider rounded-xl hover:scale-105 transition-transform shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2 cursor-pointer min-h-[48px]"
               >
                 <span>Apply as a Creator / Partner</span>
-                <span className="material-symbols-outlined text-xl" aria-hidden="true">rocket_launch</span>
+                <Rocket className="w-5 h-5" />
               </Link>
               <Link
                 href="https://discord.gg/Rkb9nF6WG6"
@@ -985,7 +1016,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                 className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/15 text-white font-bold text-base uppercase tracking-wider rounded-xl hover:bg-white/10 transition-colors flex items-center justify-center gap-2 cursor-pointer min-h-[48px]"
               >
                 <span>Contact Affiliate Manager</span>
-                <span className="material-symbols-outlined text-xl" aria-hidden="true">forum</span>
+                <MessageSquare className="w-5 h-5" />
               </Link>
             </div>
           </div>

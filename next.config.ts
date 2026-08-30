@@ -21,6 +21,7 @@ const nextConfig: NextConfig = {
       },
     ],
     formats: ['image/avif', 'image/webp'],
+    qualities: [75, 85],
   },
   turbopack: {
     root: __dirname,

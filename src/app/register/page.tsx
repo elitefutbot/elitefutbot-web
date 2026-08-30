@@ -161,7 +161,7 @@ export default function RegisterPage() {
 
             <div>
               <label className="block font-mono text-[10px] text-primary/80 font-bold uppercase tracking-widest mb-2">
-                License Key <span className="normal-case text-gray-500 font-normal">(optional)</span>
+                License Key <span className="normal-case text-gray-300 font-normal">(optional)</span>
               </label>
               <input
                 name="licenseKey"
@@ -182,7 +182,7 @@ export default function RegisterPage() {
 
             <div>
               <label className="block font-mono text-[10px] text-primary/80 font-bold uppercase tracking-widest mb-2">
-                Referral ID <span className="normal-case text-gray-500 font-normal">(optional)</span>
+                Referral ID <span className="normal-case text-gray-300 font-normal">(optional)</span>
               </label>
               <input
                 name="referralCode"

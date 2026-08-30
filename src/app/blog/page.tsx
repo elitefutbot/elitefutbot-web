@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowUpRight, Terminal, BarChart2, TrendingUp, Shield, Radio } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Tactical Intel Hub – FC 26 Trading Blog & News",
@@ -59,7 +60,7 @@ export default function BlogHubPage() {
                 <h2 className="font-headline text-3xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Mastering the 59th Minute: High-Frequency Sniping Protocol</h2>
                 <p className="text-slate-400 text-sm font-medium leading-relaxed mb-8 font-body">Algorithm patterns and predictive price drop anticipation for v4.2 systems.</p>
                 <Link className="pulse-lime inline-flex items-center gap-4 text-white font-headline text-xs font-black uppercase tracking-[0.2em]" href="/article/tactical-intel">
-                  Initialize Protocol <span className="material-symbols-outlined text-sm">north_east</span>
+                  Initialize Protocol <ArrowUpRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>
@@ -73,7 +74,7 @@ export default function BlogHubPage() {
               <h3 className="font-headline text-xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Antisurge Protection: Stealth Deployment</h3>
               <p className="text-slate-400 text-xs font-medium leading-relaxed mb-8 font-body">Human-imitation algorithms and 20ms response latency benchmarks.</p>
               <Link className="pulse-lime text-white font-headline text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2" href="/article/tactical-intel">
-                Access Data <span className="material-symbols-outlined text-xs">terminal</span>
+                Access Data <Terminal className="w-3.5 h-3.5" />
               </Link>
             </article>
             {/* Card 2 */}
@@ -82,7 +83,7 @@ export default function BlogHubPage() {
               <h3 className="font-headline text-xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Post-TOTY Recovery: Profit Heatmaps</h3>
               <p className="text-slate-400 text-xs font-medium leading-relaxed mb-8 font-body">Liquidating high-tier fodder based on historical rebound telemetry.</p>
               <Link className="pulse-lime text-white font-headline text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2" href="/article/tactical-intel">
-                Access Data <span className="material-symbols-outlined text-xs">analytics</span>
+                Access Data <BarChart2 className="w-3.5 h-3.5" />
               </Link>
             </article>
             {/* Card 3 */}
@@ -91,7 +92,7 @@ export default function BlogHubPage() {
               <h3 className="font-headline text-xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Bronze Method 2.0: Revised Logic</h3>
               <p className="text-slate-400 text-xs font-medium leading-relaxed mb-8 font-body">Volume-based accumulation strategies for entry-level capital building.</p>
               <Link className="pulse-lime text-white font-headline text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2" href="/article/tactical-intel">
-                Access Data <span className="material-symbols-outlined text-xs">data_exploration</span>
+                Access Data <TrendingUp className="w-3.5 h-3.5" />
               </Link>
             </article>
             {/* Card 4 */}
@@ -100,7 +101,7 @@ export default function BlogHubPage() {
               <h3 className="font-headline text-xl font-bold tracking-tight mb-4 uppercase leading-tight text-white">Web-App Encryption Security</h3>
               <p className="text-slate-400 text-xs font-medium leading-relaxed mb-8 font-body">Proxy rotation cycles and session isolation for console security.</p>
               <Link className="pulse-lime text-white font-headline text-[10px] font-black uppercase tracking-[0.2em] flex items-center gap-2" href="/article/tactical-intel">
-                Access Data <span className="material-symbols-outlined text-xs">security</span>
+                Access Data <Shield className="w-3.5 h-3.5" />
               </Link>
             </article>
           </div>
@@ -112,7 +113,7 @@ export default function BlogHubPage() {
           <div className="bg-primary p-8 flex flex-col justify-between min-h-[400px]">
             <div>
               <div className="flex items-center gap-2 mb-8">
-                <span className="material-symbols-outlined text-black font-bold">radar</span>
+                <Radio className="w-4 h-4 text-black font-bold" />
                 <span className="font-headline text-[10px] font-black uppercase tracking-widest text-black">Live Signal Cluster</span>
               </div>
               <h3 className="font-headline text-4xl font-black uppercase leading-none tracking-tighter text-black mb-6">

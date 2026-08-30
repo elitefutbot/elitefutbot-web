@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
+import { ArrowRight, PlayCircle, Zap, ShieldCheck, Puzzle, Compass, Layout, Sliders, Sparkles, Tag, Filter, Cpu, Shield, TrendingUp, HelpCircle, Coins } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "FC 27 FUT Snipe Bot & EA FC 27 Autobuyer | Elite FUT Bot",
@@ -168,10 +169,10 @@ export default function FC27FutSnipeBotPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
             <Link className="px-8 py-4 bg-primary text-dark font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2 w-full sm:w-auto" href="https://discord.gg/Rkb9nF6WG6">
               Get Free Beta Access
-              <span className="material-symbols-outlined text-xl">arrow_forward</span>
+              <ArrowRight className="w-5 h-5" />
             </Link>
             <a className="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm w-full sm:w-auto" href="#demo">
-              <span className="material-symbols-outlined text-xl text-primary">play_circle</span>
+              <PlayCircle className="w-5 h-5 text-primary" />
               Watch Bot Demo
             </a>
           </div>
@@ -179,17 +180,17 @@ export default function FC27FutSnipeBotPage() {
           {/* Quick Stats Bar */}
           <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-10 text-xs sm:text-sm text-gray-400 font-medium border-y border-white/5 py-4 max-w-3xl mx-auto mb-12">
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-lg">bolt</span>
+              <Zap className="w-4 h-4 text-primary" />
               Sub-20ms Search Speed
             </div>
             <div className="hidden sm:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-lg">verified_user</span>
+              <ShieldCheck className="w-4 h-4 text-primary" />
               100% Local &amp; Safe
             </div>
             <div className="hidden sm:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-lg">extension</span>
+              <Puzzle className="w-4 h-4 text-primary" />
               Chrome Side Panel UI
             </div>
           </div>
@@ -228,7 +229,7 @@ export default function FC27FutSnipeBotPage() {
           
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/25 px-3.5 py-1.5 rounded-full text-xs font-bold text-primary mb-4 shadow-[0_0_15px_rgba(204,255,0,0.15)]">
-              <span className="material-symbols-outlined text-sm">route</span>
+              <Compass className="w-3.5 h-3.5" />
               SIMPLE 4-STEP PROCESS
             </div>
             <h2 className="text-3xl md:text-5xl font-black text-white mb-4">
@@ -251,7 +252,7 @@ export default function FC27FutSnipeBotPage() {
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-3xl font-black text-primary font-technical tracking-tight">01</span>
                     <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-dark transition-all duration-300 shadow-md">
-                      <span className="material-symbols-outlined text-2xl">extension</span>
+                      <Puzzle className="w-6 h-6" />
                     </div>
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Install Extension</h3>
@@ -271,7 +272,7 @@ export default function FC27FutSnipeBotPage() {
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-3xl font-black text-primary font-technical tracking-tight">02</span>
                     <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-dark transition-all duration-300 shadow-md">
-                      <span className="material-symbols-outlined text-2xl">view_sidebar</span>
+                      <Layout className="w-6 h-6" />
                     </div>
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Open Side Panel</h3>
@@ -291,7 +292,7 @@ export default function FC27FutSnipeBotPage() {
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-3xl font-black text-primary font-technical tracking-tight">03</span>
                     <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-dark transition-all duration-300 shadow-md">
-                      <span className="material-symbols-outlined text-2xl">tune</span>
+                      <Sliders className="w-6 h-6" />
                     </div>
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Set Your Targets</h3>
@@ -311,7 +312,7 @@ export default function FC27FutSnipeBotPage() {
                   <div className="flex items-center justify-between mb-6">
                     <span className="text-3xl font-black text-primary font-technical tracking-tight">04</span>
                     <div className="w-12 h-12 rounded-2xl bg-primary/20 border border-primary/40 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-dark transition-all duration-300 shadow-lg">
-                      <span className="material-symbols-outlined text-2xl">bolt</span>
+                      <Zap className="w-6 h-6" />
                     </div>
                   </div>
                   <h3 className="text-lg font-bold text-white mb-2">Let It Snipe</h3>
@@ -336,7 +337,7 @@ export default function FC27FutSnipeBotPage() {
           
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full text-xs font-bold text-primary mb-3">
-              <span className="material-symbols-outlined text-sm">auto_fix_high</span>
+              <Sparkles className="w-3.5 h-3.5" />
               BUILT FOR FC 27
             </div>
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
@@ -355,7 +356,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   01
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">bolt</span>
+                <Zap className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Auto Snipe (Sub-20ms)</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -369,7 +370,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   02
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">sell</span>
+                <Tag className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Auto List</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -383,7 +384,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   03
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">filter_alt</span>
+                <Filter className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Smart Market Filters</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -397,7 +398,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   04
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">api</span>
+                <Cpu className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Futbin Live Prices</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -411,7 +412,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/20 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   05
                 </div>
-                <span className="material-symbols-outlined text-primary text-2xl">security</span>
+                <Shield className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Anti-Detection Engine</h3>
               <p className="text-gray-300 text-xs sm:text-sm leading-relaxed">
@@ -425,7 +426,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   06
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">view_sidebar</span>
+                <Layout className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Side Panel UI</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -439,7 +440,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   07
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">insights</span>
+                <TrendingUp className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Live Stats Sync</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -453,7 +454,7 @@ export default function FC27FutSnipeBotPage() {
                 <div className="w-10 h-10 rounded-xl bg-primary/10 text-primary flex items-center justify-center font-bold text-sm group-hover:bg-primary group-hover:text-dark transition-all">
                   08
                 </div>
-                <span className="material-symbols-outlined text-gray-500 group-hover:text-primary text-2xl transition-colors">verified_user</span>
+                <ShieldCheck className="w-6 h-6 text-gray-500 group-hover:text-primary transition-colors" />
               </div>
               <h3 className="text-lg font-bold text-white mb-2">Secure Local Login</h3>
               <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
@@ -484,7 +485,7 @@ export default function FC27FutSnipeBotPage() {
             <div className="mt-8 flex justify-center">
               <Link className="px-8 py-3.5 bg-primary text-dark font-black rounded-xl hover:bg-white hover:shadow-[0_0_20px_rgba(204,255,0,0.3)] transition-all flex items-center gap-2" href="https://discord.gg/Rkb9nF6WG6">
                 Join Discord for Free Access
-                <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -502,7 +503,7 @@ export default function FC27FutSnipeBotPage() {
           <div className="space-y-3">
             <div className="glass-card p-5 rounded-xl border border-white/10 hover:border-primary/30 transition-all">
               <h3 className="font-bold text-white mb-1.5 flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-lg">help</span>
+                <HelpCircle className="w-5 h-5 text-primary shrink-0" />
                 How does the FUT Snipe Bot for FC 27 work?
               </h3>
               <p className="text-gray-400 text-xs sm:text-sm pl-7">
@@ -512,7 +513,7 @@ export default function FC27FutSnipeBotPage() {
 
             <div className="glass-card p-5 rounded-xl border border-white/10 hover:border-primary/30 transition-all">
               <h3 className="font-bold text-white mb-1.5 flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-lg">shield</span>
+                <Shield className="w-5 h-5 text-primary shrink-0" />
                 Is this FC 27 Autobuyer safe to use?
               </h3>
               <p className="text-gray-400 text-xs sm:text-sm pl-7">
@@ -522,7 +523,7 @@ export default function FC27FutSnipeBotPage() {
 
             <div className="glass-card p-5 rounded-xl border border-white/10 hover:border-primary/30 transition-all">
               <h3 className="font-bold text-white mb-1.5 flex items-center gap-2">
-                <span className="material-symbols-outlined text-primary text-lg">currency_exchange</span>
+                <Coins className="w-5 h-5 text-primary shrink-0" />
                 Does it work with Futbin market prices?
               </h3>
               <p className="text-gray-400 text-xs sm:text-sm pl-7">

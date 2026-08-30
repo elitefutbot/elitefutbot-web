@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Sparkles, ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
@@ -183,7 +184,7 @@ export default function SBCSolutionsDatabasePage() {
           <div className="p-6 rounded-2xl bg-gradient-to-r from-primary/15 via-card to-card border border-primary/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(204,255,0,0.1)]">
             <div className="space-y-1 text-left">
               <div className="flex items-center gap-2 text-xs font-black text-primary uppercase tracking-wider">
-                <span className="material-symbols-outlined text-sm">auto_awesome</span>
+                <Sparkles className="w-4 h-4 text-primary" />
                 <span>AI SBC Solver Releasing Soon</span>
               </div>
               <h2 className="text-xl font-headline font-black text-white">
@@ -200,7 +201,7 @@ export default function SBCSolutionsDatabasePage() {
               className="shrink-0 px-6 py-3 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(204,255,0,0.2)]"
             >
               <span>Join Discord For Free AI Access</span>
-              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
@@ -261,7 +262,7 @@ export default function SBCSolutionsDatabasePage() {
                   className="w-full py-3 rounded-xl bg-white/5 hover:bg-primary hover:text-dark text-white font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5 transition-all mt-4 border border-white/10 hover:border-primary"
                 >
                   <span>Solve With AI (Free Beta)</span>
-                  <span className="material-symbols-outlined text-xs">arrow_forward</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             ))}
@@ -281,7 +282,7 @@ export default function SBCSolutionsDatabasePage() {
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary text-dark font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all"
             >
               Join Official Discord HQ
-              <span className="material-symbols-outlined text-sm">open_in_new</span>
+              <ExternalLink className="w-4 h-4" />
             </Link>
           </div>
 

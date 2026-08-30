@@ -1,5 +1,29 @@
 import Link from "next/link";
 import Image from "next/image";
+import {
+  ArrowRight,
+  PlayCircle,
+  ShieldCheck,
+  Puzzle,
+  Zap,
+  Tag,
+  Cpu,
+  Shield,
+  Filter,
+  Award,
+  Sparkles,
+  Calculator,
+  TrendingUp,
+  CheckCircle2,
+  GraduationCap,
+  CalendarCheck,
+  XCircle,
+  X,
+  Flame,
+  Clock,
+  HelpCircle,
+  ChevronDown,
+} from "lucide-react";
 
 // Placeholder for the "$10 price increase every 10 sales" plan — not yet wired
 // to real sale counts from Dodo Payments. Update these numbers manually until
@@ -143,22 +167,22 @@ export default function Home() {
               <div className="absolute inset-0 w-full h-full bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
               <span className="relative flex items-center gap-2">
                 View Pricing Plans
-                <span className="material-symbols-outlined text-xl">arrow_forward</span>
+                <ArrowRight className="w-5 h-5" />
               </span>
             </Link>
             <Link className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm" href="#features">
-              <span className="material-symbols-outlined text-xl">play_circle</span>
+              <PlayCircle className="w-5 h-5" />
               Watch Demo
             </Link>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 font-medium border-t border-white/5 pt-6 sm:pt-8 max-w-4xl mx-auto">
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-lg">verified_user</span>
+              <ShieldCheck className="w-4.5 h-4.5 text-primary" />
               Human++ Anti-Ban Technology · 0 Bans To Date
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2">
-              <span className="material-symbols-outlined text-primary text-lg">extension</span>
+              <Puzzle className="w-4.5 h-4.5 text-primary" />
               Chrome Extension (100% Local)
             </div>
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
@@ -244,7 +268,7 @@ export default function Home() {
             {/* Feature Cards */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">bolt</span>
+                <Zap className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Snipe Automatically</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Our engine reacts in milliseconds, executing snipes faster than any human could possibly dream of.</p>
@@ -252,7 +276,7 @@ export default function Home() {
             {/* List Automatically */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">sell</span>
+                <Tag className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">List Automatically</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Instant listing after sniping. Maximize your coin flow with immediate turnover of your inventory.</p>
@@ -260,7 +284,7 @@ export default function Home() {
             {/* Futbin Integration */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">api</span>
+                <Cpu className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Futbin Integration</h3>
               <p className="text-gray-400 text-sm leading-relaxed">See real-time market prices directly in the Web App interface. Never miss a profitable deal again.</p>
@@ -268,7 +292,7 @@ export default function Home() {
             {/* Stealth Technology */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 border-primary/30 shadow-[0_0_20px_rgba(204,255,0,0.05)] ring-2 ring-primary/50 bg-primary/[0.03]">
               <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">security</span>
+                <Shield className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Stealth &amp; Security</h3>
               <p className="text-gray-400 text-sm leading-relaxed font-medium">
@@ -278,7 +302,7 @@ export default function Home() {
             {/* Multi-Filter Search */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">filter_alt</span>
+                <Filter className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Multi-Filter Search</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Run multiple search queries simultaneously. Cast a wider net across the transfer market for maximum profit.</p>
@@ -286,7 +310,7 @@ export default function Home() {
             {/* Snipe by Rating */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">military_tech</span>
+                <Award className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Snipe by Rating</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Target specific player ratings with surgical precision. Perfect for high-volume SBC fodder trading.</p>
@@ -294,7 +318,7 @@ export default function Home() {
             {/* Auto Rarity Filler */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">auto_fix_high</span>
+                <Sparkles className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Auto Rarity Filler</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Smart detection automatically identifies and sets card rarity filters, saving you time and preventing errors.</p>
@@ -302,7 +326,7 @@ export default function Home() {
             {/* Snipe Price Calculator */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">calculate</span>
+                <Calculator className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Snipe Price Calculator</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Automated optimal price setting ensures you always buy at a price that guarantees profit after tax.</p>
@@ -310,7 +334,7 @@ export default function Home() {
             {/* Profit Calculator */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">insights</span>
+                <TrendingUp className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Profit Calculator</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Track your earnings in real-time. See exactly how many coins you&apos;ve generated in your session.</p>
@@ -318,7 +342,7 @@ export default function Home() {
             {/* Safe Sniping */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">verified</span>
+                <ShieldCheck className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Safe Sniping</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Comprehensive coin protection features designed to keep your club&apos;s balance safe while you automate.</p>
@@ -326,7 +350,7 @@ export default function Home() {
             {/* Video Tutorials */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">play_lesson</span>
+                <GraduationCap className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Video Tutorials</h3>
               <p className="text-gray-400 text-sm leading-relaxed">Master every tool with in-depth video guides. We walk you through every feature and setting.</p>
@@ -334,7 +358,7 @@ export default function Home() {
             {/* One Time Purchase */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <span className="material-symbols-outlined text-primary group-hover:text-black text-2xl">event_available</span>
+                <CalendarCheck className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">One Time Purchase</h3>
               <p className="text-gray-400 text-sm leading-relaxed">365 days of full access. Your license remains valid even across game version updates during that year.</p>
@@ -369,46 +393,46 @@ export default function Home() {
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-6 px-8 font-bold text-white">20ms Search Speed</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <span className="material-symbols-outlined text-primary text-3xl font-black">check_circle</span>
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
                     <td className="py-6 px-8 text-center">
-                      <span className="material-symbols-outlined text-red-500/50 text-3xl">cancel</span>
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
                     </td>
                   </tr>
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-6 px-8 font-bold text-white">AI SBC Solver</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <span className="material-symbols-outlined text-primary text-3xl font-black">check_circle</span>
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
                     <td className="py-6 px-8 text-center">
-                      <span className="material-symbols-outlined text-red-500/50 text-3xl">cancel</span>
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
                     </td>
                   </tr>
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-6 px-8 font-bold text-white">Local WebApp Integration</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <span className="material-symbols-outlined text-primary text-3xl font-black">check_circle</span>
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
                     <td className="py-6 px-8 text-center">
-                      <span className="material-symbols-outlined text-red-500/50 text-3xl">cancel</span>
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
                     </td>
                   </tr>
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-6 px-8 font-bold text-white">Zero Password Sharing (100% Local)</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <span className="material-symbols-outlined text-primary text-3xl font-black">check_circle</span>
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
                     <td className="py-6 px-8 text-center">
-                      <span className="material-symbols-outlined text-red-500/50 text-3xl">cancel</span>
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
                     </td>
                   </tr>
                   <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-6 px-8 font-bold text-white">Anti-Ban Behavioral Tech</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <span className="material-symbols-outlined text-primary text-3xl font-black">check_circle</span>
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
                     <td className="py-6 px-8 text-center">
-                      <span className="material-symbols-outlined text-red-500/50 text-3xl">cancel</span>
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
                     </td>
                   </tr>
                 </tbody>
@@ -436,19 +460,19 @@ export default function Home() {
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Standard Filters
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   1 Active Account
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Discord Community Support
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-400">
-                  <span className="material-symbols-outlined text-base">close</span>
+                  <X className="w-4 h-4 text-gray-400 shrink-0" />
                   Multi-Tab Sniping
                 </li>
               </ul>
@@ -469,13 +493,13 @@ export default function Home() {
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
                 <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
-                  <span className="material-symbols-outlined text-base">verified</span>
+                  <CheckCircle2 className="w-4 h-4 shrink-0" />
                   One-Time Payment · 365 Days · FC 26 &amp; FC 27
                 </div>
 
                 <div className="mt-5 rounded-xl border border-amber-400/30 bg-amber-400/[0.06] px-4 py-3.5">
                   <div className="flex items-center gap-2 mb-2.5">
-                    <span className="material-symbols-outlined text-amber-400 text-lg">local_fire_department</span>
+                    <Flame className="w-4 h-4 text-amber-400 shrink-0" />
                     <span className="text-amber-400 font-black text-sm uppercase tracking-wide">
                       {PRICE_TIER.threshold - PRICE_TIER.sold} Spots Left at $19.99
                     </span>
@@ -492,28 +516,28 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-4 relative z-10">
+              <p className="text-[11px] font-bold uppercase tracking-widest text-gray-300 mb-4 relative z-10">
                 What&apos;s included
               </p>
               <ul className="space-y-3.5 mb-8 flex-grow relative z-10 divide-y divide-white/5">
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Advanced Logic
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Free Player Snipe Filters
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Unlimited Multi-Account Support
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Multi-Tab Local Sniping
                 </li>
                 <li className="flex items-start gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                   <span>
                     Human++ Anti-Ban Technology
                     <span className="block text-xs text-gray-400 font-normal mt-0.5">
@@ -522,15 +546,15 @@ export default function Home() {
                   </span>
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Paid-Member Discord Access
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   10M+ Coins Earning Potential
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-amber-400 text-base">schedule</span>
+                  <Clock className="w-4 h-4 text-amber-400 shrink-0" />
                   AI SBC Solver
                   <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
                 </li>
@@ -734,7 +758,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3 py-1 rounded-full text-xs font-bold text-primary mb-4">
-              <span className="material-symbols-outlined text-sm">help_outline</span>
+              <HelpCircle className="w-3.5 h-3.5" />
               FAQ &amp; SEARCH INSIGHTS
             </div>
             <h2 className="text-3xl md:text-5xl font-black mb-4">Frequently Asked <span className="text-primary">Questions</span></h2>
@@ -744,7 +768,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">What makes this the Best FIFA Sniping Bot for FC 26 &amp; FC 27?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Our bot is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds.
@@ -753,7 +777,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Is there an FC 26 &amp; FC 27 Autobuyer feature included?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Yes! We have already optimized our local autobuyer engine for future releases, ensuring your <strong>FC 26 &amp; FC 27 Autobuyer</strong> capabilities are ready on day one directly within your browser extension.
@@ -762,7 +786,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">What is the difference between a FUT Snipe Bot and a FUT Autobuyer?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 A <strong>FUT Snipe Bot</strong> specifically targets undervalued player listings on the EA FC Web App using millisecond filter refreshes (sniping), whereas a <strong>FUT Autobuyer</strong> automates broader trading tasks like mass buying fodder, automatic listing, and continuous market monitoring. Elite FUT SNIPER combines both powerful capabilities into one unified Chrome extension.
@@ -771,7 +795,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Why is a local Chrome Extension safer than cloud-based FIFA sniping bots?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Cloud-based bots require you to upload your EA account credentials and session tokens to external servers, creating massive security and ban risks. Our local <strong>Chrome Extension FIFA Sniping Bot</strong> executes 100% locally inside your active browser session, utilizing stealth behavioral delays and anti-ban jitter algorithms to protect your club.
@@ -780,7 +804,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across <strong>FC 25, FC 26, and upcoming FC 27</strong>. Our team continuously updates search filters and Web App adapters so your <strong>FC 26 &amp; FC 27 Autobuyer</strong> features stay operational on day one of every new season release.
@@ -789,7 +813,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">How does the EA FC 26 &amp; FC 27 SBC Solver work?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Our <strong>EA FC 26 &amp; FC 27 SBC Solver</strong> integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching.
@@ -798,7 +822,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">Is it really a Safe Sniping Bot?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Security is our priority. Since our bot runs locally in your browser instead of on remote cloud servers, you never share passwords or cookies with third parties. We also utilize human-like delays, jitter clicks, and behavioral patterns to ensure account safety.
@@ -807,7 +831,7 @@ export default function Home() {
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
                 <span className="font-bold text-white">How do I claim Free Beta access for the FC 26 &amp; FC 27 Sniping Bot?</span>
-                <span className="material-symbols-outlined text-primary" aria-hidden="true">expand_more</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first <strong>FC 26 &amp; FC 27 Autobuyer</strong> filters.
@@ -827,7 +851,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="/register">
               ACTIVATE YOUR TRIAL
-              <span className="material-symbols-outlined font-black">arrow_forward</span>
+              <ArrowRight className="w-6 h-6" />
             </Link>
           </div>
           <p className="mt-6 text-xs text-gray-400 uppercase tracking-widest font-bold">No credit card required for beta access</p>

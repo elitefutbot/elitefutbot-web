@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { BarChart2 } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "59th Minute Sniping: FC 26 High-Frequency Protocol",
@@ -212,7 +213,7 @@ export default function TacticalIntelArticlePage() {
           <section className="space-y-4">
             <div className="flex items-center justify-between border-b border-outline-variant/10 pb-2">
               <h4 className="font-headline font-bold text-white text-[10px] uppercase tracking-widest">TOP OPS PROFITS</h4>
-              <span className="material-symbols-outlined text-primary text-xs">analytics</span>
+              <BarChart2 className="w-3.5 h-3.5 text-primary" />
             </div>
             <div className="space-y-1">
               <div className="p-3 bg-surface-container flex justify-between items-center group cursor-default">
