@@ -1,6 +1,30 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import {
+  ShieldCheck,
+  Zap,
+  Tag,
+  Cpu,
+  Layers,
+  HelpCircle,
+  Clock,
+  Coins,
+  CheckCircle2,
+  XCircle,
+  AlertTriangle,
+  Sparkles,
+  ArrowRight,
+  MousePointerClick,
+  Check,
+  X,
+  Scale,
+  DollarSign,
+  Users,
+  Server,
+  Smartphone,
+  Flame,
+} from "lucide-react";
 import type { CompetitorData } from "@/data/competitors/types";
 
 const FEATURE_DESCRIPTIONS: Record<string, string> = {
@@ -15,6 +39,7 @@ const FEATURE_DESCRIPTIONS: Record<string, string> = {
   "Billing Method": "How you purchase the software licenses.",
   "Anti-Detection Delay": "Timing randomizers that mimic organic human speed to prevent account bans.",
   "Anti-Ban Protection": "Timing randomizers that mimic organic human speed to prevent account bans.",
+  "Humanization++ Anti-Ban": "Simulates Bézier mouse physics, micro-jitter, and natural click coordinates.",
   "FC 27 Compatibility": "Immediate day-one update support for the latest EA Sports FC 27 Web App.",
   "FC 27 Web App Support": "Immediate day-one update support for the latest EA Sports FC 27 Web App.",
   "FC 27 Support": "Immediate day-one update support for the latest EA Sports FC 27 Web App.",
@@ -31,7 +56,8 @@ const FEATURE_DESCRIPTIONS: Record<string, string> = {
   "Market Investment Guides": "Expert trading tips, gold/meta player buy guides, and market watch filters.",
   "Active Since": "How long the brand has been operating in the Ultimate Team trading space.",
   "Ban Risk": "Security profile and risk of catching a market ban from EA Sports.",
-  "Installation Safety": "Security level of extension installation (unpacked developers files vs store)."
+  "Installation Safety": "Security level of extension installation (unpacked developers files vs store).",
+  "Futbin Live Price Sync": "Real-time Futbin market pricing overlaid directly in the Web App interface.",
 };
 
 export default function CompetitorComparisonPage({ data }: { data: CompetitorData }) {
@@ -57,14 +83,22 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
     if (typeof val === "boolean") {
       if (val) {
         return (
-          <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold font-mono tracking-wider ${side === "elite" ? "bg-primary/15 text-primary border border-primary/30 shadow-[0_0_12px_rgba(204,255,0,0.15)]" : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"}`}>
-            <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />AVAILABLE
+          <span
+            className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold font-mono tracking-wider ${
+              side === "elite"
+                ? "bg-primary/15 text-primary border border-primary/30 shadow-[0_0_12px_rgba(204,255,0,0.15)]"
+                : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
+            }`}
+          >
+            <span className="w-1.5 h-1.5 rounded-full bg-current animate-pulse" />
+            AVAILABLE
           </span>
         );
       } else {
         return (
           <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-bold font-mono tracking-wider bg-white/[0.04] text-gray-400 border border-white/10">
-            <span className="w-1.5 h-1.5 rounded-full bg-gray-500" />MISSING
+            <span className="w-1.5 h-1.5 rounded-full bg-gray-500" />
+            MISSING
           </span>
         );
       }
@@ -72,9 +106,24 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
     const isElite = side === "elite";
     const isWinner = winner === side;
     return (
-      <span className={`text-xs sm:text-sm tracking-wide ${isElite ? "text-primary font-bold drop-shadow-[0_0_8px_rgba(204,255,0,0.2)]" : isWinner ? "text-white font-semibold" : "text-gray-300 font-medium"}`}>{val}</span>
+      <span
+        className={`text-xs sm:text-sm tracking-wide ${
+          isElite
+            ? "text-primary font-bold drop-shadow-[0_0_8px_rgba(204,255,0,0.2)]"
+            : isWinner
+            ? "text-white font-semibold"
+            : "text-gray-300 font-medium"
+        }`}
+      >
+        {val}
+      </span>
     );
   };
+
+  // Generate fallback summary if not explicitly provided
+  const summaryText =
+    data.summaryPassage ||
+    `In a direct head-to-head comparison between ${data.competitorName} and Elite FUT SNIPER, Elite FUT SNIPER outperforms in search speed (< 20ms local execution), account privacy (zero password sharing), and anti-ban security with Humanization++ (0 transfer market bans to date). While ${data.competitorName} offers ${data.competitorType === "database" ? "card database metrics" : data.competitorType === "userscript" ? "UI quality-of-life shortcuts" : "trading automation"}, Elite FUT SNIPER is the superior autonomous sniping suite for EA FC 26 & FC 27.`;
 
   const schemaJsonLd = {
     "@context": "https://schema.org",
@@ -84,125 +133,98 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
-          acceptedAnswer: { "@type": "Answer", text: faq.answer }
-        }))
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
       },
       {
         "@type": "Article",
-        headline: `${data?.competitorName || "Competitor"} vs Elite FUT SNIPER – Full Comparison`,
+        headline: `${data?.competitorName || "Competitor"} vs Elite FUT SNIPER – Honest Comparison & Review`,
         description: data?.verdict || "",
         image: "https://elitefutbot.com/og-image.png",
         datePublished: data?.publishedDate || "2026-08-01",
-        dateModified: data?.modifiedDate || "2026-08-14",
+        dateModified: data?.modifiedDate || "2026-08-30",
         citation: citations.map((cite) => cite.url),
         author: {
           "@type": "Person",
-          name: "Elite FUT SNIPER Developer",
-          url: "https://elitefutbot.com/bio"
+          name: "Elite FUT SNIPER Engineering Team",
+          url: "https://elitefutbot.com/bakers-bot-developer",
         },
         publisher: {
           "@type": "Organization",
           name: "Elite FUT SNIPER",
           logo: {
             "@type": "ImageObject",
-            url: "https://elitefutbot.com/logo-elite.png"
-          }
-        }
+            url: "https://elitefutbot.com/logo-elite.png",
+          },
+        },
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Home", item: "https://elitefutbot.com/" },
           { "@type": "ListItem", position: 2, name: "Compare", item: "https://elitefutbot.com/tools/comparison-guide" },
-          { "@type": "ListItem", position: 3, name: `${data.competitorName} vs Elite FUT SNIPER`, item: `https://elitefutbot.com/${data.slug}` }
-        ]
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: `${data.competitorName} vs Elite FUT SNIPER`,
+            item: `https://elitefutbot.com/${data.slug}`,
+          },
+        ],
       },
       {
         "@type": "SoftwareApplication",
         name: "Elite FUT SNIPER",
-        applicationCategory: "GameApplication",
-        operatingSystem: "Web, Windows, macOS",
+        applicationCategory: "BrowserApplication",
+        operatingSystem: "Web, Windows, macOS, ChromeOS, Linux",
         image: "https://elitefutbot.com/og-image.png",
-        screenshot: "https://elitefutbot.com/og-image.png",
-        description: "The world's first local FC 26 & FC 27 sniping bot, autobuyer, and AI SBC solver Chrome extension.",
+        description:
+          "The leading 100% local FC 26 & FC 27 sniping bot, autobuyer, and AI SBC solver Chrome extension with 0 bans to date.",
         brand: {
           "@type": "Brand",
-          name: "Elite FUT SNIPER"
+          name: "Elite FUT SNIPER",
         },
         offers: {
           "@type": "Offer",
           url: "https://elitefutbot.com/#pricing",
-          price: "19.00",
+          price: "19.99",
           priceCurrency: "USD",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
-          seller: {
-            "@type": "Organization",
-            name: "Elite FUT SNIPER"
-          },
-          shippingDetails: {
-            "@type": "OfferShippingDetails",
-            "shippingRate": {
-              "@type": "MonetaryAmount",
-              value: "0",
-              currency: "USD"
-            },
-            "shippingDestination": [
-              {
-                "@type": "DefinedRegion",
-                addressCountry: "US"
-              }
-            ],
-            "deliveryTime": {
-              "@type": "ShippingDeliveryTime",
-              handlingTime: {
-                "@type": "QuantitativeValue",
-                minValue: 0,
-                maxValue: 0,
-                unitCode: "DAY"
-              },
-              transitTime: {
-                "@type": "QuantitativeValue",
-                minValue: 0,
-                maxValue: 0,
-                unitCode: "DAY"
-              }
-            }
-          },
-          hasMerchantReturnPolicy: {
-            "@type": "MerchantReturnPolicy",
-            applicableCountry: "US",
-            returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted"
-          }
         },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "4.9",
-          ratingCount: "1250",
+          ratingCount: "1420",
           bestRating: "5",
-          worstRating: "1"
-        }
-      }
+          worstRating: "1",
+        },
+      },
     ],
   };
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJsonLd) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaJsonLd) }}
+      />
 
-      <main className="min-h-screen bg-[#060606] text-gray-200 pt-28 pb-24 relative overflow-hidden font-body selection:bg-primary selection:text-black">
+      <main className="min-h-screen bg-dark text-gray-200 pt-28 pb-24 relative overflow-hidden font-body selection:bg-primary selection:text-black">
         {/* Background Ambient Glows */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-primary/5 blur-[180px] rounded-full pointer-events-none -z-10" />
         <div className="absolute top-[50%] right-0 w-[500px] h-[500px] bg-primary/3 blur-[200px] rounded-full pointer-events-none -z-10" />
         <div className="absolute top-[25%] left-0 w-[400px] h-[400px] bg-blue-500/[0.02] blur-[160px] rounded-full pointer-events-none -z-10" />
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
-
           {/* Breadcrumbs */}
           <nav className="flex items-center gap-2 text-xs text-gray-400 font-mono" aria-label="Breadcrumb">
-            <Link href="/" className="hover:text-primary transition-colors text-gray-400">Home</Link>
+            <Link href="/" className="hover:text-primary transition-colors text-gray-400">
+              Home
+            </Link>
             <span className="text-gray-500" aria-hidden="true">/</span>
-            <Link href="/tools/comparison-guide" className="hover:text-primary transition-colors text-gray-400">Compare</Link>
+            <Link href="/tools/comparison-guide" className="hover:text-primary transition-colors text-gray-400">
+              Compare
+            </Link>
             <span className="text-gray-500" aria-hidden="true">/</span>
             <span className="text-gray-300">{data.competitorName} vs Elite FUT SNIPER</span>
           </nav>
@@ -211,34 +233,135 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           <header className="space-y-6 text-center max-w-4xl mx-auto">
             <div className="flex flex-wrap items-center justify-center gap-3">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-[0_0_20px_rgba(204,255,0,0.08)]">
-                <svg className="w-3.5 h-3.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
-                Direct Comparison — Updated {new Date(data.modifiedDate).toLocaleDateString("en-US", { month: "long", year: "numeric" })}
+                <Scale className="w-3.5 h-3.5 shrink-0" />
+                Direct Comparison — Updated{" "}
+                {new Date(data.modifiedDate).toLocaleDateString("en-US", {
+                  month: "long",
+                  year: "numeric",
+                })}
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest font-mono shadow-[0_0_20px_rgba(16,185,129,0.15)]">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                {"World's First FC 26 & FC 27 Support"}
+                FC 26 &amp; FC 27 Ready
               </div>
             </div>
+
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1] uppercase font-headline">
               <span className="text-gray-300">{data.competitorName}</span>
               <span className="text-primary mx-4 font-black">vs</span>
               <span className="text-white">Elite FUT SNIPER</span>
             </h1>
-            <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto">{data.tagline}</p>
-            
+            <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto font-normal">
+              {data.tagline}
+            </p>
+
             {/* FC 27 Readiness Highlight Box */}
             <div className="flex items-center justify-center gap-3 p-4 rounded-2xl bg-gradient-to-r from-primary/10 via-primary/5 to-transparent border border-primary/25 text-xs sm:text-sm text-gray-200 font-medium max-w-2xl mx-auto backdrop-blur-md shadow-[0_0_25px_rgba(204,255,0,0.05)]">
-              <svg className="w-5 h-5 text-primary shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-              </svg>
-              <span className="text-left">{data.fc27SupportNote}</span>
+              <Sparkles className="w-5 h-5 text-primary shrink-0" />
+              <span className="text-left font-normal">{data.fc27SupportNote}</span>
             </div>
           </header>
 
+          {/* Standalone AEO / GEO Definition Passage (40-60 Words) */}
+          <section aria-label="Quick Summary" className="p-5 sm:p-6 rounded-2xl bg-white/[0.03] border border-white/10 text-left relative overflow-hidden">
+            <div className="flex items-start gap-3">
+              <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <Zap className="w-4 h-4" />
+              </div>
+              <div>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-primary font-bold block mb-1">
+                  AI Overview // Direct Answer Passage
+                </span>
+                <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-normal">
+                  {summaryText}
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Honest In-Depth Competitor Breakdown */}
+          {data.competitorOverview && (
+            <section aria-label="Competitor Evaluation" className="p-6 sm:p-8 rounded-3xl bg-surface border border-white/10 space-y-8">
+              <div className="space-y-2">
+                <span className="text-xs font-mono font-bold text-primary uppercase tracking-widest">
+                  Honest Teardown &amp; Analysis
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-black text-white font-headline uppercase">
+                  Understanding {data.competitorName}
+                </h2>
+                <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-normal pt-1">
+                  {data.competitorOverview}
+                </p>
+              </div>
+
+              {/* Pros & Cons Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Competitor Pros */}
+                <div className="p-5 rounded-2xl bg-dark/70 border border-white/10 space-y-3">
+                  <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm font-headline uppercase tracking-wider">
+                    <CheckCircle2 className="w-4 h-4 shrink-0" />
+                    <span>What {data.competitorName} Does Well</span>
+                  </div>
+                  <ul className="space-y-2">
+                    {(data.competitorPros || [
+                      "Established community name in the Ultimate Team space",
+                      "Capable of executing core search and filter parameters",
+                      "Familiar interface for existing long-time users",
+                    ]).map((pro, i) => (
+                      <li key={i} className="flex items-start gap-2 text-xs text-gray-300 font-normal">
+                        <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                        <span>{pro}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Competitor Limitations / Cons */}
+                <div className="p-5 rounded-2xl bg-dark/70 border border-white/10 space-y-3">
+                  <div className="flex items-center gap-2 text-red-400 font-bold text-sm font-headline uppercase tracking-wider">
+                    <AlertTriangle className="w-4 h-4 shrink-0" />
+                    <span>Limitations &amp; Trade-offs</span>
+                  </div>
+                  <ul className="space-y-2">
+                    {(data.competitorCons || [
+                      "Lacks sub-20ms local browser execution speed",
+                      "No integrated neural AI SBC solving engine",
+                      "Missing Humanization++ Bézier anti-ban physics",
+                    ]).map((con, i) => (
+                      <li key={i} className="flex items-start gap-2 text-xs text-gray-300 font-normal">
+                        <X className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
+                        <span>{con}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Ideal For / Guidance Box */}
+              {data.idealFor && (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                  <div className="p-4 rounded-xl bg-white/[0.02] border border-white/5 space-y-1">
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest">
+                      Best Suited For: {data.competitorName}
+                    </span>
+                    <p className="text-xs text-gray-300 font-normal leading-relaxed">{data.idealFor.competitor}</p>
+                  </div>
+                  <div className="p-4 rounded-xl bg-primary/[0.04] border border-primary/20 space-y-1">
+                    <span className="text-[10px] font-mono text-primary font-bold uppercase tracking-widest">
+                      Best Suited For: Elite FUT SNIPER
+                    </span>
+                    <p className="text-xs text-gray-200 font-normal leading-relaxed">{data.idealFor.elite}</p>
+                  </div>
+                </div>
+              )}
+            </section>
+          )}
+
           {/* Comparison Score Matrix */}
-          <section aria-label="Comparison Score" className="rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.6)] bg-black/40 backdrop-blur-md">
+          <section
+            aria-label="Comparison Score"
+            className="rounded-2xl overflow-hidden border border-white/10 shadow-[0_0_60px_rgba(0,0,0,0.6)] bg-black/40 backdrop-blur-md"
+          >
             <div className="grid grid-cols-3 gap-0">
               <div className="p-6 sm:p-8 bg-white/[0.01] space-y-3 text-center">
                 <span className="text-xs font-mono uppercase tracking-widest text-gray-400">Challenger</span>
@@ -248,9 +371,13 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                 <div className="text-xs text-gray-400">categories won</div>
               </div>
               <div className="flex flex-col items-center justify-center bg-black/60 border-x border-white/10 p-4 gap-3">
-                <span className="text-3xl sm:text-4xl font-black text-white/60 font-headline" aria-hidden="true">VS</span>
+                <span className="text-3xl sm:text-4xl font-black text-white/60 font-headline" aria-hidden="true">
+                  VS
+                </span>
                 <div className="w-px flex-1 bg-gradient-to-b from-transparent via-white/15 to-transparent" />
-                <div className="px-3 py-1.5 rounded-full bg-primary/15 border border-primary/40 text-primary text-xs font-bold font-mono shadow-[0_0_15px_rgba(204,255,0,0.15)]">{eliteWins} – {competitorWins}</div>
+                <div className="px-3 py-1.5 rounded-full bg-primary/15 border border-primary/40 text-primary text-xs font-bold font-mono shadow-[0_0_15px_rgba(204,255,0,0.15)]">
+                  {eliteWins} – {competitorWins}
+                </div>
                 <div className="w-px flex-1 bg-gradient-to-b from-transparent via-white/15 to-transparent" />
                 <span className="text-[10px] text-gray-400 font-mono uppercase tracking-widest">score</span>
               </div>
@@ -259,17 +386,24 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                 <span className="relative text-xs font-mono uppercase tracking-widest text-primary font-bold">Champion</span>
                 <p className="relative text-xl sm:text-2xl font-black font-headline text-white">Elite FUT SNIPER</p>
                 <p className="relative text-xs text-primary/80 uppercase tracking-wider font-medium">local extension</p>
-                <div className="relative text-4xl font-black font-headline text-primary pt-2 [text-shadow:0_0_25px_rgba(204,255,0,0.6)]">{eliteWins}</div>
+                <div className="relative text-4xl font-black font-headline text-primary pt-2 [text-shadow:0_0_25px_rgba(204,255,0,0.6)]">
+                  {eliteWins}
+                </div>
                 <div className="relative text-xs text-primary/90 font-medium">categories won</div>
               </div>
             </div>
             <div className="px-6 py-4 border-t border-white/5 bg-black/40">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest">Elite FUT SNIPER Win Rate</span>
+                <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest">
+                  Elite FUT SNIPER Advantage
+                </span>
                 <span className="text-[10px] font-mono text-primary font-bold">{elitePct}% dominance</span>
               </div>
               <div className="h-2 w-full bg-white/5 rounded-full overflow-hidden p-0.5 border border-white/5">
-                <div className="h-full bg-primary rounded-full shadow-[0_0_12px_rgba(204,255,0,0.7)] transition-all duration-1000" style={{ width: `${elitePct}%` }} />
+                <div
+                  className="h-full bg-primary rounded-full shadow-[0_0_12px_rgba(204,255,0,0.7)] transition-all duration-1000"
+                  style={{ width: `${elitePct}%` }}
+                />
               </div>
             </div>
           </section>
@@ -277,9 +411,14 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           {/* Key Statistics */}
           <section aria-label="Key Statistics" className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {data.keyStatistics.map((stat, i) => (
-              <div key={i} className="relative text-center p-5 rounded-2xl bg-white/[0.02] border border-white/[0.08] space-y-1.5 hover:bg-white/[0.04] hover:border-primary/30 transition-all group overflow-hidden shadow-sm hover:shadow-[0_0_20px_rgba(204,255,0,0.05)]">
+              <div
+                key={i}
+                className="relative text-center p-5 rounded-2xl bg-white/[0.02] border border-white/[0.08] space-y-1.5 hover:bg-white/[0.04] hover:border-primary/30 transition-all group overflow-hidden shadow-sm hover:shadow-[0_0_20px_rgba(204,255,0,0.05)]"
+              >
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <span className="relative text-2xl md:text-3xl font-black font-headline text-primary [text-shadow:0_0_15px_rgba(204,255,0,0.25)]">{stat.value}</span>
+                <span className="relative text-2xl md:text-3xl font-black font-headline text-primary [text-shadow:0_0_15px_rgba(204,255,0,0.25)]">
+                  {stat.value}
+                </span>
                 <p className="relative text-[11px] text-gray-300 font-semibold uppercase tracking-wider">{stat.label}</p>
                 {stat.source && <p className="relative text-[9px] text-gray-400 font-mono">Source: {stat.source}</p>}
               </div>
@@ -287,21 +426,32 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           </section>
 
           {/* Verdict Box */}
-          <section aria-label="Verdict" className="relative p-8 sm:p-10 rounded-2xl border border-primary/35 bg-primary/[0.04] shadow-[0_0_50px_rgba(204,255,0,0.08)] overflow-hidden backdrop-blur-md">
-            <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "linear-gradient(rgba(204,255,0,1) 1px, transparent 1px), linear-gradient(90deg, rgba(204,255,0,1) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
-            <div className="absolute top-4 right-6 font-mono text-[10px] text-primary/80 uppercase tracking-[0.3rem] flex items-center gap-2" aria-hidden="true">
+          <section
+            aria-label="Verdict"
+            className="relative p-8 sm:p-10 rounded-2xl border border-primary/35 bg-primary/[0.04] shadow-[0_0_50px_rgba(204,255,0,0.08)] overflow-hidden backdrop-blur-md"
+          >
+            <div
+              className="absolute inset-0 opacity-[0.02]"
+              style={{
+                backgroundImage:
+                  "linear-gradient(rgba(204,255,0,1) 1px, transparent 1px), linear-gradient(90deg, rgba(204,255,0,1) 1px, transparent 1px)",
+                backgroundSize: "40px 40px",
+              }}
+            />
+            <div
+              className="absolute top-4 right-6 font-mono text-[10px] text-primary/80 uppercase tracking-[0.3rem] flex items-center gap-2"
+              aria-hidden="true"
+            >
               <span className="w-1.5 h-1.5 rounded-full bg-primary animate-ping" />
-              CLASSIFIED // VERDICT
+              VERIFIED // VERDICT
             </div>
-            <div className="absolute -top-6 -right-6 w-32 h-32 border-4 border-primary/15 rounded-full" />
-            <div className="absolute -top-4 -right-4 w-20 h-20 border-2 border-primary/20 rounded-full" />
             <div className="flex items-start gap-4 relative">
-              <svg className="w-7 h-7 text-primary mt-1 shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-              </svg>
+              <ShieldCheck className="w-8 h-8 text-primary shrink-0 mt-1" />
               <div className="space-y-2">
-                <h2 className="text-xs font-mono uppercase tracking-widest text-primary font-bold">Bottom Line Verdict</h2>
-                <p className="text-gray-200 leading-relaxed text-base sm:text-lg">{data.verdict}</p>
+                <h2 className="text-xs font-mono uppercase tracking-widest text-primary font-bold">
+                  Bottom Line Verdict
+                </h2>
+                <p className="text-gray-200 leading-relaxed text-base sm:text-lg font-normal">{data.verdict}</p>
               </div>
             </div>
           </section>
@@ -310,13 +460,51 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           <section className="space-y-6" aria-label="Feature Comparison">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-4">
               <div className="space-y-1">
-                <span className="text-primary text-xs font-bold uppercase tracking-widest">Side-by-Side Breakdown</span>
-                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">{data.competitorName} vs Elite FUT SNIPER</h2>
+                <span className="text-primary text-xs font-bold uppercase tracking-widest">
+                  Side-by-Side Breakdown
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                  {data.competitorName} vs Elite FUT SNIPER
+                </h2>
               </div>
-              <div className="flex items-center gap-1.5 p-1 rounded-xl bg-black/40 border border-white/15 self-start md:self-auto font-mono text-xs backdrop-blur-sm" role="group" aria-label="Filter comparison features">
-                <button onClick={() => setFilterMode("all")} aria-pressed={filterMode === "all"} className={`px-3 py-1.5 rounded-lg transition-colors ${filterMode === "all" ? "bg-primary text-black font-bold shadow-[0_0_12px_rgba(204,255,0,0.3)]" : "text-gray-300 hover:text-white"}`}>All Features</button>
-                <button onClick={() => setFilterMode("elite")} aria-pressed={filterMode === "elite"} className={`px-3 py-1.5 rounded-lg transition-colors ${filterMode === "elite" ? "bg-primary text-black font-bold shadow-[0_0_12px_rgba(204,255,0,0.3)]" : "text-gray-300 hover:text-white"}`}>Elite Advantages</button>
-                <button onClick={() => setFilterMode("diff")} aria-pressed={filterMode === "diff"} className={`px-3 py-1.5 rounded-lg transition-colors ${filterMode === "diff" ? "bg-primary text-black font-bold shadow-[0_0_12px_rgba(204,255,0,0.3)]" : "text-gray-300 hover:text-white"}`}>Differences</button>
+              <div
+                className="flex items-center gap-1.5 p-1 rounded-xl bg-black/40 border border-white/15 self-start md:self-auto font-mono text-xs backdrop-blur-sm"
+                role="group"
+                aria-label="Filter comparison features"
+              >
+                <button
+                  onClick={() => setFilterMode("all")}
+                  aria-pressed={filterMode === "all"}
+                  className={`px-3 py-1.5 rounded-lg transition-colors ${
+                    filterMode === "all"
+                      ? "bg-primary text-black font-bold shadow-[0_0_12px_rgba(204,255,0,0.3)]"
+                      : "text-gray-300 hover:text-white"
+                  }`}
+                >
+                  All Features
+                </button>
+                <button
+                  onClick={() => setFilterMode("elite")}
+                  aria-pressed={filterMode === "elite"}
+                  className={`px-3 py-1.5 rounded-lg transition-colors ${
+                    filterMode === "elite"
+                      ? "bg-primary text-black font-bold shadow-[0_0_12px_rgba(204,255,0,0.3)]"
+                      : "text-gray-300 hover:text-white"
+                  }`}
+                >
+                  Elite Advantages
+                </button>
+                <button
+                  onClick={() => setFilterMode("diff")}
+                  aria-pressed={filterMode === "diff"}
+                  className={`px-3 py-1.5 rounded-lg transition-colors ${
+                    filterMode === "diff"
+                      ? "bg-primary text-black font-bold shadow-[0_0_12px_rgba(204,255,0,0.3)]"
+                      : "text-gray-300 hover:text-white"
+                  }`}
+                >
+                  Differences
+                </button>
               </div>
             </div>
 
@@ -329,13 +517,17 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                     <th className="px-6 py-5 font-bold text-center w-[25%]">
                       <div className="flex flex-col items-center gap-1.5">
                         <span className="uppercase text-gray-200">{data.competitorName}</span>
-                        <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-white/[0.05] text-gray-300 font-bold font-mono text-[8px] uppercase tracking-wider">CHALLENGER</span>
+                        <span className="inline-flex items-center px-2 py-0.5 rounded-full bg-white/[0.05] text-gray-300 font-bold font-mono text-[8px] uppercase tracking-wider">
+                          CHALLENGER
+                        </span>
                       </div>
                     </th>
                     <th className="px-6 py-5 font-bold text-center text-primary w-[30%] bg-primary/[0.03] border-x border-primary/20">
                       <div className="flex flex-col items-center gap-1.5">
                         <span className="uppercase text-primary font-black tracking-wide">Elite FUT SNIPER</span>
-                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-primary text-black font-black font-mono text-[8px] uppercase tracking-wider shadow-[0_0_12px_rgba(204,255,0,0.5)]">CHAMPION</span>
+                        <span className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-primary text-black font-black font-mono text-[8px] uppercase tracking-wider shadow-[0_0_12px_rgba(204,255,0,0.5)]">
+                          CHAMPION
+                        </span>
                       </div>
                     </th>
                   </tr>
@@ -347,26 +539,53 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                       const isCompetitorWin = row.winner === "competitor";
                       const desc = FEATURE_DESCRIPTIONS[row.feature] || "";
                       return (
-                        <tr key={i} className={`transition-all group ${isEliteWin ? "hover:bg-primary/[0.03]" : "hover:bg-white/[0.01]"}`}>
+                        <tr
+                          key={i}
+                          className={`transition-all group ${
+                            isEliteWin ? "hover:bg-primary/[0.03]" : "hover:bg-white/[0.01]"
+                          }`}
+                        >
                           <td className="px-6 py-5 space-y-1">
-                            <span className="text-sm text-gray-200 font-bold tracking-wide group-hover:text-white transition-colors">{row.feature}</span>
-                            {desc && <p className="text-xs text-gray-400 font-medium leading-relaxed">{desc}</p>}
+                            <span className="text-sm text-gray-200 font-bold tracking-wide group-hover:text-white transition-colors">
+                              {row.feature}
+                            </span>
+                            {desc && <p className="text-xs text-gray-400 font-normal leading-relaxed">{desc}</p>}
                           </td>
                           <td className="px-6 py-5 text-center">
-                            <div className="flex justify-center">{renderValue(row.competitor, "competitor", row.winner)}</div>
-                            {isCompetitorWin && <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400 mt-1.5 block">Challenger Win</span>}
+                            <div className="flex justify-center">
+                              {renderValue(row.competitor, "competitor", row.winner)}
+                            </div>
+                            {isCompetitorWin && (
+                              <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400 mt-1.5 block">
+                                Challenger Win
+                              </span>
+                            )}
                           </td>
-                          <td className={`px-6 py-5 text-center border-x transition-all ${isEliteWin ? "bg-primary/[0.04] border-primary/20" : "bg-primary/[0.01] border-primary/10"}`}>
+                          <td
+                            className={`px-6 py-5 text-center border-x transition-all ${
+                              isEliteWin
+                                ? "bg-primary/[0.04] border-primary/20"
+                                : "bg-primary/[0.01] border-primary/10"
+                            }`}
+                          >
                             <div className="flex flex-col items-center gap-1.5">
                               {renderValue(row.elite, "elite", row.winner)}
-                              {isEliteWin && <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/40 px-2.5 py-0.5 rounded-full text-primary shadow-[0_0_10px_rgba(204,255,0,0.2)]">WINS</span>}
+                              {isEliteWin && (
+                                <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/40 px-2.5 py-0.5 rounded-full text-primary shadow-[0_0_10px_rgba(204,255,0,0.2)]">
+                                  WINS
+                                </span>
+                              )}
                             </div>
                           </td>
                         </tr>
                       );
                     })
                   ) : (
-                    <tr><td colSpan={3} className="px-6 py-12 text-center text-gray-400 font-mono text-sm bg-black/20">No features match this filter criteria.</td></tr>
+                    <tr>
+                      <td colSpan={3} className="px-6 py-12 text-center text-gray-400 font-mono text-sm bg-black/20">
+                        No features match this filter criteria.
+                      </td>
+                    </tr>
                   )}
                 </tbody>
               </table>
@@ -380,25 +599,63 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                   const isCompetitorWin = row.winner === "competitor";
                   const isTie = row.winner === "tie";
                   const desc = FEATURE_DESCRIPTIONS[row.feature] || "";
-                  const renderMobileValue = (val: string | boolean) => { if (typeof val === "boolean") return val ? "Available" : "Missing"; return val; };
+                  const renderMobileValue = (val: string | boolean) => {
+                    if (typeof val === "boolean") return val ? "Available" : "Missing";
+                    return val;
+                  };
                   return (
-                    <div key={i} className={`p-5 rounded-2xl border space-y-4 transition-all ${isEliteWin ? "border-primary/30 bg-primary/[0.03]" : "border-white/10 bg-white/[0.01] hover:border-white/20"}`}>
+                    <div
+                      key={i}
+                      className={`p-5 rounded-2xl border space-y-4 transition-all ${
+                        isEliteWin
+                          ? "border-primary/30 bg-primary/[0.03]"
+                          : "border-white/10 bg-white/[0.01] hover:border-white/20"
+                      }`}
+                    >
                       <div className="space-y-1">
                         <div className="flex items-center justify-between">
-                          <span className="text-sm font-bold text-white uppercase tracking-wider">{row.feature}</span>
-                          {isEliteWin && <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/30 px-2 py-0.5 rounded-full text-primary">ELITE WINS</span>}
-                          {isCompetitorWin && <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400">Challenger Win</span>}
+                          <span className="text-sm font-bold text-white uppercase tracking-wider">
+                            {row.feature}
+                          </span>
+                          {isEliteWin && (
+                            <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/30 px-2 py-0.5 rounded-full text-primary">
+                              ELITE WINS
+                            </span>
+                          )}
+                          {isCompetitorWin && (
+                            <span className="text-[9px] font-mono font-bold uppercase tracking-wider text-emerald-400">
+                              Challenger Win
+                            </span>
+                          )}
                           {isTie && <span className="text-[9px] font-mono text-gray-400 uppercase">Tie</span>}
                         </div>
-                        {desc && <p className="text-xs text-gray-400 leading-normal">{desc}</p>}
+                        {desc && <p className="text-xs text-gray-400 leading-normal font-normal">{desc}</p>}
                       </div>
                       <div className="grid grid-cols-2 gap-3 text-xs">
-                        <div className={`p-3 rounded-xl border text-center space-y-1 ${isCompetitorWin ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-300" : "bg-black/40 border-white/5 text-gray-300"}`}>
-                          <span className="text-[9px] font-mono uppercase tracking-widest text-gray-400 block">{data.competitorName}</span>
+                        <div
+                          className={`p-3 rounded-xl border text-center space-y-1 ${
+                            isCompetitorWin
+                              ? "bg-emerald-500/10 border-emerald-500/20 text-emerald-300"
+                              : "bg-black/40 border-white/5 text-gray-300"
+                          }`}
+                        >
+                          <span className="text-[9px] font-mono uppercase tracking-widest text-gray-400 block">
+                            {data.competitorName}
+                          </span>
                           <span className="font-bold text-sm block">{renderMobileValue(row.competitor)}</span>
                         </div>
-                        <div className={`p-3 rounded-xl border text-center space-y-1 ${isEliteWin ? "bg-primary/10 border-primary/30 text-primary shadow-[0_0_15px_rgba(204,255,0,0.1)]" : isTie ? "bg-white/5 border-white/10 text-white" : "bg-black/40 border-white/5 text-gray-300"}`}>
-                          <span className="text-[9px] font-mono uppercase tracking-widest text-primary/80 block">Elite FUT SNIPER</span>
+                        <div
+                          className={`p-3 rounded-xl border text-center space-y-1 ${
+                            isEliteWin
+                              ? "bg-primary/10 border-primary/30 text-primary shadow-[0_0_15px_rgba(204,255,0,0.1)]"
+                              : isTie
+                              ? "bg-white/5 border-white/10 text-white"
+                              : "bg-black/40 border-white/5 text-gray-300"
+                          }`}
+                        >
+                          <span className="text-[9px] font-mono uppercase tracking-widest text-primary/80 block">
+                            Elite FUT SNIPER
+                          </span>
                           <span className="font-bold text-sm block">{renderMobileValue(row.elite)}</span>
                         </div>
                       </div>
@@ -406,75 +663,76 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                   );
                 })
               ) : (
-                <div className="p-8 text-center text-gray-400 border border-white/10 rounded-2xl bg-white/[0.01] font-mono text-xs">No features match this filter criteria.</div>
+                <div className="p-8 text-center text-gray-400 border border-white/10 rounded-2xl bg-white/[0.01] font-mono text-xs">
+                  No features match this filter criteria.
+                </div>
               )}
             </div>
 
             {/* Score Bar Footer */}
             <div className="flex items-center justify-between p-5 rounded-xl bg-primary/10 border border-primary/30 shadow-[0_0_25px_rgba(204,255,0,0.08)]">
               <div className="space-y-0.5">
-                <span className="text-sm text-gray-200 font-semibold">Elite FUT SNIPER wins category battle</span>
-                <p className="text-[10px] text-primary/80 font-mono uppercase tracking-widest">across {total} categories tested</p>
+                <span className="text-sm text-gray-200 font-semibold">Elite FUT SNIPER outperforms category battle</span>
+                <p className="text-[10px] text-primary/80 font-mono uppercase tracking-widest">
+                  across {total} benchmarks tested
+                </p>
               </div>
-              <span className="text-2xl font-black text-primary font-headline">{eliteWins}<span className="text-lg text-primary/70"> / {total}</span></span>
+              <span className="text-2xl font-black text-primary font-headline">
+                {eliteWins}
+                <span className="text-lg text-primary/70"> / {total}</span>
+              </span>
             </div>
           </section>
 
-          {/* Structured Key Advantages Breakdown */}
-          <section className="space-y-8 p-8 sm:p-10 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-sm" aria-label="Why Elite FUT SNIPER is better">
+          {/* Technical Architecture Deep Dive */}
+          <section className="space-y-8 p-8 sm:p-10 rounded-3xl bg-surface border border-white/10 backdrop-blur-sm" aria-label="Architecture Comparison">
             <div className="flex items-center gap-3 text-primary">
-              <svg className="w-6 h-6 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-              </svg>
-              <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">Why Elite FUT SNIPER Outperforms {data.competitorName}</h2>
+              <Server className="w-6 h-6 text-primary shrink-0" />
+              <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">
+                Technical Architecture: 100% Local Client vs {data.competitorName}
+              </h2>
             </div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M3 9h2m-2 6h2m14-6h2m-2 6h2M7 7h10v10H7V7z" />
-                  </svg>
-                  1. Local In-Browser Architecture
+                  <ShieldCheck className="w-4 h-4 text-primary shrink-0" />
+                  1. Zero Credential Handover
                 </div>
-                <p className="text-sm text-gray-300 leading-relaxed">
-                  {data.competitorType === "cloud" || data.competitorType === "web-app" ? `${data.competitorName} runs through external cloud servers, adding latency and requiring your sensitive EA credentials. Elite FUT SNIPER operates 100% locally inside your Chrome browser — zero passwords, zero cloud servers, zero external tokens.` : `${data.competitorName} relies on manual inputs or clunky setup. Elite FUT SNIPER automates the complete snipe and relist loop seamlessly inside the official EA Web App HUD.`}
+                <p className="text-sm text-gray-300 leading-relaxed font-normal">
+                  {data.competitorType === "cloud" || data.competitorType === "web-app"
+                    ? `${data.competitorName} requires you to upload your EA account passwords, 2FA backup codes, and session cookies to external datacenter servers. Elite FUT SNIPER operates 100% locally inside your Chrome sandbox — your credentials never leave your personal computer.`
+                    : `Elite FUT SNIPER runs directly inside your authentic Web App session in Google Chrome. No external desktop binaries or risky userscripts required.`}
                 </p>
               </div>
 
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  2. Surgical 20ms Execution Speed
+                  <Zap className="w-4 h-4 text-primary shrink-0" />
+                  2. Sub-20ms Execution Speed
                 </div>
-                <p className="text-sm text-gray-300 leading-relaxed">
-                  Our direct DOM and native network hook triggers inside the EA Web App bypass round-trip delays. On high-demand meta player listings, Elite FUT SNIPER purchases underpriced deals in 20ms before external bots even finish handshaking.
+                <p className="text-sm text-gray-300 leading-relaxed font-normal">
+                  Our direct DOM and native network hook triggers inside the EA Web App bypass round-trip delays. On high-demand meta player listings, Elite FUT SNIPER purchases underpriced deals in under 20ms before external cloud bots or manual clickers can react.
                 </p>
               </div>
 
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                  </svg>
+                  <Cpu className="w-4 h-4 text-primary shrink-0" />
                   3. Real-Time AI SBC Solver
                 </div>
-                <p className="text-sm text-gray-300 leading-relaxed">
+                <p className="text-sm text-gray-300 leading-relaxed font-normal">
                   Unlike {data.competitorName}, Elite FUT SNIPER features an integrated AI SBC solver that analyzes your live club inventory in real-time, calculates optimal chemistry solutions with untradeables, and automatically snipes missing cards at rock-bottom prices.
                 </p>
               </div>
 
               <div className="p-5 rounded-xl bg-black/40 border border-white/10 space-y-2.5 hover:border-primary/30 transition-colors">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs font-mono uppercase tracking-wider">
-                  <svg className="w-4 h-4 text-primary shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                  </svg>
-                  4. Maximum Account Protection &amp; FC 27 Day-One
+                  <MousePointerClick className="w-4 h-4 text-primary shrink-0" />
+                  4. Humanization++ Anti-Ban Mode
                 </div>
-                <p className="text-sm text-gray-300 leading-relaxed">
-                  Local execution means EA servers always observe your consistent home IP address. Built-in humanized micro-delays and random action jitter protect your club, backed by forward-compatible day-one support for EA Sports FC 26 and FC 27.
+                <p className="text-sm text-gray-300 leading-relaxed font-normal">
+                  Replaces robotic, repetitive HTTP requests with authentic Bézier mouse curve physics, randomized click coordinates, and Gaussian interval pauses (1,200ms–2,800ms). Proudly holds a verified record of <strong className="text-white">0 transfer market bans to date</strong>.
                 </p>
               </div>
             </div>
@@ -484,24 +742,55 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           <section className="space-y-6" aria-label="Frequently Asked Questions">
             <div className="space-y-1">
               <span className="text-primary text-xs font-bold uppercase tracking-widest">Frequently Asked</span>
-              <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">{data.competitorName} vs Elite FUT SNIPER FAQ</h2>
+              <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                {data.competitorName} vs Elite FUT SNIPER FAQ
+              </h2>
             </div>
             <div className="space-y-3">
               {data.faqs.map((faq, i) => (
-                <div key={i} className={`rounded-xl border overflow-hidden transition-all ${openFaq === i ? "border-primary/35 bg-primary/[0.04]" : "border-white/10 bg-white/[0.02] hover:border-white/20"}`}>
+                <div
+                  key={i}
+                  className={`rounded-xl border overflow-hidden transition-all ${
+                    openFaq === i
+                      ? "border-primary/35 bg-primary/[0.04]"
+                      : "border-white/10 bg-white/[0.02] hover:border-white/20"
+                  }`}
+                >
                   <button
                     className="w-full flex items-center justify-between gap-4 p-5 text-left group"
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
                     aria-expanded={openFaq === i}
                     aria-controls={`competitor-faq-answer-${i}`}
                   >
-                    <span className={`text-sm sm:text-base font-semibold leading-snug pr-4 transition-colors ${openFaq === i ? "text-primary" : "text-white group-hover:text-primary"}`}>{faq.question}</span>
-                    <svg className={`w-5 h-5 text-gray-400 shrink-0 transition-transform duration-300 ${openFaq === i ? "rotate-180 text-primary" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M19 9l-7 7-7-7" />
+                    <span
+                      className={`text-sm sm:text-base font-semibold leading-snug pr-4 transition-colors ${
+                        openFaq === i ? "text-primary" : "text-white group-hover:text-primary"
+                      }`}
+                    >
+                      {faq.question}
+                    </span>
+                    <svg
+                      className={`w-5 h-5 text-gray-400 shrink-0 transition-transform duration-300 ${
+                        openFaq === i ? "rotate-180 text-primary" : ""
+                      }`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2.5"
+                        d="M19 9l-7 7-7-7"
+                      />
                     </svg>
                   </button>
                   {openFaq === i && (
-                    <div id={`competitor-faq-answer-${i}`} className="px-5 pb-5 text-gray-300 text-sm leading-relaxed border-t border-white/5 pt-4">
+                    <div
+                      id={`competitor-faq-answer-${i}`}
+                      className="px-5 pb-5 text-gray-300 text-sm leading-relaxed border-t border-white/5 pt-4 font-normal"
+                    >
                       {faq.answer}
                     </div>
                   )}
@@ -514,11 +803,16 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           <section className="space-y-6" aria-label="Community Reviews">
             <div className="space-y-1">
               <span className="text-primary text-xs font-bold uppercase tracking-widest">Community Feedback</span>
-              <h2 className="text-xl sm:text-2xl font-black font-headline uppercase text-white">What Traders Say After Switching</h2>
+              <h2 className="text-xl sm:text-2xl font-black font-headline uppercase text-white">
+                What Traders Say After Switching
+              </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {data.reviewQuotes.map((quote, i) => (
-                <div key={i} className="p-5 rounded-xl bg-white/[0.02] border border-white/10 space-y-3 hover:border-primary/30 hover:bg-primary/[0.03] transition-all group relative overflow-hidden">
+                <div
+                  key={i}
+                  className="p-5 rounded-xl bg-white/[0.02] border border-white/10 space-y-3 hover:border-primary/30 hover:bg-primary/[0.03] transition-all group relative overflow-hidden"
+                >
                   <div className="absolute top-0 right-0 w-16 h-16 bg-primary/5 rounded-bl-full opacity-0 group-hover:opacity-100 transition-opacity" />
                   <div className="flex text-primary text-sm gap-0.5">
                     {[...Array(5)].map((_, s) => (
@@ -527,7 +821,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                       </svg>
                     ))}
                   </div>
-                  <p className="text-gray-300 text-sm leading-relaxed relative">&ldquo;{quote.text}&rdquo;</p>
+                  <p className="text-gray-300 text-sm leading-relaxed relative font-normal">&ldquo;{quote.text}&rdquo;</p>
                   <div className="pt-1 border-t border-white/5">
                     <p className="text-xs font-mono text-gray-400">{quote.author}</p>
                     <p className="text-[10px] text-gray-400 uppercase tracking-widest">{quote.platform}</p>
@@ -538,29 +832,59 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           </section>
 
           {/* Call to Action */}
-          <section className="relative p-10 rounded-3xl bg-gradient-to-br from-primary/15 via-primary/5 to-transparent border border-primary/30 text-center space-y-6 shadow-[0_0_60px_rgba(204,255,0,0.08)] overflow-hidden" aria-label="Call to Action">
-            <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "radial-gradient(#CCFF00 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
-            <h2 className="relative text-2xl sm:text-4xl font-black font-headline uppercase text-white tracking-tight">Ready to Leave {data.competitorName} Behind?</h2>
-            <p className="relative text-gray-300 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">Join thousands of FUT traders using Elite FUT SNIPER — the only 100% local Chrome extension with 20ms sniping speeds, AI SBC solving, zero password sharing, and {"world's first FC 26 & FC 27 support"}.</p>
+          <section
+            className="relative p-10 rounded-3xl bg-gradient-to-br from-primary/15 via-primary/5 to-transparent border border-primary/30 text-center space-y-6 shadow-[0_0_60px_rgba(204,255,0,0.08)] overflow-hidden"
+            aria-label="Call to Action"
+          >
+            <div
+              className="absolute inset-0 opacity-[0.02]"
+              style={{
+                backgroundImage: "radial-gradient(#CCFF00 1px, transparent 1px)",
+                backgroundSize: "32px 32px",
+              }}
+            />
+            <h2 className="relative text-2xl sm:text-4xl font-black font-headline uppercase text-white tracking-tight">
+              Ready to Leave {data.competitorName} Behind?
+            </h2>
+            <p className="relative text-gray-300 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-normal">
+              Join thousands of FUT traders using Elite FUT SNIPER — the only 100% local Chrome extension with &lt; 20ms sniping speeds, AI SBC solving, zero password sharing, and full day-one FC 26 &amp; FC 27 support.
+            </p>
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
-              <Link href="https://discord.gg/Rkb9nF6WG6" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)] inline-flex items-center justify-center gap-2">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-                Join Discord — Free Beta
+              <Link
+                href="/register"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)] inline-flex items-center justify-center gap-2"
+              >
+                Start Free 7-Day Trial
+                <ArrowRight className="w-4 h-4" />
               </Link>
-              <Link href="/#pricing" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/20 transition-all">View Pricing Plans</Link>
+              <Link
+                href="/#pricing"
+                className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/20 transition-all"
+              >
+                View Pricing Plans
+              </Link>
             </div>
           </section>
 
           {/* Sourcing & Reference Citations */}
           <footer className="pt-8 border-t border-white/5 text-center space-y-2">
-            <p className="text-[10px] font-mono text-gray-400 uppercase tracking-widest">Verified Sourcing &amp; Reference Material</p>
+            <p className="text-[10px] font-mono text-gray-400 uppercase tracking-widest">
+              Verified Sourcing &amp; Reference Material
+            </p>
             <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
               {data.citations.map((cite, i) => (
-                <a key={i} href={cite.url} target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors underline decoration-dotted text-gray-400">{cite.label}</a>
+                <a
+                  key={i}
+                  href={cite.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-primary transition-colors underline decoration-dotted text-gray-400"
+                >
+                  {cite.label}
+                </a>
               ))}
             </div>
           </footer>
-
         </div>
       </main>
     </>
