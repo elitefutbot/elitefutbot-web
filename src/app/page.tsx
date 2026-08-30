@@ -468,25 +468,28 @@ export default function Home() {
                   <span className="text-5xl font-black text-white">$19.99</span>
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
-                <p className="text-sm text-gray-300 mt-2 flex items-center gap-1.5">
-                  <span className="material-symbols-outlined text-primary text-base">verified</span>
-                  One-time payment for 365 days · FC 26 &amp; FC 27 · no subscription
-                </p>
+                <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
+                  <span className="material-symbols-outlined text-base">verified</span>
+                  One-Time Payment · 365 Days · FC 26 &amp; FC 27
+                </div>
 
-                <div className="mt-5 rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3.5">
-                  <div className="flex items-center justify-between text-xs text-gray-400 mb-2">
-                    <span className="font-bold text-white">{PRICE_TIER.threshold - PRICE_TIER.sold} spots left at $19.99</span>
-                    <span>{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold</span>
+                <div className="mt-5 rounded-xl border border-amber-400/30 bg-amber-400/[0.06] px-4 py-3.5">
+                  <div className="flex items-center gap-2 mb-2.5">
+                    <span className="material-symbols-outlined text-amber-400 text-lg">local_fire_department</span>
+                    <span className="text-amber-400 font-black text-sm uppercase tracking-wide">
+                      {PRICE_TIER.threshold - PRICE_TIER.sold} Spots Left at $19.99
+                    </span>
                   </div>
-                  <div className="w-full h-1.5 bg-gray-800 rounded-full overflow-hidden">
+                  <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
                     <div
-                      className="h-full bg-primary transition-all"
+                      className="h-full bg-gradient-to-r from-amber-400 to-red-500 transition-all"
                       style={{ width: `${(PRICE_TIER.sold / PRICE_TIER.threshold) * 100}%` }}
                     ></div>
                   </div>
-                  <p className="text-xs text-gray-500 mt-2">
-                    Price rises $10 every 10 sales — next tier ${PRICE_TIER.nextPrice}.
-                  </p>
+                  <div className="flex items-center justify-between text-xs mt-2">
+                    <span className="text-gray-400">{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold</span>
+                    <span className="font-bold text-white">Next price: ${PRICE_TIER.nextPrice}</span>
+                  </div>
                 </div>
               </div>
               <p className="text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-4 relative z-10">
