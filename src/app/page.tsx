@@ -461,10 +461,18 @@ export default function Home() {
                   <span className="text-5xl font-black text-white">$19.99</span>
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
-                <p className="text-xs text-gray-400 mt-2 font-semibold uppercase tracking-wide">
-                  One-time payment · Covers the full FC game year
+                <div className="flex flex-wrap items-center gap-2 mt-3">
+                  <span className="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wide bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-full">
+                    <span className="material-symbols-outlined text-sm">verified</span>
+                    One-Time Payment
+                  </span>
+                  <span className="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wide bg-primary/15 text-primary border border-primary/30 px-2.5 py-1 rounded-full">
+                    365 Days Access
+                  </span>
+                </div>
+                <p className="text-xs text-gray-400 mt-2 font-semibold">
+                  Works with FC 26 &amp; FC 27 — no recurring subscription.
                 </p>
-                <p className="text-sm text-primary mt-4 font-bold bg-primary/10 inline-block px-2 py-1 rounded">Currently FREE for Early Beta Testers!</p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow relative z-10">
                 <li className="flex items-center gap-3 text-sm font-semibold text-white">
@@ -485,7 +493,16 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm font-semibold text-white">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Priority Discord Support
+                  Paid-Member Discord Access
+                </li>
+                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  10M+ Coins Earning Potential
+                </li>
+                <li className="flex items-center gap-3 text-sm font-semibold text-white">
+                  <span className="material-symbols-outlined text-amber-400 text-base">schedule</span>
+                  AI SBC Solver
+                  <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
                 </li>
               </ul>
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
