@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { authFetch } from "./authClient";
+import { getAccessToken } from "./tokenStorage";
 import { subscribeToRefresh } from "@/lib/firebase/refreshBus";
 
 export type BotStatus = "idle" | "running" | "stopped";
@@ -43,9 +44,12 @@ export function useAccountStats(): AccountStats | null {
   const [stats, setStats] = useState<AccountStats | null>(null);
 
   useEffect(() => {
+    if (!getAccessToken()) return;
+
     let cancelled = false;
 
     async function load() {
+      if (!getAccessToken()) return;
       const res = await authFetch("/api/users/stats");
       if (!res.ok || cancelled) return;
       const data = (await res.json()) as AccountStats;

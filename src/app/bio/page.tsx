@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
-
 import Image from "next/image";
+import { CheckCircle2, Zap, ArrowRight, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Official Links & Socials | Elite FUT SNIPER",
@@ -183,7 +183,7 @@ export default function BioPage() {
               <div className="inline-flex items-center gap-1 bg-card/85 border border-primary/30 px-3 py-1 rounded-full text-[10px] font-black text-gray-200 tracking-wider uppercase backdrop-blur-md">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
                 <span>Join Official Channels</span>
-                <span className="material-symbols-outlined text-primary text-xs font-black">verified</span>
+                <CheckCircle2 className="w-3.5 h-3.5 text-primary font-black" />
               </div>
               <h1 className="text-2xl font-black tracking-tight uppercase font-headline mt-2.5">
                 Elite FUT <span className="text-primary italic">SNIPER</span>
@@ -202,7 +202,7 @@ export default function BioPage() {
             >
               <div className="flex items-center gap-3.5 relative z-10">
                 <div className="w-10 h-10 rounded-xl bg-dark/20 flex items-center justify-center shrink-0 text-dark">
-                  <span className="material-symbols-outlined text-xl">{featuredAction.icon}</span>
+                  <Zap className="w-5 h-5 text-dark" />
                 </div>
                 <div className="text-left">
                   <div className="flex items-center gap-2">
@@ -219,9 +219,7 @@ export default function BioPage() {
                 </div>
               </div>
               <div className="relative z-10">
-                <span className="material-symbols-outlined text-lg text-dark group-hover:translate-x-1 transition-transform">
-                  arrow_forward
-                </span>
+                <ArrowRight className="w-5 h-5 text-dark group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
 
@@ -256,9 +254,7 @@ export default function BioPage() {
                   </div>
                 </div>
                 <div className="relative z-10">
-                  <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </div>
               </a>
             ))}
@@ -291,9 +287,7 @@ export default function BioPage() {
                       {t.desc}
                     </p>
                   </div>
-                  <span className="material-symbols-outlined text-sm text-gray-400 group-hover:text-primary transition-colors group-hover:translate-x-1 transition-transform">
-                    arrow_forward
-                  </span>
+                  <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-primary transition-colors group-hover:translate-x-1 transition-transform" />
                 </Link>
               ))}
             </div>
@@ -302,7 +296,7 @@ export default function BioPage() {
           {/* Bottom Security / Trust Footer */}
           <div className="p-4 rounded-xl bg-white/[0.01] border border-white/5 text-center space-y-1.5">
             <div className="flex items-center justify-center gap-2 text-xs font-bold text-gray-300">
-              <span className="material-symbols-outlined text-primary text-sm font-black">security</span>
+              <ShieldCheck className="w-4 h-4 text-primary font-black" />
               <span className="text-[11px]">100% Local Chrome Extension • Undetected Safety</span>
             </div>
             <div className="text-[9px] text-gray-400 font-bold uppercase tracking-widest">

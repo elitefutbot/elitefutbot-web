@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Volt Velocity Design System | Elite FUT SNIPER",
@@ -135,7 +136,7 @@ export default function VoltVelocityDesignSystemPage() {
                 <div className="flex flex-col gap-4">
                   <p className="text-[10px] font-headline text-slate-400 uppercase tracking-widest">Value Chip</p>
                   <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#5d7602] text-[#defd83] rounded-sm text-xs font-bold w-max">
-                    <span className="material-symbols-outlined text-[14px]" aria-hidden="true">trending_up</span>
+                    <TrendingUp className="w-3.5 h-3.5" aria-hidden="true" />
                     +5.2% Margin
                   </div>
                 </div>

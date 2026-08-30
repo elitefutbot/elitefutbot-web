@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import { Timer, PauseCircle, Shield, CheckCircle2, Zap, ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
@@ -108,22 +109,22 @@ const FILTER_PRESETS = [
 
 const SAFETY_RULES = [
   {
-    icon: "timer",
+    icon: Timer,
     title: "Randomized Search Delays",
     desc: "Never search at static exact intervals. Set randomized delays (e.g. 1.3s, 2.1s, 1.7s) to emulate genuine human typing and mouse clicks."
   },
   {
-    icon: "pause_circle",
+    icon: PauseCircle,
     title: "Automated Cooling Breaks",
     desc: "Program your extension to take 3–5 minute rest breaks after every 40 search attempts to respect EA web app rate limits."
   },
   {
-    icon: "security",
+    icon: Shield,
     title: "Zero Account Password Sharing",
     desc: "Always run tools locally inside your own Google Chrome extension without sharing web app credentials or passwords."
   },
   {
-    icon: "verified_user",
+    icon: CheckCircle2,
     title: "Cap Search Limits Per Session",
     desc: "Limit total search sessions to 300 searches per hour to maintain stealth operation and zero account flags."
   }
@@ -160,7 +161,7 @@ export default function SnipingGuidePage() {
           <div className="p-8 rounded-3xl bg-gradient-to-br from-primary/15 via-card to-card border border-primary/30 flex flex-col md:flex-row items-center justify-between gap-6 shadow-[0_0_40px_rgba(204,255,0,0.12)]">
             <div className="space-y-2 text-left">
               <div className="flex items-center gap-2 text-xs font-black text-primary uppercase tracking-wider">
-                <span className="material-symbols-outlined text-base">bolt</span>
+                <Zap className="w-4 h-4 text-primary" />
                 <span>Automated Sniping Bot Extension</span>
               </div>
               <h2 className="text-2xl font-headline font-black text-white">
@@ -177,7 +178,7 @@ export default function SnipingGuidePage() {
               className="shrink-0 px-8 py-4 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all flex items-center gap-2 shadow-[0_0_20px_rgba(204,255,0,0.3)] hover:scale-105"
             >
               <span>Join Discord For Free Access</span>
-              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
 
@@ -238,18 +239,21 @@ export default function SnipingGuidePage() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {SAFETY_RULES.map((rule) => (
-                <div
-                  key={rule.title}
-                  className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 space-y-3"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
-                    <span className="material-symbols-outlined text-2xl">{rule.icon}</span>
+              {SAFETY_RULES.map((rule) => {
+                const IconComponent = rule.icon;
+                return (
+                  <div
+                    key={rule.title}
+                    className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 space-y-3"
+                  >
+                    <div className="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary">
+                      <IconComponent className="w-6 h-6" />
+                    </div>
+                    <h3 className="font-bold font-headline text-base text-white">{rule.title}</h3>
+                    <p className="text-xs text-gray-400 leading-relaxed font-medium">{rule.desc}</p>
                   </div>
-                  <h3 className="font-bold font-headline text-base text-white">{rule.title}</h3>
-                  <p className="text-xs text-gray-400 leading-relaxed font-medium">{rule.desc}</p>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -287,7 +291,7 @@ export default function SnipingGuidePage() {
                 className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-dark font-headline font-black text-xs uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_20px_rgba(204,255,0,0.2)]"
               >
                 Join Discord Server for Free Sniping Tools
-                <span className="material-symbols-outlined text-sm">open_in_new</span>
+                <ExternalLink className="w-4 h-4" />
               </Link>
             </div>
           </div>
