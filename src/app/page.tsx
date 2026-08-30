@@ -498,7 +498,11 @@ export default function Home() {
               <ul className="space-y-3.5 mb-8 flex-grow relative z-10 divide-y divide-white/5">
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Advanced Logic &amp; Multi-Filters
+                  Advanced Logic
+                </li>
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
+                  Free Player Snipe Filters
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
@@ -508,9 +512,14 @@ export default function Home() {
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
                   Multi-Tab Local Sniping
                 </li>
-                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <span className="material-symbols-outlined text-primary text-base">check_circle</span>
-                  Stealth Anti-Ban Behavioral Tech
+                <li className="flex items-start gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <span className="material-symbols-outlined text-primary text-base mt-0.5">check_circle</span>
+                  <span>
+                    Human++ Anti-Ban Technology
+                    <span className="block text-xs text-gray-400 font-normal mt-0.5">
+                      Zero bans reported to date — a stealth method no one else has
+                    </span>
+                  </span>
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <span className="material-symbols-outlined text-primary text-base">check_circle</span>
