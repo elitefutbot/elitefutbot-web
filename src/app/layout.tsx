@@ -27,17 +27,17 @@ const publicSans = Public_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://elitefutbot.com'),
-  title: { 
-    default: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer", 
-    template: "%s | Elite FUT SNIPER" 
+  title: {
+    default: "Elite FUT SNIPER – FC 26 & FC 27 Sniping Bot & Autobuyer",
+    template: "%s | Elite FUT SNIPER"
   },
-  description: "Dominate the EA FC 26, FC 25 & upcoming FC 27 transfer markets. The fastest FUT sniping bot and autobuyer featuring 20ms speeds and local security.",
+  description: "Dominate the EA FC 26 & FC 27 transfer markets. The fastest FC 27 FUT sniping bot and autobuyer, plus FC 26 & FC 25 support, featuring 20ms speeds and local security.",
   alternates: {
     canonical: "https://elitefutbot.com/",
   },
   openGraph: {
-    title: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer",
-    description: "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27. Advanced anti-ban engine and cloud-based SBC solving.",
+    title: "Elite FUT SNIPER – FC 26 & FC 27 Sniping Bot & Autobuyer",
+    description: "World's fastest FC 27 FUT sniping bot and autobuyer, also supporting FC 26 & FC 25. Advanced anti-ban engine and cloud-based SBC solving.",
     url: "https://elitefutbot.com/",
     siteName: "Elite FUT SNIPER",
     images: [
@@ -54,8 +54,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite FUT SNIPER – FC 26 Sniping Bot & Autobuyer",
-    description: "Elite sniping bot and autobuyer for FC 26, FC 25 & FC 27. 20ms speeds and anti-ban engine.",
+    title: "Elite FUT SNIPER – FC 26 & FC 27 Sniping Bot & Autobuyer",
+    description: "Elite FC 27 FUT sniping bot and autobuyer, also supporting FC 26 & FC 25. 20ms speeds and anti-ban engine.",
     images: ["https://elitefutbot.com/og-image.png"],
     creator: "@FutSnipeBot",
   },
