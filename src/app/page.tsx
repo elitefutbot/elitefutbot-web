@@ -1,6 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
 
+// Placeholder for the "$10 price increase every 10 sales" plan — not yet wired
+// to real sale counts from Dodo Payments. Update these numbers manually until
+// that's automated (would need a Dodo webhook feeding this from the backend).
+const PRICE_TIER = {
+  sold: 4,
+  threshold: 10,
+  currentPrice: 19.99,
+  nextPrice: 29.99,
+};
+
 export default function Home() {
   const faqJsonLd = {
     "@context": "https://schema.org",
@@ -412,7 +422,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-4">Choose Your <span className="text-primary">Weapon</span></h2>
-            <p className="text-gray-400">Simple pricing. No hidden fees. Cancel anytime.</p>
+            <p className="text-gray-400">Simple pricing. No hidden fees. No subscriptions.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
@@ -461,18 +471,30 @@ export default function Home() {
                   <span className="text-5xl font-black text-white">$19.99</span>
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
-                <div className="flex flex-wrap items-center gap-2 mt-3">
-                  <span className="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wide bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 px-2.5 py-1 rounded-full">
-                    <span className="material-symbols-outlined text-sm">verified</span>
-                    One-Time Payment
-                  </span>
-                  <span className="inline-flex items-center gap-1 text-[11px] font-black uppercase tracking-wide bg-primary/15 text-primary border border-primary/30 px-2.5 py-1 rounded-full">
-                    365 Days Access
-                  </span>
+                <div className="mt-4 rounded-xl border border-primary/30 bg-primary/5 px-4 py-3">
+                  <div className="flex items-center gap-2 text-primary font-black text-sm uppercase tracking-wide">
+                    <span className="material-symbols-outlined text-lg">verified</span>
+                    One-Time Payment · 365 Days Access
+                  </div>
+                  <p className="text-xs text-gray-300 mt-1">
+                    Works with FC 26 &amp; FC 27 — no recurring subscription.
+                  </p>
                 </div>
-                <p className="text-xs text-gray-400 mt-2 font-semibold">
-                  Works with FC 26 &amp; FC 27 — no recurring subscription.
-                </p>
+                <div className="mt-4">
+                  <div className="flex items-center justify-between text-[11px] font-bold uppercase tracking-wide text-gray-400 mb-1.5">
+                    <span>Price rises $10 every 10 sales</span>
+                    <span className="text-primary">{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold at ${PRICE_TIER.currentPrice}</span>
+                  </div>
+                  <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-primary to-emerald-400 shadow-[0_0_8px_rgba(204,255,0,0.5)] transition-all"
+                      style={{ width: `${(PRICE_TIER.sold / PRICE_TIER.threshold) * 100}%` }}
+                    ></div>
+                  </div>
+                  <p className="text-[11px] text-gray-500 mt-1.5">
+                    Next price: ${PRICE_TIER.nextPrice} — lock in ${PRICE_TIER.currentPrice} now.
+                  </p>
+                </div>
               </div>
               <ul className="space-y-4 mb-10 flex-grow relative z-10">
                 <li className="flex items-center gap-3 text-sm font-semibold text-white">
