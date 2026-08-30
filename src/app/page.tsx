@@ -35,6 +35,16 @@ const PRICE_TIER = {
   nextPrice: 29.99,
 };
 
+// Placeholder for the "$10 price increase every 10 sales" plan — not yet wired
+// to real sale counts from Dodo Payments. Update these numbers manually until
+// that's automated (would need a Dodo webhook feeding this from the backend).
+const PRICE_TIER = {
+  sold: 4,
+  threshold: 10,
+  currentPrice: 19.99,
+  nextPrice: 29.99,
+};
+
 export default function Home() {
   const faqJsonLd = {
     "@context": "https://schema.org",
