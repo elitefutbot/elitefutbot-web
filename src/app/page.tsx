@@ -442,8 +442,8 @@ export default function Home() {
                   Multi-Tab Sniping
                 </li>
               </ul>
-              <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="https://discord.gg/Rkb9nF6WG6">
-                Join Discord to Start
+              <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">
+                Start Free Trial
               </Link>
             </div>
             <div className="glass-card rounded-3xl p-8 flex flex-col border-primary/40 bg-primary/5 relative overflow-hidden shadow-[0_0_40px_rgba(204,255,0,0.05)] transform md:-translate-y-4" data-purpose="pricing-card">
@@ -461,6 +461,9 @@ export default function Home() {
                   <span className="text-5xl font-black text-white">$19.99</span>
                   <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
                 </div>
+                <p className="text-xs text-gray-400 mt-2 font-semibold uppercase tracking-wide">
+                  One-time payment · Covers the full FC game year
+                </p>
                 <p className="text-sm text-primary mt-4 font-bold bg-primary/10 inline-block px-2 py-1 rounded">Currently FREE for Early Beta Testers!</p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow relative z-10">
@@ -486,8 +489,13 @@ export default function Home() {
                 </li>
               </ul>
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
-              <Link className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]" href="https://discord.gg/Rkb9nF6WG6">
-                Join Discord for Free Beta Access
+              <Link
+                className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]"
+                href="https://checkout.dodopayments.com/buy/pdt_0NmKLEkBOT5JF3qkdNt0t?quantity=1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Get Pro Sniper Access
               </Link>
             </div>
           </div>
@@ -661,7 +669,7 @@ export default function Home() {
               Join 5,000+ Traders on Discord
             </Link>
             <Link 
-              href="https://github.com/getwebgrowth/elitefutbot" 
+              href="https://github.com/elitefutbot/elitefutbot-web"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/20 text-white font-bold px-8 py-3.5 rounded-xl shadow-lg transition-all hover:scale-105 text-sm border border-white/10 w-full sm:w-auto justify-center"
@@ -770,8 +778,8 @@ export default function Home() {
             Join the 87 early testers who are already dominating the market. Beta slots are closing soon.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="https://discord.gg/Rkb9nF6WG6">
-              JOIN THE BETA
+            <Link className="px-10 py-5 bg-primary text-dark font-black text-xl rounded-2xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2" href="/register">
+              ACTIVATE YOUR TRIAL
               <span className="material-symbols-outlined font-black">arrow_forward</span>
             </Link>
           </div>
