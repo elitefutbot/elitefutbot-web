@@ -13,16 +13,34 @@ export default function ContactPage() {
   });
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    // Simulate API request delay
-    setTimeout(() => {
+    setError(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formState),
+      });
+
+      const data = await res.json();
+
+      if (res.ok && data.success) {
+        setSubmitted(true);
+        setFormState({ name: "", email: "", subject: "General Support", message: "" });
+      } else {
+        setError(data.error || "Failed to deliver message. Please email support@elitefutbot.com directly.");
+      }
+    } catch (err) {
+      console.error("Submission failed:", err);
+      setError("Network error. Please email support@elitefutbot.com directly or contact us on Discord.");
+    } finally {
       setLoading(false);
-      setSubmitted(true);
-      setFormState({ name: "", email: "", subject: "General Support", message: "" });
-    }, 1200);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -214,6 +232,19 @@ export default function ContactPage() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
+                  {error && (
+                    <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-red-300 text-xs flex items-center justify-between gap-3">
+                      <span>{error}</span>
+                      <a
+                        href={`mailto:support@elitefutbot.com?subject=${encodeURIComponent(
+                          `[Support] ${formState.subject}`
+                        )}`}
+                        className="text-white font-bold underline shrink-0 hover:text-primary"
+                      >
+                        Email Directly
+                      </a>
+                    </div>
+                  )}
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-xs font-bold uppercase tracking-wider text-gray-400">
