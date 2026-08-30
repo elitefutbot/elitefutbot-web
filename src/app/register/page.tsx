@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ArrowRight } from "lucide-react";
 import { register } from "@/lib/auth/authClient";
 import {
   getReferralClickedAtFromCookie,
@@ -208,16 +209,16 @@ export default function RegisterPage() {
             </button>
           </form>
 
-          <p className="text-xs text-gray-400 text-center mt-6">
-            Already have an account?{" "}
+          <div className="mt-6 pt-5 border-t border-white/10 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-sm text-gray-400 text-center">
+            <span>Already have an account?</span>
             <Link
               href="/login"
-              className="text-primary font-bold hover:text-primary/80 transition-colors"
+              className="inline-flex items-center gap-1 text-primary font-bold hover:text-primary/80 transition-colors"
             >
               Log in
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
-            .
-          </p>
+          </div>
         </div>
       </div>
     </div>
