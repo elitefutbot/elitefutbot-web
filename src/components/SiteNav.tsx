@@ -30,8 +30,8 @@ export default function SiteNav() {
 
   if (isAccountRoute(pathname)) return null;
 
-  const authHref = isLoggedIn ? "/dashboard" : "/login";
-  const authLabel = isLoggedIn ? "Dashboard" : "Log In";
+  const authHref = isLoggedIn ? "/dashboard" : "/register";
+  const authLabel = isLoggedIn ? "Dashboard" : "Sign Up";
 
   return (
     <nav className="sticky top-0 z-50 bg-dark/85 backdrop-blur-xl border-b border-white/5 supports-[backdrop-filter]:bg-dark/70">
