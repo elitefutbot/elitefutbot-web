@@ -21,10 +21,24 @@ export default function ContactPage() {
     setError(null);
 
     try {
-      const res = await fetch("/api/contact", {
+      const accessKey =
+        process.env.NEXT_PUBLIC_WEB3FORMS_KEY || "509c7662-cad5-4c14-936a-4cfb97a36a9b";
+
+      const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formState),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: accessKey,
+          name: formState.name,
+          email: formState.email,
+          subject: `[Elite FUT SNIPER] ${formState.subject} - ${formState.name}`,
+          message: `Department: ${formState.subject}\nSender Name: ${formState.name}\nSender Email: ${formState.email}\n\nMessage:\n${formState.message}`,
+          from_name: "Elite FUT SNIPER Support Desk",
+          replyto: formState.email,
+        }),
       });
 
       const data = await res.json();
@@ -33,7 +47,7 @@ export default function ContactPage() {
         setSubmitted(true);
         setFormState({ name: "", email: "", subject: "General Support", message: "" });
       } else {
-        setError(data.error || "Failed to deliver message. Please email support@elitefutbot.com directly.");
+        setError(data.message || "Failed to deliver message. Please email support@elitefutbot.com directly.");
       }
     } catch (err) {
       console.error("Submission failed:", err);
