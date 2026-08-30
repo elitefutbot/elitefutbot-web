@@ -36,7 +36,7 @@ export default function SiteFooter() {
             <div className="flex items-center gap-2.5 flex-wrap">
               <Link
                 className="w-12 h-12 rounded-xl border border-white/10 flex items-center justify-center text-gray-400 hover:text-[#ff0050] hover:border-[#ff0050]/40 hover:bg-[#ff0050]/5 transition-all duration-300 focus-visible:ring-2 focus-visible:ring-primary focus-visible:outline-none"
-                href="https://www.tiktok.com/@elitefutbotx"
+                href="https://www.tiktok.com/@elitefutbot"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Follow us on TikTok"
