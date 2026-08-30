@@ -5,7 +5,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, email, subject, message } = body;
 
-    // Basic Validation
+    // Validation
     if (!name || !email || !message) {
       return NextResponse.json(
         { success: false, error: "Please fill in all required fields (name, email, message)." },
@@ -25,9 +25,9 @@ export async function POST(req: Request) {
     const web3Key = process.env.WEB3FORMS_ACCESS_KEY || process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
 
     let dispatched = false;
-    let errorDetail = "";
+    let activationPending = false;
 
-    // 1. Primary: Web3Forms (if access key is available)
+    // 1. Primary: Web3Forms (if access key is configured in env)
     if (web3Key) {
       try {
         const web3Res = await fetch("https://api.web3forms.com/submit", {
@@ -38,47 +38,54 @@ export async function POST(req: Request) {
             name,
             email,
             subject: `[Elite FUT SNIPER] ${sanitizedSubject} - ${name}`,
-            message,
-            from_name: "Elite FUT SNIPER Web Support",
+            message: `Department: ${sanitizedSubject}\nName: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+            from_name: "Elite FUT SNIPER Support Form",
             replyto: email,
           }),
         });
         const web3Data = await web3Res.json();
         if (web3Data.success) {
           dispatched = true;
-        } else {
-          errorDetail = web3Data.message || "Web3Forms submission failed";
         }
-      } catch (err: any) {
+      } catch (err) {
         console.error("Web3Forms error:", err);
       }
     }
 
-    // 2. Fallback / Direct: FormSubmit.co to support@elitefutbot.com
+    // 2. Direct FormSubmit dispatch to support@elitefutbot.com & cc elitefutbotfc@gmail.com
     if (!dispatched) {
       try {
         const formSubmitRes = await fetch("https://formsubmit.co/ajax/support@elitefutbot.com", {
           method: "POST",
-          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+            Origin: "https://elitefutbot.com",
+            Referer: "https://elitefutbot.com/contact",
+          },
           body: JSON.stringify({
             name,
             email,
             _subject: `[Elite FUT SNIPER Support] ${sanitizedSubject} from ${name}`,
             _replyto: email,
+            _cc: "elitefutbotfc@gmail.com",
             message: `Department: ${sanitizedSubject}\nSender Name: ${name}\nSender Email: ${email}\n\nMessage:\n${message}`,
             _template: "table",
           }),
         });
 
-        if (formSubmitRes.ok) {
+        const formSubmitData = await formSubmitRes.json();
+        if (formSubmitData.success === "true" || formSubmitData.success === true) {
           dispatched = true;
+        } else if (formSubmitData.message && formSubmitData.message.includes("Activation")) {
+          activationPending = true;
         }
-      } catch (err: any) {
+      } catch (err) {
         console.error("FormSubmit error:", err);
       }
     }
 
-    // 3. Optional: Forward to Discord Webhook if configured
+    // 3. Optional: Discord Webhook dispatch (instant alerts to Discord staff channel)
     const discordWebhookUrl = process.env.DISCORD_CONTACT_WEBHOOK_URL;
     if (discordWebhookUrl) {
       try {
@@ -91,7 +98,7 @@ export async function POST(req: Request) {
             embeds: [
               {
                 title: `📩 New Support Inquiry: ${sanitizedSubject}`,
-                color: 0xccff00, // primary neon green
+                color: 0xccff00,
                 fields: [
                   { name: "👤 Name", value: name, inline: true },
                   { name: "📧 Email", value: email, inline: true },
@@ -104,19 +111,17 @@ export async function POST(req: Request) {
             ],
           }),
         });
+        dispatched = true;
       } catch (webhookErr) {
         console.error("Discord webhook dispatch error:", webhookErr);
       }
     }
 
-    if (!dispatched) {
-      // If external forwarders had network issues, return clean response with direct mailto instructions
+    if (activationPending && !dispatched) {
       return NextResponse.json({
         success: true,
-        fallbackMailto: `mailto:support@elitefutbot.com?subject=${encodeURIComponent(
-          `[Support] ${sanitizedSubject}`
-        )}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`)}`,
-        message: "Message queued for delivery.",
+        activationPending: true,
+        message: "Form activation link has been sent to support@elitefutbot.com / elitefutbotfc@gmail.com. Please click 'Activate Form' once in your email to begin receiving submissions.",
       });
     }
 
