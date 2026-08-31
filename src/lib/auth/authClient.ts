@@ -257,3 +257,26 @@ export async function authFetch(
 
   return res;
 }
+
+export interface LeaderboardEntry {
+  rank: number;
+  name: string;
+  profit: number;
+  isYou?: boolean;
+}
+
+export interface LeaderboardResponse {
+  leaderboard: LeaderboardEntry[];
+  userRank: LeaderboardEntry | null;
+  weeklyResetText: string;
+}
+
+export async function fetchLeaderboard(): Promise<LeaderboardResponse | null> {
+  try {
+    const res = await authFetch("/api/users/leaderboard");
+    if (!res.ok) return null;
+    return await res.json();
+  } catch {
+    return null;
+  }
+}

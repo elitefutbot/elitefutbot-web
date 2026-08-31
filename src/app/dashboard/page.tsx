@@ -21,6 +21,8 @@ import { DownloadExtensionButton } from "@/components/DownloadExtensionButton";
 import { LicenseKeyModal } from "@/components/LicenseKeyModal";
 import { getUser } from "@/lib/auth/tokenStorage";
 import { useAccountStats, type AccountStats } from "@/lib/auth/useAccountStats";
+import { useLeaderboard } from "@/lib/auth/useLeaderboard";
+import { type LeaderboardEntry } from "@/lib/auth/authClient";
 import { setUpPushNotifications } from "@/lib/firebase/messaging";
 import { computeTrialDaysLeft, TRIAL_LENGTH_DAYS } from "@/lib/trial";
 
@@ -136,17 +138,6 @@ function useElapsedTime(
   return formatDuration(now - new Date(runningSince).getTime());
 }
 
-const leaderboard = [
-  { rank: 1, name: "GoldRush_23", profit: 184200 },
-  { rank: 2, name: "SnipeKing", profit: 152900 },
-  { rank: 3, name: "FUTGrinder", profit: 129750 },
-  { rank: 4, name: "You", profit: 92300, isYou: true },
-  { rank: 5, name: "MarketMaverick", profit: 81120 },
-  { rank: 6, name: "CoinFarmer99", profit: 74600 },
-];
-
-const maxProfit = Math.max(...leaderboard.map((r) => r.profit));
-
 const medals: Record<number, string> = { 1: "🥇", 2: "🥈", 3: "🥉" };
 
 const tierStyles: Record<number, string> = {
@@ -172,6 +163,7 @@ export default function DashboardPage() {
 function DashboardContent() {
   const user = getUser();
   const stats = useAccountStats();
+  const leaderboardData = useLeaderboard();
   const [upgradeModalOpen, setUpgradeModalOpen] = useState(false);
 
   // Best-effort: request notification permission and register this
@@ -197,6 +189,26 @@ function DashboardContent() {
   const elapsedTime = useElapsedTime(
     stats?.runningSince,
     botStatusDisplay.isLive,
+  );
+
+  const userProfit = stats?.profits ?? 0;
+  const rawList = leaderboardData?.leaderboard;
+  const defaultList: LeaderboardEntry[] = [
+    { rank: 1, name: "GoldRush_23", profit: 245000 },
+    { rank: 2, name: "SnipeKing", profit: 198400 },
+    { rank: 3, name: "FUTGrinder", profit: 165200 },
+    { rank: 4, name: "MarketMaverick", profit: 132400 },
+    { rank: 5, name: "CoinFarmer99", profit: 108900 },
+    { rank: 6, name: "ShadowTrader", profit: 89500 },
+  ];
+
+  const list = rawList && rawList.length > 0 ? rawList : defaultList;
+  const userRank = leaderboardData?.userRank;
+  const isUserInTopList = list.some((r) => r.isYou);
+  const maxProfit = Math.max(
+    1,
+    ...list.map((r) => r.profit),
+    userRank?.profit ?? userProfit,
   );
 
   const sessionStats = [
@@ -488,19 +500,19 @@ function DashboardContent() {
             </div>
 
             <div className="space-y-2">
-              {leaderboard.map((row) => {
+              {list.map((row) => {
                 const barWidth = Math.max(
-                  12,
-                  Math.round((row.profit / maxProfit) * 100),
+                  10,
+                  Math.min(100, Math.round((row.profit / maxProfit) * 100)),
                 );
                 const isTopThree = row.rank <= 3;
 
                 return (
                   <div
-                    key={row.rank}
+                    key={`${row.rank}-${row.name}`}
                     className={`flex items-center gap-3 p-3 rounded-xl border transition-colors ${
                       row.isYou
-                        ? "bg-primary/10 border-primary/30"
+                        ? "bg-primary/10 border-primary/30 shadow-[0_0_15px_rgba(209,250,75,0.1)]"
                         : isTopThree
                           ? tierStyles[row.rank]
                           : "border-transparent hover:bg-surface"
@@ -531,7 +543,7 @@ function DashboardContent() {
                       </div>
                       <div className="h-1 rounded-full bg-white/10 overflow-hidden mt-1.5">
                         <div
-                          className="h-full rounded-full bg-primary"
+                          className="h-full rounded-full bg-primary transition-all duration-500"
                           style={{ width: `${barWidth}%` }}
                         />
                       </div>
@@ -539,9 +551,42 @@ function DashboardContent() {
                   </div>
                 );
               })}
+
+              {!isUserInTopList && userRank ? (
+                <>
+                  <div className="my-2 border-t border-white/5 pt-2 flex items-center justify-between text-[10px] font-mono text-gray-400 uppercase tracking-widest px-1">
+                    <span>Your Standing</span>
+                    <span>Rank #{userRank.rank}</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-3 rounded-xl border bg-primary/10 border-primary/30 shadow-[0_0_15px_rgba(209,250,75,0.1)]">
+                    <span className="w-6 shrink-0 text-center font-display text-sm text-primary font-bold font-mono">
+                      #{userRank.rank}
+                    </span>
+                    <span className="size-9 rounded-full bg-primary/20 border border-primary/40 grid place-items-center font-display text-xs text-primary shrink-0">
+                      Y
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-sm font-bold text-primary">You</span>
+                        <span className="font-mono text-[11px] text-primary font-bold shrink-0">
+                          {(userRank.profit || userProfit).toLocaleString()}
+                        </span>
+                      </div>
+                      <div className="h-1 rounded-full bg-white/10 overflow-hidden mt-1.5">
+                        <div
+                          className="h-full rounded-full bg-primary transition-all duration-500"
+                          style={{
+                            width: `${Math.max(10, Math.min(100, Math.round(((userRank.profit || userProfit) / maxProfit) * 100)))}%`,
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ) : null}
             </div>
             <p className="font-mono text-[10px] text-gray-400 uppercase tracking-widest mt-4 text-center">
-              Resets weekly
+              {leaderboardData?.weeklyResetText ?? "Resets weekly"}
             </p>
           </aside>
         </div>
