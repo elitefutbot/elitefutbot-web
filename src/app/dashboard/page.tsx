@@ -177,9 +177,18 @@ function DashboardContent() {
   const createdAt = stats?.createdAt ?? user?.createdAt;
   const isPaid = stats?.isPaid ?? user?.isPaid ?? false;
   const isDuplicateTrial = stats?.isDuplicateTrial ?? user?.isDuplicateTrial ?? false;
-  const totalTrialDays = stats?.trialDays ?? user?.trialDays ?? TRIAL_LENGTH_DAYS;
-  const daysLeft = createdAt && !isDuplicateTrial ? computeTrialDaysLeft(createdAt, totalTrialDays) : 0;
-  const trialProgress = totalTrialDays > 0 ? Math.round((daysLeft / totalTrialDays) * 100) : 0;
+  const totalTrialDays = isDuplicateTrial
+    ? 0
+    : Math.min(
+        stats?.trialDays ?? user?.trialDays ?? TRIAL_LENGTH_DAYS,
+        TRIAL_LENGTH_DAYS,
+      );
+  const daysLeft =
+    createdAt && !isDuplicateTrial
+      ? Math.min(computeTrialDaysLeft(createdAt, totalTrialDays), totalTrialDays)
+      : 0;
+  const trialProgress =
+    totalTrialDays > 0 ? Math.round((daysLeft / totalTrialDays) * 100) : 0;
 
   const botStatusDisplay = getBotStatusDisplay(stats);
   const filters = buildFilterChips(stats?.activeFilters);
