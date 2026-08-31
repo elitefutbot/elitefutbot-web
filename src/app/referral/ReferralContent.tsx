@@ -11,17 +11,17 @@ const steps = [
   {
     icon: Share2,
     title: "Share your link",
-    body: "Copy your personal referral link and send it to friends who'd want to snipe deals too.",
+    body: "Copy your personal referral link and share it with friends, Discord groups, and fellow snipers.",
   },
   {
     icon: UserPlus,
     title: "They sign up",
-    body: "When someone registers through your link, their account is automatically linked back to you.",
+    body: "When someone creates an account through your link, they are permanently attached to your profile.",
   },
   {
     icon: CheckCircle2,
-    title: "You get credit",
-    body: "Every signup with a license key through your link shows up as a referral on your account.",
+    title: "Earn 50% Profit Share",
+    body: "Receive a massive 50% profit share on every Pro license sale made through your referral link.",
   },
 ];
 
@@ -38,12 +38,14 @@ export function ReferralContent() {
 
   return (
     <main className="max-w-4xl mx-auto px-6 py-20">
+      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-mono font-bold uppercase tracking-wider mb-4">
+        ⚡ 50% Lifetime Commission
+      </div>
       <h1 className="font-display text-6xl tracking-tight mb-4">
-        Invite Friends, <span className="bg-primary text-dark px-[0.06em] rounded-[0.06em] box-decoration-clone">Grow</span> the Squad
+        Invite Friends, <span className="bg-primary text-dark px-[0.06em] rounded-[0.06em] box-decoration-clone">Earn 50%</span> Profit Share
       </h1>
-      <p className="text-gray-400 mb-16 max-w-xl">
-        Every Elite FUT SNIPER user gets a personal referral link. Share it,
-        and signups that come through it are credited straight back to you.
+      <p className="text-gray-400 mb-16 max-w-xl text-base leading-relaxed">
+        Every Elite FUT SNIPER user gets a personal referral link. Share it with friends and fellow FC snipers to earn a 50% profit share on every license purchase.
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
