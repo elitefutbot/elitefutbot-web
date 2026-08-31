@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const BACKEND_API_URL =
-  process.env.BACKEND_API_URL ?? "http://localhost:5000";
+  process.env.BACKEND_API_URL ?? "https://elitefutbot-backend-three.vercel.app";
 
 const nextConfig: NextConfig = {
   async rewrites() {
