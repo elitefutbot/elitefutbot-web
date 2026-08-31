@@ -102,15 +102,25 @@ export function LicenseKeyModal({
           </button>
         </form>
 
-        <a
-          href={DODO_PRODUCT_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex items-center justify-center gap-1 text-sm text-gray-400 hover:text-primary transition-colors"
-        >
-          Don&apos;t have a license key? Get one on Dodo Payments
-          <ArrowUpRight className="size-3.5" />
-        </a>
+        <div className="relative mt-3 p-4 rounded-xl bg-gradient-to-br from-primary/15 via-primary/5 to-surface/80 border border-primary/30 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-[0_0_20px_rgba(209,250,75,0.08)]">
+          <div className="text-center sm:text-left">
+            <p className="text-xs font-bold text-white flex items-center justify-center sm:justify-start gap-1.5">
+              <span>⚡</span> Don&apos;t have a license key yet?
+            </p>
+            <p className="text-[11px] text-gray-400 mt-0.5">
+              Unlock unlimited snipes, AI SBC solver, and instant access.
+            </p>
+          </div>
+          <a
+            href={DODO_PRODUCT_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-dark font-black text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-md"
+          >
+            Get License
+            <ArrowUpRight className="size-3.5" />
+          </a>
+        </div>
       </DialogContent>
     </Dialog>
   );

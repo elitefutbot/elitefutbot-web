@@ -203,12 +203,12 @@ function DashboardContent() {
   const userProfit = stats?.profits ?? 0;
   const rawList = leaderboardData?.leaderboard;
   const defaultList: LeaderboardEntry[] = [
-    { rank: 1, name: "GoldRush_23", profit: 245000 },
-    { rank: 2, name: "SnipeKing", profit: 198400 },
-    { rank: 3, name: "FUTGrinder", profit: 165200 },
-    { rank: 4, name: "MarketMaverick", profit: 132400 },
-    { rank: 5, name: "CoinFarmer99", profit: 108900 },
-    { rank: 6, name: "ShadowTrader", profit: 89500 },
+    { rank: 1, name: "GoldRush_23", profit: 6840000 },
+    { rank: 2, name: "SnipeKing", profit: 5920000 },
+    { rank: 3, name: "FUTGrinder", profit: 5180000 },
+    { rank: 4, name: "MarketMaverick", profit: 3420000 },
+    { rank: 5, name: "CoinFarmer99", profit: 2890000 },
+    { rank: 6, name: "ShadowTrader", profit: 1950000 },
   ];
 
   const list = rawList && rawList.length > 0 ? rawList : defaultList;
