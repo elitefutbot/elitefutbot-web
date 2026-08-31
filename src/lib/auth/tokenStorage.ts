@@ -5,6 +5,8 @@ export interface SessionUser {
   lastName: string;
   email: string;
   createdAt: string;
+  trialDays?: number;
+  isDuplicateTrial?: boolean;
   isPaid: boolean;
   isTrialActive: boolean;
   hasAccess: boolean;
@@ -20,6 +22,8 @@ export interface LoginResponse {
   profits: number;
   isPaid: boolean;
   createdAt: string;
+  trialDays?: number;
+  isDuplicateTrial?: boolean;
   isTrialActive: boolean;
   hasAccess: boolean;
   token: string;
@@ -66,6 +70,8 @@ export function setSession(data: LoginResponse): void {
     lastName: data.lastName,
     email: data.email,
     createdAt: data.createdAt,
+    trialDays: data.trialDays,
+    isDuplicateTrial: data.isDuplicateTrial,
     isPaid: data.isPaid,
     isTrialActive: data.isTrialActive,
     hasAccess: data.hasAccess,

@@ -24,29 +24,7 @@ export default function AnalyticsScripts() {
       window.removeEventListener("mousemove", loadAnalytics);
       window.removeEventListener("click", loadAnalytics);
 
-      // 1. Google Analytics
-      try {
-        const gaScript = document.createElement("script");
-        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-224X1P08Z4";
-        gaScript.async = true;
-        gaScript.onerror = () => {
-          // Gracefully ignore blocked trackers
-        };
-        document.head.appendChild(gaScript);
-
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        const win = window as any;
-        win.dataLayer = win.dataLayer || [];
-        function gtag(...args: unknown[]) {
-          win.dataLayer.push(args);
-        }
-        gtag("js", new Date());
-        gtag("config", "G-224X1P08Z4");
-      } catch {
-        // Ignore analytics initialization errors
-      }
-
-      // 2. Microsoft Clarity
+      // Microsoft Clarity
       try {
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         (function (c: any, l: any, a: any, r: any, i: any, t?: any, y?: any) {

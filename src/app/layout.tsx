@@ -178,6 +178,18 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Google tag (gtag.js) */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CB5DETL9CY" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CB5DETL9CY');
+            `,
+          }}
+        />
         {/* Open Graph & Social Share Fallback Tags for WhatsApp, X/Twitter, FB, iMessage, Discord, Telegram */}
         <meta property="og:image" content="https://elitefutbot.com/og-image.png" />
         <meta property="og:image:secure_url" content="https://elitefutbot.com/og-image.png" />

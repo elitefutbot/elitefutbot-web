@@ -1,7 +1,6 @@
 // Must match TRIAL_DAYS on fifa-snipe-bot-backend (controllers/authController.js).
-// The backend only returns a computed `isTrialActive` boolean, not the trial
-// length itself, so this is duplicated here rather than derived from the API.
-export const TRIAL_LENGTH_DAYS = 14;
+// Backend defaults to 7 days (or user.trialDays if set).
+export const TRIAL_LENGTH_DAYS = 7;
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
