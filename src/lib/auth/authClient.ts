@@ -13,13 +13,14 @@ export type LoginResult =
 export async function login(
   email: string,
   password: string,
+  deviceId?: string,
 ): Promise<LoginResult> {
   let res: Response;
   try {
     res = await fetch("/api/auth/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ email, password, deviceId }),
     });
   } catch {
     return {
@@ -53,6 +54,7 @@ export async function register(params: {
   licenseKey?: string;
   referralCode?: string;
   referralClickedAt?: string;
+  deviceId?: string;
 }): Promise<RegisterResult> {
   let res: Response;
   try {

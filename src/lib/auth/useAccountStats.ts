@@ -19,6 +19,8 @@ export interface AccountStats {
   profits: number;
   isPaid: boolean;
   createdAt: string;
+  trialDays?: number;
+  isDuplicateTrial?: boolean;
   isTrialActive: boolean;
   hasAccess: boolean;
   botStatus: BotStatus;

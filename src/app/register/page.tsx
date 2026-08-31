@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { register } from "@/lib/auth/authClient";
+import { getDeviceId } from "@/lib/fingerprint";
 import {
   getReferralClickedAtFromCookie,
   getReferralCodeFromCookie,
@@ -75,6 +76,7 @@ export default function RegisterPage() {
       licenseKey: licenseKey || undefined,
       referralCode: trimmedReferralCode || undefined,
       referralClickedAt,
+      deviceId: getDeviceId(),
     });
     setLoading(false);
 

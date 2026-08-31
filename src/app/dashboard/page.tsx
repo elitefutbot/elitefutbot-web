@@ -184,8 +184,10 @@ function DashboardContent() {
   const displayName = user?.name ?? "there";
   const createdAt = stats?.createdAt ?? user?.createdAt;
   const isPaid = stats?.isPaid ?? user?.isPaid ?? false;
-  const daysLeft = createdAt ? computeTrialDaysLeft(createdAt) : 0;
-  const trialProgress = Math.round((daysLeft / TRIAL_LENGTH_DAYS) * 100);
+  const isDuplicateTrial = stats?.isDuplicateTrial ?? user?.isDuplicateTrial ?? false;
+  const totalTrialDays = stats?.trialDays ?? user?.trialDays ?? TRIAL_LENGTH_DAYS;
+  const daysLeft = createdAt && !isDuplicateTrial ? computeTrialDaysLeft(createdAt, totalTrialDays) : 0;
+  const trialProgress = totalTrialDays > 0 ? Math.round((daysLeft / totalTrialDays) * 100) : 0;
 
   const botStatusDisplay = getBotStatusDisplay(stats);
   const filters = buildFilterChips(stats?.activeFilters);
@@ -248,17 +250,24 @@ function DashboardContent() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 items-start">
           <div className="space-y-8">
             {/* Trial banner */}
-            <div className="bg-card relative overflow-hidden p-6 md:p-8 rounded-2xl border border-primary/30 shadow-[0_4px_24px_rgba(0,0,0,0.2)]">
+            <div className={`bg-card relative overflow-hidden p-6 md:p-8 rounded-2xl border ${isDuplicateTrial ? "border-red-500/40 shadow-[0_4px_24px_rgba(239,68,68,0.15)]" : "border-primary/30 shadow-[0_4px_24px_rgba(0,0,0,0.2)]"}`}>
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div className="flex-1">
-                  <span className="font-mono text-[10px] text-primary font-bold uppercase tracking-widest">
+                  <span className={`font-mono text-[10px] font-bold uppercase tracking-widest ${isDuplicateTrial ? "text-red-400" : "text-primary"}`}>
                     {isPaid
                       ? "Elite FUT SNIPER Pro"
-                      : `${TRIAL_LENGTH_DAYS}-Day Free Trial`}
+                      : isDuplicateTrial
+                        ? "Previous Trial Detected"
+                        : `${totalTrialDays}-Day Free Trial`}
                   </span>
                   <h1 className="font-display text-3xl tracking-tight mt-1 mb-3">
                     {isPaid ? (
                       "You have full access"
+                    ) : isDuplicateTrial ? (
+                      <>
+                        <span className="bg-red-500 text-white px-[0.06em] rounded-[0.06em] box-decoration-clone">0 days</span> left
+                        in your trial
+                      </>
                     ) : (
                       <>
                         <span className="bg-primary text-dark px-[0.06em] rounded-[0.06em] box-decoration-clone">{daysLeft} days</span> left
@@ -266,14 +275,18 @@ function DashboardContent() {
                       </>
                     )}
                   </h1>
-                  {!isPaid && (
+                  {isDuplicateTrial ? (
+                    <p className="text-xs text-red-400 mt-2">
+                      We detected that a free trial was already used on this device. Upgrade to Pro below to unlock full bot access.
+                    </p>
+                  ) : !isPaid ? (
                     <div className="w-full max-w-sm h-2 rounded-full bg-white/10 overflow-hidden">
                       <div
                         className="h-full rounded-full bg-primary transition-all"
                         style={{ width: `${trialProgress}%` }}
                       />
                     </div>
-                  )}
+                  ) : null}
                 </div>
                 {!isPaid && (
                   <div className="shrink-0 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
