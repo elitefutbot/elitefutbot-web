@@ -28,12 +28,12 @@ import {
   Check,
   X,
   ArrowUpRight,
+  SlidersHorizontal,
 } from "lucide-react";
 import {
   SUPPORTED_LOCALES,
   isValidLocale,
   getLocaleData,
-  SupportedLocale,
 } from "@/data/locales";
 
 export function generateStaticParams() {
@@ -43,6 +43,26 @@ export function generateStaticParams() {
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
+
+const ICONS_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+  Zap,
+  ShieldCheck,
+  Sparkles,
+  TrendingUp,
+  Tag,
+  SlidersHorizontal,
+  Layout,
+  Lock,
+  BarChart3,
+  MessageSquare,
+  Puzzle,
+  Compass,
+  Sliders,
+  Filter,
+  Cpu,
+  Shield,
+  Coins,
+};
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -147,6 +167,12 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
           {
             "@type": "ListItem",
             position: 2,
+            name: dict.locale.nativeName,
+            item: `${baseUrl}/${locale}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
             name: "FC 27 FUT Snipe Bot",
             item: `${baseUrl}/${locale}/fc27-fut-snipe-bot`,
           },
@@ -167,7 +193,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#faq`,
-        mainEntity: dict.snipeBot.faqs.map((faq) => ({
+        mainEntity: dict.snipeBot.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
           acceptedAnswer: {
@@ -233,6 +259,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
               </a>
             </div>
 
+            {/* Quick Metrics Bar */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto mb-12">
               <div className="p-3.5 rounded-xl bg-dark/60 border border-white/10 flex items-center justify-center gap-2 text-xs sm:text-sm text-gray-300 font-medium">
                 <Zap className="w-4 h-4 text-primary shrink-0" />
@@ -252,6 +279,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
               </div>
             </div>
 
+            {/* YOUTUBE VIDEO EMBED CONTAINER */}
             <div className="relative mx-auto max-w-4xl group" id="demo">
               <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 via-cyan-500/20 to-primary/30 rounded-3xl blur opacity-40 group-hover:opacity-75 transition duration-500" />
               <div className="relative rounded-2xl overflow-hidden border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.9)] bg-[#0d0d0d]">
@@ -261,18 +289,18 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                     <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                     <div className="w-3 h-3 rounded-full bg-green-500/80" />
                     <span className="text-xs font-mono text-gray-400 ml-2">
-                      EA FC 27 Live Sniping HUD – {dict.locale.nativeName}
+                      {dict.snipeBot.hero.demoTitle}
                     </span>
                   </div>
                   <div className="flex items-center gap-1.5 text-xs text-primary font-bold font-mono">
                     <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
-                    20MS LIVE DEMO
+                    {dict.snipeBot.hero.demoBadge}
                   </div>
                 </div>
                 <div className="aspect-video w-full relative">
                   <LiteYouTubeEmbed
                     videoId="S0YuEelYNQ8"
-                    title="EA FC 27 Sniping Bot & Autobuyer Live Demo"
+                    title={`EA FC 27 Sniping Bot & Autobuyer Demonstration (${dict.locale.nativeName})`}
                   />
                 </div>
               </div>
@@ -280,7 +308,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
           </div>
         </header>
 
-        {/* 10 TECHNICAL MODULES */}
+        {/* 10 TECHNICAL MODULES SECTION */}
         <section className="py-20 lg:py-28 relative border-b border-white/5" id="features">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
@@ -289,7 +317,10 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                 {dict.snipeBot.featuresHeading.badge}
               </div>
               <h2 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.snipeBot.featuresHeading.title}
+                {dict.snipeBot.featuresHeading.title}{" "}
+                <span className="text-primary italic">
+                  {dict.snipeBot.featuresHeading.titleHighlight}
+                </span>
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
                 {dict.snipeBot.featuresHeading.subtitle}
@@ -297,53 +328,64 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {dict.snipeBot.features.map((module) => (
-                <div
-                  key={module.num}
-                  className="p-6 sm:p-7 rounded-2xl bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group shadow-xl hover:-translate-y-1"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black text-primary font-mono">
-                      {module.num}
-                    </span>
-                    <span
-                      className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${
-                        module.badgeColor || "bg-primary/15 text-primary border-primary/30"
-                      }`}
-                    >
-                      {module.badge}
-                    </span>
-                  </div>
+              {dict.snipeBot.features.map((module) => {
+                const IconComponent =
+                  (module.iconName && ICONS_MAP[module.iconName]) || Zap;
+                return (
+                  <div
+                    key={module.num}
+                    className="p-6 sm:p-7 rounded-2xl bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group shadow-xl hover:-translate-y-1"
+                  >
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[35px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">
-                    {module.title}
-                  </h3>
-                  <div className="text-xs font-mono text-gray-400 mb-3">
-                    {module.tagline}
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-5">
-                    {module.description}
-                  </p>
-
-                  <div className="pt-4 border-t border-white/5 space-y-2">
-                    {(module.highlights || []).map((item, i) => (
-                      <div
-                        key={i}
-                        className="flex items-center gap-2 text-xs text-gray-300 font-medium"
-                      >
-                        <Check className="w-3.5 h-3.5 text-primary shrink-0" />
-                        <span>{item}</span>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="flex items-center gap-3">
+                        <span className="text-2xl font-black text-primary font-mono">
+                          {module.num}
+                        </span>
+                        <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-colors">
+                          <IconComponent className="w-5 h-5" />
+                        </div>
                       </div>
-                    ))}
+                      <span
+                        className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${
+                          module.badgeColor || "bg-primary/15 text-primary border-primary/30"
+                        }`}
+                      >
+                        {module.badge}
+                      </span>
+                    </div>
+
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">
+                      {module.title}
+                    </h3>
+                    <div className="text-xs font-mono text-gray-400 mb-3">
+                      {module.tagline}
+                    </div>
+
+                    <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-5">
+                      {module.description}
+                    </p>
+
+                    <div className="pt-4 border-t border-white/5 space-y-2">
+                      {(module.highlights || []).map((item, i) => (
+                        <div
+                          key={i}
+                          className="flex items-center gap-2 text-xs text-gray-300 font-medium"
+                        >
+                          <Check className="w-3.5 h-3.5 text-primary shrink-0" />
+                          <span>{item}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
 
-        {/* COMPARISON TABLE */}
+        {/* COMPARISON BENCHMARK TABLE */}
         <section className="py-20 bg-[#090909] border-b border-white/5" id="comparison">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-14">
@@ -352,7 +394,10 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                 {dict.snipeBot.comparison.badge}
               </div>
               <h2 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.snipeBot.comparison.title}
+                {dict.snipeBot.comparison.title}{" "}
+                <span className="text-primary italic">
+                  {dict.snipeBot.comparison.titleHighlight}
+                </span>
               </h2>
               <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
                 {dict.snipeBot.comparison.subtitle}
@@ -364,16 +409,16 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                 <thead>
                   <tr className="border-b border-white/10 bg-white/[0.03]">
                     <th className="py-4 px-4 sm:px-6 font-mono uppercase text-gray-400 font-bold">
-                      Feature &amp; Metric
+                      {dict.snipeBot.comparison.col1}
                     </th>
                     <th className="py-4 px-4 sm:px-6 font-mono uppercase text-primary font-black bg-primary/10 border-x border-primary/20">
-                      Elite FUT SNIPER
+                      {dict.snipeBot.comparison.col2}
                     </th>
                     <th className="py-4 px-4 sm:px-6 font-mono uppercase text-rose-400 font-bold">
-                      Cloud Proxy Bots
+                      {dict.snipeBot.comparison.col3}
                     </th>
                     <th className="py-4 px-4 sm:px-6 font-mono uppercase text-gray-400 font-bold">
-                      Manual Trading
+                      {dict.snipeBot.comparison.col4}
                     </th>
                   </tr>
                 </thead>
@@ -406,10 +451,20 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                 </tbody>
               </table>
             </div>
+
+            <div className="mt-8 text-center">
+              <Link
+                href="/tools/comparison-guide"
+                className="inline-flex items-center gap-2 text-xs font-mono text-gray-400 hover:text-primary transition-colors underline underline-offset-4"
+              >
+                <span>{dict.snipeBot.comparison.competitorLinkText}</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
           </div>
         </section>
 
-        {/* 4-STEP HOW IT WORKS */}
+        {/* 4-STEP HOW IT WORKS PROCESS */}
         <section className="py-20 lg:py-28 relative border-b border-white/5" id="how-it-works">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div className="text-center mb-16">
@@ -418,7 +473,10 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                 {dict.snipeBot.howItWorks.badge}
               </div>
               <h2 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.snipeBot.howItWorks.title}
+                {dict.snipeBot.howItWorks.title}{" "}
+                <span className="text-primary italic">
+                  {dict.snipeBot.howItWorks.titleHighlight}
+                </span>
               </h2>
               <p className="text-gray-400 max-w-xl mx-auto text-sm sm:text-base">
                 {dict.snipeBot.howItWorks.subtitle}
@@ -426,31 +484,38 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              {dict.snipeBot.howItWorks.steps.map((step) => (
-                <div
-                  key={step.num}
-                  className="p-6 rounded-2xl bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
-                >
-                  <div>
-                    <div className="flex items-center justify-between mb-5">
-                      <span className="text-3xl font-black text-primary font-mono">
-                        {step.num}
-                      </span>
+              {dict.snipeBot.howItWorks.steps.map((step) => {
+                const IconComponent =
+                  (step.iconName && ICONS_MAP[step.iconName]) || Puzzle;
+                return (
+                  <div
+                    key={step.num}
+                    className="p-6 rounded-2xl bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40 transition-all duration-300 flex flex-col justify-between group shadow-lg"
+                  >
+                    <div>
+                      <div className="flex items-center justify-between mb-5">
+                        <span className="text-3xl font-black text-primary font-mono">
+                          {step.num}
+                        </span>
+                        <div className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-colors">
+                          <IconComponent className="w-5 h-5" />
+                        </div>
+                      </div>
+                      <h3 className="text-lg font-bold text-white mb-2">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
+                        {step.desc}
+                      </p>
                     </div>
-                    <h3 className="text-lg font-bold text-white mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-400 text-xs sm:text-sm leading-relaxed">
-                      {step.desc}
-                    </p>
-                  </div>
 
-                  <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-gray-400">
-                    <span className="text-primary">{step.badge}</span>
-                    <span>✓</span>
+                    <div className="mt-6 pt-4 border-t border-white/5 flex items-center justify-between text-[11px] font-mono text-gray-400">
+                      <span className="text-primary">{step.badge}</span>
+                      <span>Verified ✓</span>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </section>
@@ -471,7 +536,10 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
               </div>
 
               <h2 className="text-2xl sm:text-4xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.snipeBot.article.title}
+                {dict.snipeBot.article.title}{" "}
+                <span className="text-primary">
+                  {dict.snipeBot.article.titleHighlight}
+                </span>
               </h2>
 
               <div className="space-y-4 text-gray-300 text-xs sm:text-sm leading-relaxed">
@@ -506,15 +574,21 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
             <div className="text-center mb-14">
               <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 px-3.5 py-1.5 rounded-full text-xs font-bold text-primary mb-3">
                 <HelpCircle className="w-3.5 h-3.5" />
-                FAQ
+                {dict.snipeBot.faqs.badge}
               </div>
               <h2 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                Preguntas Frecuentes
+                {dict.snipeBot.faqs.title}{" "}
+                <span className="text-primary italic">
+                  {dict.snipeBot.faqs.titleHighlight}
+                </span>
               </h2>
+              <p className="text-gray-400 text-sm sm:text-base max-w-xl mx-auto">
+                {dict.snipeBot.faqs.subtitle}
+              </p>
             </div>
 
             <div className="space-y-4">
-              {dict.snipeBot.faqs.map((faq, index) => (
+              {dict.snipeBot.faqs.items.map((faq, index) => (
                 <div
                   key={index}
                   className="p-5 sm:p-6 rounded-2xl bg-[#111111]/90 border border-white/10 hover:border-primary/40 transition-all"
@@ -536,13 +610,18 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
 
         {/* BOTTOM FINAL CALL TO ACTION */}
         <section className="py-20 relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[350px] bg-primary/10 blur-[130px] rounded-full pointer-events-none" />
+
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div className="p-8 sm:p-14 rounded-3xl bg-gradient-to-b from-[#161616] to-[#0c0c0c] border border-primary/30 shadow-[0_0_50px_rgba(204,255,0,0.1)]">
               <span className="inline-block px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-mono font-bold uppercase tracking-wider mb-4">
                 {dict.snipeBot.cta.badge}
               </span>
               <h2 className="text-3xl sm:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.snipeBot.cta.title}
+                {dict.snipeBot.cta.title}{" "}
+                <span className="text-primary">
+                  {dict.snipeBot.cta.titleHighlight}
+                </span>
               </h2>
               <p className="text-gray-300 max-w-xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
                 {dict.snipeBot.cta.subtitle}

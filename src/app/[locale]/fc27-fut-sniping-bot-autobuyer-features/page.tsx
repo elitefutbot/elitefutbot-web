@@ -19,15 +19,19 @@ import {
   Clock,
   Coins,
   CheckCircle2,
+  Tv,
+  Wallet,
+  Filter,
+  Shield,
+  XCircle,
+  MousePointerClick,
+  Activity,
   Check,
-  X,
-  Bot,
 } from "lucide-react";
 import {
   SUPPORTED_LOCALES,
   isValidLocale,
   getLocaleData,
-  SupportedLocale,
 } from "@/data/locales";
 
 export function generateStaticParams() {
@@ -37,6 +41,27 @@ export function generateStaticParams() {
 interface PageProps {
   params: Promise<{ locale: string }>;
 }
+
+const ICONS_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
+  Zap,
+  Tag,
+  Sliders,
+  TrendingUp,
+  Cpu,
+  ShieldCheck,
+  Layout,
+  Globe,
+  MessageSquare,
+  BarChart3,
+  Lock,
+  Sparkles,
+  Coins,
+  Wallet,
+  Shield,
+  Filter,
+  Tv,
+  Clock,
+};
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params;
@@ -100,8 +125,8 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#software`,
         name: dict.featuresPage.meta.title,
-        operatingSystem: "Windows, macOS, ChromeOS",
-        applicationCategory: "GameApplication",
+        operatingSystem: "Chrome OS, Windows, macOS, Linux",
+        applicationCategory: "BrowserApplication",
         image: `${baseUrl}/og-image.png`,
         brand: {
           "@type": "Brand",
@@ -120,6 +145,31 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
             name: "Elite FUT SNIPER",
           },
         },
+        featureList: dict.featuresPage.features.map(
+          (f) => `${f.num} ${f.title}: ${f.tagline}`
+        ),
+      },
+      {
+        "@type": "ItemList",
+        name: `Elite FUT SNIPER 11-Module Features Arsenal (${dict.locale.nativeName})`,
+        itemListElement: dict.featuresPage.features.map((feat, idx) => ({
+          "@type": "ListItem",
+          position: idx + 1,
+          name: `${feat.num} ${feat.title}`,
+          description: feat.description,
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#faq`,
+        mainEntity: dict.featuresPage.faqs.items.map((faq) => ({
+          "@type": "Question",
+          name: faq.q,
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: faq.a,
+          },
+        })),
       },
       {
         "@type": "BreadcrumbList",
@@ -134,185 +184,292 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
           {
             "@type": "ListItem",
             position: 2,
+            name: dict.locale.nativeName,
+            item: `${baseUrl}/${locale}`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
             name: "Features Suite",
             item: `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features`,
           },
         ],
       },
-      {
-        "@type": "FAQPage",
-        "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#faq`,
-        mainEntity: dict.featuresPage.faqs.map((faq) => ({
-          "@type": "Question",
-          name: faq.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: faq.a,
-          },
-        })),
-      },
     ],
   };
 
   return (
-    <>
+    <div className="bg-dark text-white min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      <main className="flex-grow bg-[#070707] text-white font-sans selection:bg-primary selection:text-black">
-        {/* HERO SECTION */}
-        <header className="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden border-b border-white/5">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] bg-primary/10 blur-[140px] rounded-full -z-10 pointer-events-none" />
+      {/* HERO SECTION */}
+      <section className="relative pt-28 pb-20 overflow-hidden border-b border-white/5">
+        <div
+          className="absolute inset-0 opacity-[0.03] pointer-events-none"
+          style={{
+            backgroundImage: "radial-gradient(#CCFF00 1px, transparent 1px)",
+            backgroundSize: "32px 32px",
+          }}
+        />
+        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[750px] h-[380px] bg-primary/10 blur-[140px] rounded-full pointer-events-none" />
 
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div className="inline-flex items-center gap-2.5 bg-primary/10 border border-primary/30 px-4 py-1.5 rounded-full mb-6 backdrop-blur-md shadow-[0_0_20px_rgba(204,255,0,0.2)]">
-              <span className="text-xs font-black text-primary tracking-wider uppercase font-mono">
-                {dict.featuresPage.hero.badge}
-              </span>
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-black mb-6 tracking-tight text-white leading-tight font-headline">
-              {dict.featuresPage.hero.titleLine1} <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_16px_rgba(204,255,0,0.35)]">
-                {dict.featuresPage.hero.titleHighlight}
-              </span>
-            </h1>
-
-            <div className="max-w-3xl mx-auto mb-8 p-4 sm:p-5 rounded-2xl bg-white/[0.03] border border-white/10 backdrop-blur-md">
-              <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-medium">
-                {dict.featuresPage.hero.directAnswerSnippet}
-              </p>
-            </div>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link
-                className="px-8 py-4 bg-primary text-black font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_30px_rgba(204,255,0,0.5)] flex items-center justify-center gap-2 w-full sm:w-auto"
-                href="/register"
-              >
-                {dict.featuresPage.hero.ctaPrimary}
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <Link
-                className="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm w-full sm:w-auto"
-                href={`/${locale}/fc27-fut-snipe-bot#demo`}
-              >
-                <Zap className="w-5 h-5 text-primary" />
-                {dict.featuresPage.hero.ctaSecondary}
-              </Link>
-            </div>
+        <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/25 text-primary text-xs font-mono font-bold uppercase tracking-wider mb-6">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>{dict.featuresPage.hero.eyebrow}</span>
           </div>
-        </header>
 
-        {/* FEATURES GRID */}
-        <section className="py-20 lg:py-28 relative border-b border-white/5" id="features">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/25 px-3.5 py-1.5 rounded-full text-xs font-bold text-primary mb-3">
-                <Bot className="w-3.5 h-3.5" />
-                {dict.featuresPage.featuresHeading.badge}
+          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] mb-6">
+            {dict.featuresPage.hero.titleLine1} <br className="hidden sm:inline" />
+            <span className="bg-primary text-dark px-2 rounded box-decoration-clone">
+              {dict.featuresPage.hero.titleHighlight}
+            </span>
+            {dict.featuresPage.hero.titleLine2}
+          </h1>
+
+          {/* Standalone AEO / GEO Definition Passage */}
+          <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-white/[0.04] border border-white/10 mb-8 text-left">
+            <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-normal">
+              {dict.featuresPage.hero.directAnswerSnippet}
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+            <Link
+              href="/register"
+              className="w-full sm:w-auto px-8 py-4 bg-primary text-dark font-black text-sm uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.3)] flex items-center justify-center gap-2"
+            >
+              {dict.featuresPage.hero.ctaPrimary}
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="#features-list"
+              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+            >
+              {dict.featuresPage.hero.ctaSecondary}
+            </Link>
+          </div>
+
+          {/* Quick Trust Highlights */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+            {dict.featuresPage.hero.trustHighlights.map((th, i) => (
+              <div
+                key={i}
+                className="p-4 rounded-xl bg-white/[0.03] border border-white/10"
+              >
+                <div className="text-primary font-mono text-[10px] font-bold uppercase tracking-widest">
+                  {th.label}
+                </div>
+                <div className="text-sm font-bold text-white mt-0.5">
+                  {th.title}
+                </div>
+                <div className="text-xs text-gray-300">{th.desc}</div>
               </div>
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.featuresPage.featuresHeading.title}
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
-                {dict.featuresPage.featuresHeading.subtitle}
-              </p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {dict.featuresPage.features.map((module) => (
-                <div
-                  key={module.num}
-                  className="p-6 sm:p-7 rounded-2xl bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group shadow-xl hover:-translate-y-1"
-                >
+      {/* FEATURE GRID SECTION (01 - 11) */}
+      <section id="features-list" className="py-24 max-w-6xl mx-auto px-6">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="font-mono text-xs text-primary font-bold uppercase tracking-widest mb-3">
+            {dict.featuresPage.featuresHeading.badge}
+          </div>
+          <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white mb-4">
+            {dict.featuresPage.featuresHeading.title}
+          </h2>
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-normal">
+            {dict.featuresPage.featuresHeading.subtitle}
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {dict.featuresPage.features.map((feat) => {
+            const Icon = (feat.iconName && ICONS_MAP[feat.iconName]) || Zap;
+            const isFeatured = feat.isFeatured;
+
+            return (
+              <div
+                key={feat.num}
+                className={`rounded-2xl p-6 relative flex flex-col justify-between transition-all ${
+                  isFeatured
+                    ? "bg-gradient-to-b from-primary/[0.14] via-dark to-dark border-2 border-primary shadow-[0_0_35px_rgba(204,255,0,0.18)] md:col-span-2 lg:col-span-2 ring-1 ring-primary/40"
+                    : "glass-card hover:border-white/20"
+                }`}
+              >
+                <div>
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-2xl font-black text-primary font-mono">
-                      {module.num}
-                    </span>
+                    <div className="flex items-center gap-3">
+                      <div
+                        className={`size-10 rounded-xl grid place-items-center ${
+                          isFeatured
+                            ? "bg-primary text-dark font-black shadow-md"
+                            : "bg-primary/10 border border-primary/20 text-primary"
+                        }`}
+                      >
+                        <Icon className="w-5 h-5" />
+                      </div>
+                      <span className="font-mono text-xs font-bold text-gray-400">
+                        {feat.num} //
+                      </span>
+                    </div>
+
                     <span
-                      className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border ${
-                        module.badgeColor || "bg-primary/15 text-primary border-primary/30"
+                      className={`text-[10px] font-mono font-bold uppercase tracking-wider px-2.5 py-1 rounded-full ${
+                        isFeatured
+                          ? "bg-primary text-dark font-black"
+                          : "bg-white/5 text-gray-300 border border-white/10"
                       }`}
                     >
-                      {module.badge}
+                      {feat.badge}
                     </span>
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">
-                    {module.title}
+                  <h3 className="font-display text-xl sm:text-2xl font-bold text-white mb-1">
+                    {feat.title}
                   </h3>
-                  <div className="text-xs font-mono text-gray-400 mb-3">
-                    {module.tagline}
+                  <div className="text-xs font-mono font-bold text-primary mb-3">
+                    {feat.tagline}
                   </div>
-
-                  <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-5">
-                    {module.description}
+                  <p className="text-gray-300 text-sm leading-relaxed mb-5 font-normal">
+                    {feat.description}
                   </p>
+                </div>
 
-                  <div className="pt-4 border-t border-white/5 space-y-2">
-                    {(module.highlights || []).map((item, i) => (
-                      <div
+                <div className="pt-4 border-t border-white/10">
+                  <ul className="space-y-1.5 mb-2">
+                    {(feat.specs || []).map((sp, i) => (
+                      <li
                         key={i}
                         className="flex items-center gap-2 text-xs text-gray-300 font-medium"
                       >
                         <Check className="w-3.5 h-3.5 text-primary shrink-0" />
-                        <span>{item}</span>
-                      </div>
+                        <span>{sp}</span>
+                      </li>
                     ))}
+                  </ul>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* HUMANIZATION++ DEEP DIVE FLAGSHIP SECTION */}
+      <section className="py-20 bg-dark relative border-y border-white/5 overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-primary/[0.04] blur-[150px] pointer-events-none" />
+        <div className="max-w-6xl mx-auto px-6 relative z-10">
+          <div className="rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-primary/[0.1] via-[#111] to-dark border-2 border-primary shadow-[0_0_50px_rgba(204,255,0,0.15)]">
+            <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10">
+              <div className="max-w-2xl">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary text-dark font-mono text-xs font-black uppercase tracking-wider mb-4">
+                  <ShieldCheck className="w-4 h-4" />
+                  <span>{dict.featuresPage.humanizationDeepDive.badge}</span>
+                </div>
+                <h2 className="font-display text-3xl sm:text-5xl font-black text-white mb-4">
+                  {dict.featuresPage.humanizationDeepDive.title} <br />
+                  <span className="text-primary">
+                    {dict.featuresPage.humanizationDeepDive.titleHighlight}
+                  </span>
+                </h2>
+                <p className="text-gray-200 text-base leading-relaxed mb-6 font-normal">
+                  {dict.featuresPage.humanizationDeepDive.description}
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-300">
+                  <div className="p-3.5 rounded-xl bg-dark/70 border border-white/10">
+                    <div className="font-bold text-white flex items-center gap-1.5 mb-1">
+                      <MousePointerClick className="w-4 h-4 text-primary" />
+                      {dict.featuresPage.humanizationDeepDive.bezierTitle}
+                    </div>
+                    <p className="text-xs text-gray-400">
+                      {dict.featuresPage.humanizationDeepDive.bezierDesc}
+                    </p>
+                  </div>
+                  <div className="p-3.5 rounded-xl bg-dark/70 border border-white/10">
+                    <div className="font-bold text-white flex items-center gap-1.5 mb-1">
+                      <Activity className="w-4 h-4 text-primary" />
+                      {dict.featuresPage.humanizationDeepDive.jitterTitle}
+                    </div>
+                    <p className="text-xs text-gray-400">
+                      {dict.featuresPage.humanizationDeepDive.jitterDesc}
+                    </p>
                   </div>
                 </div>
-              ))}
+              </div>
+
+              <div className="p-6 rounded-2xl bg-dark border border-white/15 text-center shrink-0 w-full lg:w-72">
+                <div className="text-xs font-mono font-bold uppercase tracking-widest text-primary mb-1">
+                  {dict.featuresPage.humanizationDeepDive.safetyRecordLabel}
+                </div>
+                <div className="text-4xl sm:text-5xl font-black text-white font-display my-2">
+                  {dict.featuresPage.humanizationDeepDive.bansCount}
+                </div>
+                <div className="text-xs text-emerald-400 font-bold uppercase tracking-wider bg-emerald-500/10 py-1 px-2.5 rounded-full border border-emerald-500/30 inline-block mb-3">
+                  {dict.featuresPage.humanizationDeepDive.verifiedBadge}
+                </div>
+                <p className="text-xs text-gray-400">
+                  {dict.featuresPage.humanizationDeepDive.testSessionDesc}
+                </p>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        {/* COMPARISON TABLE */}
-        <section className="py-20 bg-[#090909] border-b border-white/5">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl md:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.featuresPage.comparison.title}
-              </h2>
-              <p className="text-gray-400 max-w-2xl mx-auto text-sm sm:text-base">
-                {dict.featuresPage.comparison.subtitle}
-              </p>
+      {/* WHY WE OUTPERFORM EVERYTHING (COMPARISON TABLE) */}
+      <section className="py-24 bg-surface relative">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="max-w-3xl mb-14">
+            <div className="font-mono text-xs text-primary font-bold uppercase tracking-widest mb-3">
+              {dict.featuresPage.outperform.badge}
             </div>
+            <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white mb-6">
+              {dict.featuresPage.outperform.title}
+            </h2>
+            <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-normal">
+              {dict.featuresPage.outperform.subtitle}
+            </p>
+          </div>
 
-            <div className="overflow-x-auto rounded-2xl border border-white/10 bg-[#121212]/80 shadow-2xl">
-              <table className="w-full text-left text-xs sm:text-sm">
+          {/* Comparison Table */}
+          <div className="glass-card rounded-2xl overflow-hidden border border-white/10 shadow-xl mb-16">
+            <div className="overflow-x-auto">
+              <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="border-b border-white/10 bg-white/[0.03]">
-                    <th className="py-4 px-4 sm:px-6 font-mono uppercase text-gray-400 font-bold">
-                      Feature
+                  <tr className="border-b border-white/10 bg-white/5">
+                    <th className="py-5 px-6 text-gray-300 font-bold text-xs uppercase tracking-wider">
+                      {dict.featuresPage.outperform.col1}
                     </th>
-                    <th className="py-4 px-4 sm:px-6 font-mono uppercase text-primary font-black bg-primary/10 border-x border-primary/20">
-                      Elite FUT SNIPER
+                    <th className="py-5 px-6 text-primary font-black text-sm uppercase tracking-wider bg-primary/10 border-l border-r border-primary/20">
+                      {dict.featuresPage.outperform.col2}
                     </th>
-                    <th className="py-4 px-4 sm:px-6 font-mono uppercase text-rose-400 font-bold">
-                      Cloud Proxy Bots
+                    <th className="py-5 px-6 text-gray-400 font-bold text-xs uppercase tracking-wider">
+                      {dict.featuresPage.outperform.col3}
                     </th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-white/5">
-                  {dict.featuresPage.comparison.rows.map((row, idx) => (
+                <tbody className="divide-y divide-white/5 text-sm">
+                  {dict.featuresPage.outperform.rows.map((row, i) => (
                     <tr
-                      key={idx}
+                      key={i}
                       className="hover:bg-white/[0.02] transition-colors"
                     >
-                      <td className="py-4 px-4 sm:px-6 font-bold text-white">
+                      <td className="py-4 px-6 font-bold text-white">
                         {row.feature}
                       </td>
-                      <td className="py-4 px-4 sm:px-6 font-medium text-emerald-300 bg-primary/[0.04] border-x border-primary/20">
-                        <div className="flex items-center gap-1.5">
-                          <Check className="w-4 h-4 text-primary shrink-0" />
+                      <td className="py-4 px-6 bg-primary/[0.04] border-l border-r border-primary/15 font-semibold text-primary">
+                        <div className="flex items-center gap-2">
+                          <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                           <span>{row.elite}</span>
                         </div>
                       </td>
-                      <td className="py-4 px-4 sm:px-6 font-medium text-rose-300/80">
-                        <div className="flex items-center gap-1.5">
-                          <X className="w-4 h-4 text-rose-400 shrink-0" />
+                      <td className="py-4 px-6 text-gray-400">
+                        <div className="flex items-center gap-2">
+                          <XCircle className="w-4 h-4 text-red-400/60 shrink-0" />
                           <span>{row.cloud}</span>
                         </div>
                       </td>
@@ -322,41 +479,140 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
               </table>
             </div>
           </div>
-        </section>
 
-        {/* BOTTOM CTA */}
-        <section className="py-20 relative overflow-hidden">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-            <div className="p-8 sm:p-14 rounded-3xl bg-gradient-to-b from-[#161616] to-[#0c0c0c] border border-primary/30 shadow-[0_0_50px_rgba(204,255,0,0.1)]">
-              <h2 className="text-3xl sm:text-5xl font-black text-white mb-4 uppercase tracking-tight font-headline">
-                {dict.featuresPage.cta.title}
+          {/* 12 Outperform Feature Cards */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {dict.featuresPage.outperform.points.map((pt) => {
+              const Icon = (pt.iconName && ICONS_MAP[pt.iconName]) || Zap;
+              return (
+                <div
+                  key={pt.title}
+                  className="p-5 rounded-2xl bg-dark/70 border border-white/10 hover:border-primary/40 transition-colors"
+                >
+                  <div className="size-9 rounded-xl bg-primary/10 border border-primary/20 text-primary grid place-items-center mb-3">
+                    <Icon className="w-4.5 h-4.5" />
+                  </div>
+                  <h3 className="font-display text-lg font-bold text-white mb-1.5">
+                    {pt.title}
+                  </h3>
+                  <p className="text-xs text-gray-300 leading-relaxed font-normal">
+                    {pt.desc}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* ROADMAP SECTION */}
+      <section className="py-24 max-w-6xl mx-auto px-6">
+        <div className="rounded-3xl p-8 sm:p-12 bg-gradient-to-br from-white/[0.04] to-dark border border-white/10 relative overflow-hidden">
+          <div className="absolute top-0 right-0 w-80 h-80 bg-primary/5 blur-[100px] pointer-events-none" />
+
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div className="max-w-2xl">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/10 border border-amber-400/30 text-amber-400 text-xs font-mono font-bold uppercase tracking-wider mb-4">
+                <Clock className="w-3.5 h-3.5" />
+                <span>{dict.featuresPage.roadmap.badge}</span>
+              </div>
+              <h2 className="font-display text-3xl sm:text-4xl font-black text-white mb-3">
+                {dict.featuresPage.roadmap.title}
               </h2>
-              <p className="text-gray-300 max-w-xl mx-auto text-sm sm:text-base mb-8 leading-relaxed">
-                {dict.featuresPage.cta.subtitle}
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4 font-normal">
+                {dict.featuresPage.roadmap.description}
               </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Link
-                  className="px-8 py-4 bg-primary text-black font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.5)] flex items-center justify-center gap-2 w-full sm:w-auto"
-                  href="/register"
-                >
-                  {dict.featuresPage.cta.button}
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
-                <Link
-                  className="px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 backdrop-blur-sm w-full sm:w-auto"
-                  href="https://discord.gg/Rkb9nF6WG6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <MessageSquare className="w-5 h-5 text-primary" />
-                  {dict.featuresPage.cta.discord}
-                </Link>
+              <div className="flex items-center gap-2 text-xs text-gray-400 font-mono">
+                <span className="size-2 rounded-full bg-amber-400 animate-pulse" />
+                <span>{dict.featuresPage.roadmap.status}</span>
               </div>
             </div>
+
+            <div className="p-6 rounded-2xl bg-dark/90 border border-white/10 text-center shrink-0 min-w-[240px]">
+              <div className="text-xs text-primary font-mono font-bold uppercase tracking-widest mb-1">
+                {dict.featuresPage.roadmap.licenseBadge}
+              </div>
+              <div className="text-2xl font-black text-white font-display mb-2">
+                {dict.featuresPage.roadmap.licenseTitle}
+              </div>
+              <p className="text-xs text-gray-400">
+                {dict.featuresPage.roadmap.licenseDesc}
+              </p>
+            </div>
           </div>
-        </section>
-      </main>
-    </>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-20 bg-surface border-t border-white/5">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <div className="font-mono text-xs text-primary font-bold uppercase tracking-widest mb-2">
+              {dict.featuresPage.faqs.badge}
+            </div>
+            <h2 className="font-display text-3xl sm:text-4xl font-black text-white">
+              {dict.featuresPage.faqs.title}
+            </h2>
+          </div>
+
+          <div className="space-y-4">
+            {dict.featuresPage.faqs.items.map((faq, idx) => (
+              <div
+                key={idx}
+                className="p-6 rounded-2xl bg-dark border border-white/10 hover:border-white/20 transition-colors"
+              >
+                <div className="flex items-start gap-3">
+                  <HelpCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <h3 className="text-base sm:text-lg font-bold text-white mb-2">
+                      {faq.q}
+                    </h3>
+                    <p className="text-sm text-gray-300 leading-relaxed font-normal">
+                      {faq.a}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FINAL CALL TO ACTION */}
+      <section className="py-24 relative overflow-hidden border-t border-white/5">
+        <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+          <h2 className="font-display text-4xl sm:text-6xl font-black text-white mb-6 leading-tight">
+            {dict.featuresPage.cta.title} <br />
+            <span className="text-primary">
+              {dict.featuresPage.cta.titleHighlight}
+            </span>
+          </h2>
+          <p className="text-gray-300 text-base sm:text-lg max-w-xl mx-auto mb-10 font-normal">
+            {dict.featuresPage.cta.subtitle}
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="/register"
+              className="px-10 py-5 bg-primary text-dark font-black text-lg uppercase tracking-widest rounded-2xl hover:scale-105 transition-all shadow-[0_0_40px_rgba(204,255,0,0.4)] flex items-center justify-center gap-2"
+            >
+              {dict.featuresPage.cta.button}
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <Link
+              href="https://discord.gg/Rkb9nF6WG6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-5 bg-white/5 border border-white/10 text-white font-bold text-base uppercase tracking-widest rounded-2xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+            >
+              {dict.featuresPage.cta.discord}
+            </Link>
+          </div>
+          <p className="text-xs text-gray-400 font-mono uppercase tracking-widest mt-6">
+            {dict.featuresPage.cta.disclaimer}
+          </p>
+        </div>
+      </section>
+    </div>
   );
 }
