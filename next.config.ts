@@ -102,6 +102,11 @@ const nextConfig: NextConfig = {
         destination: "/ai-sbc-solver",
         permanent: true,
       },
+      {
+        source: "/fc27-fut-sniping-bout-utobuyer-features",
+        destination: "/fc27-fut-sniping-bot-autobuyer-features",
+        permanent: true,
+      },
     ];
   },
 };
