@@ -36,6 +36,14 @@ export const metadata: Metadata = {
     "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
   alternates: {
     canonical: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+    languages: {
+      "x-default": "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+      en: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+      es: "https://elitefutbot.com/es/fc27-fut-sniping-bot-autobuyer-features",
+      pt: "https://elitefutbot.com/pt/fc27-fut-sniping-bot-autobuyer-features",
+      fr: "https://elitefutbot.com/fr/fc27-fut-sniping-bot-autobuyer-features",
+      de: "https://elitefutbot.com/de/fc27-fut-sniping-bot-autobuyer-features",
+    },
   },
   openGraph: {
     title: "EA FC 27 Sniping Bot & Autobuyer Features | Elite FUT SNIPER",
