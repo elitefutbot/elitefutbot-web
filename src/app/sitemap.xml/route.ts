@@ -1,37 +1,50 @@
-import type { MetadataRoute } from 'next'
- 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://elitefutbot.com'
-  const currentDate = new Date()
-  
-  const homeLanguages = {
+import { NextResponse } from 'next/server';
+
+export const dynamic = 'force-static';
+export const revalidate = 86400; // 24 hours
+
+interface SitemapEntry {
+  url: string;
+  lastModified?: string;
+  changeFrequency?: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
+  priority?: number;
+  alternates?: {
+    languages?: Record<string, string>;
+  };
+}
+
+export async function GET() {
+  const baseUrl = 'https://elitefutbot.com';
+  const currentDate = new Date().toISOString();
+
+  const homeLanguages: Record<string, string> = {
     'x-default': `${baseUrl}/`,
     en: `${baseUrl}/`,
     es: `${baseUrl}/es`,
     pt: `${baseUrl}/pt`,
     fr: `${baseUrl}/fr`,
     de: `${baseUrl}/de`,
-  }
+  };
 
-  const snipeBotLanguages = {
+  const snipeBotLanguages: Record<string, string> = {
     'x-default': `${baseUrl}/fc27-fut-snipe-bot`,
     en: `${baseUrl}/fc27-fut-snipe-bot`,
     es: `${baseUrl}/es/fc27-fut-snipe-bot`,
     pt: `${baseUrl}/pt/fc27-fut-snipe-bot`,
     fr: `${baseUrl}/fr/fc27-fut-snipe-bot`,
     de: `${baseUrl}/de/fc27-fut-snipe-bot`,
-  }
+  };
 
-  const featuresLanguages = {
+  const featuresLanguages: Record<string, string> = {
     'x-default': `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
     en: `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
     es: `${baseUrl}/es/fc27-fut-sniping-bot-autobuyer-features`,
     pt: `${baseUrl}/pt/fc27-fut-sniping-bot-autobuyer-features`,
     fr: `${baseUrl}/fr/fc27-fut-sniping-bot-autobuyer-features`,
     de: `${baseUrl}/de/fc27-fut-sniping-bot-autobuyer-features`,
-  }
+  };
 
-  return [
+  const entries: SitemapEntry[] = [
     {
       url: `${baseUrl}/`,
       lastModified: currentDate,
@@ -451,5 +464,41 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.4,
     },
-  ]
+  ];
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+
+  for (const entry of entries) {
+    xml += '  <url>\n';
+    xml += `    <loc>${entry.url}</loc>\n`;
+
+    if (entry.alternates?.languages) {
+      for (const [lang, href] of Object.entries(entry.alternates.languages)) {
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${href}" />\n`;
+      }
+    }
+
+    if (entry.lastModified) {
+      xml += `    <lastmod>${entry.lastModified}</lastmod>\n`;
+    }
+    if (entry.changeFrequency) {
+      xml += `    <changefreq>${entry.changeFrequency}</changefreq>\n`;
+    }
+    if (entry.priority !== undefined) {
+      xml += `    <priority>${entry.priority.toFixed(2)}</priority>\n`;
+    }
+    xml += '  </url>\n';
+  }
+
+  xml += '</urlset>';
+
+  return new NextResponse(xml, {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/xml; charset=utf-8',
+      'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
+    },
+  });
 }
