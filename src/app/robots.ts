@@ -10,18 +10,37 @@ export default function robots(): MetadataRoute.Robots {
       },
       {
         userAgent: [
+          // Google & Gemini (SEO / GEO)
+          'Googlebot',
+          'Googlebot-Image',
+          'Google-Extended',
+          // Bing & Microsoft Copilot
+          'Bingbot',
+          'msnbot',
+          // OpenAI (ChatGPT & SearchGPT / AEO)
           'GPTBot',
           'ChatGPT-User',
           'OAI-SearchBot',
+          // Perplexity AI (AEO / Answer Engines)
           'PerplexityBot',
+          // Anthropic (Claude / AEO)
           'ClaudeBot',
           'Claude-Web',
           'anthropic-ai',
-          'Google-Extended',
-          'Amazonbot',
+          // Apple (Apple Intelligence & Siri)
+          'Applebot',
           'Applebot-Extended',
+          // Meta (Llama & Meta AI)
+          'Meta-ExternalAgent',
+          'FacebookBot',
+          // Amazon (Alexa & Rufus)
+          'Amazonbot',
+          // ByteDance / TikTok
           'Bytespider',
-          'cohere-ai'
+          // Cohere & Other LLM Search
+          'cohere-ai',
+          'YouBot',
+          'DuckDuckBot',
         ],
         allow: '/',
         disallow: ['/api/', '/dashboard', '/forgot-password', '/reset-password'],
@@ -30,4 +49,5 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: 'https://elitefutbot.com/sitemap.xml',
   }
 }
+
 
