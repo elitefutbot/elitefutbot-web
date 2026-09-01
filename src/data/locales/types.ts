@@ -36,6 +36,7 @@ export interface ComparisonRow {
   cloud?: string;
   typical?: boolean;
   manual?: string;
+  highlight?: boolean;
 }
 
 export interface HowItWorksStep {
@@ -43,11 +44,24 @@ export interface HowItWorksStep {
   title: string;
   desc: string;
   badge: string;
+  iconName?: string;
 }
 
 export interface FaqItem {
   q: string;
   a: string;
+}
+
+export interface TrustHighlight {
+  label: string;
+  title: string;
+  desc: string;
+}
+
+export interface OutperformPoint {
+  title: string;
+  desc: string;
+  iconName: string;
 }
 
 export interface LocaleDictionary {
@@ -199,22 +213,32 @@ export interface LocaleDictionary {
         solver: string;
         sandbox: string;
       };
+      demoTitle: string;
+      demoBadge: string;
     };
     featuresHeading: {
       badge: string;
       title: string;
+      titleHighlight: string;
       subtitle: string;
     };
     features: HomeFeatureModule[];
     comparison: {
       badge: string;
       title: string;
+      titleHighlight: string;
       subtitle: string;
+      col1: string;
+      col2: string;
+      col3: string;
+      col4: string;
       rows: ComparisonRow[];
+      competitorLinkText: string;
     };
     howItWorks: {
       badge: string;
       title: string;
+      titleHighlight: string;
       subtitle: string;
       steps: HowItWorksStep[];
     };
@@ -222,14 +246,22 @@ export interface LocaleDictionary {
       badge: string;
       season: string;
       title: string;
+      titleHighlight: string;
       paragraphs: string[];
       ctaPrimary: string;
       ctaSecondary: string;
     };
-    faqs: FaqItem[];
+    faqs: {
+      badge: string;
+      title: string;
+      titleHighlight: string;
+      subtitle: string;
+      items: FaqItem[];
+    };
     cta: {
       badge: string;
       title: string;
+      titleHighlight: string;
       subtitle: string;
       button: string;
       discord: string;
@@ -239,12 +271,14 @@ export interface LocaleDictionary {
   featuresPage: {
     meta: PageMeta;
     hero: {
-      badge: string;
+      eyebrow: string;
       titleLine1: string;
       titleHighlight: string;
+      titleLine2: string;
       directAnswerSnippet: string;
       ctaPrimary: string;
       ctaSecondary: string;
+      trustHighlights: TrustHighlight[];
     };
     featuresHeading: {
       badge: string;
@@ -252,20 +286,51 @@ export interface LocaleDictionary {
       subtitle: string;
     };
     features: HomeFeatureModule[];
-    comparison: {
+    humanizationDeepDive: {
+      badge: string;
+      title: string;
+      titleHighlight: string;
+      description: string;
+      bezierTitle: string;
+      bezierDesc: string;
+      jitterTitle: string;
+      jitterDesc: string;
+      safetyRecordLabel: string;
+      bansCount: string;
+      verifiedBadge: string;
+      testSessionDesc: string;
+    };
+    outperform: {
       badge: string;
       title: string;
       subtitle: string;
+      col1: string;
+      col2: string;
+      col3: string;
       rows: ComparisonRow[];
+      points: OutperformPoint[];
     };
-    faqs: FaqItem[];
-    cta: {
+    roadmap: {
       badge: string;
       title: string;
+      description: string;
+      status: string;
+      licenseBadge: string;
+      licenseTitle: string;
+      licenseDesc: string;
+    };
+    faqs: {
+      badge: string;
+      title: string;
+      items: FaqItem[];
+    };
+    cta: {
+      title: string;
+      titleHighlight: string;
       subtitle: string;
       button: string;
       discord: string;
-      perks: string[];
+      disclaimer: string;
     };
   };
 }
