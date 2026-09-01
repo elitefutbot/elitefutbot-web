@@ -5,6 +5,9 @@ const BACKEND_API_URL =
   process.env.BACKEND_API_URL ?? "https://elitefutbot-backend-three.vercel.app";
 
 const nextConfig: NextConfig = {
+  poweredByHeader: false,
+  compress: true,
+  reactStrictMode: true,
   async rewrites() {
     return [
       {
@@ -22,12 +25,12 @@ const nextConfig: NextConfig = {
     ],
     formats: ['image/avif', 'image/webp'],
     qualities: [75, 85],
+    minimumCacheTTL: 31536000,
   },
   turbopack: {
     root: __dirname,
   },
-    compress: true,
-    async headers() {
+  async headers() {
     return [
       {
         source: '/(.*)',
