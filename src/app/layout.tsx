@@ -34,6 +34,14 @@ export const metadata: Metadata = {
   description: "Dominate the EA FC 26 & FC 27 transfer markets. The fastest FC 27 FUT sniping bot and autobuyer, plus FC 26 & FC 25 support, featuring 20ms speeds and local security.",
   alternates: {
     canonical: "https://elitefutbot.com/",
+    languages: {
+      "x-default": "https://elitefutbot.com/",
+      en: "https://elitefutbot.com/",
+      es: "https://elitefutbot.com/es",
+      pt: "https://elitefutbot.com/pt",
+      fr: "https://elitefutbot.com/fr",
+      de: "https://elitefutbot.com/de",
+    },
   },
   openGraph: {
     title: "Elite FUT SNIPER – FC 26 & FC 27 Sniping Bot & Autobuyer",
