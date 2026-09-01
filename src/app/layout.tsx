@@ -186,15 +186,22 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Google tag (gtag.js) */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CB5DETL9CY" />
-        <script
+        {/* Google Analytics with Next.js Script (Non-blocking / afterInteractive) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-CB5DETL9CY"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics-init"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-CB5DETL9CY');
+              gtag('config', 'G-CB5DETL9CY', {
+                page_path: window.location.pathname,
+              });
             `,
           }}
         />
@@ -213,10 +220,14 @@ export default function RootLayout({
         {/* Yandex Verification */}
         <meta name="yandex-verification" content="a303969db4d28193" />
         <AnalyticsScripts />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        {/* Critical Origin Preconnects for Ultra-Fast Core Web Vitals (FCP / LCP) */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://www.clarity.ms" />
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
         <script
           type="application/ld+json"
