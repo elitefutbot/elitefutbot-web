@@ -4,24 +4,54 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://elitefutbot.com'
   const currentDate = new Date()
   
+  const homeLanguages = {
+    'x-default': `${baseUrl}/`,
+    en: `${baseUrl}/`,
+    es: `${baseUrl}/es`,
+    pt: `${baseUrl}/pt`,
+    fr: `${baseUrl}/fr`,
+    de: `${baseUrl}/de`,
+  }
+
+  const snipeBotLanguages = {
+    'x-default': `${baseUrl}/fc27-fut-snipe-bot`,
+    en: `${baseUrl}/fc27-fut-snipe-bot`,
+    es: `${baseUrl}/es/fc27-fut-snipe-bot`,
+    pt: `${baseUrl}/pt/fc27-fut-snipe-bot`,
+    fr: `${baseUrl}/fr/fc27-fut-snipe-bot`,
+    de: `${baseUrl}/de/fc27-fut-snipe-bot`,
+  }
+
+  const featuresLanguages = {
+    'x-default': `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
+    en: `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
+    es: `${baseUrl}/es/fc27-fut-sniping-bot-autobuyer-features`,
+    pt: `${baseUrl}/pt/fc27-fut-sniping-bot-autobuyer-features`,
+    fr: `${baseUrl}/fr/fc27-fut-sniping-bot-autobuyer-features`,
+    de: `${baseUrl}/de/fc27-fut-sniping-bot-autobuyer-features`,
+  }
+
   return [
     {
       url: `${baseUrl}/`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 1.0,
+      alternates: { languages: homeLanguages },
     },
     {
       url: `${baseUrl}/fc27-fut-snipe-bot`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: snipeBotLanguages },
     },
     {
       url: `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: featuresLanguages },
     },
     // Localized Tier-1 Pages (Spanish, Portuguese, French, German)
     {
@@ -29,72 +59,84 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.95,
+      alternates: { languages: homeLanguages },
     },
     {
       url: `${baseUrl}/es/fc27-fut-snipe-bot`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: snipeBotLanguages },
     },
     {
       url: `${baseUrl}/es/fc27-fut-sniping-bot-autobuyer-features`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: featuresLanguages },
     },
     {
       url: `${baseUrl}/pt`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.95,
+      alternates: { languages: homeLanguages },
     },
     {
       url: `${baseUrl}/pt/fc27-fut-snipe-bot`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: snipeBotLanguages },
     },
     {
       url: `${baseUrl}/pt/fc27-fut-sniping-bot-autobuyer-features`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: featuresLanguages },
     },
     {
       url: `${baseUrl}/fr`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.95,
+      alternates: { languages: homeLanguages },
     },
     {
       url: `${baseUrl}/fr/fc27-fut-snipe-bot`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: snipeBotLanguages },
     },
     {
       url: `${baseUrl}/fr/fc27-fut-sniping-bot-autobuyer-features`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: featuresLanguages },
     },
     {
       url: `${baseUrl}/de`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
       priority: 0.95,
+      alternates: { languages: homeLanguages },
     },
     {
       url: `${baseUrl}/de/fc27-fut-snipe-bot`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: snipeBotLanguages },
     },
     {
       url: `${baseUrl}/de/fc27-fut-sniping-bot-autobuyer-features`,
       lastModified: currentDate,
       changeFrequency: 'daily',
       priority: 0.95,
+      alternates: { languages: featuresLanguages },
     },
     {
       url: `${baseUrl}/sbc-solver`,
