@@ -252,7 +252,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
                   </p>
 
                   <div className="pt-4 border-t border-white/5 space-y-2">
-                    {module.highlights.map((item, i) => (
+                    {(module.highlights || []).map((item, i) => (
                       <div
                         key={i}
                         className="flex items-center gap-2 text-xs text-gray-300 font-medium"

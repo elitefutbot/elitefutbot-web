@@ -27,161 +27,288 @@ export const deLocale: LocaleDictionary = {
       ogDescription:
         "Erwirtschafte Millionen von Münzen in Ultimate Team mit unserer lokalen Chrome Erweiterung. Unter 20ms Reaktionszeit und 1-Klick KI SBC Löser.",
     },
+    creatorBadge: {
+      originalCreator: "ORIGINAL ENTWICKLER",
+      byDeveloper: "Vom leitenden Original-Entwickler von",
+      freeBeta: "KOSTENLOSE BETA",
+      slotsFilled: "87/100 Plätze Belegt",
+    },
     hero: {
-      badge: "Kompatibel mit der EA FC 27 Web App",
-      titleLine1: "Der Schnellste & Sicherste",
-      titleHighlight: "FC 27 FUT Autobuyer & Sniping Bot",
-      directAnswerSnippet:
-        "Elite FUT SNIPER ist eine Google Chrome Erweiterung für EA FC 27, die 59.-Minute-Sniping, 1-Klick KI SBC Lösungen und automatisches Wiederverkaufen direkt in der Web App automatisiert. Läuft 100% lokal im Browser mit unter 20ms Reaktionszeit und ohne Passwortweitergabe.",
-      ctaPrimary: "Kostenlos Testen",
-      ctaSecondary: "20ms Live-Demo Ansehen",
+      titleLine1: "Der Weltweit Schnellste & Sicherste",
+      titleHighlight: "FC 26 & FC 27",
+      titleHighlight2: "FUT SNIPING BOT",
+      titleLine3: "Entwickelt von den Besten.",
+      description:
+        "Elite FUT SNIPER ist der weltweit schnellste und sicherste EA FC 26 und FC 27 Sniping Bot und Autobuyer. Er läuft zu 100% lokal als Google Chrome Erweiterung direkt in deinem Browser, ermöglicht sub-20ms Suchgeschwindigkeiten und schützt deinen Account vollständig vor Cloud-Server-Banns.",
+      ctaPricing: "Preise & Pläne Ansehen",
+      ctaDemo: "Live-Demo Ansehen",
       stats: {
-        speed: "< 20ms Geschwindigkeit",
-        bans: "0 Bans Dokumentiert",
-        solver: "1-Klick KI SBC Löser",
-        sandbox: "100% Lokal & Sicher",
+        antiBan: "Human++ Anti-Ban Technologie · 0 Banns bis Heute",
+        localExtension: "Chrome Erweiterung (100% Lokal)",
+        provenLegacy: "Bakers Bot Dev Team",
+      },
+      proof: {
+        snipeProfitBadge: "SNIPE GEWINN",
+        snipeProfitValue: "+63k Gewinn",
+        yamalBadge: "⭐ 97 Yamal Gesniped",
       },
     },
-    featuresHeading: {
-      badge: "SPITZENTECHNOLOGIE",
-      title: "Funktionen für Maximalen Münzgewinn",
-      subtitle: "Alle Werkzeuge, die du brauchst, um den EA FC 27 Transfermarkt auf Autopilot zu dominieren.",
+    outperform: {
+      title: "Warum Wir",
+      titleHighlight: "Jeden Bot Schlagen.",
+      subtitle:
+        "Elite FUT SNIPER übertrifft Konkurrenz-Bots, weil er lokal in deinem Browser ausgeführt wird und nicht auf entfernte Cloud-Server angewiesen ist. Entwickelt vom legendären Bakers Bot Dev Team, eliminiert diese Architektur jegliche Server-Latenz, um Karten in Millisekunden sicher zu snipen.",
+      humanization: {
+        badge: "Flaggschiff Anti-Ban System",
+        title: "Humanization++ Modus",
+        description:
+          "Entwickelt als Reaktion auf Automations-Bannwellen — geht weit über starre Timer hinaus und simuliert echte menschliche Mausbewegungen und Klicks. Erzeugt natürliche mathematische Bézier-Kurven, zufällige Micro-Jitter, echte Scroll-Pausen und physische Klick-Koordinaten.",
+        highlights: [
+          "0 Transfermarkt-Banns bis Heute",
+          "Bézier-Mausdynamik",
+          "Zufälliger Micro-Jitter",
+          "100% Lokale DOM-Injektion",
+        ],
+        stealthStatus: "Tarn-Status",
+        safeBadge: "100% SICHER",
+        protectionLabel: "Aktiver Schutz",
+      },
+      cards: [
+        {
+          title: "Automatisches Snipen",
+          description: "Unser Motor reagiert in Millisekunden und kauft Angebote in der 59. Minute schneller als jeder menschliche Klick.",
+          iconName: "Zap",
+        },
+        {
+          title: "Automatischer Wiederverkauf",
+          description: "Sofortiges Relisten nach dem Kauf. Maximiere deinen Münzfluss durch schnelle Rotation deines Transfermarkts.",
+          iconName: "Tag",
+        },
+        {
+          title: "Futbin-Preise Integriert",
+          description: "Echte Marktpreise direkt in der Web App anzeigen. Nie wieder über Marktwert einkaufen.",
+          iconName: "Cpu",
+        },
+        {
+          title: "Maximale Sicherheit & Tarnung",
+          description: "100% Lokal: Läuft in deiner Browser-Sitzung. Dein EA Passwort und Cookies werden niemals übertragen.",
+          iconName: "Shield",
+        },
+        {
+          title: "Multi-Filter Suche",
+          description: "Mehrere Suchabfragen gleichzeitig ausführen. Decke den gesamten Markt für maximalen Gewinn ab.",
+          iconName: "Filter",
+        },
+        {
+          title: "Snipen nach Rating",
+          description: "Gezielte Spielerstärken mit chirurgischer Präzision anvisieren. Perfekt für SBC-Fodder-Trading.",
+          iconName: "Award",
+        },
+        {
+          title: "Automatischer Seltenheits-Filter",
+          description: "Erkennt und setzt Karten-Seltenheiten automatisch, um Zeit zu sparen und Fehler zu vermeiden.",
+          iconName: "Sparkles",
+        },
+        {
+          title: "Snipe-Preis-Rechner",
+          description: "Berechnet automatisch den optimalen Kaufpreis für garantierten Reingewinn nach 5% EA Steuer.",
+          iconName: "Calculator",
+        },
+        {
+          title: "Gewinn-Rechner",
+          description: "Verfolge deine Einnahmen live. Sieh genau, wie viele Münzen in deiner Session generiert wurden.",
+          iconName: "TrendingUp",
+        },
+        {
+          title: "Geschütztes Snipen",
+          description: "Umfassender Münzschutz, um das Guthaben deines Vereins während der Automatisierung zu sichern.",
+          iconName: "ShieldCheck",
+        },
+        {
+          title: "Video-Tutorials",
+          description: "Meistere jedes Werkzeug mit ausführlichen Schritt-für-Schritt-Videoanleitungen.",
+          iconName: "GraduationCap",
+        },
+        {
+          title: "Einmalzahlung (365 Tage)",
+          description: "Voller Jahreszugang. Deine Lizenz bleibt auch bei saisonalen Spiel-Updates voll gültig.",
+          iconName: "CalendarCheck",
+        },
+      ],
+      viewAllFeaturesCta: "Vollständige 11-Modul-Suite Ansehen",
     },
-    features: [
-      {
-        num: "01",
-        title: "Sub-20ms Auto-Sniping",
-        badge: "Höchstgeschwindigkeit",
-        badgeColor: "bg-primary/15 text-primary border-primary/30",
-        tagline: "Sofortige Schnäppchen in der 59. Minute",
-        description:
-          "Scannt den Transfermarkt und kauft unterbewertete Karten in unter 20 Millisekunden – schneller als jeder Cloud-Proxy-Bot oder manuelle Klicks.",
-        highlights: ["Latenz unter 20ms", "Sofortige Kaufbestätigung", "Individuelle Preisobergrenzen"],
-      },
-      {
-        num: "02",
-        title: "Humanization++ Anti-Ban Schutz",
-        badge: "Maximale Sicherheit",
-        badgeColor: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
-        tagline: "0 Banns über alle Saisons hinweg",
-        description:
-          "Erzeugt natürliche Mausbewegungen mit Bézier-Kurven, Mikro-Pixel-Jitter und zufälligen Gaußschen Verzögerungen für menschliches Verhalten.",
-        highlights: ["Echte mathematische Bézier-Kurven", "Organische Session-Pausen", "Voller Schutz deines EA Accounts"],
-      },
-      {
-        num: "03",
-        title: "1-Klick KI SBC Löser",
-        badge: "Integrierte KI",
-        badgeColor: "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
-        tagline: "Berechnet die günstigste Chemie in Sekunden",
-        description:
-          "Ermittelt mathematisch die kostengünstigste Lösung für jede Squad Building Challenge und setzt Karten direkt in deine Web App ein.",
-        highlights: ["Priorisiert untauschbare Vereinskarten", "Löst komplexe Team-Chemie", "Spart stundenlange manuelle Puzzles"],
-      },
-      {
-        num: "04",
-        title: "Automatischer Wiederverkauf mit 5% EA Steuer",
-        badge: "Cashflow",
-        badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
-        tagline: "Kontinuierlicher Verkauf für stetigen Münzfluss",
-        description:
-          "Stellt gekaufte Spieler sofort mit berechneter 5% EA Transfersteuer wieder auf den Markt, um garantierten Reingewinn zu sichern.",
-        highlights: ["Sofortiges Relisting nach Kauf", "Exakte 5% EA-Steuer-Berechnung", "Automatisches Relisten abgelaufener Karten"],
-      },
-    ],
     comparison: {
-      badge: "TECHNISCHER VERGLEICH",
-      title: "Warum ein Lokaler Chrome Bot Jeden Cloud-Bot Schlägt",
-      subtitle: "Erfahre den Unterschied zwischen lokaler Browser-Ausführung und riskanten Cloud-Diensten, die deine Zugangsdaten verlangen.",
+      title: "Wir vs.",
+      titleHighlight: "Konkurrenz-Bots",
+      subtitle:
+        "Im Gegensatz zu herkömmlichen Cloud-Bots, die deinen Account durch Credential-Sharing und Server-Pings gefährden, ist Elite FUT SNIPER eine lokale Chrome-Erweiterung mit 20ms Reaktionszeit und 1-Klick KI SBC Löser.",
+      col1: "Kernfunktion",
+      col2: "ELITE FUT SNIPER",
+      col3: "Klassische Bots",
+      goldStandard: "Der Goldstandard",
       rows: [
+        { feature: "20ms Such- und Kaufgeschwindigkeit", elite: true, typical: false },
+        { feature: "1-Klick KI SBC Löser", elite: true, typical: false },
+        { feature: "Direkte WebApp Integration", elite: true, typical: false },
+        { feature: "Keine Passwort-Weitergabe (100% Lokal)", elite: true, typical: false },
+        { feature: "Verhaltensbasierte Anti-Ban Technologie", elite: true, typical: false },
+      ],
+    },
+    pricing: {
+      title: "Wähle Deine",
+      titleHighlight: "Version",
+      subtitle: "Transparente Preise. Keine versteckten Gebühren oder Abos.",
+      freeCard: {
+        title: "Kostenlose Beta",
+        price: "0 €",
+        period: "/Monat",
+        desc: "Perfekt zum Kennenlernen der Grundfunktionen und Sniping-Basics.",
+        features: [
+          "Standard Sniping-Filter",
+          "1 Aktiver Account",
+          "Discord Community-Support",
+        ],
+        cta: "Kostenlose Testphase Starten",
+      },
+      proCard: {
+        badge: "Bester Wert",
+        title: "Pro Sniper",
+        price: "19,99 €",
+        originalPrice: "49,99 €",
+        guarantee: "Einmalzahlung · 365 Tage · FC 26 & FC 27",
+        spotsLeft: "6 Plätze Übrig für 19,99 €",
+        soldText: "4/10 verkauft",
+        nextPrice: "29,99 €",
+        featuresHeader: "Was enthalten ist",
+        features: [
+          { text: "Erweiterte Sub-20ms Sniping-Logik" },
+          { text: "Kostenlose Pro-Spieler-Filter" },
+          { text: "Unbegrenzter Multi-Account-Support" },
+          { text: "Multi-Tab Lokales Sniping" },
+          {
+            text: "Human++ Anti-Ban Technologie",
+            subtext: "0 Banns bis heute dokumentiert — exklusive Tarnmethode",
+          },
+          { text: "VIP Discord Zugang" },
+          { text: "10M+ Münzen Verdienstpotenzial" },
+          { text: "KI SBC Löser", isSoon: true },
+        ],
+        cta: "Pro Sniper Zugang Sichern",
+      },
+    },
+    reviews: {
+      badge: "VERIFIZIERTE DISCORD ERFAHRUNGEN",
+      title: "Echte Bewertungen der",
+      titleHighlight: "Community",
+      subtitle: "Authentisches Feedback und Snipe-Beweise direkt von unseren Tradern auf Discord.",
+      items: [
         {
-          feature: "Such- und Kauflatenz",
-          elite: "< 20ms (Direkt im lokalen Browser)",
-          cloud: "180ms – 350ms (Server-Proxy Verzögerung)",
-          manual: "600ms – 1,200ms (Menschliche Reaktionszeit)",
+          user: "_mesirve_",
+          badge: "⭐ 5-Sterne Bewertung",
+          badgeColor: "text-amber-400",
+          img: "/discord-review-1.png",
+          alt: "Discord Bewertung von _mesirve_: Ihr macht das Leben der Leute schöner mit diesen FC26 Erweiterungen. 5 Sterne.",
         },
         {
-          feature: "Sicherheit des EA Passworts",
-          elite: "100% Privat (Bleibt immer auf deinem PC)",
-          cloud: "Gefährlich (Erfordert Login- und Cookie-Upload)",
-          manual: "Sicher (Manuelle Anmeldung)",
+          user: "Patrunjel Regele",
+          badge: "Verifizierter Tester",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-4.png",
+          alt: "Discord Bewertung von Patrunjel Regele: Das Menü des Snipers ist großartig. Das Snipen funktioniert perfekt.",
         },
         {
-          feature: "Anti-Ban Algorithmus",
-          elite: "Humanization++ (Bézier-Kurven & Gauß-Verzögerung)",
-          cloud: "Statische Timer (Hohes Bann-Risiko)",
-          manual: "Natürliches menschliches Verhalten",
+          user: "faresislol",
+          badge: "⭐ Top Bewertung",
+          badgeColor: "text-amber-400",
+          img: "/discord-review-2.png",
+          alt: "Discord Bewertung von faresislol: Danke Bruder, ich gebe dir 5 Sterne.",
         },
         {
-          feature: "1-Klick KI SBC Löser",
-          elite: "Integrierter KI-Algorithmus",
-          cloud: "Nicht verfügbar",
-          manual: "20+ Minuten manuelle Suche",
+          user: "astroa",
+          badge: "BSS Mitglied",
+          badgeColor: "text-primary",
+          img: "/discord-review-3.png",
+          alt: "Discord Bewertung von astroa: Ja, es ist wirklich sehr gut.",
         },
         {
-          feature: "Preis",
-          elite: "19,99 € Einmalzahlung pro Jahr (+ Kostenlose Testphase)",
-          cloud: "15 € – 35 € / Monat fortlaufendes Abo",
-          manual: "Kostenlos (Kostet 4+ Stunden täglich)",
+          user: "Phantom (GENO)",
+          badge: "🔥 TOTS Yamal Snipe",
+          badgeColor: "text-purple-300",
+          img: "/discord-review-card.png",
+          alt: "Discord Bewertung von Phantom: Es funktioniert, ich habe TOTS Yamal zweimal für 300k gesniped.",
+        },
+        {
+          user: "Phantom (GENO)",
+          badge: "⚡ Bester Bot",
+          badgeColor: "text-amber-400",
+          img: "/discord-review-5.png",
+          alt: "Discord Bewertung von Phantom: Das ist der beste Bot, weil ich die schnellsten Münzen gemacht habe.",
+        },
+        {
+          user: "Phantom (GENO)",
+          badge: "💰 1.005.378 Münzen",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-6.png",
+          alt: "Münz-Beweis: Über 1 Million Münzen Kontostand mit 97er Lamine Yamal Karte.",
+        },
+      ],
+      discordCta: "Über 5.000 Tradern auf Discord Beitreten",
+      githubCta: "Stern auf GitHub Vergeben",
+    },
+    faqs: {
+      badge: "FAQ & MARKT-INSIGHTS",
+      title: "Häufig Gestellte",
+      titleHighlight: "Fragen",
+      subtitle:
+        "Finde Antworten zu unserem FC 26 & FC 27 Sniping Bot, Autobuyer-Funktionen und Sicherheitsmechanismen.",
+      items: [
+        {
+          q: "Was macht dies zum besten Sniping Bot für FC 26 & FC 27?",
+          a: "Unser Bot ist eine native Chrome Erweiterung, die direkt in die EA Web App injiziert wird. Durch die 100% lokale Ausführung verlassen deine Zugangsdaten niemals deinen PC, was absolute Sicherheit und 20ms Geschwindigkeit garantiert.",
+        },
+        {
+          q: "Ist eine Autobuyer-Funktion für FC 26 & FC 27 enthalten?",
+          a: "Ja! Unsere Engine ist für alle kommenden Saisons optimiert, sodass deine Autobuyer-Tools ab Tag 1 einsatzbereit sind.",
+        },
+        {
+          q: "Was ist der Unterschied zwischen einem FUT Snipe Bot und einem Autobuyer?",
+          a: "Ein Snipe Bot zielt in Millisekunden auf unterbewertete Karten in der 59. Minute ab, während ein Autobuyer auch Massenkäufe von Fodder und automatisches Einstellen steuert. Elite FUT SNIPER vereint beides.",
+        },
+        {
+          q: "Warum ist eine lokale Chrome Erweiterung sicherer als Cloud-Bots?",
+          a: "Cloud-Bots verlangen deine Passwörter auf fremden Servern mit hohem Bannrisiko. Unsere Erweiterung läuft lokal in deinem Browser mit Zufallspausen und Anti-Erkennungs-Algorithmen.",
+        },
+        {
+          q: "Unterstützt der Bot FC 25, FC 26 und FC 27 Web Apps?",
+          a: "Ja, Elite FUT SNIPER ist so aufgebaut, dass er über alle Generationen von EA Sports FC hinweg zuverlässig funktioniert.",
+        },
+        {
+          q: "Wie funktioniert der KI SBC Löser?",
+          a: "Er berechnet mathematisch die günstigste Kartenkombination aus deinem Verein oder vom Transfermarkt und schließt Squad Building Challenges in Sekunden ab.",
+        },
+        {
+          q: "Ist der Bot wirklich sicher vor EA Bannwellen?",
+          a: "Sicherheit steht an erster Stelle. Dank lokaler Ausführung und Humanization++ mit echten Bézier-Kurven verzeichnen wir 0 Banns bis heute.",
+        },
+        {
+          q: "Wie erhalte ich kostenlosen Beta-Zugang?",
+          a: "Tritt einfach unserem offiziellen Discord bei! Wir vergeben kostenlose Beta-Plätze für frühe Community-Mitglieder.",
         },
       ],
     },
-    howItWorks: {
-      badge: "IN 4 SCHRITTEN",
-      title: "In Unter 2 Minuten mit dem Snipen Starten",
-      subtitle: "Keine komplizierte Server-Konfiguration. Alles läuft nahtlos in Google Chrome.",
-      steps: [
-        {
-          num: "01",
-          title: "Erweiterung Installieren",
-          desc: "Füge Elite FUT SNIPER in 60 Sekunden zu Google Chrome hinzu und hefte es an die Leiste.",
-          badge: "Schnellstart",
-        },
-        {
-          num: "02",
-          title: "EA FC 27 Web App Öffnen",
-          desc: "Melde dich in der offiziellen Web App an und öffne die native Chrome Seitenleiste.",
-          badge: "Seitenleiste",
-        },
-        {
-          num: "03",
-          title: "Filter & Zielpreise Setzen",
-          desc: "Wähle deine Zielspieler, Maximalpreise oder lade Filter aus unserem VIP Discord.",
-          badge: "Smarte Filter",
-        },
-        {
-          num: "04",
-          title: "20ms Sniping Aktivieren",
-          desc: "Starte den Bot. Er sniped Angebote in der 59. Minute und relistet automatisch mit Gewinn.",
-          badge: "20ms Aktiv",
-        },
-      ],
+    ctaBottom1: {
+      title: "Bereit, Millionen von",
+      titleHighlight: "Münzen zu Machen?",
+      subtitle: "Schließe dich den 87 Testern an, die den Markt bereits dominieren. Beta-Plätze sind bald vergeben.",
+      button: "TESTPHASE JETZT STARTEN",
+      disclaimer: "Keine Kreditkarte für die Beta erforderlich",
     },
-    faqs: [
-      {
-        q: "Was ist der FC 27 FUT Autobuyer und wie funktioniert er?",
-        a: "Es handelt sich um eine Google Chrome Erweiterung für die EA FC 27 Web App. Der Bot scannt den Transfermarkt in unter 20ms, erkennt unterbewertete Karten in der 59. Minute und kauft sie automatisch vor allen Konkurrenten.",
-      },
-      {
-        q: "Ist der Bot sicher vor Bannwellen von EA?",
-        a: "Ja. Elite FUT SNIPER nutzt Humanization++, welches echte menschliche Mausbewegungen simuliert und unregelmäßige Pausen einfügt. Da der Bot 100% lokal auf deinem PC läuft, verzeichnen wir 0 Bans.",
-      },
-      {
-        q: "Muss ich mein EA Passwort oder Session-Tokens teilen?",
-        a: "Nein. Deine Anmeldedaten verlassen zu keinem Zeitpunkt deinen Computer. Der Bot agiert ausschließlich lokal in deiner bereits geöffneten Chrome-Sitzung.",
-      },
-      {
-        q: "Funktioniert der Bot auf Mac und Windows-PCs?",
-        a: "Ja, der Bot ist mit jedem PC und Mac mit Google Chrome, Brave oder Microsoft Edge uneingeschränkt kompatibel.",
-      },
-    ],
-    cta: {
-      badge: "SOFORTIGER ZUGANG • 100% SICHER",
-      title: "Bereit, Millionen von Münzen in FC 27 zu Machen?",
-      subtitle: "Schließe dich tausenden Spielern aus Deutschland, Österreich und der Schweiz an, die Elite FUT SNIPER täglich nutzen.",
-      button: "Kostenlose Testphase Starten",
-      discord: "VIP Discord Community Beitreten",
-      perks: ["Keine Kreditkarte für Testphase", "Kompatibel mit Windows & Mac", "24/7 Support im Discord"],
+    ctaBottom2: {
+      title: "Werde Teil der",
+      titleHighlight: "Elite Community",
+      subtitle: "Tritt heute unserem Discord bei und sichere dir einen der letzten",
+      subtitleHighlight: "lebenslang kostenlosen Zugänge",
+      button: "Discord Beitreten & Zugang Sichern",
     },
   },
   snipeBot: {
@@ -220,7 +347,6 @@ export const deLocale: LocaleDictionary = {
         num: "01",
         title: "Hochfrequenz-Sniping Unter 20ms",
         badge: "Direkter DOM Socket",
-        badgeColor: "bg-primary/15 text-primary border-primary/30",
         tagline: "Volle Kontrolle über die 59. Minute",
         description:
           "Führt Marktabfragen und Sofortkäufe direkt im DOM des Browsers in unter 20ms aus und schlägt damit alle Cloud-Bots.",
@@ -230,7 +356,6 @@ export const deLocale: LocaleDictionary = {
         num: "02",
         title: "Humanization++ Anti-Ban Engine",
         badge: "Volle Sicherheit",
-        badgeColor: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
         tagline: "0 Banns über alle Saisons hinweg",
         description:
           "Simuliert menschliche Mausbewegungen mit Bézier-Kurven und verwendet unregelmäßige Gaußsche Pausen von 1.200ms bis 2.800ms.",
@@ -240,7 +365,6 @@ export const deLocale: LocaleDictionary = {
         num: "03",
         title: "1-Klick KI SBC Löser",
         badge: "Künstliche Intelligenz",
-        badgeColor: "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
         tagline: "Günstigste Team-Chemie in wenigen Sekunden",
         description:
           "Berechnet die günstigste Kombination aus Vereins- oder Transfermarktkarten und übermittelt das SBC mit 1 Klick.",
@@ -250,31 +374,10 @@ export const deLocale: LocaleDictionary = {
         num: "04",
         title: "Automatischer Wiederverkauf (5% Steuer)",
         badge: "Cashflow",
-        badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
         tagline: "24/7 Münzgewinn auf Autopilot",
         description:
           "Listet gekaufte Karten sofort unter Berücksichtigung der 5% EA Steuer, um bei jedem Trade Reingewinn zu erzielen.",
         highlights: ["Sofortiges Relisten nach Kauf", "Exakte 5% EA Steuer-Kalkulation", "Automatisches Wiedereinstellen"],
-      },
-      {
-        num: "05",
-        title: "Echtzeit-Futbin-Preise Integriert",
-        badge: "Live-Telemetrie",
-        badgeColor: "bg-purple-500/15 text-purple-300 border-purple-500/30",
-        tagline: "Marktwerte und Margen direkt auf der Karte",
-        description:
-          "Zeigt den echten Futbin-Preis direkt auf den Spielerkarten in der Web App an, damit du nie über Marktwert einkaufst.",
-        highlights: ["Live-Preise in der Web App", "Stündliche Preistrends", "Ohne Tab-Wechsel im Browser"],
-      },
-      {
-        num: "06",
-        title: "Smarte Multi-Target Filter",
-        badge: "Präzision",
-        badgeColor: "bg-blue-500/15 text-blue-300 border-blue-500/30",
-        tagline: "Gleichzeitige Suche nach mehreren Zielen",
-        description:
-          "Filtere nach Rating, Position, Chemistry Style, Liga und Seltenheit, um profitable Angebote marktweit zu erfassen.",
-        highlights: ["Parallele Suchprofile", "Exakte Rating-Begrenzung", "Chemistry Style Filter"],
       },
     ],
     comparison: {
@@ -286,7 +389,7 @@ export const deLocale: LocaleDictionary = {
           feature: "Such- & Kauflatenz",
           elite: "< 20ms (Direkt im Browser)",
           cloud: "180ms – 350ms (Server-Verzögerung)",
-          manual: "600ms – 1,200ms (Menschlicher Reflex)",
+          manual: "600ms – 1.200ms (Menschlicher Reflex)",
         },
         {
           feature: "Sicherheit des EA Passworts",
@@ -301,22 +404,10 @@ export const deLocale: LocaleDictionary = {
           manual: "Menschliches Verhalten",
         },
         {
-          feature: "Bann-Historie",
-          elite: "0 Bans Dokumentiert",
-          cloud: "Häufige Bannwellen",
-          manual: "Kein Bann-Risiko",
-        },
-        {
           feature: "1-Klick KI SBC Löser",
           elite: "Integrierter KI-Algorithmus",
           cloud: "Nicht verfügbar",
           manual: "20+ Minuten manuelle Suche",
-        },
-        {
-          feature: "Futbin Live-Preise",
-          elite: "Direkt in der Web App eingebettet",
-          cloud: "Erfordert externe Website-Recherche",
-          manual: "Manuelle Suche im extra Tab",
         },
         {
           feature: "Preis",
@@ -426,7 +517,6 @@ export const deLocale: LocaleDictionary = {
         num: "01",
         title: "Auto-Sniping Unter 20ms",
         badge: "Höchstgeschwindigkeit",
-        badgeColor: "bg-primary/15 text-primary border-primary/30",
         tagline: "Hochfrequenz-Scan in der 59. Minute",
         description:
           "Scannt den Transfermarkt und kauft unterbewertete Karten in sub-20ms vor allen Cloud-Bots und Hand-Klicks.",
@@ -436,7 +526,6 @@ export const deLocale: LocaleDictionary = {
         num: "02",
         title: "Automatischer Verkauf (5% EA Steuer)",
         badge: "Cashflow",
-        badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
         tagline: "Automatische Verkäufe für stetige Liquidität",
         description:
           "Listet gekaufte Karten sofort mit eingerechneter 5% EA Steuer für garantierten Gewinn.",
@@ -446,7 +535,6 @@ export const deLocale: LocaleDictionary = {
         num: "03",
         title: "Smarte Suchfilter",
         badge: "Präzision",
-        badgeColor: "bg-blue-500/15 text-blue-300 border-blue-500/30",
         tagline: "Gleichzeitige Suche nach mehreren Spielern",
         description:
           "Filtere nach Rating, Position, Chemistry Style, Liga und Seltenheit marktweit.",
@@ -456,7 +544,6 @@ export const deLocale: LocaleDictionary = {
         num: "04",
         title: "Futbin Live-Preise",
         badge: "Telemetrie",
-        badgeColor: "bg-purple-500/15 text-purple-300 border-purple-500/30",
         tagline: "Reale Marktpreise direkt in der Web App",
         description:
           "Zeigt den echten Futbin-Preis auf jeder Karte an, um überteuerte Einkäufe zu verhindern.",
@@ -466,7 +553,6 @@ export const deLocale: LocaleDictionary = {
         num: "05",
         title: "Anti-Detektions-Engine",
         badge: "Tarnung",
-        badgeColor: "bg-cyan-500/15 text-cyan-300 border-cyan-500/30",
         tagline: "Nicht-lineare Pausen und Verzögerungen",
         description:
           "Verwendet Gauß-Kurven mit Pausen von 1.200ms bis 2.800ms für menschliches Verhalten.",
@@ -476,7 +562,6 @@ export const deLocale: LocaleDictionary = {
         num: "06",
         title: "Humanization++ Modus",
         badge: "Sicherheit",
-        badgeColor: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
         tagline: "0 Bans auf dem Transfermarkt",
         description:
           "Echte Bézier-Mauskurven und Pixel-Mikrojitter direkt im DOM des Browsers.",

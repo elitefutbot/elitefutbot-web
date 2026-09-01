@@ -20,6 +20,13 @@ const LANGUAGES: LanguageOption[] = [
   { code: "de", name: "German", nativeName: "Deutsch", flag: "🇩🇪" },
 ];
 
+// Explicit list of pages that have translations
+const TRANSLATED_SUBPATHS = [
+  "",
+  "/fc27-fut-snipe-bot",
+  "/fc27-fut-sniping-bot-autobuyer-features",
+];
+
 export default function LanguageSelector({ className = "" }: { className?: string }) {
   const pathname = usePathname() || "/";
   const [isOpen, setIsOpen] = useState(false);
@@ -32,17 +39,23 @@ export default function LanguageSelector({ className = "" }: { className?: strin
   const currentLocaleCode = isLocalePrefix ? firstSegment : "en";
   const currentLanguage = LANGUAGES.find((l) => l.code === currentLocaleCode) || LANGUAGES[0];
 
-  // Base path without the locale prefix (e.g., "/fc27-fut-snipe-bot" or "/")
-  const unlocalizedPath = isLocalePrefix
+  // Base path without the locale prefix (e.g. "" for root, or "/fc27-fut-snipe-bot")
+  const rawSubpath = isLocalePrefix
     ? `/${segments.slice(1).join("/")}`
     : pathname;
 
+  const normalizedSubpath = rawSubpath === "/" ? "" : rawSubpath;
+  const isTranslatablePage = TRANSLATED_SUBPATHS.includes(normalizedSubpath);
+
   // Build target URL for a given language
   const getTargetUrl = (langCode: string) => {
+    // If the current page isn't translated, fallback to that language's homepage
+    const targetSubpath = isTranslatablePage ? normalizedSubpath : "";
+
     if (langCode === "en") {
-      return unlocalizedPath || "/";
+      return targetSubpath || "/";
     }
-    return `/${langCode}${unlocalizedPath === "/" ? "" : unlocalizedPath}`;
+    return `/${langCode}${targetSubpath}`;
   };
 
   // Close dropdown on click outside
