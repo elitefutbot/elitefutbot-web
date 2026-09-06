@@ -23,6 +23,7 @@ import {
   Clock,
   HelpCircle,
   ChevronDown,
+  MessageSquare,
 } from "lucide-react";
 
 // Placeholder for the "$10 price increase every 10 sales" plan — not yet wired
@@ -137,16 +138,14 @@ export default function Home() {
               </span>
             </div>
             <div className="hidden sm:block w-[1px] h-3.5 bg-white/15"></div>
-            <div className="flex items-center gap-3">
-              <span className="text-[9px] font-black uppercase tracking-widest bg-emerald-500/10 text-emerald-400 border border-emerald-500/25 px-2 py-0.5 rounded-md">
-                FREE BETA
+            <div className="flex items-center gap-2">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
               </span>
-              <div className="flex items-center gap-2">
-                <div className="w-20 h-1.5 bg-gray-800 rounded-full overflow-hidden">
-                  <div className="h-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.6)] w-[87%]"></div>
-                </div>
-                <span className="text-xs font-black text-emerald-400 font-technical">87/100 Slots Filled</span>
-              </div>
+              <span className="text-xs font-bold text-emerald-400 tracking-wide">
+                Working with EA FC 27 Latest Updates
+              </span>
             </div>
           </div>
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-5 tracking-tight leading-tight text-white">
@@ -395,13 +394,23 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-3 text-white">Safe Sniping</h3>
               <p className="text-gray-300 text-sm leading-relaxed font-normal">Comprehensive coin protection features designed to keep your club&apos;s balance safe while you automate.</p>
             </div>
-            {/* Video Tutorials */}
-            <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <GraduationCap className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
+            {/* Free Discord Filters & Daily Tips */}
+            <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 border-[#5865F2]/40 shadow-[0_0_25px_rgba(88,101,242,0.08)] bg-gradient-to-br from-[#5865F2]/[0.08] to-transparent">
+              <div className="w-12 h-12 rounded-xl bg-[#5865F2]/20 flex items-center justify-center mb-6 group-hover:bg-[#5865F2] transition-colors">
+                <MessageSquare className="w-6 h-6 text-[#8EA1FF] group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Video Tutorials</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">Master every tool with in-depth video guides. We walk you through every feature and setting.</p>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#5865F2]/20 text-[#A5B4FC] border border-[#5865F2]/30">
+                  Community Alpha
+                </span>
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/20">
+                  Free Daily Drops
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Free Discord Filters &amp; Tips</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">
+                Daily free low-budget trading filters, market tricks, and coin-making tips shared inside our Discord. Make more coins daily with beginner-friendly setups and live flip alerts.
+              </p>
             </div>
             {/* One Time Purchase */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -425,12 +434,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-24 bg-dark relative overflow-hidden">
+      <section className="py-24 bg-dark relative overflow-hidden" id="comparison">
         <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "30px 30px" }}></div>
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-6xl font-black mb-6">Us vs. <span className="text-primary">Competitors</span></h2>
-            <p className="text-gray-400 text-lg max-w-3xl mx-auto">Unlike traditional cloud-based competitor bots that risk your account via server-side pings and credential sharing, Elite FUT SNIPER is a local Chrome extension. Thousands of professional traders choose our FC 26 &amp; FC 27 autobuyer for its zero-password-sharing architecture, integrated AI SBC solver, and superior 20ms response times.</p>
+            <p className="text-gray-400 text-lg max-w-3xl mx-auto">
+              Unlike cloud-based competitor bots that risk your account via server-side pings, Elite FUT SNIPER is a 100% local Chrome extension. Engineered with sub-20ms speed, Humanization++ anti-ban stealth, and native support for the latest EA FC 27 &amp; FC 26 updates.
+            </p>
           </div>
           <div className="glass-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
             <div className="overflow-x-auto">
@@ -449,25 +460,16 @@ export default function Home() {
                 </thead>
                 <tbody className="divide-y divide-white/5">
                   <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-6 px-8 font-bold text-white">EA FC 27 &amp; FC 26 Native Support</td>
+                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
+                    </td>
+                    <td className="py-6 px-8 text-center">
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
                     <td className="py-6 px-8 font-bold text-white">20ms Search Speed</td>
-                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
-                    </td>
-                    <td className="py-6 px-8 text-center">
-                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-6 px-8 font-bold text-white">AI SBC Solver</td>
-                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
-                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
-                    </td>
-                    <td className="py-6 px-8 text-center">
-                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
-                    </td>
-                  </tr>
-                  <tr className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-6 px-8 font-bold text-white">Local WebApp Integration</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
                       <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
@@ -485,7 +487,48 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-6 px-8 font-bold text-white">Anti-Ban Behavioral Tech</td>
+                    <td className="py-6 px-8 font-bold text-white">Humanization++ Anti-Ban Tech</td>
+                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
+                    </td>
+                    <td className="py-6 px-8 text-center">
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-6 px-8 font-bold text-white">AI SBC Solver</td>
+                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
+                    </td>
+                    <td className="py-6 px-8 text-center">
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-6 px-8 font-bold text-white">Futbin Live Price Overlay</td>
+                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
+                    </td>
+                    <td className="py-6 px-8 text-center">
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-6 px-8 font-bold text-white">Auto List &amp; 5% EA Tax Net Formula</td>
+                    <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
+                      <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
+                    </td>
+                    <td className="py-6 px-8 text-center">
+                      <XCircle className="w-8 h-8 text-red-500/50 mx-auto" />
+                    </td>
+                  </tr>
+                  <tr className="hover:bg-white/[0.02] transition-colors">
+                    <td className="py-6 px-8 font-bold text-white">
+                      <div>
+                        <span>Daily Discord Trading Filters &amp; Coin Tips</span>
+                        <span className="block text-xs text-gray-400 font-normal mt-0.5">Free daily low-budget filters, tricks &amp; VIP pro alpha drops</span>
+                      </div>
+                    </td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
                       <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
@@ -509,14 +552,23 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
               <div className="mb-8">
-                <h3 className="text-xl font-bold mb-2 text-white">Free Beta</h3>
+                <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
+                  7-Day Limited Access
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-white">Free Trial</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-5xl font-black text-white">$0</span>
-                  <span className="text-gray-400 font-medium">/mo</span>
+                  <span className="text-gray-400 font-medium">/ 7 days</span>
                 </div>
-                <p className="text-sm text-gray-400 mt-4">Perfect for testing the waters and learning the basics of sniping.</p>
+                <p className="text-sm text-gray-400 mt-4">
+                  7 days limited free access. Perfect for testing the waters and learning the basics of sniping.
+                </p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
+                <li className="flex items-center gap-3 text-sm text-gray-300">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  7 Days Limited Free Access
+                </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Standard Filters
@@ -525,17 +577,26 @@ export default function Home() {
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   1 Active Account
                 </li>
-                <li className="flex items-center gap-3 text-sm text-gray-300">
-                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  Discord Community Support
+                <li className="flex items-start gap-3 text-sm text-gray-300">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                  <div>
+                    <span className="text-white font-medium">Free Discord Trading Filters</span>
+                    <span className="block text-xs text-gray-400 mt-0.5">
+                      Daily free low-budget trading filters, tricks &amp; coin-making tips
+                    </span>
+                  </div>
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-400">
-                  <X className="w-4 h-4 text-gray-400 shrink-0" />
+                  <X className="w-4 h-4 text-red-400/70 shrink-0" />
                   Multi-Tab Sniping
+                </li>
+                <li className="flex items-center gap-3 text-sm text-gray-400">
+                  <X className="w-4 h-4 text-red-400/70 shrink-0" />
+                  <span>No Humanization++ Tech <span className="text-xs text-gray-500">(Pro Only)</span></span>
                 </li>
               </ul>
               <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">
-                Start Free Trial
+                Start 7-Day Free Trial
               </Link>
             </div>
             <div className="glass-card rounded-3xl p-8 flex flex-col border-primary/40 bg-primary/5 relative overflow-hidden shadow-[0_0_40px_rgba(204,255,0,0.05)] transform md:-translate-y-4" data-purpose="pricing-card">
@@ -603,9 +664,36 @@ export default function Home() {
                     </span>
                   </span>
                 </li>
-                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
-                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  Paid-Member Discord Access
+                <li className="pt-3.5 first:pt-0">
+                  <div className="rounded-2xl p-4 bg-gradient-to-br from-[#5865F2]/20 via-[#5865F2]/10 to-primary/10 border border-[#5865F2]/40 relative overflow-hidden group/discord shadow-[0_0_20px_rgba(88,101,242,0.15)]">
+                    <div className="flex items-center justify-between gap-2 mb-2">
+                      <div className="flex items-center gap-2">
+                        <div className="w-7 h-7 rounded-lg bg-[#5865F2] flex items-center justify-center text-white shrink-0 shadow-sm">
+                          <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.373-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                          </svg>
+                        </div>
+                        <span className="font-bold text-white text-sm">Paid-Member Discord Access</span>
+                      </div>
+                      <span className="px-2 py-0.5 rounded-full bg-[#5865F2] text-white text-[9px] font-black uppercase tracking-wider">
+                        VIP Alpha
+                      </span>
+                    </div>
+                    <ul className="space-y-1.5 text-xs text-gray-300 mt-2.5 pt-2.5 border-t border-white/10">
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span>Daily high-margin meta snipe filters &amp; price alerts</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span>Daily low-budget trading tips, market tricks &amp; coin methods</span>
+                      </li>
+                      <li className="flex items-center gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-primary shrink-0" />
+                        <span>Direct 1-on-1 developer support &amp; private trading lounge</span>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />

@@ -80,8 +80,8 @@ Yes. Every 365-day license covers full access across EA FC 26 and upcoming FC 27
 ## Competitor Comparisons
 
 Detailed side-by-side analysis pages comparing Elite FUT SNIPER against all 36 major FUT trading tools, bots, and services:
-- [Baker's Bot vs Elite FUT SNIPER](https://elitefutbot.com/bakers-bot-vs-elitefutbot) – Built by the same developer; local vs cloud execution comparison
-- [FUT Simple Trader vs Elite FUT SNIPER](https://elitefutbot.com/futsimpletrader-vs-elitefutbot) – Manual trading tool vs automated 20ms sniping and AI SBC solver
+- [Baker's Bot vs Elite FUT SNIPER](https://elitefutbot.com/bakers-bot-vs-elitefutbot) – Built by Baker's Bot's original lead architect (2020–2025); sub-20ms speed, 0 bans, clean Chrome Side Panel HUD & AI SBC solver vs legacy floating buttons & ban complaints
+- [FUT Simple Trader vs Elite FUT SNIPER](https://elitefutbot.com/futsimpletrader-vs-elitefutbot) – Outdated FC 25 DOM script with ban-prone Web App price checking & €14.90/mo paywalled filters vs sub-20ms native Side Panel HUD & AI SBC solver with 0 bans
 - [FutEarn vs Elite FUT SNIPER](https://elitefutbot.com/futearn-vs-elitefutbot) – Cloud credential-sharing bot vs local zero-password extension
 - [FUT Sniper vs Elite FUT SNIPER](https://elitefutbot.com/futsniper-vs-elitefutbot) – Legacy cloud sniper vs 20ms local extension
 - [FUT Sniping Bot vs Elite FUT SNIPER](https://elitefutbot.com/futsnipingbot-vs-elitefutbot) – Browser extension with seasonal licenses vs Elite's flat fee

@@ -27,6 +27,74 @@ export interface CompetitorData {
     difference: string;
   };
 
+  // Developer Origin Story Callout (e.g. 5 years developing Baker's Bot)
+  developerOriginNote?: {
+    headline: string;
+    badge: string;
+    text: string;
+    linkUrl: string;
+    linkText: string;
+  };
+
+  // Real Issues & Community Complaints (e.g. Bans, Outdated UI, Stale Codebase)
+  communityIssuesAudit?: {
+    headline: string;
+    subheadline: string;
+    issues: {
+      title: string;
+      badge: string;
+      severity: "high" | "critical" | "warning";
+      competitorFlaw: string;
+      eliteSolution: string;
+    }[];
+  };
+
+  // Real Teardown of Competitor's 12 Advertised Features vs Elite
+  advertisedFeaturesAudit?: {
+    headline: string;
+    subheadline: string;
+    features: {
+      advertisedName: string;
+      competitorReality: string;
+      eliteAdvantage: string;
+    }[];
+  };
+
+  // UI / Ergonomics Teardown (Injected Floating Buttons vs Docked Chrome Side Panel HUD)
+  uiComparison?: {
+    headline: string;
+    subheadline: string;
+    competitorUi: {
+      title: string;
+      badge: string;
+      description: string;
+      drawbacks: string[];
+    };
+    eliteUi: {
+      title: string;
+      badge: string;
+      description: string;
+      benefits: string[];
+    };
+  };
+
+  // Detailed Pricing Teardown
+  pricingTeardown?: {
+    headline: string;
+    subheadline: string;
+    competitorModel: {
+      title: string;
+      price: string;
+      hiddenCosts: string[];
+    };
+    eliteModel: {
+      title: string;
+      price: string;
+      inclusions: string[];
+    };
+    summary: string;
+  };
+
   keyStatistics: {
     label: string;
     value: string;

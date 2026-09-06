@@ -158,13 +158,18 @@ const FEATURES = [
   },
   {
     num: "09",
-    title: "Free Discord VIP Support",
-    tagline: "24/7 Community & Alpha Filter Drops",
+    title: "Free Discord Filters & VIP Alpha",
+    tagline: "Daily Free Filters, Low-Budget Trading Tips & Tricks",
     description:
-      "Includes instant access to our private Discord trading server. Receive 24/7 technical setup assistance, share customized market filters with verified traders, and get daily curated high-ROI sniping targets during promo events.",
+      "Instant free access to our Discord trading server. Get daily free low-budget trading filters, market tricks, and coin-compounding setups to make more coins every day without risking your balance. Plus, Paid Members unlock exclusive VIP Alpha channels with high-margin meta snipe drops (50k–500k+ profit per card) and direct 1-on-1 developer support.",
     icon: MessageSquare,
-    badge: "VIP Community",
-    specs: ["24/7 technical troubleshooting", "Daily high-ROI filter drops", "Verified trader network"],
+    badge: "Free Filters & VIP Alpha",
+    specs: [
+      "Daily free low-budget trading filters & coin tricks",
+      "Regular market crash alerts, SBC fodder trends & flip tips",
+      "VIP Paid-Member Alpha channels with high-margin meta drops",
+      "24/7 technical setup assistance & verified trader lounge",
+    ],
   },
   {
     num: "10",
@@ -237,6 +242,12 @@ const OUTPERFORM_COMPARISON = [
     cloud: "Forces users to purchase new yearly copies",
     highlight: false,
   },
+  {
+    feature: "Daily Discord Trading Filters & Coin Tips",
+    elite: "Free daily low-budget filters, tricks & VIP pro alpha drops",
+    cloud: "None (zero trading filters or expensive signal upsells)",
+    highlight: true,
+  },
 ];
 
 const OUTPERFORM_POINTS = [
@@ -291,9 +302,9 @@ const OUTPERFORM_POINTS = [
     icon: Shield,
   },
   {
-    title: "Video Tutorials",
-    desc: "Master every filter and setting with step-by-step video guides hosted by experienced FUT traders.",
-    icon: Tv,
+    title: "Free Discord Trading Filters & Daily Tips",
+    desc: "Daily free sniping filters, low-budget trading tips, and coin-making tricks shared in Discord to help you compound coins safely every day.",
+    icon: MessageSquare,
   },
   {
     title: "One Time Purchase",

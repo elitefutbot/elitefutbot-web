@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import {
   ShieldCheck,
@@ -147,10 +148,10 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
   },
   {
     num: "09",
-    name: "Free Discord VIP Support & Strategy Drops",
-    tagline: "24/7 Technical Setup & Daily Alpha",
+    name: "Free Discord Trading Filters, Daily Tips & VIP Drops",
+    tagline: "Daily Coin-Making Tricks & High-ROI Filters",
     icon: MessageSquare,
-    eliteSpec: "Included 24/7 technical setup assistance, verified trader channels, and daily high-ROI filter drops at no extra cost.",
+    eliteSpec: "Included daily free low-budget filters, coin-making tips/tricks, 24/7 technical setup assistance, and VIP Paid-Member alpha sniping drops.",
     competitorSpec: (compType, compName) => {
       if (compType === "discord-alerts")
         return `${compName} charges monthly subscription fees ($20–$30/mo) for signal callouts alone.`;
@@ -355,6 +356,16 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           worstRating: "1",
         },
       },
+      {
+        "@type": "WebPage",
+        "@id": `https://elitefutbot.com/${data.slug}`,
+        url: `https://elitefutbot.com/${data.slug}`,
+        name: `${data.competitorName} vs Elite FUT SNIPER`,
+        speakable: {
+          "@type": "SpeakableSpecification",
+          cssSelector: ["h1", "[aria-label='Quick Summary'] p", "[aria-label='Verdict'] p"],
+        },
+      },
     ],
   };
 
@@ -435,6 +446,46 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             </div>
           </section>
 
+          {/* Developer Origin Story Callout Banner (if available) */}
+          {data.developerOriginNote && (
+            <section
+              aria-label="Engineering Pedigree"
+              className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-primary/15 via-primary/5 to-white/[0.02] border border-primary/35 shadow-[0_0_35px_rgba(204,255,0,0.1)] relative overflow-hidden backdrop-blur-md"
+            >
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+                <div className="flex items-start gap-4">
+                  <div className="relative w-12 h-12 rounded-2xl overflow-hidden border-2 border-primary/50 shrink-0 shadow-[0_0_15px_rgba(204,255,0,0.2)]">
+                    <Image
+                      src="/bakersbot-avatar.webp"
+                      alt="Original Engine Architect"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="space-y-1">
+                    <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-primary/20 text-primary text-[10px] font-bold font-mono uppercase tracking-wider">
+                      <Cpu className="w-3 h-3" />
+                      <span>{data.developerOriginNote.badge}</span>
+                    </div>
+                    <h3 className="text-base sm:text-lg font-black text-white font-headline uppercase tracking-tight">
+                      {data.developerOriginNote.headline}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-gray-300 font-normal leading-relaxed max-w-3xl">
+                      {data.developerOriginNote.text}
+                    </p>
+                  </div>
+                </div>
+                <Link
+                  href={data.developerOriginNote.linkUrl}
+                  className="shrink-0 px-5 py-2.5 rounded-xl bg-primary text-black font-black text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)] inline-flex items-center gap-1.5"
+                >
+                  <span>{data.developerOriginNote.linkText}</span>
+                  <ArrowRight className="w-3.5 h-3.5" />
+                </Link>
+              </div>
+            </section>
+          )}
+
           {/* Honest In-Depth Competitor Breakdown */}
           {data.competitorOverview && (
             <section aria-label="Competitor Evaluation" className="p-6 sm:p-8 rounded-3xl bg-surface border border-white/10 space-y-8">
@@ -510,6 +561,68 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                   </div>
                 </div>
               )}
+            </section>
+          )}
+
+          {/* Real Community Issues & Complaints Audit (if available) */}
+          {data.communityIssuesAudit && (
+            <section aria-label="Community Complaints Audit" className="space-y-6">
+              <div className="space-y-1 text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 font-mono text-xs font-bold uppercase tracking-wider">
+                  <AlertTriangle className="w-3.5 h-3.5" />
+                  <span>Verified User Pain Points</span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                  {data.communityIssuesAudit.headline}
+                </h2>
+                <p className="text-sm text-gray-300 leading-relaxed font-normal max-w-3xl">
+                  {data.communityIssuesAudit.subheadline}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+                {data.communityIssuesAudit.issues.map((issue, idx) => (
+                  <div
+                    key={idx}
+                    className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all flex flex-col justify-between space-y-4"
+                  >
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between gap-2">
+                        <span
+                          className={`text-[9px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full border ${
+                            issue.severity === "critical"
+                              ? "bg-red-500/15 border-red-500/40 text-red-400"
+                              : issue.severity === "high"
+                              ? "bg-amber-500/15 border-amber-500/40 text-amber-400"
+                              : "bg-yellow-500/15 border-yellow-500/40 text-yellow-300"
+                          }`}
+                        >
+                          {issue.badge}
+                        </span>
+                        <span className="text-[10px] font-mono text-gray-400">Issue #{idx + 1}</span>
+                      </div>
+                      <h3 className="text-base font-bold text-white font-headline leading-snug">
+                        {issue.title}
+                      </h3>
+                      <div className="p-3.5 rounded-xl bg-red-500/[0.06] border border-red-500/20 space-y-1 text-xs">
+                        <span className="font-mono text-[10px] font-bold text-red-400 uppercase tracking-wider flex items-center gap-1.5">
+                          <X className="w-3 h-3 text-red-400" />
+                          {data.competitorName} Problem
+                        </span>
+                        <p className="text-gray-300 leading-relaxed font-normal">{issue.competitorFlaw}</p>
+                      </div>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-primary/[0.06] border border-primary/25 space-y-1 text-xs mt-2">
+                      <span className="font-mono text-[10px] font-bold text-primary uppercase tracking-wider flex items-center gap-1.5">
+                        <Check className="w-3 h-3 text-primary" />
+                        Elite FUT SNIPER Solution
+                      </span>
+                      <p className="text-gray-200 leading-relaxed font-normal">{issue.eliteSolution}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </section>
           )}
 
@@ -840,6 +953,85 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             </div>
           </section>
 
+          {/* UI & Ergonomics Teardown (if available) */}
+          {data.uiComparison && (
+            <section
+              aria-label="UI Ergonomics Comparison"
+              className="p-8 sm:p-10 rounded-3xl bg-surface border border-white/10 space-y-8 backdrop-blur-md"
+            >
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary font-mono text-xs font-bold uppercase tracking-wider">
+                  <Layout className="w-3.5 h-3.5" />
+                  <span>Ergonomics &amp; HUD Architecture</span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                  {data.uiComparison.headline}
+                </h2>
+                <p className="text-sm text-gray-300 leading-relaxed font-normal max-w-3xl">
+                  {data.uiComparison.subheadline}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Competitor UI */}
+                <div className="p-6 rounded-2xl bg-black/50 border border-red-500/20 space-y-4">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-base font-bold text-white font-headline uppercase tracking-wide">
+                      {data.uiComparison.competitorUi.title}
+                    </h3>
+                    <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-red-500/15 border border-red-500/30 text-red-400">
+                      {data.uiComparison.competitorUi.badge}
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-300 leading-relaxed font-normal">
+                    {data.uiComparison.competitorUi.description}
+                  </p>
+                  <div className="space-y-2 pt-2 border-t border-white/5">
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest block">
+                      Drawbacks on EA Web App:
+                    </span>
+                    <ul className="space-y-2">
+                      {data.uiComparison.competitorUi.drawbacks.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-xs text-gray-300 font-normal">
+                          <X className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Elite UI */}
+                <div className="p-6 rounded-2xl bg-primary/[0.04] border border-primary/30 space-y-4 shadow-[0_0_30px_rgba(204,255,0,0.05)]">
+                  <div className="flex items-center justify-between gap-2">
+                    <h3 className="text-base font-bold text-primary font-headline uppercase tracking-wide">
+                      {data.uiComparison.eliteUi.title}
+                    </h3>
+                    <span className="text-[9px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-primary/20 border border-primary/40 text-primary">
+                      {data.uiComparison.eliteUi.badge}
+                    </span>
+                  </div>
+                  <p className="text-xs text-gray-200 leading-relaxed font-normal">
+                    {data.uiComparison.eliteUi.description}
+                  </p>
+                  <div className="space-y-2 pt-2 border-t border-primary/20">
+                    <span className="text-[10px] font-mono text-primary/80 uppercase tracking-widest block">
+                      Ergonomic Advantages:
+                    </span>
+                    <ul className="space-y-2">
+                      {data.uiComparison.eliteUi.benefits.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-xs text-gray-200 font-normal">
+                          <Check className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </section>
+          )}
+
           {/* Technical Architecture Deep Dive */}
           <section className="space-y-8 p-8 sm:p-10 rounded-3xl bg-surface border border-white/10 backdrop-blur-sm" aria-label="Architecture Comparison">
             <div className="flex items-center gap-3 text-primary">
@@ -984,6 +1176,138 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </Link>
             </div>
           </section>
+
+          {/* Advertised Features Reality Audit (if available) */}
+          {data.advertisedFeaturesAudit && (
+            <section aria-label="12 Advertised Features Audit" className="space-y-6">
+              <div className="space-y-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary font-mono text-xs font-bold uppercase tracking-wider">
+                  <BarChart3 className="w-3.5 h-3.5" />
+                  <span>Feature-by-Feature Reality Audit</span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                  {data.advertisedFeaturesAudit.headline}
+                </h2>
+                <p className="text-sm text-gray-300 leading-relaxed font-normal max-w-3xl">
+                  {data.advertisedFeaturesAudit.subheadline}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {data.advertisedFeaturesAudit.features.map((feat, idx) => (
+                  <div
+                    key={idx}
+                    className="p-5 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-primary/30 transition-all space-y-3"
+                  >
+                    <div className="flex items-center justify-between gap-2">
+                      <h3 className="text-sm font-bold text-white font-headline uppercase tracking-wide">
+                        {feat.advertisedName}
+                      </h3>
+                      <span className="text-[9px] font-mono font-black uppercase tracking-wider bg-primary/20 border border-primary/30 px-2 py-0.5 rounded-full text-primary">
+                        ELITE WINS
+                      </span>
+                    </div>
+
+                    <div className="space-y-2 text-xs">
+                      <div className="p-3 rounded-xl bg-black/40 border border-white/5 space-y-1">
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-gray-400 font-bold flex items-center gap-1.5">
+                          <X className="w-3.5 h-3.5 text-gray-500 shrink-0" />
+                          {data.competitorName} Reality
+                        </span>
+                        <p className="text-gray-400 leading-relaxed font-normal">{feat.competitorReality}</p>
+                      </div>
+
+                      <div className="p-3 rounded-xl bg-primary/[0.04] border border-primary/20 space-y-1">
+                        <span className="text-[10px] font-mono uppercase tracking-widest text-primary font-bold flex items-center gap-1.5">
+                          <Check className="w-3.5 h-3.5 text-primary shrink-0" />
+                          Elite FUT SNIPER Advantage
+                        </span>
+                        <p className="text-gray-200 leading-relaxed font-normal">{feat.eliteAdvantage}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
+          {/* Pricing Model Teardown (if available) */}
+          {data.pricingTeardown && (
+            <section
+              aria-label="Pricing Teardown"
+              className="p-8 sm:p-10 rounded-3xl bg-surface border border-white/10 space-y-6 backdrop-blur-md"
+            >
+              <div className="space-y-1">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/30 text-primary font-mono text-xs font-bold uppercase tracking-wider">
+                  <DollarSign className="w-3.5 h-3.5" />
+                  <span>Cost Transparency</span>
+                </div>
+                <h2 className="text-2xl sm:text-3xl font-black font-headline uppercase text-white">
+                  {data.pricingTeardown.headline}
+                </h2>
+                <p className="text-sm text-gray-300 leading-relaxed font-normal max-w-3xl">
+                  {data.pricingTeardown.subheadline}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Competitor Pricing */}
+                <div className="p-6 rounded-2xl bg-black/40 border border-white/10 space-y-4">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-sm font-bold text-gray-300 font-headline uppercase">
+                      {data.pricingTeardown.competitorModel.title}
+                    </span>
+                    <span className="text-xs font-mono text-gray-400 font-bold">
+                      {data.pricingTeardown.competitorModel.price}
+                    </span>
+                  </div>
+                  <div className="space-y-2">
+                    <span className="text-[10px] font-mono text-gray-400 uppercase tracking-widest block">
+                      Hidden Costs &amp; Limitations:
+                    </span>
+                    <ul className="space-y-2">
+                      {data.pricingTeardown.competitorModel.hiddenCosts.map((cost, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-xs text-gray-300 font-normal">
+                          <X className="w-3.5 h-3.5 text-red-400 shrink-0 mt-0.5" />
+                          <span>{cost}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                {/* Elite Pricing */}
+                <div className="p-6 rounded-2xl bg-primary/[0.04] border border-primary/30 space-y-4 shadow-[0_0_30px_rgba(204,255,0,0.06)]">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-sm font-bold text-primary font-headline uppercase">
+                      {data.pricingTeardown.eliteModel.title}
+                    </span>
+                    <span className="text-xs font-mono text-primary font-bold">
+                      {data.pricingTeardown.eliteModel.price}
+                    </span>
+                  </div>
+                  <div className="space-y-2">
+                    <span className="text-[10px] font-mono text-primary/80 uppercase tracking-widest block">
+                      All-Inclusive Package Benefits:
+                    </span>
+                    <ul className="space-y-2">
+                      {data.pricingTeardown.eliteModel.inclusions.map((inc, idx) => (
+                        <li key={idx} className="flex items-start gap-2 text-xs text-gray-200 font-normal">
+                          <Check className="w-3.5 h-3.5 text-primary shrink-0 mt-0.5" />
+                          <span>{inc}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-4 rounded-xl bg-white/[0.02] border border-white/10 text-xs text-gray-300 leading-relaxed font-normal">
+                <strong className="text-white font-semibold">Bottom Line on Pricing: </strong>
+                {data.pricingTeardown.summary}
+              </div>
+            </section>
+          )}
 
           {/* Frequently Asked Questions */}
           <section className="space-y-6" aria-label="Frequently Asked Questions">

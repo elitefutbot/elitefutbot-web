@@ -30,8 +30,9 @@ export const frLocale: LocaleDictionary = {
     creatorBadge: {
       originalCreator: "CRÉATEUR ORIGINAL",
       byDeveloper: "Par le développeur principal original de",
-      freeBeta: "BÊTA GRATUITE",
+      freeBeta: "BETA GRATUITE",
       slotsFilled: "87/100 Places Remplies",
+      statusText: "Compatible avec les dernières mises à jour d'EA FC 27",
     },
     hero: {
       titleLine1: "Le Bot d'Achat Revente & Sniping",
@@ -125,9 +126,9 @@ export const frLocale: LocaleDictionary = {
           iconName: "ShieldCheck",
         },
         {
-          title: "Tutoriels Vidéo",
-          description: "Maîtrisez chaque fonction grâce à des guides vidéo pas à pas expliquant chaque réglage en détail.",
-          iconName: "GraduationCap",
+          title: "Filtres Discord Gratuits & Astuces",
+          description: "Filtres quotidiens gratuits pour petit budget, astuces de marché et conseils pour générer des crédits sur notre Discord. Gagnez plus de crédits chaque jour avec des configurations simples et des alertes en direct.",
+          iconName: "MessageSquare",
         },
         {
           title: "Achat Unique Annuel",
@@ -136,6 +137,8 @@ export const frLocale: LocaleDictionary = {
         },
       ],
       viewAllFeaturesCta: "Voir l'Arsenal Complet de 11 Modules",
+      discordAlphaBadge: "Communauté Alpha",
+      discordFreeBadge: "Filtres Quotidiens Gratuits",
     },
     comparison: {
       title: "Nous vs.",
@@ -152,6 +155,7 @@ export const frLocale: LocaleDictionary = {
         { feature: "Intégration Locale dans la Web App", elite: true, typical: false },
         { feature: "Zéro Partage de Mot de Passe (100% Local)", elite: true, typical: false },
         { feature: "Technologie Comportementale Anti-Ban", elite: true, typical: false },
+        { feature: "Filtres Gratuits sur Discord & Astuces Quotidiennes", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -159,16 +163,27 @@ export const frLocale: LocaleDictionary = {
       titleHighlight: "Formule",
       subtitle: "Tarification transparente. Sans frais cachés ni abonnement récurrent.",
       freeCard: {
-        title: "Bêta Gratuite",
+        badge: "Accès Limité 7 Jours",
+        title: "Essai Gratuit (7 Jours)",
         price: "0 €",
-        period: "/mois",
-        desc: "Parfait pour tester les outils et apprendre les bases du sniping sur la Web App.",
+        period: "/ 7 jours",
+        desc: "7 jours d'accès gratuit limité. Parfait pour tester les fonctions et apprendre les bases du sniping.",
         features: [
+          "7 Jours d'Accès Gratuit Limité",
           "Filtres de Sniping Standard",
           "1 Compte Actif",
-          "Support Communautaire sur Discord",
+          {
+            text: "Filtres Discord Gratuits & Astuces",
+            subtext: "Filtres quotidiens gratuits pour petit budget et astuces pour accumuler des crédits",
+          },
+          { text: "Sniping Multi-Onglets", isNegative: true },
+          {
+            text: "Sans Technologie Humanization++",
+            subtext: "(Version Pro Uniquement)",
+            isNegative: true,
+          },
         ],
-        cta: "Commencer l'Essai Gratuit",
+        cta: "Commencer l'Essai Gratuit de 7 Jours",
       },
       proCard: {
         badge: "Meilleure Offre",
@@ -189,7 +204,16 @@ export const frLocale: LocaleDictionary = {
             text: "Technologie Anti-Ban Human++",
             subtext: "0 bannissement à ce jour — méthode furtive exclusive",
           },
-          { text: "Accès aux Salons VIP sur Discord" },
+          {
+            text: "Accès Salon VIP Discord (Membres Pro)",
+            badge: "VIP Alpha",
+            isDiscord: true,
+            bullets: [
+              "Filtres méta quotidiens à forte marge (50k à 500k+ de bénéfice)",
+              "Astuces petit budget quotidiennes & signaux de marché",
+              "Assistance technique directe en tête-à-tête avec les devs",
+            ],
+          },
           { text: "Potentiel de Gain de 10M+ Crédits" },
           { text: "Solveur de DCE par IA", isSoon: true },
         ],
@@ -484,17 +508,17 @@ export const frLocale: LocaleDictionary = {
       },
       {
         num: "10",
-        title: "Salon VIP Discord 24/7",
-        badge: "Communauté VIP",
+        title: "Filtres Quotidiens sur Discord & VIP Alpha",
+        badge: "Filtres Gratuits & VIP",
         badgeColor: "bg-primary/15 text-primary border-primary/30",
         iconName: "MessageSquare",
-        tagline: "Filtres Quotidiens Rentables et Support 24/7",
+        tagline: "Filtres Gratuits Quotidiens, Astuces Crédits & VIP Alpha 24/7",
         description:
-          "Accès immédiat à notre serveur Discord privé. Filtres partagés lors des événements de packs, échanges de stratégies et support direct avec les développeurs.",
+          "Accès immédiat à notre serveur Discord d'achat revente. Recevez chaque jour des filtres gratuits pour petit budget, des alertes de crash du marché et des astuces pour accumuler des crédits. Les Membres Pro débloquent les canaux VIP Alpha exclusifs avec des snipes à forte marge et une assistance directe 1-sur-1.",
         highlights: [
-          "Filtres à fort rendement sélectionnés chaque jour",
-          "Résolution d'incidents directe avec l'équipe dev",
-          "Réseau actif de traders vérifiés",
+          "Filtres gratuits quotidiens et astuces pour faire des crédits",
+          "Canal VIP Alpha pour membres Pro avec snipes à fort rendement",
+          "Assistance technique directe et salon de traders vérifiés",
         ],
       },
     ],
@@ -550,6 +574,12 @@ export const frLocale: LocaleDictionary = {
           elite: "19,99 € Paiement Unique (365 Jours + Essai)",
           cloud: "15 € – 35 € / mois récurrent",
           manual: "Gratuit (Coûte 4+ heures par jour)",
+        },
+        {
+          feature: "Filtres Discord & Astuces Achat Revente",
+          elite: "Filtres gratuits quotidiens petit budget & VIP Alpha",
+          cloud: "Aucun (sans filtres ou facturation d'accès signaux)",
+          manual: "Aucun (recherche manuelle)",
         },
       ],
       competitorLinkText: "Découvrez notre comparatif complet de 36 concurrents",
@@ -822,16 +852,17 @@ export const frLocale: LocaleDictionary = {
       },
       {
         num: "09",
-        title: "Support VIP Offert sur Discord",
-        tagline: "Communauté 24/7 et Filtres d'Achat Revente Exclusifs",
+        title: "Filtres Discord Gratuits & VIP Alpha",
+        tagline: "Filtres Quotidiens Gratuits, Astuces Petit Budget & Méthodes Crédits",
         description:
-          "Bénéficiez d'un accès immédiat à notre serveur Discord privé. Assistance technique 24/7, filtres rentables personnalisés et signaux d'opportunités lors des événements.",
-        badge: "Communauté VIP",
+          "Accès immédiat et gratuit à notre serveur Discord de trading. Recevez quotidiennement des filtres gratuits pour petit budget, des astuces de marché et des stratégies pour accumuler des crédits chaque jour sans risquer les finances de votre club. De plus, les Membres Pro débloquent les salons VIP Alpha exclusifs avec des alertes de snipes à forte marge (50k à 500k+ de bénéfice net) et un support direct 1-sur-1.",
+        badge: "Filtres Gratuits & VIP Alpha",
         iconName: "MessageSquare",
         specs: [
-          "Support technique 24/7",
-          "Filtres quotidiens à fort rendement",
-          "Réseau de traders vérifiés",
+          "Filtres quotidiens gratuits pour petit budget & astuces crédits",
+          "Alertes de crash du marché, tendances DCE et signaux d'achat revente",
+          "Salons VIP Alpha pour membres Pro avec opportunités méta à fort rendement",
+          "Assistance technique 24/7 et salon de traders vérifiés",
         ],
       },
       {
@@ -930,6 +961,12 @@ export const frLocale: LocaleDictionary = {
           elite: "Couvre sans coupure FC 26 et FC 27",
           cloud: "Impose de racheter une licence chaque année",
         },
+        {
+          feature: "Filtres Discord & Astuces Quotidiennes d'Achat Revente",
+          elite: "Filtres gratuits quotidiens petit budget, astuces & VIP Alpha",
+          cloud: "Aucun (sans filtres d'achat revente ou abonnements signaux payants)",
+          highlight: true,
+        },
       ],
       points: [
         {
@@ -983,9 +1020,9 @@ export const frLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Tutoriels Vidéo",
-          desc: "Apprenez à maîtriser chaque option grâce à des vidéos détaillées étape par étape.",
-          iconName: "Tv",
+          title: "Filtres Discord Gratuits & Astuces Quotidiennes",
+          desc: "Filtres quotidiens gratuits de sniping, astuces d'achat revente pour petit budget et alertes en direct sur Discord pour multiplier vos crédits.",
+          iconName: "MessageSquare",
         },
         {
           title: "Achat Unique Annuel",
