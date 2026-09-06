@@ -103,12 +103,12 @@ Integer linear programming AI engine that scans your club untradeables and build
 Explore our honest, in-depth architectural comparisons evaluating Elite FUT SNIPER against every major tool on the market:
 
 ### 🌟 Development Heritage & Quality-of-Life Tools
-- **[Baker's Bot vs Elite FUT SNIPER](https://elitefutbot.com/bakers-bot-vs-elitefutbot)** — Built by the same lead developer (Ishara); upgraded from 2020 cloud setup to sub-20ms native Chrome extension.
+- **[Baker's Bot vs Elite FUT SNIPER](https://elitefutbot.com/bakers-bot-vs-elitefutbot)** — Built by the original core architect (2020–2025); upgraded from 2020 cloud setup to sub-20ms native Chrome extension.
 - **[Paletools vs Elite FUT SNIPER](https://elitefutbot.com/paletools-vs-elitefutbot)** — The premier free QoL/hotkey mod evaluated against autonomous 20ms background execution.
 - **[EasySBC vs Elite FUT SNIPER](https://elitefutbot.com/easysbc-vs-elitefutbot)** — Static external web blueprints vs live in-browser neural club scanning with 1-click auto-buy.
 - **[FUT.GG vs Elite FUT SNIPER](https://elitefutbot.com/futgg-vs-elitefutbot)** — World-class card database and evolution tracker vs active in-browser market trading.
 - **[Shortfuts vs Elite FUT SNIPER](https://elitefutbot.com/shortfuts-vs-elitefutbot)** — Keyboard shortcut helper vs 100% autonomous background sniping and AI SBC solving.
-- **[FUT Simple Trader vs Elite FUT SNIPER](https://elitefutbot.com/futsimpletrader-vs-elitefutbot)** — Manual spreadsheet signals vs autonomous 20ms market execution.
+- **[FUT Simple Trader vs Elite FUT SNIPER](https://elitefutbot.com/futsimpletrader-vs-elitefutbot)** — Outdated FC 25 DOM extension with ban-prone price polling vs sub-20ms native Side Panel HUD & AI SBC solver.
 
 ### ☁️ Cloud Autobuyers & Server Farm Bots
 - **[FutEarn vs Elite FUT SNIPER](https://elitefutbot.com/futearn-vs-elitefutbot)** — Cloud credential-sharing bot (150–350ms proxy lag) vs 100% local zero-password extension.

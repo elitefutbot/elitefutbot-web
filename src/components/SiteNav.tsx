@@ -9,11 +9,13 @@ import { isAccountRoute } from "@/lib/accountRoutes";
 import { hasSession } from "@/lib/auth/authClient";
 import LanguageSelector from "@/components/LanguageSelector";
 
+import { SUPPORTED_LOCALES, isValidLocale, getLocaleData } from "@/data/locales";
+
 // Moved out of app/layout.tsx (content below is otherwise unchanged) so
 // account routes (login/dashboard/etc.) can render their own chrome instead
 // of this marketing nav.
 export default function SiteNav() {
-  const pathname = usePathname();
+  const pathname = usePathname() || "/";
   const [menuOpen, setMenuOpen] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -31,23 +33,39 @@ export default function SiteNav() {
 
   if (isAccountRoute(pathname)) return null;
 
+  const segments = pathname.split("/").filter(Boolean);
+  const firstSegment = segments[0];
+  const isLocalePrefix = isValidLocale(firstSegment);
+  const dict = isLocalePrefix ? getLocaleData(firstSegment) : null;
+
+  const homeHref = isLocalePrefix ? `/${firstSegment}` : "/";
+  const featuresHref = isLocalePrefix ? `/${firstSegment}#features` : "/#features";
+  const pricingHref = isLocalePrefix ? `/${firstSegment}#pricing` : "/#pricing";
+  const reviewsHref = isLocalePrefix ? `/${firstSegment}#reviews` : "/#reviews";
+
+  const featuresLabel = dict ? dict.nav.features : "Features";
+  const pricingLabel = dict ? dict.nav.pricing : "Pricing";
+  const reviewsLabel = dict ? dict.nav.reviews : "Reviews";
+
   const authHref = isLoggedIn ? "/dashboard" : "/register";
-  const authLabel = isLoggedIn ? "Dashboard" : "Sign Up";
+  const authLabel = isLoggedIn
+    ? (dict ? dict.nav.dashboard : "Dashboard")
+    : (dict ? dict.nav.signUp : "Sign Up");
 
   return (
     <nav className="sticky top-0 z-50 bg-dark/85 backdrop-blur-xl border-b border-white/5 supports-[backdrop-filter]:bg-dark/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center gap-2.5 group">
+          <Link href={homeHref} className="flex items-center gap-2.5 group">
             <Image src="/logo-elite.png" alt="Elite FUT SNIPER Logo" width={40} height={40} priority className="w-10 h-10 object-contain transition-transform group-hover:scale-105" />
             <span className="text-lg font-black tracking-tighter uppercase text-white">
               Elite FUT <span className="text-primary">SNIPER</span>
             </span>
           </Link>
           <div className="hidden md:flex items-center space-x-6 text-xs font-semibold text-gray-300">
-            <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href="/#features">Features</Link>
-            <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href="/#pricing">Pricing</Link>
-            <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href="/#reviews">Reviews</Link>
+            <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href={featuresHref}>{featuresLabel}</Link>
+            <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href={pricingHref}>{pricingLabel}</Link>
+            <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href={reviewsHref}>{reviewsLabel}</Link>
             <Link
               href="https://discord.gg/Rkb9nF6WG6"
               target="_blank"
@@ -87,9 +105,9 @@ export default function SiteNav() {
       {menuOpen && (
         <div id="mobile-nav-menu" className="md:hidden border-t border-white/5 bg-dark/95 backdrop-blur-xl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col gap-1 text-sm font-semibold text-gray-300">
-            <Link className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-primary transition-colors" href="/#features" onClick={() => setMenuOpen(false)}>Features</Link>
-            <Link className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-primary transition-colors" href="/#pricing" onClick={() => setMenuOpen(false)}>Pricing</Link>
-            <Link className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-primary transition-colors" href="/#reviews" onClick={() => setMenuOpen(false)}>Reviews</Link>
+            <Link className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-primary transition-colors" href={featuresHref} onClick={() => setMenuOpen(false)}>{featuresLabel}</Link>
+            <Link className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-primary transition-colors" href={pricingHref} onClick={() => setMenuOpen(false)}>{pricingLabel}</Link>
+            <Link className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-primary transition-colors" href={reviewsHref} onClick={() => setMenuOpen(false)}>{reviewsLabel}</Link>
             <Link
               className="py-3 px-3 rounded-lg hover:bg-white/5 hover:text-[#5865F2] transition-colors flex items-center gap-2"
               href="https://discord.gg/Rkb9nF6WG6"
@@ -102,14 +120,12 @@ export default function SiteNav() {
               </svg>
               Discord
             </Link>
-            <Link
-              className="mt-2 bg-primary/10 border border-primary/30 text-primary px-4 py-3 rounded-full font-bold flex items-center justify-center gap-2"
-              href={authHref}
-              onClick={() => setMenuOpen(false)}
-            >
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              {authLabel}
-            </Link>
+            <div className="pt-2 border-t border-white/5 mt-1">
+              <Link className="w-full bg-primary/10 hover:bg-primary/20 border border-primary/30 text-primary py-3 rounded-xl font-bold transition-all flex items-center justify-center gap-2 shadow-[0_0_15px_rgba(204,255,0,0.1)]" href={authHref} onClick={() => setMenuOpen(false)}>
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+                {authLabel}
+              </Link>
+            </div>
           </div>
         </div>
       )}

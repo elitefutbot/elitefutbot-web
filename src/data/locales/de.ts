@@ -28,10 +28,11 @@ export const deLocale: LocaleDictionary = {
         "Erwirtschafte Millionen von Münzen in Ultimate Team mit unserer lokalen Chrome Erweiterung. Unter 20ms Reaktionszeit und 1-Klick KI SBC Löser.",
     },
     creatorBadge: {
-      originalCreator: "ORIGINAL ENTWICKLER",
-      byDeveloper: "Vom leitenden Original-Entwickler von",
+      originalCreator: "URSPRÜNGLICHER ENTWICKLER",
+      byDeveloper: "Vom ursprünglichen Chefentwickler von",
       freeBeta: "KOSTENLOSE BETA",
       slotsFilled: "87/100 Plätze Belegt",
+      statusText: "Kompatibel mit den neuesten EA FC 27 Updates",
     },
     hero: {
       titleLine1: "Der Weltweit Schnellste & Sicherste",
@@ -125,9 +126,9 @@ export const deLocale: LocaleDictionary = {
           iconName: "ShieldCheck",
         },
         {
-          title: "Video-Tutorials",
-          description: "Meistere jedes Werkzeug mit ausführlichen Schritt-für-Schritt-Videoanleitungen.",
-          iconName: "GraduationCap",
+          title: "Kostenlose Discord-Filter & Tipps",
+          description: "Tägliche kostenlose Low-Budget Trading-Filter, Markt-Tricks und Münzen-Tipps auf unserem Discord. Verdiene jeden Tag mehr Coins mit einfachen Setups und Live-Benachrichtigungen.",
+          iconName: "MessageSquare",
         },
         {
           title: "Einmalzahlung (365 Tage)",
@@ -136,6 +137,8 @@ export const deLocale: LocaleDictionary = {
         },
       ],
       viewAllFeaturesCta: "Vollständige 11-Modul-Suite Ansehen",
+      discordAlphaBadge: "Alpha Community",
+      discordFreeBadge: "Tägliche Kostenlose Filter",
     },
     comparison: {
       title: "Wir vs.",
@@ -152,6 +155,7 @@ export const deLocale: LocaleDictionary = {
         { feature: "Direkte WebApp Integration", elite: true, typical: false },
         { feature: "Keine Passwort-Weitergabe (100% Lokal)", elite: true, typical: false },
         { feature: "Verhaltensbasierte Anti-Ban Technologie", elite: true, typical: false },
+        { feature: "Kostenlose Discord-Filter & Tägliche Trading-Tipps", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -159,16 +163,27 @@ export const deLocale: LocaleDictionary = {
       titleHighlight: "Version",
       subtitle: "Transparente Preise. Keine versteckten Gebühren oder Abos.",
       freeCard: {
-        title: "Kostenlose Beta",
+        badge: "7 Tage Begrenzter Zugang",
+        title: "Kostenlose Testphase (7 Tage)",
         price: "0 €",
-        period: "/Monat",
-        desc: "Perfekt zum Kennenlernen der Grundfunktionen und Sniping-Basics.",
+        period: "/ 7 Tage",
+        desc: "7 Tage begrenzter kostenloser Zugang. Perfekt zum Kennenlernen der Grundfunktionen des Snipings.",
         features: [
+          "7 Tage Begrenzter Kostenloser Zugang",
           "Standard Sniping-Filter",
           "1 Aktiver Account",
-          "Discord Community-Support",
+          {
+            text: "Kostenlose Discord-Filter & Tipps",
+            subtext: "Tägliche kostenlose Low-Budget Filter und Tricks zum Münzenvermehren",
+          },
+          { text: "Multi-Tab Sniping", isNegative: true },
+          {
+            text: "Ohne Humanization++ Technologie",
+            subtext: "(Nur in der Pro-Version)",
+            isNegative: true,
+          },
         ],
-        cta: "Kostenlose Testphase Starten",
+        cta: "7 Tage Kostenlos Testen",
       },
       proCard: {
         badge: "Bester Wert",
@@ -189,7 +204,16 @@ export const deLocale: LocaleDictionary = {
             text: "Human++ Anti-Ban Technologie",
             subtext: "0 Banns bis heute dokumentiert — exklusive Tarnmethode",
           },
-          { text: "VIP Discord Zugang" },
+          {
+            text: "VIP Discord Zugang (Pro-Mitglieder Lounge)",
+            badge: "VIP Alpha",
+            isDiscord: true,
+            bullets: [
+              "Tägliche Meta-Filter mit hoher Marge (50k bis 500k+ Gewinn)",
+              "Tägliche Low-Budget Trading-Tipps & Markt-Tricks",
+              "Direkter 1-zu-1 Entwickler-Support",
+            ],
+          },
           { text: "10M+ Münzen Verdienstpotenzial" },
           { text: "KI SBC Löser", isSoon: true },
         ],
@@ -484,17 +508,17 @@ export const deLocale: LocaleDictionary = {
       },
       {
         num: "10",
-        title: "24/7 VIP Discord Community",
-        badge: "VIP Community",
+        title: "Tägliche Discord-Filter & VIP Alpha",
+        badge: "Kostenlose Filter & VIP",
         badgeColor: "bg-primary/15 text-primary border-primary/30",
         iconName: "MessageSquare",
-        tagline: "Täglich Profitable Filter & 24/7 Support",
+        tagline: "Tägliche Gratis-Filter, Münzen-Tipps & 24/7 VIP Alpha",
         description:
-          "Direkter Zugang zu unserem privaten Discord. Erhalte täglich ausgewählte Filter zu Haupthandelszeiten und Hilfe direkt von den Entwicklern.",
+          "Sofortiger Zugang zu unserem Discord-Trading-Server. Erhalte täglich kostenlose Low-Budget-Filter, Markt-Crash-Warnungen und Münzen-Tricks. Pro-Mitglieder schalten exklusive VIP-Alpha-Kanäle mit High-Margin-Snipes und direktem 1-zu-1 Entwickler-Support frei.",
         highlights: [
-          "Täglich kuratierte High-ROI Filter",
-          "Fehlerbehebung direkt mit dem Dev-Team",
-          "Aktive Community verifizierter Trader",
+          "Tägliche Gratis-Filter & Tricks zum Münzenvermehren",
+          "VIP Alpha Kanal für Pro-Mitglieder mit lukrativen Snipes",
+          "Direkter technischer Support und verifizierte Trader-Lounge",
         ],
       },
     ],
@@ -550,6 +574,12 @@ export const deLocale: LocaleDictionary = {
           elite: "19,99 € Einmalzahlung (365 Tage + Testphase)",
           cloud: "15 € – 35 € / Monat Abo",
           manual: "Kostenlos (Kostet 4+ Stunden täglich)",
+        },
+        {
+          feature: "Discord Trading-Filter & Münzen-Tipps",
+          elite: "Tägliche kostenlose Low-Budget Filter & VIP Alpha",
+          cloud: "Keine (weder Filter noch Signale ohne teuren Aufpreis)",
+          manual: "Keine (rein manuelle Recherche)",
         },
       ],
       competitorLinkText: "Lies unseren ausführlichen Vergleich von 36 Konkurrenten",
@@ -822,16 +852,17 @@ export const deLocale: LocaleDictionary = {
       },
       {
         num: "09",
-        title: "Kostenloser VIP Discord Support",
-        badge: "VIP Community",
-        tagline: "24/7 Community & Alpha Trading Filter",
+        title: "Kostenlose Discord-Filter & VIP Alpha",
+        badge: "Gratis-Filter & VIP Alpha",
+        tagline: "Tägliche Gratis-Filter, Low-Budget Trading-Tipps & Tricks",
         description:
-          "Sofortiger Zugang zu unserem privaten Discord. Erhalte rund um die Uhr Unterstützung bei der Einrichtung, tausche Filter aus und nutze lukrative Zielvorgaben bei Promo-Events.",
+          "Sofortiger kostenloser Zugang zu unserem Discord-Trading-Server. Erhalte täglich kostenlose Low-Budget Trading-Filter, Markt-Tricks und Methoden zur Münzenvermehrung, ohne dein Vereinsbudget zu gefährden. Pro-Mitglieder schalten zudem exklusive VIP-Alpha-Kanäle mit High-Margin-Snipes (50k bis 500k+ Reingewinn pro Karte) und direktem 1-zu-1 Entwickler-Support frei.",
         iconName: "MessageSquare",
         specs: [
-          "24/7 Technische Hilfestellung",
-          "Täglich kuratierte High-ROI Filter",
-          "Netzwerk verifizierter Trader",
+          "Tägliche kostenlose Low-Budget Filter & Münzen-Tricks",
+          "Warnungen bei Markt-Crashes, SBC-Trends & Trading-Signale",
+          "VIP Alpha Kanäle für Pro-Mitglieder mit lukrativen Meta-Drops",
+          "24/7 Technischer Support & verifizierte Trader-Community",
         ],
       },
       {
@@ -930,6 +961,12 @@ export const deLocale: LocaleDictionary = {
           elite: "Deckt FC 26 und FC 27 nahtlos ab",
           cloud: "Zwingt jedes Jahr zum Neukauf von Lizenzen",
         },
+        {
+          feature: "Discord Trading-Filter & Tägliche Münzen-Tipps",
+          elite: "Tägliche kostenlose Low-Budget Filter, Tricks & VIP Alpha",
+          cloud: "Keine (weder Trading-Filter noch Community ohne teure Signal-Abos)",
+          highlight: true,
+        },
       ],
       points: [
         {
@@ -983,9 +1020,9 @@ export const deLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Video-Tutorials",
-          desc: "Lerne alle Optionen mit ausführlichen Schritt-für-Schritt-Videoanleitungen kennen.",
-          iconName: "Tv",
+          title: "Kostenlose Discord-Filter & Tägliche Tipps",
+          desc: "Tägliche kostenlose Sniping-Filter, Low-Budget Trading-Tipps und Live-Alerts auf Discord, um deine Münzen täglich sicher zu vermehren.",
+          iconName: "MessageSquare",
         },
         {
           title: "Einmalzahlung (365 Tage)",

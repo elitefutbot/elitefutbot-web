@@ -30,8 +30,9 @@ export const ptLocale: LocaleDictionary = {
     creatorBadge: {
       originalCreator: "CRIADOR ORIGINAL",
       byDeveloper: "Pelo desenvolvedor líder original do",
-      freeBeta: "BETA GRATUITO",
+      freeBeta: "BETA GRÁTIS",
       slotsFilled: "87/100 Vagas Preenchidas",
+      statusText: "Compatível com as últimas atualizações do EA FC 27",
     },
     hero: {
       titleLine1: "O Bot de Sniping e Autobuyer",
@@ -121,13 +122,13 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           title: "Sniping Protegido",
-          description: "Proteção total de saldo de moedas desenvolvida para manter o clube seguro durante o trade automático.",
+          description: "Proteção total de saldo de moedas desenvolvida para manter os fundos do seu clube totalmente protegidos.",
           iconName: "ShieldCheck",
         },
         {
-          title: "Vídeos Tutoriais",
-          description: "Aprenda a dominar todas as ferramentas com guias em vídeo passo a passo direto ao ponto.",
-          iconName: "GraduationCap",
+          title: "Filtros Grátis no Discord e Dicas",
+          description: "Filtros diários gratuitos de baixo orçamento, truques de mercado e dicas para fazer coins no nosso Discord. Ganhe mais coins todos os dias com setups fáceis e alertas ao vivo.",
+          iconName: "MessageSquare",
         },
         {
           title: "Pagamento Único Anual",
@@ -136,6 +137,8 @@ export const ptLocale: LocaleDictionary = {
         },
       ],
       viewAllFeaturesCta: "Ver Arsenal Completo de 11 Módulos",
+      discordAlphaBadge: "Comunidade Alpha",
+      discordFreeBadge: "Filtros Diários Grátis",
     },
     comparison: {
       title: "Nós vs.",
@@ -152,6 +155,7 @@ export const ptLocale: LocaleDictionary = {
         { feature: "Integração Nativa na Web App", elite: true, typical: false },
         { feature: "Zero Compartilhamento de Senha (100% Local)", elite: true, typical: false },
         { feature: "Tecnologia Comportamental Anti-Ban", elite: true, typical: false },
+        { feature: "Filtros Gratuitos no Discord e Dicas Diárias", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -159,16 +163,27 @@ export const ptLocale: LocaleDictionary = {
       titleHighlight: "Ferramenta",
       subtitle: "Preços transparentes. Sem taxas ocultas nem assinaturas recorrentes.",
       freeCard: {
-        title: "Beta Gratuito",
+        badge: "Acesso Limitado de 7 Dias",
+        title: "Teste Grátis (7 Dias)",
         price: "R$0",
-        period: "/mês",
-        desc: "Ideal para testar as ferramentas e aprender os fundamentos do sniping.",
+        period: "/ 7 dias",
+        desc: "7 dias de acesso gratuito limitado. Ideal para testar as ferramentas e aprender os fundamentos do sniping.",
         features: [
+          "7 Dias de Acesso Gratuito Limitado",
           "Filtros Padrão de Sniping",
           "1 Conta Ativa",
-          "Suporte Comunitário no Discord",
+          {
+            text: "Filtros Grátis no Discord e Dicas",
+            subtext: "Filtros diários grátis de baixo orçamento e truques para fazer coins",
+          },
+          { text: "Sniping Multi-Abas", isNegative: true },
+          {
+            text: "Sem Tecnologia Humanization++",
+            subtext: "(Apenas Pro)",
+            isNegative: true,
+          },
         ],
-        cta: "Iniciar Teste Grátis",
+        cta: "Iniciar Teste Grátis de 7 Dias",
       },
       proCard: {
         badge: "Melhor Escolha",
@@ -181,7 +196,7 @@ export const ptLocale: LocaleDictionary = {
         nextPrice: "$29.99",
         featuresHeader: "O que está incluso",
         features: [
-          { text: "Lógica Avançada de Sniping Sub-20ms" },
+          { text: "Lógica Avanzada de Sniping Sub-20ms" },
           { text: "Filtros Pro de Jogadores Grátis" },
           { text: "Suporte Multi-Contas Ilimitado" },
           { text: "Sniping Multi-Abas Local" },
@@ -189,7 +204,16 @@ export const ptLocale: LocaleDictionary = {
             text: "Tecnologia Anti-Ban Human++",
             subtext: "0 banimentos relatados até hoje — método exclusivo",
           },
-          { text: "Acesso aos Canais VIP no Discord" },
+          {
+            text: "Acesso VIP no Discord (Membros Pro)",
+            badge: "VIP Alpha",
+            isDiscord: true,
+            bullets: [
+              "Filtros meta diários de alta margem (lucro de 50k a 500k+)",
+              "Dicas diárias de baixo orçamento e truques de mercado",
+              "Suporte técnico direto 1-a-1 com desenvolvedores",
+            ],
+          },
           { text: "Potencial de Lucro de 10M+ Coins" },
           { text: "Resolvedor de DME com IA", isSoon: true },
         ],
@@ -484,17 +508,17 @@ export const ptLocale: LocaleDictionary = {
       },
       {
         num: "10",
-        title: "Canal VIP do Discord 24/7",
-        badge: "Comunidade VIP",
+        title: "Filtros Diários no Discord e VIP Alpha",
+        badge: "Filtros Grátis e VIP",
         badgeColor: "bg-primary/15 text-primary border-primary/30",
         iconName: "MessageSquare",
-        tagline: "Filtros Diários de Alto Lucro e Suporte 24/7",
+        tagline: "Filtros Diários Gratuitos, Dicas de Coins e VIP Alpha 24/7",
         description:
-          "Acesso imediato ao servidor privado no Discord. Filtros atualizados nos horários de pico, troca de estratégias e suporte com desenvolvedores.",
+          "Acesso imediato ao nosso servidor de trade no Discord. Receba filtros gratuitos diários de baixo orçamento, alertas de queda de mercado e dicas de trade. Membros Pro desbloqueiam canais VIP Alpha com snipes de alta margem e suporte direto 1-a-1.",
         highlights: [
-          "Filtros de alto ROI selecionados diariamente",
-          "Suporte técnico direto com o time dev",
-          "Comunidade ativa de traders verificados",
+          "Filtros diários grátis e truques para gerar coins",
+          "Canal VIP Alpha para membros Pro com snipes de alto retorno",
+          "Suporte técnico direto e comunidade de traders verificados",
         ],
       },
     ],
@@ -550,6 +574,12 @@ export const ptLocale: LocaleDictionary = {
           elite: "$19.99 Pagamento Único (365 Dias + Teste Grátis)",
           cloud: "$15 – $35 / mês assinatura recorrente",
           manual: "Grátis (Custa 4+ horas diárias)",
+        },
+        {
+          feature: "Filtros do Discord e Dicas de Trade",
+          elite: "Filtros grátis diários de baixo orçamento e VIP Alpha",
+          cloud: "Nenhum (sem filtros ou cobranças extras por sinais)",
+          manual: "Nenhum (análise manual)",
         },
       ],
       competitorLinkText: "Leia nosso comparativo detalhado de 36 concorrentes",
@@ -822,16 +852,17 @@ export const ptLocale: LocaleDictionary = {
       },
       {
         num: "09",
-        title: "Suporte VIP no Discord",
-        tagline: "Comunidade 24/7 e Filtros Exclusivos de Trade",
+        title: "Filtros Gratuitos no Discord e VIP Alpha",
+        tagline: "Filtros Diários Grátis, Dicas de Baixo Orçamento e Truques para Gerar Coins",
         description:
-          "Acesso imediato ao servidor privado no Discord. Tire dúvidas com desenvolvedores, receba filtros com alto retorno e alertas durante eventos de pacotes.",
-        badge: "Comunidade VIP",
+          "Acesso instantâneo gratuito ao nosso servidor de trade no Discord. Receba diariamente filtros gratuitos de baixo orçamento, truques de mercado e setups para acumular moedas todos os dias sem arriscar seu clube. Além disso, Membros Pro desbloqueiam canais VIP Alpha exclusivos com snipes meta de alta margem (50k a 500k+ de lucro) e suporte direto 1-a-1 com desenvolvedores.",
+        badge: "Filtros Grátis e VIP Alpha",
         iconName: "MessageSquare",
         specs: [
-          "Suporte técnico 24/7",
-          "Filtros diários de alto lucro",
-          "Rede de traders verificados",
+          "Filtros diários grátis de baixo orçamento e truques para fazer coins",
+          "Alertas de quedas de mercado, tendências de DME e dicas de trade",
+          "Canais VIP Alpha para membros Pro com snipes meta de alta margem",
+          "Suporte técnico 24/7 e lounge de traders verificados",
         ],
       },
       {
@@ -930,6 +961,12 @@ export const ptLocale: LocaleDictionary = {
           elite: "Funciona tanto no FC 26 quanto no FC 27",
           cloud: "Obriga a comprar novas licenças a cada ano",
         },
+        {
+          feature: "Filtros do Discord e Dicas Diárias de Trade",
+          elite: "Filtros grátis diários de baixo orçamento, truques e VIP Alpha",
+          cloud: "Nenhum (sem comunidade de trade ou cobranças mensais por sinais)",
+          highlight: true,
+        },
       ],
       points: [
         {
@@ -983,9 +1020,9 @@ export const ptLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Vídeos Tutoriais",
-          desc: "Aprenda a dominar todos os recursos com guias práticos em vídeo passo a passo.",
-          iconName: "Tv",
+          title: "Filtros Gratuitos no Discord e Dicas Diárias",
+          desc: "Filtros diários grátis de sniping, truques de trade de baixo orçamento e alertas ao vivo no Discord para multiplicar suas moedas.",
+          iconName: "MessageSquare",
         },
         {
           title: "Pagamento Único Anual",

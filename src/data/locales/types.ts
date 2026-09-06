@@ -78,8 +78,9 @@ export interface LocaleDictionary {
     creatorBadge: {
       originalCreator: string;
       byDeveloper: string;
-      freeBeta: string;
-      slotsFilled: string;
+      freeBeta?: string;
+      slotsFilled?: string;
+      statusText: string;
     };
     hero: {
       titleLine1: string;
@@ -120,6 +121,8 @@ export interface LocaleDictionary {
         badge?: string;
       }>;
       viewAllFeaturesCta: string;
+      discordAlphaBadge?: string;
+      discordFreeBadge?: string;
     };
     comparison: {
       title: string;
@@ -140,11 +143,12 @@ export interface LocaleDictionary {
       titleHighlight: string;
       subtitle: string;
       freeCard: {
+        badge?: string;
         title: string;
         price: string;
         period: string;
         desc: string;
-        features: string[];
+        features: Array<string | { text: string; subtext?: string; isNegative?: boolean }>;
         cta: string;
       };
       proCard: {
@@ -157,7 +161,14 @@ export interface LocaleDictionary {
         soldText: string;
         nextPrice: string;
         featuresHeader: string;
-        features: Array<{ text: string; subtext?: string; isSoon?: boolean }>;
+        features: Array<{
+          text: string;
+          subtext?: string;
+          isSoon?: boolean;
+          isDiscord?: boolean;
+          badge?: string;
+          bullets?: string[];
+        }>;
         cta: string;
       };
     };

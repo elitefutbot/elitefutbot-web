@@ -32,6 +32,7 @@ export const esLocale: LocaleDictionary = {
       byDeveloper: "Por el desarrollador líder original de",
       freeBeta: "BETA GRATIS",
       slotsFilled: "87/100 Plazas Ocupadas",
+      statusText: "Compatible con las últimas actualizaciones de EA FC 27",
     },
     hero: {
       titleLine1: "El Bot de Sniping y Autobuyer",
@@ -125,9 +126,9 @@ export const esLocale: LocaleDictionary = {
           iconName: "ShieldCheck",
         },
         {
-          title: "Video Tutoriales",
-          description: "Domina cada herramienta con guías en video detalladas paso a paso para configurar cada filtro.",
-          iconName: "GraduationCap",
+          title: "Filtros de Discord Gratis y Consejos",
+          description: "Filtros diarios gratuitos de bajo presupuesto, trucos de mercado y consejos para ganar monedas en nuestro Discord. Gana más monedas todos los días con configuraciones sencillas y alertas en vivo.",
+          iconName: "MessageSquare",
         },
         {
           title: "Pago Único Anual",
@@ -136,6 +137,8 @@ export const esLocale: LocaleDictionary = {
         },
       ],
       viewAllFeaturesCta: "Ver Arsenal Completo de 11 Módulos",
+      discordAlphaBadge: "Comunidad Alpha",
+      discordFreeBadge: "Filtros Diarios Gratis",
     },
     comparison: {
       title: "Nosotros vs.",
@@ -152,6 +155,7 @@ export const esLocale: LocaleDictionary = {
         { feature: "Integración Nativa en Web App", elite: true, typical: false },
         { feature: "Cero Compartición de Contraseñas (100% Local)", elite: true, typical: false },
         { feature: "Tecnología de Comportamiento Anti-Baneo", elite: true, typical: false },
+        { feature: "Filtros Gratuitos en Discord y Trucos Diarios", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -159,16 +163,27 @@ export const esLocale: LocaleDictionary = {
       titleHighlight: "Herramienta",
       subtitle: "Precios transparentes. Sin cargos ocultos ni suscripciones recurrentes.",
       freeCard: {
-        title: "Beta Gratuita",
+        badge: "Acceso Limitado de 7 Días",
+        title: "Prueba Gratis (7 Días)",
         price: "$0",
-        period: "/mes",
-        desc: "Perfecto para probar las funciones básicas y aprender a snipar en la Web App.",
+        period: "/ 7 días",
+        desc: "7 días de acceso gratuito limitado. Perfecto para probar las funciones básicas de sniping.",
         features: [
+          "7 Días de Acceso Gratuito Limitado",
           "Filtros Estándar de Sniping",
           "1 Cuenta Activa",
-          "Soporte Comunitario en Discord",
+          {
+            text: "Filtros Gratis de Discord y Consejos",
+            subtext: "Filtros diarios gratis de bajo presupuesto, trucos y consejos para ganar monedas",
+          },
+          { text: "Sniping Multi-Pestaña", isNegative: true },
+          {
+            text: "Sin Tecnología Humanization++",
+            subtext: "(Solo Pro)",
+            isNegative: true,
+          },
         ],
-        cta: "Empezar Prueba Gratis",
+        cta: "Empezar Prueba Gratis de 7 Días",
       },
       proCard: {
         badge: "Mejor Valor",
@@ -189,7 +204,16 @@ export const esLocale: LocaleDictionary = {
             text: "Tecnología Anti-Baneo Human++",
             subtext: "0 baneos reportados a la fecha — método sigiloso exclusivo",
           },
-          { text: "Acceso a Canales VIP de Discord" },
+          {
+            text: "Acceso VIP a Discord (Miembros Pro)",
+            badge: "VIP Alpha",
+            isDiscord: true,
+            bullets: [
+              "Filtros meta diarios de alto margen (flips de 50k a 500k+)",
+              "Consejos diarios de bajo presupuesto y trucos de mercado",
+              "Soporte técnico directo 1-a-1 con desarrolladores",
+            ],
+          },
           { text: "Potencial de Ganancia de 10M+ Monedas" },
           { text: "SBC Solver con IA", isSoon: true },
         ],
@@ -484,17 +508,17 @@ export const esLocale: LocaleDictionary = {
       },
       {
         num: "10",
-        title: "Canal VIP Discord 24/7",
-        badge: "Comunidad VIP",
+        title: "Filtros Diarios en Discord y VIP Alpha",
+        badge: "Filtros Gratis y VIP",
         badgeColor: "bg-primary/15 text-primary border-primary/30",
         iconName: "MessageSquare",
-        tagline: "Filtros Diarios de Alto Rendimiento y Soporte 24/7",
+        tagline: "Filtros Diarios Gratuitos, Consejos de Monedas y VIP Alpha 24/7",
         description:
-          "Acceso inmediato a nuestro servidor de Discord. Recibe filtros de alta rentabilidad durante eventos de sobres, tradea con miembros verificados y obtén asistencia técnica directa.",
+          "Acceso inmediato a nuestro servidor de Discord. Recibe filtros diarios gratuitos de bajo presupuesto, alertas de caídas del mercado y trucos de tradeo. Los Miembros Pro desbloquean canales VIP Alpha con snipes de alta rentabilidad y soporte directo 1-a-1.",
         highlights: [
-          "Filtros de alto ROI seleccionados a diario",
-          "Resolución técnica directa con desarrolladores",
-          "Red activa de traders verificados",
+          "Filtros diarios gratis y trucos para generar monedas",
+          "Canal VIP Alpha para miembros Pro con snipes de alto retorno",
+          "Soporte técnico directo y comunidad activa de traders verificados",
         ],
       },
     ],
@@ -550,6 +574,12 @@ export const esLocale: LocaleDictionary = {
           elite: "$19.99 Pago Único (365 Días + Prueba Gratis)",
           cloud: "$15 – $35 / mes suscripción recurrente",
           manual: "Gratis (Cuesta 4+ horas diarias)",
+        },
+        {
+          feature: "Filtros de Discord y Consejos de Tradeo",
+          elite: "Filtros gratis diarios de bajo presupuesto y VIP Alpha",
+          cloud: "Ninguno (sin filtros o cobros extra por señales)",
+          manual: "Ninguno (búsqueda manual)",
         },
       ],
       competitorLinkText: "Lee nuestra comparativa completa de 36 competidores",
@@ -822,16 +852,17 @@ export const esLocale: LocaleDictionary = {
       },
       {
         num: "09",
-        title: "Soporte VIP Gratuito en Discord",
-        tagline: "Comunidad 24/7 y Filtros de Tradeo Exclusivos",
+        title: "Filtros Gratuitos en Discord y VIP Alpha",
+        tagline: "Filtros Diarios Gratis, Consejos de Bajo Presupuesto y Trucos para Ganar Monedas",
         description:
-          "Incluye acceso instantáneo a nuestro servidor privado de Discord. Asistencia técnica 24/7, filtros personalizados de alta rentabilidad y avisos de cartas objetivo en eventos.",
-        badge: "Comunidad VIP",
+          "Acceso instantáneo gratuito a nuestro servidor de tradeo en Discord. Recibe filtros diarios gratuitos de bajo presupuesto, trucos de mercado y estrategias para acumular monedas todos los días sin arriesgar tu club. Además, los Miembros Pro desbloquean canales VIP Alpha exclusivos con caídas de snipes de alto margen (50k a 500k+ de ganancia) y soporte directo 1-a-1.",
+        badge: "Filtros Gratis y VIP Alpha",
         iconName: "MessageSquare",
         specs: [
-          "Soporte técnico 24/7",
-          "Filtros diarios de alto rendimiento",
-          "Red de traders verificados",
+          "Filtros diarios gratis de bajo presupuesto y trucos para ganar monedas",
+          "Alertas de caídas de mercado, tendencias de SBC y consejos de tradeo",
+          "Canales VIP Alpha para miembros Pro con snipes meta de alto margen",
+          "Asistencia técnica 24/7 y comunidad activa de traders verificados",
         ],
       },
       {
@@ -930,6 +961,12 @@ export const esLocale: LocaleDictionary = {
           elite: "Cubre fluidamente FC 26 y FC 27",
           cloud: "Obliga a comprar licencias nuevas cada año",
         },
+        {
+          feature: "Filtros de Discord y Consejos Diarios de Tradeo",
+          elite: "Filtros gratis diarios de bajo presupuesto, trucos y VIP Alpha",
+          cloud: "Ninguno (sin comunidad de tradeo o cobros mensuales por señales)",
+          highlight: true,
+        },
       ],
       points: [
         {
@@ -949,17 +986,17 @@ export const esLocale: LocaleDictionary = {
         },
         {
           title: "Sigilo y Seguridad",
-          desc: "100% Local: Se ejecuta en tu sesión de navegador sin enviar contraseñas ni cookies a terceros.",
+          desc: "100% Local: se ejecuta directamente en tu sesión. Tus contraseñas de EA y cookies nunca tocan servidores externos.",
           iconName: "ShieldCheck",
         },
         {
           title: "Búsqueda Multi-Filtro",
-          desc: "Ejecuta múltiples consultas de jugadores a la vez para abarcar más sectores rentables.",
+          desc: "Ejecuta múltiples consultas concurrentemente para abarcar sectores más rentables del mercado.",
           iconName: "Filter",
         },
         {
           title: "Snipe por Valoración",
-          desc: "Filtra medias específicas (83+, 84+, 88+) con precisión quirúrgica para SBCs de eventos.",
+          desc: "Filtra medias específicas con precisión quirúrgica — perfecto para tradear medias en eventos promocionales.",
           iconName: "Sliders",
         },
         {
@@ -983,9 +1020,9 @@ export const esLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Video Tutoriales",
-          desc: "Domina cada filtro y configuración con guías en video detalladas paso a paso.",
-          iconName: "Tv",
+          title: "Filtros Gratuitos en Discord y Consejos Diarios",
+          desc: "Filtros diarios gratis de sniping, trucos de tradeo de bajo presupuesto y alertas en vivo compartidas en Discord para multiplicar tus monedas.",
+          iconName: "MessageSquare",
         },
         {
           title: "Pago Único Anual",
