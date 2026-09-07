@@ -82,10 +82,10 @@ Yes. Every 365-day license covers full access across EA FC 26 and upcoming FC 27
 Detailed side-by-side analysis pages comparing Elite FUT SNIPER against all 36 major FUT trading tools, bots, and services:
 - [Baker's Bot vs Elite FUT SNIPER](https://elitefutbot.com/bakers-bot-vs-elitefutbot) – Built by Baker's Bot's original lead architect (2020–2025); sub-20ms speed, 0 bans, clean Chrome Side Panel HUD & AI SBC solver vs legacy floating buttons & ban complaints
 - [FUT Simple Trader vs Elite FUT SNIPER](https://elitefutbot.com/futsimpletrader-vs-elitefutbot) – Outdated FC 25 DOM script with ban-prone Web App price checking & €14.90/mo paywalled filters vs sub-20ms native Side Panel HUD & AI SBC solver with 0 bans
-- [FutEarn vs Elite FUT SNIPER](https://elitefutbot.com/futearn-vs-elitefutbot) – Cloud credential-sharing bot vs local zero-password extension
-- [FUT Sniper vs Elite FUT SNIPER](https://elitefutbot.com/futsniper-vs-elitefutbot) – Legacy cloud sniper vs 20ms local extension
-- [FUT Sniping Bot vs Elite FUT SNIPER](https://elitefutbot.com/futsnipingbot-vs-elitefutbot) – Browser extension with seasonal licenses vs Elite's flat fee
-- [Futinator vs Elite FUT SNIPER](https://elitefutbot.com/futinator-vs-elitefutbot) – Legacy browser sniper vs Next-Gen 20ms Side Panel UI with AI SBC solver
+- [FutEarn vs Elite FUT SNIPER](https://elitefutbot.com/futearn-vs-elitefutbot) – Cloud credential-sharing bot taking 50% profit cuts, datacenter IP bans & 150ms–350ms proxy lag vs 100% local, sub-20ms Side Panel HUD with 0 bans
+- [FUT Sniper vs Elite FUT SNIPER](https://elitefutbot.com/futsniper-vs-elitefutbot) – Russian DOM macro clicker distributed as unsigned .zip on dead domain with hardcoded ban handlers vs sub-20ms WebSocket Side Panel HUD with 0 bans
+- [FUT Sniping Bot vs Elite FUT SNIPER](https://elitefutbot.com/futsnipingbot-vs-elitefutbot) – Risky automated U7Buy coin selling integration, admitted Web/Companion App bans & £19.99 annual re-buys vs sub-20ms WebSocket speed & 0-ban Humanization++
+- [Futinator vs Elite FUT SNIPER](https://elitefutbot.com/futinator-vs-elitefutbot) – 54 € annual title re-tax, retro grey modal clutter, FAQ-admitted soft-bans & zero AI SBC solver vs sub-20ms WebSocket speed, Chrome Side Panel HUD & 0 bans
 - [FutBotManager vs Elite FUT SNIPER](https://elitefutbot.com/futbotmanager-vs-elitefutbot) – Windows desktop app client vs native Chrome Side Panel extension
 - [FUTMania vs Elite FUT SNIPER](https://elitefutbot.com/futmania-vs-elitefutbot) – Cloud bot taking coin commissions vs flat-fee local execution
 - [Futcoinbuddy vs Elite FUT SNIPER](https://elitefutbot.com/futcoinbuddy-vs-elitefutbot) – Cloud server-side execution vs local sub-20ms Chrome extension speed
