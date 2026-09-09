@@ -110,6 +110,16 @@ const nextConfig: NextConfig = {
         destination: "/fc27-fut-sniping-bot-autobuyer-features",
         permanent: true,
       },
+      {
+        source: "/fc26enhancer-vs-elitefutbot",
+        destination: "/fcenhancer-vs-elitefutbot",
+        permanent: true,
+      },
+      {
+        source: "/futsnipe-vs-elitefutbot",
+        destination: "/eafcsniper-vs-elitefutbot",
+        permanent: true,
+      },
     ];
   },
 };
