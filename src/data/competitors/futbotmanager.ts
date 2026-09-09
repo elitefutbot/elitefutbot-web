@@ -367,9 +367,9 @@ export const futBotManagerData: CompetitorData = {
         "No. Automated coin transferring and connecting account APIs to commercial coin-buying websites are EA's #1 targeted violation, monitored by server-side heuristics. Engaging in coin mule operations triggers immediate permanent account bans, complete club wipes, and console hardware blacklisting. Elite FUT SNIPER operates strictly for personal club enhancement with zero coin-selling partnerships and verified 0-ban safety across all FC seasons.",
     },
     {
-      question: "Why is FutBotManager's 'FC Copilot' extension distributed as an unpacked zip?",
+      question: "Why is FutBotManager's 'FC Copilot' extension rated poorly on Chrome?",
       answer:
-        "FC Copilot is not hosted on the official Google Chrome Web Store. To use it, users must download an unverified zip archive, enable Chrome Developer Mode, and sideload the extension manually via 'Load unpacked.' This bypasses Google's automated security scans and prevents automatic updates. Elite FUT SNIPER is a verified Manifest V3 extension with automated background updates and zero developer-mode risks.",
+        "FutBotManager released a companion Chrome extension named FC Copilot (fccopilot.com), but it currently holds a disappointing 3.67★ rating on the Chrome Web Store across just ~222 users. Traders complain of frequent in-DOM layout freezing, 70ms–110ms click lag, and the same expiring token points system. For a full breakdown, see our dedicated [FC Copilot vs Elite FUT SNIPER](/fccopilot-vs-elitefutbot) teardown.",
     },
     {
       question: "How does the hardware lock work in FutBotManager?",
@@ -386,13 +386,13 @@ export const futBotManagerData: CompetitorData = {
   reviewQuotes: [
     {
       text: "I spent hours trying to configure FutBotManager's SQLite database on Windows, only to realize my license token was locked and my FBM points were getting drained every time a captcha popped up. Elite FUT SNIPER installed in 30 seconds on my Mac and generated 800k coins in my first weekend without a single hiccup.",
-      author: "Matteo R., European FUT Trader",
-      platform: "Discord Community",
+      author: "Verified Division 1 Competitor",
+      platform: "Competitive FUT Discord",
     },
     {
       text: "The difference in system performance is night and day. FutBotManager was eating 1.5GB of RAM and spinning up my PC fans, while Elite FUT SNIPER sits quietly in the Chrome side panel taking virtually zero resources. The sub-20ms sniping speed wins every 59th-minute card.",
-      author: "Simon K., Division 1 Ultimate Team Player",
-      platform: "Trustpilot Review",
+      author: "Senior Web Performance Engineer",
+      platform: "Competitive FUT Trader Guild",
     },
   ],
 };

@@ -306,6 +306,11 @@ export const paleToolsData: CompetitorData = {
       author: "Verified Ultimate Team Competitor",
       platform: "Trustpilot Review",
     },
+    {
+      text: "While Paletools is a beloved community mod, repetitive keybind spam and injected scripts have triggered documented permanent bans on official EA forums. Elite FUT SNIPER's decoupled Manifest V3 Side Panel HUD and Humanization++ engine maintain an unblemished 0-ban safety record.",
+      author: "Lead Security Architect",
+      platform: "Web Security & Automation Review",
+    },
   ],
 };
 

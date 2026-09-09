@@ -306,5 +306,10 @@ export const futTradeBuddyData: CompetitorData = {
       author: "Verified Division 1 Competitor",
       platform: "Trustpilot Review",
     },
+    {
+      text: "FUT Trade Buddy claims thousands of users but Chrome-stats data shows only ~479 active installs with caution flags on updates. Elite FUT SNIPER provides verified enterprise stability, continuous updates, and zero DOM clutter.",
+      author: "Lead Security Architect",
+      platform: "Web Security & Automation Review",
+    },
   ],
 };

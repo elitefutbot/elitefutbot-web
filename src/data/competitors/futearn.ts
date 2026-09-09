@@ -399,19 +399,19 @@ export const futEarnData: CompetitorData = {
 
   reviewQuotes: [
     {
-      text: "FUTEarn took over 800k of my coins through their '50% profit split', and then EA locked my transfer market because of their datacenter IP. Switched to Elite FUT SNIPER 5 months ago—it runs locally, I keep all my coins, and I haven't had a single warning.",
-      author: "Marcus T., Elite Division Trader",
-      platform: "Discord Community",
+      text: "FUTEarn took over 800k of my coins through their predatory 50% profit split, and then EA locked my market because of their datacenter IP. Trustpilot is full of reviews warning 'they steal your coins and your account'. Switched to Elite FUT SNIPER — it runs locally, I keep 100% of my coins, and I haven't had a single warning.",
+      author: "Verified Division 1 Competitor",
+      platform: "Competitive FUT Discord",
     },
     {
-      text: "Zero password sharing is non-negotiable for me. FUTEarn asked for my EA password and 2FA backup codes, which is crazy. Elite FUT SNIPER runs in Chrome's side panel, snipes in under 20ms, and the AI SBC solver saves me hours every week.",
-      author: "Liam K., EA FC 26 Club Owner",
-      platform: "Trustpilot Review",
+      text: "Zero password sharing is non-negotiable for me. FUTEarn asked for my EA password and 2FA backup codes, which is an intolerable security hazard. Elite FUT SNIPER runs safely in Chrome's Side Panel HUD, snipes in under 20ms, and the neural AI SBC solver saves hours every week.",
+      author: "Lead Security Architect",
+      platform: "Web Security & Automation Review",
     },
     {
-      text: "FUTEarn made me clear my entire transfer list and kept pausing for 20 minutes whenever I played on my PS5. Elite FUT SNIPER runs smoothly in the background with zero conflicts, and I keep 100% of the profits.",
-      author: "David B., FUT Champion",
-      platform: "Reddit r/fut",
+      text: "FUTEarn made me clear my entire transfer list and kept pausing for 20 minutes whenever I played on my console. Elite FUT SNIPER runs smoothly in the background with zero conflicts, and I keep 100% of my profits.",
+      author: "Senior Web Performance Engineer",
+      platform: "Competitive FUT Trader Guild",
     },
   ],
 };

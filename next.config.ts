@@ -120,6 +120,16 @@ const nextConfig: NextConfig = {
         destination: "/eafcsniper-vs-elitefutbot",
         permanent: true,
       },
+      {
+        source: "/futinatorplus-vs-elitefutbot",
+        destination: "/futinator-vs-elitefutbot",
+        permanent: true,
+      },
+      {
+        source: "/paledroid-vs-elitefutbot",
+        destination: "/paletools-vs-elitefutbot",
+        permanent: true,
+      },
     ];
   },
 };

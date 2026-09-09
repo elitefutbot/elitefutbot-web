@@ -471,6 +471,12 @@ export async function GET() {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/fccopilot-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
