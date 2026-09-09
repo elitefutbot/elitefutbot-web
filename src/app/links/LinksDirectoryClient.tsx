@@ -117,12 +117,12 @@ const ALL_LINKS: DirectoryLink[] = [
   // 3. Tools & Resources
   {
     href: "/tools/comparison-guide",
-    label: "Competitor Comparison Hub",
-    category: "Tools & Resources",
-    desc: "Side-by-side technical comparison matrix matching Elite FUT SNIPER against all 49 competitor bots.",
-    tag: "Matrix",
-    badge: "49 Comparisons",
-    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
+    label: "Full Competitor Comparison Guide",
+    category: "Tools & Utilities",
+    desc: "Side-by-side technical comparison matrix matching Elite FUT SNIPER against all 50 competitor bots.",
+    tag: "Tool",
+    badge: "50 Comparisons",
+    badgeColor: "bg-blue-500/15 text-blue-300 border-blue-500/30",
   },
   {
     href: "/tools/sniping-guide",
@@ -698,6 +698,15 @@ const ALL_LINKS: DirectoryLink[] = [
     tag: "Comparison",
     badge: "3.67★ Store Rating",
     badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
+  },
+  {
+    href: "/goatbot-vs-elitefutbot",
+    label: "GOATBot vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "Manual developer-mode ZIP sideloading, unreleased roadmap-only SBC solver, and Gumroad billing vs production 20ms Side Panel HUD.",
+    tag: "Comparison",
+    badge: "Unpacked ZIP Sideload",
+    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
   },
 
   // 8. International Localization (Tier 1)

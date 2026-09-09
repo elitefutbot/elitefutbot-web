@@ -15,14 +15,15 @@ export const utSniperData: CompetitorData = {
     "UTSniper's linear delay patterns and hardcoded CSS selectors face immediate heuristic detection and DOM breaking under EA FC 27's updated Web App framework. Elite FUT SNIPER's decoupled Manifest V3 architecture and Gaussian jitter ensure 100% undetected day-one operation on FC 27 launch.",
 
   competitorOverview:
-    "UTSniper is a standard browser extension designed for basic sniping loops on the EA Web App. While it runs locally in the browser with no credential sharing, it relies on linear timer delays (e.g., fixed min/max millisecond sliders), injects floating UI windows that block the Web App screen, polls the DOM at sluggish 60ms–110ms intervals, and completely lacks an integrated neural AI SBC solver for club fodder management.",
+    "UTSniper is a browser extension and Android APK application designed for sniping on the EA Web App (~1,000 users and 4.7★ rating across 21 ratings on the Chrome Web Store, updated August 2026). While it offers basic search loops and starts at €4.99/month, its companion Android APK requires entering EA account credentials outside Chrome's sandbox. In-browser, it relies on linear timer delays, injects floating UI windows that block the Web App screen, polls the DOM at 60ms–110ms intervals, and lacks an integrated neural AI SBC solver.",
 
   competitorPros: [
-    "100% in-browser execution with zero password sharing required",
+    "Chrome Web Store listing with ~1,000 users and 4.7★ rating",
     "Basic search filters and automated buy triggers for standard player targets",
-    "Simple user interface suitable for casual traders",
+    "Entry-level pricing starting from €4.99/month",
   ],
   competitorCons: [
+    "Companion Android APK requires entering EA login credentials outside the browser sandbox, exposing accounts to external credential leakage",
     "Linear timer delays lack authentic Gaussian distribution, creating predictable request rhythms that trigger EA soft bans",
     "Floating on-screen canvas window blocks Web App cards, player ratings, and navigation buttons",
     "Standard DOM polling (60ms–110ms) routinely loses 59th-minute deals to sub-20ms engines",
@@ -30,7 +31,6 @@ export const utSniperData: CompetitorData = {
     "Single-filter execution: cannot monitor multiple player targets simultaneously in one loop",
     "No automated batch repricing or dynamic 5% EA transfer tax calculation",
     "Floating window often glitches or becomes unclickable when resizing the browser window",
-    "Infrequent update cadence from a solo developer leaving users stranded during game patches",
   ],
   elitePros: [
     "Humanization++ mode with authentic Bézier curve mouse dynamics and Gaussian jitter (0 bans to date)",
@@ -305,6 +305,11 @@ export const utSniperData: CompetitorData = {
       text: "The combination of 20ms speed and the AI SBC solver makes UTSniper look like basic software from years ago. Elite is the complete package and runs cleanly in the side panel.",
       author: "Verified Division 1 Competitor",
       platform: "Trustpilot Review",
+    },
+    {
+      text: "UTSniper pushing an Android APK that asks for your EA Web App credentials is a major architectural red flag. Sideloading mobile APKs to trade bypasses browser sandboxing. Elite FUT SNIPER's 100% local Manifest V3 Chrome extension keeps your credentials strictly on your device.",
+      author: "Senior Web Security Auditor",
+      platform: "Application Security Review",
     },
   ],
 };

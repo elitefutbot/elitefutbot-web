@@ -74,7 +74,7 @@ export default function ComparisonHubClient() {
         <div className="flex flex-wrap items-center justify-center gap-3">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-sm shadow-[0_0_20px_rgba(204,255,0,0.08)]">
             <Scale className="w-3.5 h-3.5 shrink-0" />
-            Official Comparison Hub — All 49 Major Platforms
+            Official Comparison Hub — All 50 Major Platforms
           </div>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest font-mono shadow-[0_0_20px_rgba(16,185,129,0.15)]">
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
@@ -85,7 +85,7 @@ export default function ComparisonHubClient() {
           Elite FUT SNIPER vs <span className="text-primary">Every Competitor</span>
         </h1>
         <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-3xl mx-auto font-normal">
-          Honest, side-by-side technical benchmarks and architectural comparisons evaluating Elite FUT SNIPER against all 49 major sniping bots, cloud autobuyers, desktop programs, and trading utilities on the market.
+          Honest, side-by-side technical benchmarks and architectural comparisons evaluating Elite FUT SNIPER against all 50 major sniping bots, cloud autobuyers, desktop programs, and trading utilities on the market.
         </p>
       </header>
 

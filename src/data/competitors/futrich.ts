@@ -15,14 +15,15 @@ export const futRichData: CompetitorData = {
     "While FUTRich restricts its top license strictly to 'All FC26 duration' requiring a €39.99 re-purchase for FC 27, Elite FUT SNIPER's flat $19.99 license includes unrestricted day-one compatibility for both EA FC 26 and FC 27 with automated updates.",
 
   competitorOverview:
-    "FUTRich (futrich.com) is a browser-based sniping extension and companion tool that automates search and buy cycles on the EA Web App. While it advertises features such as automatic bidding, unlimited unassigned handling, and an SBC importer, its software is encumbered by restrictive commercial models: its lifetime tier (€39.99) is title-locked exclusively to FC 26, forcing a repurchase for FC 27. Additionally, its website explicitly warns that premium accounts cannot be used on multiple devices simultaneously, its SBC solver is merely an external Futbin template copier, and its linear timer delays expose active accounts to EA's server-side heuristic bot detection.",
+    "FUTRich (futrich.com, developed under Italian VAT registration by Pittarello Fabio) is a Chrome extension (~3,000 users, 5.0★ across 372 ratings) that automates search and buy cycles on the EA Web App. While it advertises features such as automatic bidding and unassigned handling, it suffers from significant structural concerns: its highest tier (€39.99) is title-locked exclusively to FC 26 with zero carry-over to FC 27, and its parent business concurrently operates a coin-selling 'comfort trade' service requesting customer Web App emails, passwords, and backup codes—introducing major security and trust concerns.",
 
   competitorPros: [
-    "100% local browser-based execution with zero EA account credential sharing",
+    "Chrome Web Store presence with 5.0★ rating across 372 verified reviews",
     "Offers a 5-day trial period for initial testing of basic market search loops",
     "Basic shortcuts and filter preset saving in local browser storage",
   ],
   competitorCons: [
+    "Parent company operates a coin-selling service asking users for Web App emails, passwords, and backup codes for 'comfort trade' delivery",
     "Title-locked €39.99 tier: valid only for 'All FC26 duration', forcing another €39.99 repurchase for FC 27",
     "Strict single-device restriction: explicitly prohibits using the same account across multiple personal machines",
     "Linear timer delays (70ms–130ms) generate square-wave statistical patterns easily detected by EA anti-cheat",
