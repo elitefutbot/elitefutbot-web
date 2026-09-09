@@ -119,9 +119,9 @@ const ALL_LINKS: DirectoryLink[] = [
     href: "/tools/comparison-guide",
     label: "Competitor Comparison Hub",
     category: "Tools & Resources",
-    desc: "Side-by-side technical comparison matrix matching Elite FUT SNIPER against all 48 competitor bots.",
+    desc: "Side-by-side technical comparison matrix matching Elite FUT SNIPER against all 49 competitor bots.",
     tag: "Matrix",
-    badge: "48 Comparisons",
+    badge: "49 Comparisons",
     badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
   },
   {
@@ -689,6 +689,15 @@ const ALL_LINKS: DirectoryLink[] = [
     tag: "Comparison",
     badge: "EAAC Ban Risk",
     badgeColor: "bg-rose-500/15 text-rose-300 border-rose-500/30",
+  },
+  {
+    href: "/fccopilot-vs-elitefutbot",
+    label: "FC Copilot vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "Disappointing 3.67★ store rating, expiring FCP token points, and 70ms–110ms click lag vs isolated 20ms Side Panel HUD.",
+    tag: "Comparison",
+    badge: "3.67★ Store Rating",
+    badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
   },
 
   // 8. International Localization (Tier 1)

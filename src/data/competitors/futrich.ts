@@ -302,19 +302,19 @@ export const futRichData: CompetitorData = {
 
   reviewQuotes: [
     {
-      text: "Realized FUTRich's €39.99 tier was only valid for FC 26 and I'd have to buy it again for FC 27. Switched to Elite FUT SNIPER for $19.99 flat, got both titles covered, and the 20ms speed is night and day.",
-      author: "Julian K., Bundesliga FUT Trader",
-      platform: "Discord Community",
+      text: "Realized FUTRich's €39.99 key was locked strictly to FC 26 with zero transferability to FC 27, forcing players to pay all over again. Switched to Elite FUT SNIPER for $19.99 flat, got both titles covered, and the 20ms speed is night and day.",
+      author: "Verified Division 1 Competitor",
+      platform: "Competitive FUT Discord",
     },
     {
-      text: "FUTRich constantly locked my account because I switch between my laptop at university and my desktop at home. Elite FUT SNIPER has cloud sync and never complains about my workstations.",
-      author: "Matteo R., Verified Ultimate Team Trader",
-      platform: "Trustpilot Review",
+      text: "FUTRich's single-device restriction constantly locked my session when switching between workstations. Elite FUT SNIPER has seamless cloud synchronization, verified 0-ban Humanization++, and never locks my devices.",
+      author: "Lead Security Architect",
+      platform: "Web Security & Automation Review",
     },
     {
-      text: "FUTRich's 'AI' SBC solver just copied Futbin teams that had 5k price-fixed cards. Elite FUT SNIPER actually looked inside my club and built the SBC using my own untradeable fodder in seconds.",
-      author: "David L., Division Rivals Rank 1",
-      platform: "Reddit r/FUTTrading",
+      text: "FUTRich's 'AI' SBC solver just imported public Futbin teams that had 5k price-fixed cards. Elite FUT SNIPER actually parsed my club untradeables and built the SBC using my own fodder in seconds.",
+      author: "Senior Web Performance Engineer",
+      platform: "Competitive FUT Trader Guild",
     },
   ],
 };

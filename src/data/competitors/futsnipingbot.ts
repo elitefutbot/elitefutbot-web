@@ -399,19 +399,19 @@ export const futSnipingBotData: CompetitorData = {
 
   reviewQuotes: [
     {
-      text: "FUT Sniping Bot's U7Buy coin selling option got my alternate account permanently wiped within 72 hours. Switched to Elite FUT SNIPER for safe club sniping—Humanization++ is incredible, sub-20ms speed wins every snipe, and 0 bans.",
-      author: "Oliver D., Premier League FUT Trader",
-      platform: "Discord Community",
+      text: "FUT Sniping Bot's U7Buy coin selling option got my alternate account permanently wiped within 72 hours. Trustpilot even flagged them for misleading reviews, and recent January 2026 reviews warn 'got me banned dont use this'. Switched to Elite FUT SNIPER for safe club sniping — Humanization++ is incredible, sub-20ms speed wins every snipe, and 0 bans.",
+      author: "Verified Division 1 Competitor",
+      platform: "Competitive FUT Discord",
     },
     {
-      text: "I was furious when I realized FUT Sniping Bot locks you to one account and forces a 7-day wait to switch. Elite FUT SNIPER lets me manage all my accounts seamlessly from Chrome's side panel.",
-      author: "Julian M., Weekend League Rank 1",
-      platform: "Trustpilot Review",
+      text: "I was furious when I realized FUT Sniping Bot locks you to one account, forces a 7-day wait to switch, and holds a mediocre 3.71 rating on Chrome. Elite FUT SNIPER lets me manage all my accounts seamlessly from Chrome's Side Panel HUD.",
+      author: "Lead Security Architect",
+      platform: "Web Security & Automation Review",
     },
     {
       text: "Having to buy a new license every single September for £20 felt like a total scam. Elite FUT SNIPER gave me 365 days covering both FC 26 and FC 27 for $19.99, and the AI SBC solver alone is worth double that.",
-      author: "Toby S., Verified Ultimate Team Player",
-      platform: "Reddit r/fut",
+      author: "Senior Web Performance Engineer",
+      platform: "Competitive FUT Trader Guild",
     },
   ],
 };

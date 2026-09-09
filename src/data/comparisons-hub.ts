@@ -588,4 +588,16 @@ export const COMPARISONS: ComparisonItem[] = [
     eliteAdvantage: "14 of 14 categories",
     highlightMetric: "$19.99 vs $348/Year",
   },
+  {
+    slug: "fccopilot-vs-elitefutbot",
+    name: "FC Copilot",
+    category: "extension",
+    categoryLabel: "Extension",
+    type: "Chrome Extension",
+    badge: "3.67★ Store Rating",
+    badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
+    summary: "Disappointing 3.67★ store rating, expiring FCP token points, and 70ms–110ms click lag vs isolated 20ms Side Panel HUD with neural AI SBC solver.",
+    eliteAdvantage: "14 of 14 categories",
+    highlightMetric: "Sub-20ms WebSocket",
+  },
 ];

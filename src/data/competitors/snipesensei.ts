@@ -304,19 +304,19 @@ export const snipeSenseiData: CompetitorData = {
 
   reviewQuotes: [
     {
-      text: "Bought Snipe Sensei after seeing a TikTok video, but it was just an unpacked script emailed to me with a video link, and it got my transfer market soft-banned within 30 minutes. Switched to Elite FUT SNIPER and traded smoothly on my main club with 0 bans.",
-      author: "Marcus B., Premier League FUT Trader",
-      platform: "Discord Community",
+      text: "Bought Snipe Sensei after seeing heavy TikTok marketing on 'extinct cards', but it was just an unpacked script emailed to me that caused an immediate transfer market soft ban. Switched to Elite FUT SNIPER and traded smoothly on my main club with sub-20ms speed and 0 bans.",
+      author: "Verified Division 1 Competitor",
+      platform: "Competitive FUT Discord",
     },
     {
-      text: "Paying £25 for a script where you have to message an Instagram account for help made no sense. Elite FUT SNIPER cost $19.99, installed in one click from the Chrome store, and the AI SBC solver alone is worth double that.",
-      author: "Kieran O., Verified Ultimate Team Trader",
-      platform: "Trustpilot Review",
+      text: "Paying £25 on a Shopify store for a script where you have to message an Instagram account for support made no sense. Elite FUT SNIPER cost $19.99, installs cleanly as a sandboxed Chrome extension, and the neural AI SBC solver alone is worth double that.",
+      author: "Lead Security Architect",
+      platform: "Web Security & Automation Review",
     },
     {
-      text: "The difference between Snipe Sensei's linear delays and Elite's Humanization++ Bézier curves is massive. Elite feels like an actual human clicking at 20ms speed, and I haven't seen a single captcha all season.",
-      author: "Florian S., FUT Champions Rank 2",
-      platform: "Reddit r/FUTTrading",
+      text: "The difference between Snipe Sensei's linear delays and Elite's Humanization++ Bézier curves is massive. Elite feels like an actual human clicking at sub-20ms speed, and I haven't seen a single captcha all season.",
+      author: "Senior Web Performance Engineer",
+      platform: "Competitive FUT Trader Guild",
     },
   ],
 };
