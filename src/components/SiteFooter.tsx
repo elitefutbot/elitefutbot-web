@@ -195,6 +195,11 @@ export default function SiteFooter() {
               { slug: "utsniper-vs-elitefutbot", name: "UTSniper" },
               { slug: "sniperbotitalia-vs-elitefutbot", name: "SniperBot Italia" },
               { slug: "eafcsniper-vs-elitefutbot", name: "EAFC Sniper" },
+              { slug: "fcenhancer-vs-elitefutbot", name: "FC Enhancer" },
+              { slug: "futtradebuddy-vs-elitefutbot", name: "FUT Trade Buddy" },
+              { slug: "futfun-vs-elitefutbot", name: "FutFun" },
+              { slug: "futcoinharvester-vs-elitefutbot", name: "FUT Coin Harvester" },
+              { slug: "futautobuyer-vs-elitefutbot", name: "FUT Auto Buyer" },
             ].map((item) => (
               <Link
                 key={item.slug}
