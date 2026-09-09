@@ -15,12 +15,12 @@ export const futIslandData: CompetitorData = {
     "FUT ISLAND's in-DOM script injection relies on fixed HTML container hierarchies that break when EA deploys structural patches to the FC 27 Web App. Elite FUT SNIPER connects directly to underlying WebSocket protocol endpoints, guaranteeing 100% stable day-one FC 27 launch execution.",
 
   competitorOverview:
-    "FUT ISLAND is a trading extension developed by Polish software entity L&P International Sp. z o.o. and marketed on futisland.com and the Chrome Web Store. It claims to automate card sniping, bidding, and price monitoring for the EA Sports FC Ultimate Team Web App. While it has attracted niche visibility on Trustpilot, its underlying technology depends on in-DOM JavaScript injection, mechanical search timing, and unverified anti-captcha workarounds that create elevated ban risks and high latency.",
+    "FUT ISLAND is a trading extension developed by Polish software entity L&P International Sp. z o.o. and marketed on futisland.com and the Chrome Web Store (v1.0.4 updated September 7, 2026, holding ~46 active users and 49 ratings with a 5.0★ score, advertising a trial through September 20, 2026). While it positions itself as an FC 27-ready newcomer with autobuying, autobidding, and auto-relisting, its underlying technology depends on in-DOM JavaScript injection, mechanical search timing, and unverified anti-captcha workarounds that create elevated ban risks and high latency.",
 
   competitorPros: [
-    "Listed on the Chrome Web Store with simple browser installation",
-    "Provides basic automated bidding and custom price monitoring filters",
-    "Includes basic desktop notification alerts for completed transfer actions",
+    "Listed on the Chrome Web Store (v1.0.4) with 5.0★ rating across 49 initial reviews",
+    "Provides basic automated bidding, relisting, and custom price monitoring filters",
+    "Advertises free trial access leading into the FC 27 launch window",
   ],
   competitorCons: [
     "Injects floating buttons directly into the Web App DOM, causing visual clashing and layout breakage",

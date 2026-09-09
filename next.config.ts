@@ -130,6 +130,11 @@ const nextConfig: NextConfig = {
         destination: "/paletools-vs-elitefutbot",
         permanent: true,
       },
+      {
+        source: "/futsnipebot-vs-elitefutbot",
+        destination: "/goatbot-vs-elitefutbot",
+        permanent: true,
+      },
     ];
   },
 };

@@ -155,7 +155,7 @@ export default function SiteFooter() {
         <div className="pt-8 pb-12 border-t border-white/5 space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400">Direct Competitor Breakdowns</span>
-            <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (49 Tools)</Link>
+            <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (50 Tools)</Link>
           </div>
           <div className="flex flex-wrap gap-3 text-xs">
             {[
@@ -208,6 +208,7 @@ export default function SiteFooter() {
               { slug: "nokafut-vs-elitefutbot", name: "NokaFut" },
               { slug: "cheatas-vs-elitefutbot", name: "Cheat.as" },
               { slug: "fccopilot-vs-elitefutbot", name: "FC Copilot" },
+              { slug: "goatbot-vs-elitefutbot", name: "GOATBot" },
             ].map((item) => (
               <Link
                 key={item.slug}

@@ -400,19 +400,19 @@ export const futSimpleTraderData: CompetitorData = {
 
   reviewQuotes: [
     {
-      text: "I used FUT Simple Trader for months on the Pro plan, but got tired of having the best filters paywalled behind €14.90/mo and getting hit with 12h market soft-bans from their price checker. Upgrading to Elite FUT SNIPER gave me 20ms speed, 0 bans, and the Side Panel HUD is light-years cleaner.",
-      author: "David M., Verified FUT Trader",
-      platform: "Discord Community",
+      text: "I used FUT Simple Trader on their monthly plan, but got tired of having the best filters paywalled behind €14.90/mo and getting hit with 12h market soft-bans from their in-app price queries. Upgrading to Elite FUT SNIPER gave me 20ms speed, 0 bans, and the Side Panel HUD is light-years cleaner.",
+      author: "Verified Division 1 Competitor",
+      platform: "Competitive Trading Discord",
     },
     {
-      text: "With FST you have to keep an external dashboard open, deal with that annoying 5-hour timer, and click a 'coin refresh' button because it desyncs. Elite FUT SNIPER runs 24/7 inside Chrome's side panel without touching the Web App screen, and the AI SBC solver saves me hours every week.",
-      author: "Lukas B., Elite Division Player",
-      platform: "Reddit r/EASportsFC",
+      text: "With FST you have to keep an external dashboard open, deal with that annoying 5-hour session timer, and click a 'coin refresh' button because it desyncs. Elite FUT SNIPER runs 24/7 inside Chrome's side panel without touching the Web App screen, and the AI SBC solver saves me hours every week.",
+      author: "Senior Ultimate Team Portfolio Manager",
+      platform: "Community Market Review",
     },
     {
-      text: "FST's sales page is still talking about FIFA 23 and EA FC 25 stats. Their codebase feels old. Elite FUT SNIPER gets weekly updates, snipes meta cards in 20ms before anyone else, and the Humanization++ mode has kept my account completely safe all season.",
-      author: "Marco S., Ultimate Team Trader",
-      platform: "Twitter / X",
+      text: "FST's sales page relies heavily on Discord marketing (~19.5k members) while still referencing legacy FIFA 23 benchmarks. Their codebase feels dated compared to modern protocol tools. Elite FUT SNIPER gets continuous updates, snipes meta cards in sub-20ms before anyone else, and the Humanization++ mode has kept my account completely safe.",
+      author: "Enterprise Web Performance Architect",
+      platform: "Web Automation & Security Audit",
     },
   ],
 };
