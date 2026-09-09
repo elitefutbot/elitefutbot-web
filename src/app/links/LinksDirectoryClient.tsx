@@ -257,7 +257,7 @@ const ALL_LINKS: DirectoryLink[] = [
     badgeColor: "bg-gray-500/15 text-gray-300 border-gray-500/30",
   },
 
-  // 7. Competitor Comparison Pages (41 Pages)
+  // 7. Competitor Comparison Pages (44 Pages)
   {
     href: "/bakers-bot-vs-elitefutbot",
     label: "Baker's Bot vs Elite FUT SNIPER",
@@ -625,6 +625,33 @@ const ALL_LINKS: DirectoryLink[] = [
     desc: "FUT Auto Buyer generic macro scripts and brittle selectors vs enterprise-grade Manifest V3 bot.",
     tag: "Comparison",
     badge: "Macro Scripts",
+    badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
+  },
+  {
+    href: "/lenabot-vs-elitefutbot",
+    label: "Lena Bot vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "Lena Bot PS Remote Play video lag and coin muling API risks vs 100% safe sub-20ms Chrome HUD.",
+    tag: "Comparison",
+    badge: "Muling Risk",
+    badgeColor: "bg-rose-500/15 text-rose-300 border-rose-500/30",
+  },
+  {
+    href: "/magicbuyer-vs-elitefutbot",
+    label: "MagicBuyer vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "MagicBuyer Tampermonkey thread locking and soft bans vs native sub-20ms WebSocket bot.",
+    tag: "Comparison",
+    badge: "Soft-Ban Risk",
+    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
+  },
+  {
+    href: "/raven-vs-elitefutbot",
+    label: "Raven vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "Raven for FIFA abandoned userscript and selector rot vs actively maintained 20ms AI suite.",
+    tag: "Comparison",
+    badge: "Abandoned Script",
     badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
   },
 
