@@ -257,7 +257,7 @@ const ALL_LINKS: DirectoryLink[] = [
     badgeColor: "bg-gray-500/15 text-gray-300 border-gray-500/30",
   },
 
-  // 7. Competitor Comparison Pages (36 Pages)
+  // 7. Competitor Comparison Pages (41 Pages)
   {
     href: "/bakers-bot-vs-elitefutbot",
     label: "Baker's Bot vs Elite FUT SNIPER",
@@ -581,6 +581,51 @@ const ALL_LINKS: DirectoryLink[] = [
     tag: "Comparison",
     badge: "UT Bot",
     badgeColor: "bg-blue-500/15 text-blue-300 border-blue-500/30",
+  },
+  {
+    href: "/fcenhancer-vs-elitefutbot",
+    label: "FC Enhancer vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "FC Enhancer (FUT Enhancer by FUTNext) DOM injection vs sub-20ms Chrome Side Panel HUD.",
+    tag: "Comparison",
+    badge: "Injected DOM",
+    badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
+  },
+  {
+    href: "/futtradebuddy-vs-elitefutbot",
+    label: "FUT Trade Buddy vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "FUT Trade Buddy linear delays and single-filter limits vs 15+ parallel targets and AI SBC solver.",
+    tag: "Comparison",
+    badge: "Single Filter",
+    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
+  },
+  {
+    href: "/futfun-vs-elitefutbot",
+    label: "FutFun vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "FutFun predatory 10%–20% profit commission vs flat $19.99/yr license with 100% profit retention.",
+    tag: "Comparison",
+    badge: "Coin Siphon",
+    badgeColor: "bg-rose-500/15 text-rose-300 border-rose-500/30",
+  },
+  {
+    href: "/futcoinharvester-vs-elitefutbot",
+    label: "FUT Coin Harvester vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "FUT Coin Harvester password handover and datacenter IP bans vs 100% local, zero-credential AI engine.",
+    tag: "Comparison",
+    badge: "Cloud Ban Risk",
+    badgeColor: "bg-rose-500/15 text-rose-300 border-rose-500/30",
+  },
+  {
+    href: "/futautobuyer-vs-elitefutbot",
+    label: "FUT Auto Buyer vs Elite FUT SNIPER",
+    category: "Competitor Comparisons",
+    desc: "FUT Auto Buyer generic macro scripts and brittle selectors vs enterprise-grade Manifest V3 bot.",
+    tag: "Comparison",
+    badge: "Macro Scripts",
+    badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
   },
 
   // 8. International Localization (Tier 1)
