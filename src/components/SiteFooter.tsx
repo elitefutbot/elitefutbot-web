@@ -200,6 +200,9 @@ export default function SiteFooter() {
               { slug: "futfun-vs-elitefutbot", name: "FutFun" },
               { slug: "futcoinharvester-vs-elitefutbot", name: "FUT Coin Harvester" },
               { slug: "futautobuyer-vs-elitefutbot", name: "FUT Auto Buyer" },
+              { slug: "lenabot-vs-elitefutbot", name: "Lena Bot" },
+              { slug: "magicbuyer-vs-elitefutbot", name: "MagicBuyer" },
+              { slug: "raven-vs-elitefutbot", name: "Raven" },
             ].map((item) => (
               <Link
                 key={item.slug}

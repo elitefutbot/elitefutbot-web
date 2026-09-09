@@ -429,6 +429,24 @@ export async function GET() {
       priority: 0.85,
     },
     {
+      url: `${baseUrl}/lenabot-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/magicbuyer-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/raven-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/blog`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
