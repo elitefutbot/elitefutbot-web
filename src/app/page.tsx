@@ -27,8 +27,8 @@ import {
 } from "lucide-react";
 
 // Placeholder for the "$10 price increase every 10 sales" plan — not yet wired
-// to real sale counts from Dodo Payments. Update these numbers manually until
-// that's automated (would need a Dodo webhook feeding this from the backend).
+// to real sale counts from Gumroad. Update these numbers manually until
+// that's automated (would need a Gumroad webhook feeding this from the backend).
 const PRICE_TIER = {
   sold: 4,
   threshold: 10,
@@ -708,7 +708,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
               <Link
                 className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]"
-                href="https://checkout.dodopayments.com/buy/pdt_0NmKLEkBOT5JF3qkdNt0t?quantity=1"
+                href="https://futbotelite.gumroad.com/l/elitebotfc"
                 target="_blank"
                 rel="noopener noreferrer"
               >
