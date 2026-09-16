@@ -309,9 +309,9 @@ function DashboardContent() {
                     </div>
                   ) : null}
                 </div>
-                {!isPaid && (
-                  <div className="shrink-0 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
-                    <DownloadExtensionButton className="w-full sm:w-auto justify-center" />
+                <div className="shrink-0 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+                  <DownloadExtensionButton className="w-full sm:w-auto justify-center" />
+                  {!isPaid && (
                     <button
                       type="button"
                       onClick={() => setUpgradeModalOpen(true)}
@@ -319,8 +319,8 @@ function DashboardContent() {
                     >
                       Upgrade Now
                     </button>
-                  </div>
-                )}
+                  )}
+                </div>
               </div>
             </div>
 

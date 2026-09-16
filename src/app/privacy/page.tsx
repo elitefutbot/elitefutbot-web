@@ -40,7 +40,7 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Account Registration Details:</strong> When you register or log in (e.g., using Discord authorization), we may collect your email address, username, and profile identifier.</li>
-              <li><strong>Billing Information:</strong> If you purchase a subscription, all credit card and transactional information is processed securely by our third-party payment gateways (such as Dodo Payments / Creem). **We do not store your credit card or financial account numbers on our servers.** We only receive a transaction confirmation token.</li>
+              <li><strong>Billing Information:</strong> If you purchase a subscription, all credit card and transactional information is processed securely by our third-party payment gateway, Gumroad. **We do not store your credit card or financial account numbers on our servers.** We only receive a transaction confirmation token.</li>
               <li><strong>Usage Data:</strong> We automatically collect information about how you interact with our website, including IP address, browser type, device info, and page views, to help us debug and optimize performance.</li>
             </ul>
           </section>
@@ -69,7 +69,7 @@ export default function PrivacyPage() {
               **We do not sell, rent, or trade your personal information to third parties.** We only share data with trusted service providers necessary to operate the Service:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Payment Processors:</strong> We use payment processors like Dodo Payments / Creem to handle transactions securely. These processors operate under their own strict security protocols and privacy policies.</li>
+              <li><strong>Payment Processors:</strong> We use Gumroad to handle transactions securely. This processor operates under its own strict security protocols and privacy policies.</li>
               <li><strong>Hosting &amp; Infrastructure:</strong> Our servers and CDN services are hosted on secure modern clouds (like Vercel).</li>
               <li><strong>Legal Compliance:</strong> We may disclose information if required to do so by law, or in response to valid requests by public authorities.</li>
             </ul>
