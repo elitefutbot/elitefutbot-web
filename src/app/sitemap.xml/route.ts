@@ -477,12 +477,6 @@ export async function GET() {
       priority: 0.85,
     },
     {
-      url: `${baseUrl}/goatbot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
       url: `${baseUrl}/blog`,
       lastModified: currentDate,
       changeFrequency: 'weekly',
@@ -527,8 +521,8 @@ export async function GET() {
     {
       url: `${baseUrl}/install`,
       lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      changeFrequency: 'weekly',
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/referral`,

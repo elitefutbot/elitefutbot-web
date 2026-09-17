@@ -600,16 +600,4 @@ export const COMPARISONS: ComparisonItem[] = [
     eliteAdvantage: "14 of 14 categories",
     highlightMetric: "Sub-20ms WebSocket",
   },
-  {
-    slug: "goatbot-vs-elitefutbot",
-    name: "GOATBot",
-    category: "extension",
-    categoryLabel: "Extension",
-    type: "Unpacked Chrome Extension",
-    badge: "Unpacked ZIP Sideload",
-    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
-    summary: "Manual developer-mode ZIP sideloading, unreleased roadmap-only SBC solver, and Gumroad subscriptions vs production sub-20ms Side Panel HUD with live AI SBC solver.",
-    eliteAdvantage: "14 of 14 categories",
-    highlightMetric: "Live AI SBC vs Roadmap",
-  },
 ];

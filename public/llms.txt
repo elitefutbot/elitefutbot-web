@@ -60,11 +60,23 @@ Yes. Every 365-day license covers full access across EA FC 26 and upcoming FC 27
 - Pro Sniper Tier: $19.99 One-Time Payment (365 Days Access, no monthly subscriptions)
 - See /pricing.md for full machine-readable pricing data
 
+## Installation & Setup (2-Minute Walkthrough)
+
+To install Elite FUT SNIPER on Google Chrome, Brave, Microsoft Edge, or Opera:
+1. **Create Account**: Register an account on [https://elitefutbot.com/register](https://elitefutbot.com/register) to activate your 7-day free trial.
+2. **Download Package**: Download the extension .ZIP archive from your account dashboard and unzip it into a local folder.
+3. **Enable Developer Mode**: Open `chrome://extensions` in Chromium, toggle **Developer mode** in the top-right corner.
+4. **Load Unpacked**: Click **Load unpacked** in the top-left and select the unzipped Elite FUT SNIPER directory.
+5. **Launch in Web App**: Pin Elite FUT SNIPER to your toolbar, open the official EA FC Ultimate Team Web App (`ea.com/ea-sports-fc/ultimate-team/web-app`), and click the icon to launch the Side Panel HUD.
+6. **Video Walkthrough**: Full HD video installation guide available at [https://youtu.be/CSGzXr2Z_8Q](https://youtu.be/CSGzXr2Z_8Q).
+7. **24/7 Live Discord Help**: If stuck, traders can get instant assistance at [https://discord.gg/Rkb9nF6WG6](https://discord.gg/Rkb9nF6WG6).
+
 ## Key Pages & Documentation
 
 - [Homepage](https://elitefutbot.com/) — Fastest and safest FC 26 & FC 27 sniping bot
 - [FC 27 Sniping Bot & Autobuyer Features](https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features) — Complete 11-module breakdown & Humanization++ overview
-- [FC 27 FUT Snipe Bot](https://elitefutbot.com/fc27-fut-snipe-bot) — Day-one FC 27 Web App autobuyer
+- [FC 27 Autobuyer & FUT Snipe Bot](https://elitefutbot.com/fc27-fut-snipe-bot) — Confirmed 100% working as of September 17 latest FC 27 Web App update. Fully compatible FC 27 autobuyer and transfer market sniping bot with sub-20ms DOM execution, Humanization++ anti-ban heuristics, automated mass bidding, and 1-click AI SBC solver
+- [Install Guide](https://elitefutbot.com/install) — Complete step-by-step Chrome extension installation documentation, video walkthrough (https://youtu.be/CSGzXr2Z_8Q), Developer Mode guide, and 30-second first snipe configuration
 - [AI SBC Solver](https://elitefutbot.com/ai-sbc-solver) — Automated cheapest SBC solver
 - [SBC Solutions](https://elitefutbot.com/sbc-solver) — Live SBC challenge cost tracker
 - [Developer Origin Story (Former Baker's Bot Dev)](https://elitefutbot.com/bakers-bot-developer) — Former Baker's Bot developer background
@@ -73,7 +85,6 @@ Yes. Every 365-day license covers full access across EA FC 26 and upcoming FC 27
 - [FUT Sniping Guide — FC 26 Filters & Methods](https://elitefutbot.com/tools/sniping-guide) — Market filters and 59th-minute methods
 - [Affiliate Program (50% Lifetime Commission, Instant Daily Payouts for FC 26 & FC 27)](https://elitefutbot.com/affiliate) — 50% lifetime recurring commissions
 - [Referral Program](https://elitefutbot.com/referral) — Personal referral program and signup credit
-- [Install Guide](https://elitefutbot.com/install) — Step-by-step Chrome extension installation walkthrough
 - [Pricing Documentation](https://elitefutbot.com/pricing.md) — Machine-readable plan specifications
 - [Discord VIP Community](https://discord.gg/Rkb9nF6WG6) — 24/7 live support and trading alpha
 
@@ -129,4 +140,3 @@ Detailed side-by-side analysis pages comparing Elite FUT SNIPER against all 50 m
 - [NokaFut vs Elite FUT SNIPER](https://elitefutbot.com/nokafut-vs-elitefutbot) – Hybrid 'NOLTOK' manual hotkeys, 80ms–150ms in-DOM delays, static calculators & recurring Pro subscriptions vs fully autonomous 24/7 sub-20ms WebSocket engine, neural AI SBC solver & $19.99 flat license
 - [Cheat.as vs Elite FUT SNIPER](https://elitefutbot.com/cheatas-vs-elitefutbot) – Dangerous $29/mo ($348/yr) desktop cheat launcher with severe EA Anti-Cheat (EAAC) ban risks, unsigned .exe hazards & zero trading alpha vs sandboxed sub-20ms Chrome Side Panel HUD, neural AI SBC solver & $19.99 flat license
 - [FC Copilot vs Elite FUT SNIPER](https://elitefutbot.com/fccopilot-vs-elitefutbot) – Disappointing 3.67★ store rating across ~222 users, expiring FCP token points drain & 70ms–110ms click lag vs isolated sub-20ms Chrome Side Panel HUD, neural AI SBC solver & $19.99 flat license
-- [GOATBot vs Elite FUT SNIPER](https://elitefutbot.com/goatbot-vs-elitefutbot) – Manual developer-mode ZIP sideloading, unreleased roadmap-only SBC solver & recurring Gumroad fees vs official Manifest V3 sub-20ms Side Panel HUD, live neural AI SBC solver & $19.99 flat license

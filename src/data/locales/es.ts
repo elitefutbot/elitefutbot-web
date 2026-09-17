@@ -353,7 +353,7 @@ export const esLocale: LocaleDictionary = {
       directAnswerSnippet:
         "Elite FUT Snipe Bot para FC 27 es una extensión de Chrome de alta velocidad que automatiza el sniping en el mercado, la resolución de SBCs con IA en 1 clic y la reventa de cartas directamente en la Web App de EA FC 27. Funciona 100% local con ejecución sub-20ms y sin compartir contraseñas.",
       ctaPrimary: "Iniciar Prueba Gratuita",
-      ctaSecondary: "Ver Demo en Vivo a 20ms",
+      ctaSecondary: "Ver Demostración",
       stats: {
         speed: "< 20ms Velocidad de Sniping",
         bans: "0 Baneos Registrados",
@@ -361,7 +361,7 @@ export const esLocale: LocaleDictionary = {
         sandbox: "100% Local en Navegador",
       },
       demoTitle: "HUD de Ejecución en Vivo de Sniping y SBC Solver EA FC 27",
-      demoBadge: "DEMO EN VIVO 20MS",
+      demoBadge: "VÍDEO DEMOSTRACIÓN",
     },
     featuresHeading: {
       badge: "ARSENAL TÉCNICO DE 10 MÓDULOS",

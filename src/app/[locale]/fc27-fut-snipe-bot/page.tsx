@@ -299,7 +299,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
                 </div>
                 <div className="aspect-video w-full relative">
                   <LiteYouTubeEmbed
-                    videoId="S0YuEelYNQ8"
+                    videoId="bfqc1hCIAoQ"
                     title={`EA FC 27 Sniping Bot & Autobuyer Demonstration (${dict.locale.nativeName})`}
                   />
                 </div>

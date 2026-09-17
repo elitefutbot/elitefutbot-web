@@ -37,6 +37,65 @@ const PRICE_TIER = {
 };
 
 export default function Home() {
+  const reviewsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": "https://elitefutbot.com/#software",
+    "name": "Elite FUT SNIPER",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "6",
+      "ratingCount": "6",
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "_mesirve_" },
+        "reviewBody": "You brighten people's lives by creating these extensions for FC26. 5 stars.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Patrunjel Regele" },
+        "reviewBody": "The menu for the sniper is great I really like it. The sniping itself works.",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "faresislol" },
+        "reviewBody": "alr thanks bro your goated ill give u a 5 star review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "astroa" },
+        "reviewBody": "yes its very good",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Phantom (GENO)" },
+        "reviewBody": "Bro it works I sniped TOTS YAMAL twice for 300k",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Phantom (GENO)" },
+        "reviewBody": "this is the best one I use because I made the most quick coins",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-07-01"
+      }
+    ]
+  };
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -114,6 +173,10 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsJsonLd) }}
+      />
       <header className="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
         <div className="absolute top-10 right-0 w-[300px] h-[300px] bg-blue-500/5 blur-[100px] rounded-full -z-10 pointer-events-none"></div>
@@ -169,10 +232,15 @@ export default function Home() {
                 <ArrowRight className="w-5 h-5" />
               </span>
             </Link>
-            <Link className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm" href="#features">
-              <PlayCircle className="w-5 h-5" />
+            <a
+              className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm hover:border-primary/40 group"
+              href="https://youtu.be/bfqc1hCIAoQ"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <PlayCircle className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
               Watch Demo
-            </Link>
+            </a>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 font-medium border-t border-white/5 pt-6 sm:pt-8 max-w-4xl mx-auto">
             <div className="flex items-center gap-2">
@@ -737,7 +805,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             
             {/* SCREENSHOT 1: _mesirve_ */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> _mesirve_
@@ -754,10 +822,14 @@ export default function Home() {
                   priority
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;You brighten people&apos;s lives by creating these extensions for FC26. 5 stars.&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— _mesirve_, Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
             {/* SCREENSHOT 2: Patrunjel Regele */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Patrunjel Regele
@@ -773,10 +845,14 @@ export default function Home() {
                   className="w-full h-auto rounded-xl"
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;The menu for the sniper is great I really like it. The sniping itself works.&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Patrunjel Regele, Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
             {/* SCREENSHOT 3: faresislol */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> faresislol
@@ -792,10 +868,14 @@ export default function Home() {
                   className="w-full h-auto rounded-xl"
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;alr thanks bro your goated ill give u a 5 star review&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— faresislol, Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
             {/* SCREENSHOT 4: astroa */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> astroa
@@ -811,10 +891,14 @@ export default function Home() {
                   className="w-full h-auto rounded-xl"
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;yes its very good&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— astroa, Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
             {/* SCREENSHOT 5: Phantom Yamal Snipe */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
@@ -830,10 +914,14 @@ export default function Home() {
                   className="w-full h-auto rounded-xl"
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;Bro it works I sniped TOTS YAMAL twice for 300k&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Phantom (GENO), Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
             {/* SCREENSHOT 6: Phantom Quick Coins Review */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
@@ -849,7 +937,11 @@ export default function Home() {
                   className="w-full h-auto rounded-xl"
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;this is the best one I use because I made the most quick coins&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Phantom (GENO), Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
             {/* SCREENSHOT 7: Phantom 97 Yamal Snipe + 1M Coins Balance Proof */}
             <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-1">

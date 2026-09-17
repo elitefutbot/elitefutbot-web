@@ -54,7 +54,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Bot & Autobuyer",
-        type: "image/jpeg",
+        type: "image/png",
       }
     ],
     locale: "en_US",
@@ -94,7 +94,7 @@ const jsonLd = {
       "offers": {
         "@type": "Offer",
         "url": "https://elitefutbot.com/#pricing",
-        "price": "19.00",
+        "price": "19.99",
         "priceCurrency": "USD",
         "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
@@ -137,13 +137,6 @@ const jsonLd = {
           "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
         }
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "ratingCount": "1250",
-        "bestRating": "5",
-        "worstRating": "1"
-      }
     },
     {
       "@type": "Organization",
@@ -210,7 +203,7 @@ export default function RootLayout({
         <meta property="og:image:secure_url" content="https://elitefutbot.com/og-image.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:type" content="image/png" />
         <meta property="og:image:alt" content="Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Bot & Autobuyer" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content="https://elitefutbot.com/og-image.png" />
