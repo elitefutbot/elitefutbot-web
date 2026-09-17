@@ -141,6 +141,18 @@ export default function SiteFooter() {
             <nav className="space-y-6" aria-labelledby="footer-resources">
               <h2 id="footer-resources" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Resources</h2>
               <ul className="space-y-2 text-sm font-medium">
+                <li>
+                  <Link
+                    className="text-white hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none inline-flex items-center gap-2 py-1.5 font-semibold group"
+                    href="/install"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse shrink-0" />
+                    <span>Install Guide</span>
+                    <span className="px-1.5 py-0.5 text-[9px] font-mono font-bold uppercase tracking-wider rounded bg-primary/15 text-primary border border-primary/30 group-hover:bg-primary group-hover:text-dark transition-colors">
+                      Setup
+                    </span>
+                  </Link>
+                </li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/affiliate">Affiliate Program</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/volt-velocity">Volt Velocity</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/bakers-bot-developer">Origin Story</Link></li>
@@ -208,7 +220,6 @@ export default function SiteFooter() {
               { slug: "nokafut-vs-elitefutbot", name: "NokaFut" },
               { slug: "cheatas-vs-elitefutbot", name: "Cheat.as" },
               { slug: "fccopilot-vs-elitefutbot", name: "FC Copilot" },
-              { slug: "goatbot-vs-elitefutbot", name: "GOATBot" },
             ].map((item) => (
               <Link
                 key={item.slug}

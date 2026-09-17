@@ -41,11 +41,11 @@ const ALL_LINKS: DirectoryLink[] = [
   },
   {
     href: "/fc27-fut-snipe-bot",
-    label: "FC 27 FUT Snipe Bot",
+    label: "FC 27 Autobuyer & FUT Snipe Bot",
     category: "Core & Products",
-    desc: "Dedicated product showcase for the FC 27 sniping bot & autobuyer extension with 20ms local speed.",
+    desc: "Verified working for Sep 17 FC 27 Web App update. Sub-20ms autobuyer, mass bidding, AI SBC solver & zero bans.",
     tag: "Product",
-    badge: "FC 27",
+    badge: "FC 27 Verified",
     badgeColor: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30",
   },
   {
@@ -257,7 +257,7 @@ const ALL_LINKS: DirectoryLink[] = [
     badgeColor: "bg-gray-500/15 text-gray-300 border-gray-500/30",
   },
 
-  // 7. Competitor Comparison Pages (44 Pages)
+  // 7. Competitor Comparison Pages (43 Pages)
   {
     href: "/bakers-bot-vs-elitefutbot",
     label: "Baker's Bot vs Elite FUT SNIPER",
@@ -699,15 +699,7 @@ const ALL_LINKS: DirectoryLink[] = [
     badge: "3.67★ Store Rating",
     badgeColor: "bg-orange-500/15 text-orange-300 border-orange-500/30",
   },
-  {
-    href: "/goatbot-vs-elitefutbot",
-    label: "GOATBot vs Elite FUT SNIPER",
-    category: "Competitor Comparisons",
-    desc: "Manual developer-mode ZIP sideloading, unreleased roadmap-only SBC solver, and Gumroad billing vs production 20ms Side Panel HUD.",
-    tag: "Comparison",
-    badge: "Unpacked ZIP Sideload",
-    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
-  },
+
 
   // 8. International Localization (Tier 1)
   {

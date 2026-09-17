@@ -353,7 +353,7 @@ export const deLocale: LocaleDictionary = {
       directAnswerSnippet:
         "Elite FUT Snipe Bot für FC 27 ist eine Highspeed Chrome Erweiterung, die das Snipen auf dem Transfermarkt, das 1-Klick Lösen von SBCs mit KI und das automatische Einstellen von Spielern direkt in der EA FC 27 Web App automatisiert. Läuft zu 100% lokal mit sub-20ms Reaktionszeit und ohne Passwortübertragung.",
       ctaPrimary: "Kostenlose Testphase Starten",
-      ctaSecondary: "20ms Live-Demo Ansehen",
+      ctaSecondary: "Demo Ansehen",
       stats: {
         speed: "< 20ms Sniping-Geschwindigkeit",
         bans: "0 Banns Dokumentiert",
@@ -361,7 +361,7 @@ export const deLocale: LocaleDictionary = {
         sandbox: "100% Lokal im Browser",
       },
       demoTitle: "EA FC 27 Live Sniping & KI SBC Löser HUD",
-      demoBadge: "20MS LIVE DEMO",
+      demoBadge: "VIDEO-WALKTHROUGH",
     },
     featuresHeading: {
       badge: "TECHNISCHES 10-MODULE ARSENAL",

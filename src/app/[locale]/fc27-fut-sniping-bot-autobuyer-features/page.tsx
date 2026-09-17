@@ -27,7 +27,9 @@ import {
   MousePointerClick,
   Activity,
   Check,
+  PlayCircle,
 } from "lucide-react";
+import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
 import {
   SUPPORTED_LOCALES,
   isValidLocale,
@@ -237,7 +239,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
             </p>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
             <Link
               href="/register"
               className="w-full sm:w-auto px-8 py-4 bg-primary text-dark font-black text-sm uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.3)] flex items-center justify-center gap-2"
@@ -245,16 +247,23 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
               {dict.featuresPage.hero.ctaPrimary}
               <ArrowRight className="w-4 h-4" />
             </Link>
+            <a
+              href="#demo"
+              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 hover:border-primary/40 group backdrop-blur-sm"
+            >
+              <PlayCircle className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
+              <span>Watch Demo</span>
+            </a>
             <Link
               href="#features-list"
-              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2"
+              className="w-full sm:w-auto px-6 py-4 text-gray-400 hover:text-white font-bold text-sm uppercase tracking-widest transition-colors flex items-center justify-center gap-1.5"
             >
               {dict.featuresPage.hero.ctaSecondary}
             </Link>
           </div>
 
           {/* Quick Trust Highlights */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto text-left">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 max-w-4xl mx-auto text-left mb-12">
             {dict.featuresPage.hero.trustHighlights.map((th, i) => (
               <div
                 key={i}
@@ -269,6 +278,34 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
                 <div className="text-xs text-gray-300">{th.desc}</div>
               </div>
             ))}
+          </div>
+
+          {/* YOUTUBE VIDEO EMBED CONTAINER */}
+          <div className="relative mx-auto max-w-4xl group" id="demo">
+            <div className="absolute -inset-1 bg-gradient-to-r from-primary/30 via-cyan-500/20 to-primary/30 rounded-3xl blur opacity-40 group-hover:opacity-75 transition duration-500" />
+            <div className="relative rounded-2xl overflow-hidden border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.9)] bg-[#0d0d0d]">
+              <div className="bg-[#141414] px-4 py-2.5 border-b border-white/10 flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
+                  <div className="w-3 h-3 rounded-full bg-green-500/80" />
+                  <span className="text-xs font-mono text-gray-400 ml-2">
+                    EA FC 27 Live Sniping &amp; Autobuyer HUD — Sep 17 Release
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5 text-xs text-primary font-bold font-mono">
+                  <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
+                  Video Walkthrough
+                </div>
+              </div>
+              <div className="aspect-video w-full relative">
+                <LiteYouTubeEmbed
+                  videoId="bfqc1hCIAoQ"
+                  title={`EA FC 27 Sniping Bot & Autobuyer Demonstration (${dict.locale.nativeName})`}
+                  customPoster="/fc27-video-thumbnail.jpg"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>

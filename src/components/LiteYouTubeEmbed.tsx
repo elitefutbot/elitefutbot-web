@@ -8,17 +8,26 @@ interface LiteYouTubeEmbedProps {
   title: string;
   className?: string;
   posterQuality?: "hqdefault" | "maxresdefault" | "sddefault";
+  customPoster?: string;
 }
 
 export default function LiteYouTubeEmbed({
   videoId,
   title,
   className = "",
-  posterQuality = "hqdefault",
+  posterQuality = "maxresdefault",
+  customPoster,
 }: LiteYouTubeEmbedProps) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [imgSrc, setImgSrc] = useState(
+    customPoster || `https://i.ytimg.com/vi/${videoId}/${posterQuality}.jpg`
+  );
 
-  const posterUrl = `https://i.ytimg.com/vi/${videoId}/${posterQuality}.jpg`;
+  const handleError = () => {
+    if (imgSrc.includes("maxresdefault")) {
+      setImgSrc(`https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`);
+    }
+  };
 
   if (isPlaying) {
     return (
@@ -49,12 +58,13 @@ export default function LiteYouTubeEmbed({
     >
       {/* Poster Image */}
       <Image
-        src={posterUrl}
+        src={imgSrc}
         alt={title}
         fill
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
-        className="object-cover opacity-85 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+        className="object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
         loading="lazy"
+        onError={handleError}
         unoptimized
       />
 
