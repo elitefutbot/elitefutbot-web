@@ -13,6 +13,7 @@ import {
   ArrowRight,
   Activity,
   Trophy,
+  PlayCircle,
 } from "lucide-react";
 import { AffiliateLinkCard } from "@/components/AffiliateLinkCard";
 import { AuthGuard } from "@/components/AuthGuard";
@@ -270,6 +271,27 @@ function DashboardContent() {
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8 items-start">
           <div className="space-y-8">
+            {/* Extension usage guide */}
+            <a
+              href="https://www.elitefutbot.com/install#video-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center gap-4 p-4 rounded-2xl bg-primary/10 border border-primary/30 hover:border-primary/60 hover:bg-primary/15 transition-colors"
+            >
+              <span className="size-11 rounded-xl bg-primary/20 border border-primary/30 grid place-items-center shrink-0 group-hover:scale-110 transition-transform">
+                <PlayCircle className="size-6 text-primary" />
+              </span>
+              <span className="flex-1 min-w-0">
+                <span className="block font-mono text-[10px] font-bold uppercase tracking-widest text-primary">
+                  New here? Start here
+                </span>
+                <span className="block text-sm font-bold text-white">
+                  Watch the Full Video Walkthrough to set up the extension and start sniping
+                </span>
+              </span>
+              <ArrowRight className="size-5 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
+            </a>
+
             {/* Trial banner */}
             <div className={`bg-card relative overflow-hidden p-6 md:p-8 rounded-2xl border ${isDuplicateTrial ? "border-red-500/40 shadow-[0_4px_24px_rgba(239,68,68,0.15)]" : "border-primary/30 shadow-[0_4px_24px_rgba(0,0,0,0.2)]"}`}>
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
