@@ -13,7 +13,10 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "How to Install Elite FUT SNIPER | Step-by-Step Extension Setup Guide",
+  title: {
+    absolute:
+      "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
+  },
   description:
     "Official installation guide for Elite FUT SNIPER Chrome extension on EA FC 27 and FC 26 Web App. 2-minute setup, Developer Mode activation, and first snipe configuration.",
   keywords: [
@@ -32,7 +35,8 @@ export const metadata: Metadata = {
     canonical: "https://elitefutbot.com/install",
   },
   openGraph: {
-    title: "How to Install Elite FUT SNIPER | Extension Setup Guide",
+    title:
+      "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
     description:
       "Step-by-step setup documentation for Elite FUT SNIPER Chrome extension on EA FC 27 and FC 26 Web App. 2-minute installation, 100% local client sandbox, and 0 bans.",
     type: "article",
@@ -48,7 +52,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "How to Install Elite FUT SNIPER | Extension Setup Guide",
+    title:
+      "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
     description:
       "2-minute step-by-step installation guide for Elite FUT SNIPER on EA FC 27 & FC 26 Web App. Manifest V3 local sandbox setup.",
     images: ["https://elitefutbot.com/og-image.png"],
