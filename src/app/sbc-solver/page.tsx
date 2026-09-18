@@ -3,18 +3,18 @@ import Link from "next/link";
 import { Sparkles, ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
-  description: "Browse the cheapest EA FC 26 & FC 27 SBC solutions for every active Squad Building Challenge. Filter Icon and Promo SBCs with real-time coin cost estimates.",
+  title: "EA FC 27 SBC Solutions – Cheapest SBC Squad Costs (FC 26 Supported)",
+  description: "Browse the cheapest EA FC 27 & FC 26 SBC solutions for every active Squad Building Challenge. Filter Icon and Promo SBCs with real-time coin cost estimates.",
   alternates: { canonical: "https://elitefutbot.com/sbc-solver" },
   openGraph: {
-    title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
+    title: "EA FC 27 SBC Solutions – Cheapest SBC Squad Costs (FC 26 Supported)",
     description: "Browse every active EA FC Squad Building Challenge solution with cheapest market prices.",
     url: "https://elitefutbot.com/sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    title: "EA FC 26 SBC Solutions – Cheapest SBC Squad Costs",
+    title: "EA FC 27 SBC Solutions – Cheapest SBC Squad Costs (FC 26 Supported)",
     description: "Browse active SBC solutions and cheapest squad costs.",
   }
 };
@@ -24,7 +24,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      name: "EA FC 26 & FC 27 SBC Solutions Database",
+      name: "EA FC 27 & FC 26 SBC Solutions Database",
       description: "Database of active Squad Building Challenge solutions sorted by cheapest coin cost.",
       url: "https://elitefutbot.com/sbc-solver"
     }
@@ -173,7 +173,7 @@ export default function SBCSolutionsDatabasePage() {
               SBC Solutions Database • Live Prices
             </div>
             <h1 className="text-3xl sm:text-5xl font-black font-headline tracking-tight uppercase">
-              EA FC 26 &amp; FC 27 <span className="text-primary italic ml-2">SBC SOLUTIONS</span>
+              EA FC 27 &amp; FC 26 <span className="text-primary italic ml-2">SBC SOLUTIONS</span>
             </h1>
             <p className="text-sm sm:text-base text-gray-400 font-medium leading-relaxed">
               Explore active Squad Building Challenges, estimated coin costs, and optimal 33/33 chemistry squad builds.

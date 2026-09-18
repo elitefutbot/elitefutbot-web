@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service - Elite FUT SNIPER",
-  description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, and our refund policies.",
+  description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 7-day free trial conditions.",
   alternates: { canonical: "https://elitefutbot.com/terms" },
 };
 
@@ -18,7 +18,7 @@ export default function TermsPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Terms of <span className="text-primary italic">Service</span>
           </h1>
-          <p className="text-sm text-gray-400 font-medium">Last updated: June 18, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: September 18, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">
@@ -54,31 +54,34 @@ export default function TermsPage() {
               4. Subscription Plans &amp; Billing
             </h2>
             <p>
-              Certain premium parts of the Service require a paid subscription. By purchasing a subscription, you agree to pay all applicable fees, including taxes:
+              Certain premium parts of the Service require a paid license or subscription. By purchasing a subscription or license, you receive immediate digital access to the software and agree to pay all applicable fees, including taxes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Billing Cycle:</strong> Subscriptions are billed on a recurring basis (monthly or annually) depending on the plan selected at the time of purchase.</li>
-              <li><strong>Automatic Renewal:</strong> Your subscription will automatically renew at the end of each billing cycle unless you cancel it before the renewal date.</li>
-              <li><strong>Price Adjustments:</strong> We reserve the right to change our subscription fees. Any price changes will be communicated to you in advance and will apply to the next billing period.</li>
+              <li><strong>Billing Cycle:</strong> Subscriptions are billed on a recurring basis (monthly or annually) or sold as fixed-duration access passes depending on the plan selected at checkout.</li>
+              <li><strong>Automatic Renewal:</strong> For recurring plans, your subscription will automatically renew at the end of each billing cycle unless you cancel it before the renewal date.</li>
+              <li><strong>Price Adjustments:</strong> We reserve the right to change our subscription fees. Any price changes will be communicated in advance and will apply only to subsequent billing periods.</li>
             </ul>
           </section>
 
           <section className="space-y-4 p-6 rounded-xl bg-white/[0.02] border border-primary/20">
             <h2 className="text-2xl font-headline font-bold text-primary border-b border-primary/10 pb-2">
-              5. Refund &amp; Cancellation Policy
+              5. No Refunds Policy, 7-Day Free Trial &amp; Cancellations
             </h2>
             <p>
-              We want you to be completely satisfied with Elite FUT SNIPER. This policy outlines our commitment to fair and transparent billing:
+              Please read our billing terms carefully before completing any transaction. Because Elite FUT SNIPER provides immediate digital access to proprietary Software-as-a-Service (SaaS) tools and intellectual property, the following policy applies to all users:
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>
-                <strong>Cancellations:</strong> You can cancel your recurring subscription at any time directly from your account settings page or by contacting support. Following cancellation, you will continue to have access to premium features until the end of your current active billing period.
+                <strong>Strict No-Refund Policy:</strong> Due to the digital, intangible nature of SaaS products, immediate software license provisioning, and instant access to proprietary algorithms and automated tools, <strong>all purchases and subscription charges are strictly non-refundable and final</strong>. Once payment is processed, no refunds, partial refunds, or prorated credits will be issued under any circumstances.
               </li>
               <li>
-                <strong>Refund Eligibility:</strong> We offer a <strong>7-day money-back guarantee</strong> on all new subscriptions. If you are not satisfied with your purchase, you may request a full refund within 7 days of your initial transaction by emailing <a href="mailto:support@elitefutbot.com" className="text-primary underline hover:brightness-110">support@elitefutbot.com</a>.
+                <strong>Always Available 7-Day Free Trial:</strong> To ensure complete satisfaction and transparency before making any financial commitment, <strong>we provide a 7-day free trial on all new accounts</strong>. No credit card or payment information is required to access the trial. You can always use this 7-day trial period to test all features, bot settings, browser compatibility, and performance in your environment prior to purchasing. By completing a purchase, you acknowledge that you have had the opportunity to evaluate the software during the 7-day trial and expressly waive any right to claim a refund.
               </li>
               <li>
-                <strong>Exclusions:</strong> After the initial 7 days, subscription fees are non-refundable. Renewal charges are not eligible for refunds unless required by local consumer protection laws.
+                <strong>Cancellations:</strong> You can cancel your recurring subscription at any time directly from your account settings page or by contacting support. Following cancellation, your payment method will not be charged again, and you will continue to have access to premium features until the end of your current active billing period.
+              </li>
+              <li>
+                <strong>Chargebacks &amp; Dispute Policy:</strong> If a chargeback or payment dispute is initiated without first contacting our customer support team, your license keys, account access, and associated hardware identifiers will be permanently suspended.
               </li>
             </ul>
           </section>

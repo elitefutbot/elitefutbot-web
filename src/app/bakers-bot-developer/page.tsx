@@ -6,11 +6,11 @@ import { Terminal, Network, Cpu, Laptop, Zap, Shield, Brain, Code2 } from 'lucid
 
 export const metadata: Metadata = {
   title: "Baker's Bot Developer Creates Elite FUT SNIPER",
-  description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 26 sniping bot built from scratch.",
+  description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 & FC 26 sniping bot built from scratch.",
   alternates: { canonical: "https://elitefutbot.com/bakers-bot-developer" },
   openGraph: {
     title: "Baker's Bot Developer Creates Elite FUT SNIPER",
-    description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 26 sniping bot.",
+    description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 sniping bot with full FC 26 compatibility.",
     url: "https://elitefutbot.com/bakers-bot-developer",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -233,7 +233,7 @@ export default function BakersBotDeveloperPage() {
             </ul>
 
             <p className="text-gray-300 leading-relaxed pt-2">
-              Whether you need a specialized <span className="text-white font-semibold">FC 26 sniping bot</span> or a flexible <span className="text-white font-semibold">FUT autobuyer</span>, local execution ensures your session data never leaves your computer.
+              Whether you need a specialized <span className="text-white font-semibold">FC 27 sniping bot</span> (fully compatible with FC 26) or a flexible <span className="text-white font-semibold">FUT autobuyer</span>, local execution ensures your session data never leaves your computer.
             </p>
           </section>
 

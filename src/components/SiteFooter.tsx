@@ -31,7 +31,7 @@ export default function SiteFooter() {
               </span>
             </Link>
             <p className="text-gray-400 text-base leading-relaxed max-w-sm font-body">
-              The most advanced FC 26, FC 25 &amp; FC 27 automation suite. Engineered for <span className="text-white font-bold">elite traders</span> who demand absolute speed, surgical precision, and total security.
+              The most advanced FC 27 &amp; FC 26 automation suite. Engineered for <span className="text-white font-bold">elite traders</span> who demand absolute speed, surgical precision, and total security.
             </p>
             <div className="flex items-center gap-2.5 flex-wrap">
               <Link

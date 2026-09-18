@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-export const alt = 'Elite FUT SNIPER - #1 FC 26, FC 25 & FC 27 Sniping Tool';
+export const alt = 'Elite FUT SNIPER - #1 FC 27 Sniping Bot & Autobuyer (FC 26 Supported)';
 export const size = {
   width: 1200,
   height: 630,
@@ -64,7 +64,7 @@ export default async function Image() {
               letterSpacing: '-0.02em',
             }}
           >
-            The Ultimate FC 26, FC 25 & FC 27 Sniping Tool
+            The Ultimate FC 27 &amp; FC 26 Sniping Tool
           </div>
         </div>
       </div>
