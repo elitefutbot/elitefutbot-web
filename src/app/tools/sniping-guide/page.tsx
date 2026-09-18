@@ -3,18 +3,18 @@ import Link from "next/link";
 import { Timer, PauseCircle, Shield, CheckCircle2, Zap, ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
-  description: "Master transfer market sniping in EA FC 26 & FC 27. Discover the best FUT filter settings for Icons and fodder with anti-detection safety rules.",
+  title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
+  description: "Master transfer market sniping in EA Sports FC 27 & FC 26. Discover the best FUT filter settings for Icons and fodder with anti-detection safety rules.",
   alternates: { canonical: "https://elitefutbot.com/tools/sniping-guide" },
   openGraph: {
-    title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
+    title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
     description: "Master transfer market sniping with expert filter settings and anti-detection safety rules.",
     url: "https://elitefutbot.com/tools/sniping-guide",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    title: "FC 26 Sniping Guide – Best FUT Filters & Methods",
+    title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
     description: "Master transfer market sniping with expert filter settings.",
   }
 };
@@ -24,7 +24,7 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "HowTo",
-      name: "How to Snipe Players safely in EA FC 26 & FC 27",
+      name: "How to Snipe Players safely in EA FC 27 & FC 26",
       description: "Step-by-step guide to setting up automated transfer market sniping filters with humanized safety protocols.",
       step: [
         {
@@ -49,7 +49,7 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is sniping in EA FC 26?",
+          name: "What is sniping in EA FC 27?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "Sniping is buying player cards instantly when they are listed by seller errors far below their actual market value, then reselling them for profit."
@@ -147,10 +147,10 @@ export default function SnipingGuidePage() {
           <div className="text-center space-y-4 max-w-3xl mx-auto">
             <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold uppercase tracking-widest text-primary">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
-              Tactical Trading Guide • FC 26 &amp; FC 27
+              Tactical Trading Guide • FC 27 &amp; FC 26
             </div>
             <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase leading-tight">
-              EA FC 26 &amp; FC 27 <span className="text-primary italic">SNIPING GUIDE</span>
+              EA FC 27 &amp; FC 26 <span className="text-primary italic">SNIPING GUIDE</span>
             </h1>
             <p className="text-base sm:text-lg text-gray-300 font-medium leading-relaxed">
               Master transfer market sniping filters, optimal search delays, and 100% anti-detection safety rules to build a multi-million coin club.
@@ -189,7 +189,7 @@ export default function SnipingGuidePage() {
                 Top Profitable <span className="text-primary italic">Sniping Filters</span>
               </h2>
               <p className="text-sm text-gray-400 max-w-lg mx-auto font-medium">
-                Tested filter combinations for maximum coin returns in EA FC 26 &amp; FC 27.
+                Tested filter combinations for maximum coin returns in EA FC 27 &amp; FC 26.
               </p>
             </div>
 
@@ -264,7 +264,7 @@ export default function SnipingGuidePage() {
                 Sniping Guide <span className="text-primary italic">FAQ</span>
               </h2>
               <p className="text-xs sm:text-sm text-gray-400 font-medium">
-                Everything you need to know about transfer market sniping in FC 26 &amp; FC 27.
+                Everything you need to know about transfer market sniping in FC 27 &amp; FC 26.
               </p>
             </div>
 

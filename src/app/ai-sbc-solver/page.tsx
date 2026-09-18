@@ -3,18 +3,18 @@ import Link from "next/link";
 import { LayoutGrid, Zap, Calculator, BookOpen, ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI SBC Solver – Auto-Fill Squad Building Challenges",
-  description: "The ultimate AI SBC Solver for EA FC 26. Auto-fill any Squad Building Challenge in 3 seconds using your untradeable club players. Join the free beta!",
+  title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
+  description: "The ultimate AI SBC Solver for EA Sports FC 27. Auto-fill any Squad Building Challenge in 3 seconds using your untradeable club players with full FC 27 & FC 26 support. Join the free beta!",
   alternates: { canonical: "https://elitefutbot.com/ai-sbc-solver" },
   openGraph: {
-    title: "AI SBC Solver – Auto-Fill Squad Building Challenges",
+    title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
     description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first.",
     url: "https://elitefutbot.com/ai-sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    title: "AI SBC Solver – Auto-Fill Squad Building Challenges",
+    title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
     description: "Automate any EA FC SBC with 33/33 chemistry.",
   }
 };
@@ -32,7 +32,7 @@ const jsonLd = {
         "@type": "Brand",
         "name": "Elite FUT SNIPER"
       },
-      description: "AI-powered Squad Building Challenge solver for EA Sports FC 26 and FC 27. Scans club inventory, computes 33/33 chemistry, and auto-submits.",
+      description: "AI-powered Squad Building Challenge solver for EA Sports FC 27 and FC 26. Scans club inventory, computes 33/33 chemistry, and auto-submits.",
       url: "https://elitefutbot.com/ai-sbc-solver",
       offers: {
         "@type": "Offer",
@@ -86,7 +86,7 @@ const jsonLd = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "What is an AI SBC Solver for EA FC 26 & FC 27?",
+          name: "What is an AI SBC Solver for EA FC 27 & FC 26?",
           acceptedAnswer: {
             "@type": "Answer",
             text: "An AI SBC Solver is an automated algorithm that scans your club's player inventory, evaluates over 20,000 squad link combinations, and outputs the cheapest possible 33/33 chemistry solution in seconds."
@@ -127,7 +127,7 @@ const ENGINES = [
     title: "SBC SOLUTIONS CATALOG",
     sub: "Live Challenge Directory",
     badge: "SOLUTIONS",
-    desc: "Browse every active FC 26 & FC 27 SBC, estimated coin costs, and preview cheapest AI solutions."
+    desc: "Browse every active FC 27 & FC 26 SBC, estimated coin costs, and preview cheapest AI solutions."
   },
   {
     href: "https://discord.gg/Rkb9nF6WG6",
@@ -187,11 +187,11 @@ export default function AISBCSolverHubPage() {
             </div>
 
             <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase max-w-4xl mx-auto leading-tight">
-              AI <span className="text-primary italic mr-3">SBC SOLVER</span> FOR FC 26 &amp; FC 27
+              AI <span className="text-primary italic mr-3">SBC SOLVER</span> FOR FC 27 &amp; FC 26
             </h1>
 
             <p className="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto font-medium leading-relaxed">
-              The world's most advanced AI Squad Building Challenge automation engine. Solves any SBC in 3 seconds using your club inventory to guarantee 33/33 chemistry.
+              The world&apos;s most advanced AI Squad Building Challenge automation engine. Solves any SBC in 3 seconds using your club inventory to guarantee 33/33 chemistry.
             </p>
 
             {/* High-Impact CTA Box */}
@@ -333,7 +333,7 @@ export default function AISBCSolverHubPage() {
               <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/5 space-y-2">
                 <h3 className="font-bold text-white text-base font-headline">What is an AI SBC Solver?</h3>
                 <p className="text-xs text-gray-400 leading-relaxed font-medium">
-                  An AI SBC Solver is an automated system that scans your club's full player inventory and evaluates over 20,000 squad link combinations per second to generate the cheapest possible solution with guaranteed 33/33 chemistry.
+                  An AI SBC Solver is an automated system that scans your club&apos;s full player inventory and evaluates over 20,000 squad link combinations per second to generate the cheapest possible solution with guaranteed 33/33 chemistry.
                 </p>
               </div>
 

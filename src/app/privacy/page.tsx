@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy - Elite FUT SNIPER",
-  description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard your personal information.",
+  description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 7-day trial eligibility data, and transaction records.",
   alternates: { canonical: "https://elitefutbot.com/privacy" },
 };
 
@@ -18,7 +18,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Privacy <span className="text-primary italic">Policy</span>
           </h1>
-          <p className="text-sm text-gray-400 font-medium">Last updated: June 18, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: September 18, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">
@@ -36,12 +36,12 @@ export default function PrivacyPage() {
               2. Information We Collect
             </h2>
             <p>
-              We collect information to provide a better user experience and to facilitate transaction processing. This includes:
+              We collect information to provide a reliable user experience, manage trial eligibility, and facilitate digital SaaS transaction processing. This includes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Account Registration Details:</strong> When you register or log in (e.g., using Discord authorization), we may collect your email address, username, and profile identifier.</li>
-              <li><strong>Billing Information:</strong> If you purchase a subscription, all credit card and transactional information is processed securely by our third-party payment gateway, Gumroad. **We do not store your credit card or financial account numbers on our servers.** We only receive a transaction confirmation token.</li>
-              <li><strong>Usage Data:</strong> We automatically collect information about how you interact with our website, including IP address, browser type, device info, and page views, to help us debug and optimize performance.</li>
+              <li><strong>Account Registration &amp; 7-Day Trial Data:</strong> When you register or activate our 7-day free trial (e.g., using Discord authorization or email), we collect your email address, username, profile identifier, and hardware/device fingerprints necessary to enforce trial duration, prevent duplicate trial abuse, and maintain license integrity.</li>
+              <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, transactional data is handled securely by certified third-party payment gateways (such as Gumroad). <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We retain transaction references, timestamps, and product tokens to verify your digital license entitlement. Because SaaS licenses are delivered immediately and are non-refundable, transaction records are securely logged for accounting and fraud prevention.</li>
+              <li><strong>Usage &amp; Performance Data:</strong> We automatically collect information about how you interact with our website and extension companion, including IP address, browser type, device information, and diagnostic telemetry, to help us optimize performance and safeguard platform security.</li>
             </ul>
           </section>
 
@@ -50,14 +50,15 @@ export default function PrivacyPage() {
               3. How We Use Your Information
             </h2>
             <p>
-              We use the information we collect for several essential business purposes:
+              We use the information we collect for essential operational and business purposes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>To provide, operate, and maintain our SBC helper and market tools.</li>
-              <li>To process subscription payments, handle cancellations, and verify active memberships.</li>
-              <li>To send transactional emails, including receipts, invoice alerts, and system notifications.</li>
-              <li>To respond to customer support inquiries and provide assistance.</li>
-              <li>To enforce our terms, monitor against fraudulent operations, and ensure site security.</li>
+              <li>To provide, operate, and maintain our SBC helper, sniper overlay, and market tools.</li>
+              <li>To administer the 7-day free trial period, evaluate device trial eligibility, and prevent trial exploitation.</li>
+              <li>To process digital SaaS license provisioning, verify active subscriptions, and handle authorized cancellations.</li>
+              <li>To send transactional communications, including receipts, access links, and critical system alerts.</li>
+              <li>To respond to customer support inquiries and provide technical assistance.</li>
+              <li>To enforce our Terms of Service, defend against fraudulent chargebacks, and protect platform security.</li>
             </ul>
           </section>
 
@@ -66,12 +67,12 @@ export default function PrivacyPage() {
               4. Data Sharing &amp; Third-Party Services
             </h2>
             <p>
-              **We do not sell, rent, or trade your personal information to third parties.** We only share data with trusted service providers necessary to operate the Service:
+              <strong>We do not sell, rent, or trade your personal information to third parties.</strong> We share data exclusively with trusted service providers necessary to operate the Service:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Payment Processors:</strong> We use Gumroad to handle transactions securely. This processor operates under its own strict security protocols and privacy policies.</li>
-              <li><strong>Hosting &amp; Infrastructure:</strong> Our servers and CDN services are hosted on secure modern clouds (like Vercel).</li>
-              <li><strong>Legal Compliance:</strong> We may disclose information if required to do so by law, or in response to valid requests by public authorities.</li>
+              <li><strong>Payment Processors:</strong> We use Gumroad to securely process payments. This provider adheres to strict industry security standards and its own privacy policy.</li>
+              <li><strong>Hosting &amp; Infrastructure:</strong> Our web services, APIs, and databases are hosted on secure modern cloud infrastructure (such as Vercel).</li>
+              <li><strong>Legal Compliance &amp; Protection:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities, or to defend against fraudulent chargeback attempts.</li>
             </ul>
           </section>
 

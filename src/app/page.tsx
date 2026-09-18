@@ -15,7 +15,6 @@ import {
   Calculator,
   TrendingUp,
   CheckCircle2,
-  GraduationCap,
   CalendarCheck,
   XCircle,
   X,
@@ -102,7 +101,7 @@ export default function Home() {
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What makes this the Best FIFA Sniping Bot for FC 26 & FC 27?",
+        "name": "What makes this the Best FIFA Sniping Bot for FC 27 & FC 26?",
         "acceptedAnswer": {
           "@type": "Answer",
           "text": "Our bot is designed as a native Chrome Extension that injects directly into the EA Web App. Running locally means your login credentials and session tokens never leave your computer, offering unmatched security and 20ms search speeds."
@@ -110,10 +109,10 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        "name": "Is there an FC 26 & FC 27 Autobuyer feature included?",
+        "name": "Is there an FC 27 & FC 26 Autobuyer feature included?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! We have already optimized our local autobuyer engine for future releases, ensuring your FC 26 and FC 27 Autobuyer capabilities are ready on day one directly within your browser extension."
+          "text": "Yes! We have already optimized our local autobuyer engine for the official launch, ensuring your FC 27 and FC 26 Autobuyer capabilities are ready on day one directly within your browser extension."
         }
       },
       {
@@ -134,18 +133,18 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        "name": "Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps?",
+        "name": "Does Elite FUT SNIPER support FC 27, FC 26, and FC 25 Web Apps?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across FC 25, FC 26, and upcoming FC 27. Our team continuously updates search filters and Web App adapters so your FC26 and FC27 snipe bot features stay operational on day one of every new season release."
+          "text": "Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across FC 27, FC 26, and FC 25. Our team continuously updates search filters and Web App adapters so your FC 27 and FC 26 snipe bot features stay operational on day one of every new season release."
         }
       },
       {
         "@type": "Question",
-        "name": "How does the EA FC 26 & FC 27 SBC Solver work?",
+        "name": "How does the EA FC 27 & FC 26 SBC Solver work?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Our EA FC 26 and FC 27 SBC Solver integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching."
+          "text": "Our EA FC 27 and FC 26 SBC Solver integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching."
         }
       },
       {
@@ -158,10 +157,10 @@ export default function Home() {
       },
       {
         "@type": "Question",
-        "name": "How do I claim Free Beta access for the FC 26 & FC 27 Sniping Bot?",
+        "name": "How do I claim Free Beta access for the FC 27 & FC 26 Sniping Bot?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first FC 26 and FC 27 Autobuyer filters."
+          "text": "Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first FC 27 and FC 26 Autobuyer filters."
         }
       }
     ]
@@ -214,7 +213,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-5 tracking-tight leading-tight text-white">
             The World&apos;s Fastest &amp; Safest <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_8px_rgba(204,255,0,0.35)]">
-              FC 26 &amp; FC 27
+              FC 27 &amp; FC 26
             </span> <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_8px_rgba(204,255,0,0.35)]">
               FUT SNIPING BOT
@@ -222,7 +221,7 @@ export default function Home() {
             Engineered by Elites.
           </h1>
           <p className="text-gray-400 text-base sm:text-lg max-w-xl mx-auto mb-7 leading-relaxed font-medium">
-            Elite FUT SNIPER is the world's fastest and safest EA FC 26 and FC 27 sniping bot and autobuyer. It operates as a 100% local Chrome extension running directly in your browser, enabling sub-20ms market search speeds while completely protecting your account from cloud-server bans.
+            Elite FUT SNIPER is the world&apos;s fastest and safest EA FC 27 sniping bot and autobuyer — fully compatible with FC 27 &amp; FC 26. It operates as a 100% local Chrome extension running directly in your browser, enabling sub-20ms market search speeds while completely protecting your account from cloud-server bans.
           </p>
           <div className="flex flex-col sm:flex-row gap-3.5 justify-center items-center mb-8">
             <Link className="group relative px-7 py-3.5 bg-primary text-dark font-black text-base rounded-xl transition-all hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.4)] overflow-hidden" href="#pricing">
@@ -328,7 +327,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Why We <span className="text-primary">Outperform</span> Everything.</h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed font-normal">
-              Elite FUT SNIPER outperforms competitor bots because it runs locally inside your browser rather than relying on external cloud servers. Developed by the legendary Bakers Bot Dev Team, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 26 &amp; FC 27 players in milliseconds without compromising account safety.
+              Elite FUT SNIPER outperforms competitor bots because it runs locally inside your browser rather than relying on external cloud servers. Developed by the legendary Bakers Bot Dev Team, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 27 &amp; FC 26 players in milliseconds without compromising account safety.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -681,7 +680,7 @@ export default function Home() {
                 </div>
                 <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
                   <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  One-Time Payment · 365 Days · FC 26 &amp; FC 27
+                  One-Time Payment · 365 Days · FC 27 &amp; FC 26
                 </div>
 
                 <div className="mt-5 rounded-xl border border-amber-400/30 bg-amber-400/[0.06] px-4 py-3.5">
@@ -1000,12 +999,12 @@ export default function Home() {
               FAQ &amp; SEARCH INSIGHTS
             </div>
             <h2 className="text-3xl md:text-5xl font-black mb-4">Frequently Asked <span className="text-primary">Questions</span></h2>
-            <p className="text-gray-400 max-w-3xl mx-auto">Find comprehensive answers about our FC 26 &amp; FC 27 sniping bot, autobuyer features, and security protocols below. Learn why our local Chrome extension architecture provides faster market search speeds, eliminates EA ban risks, and operates without ever requesting your Ultimate Team account passwords.</p>
+            <p className="text-gray-400 max-w-3xl mx-auto">Find comprehensive answers about our FC 27 &amp; FC 26 sniping bot, autobuyer features, and security protocols below. Learn why our local Chrome extension architecture provides faster market search speeds, eliminates EA ban risks, and operates without ever requesting your Ultimate Team account passwords.</p>
           </div>
           <div className="space-y-4">
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">What makes this the Best FIFA Sniping Bot for FC 26 &amp; FC 27?</span>
+                <span className="font-bold text-white">What makes this the Best FIFA Sniping Bot for FC 27 &amp; FC 26?</span>
                 <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
@@ -1014,11 +1013,11 @@ export default function Home() {
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">Is there an FC 26 &amp; FC 27 Autobuyer feature included?</span>
+                <span className="font-bold text-white">Is there an FC 27 &amp; FC 26 Autobuyer feature included?</span>
                 <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Yes! We have already optimized our local autobuyer engine for future releases, ensuring your <strong>FC 26 &amp; FC 27 Autobuyer</strong> capabilities are ready on day one directly within your browser extension.
+                Yes! We have already optimized our local autobuyer engine for the launch, ensuring your <strong>FC 27 &amp; FC 26 Autobuyer</strong> capabilities are ready on day one directly within your browser extension.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
@@ -1041,20 +1040,20 @@ export default function Home() {
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">Does Elite FUT SNIPER support FC 25, FC 26, and upcoming FC 27 Web Apps?</span>
+                <span className="font-bold text-white">Does Elite FUT SNIPER support FC 27, FC 26, and FC 25 Web Apps?</span>
                 <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across <strong>FC 25, FC 26, and upcoming FC 27</strong>. Our team continuously updates search filters and Web App adapters so your <strong>FC 26 &amp; FC 27 Autobuyer</strong> features stay operational on day one of every new season release.
+                Yes! Elite FUT SNIPER is engineered for total cross-title compatibility across <strong>FC 27, FC 26, and FC 25</strong>. Our team continuously updates search filters and Web App adapters so your <strong>FC 27 &amp; FC 26 Autobuyer</strong> features stay operational across every game update.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">How does the EA FC 26 &amp; FC 27 SBC Solver work?</span>
+                <span className="font-bold text-white">How does the EA FC 27 &amp; FC 26 SBC Solver work?</span>
                 <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Our <strong>EA FC 26 &amp; FC 27 SBC Solver</strong> integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching.
+                Our <strong>EA FC 27 &amp; FC 26 SBC Solver</strong> integration works directly within your browser session to automatically source and buy the cheapest players required for any Squad Building Challenge, saving you hours of manual searching.
               </div>
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
@@ -1068,11 +1067,11 @@ export default function Home() {
             </div>
             <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
               <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
-                <span className="font-bold text-white">How do I claim Free Beta access for the FC 26 &amp; FC 27 Sniping Bot?</span>
+                <span className="font-bold text-white">How do I claim Free Beta access for the FC 27 &amp; FC 26 Sniping Bot?</span>
                 <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
-                Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first <strong>FC 26 &amp; FC 27 Autobuyer</strong> filters.
+                Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first <strong>FC 27 &amp; FC 26 Autobuyer</strong> filters.
               </div>
             </div>
           </div>

@@ -207,14 +207,14 @@ export default function ContactPage() {
               </div>
             </div>
 
-            {/* Merchant Guarantee Notice */}
+            {/* Merchant Guarantee / Policy Notice */}
             <div className="p-6 rounded-2xl bg-white/[0.02] border border-white/10 space-y-2">
               <h2 className="text-xs font-headline font-bold text-white uppercase tracking-wider flex items-center gap-2">
                 <CheckCircle2 className="w-4 h-4 text-primary" />
-                7-Day Money-Back Guarantee
+                7-Day Free Trial Always Available
               </h2>
               <p className="text-xs text-gray-400 leading-relaxed">
-                If you wish to cancel or request a refund under our 7-day policy, please include your subscription email and reference ID.
+                Due to the digital nature of our SaaS tools, purchases are non-refundable. We invite you to explore all features using our full 7-day free trial before buying. For license help or inquiries, please include your registered email and reference ID.
               </p>
             </div>
           </div>

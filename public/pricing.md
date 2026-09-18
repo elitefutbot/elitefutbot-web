@@ -9,7 +9,7 @@
   - Humanization++ Anti-Ban Mode (Bézier mouse curves, randomized micro-jitter, 0 bans to date)
   - Futbin Live Price reference overlay
   - Chrome Side Panel HUD with Live Profit & Coin Tracking
-  - Full Cross-Title Support for EA Sports FC 26 & FC 27
+  - Full Cross-Title Support for EA Sports FC 27 & FC 26
 
 ## Pro Sniper Tier (365-Day Full Access)
 - Price: $19.99 One-Time Payment (365 Days Access, No Monthly Subscriptions)
@@ -20,7 +20,7 @@
   - Auto-List & Auto-Sell with 5% EA Tax Net Profit Calculation
   - Priority Discord VIP Member Access & Daily Sniping Filter Drops
   - Free Feature Updates (including upcoming AI SBC Solver Module)
-  - Continuous Forward-Compatible FC 27 Updates (Zero Upgrade Fees)
+  - Continuous Day-One FC 27 Updates & Full FC 26 Support (Zero Upgrade Fees)
 
 ## Affiliate & Creator Partner Program
 - Commission: 50% Standard Lifetime RevShare ($10.00 to $17.50+ per sale)

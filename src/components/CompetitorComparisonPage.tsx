@@ -280,7 +280,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
   // Generate fallback summary if not explicitly provided
   const summaryText =
     data.summaryPassage ||
-    `In a direct head-to-head comparison between ${data.competitorName} and Elite FUT SNIPER, Elite FUT SNIPER outperforms in search speed (< 20ms local execution), account privacy (zero password sharing), and anti-ban security with Humanization++ (0 transfer market bans to date). While ${data.competitorName} offers ${data.competitorType === "database" ? "card database metrics" : data.competitorType === "userscript" ? "UI quality-of-life shortcuts" : "trading automation"}, Elite FUT SNIPER is the superior autonomous sniping suite for EA FC 26 & FC 27.`;
+    `In a direct head-to-head comparison between ${data.competitorName} and Elite FUT SNIPER, Elite FUT SNIPER outperforms in search speed (< 20ms local execution), account privacy (zero password sharing), and anti-ban security with Humanization++ (0 transfer market bans to date). While ${data.competitorName} offers ${data.competitorType === "database" ? "card database metrics" : data.competitorType === "userscript" ? "UI quality-of-life shortcuts" : "trading automation"}, Elite FUT SNIPER is the superior autonomous sniping suite for EA FC 27 & FC 26.`;
 
   const schemaJsonLd = {
     "@context": "https://schema.org",
@@ -335,7 +335,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         operatingSystem: "Web, Windows, macOS, ChromeOS, Linux",
         image: "https://elitefutbot.com/og-image.png",
         description:
-          "The leading 100% local FC 26 & FC 27 sniping bot, autobuyer, and AI SBC solver Chrome extension with 0 bans to date.",
+          "The leading 100% local FC 27 & FC 26 sniping bot, autobuyer, and AI SBC solver Chrome extension with 0 bans to date.",
         brand: {
           "@type": "Brand",
           name: "Elite FUT SNIPER",
@@ -409,7 +409,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-widest font-mono shadow-[0_0_20px_rgba(16,185,129,0.15)]">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 animate-ping" />
-                FC 26 &amp; FC 27 Ready
+                FC 27 &amp; FC 26 Ready
               </div>
             </div>
 
@@ -1418,7 +1418,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               Ready to Leave {data.competitorName} Behind?
             </h2>
             <p className="relative text-gray-300 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-normal">
-              Join thousands of FUT traders using Elite FUT SNIPER — the only 100% local Chrome extension with &lt; 20ms sniping speeds, AI SBC solving, zero password sharing, and full day-one FC 26 &amp; FC 27 support.
+              Join thousands of FUT traders using Elite FUT SNIPER — the only 100% local Chrome extension with &lt; 20ms sniping speeds, AI SBC solving, zero password sharing, and full day-one FC 27 &amp; FC 26 support.
             </p>
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link
