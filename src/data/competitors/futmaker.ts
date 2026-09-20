@@ -240,9 +240,9 @@ export const futMakerData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Desktop Bot Overhead vs Browser Extension Performance", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Lightweight FUT Automation Best Practices", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Ultralight Sniping Specifications", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Desktop Bot Overhead vs Browser Extension Performance", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Lightweight FUT Automation Best Practices", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Ultralight Sniping Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

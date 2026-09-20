@@ -240,9 +240,9 @@ export const utSniperData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Linear vs Gaussian Jitter in Web App Automation", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Safe Sniping Practices & Anti-Ban Protocols", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Heuristic Anti-Detection Specifications", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Linear vs Gaussian Jitter in Web App Automation", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Safe Sniping Practices & Anti-Ban Protocols", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 Heuristic Anti-Detection Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

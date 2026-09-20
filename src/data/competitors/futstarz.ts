@@ -241,9 +241,9 @@ export const futStarzData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Remote Proxy Queuing vs Direct In-Browser Execution", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Session Token Security in Web Automation", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Sniping Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Remote Proxy Queuing vs Direct In-Browser Execution", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Session Token Security in Web Automation", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Sniping Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

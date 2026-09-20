@@ -45,6 +45,7 @@ next-env.d.ts
 /.lighthouse-reports/
 lh-*.json
 all-pages-audit-summary.json
+/scratch/
 
 .vercel
 .env*

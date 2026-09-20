@@ -240,9 +240,9 @@ export const futBotClubData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Community Server Telemetry vs Local Privacy Models", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "EA Anti-Cheat Cluster Tracking Mechanics", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Community Server Telemetry vs Local Privacy Models", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "EA Anti-Cheat Cluster Tracking Mechanics", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

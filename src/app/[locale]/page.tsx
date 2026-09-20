@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   PlayCircle,
@@ -31,6 +32,7 @@ import {
   SUPPORTED_LOCALES,
   isValidLocale,
   getLocaleData,
+  getHreflangAlternates,
 } from "@/data/locales";
 
 export function generateStaticParams() {
@@ -42,8 +44,8 @@ interface PageProps {
 }
 
 const PRICE_TIER = {
-  sold: 4,
-  threshold: 10,
+  sold: 88,
+  threshold: 100,
   currentPrice: 19.99,
   nextPrice: 29.99,
 };
@@ -70,22 +72,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidLocale(locale)) return {};
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   return {
-    title: dict.home.meta.title,
+    title: {
+      absolute: dict.home.meta.title.includes("Elite FUT SNIPER")
+        ? dict.home.meta.title
+        : `${dict.home.meta.title} | Elite FUT SNIPER`,
+    },
     description: dict.home.meta.description,
     keywords: dict.home.meta.keywords,
     alternates: {
       canonical: `${baseUrl}/${locale}`,
-      languages: {
-        "x-default": `${baseUrl}/`,
-        en: `${baseUrl}/`,
-        es: `${baseUrl}/es`,
-        pt: `${baseUrl}/pt`,
-        fr: `${baseUrl}/fr`,
-        de: `${baseUrl}/de`,
-      },
+      languages: getHreflangAlternates(""),
     },
     openGraph: {
       title: dict.home.meta.ogTitle,
@@ -118,7 +117,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
   }
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -127,6 +126,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}#software`,
         name: "Elite FUT SNIPER",
+        inLanguage: locale,
         operatingSystem: "Windows, macOS, ChromeOS",
         applicationCategory: "GameApplication",
         image: `${baseUrl}/og-image.png`,
@@ -185,6 +185,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}#faq`,
+        inLanguage: locale,
         mainEntity: dict.home.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -199,6 +200,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
 
   return (
     <>
+      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -266,10 +266,10 @@ export const futEarnData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Risks of Cloud-Based Autobuyers & Credential Sharing", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "EA Anti-Cheat & IP Detection Architecture", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "FC 27 Local Browser Bot Specifications", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
-    { label: "11 Core Sniping & AI SBC Solver Features", url: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features" },
+    { label: "Risks of Cloud-Based Autobuyers & Credential Sharing", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "EA Anti-Cheat & IP Detection Architecture", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "FC 27 Local Browser Bot Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "11 Core Sniping & AI SBC Solver Features", url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features" },
   ],
 
   comparisonRows: [

@@ -242,9 +242,9 @@ export const snipeSenseiData: CompetitorData = {
 
   citations: [
     { label: "Snipe Sensei Official Storefront Diagnostics", url: "https://snipesensei.com" },
-    { label: "FUT Bot Pricing Models & Total Cost Analysis", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Safe Extension Practices for EA Web App", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "FUT Bot Pricing Models & Total Cost Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Safe Extension Practices for EA Web App", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

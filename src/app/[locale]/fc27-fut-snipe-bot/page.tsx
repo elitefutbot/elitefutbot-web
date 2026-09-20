@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
+import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   PlayCircle,
@@ -34,6 +35,7 @@ import {
   SUPPORTED_LOCALES,
   isValidLocale,
   getLocaleData,
+  getHreflangAlternates,
 } from "@/data/locales";
 
 export function generateStaticParams() {
@@ -69,22 +71,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidLocale(locale)) return {};
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   return {
-    title: dict.snipeBot.meta.title,
+    title: {
+      absolute: dict.snipeBot.meta.title.includes("Elite FUT SNIPER")
+        ? dict.snipeBot.meta.title
+        : `${dict.snipeBot.meta.title} | Elite FUT SNIPER`,
+    },
     description: dict.snipeBot.meta.description,
     keywords: dict.snipeBot.meta.keywords,
     alternates: {
       canonical: `${baseUrl}/${locale}/fc27-fut-snipe-bot`,
-      languages: {
-        "x-default": `${baseUrl}/fc27-fut-snipe-bot`,
-        en: `${baseUrl}/fc27-fut-snipe-bot`,
-        es: `${baseUrl}/es/fc27-fut-snipe-bot`,
-        pt: `${baseUrl}/pt/fc27-fut-snipe-bot`,
-        fr: `${baseUrl}/fr/fc27-fut-snipe-bot`,
-        de: `${baseUrl}/de/fc27-fut-snipe-bot`,
-      },
+      languages: getHreflangAlternates("/fc27-fut-snipe-bot"),
     },
     openGraph: {
       title: dict.snipeBot.meta.ogTitle,
@@ -117,7 +116,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
   }
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -126,6 +125,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#software`,
         name: dict.snipeBot.meta.title,
+        inLanguage: locale,
         operatingSystem: "Windows, macOS, ChromeOS",
         applicationCategory: "GameApplication",
         image: `${baseUrl}/og-image.png`,
@@ -182,6 +182,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
         "@type": "HowTo",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#howto`,
         name: dict.snipeBot.howItWorks.title,
+        inLanguage: locale,
         description: dict.snipeBot.howItWorks.subtitle,
         step: dict.snipeBot.howItWorks.steps.map((s, idx) => ({
           "@type": "HowToStep",
@@ -193,6 +194,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#faq`,
+        inLanguage: locale,
         mainEntity: dict.snipeBot.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -207,6 +209,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
 
   return (
     <>
+      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

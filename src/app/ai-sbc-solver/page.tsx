@@ -5,11 +5,11 @@ import { LayoutGrid, Zap, Calculator, BookOpen, ArrowRight, CheckCircle2, Shield
 export const metadata: Metadata = {
   title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
   description: "The ultimate AI SBC Solver for EA Sports FC 27. Auto-fill any Squad Building Challenge in 3 seconds using your untradeable club players with full FC 27 & FC 26 support. Join the free beta!",
-  alternates: { canonical: "https://elitefutbot.com/ai-sbc-solver" },
+  alternates: { canonical: "https://www.elitefutbot.com/ai-sbc-solver" },
   openGraph: {
     title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
     description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first.",
-    url: "https://elitefutbot.com/ai-sbc-solver",
+    url: "https://www.elitefutbot.com/ai-sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
@@ -27,16 +27,16 @@ const jsonLd = {
       name: "Elite FUT SNIPER AI SBC Solver Engine",
       applicationCategory: "GameApplication",
       operatingSystem: "Windows, macOS, Chrome OS",
-      image: "https://elitefutbot.com/og-image.png",
+      image: "https://www.elitefutbot.com/og-image.png",
       brand: {
         "@type": "Brand",
         "name": "Elite FUT SNIPER"
       },
       description: "AI-powered Squad Building Challenge solver for EA Sports FC 27 and FC 26. Scans club inventory, computes 33/33 chemistry, and auto-submits.",
-      url: "https://elitefutbot.com/ai-sbc-solver",
+      url: "https://www.elitefutbot.com/ai-sbc-solver",
       offers: {
         "@type": "Offer",
-        url: "https://elitefutbot.com/ai-sbc-solver",
+        url: "https://www.elitefutbot.com/ai-sbc-solver",
         price: "0",
         priceCurrency: "USD",
         priceValidUntil: "2027-12-31",

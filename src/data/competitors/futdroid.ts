@@ -240,9 +240,9 @@ export const futDroidData: CompetitorData = {
 
   citations: [
     { label: "FUTDroid Chrome Web Store Listing (ID: bhgejomimkhkfilnpcdppnbhojdafjko)", url: "https://chromewebstore.google.com/detail/futdroid/bhgejomimkhkfilnpcdppnbhojdafjko" },
-    { label: "Active vs Abandoned Extension Security Audit", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Safe Extension Practices for EA Web App", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Active vs Abandoned Extension Security Audit", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Safe Extension Practices for EA Web App", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

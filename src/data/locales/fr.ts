@@ -191,9 +191,9 @@ export const frLocale: LocaleDictionary = {
         price: "19,99 €",
         originalPrice: "49,99 €",
         guarantee: "Paiement Unique · 365 Jours · FC 27 & FC 26",
-        spotsLeft: "6 Places Restantes à 19,99 €",
-        soldText: "4/10 vendus",
-        nextPrice: "29,99 €",
+        spotsLeft: "12 Places restantes à 19,99 €",
+        soldText: "88/100 vendus",
+        nextPrice: "Prochain prix : 29,99 €",
         featuresHeader: "Ce qui est inclus",
         features: [
           { text: "Logique Avancée de Sniping Sub-20ms" },

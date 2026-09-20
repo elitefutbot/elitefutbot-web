@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   ShieldCheck,
@@ -34,6 +35,7 @@ import {
   SUPPORTED_LOCALES,
   isValidLocale,
   getLocaleData,
+  getHreflangAlternates,
 } from "@/data/locales";
 
 export function generateStaticParams() {
@@ -70,22 +72,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidLocale(locale)) return {};
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   return {
-    title: dict.featuresPage.meta.title,
+    title: {
+      absolute: dict.featuresPage.meta.title.includes("Elite FUT SNIPER")
+        ? dict.featuresPage.meta.title
+        : `${dict.featuresPage.meta.title} | Elite FUT SNIPER`,
+    },
     description: dict.featuresPage.meta.description,
     keywords: dict.featuresPage.meta.keywords,
     alternates: {
       canonical: `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features`,
-      languages: {
-        "x-default": `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
-        en: `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
-        es: `${baseUrl}/es/fc27-fut-sniping-bot-autobuyer-features`,
-        pt: `${baseUrl}/pt/fc27-fut-sniping-bot-autobuyer-features`,
-        fr: `${baseUrl}/fr/fc27-fut-sniping-bot-autobuyer-features`,
-        de: `${baseUrl}/de/fc27-fut-sniping-bot-autobuyer-features`,
-      },
+      languages: getHreflangAlternates("/fc27-fut-sniping-bot-autobuyer-features"),
     },
     openGraph: {
       title: dict.featuresPage.meta.ogTitle,
@@ -118,7 +117,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
   }
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -127,6 +126,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#software`,
         name: dict.featuresPage.meta.title,
+        inLanguage: locale,
         operatingSystem: "Chrome OS, Windows, macOS, Linux",
         applicationCategory: "BrowserApplication",
         image: `${baseUrl}/og-image.png`,
@@ -154,6 +154,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
       {
         "@type": "ItemList",
         name: `Elite FUT SNIPER 11-Module Features Arsenal (${dict.locale.nativeName})`,
+        inLanguage: locale,
         itemListElement: dict.featuresPage.features.map((feat, idx) => ({
           "@type": "ListItem",
           position: idx + 1,
@@ -164,6 +165,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#faq`,
+        inLanguage: locale,
         mainEntity: dict.featuresPage.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -202,6 +204,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
 
   return (
     <div className="bg-dark text-white min-h-screen">
+      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

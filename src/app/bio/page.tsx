@@ -4,23 +4,24 @@ import Image from "next/image";
 import { CheckCircle2, Zap, ArrowRight, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Official Links & Socials | Elite FUT SNIPER",
+  title: "Official Links & Socials",
   description: "Claim free beta access to the #1 FC 26 sniping bot. Join our official Discord, follow on TikTok, Instagram, X/Twitter, and Telegram.",
   alternates: {
-    canonical: "https://elitefutbot.com/bio",
+    canonical: "https://www.elitefutbot.com/bio",
   },
   openGraph: {
-    title: "Official Links & Socials | Elite FUT SNIPER",
+    title: "Official Links & Socials",
     description: "Claim free beta access and connect with Elite FUT SNIPER on Discord, TikTok, Instagram, X, and Telegram.",
-    url: "https://elitefutbot.com/bio",
+    url: "https://www.elitefutbot.com/bio",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    title: "Official Links & Socials | Elite FUT SNIPER",
+    title: "Official Links & Socials",
     description: "Claim free beta access and join our official channels on TikTok, Instagram, X, and Discord.",
   }
 };
+
 
 export default function BioPage() {
   const featuredAction = {
@@ -133,14 +134,14 @@ export default function BioPage() {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     "name": "Elite FUT SNIPER Official Communities & Links",
-    "url": "https://elitefutbot.com/bio",
+    "url": "https://www.elitefutbot.com/bio",
     "description": "Official community channels, social media links, and tools for Elite FUT SNIPER - The #1 FC 26 & FC 27 Sniping Bot suite.",
     "mainEntity": {
       "@type": "Organization",
       "name": "Elite FUT SNIPER",
       "alternateName": "EliteFUTBot",
-      "url": "https://elitefutbot.com",
-      "image": "https://elitefutbot.com/logo-elite.png",
+      "url": "https://www.elitefutbot.com",
+      "image": "https://www.elitefutbot.com/logo-elite.png",
       "description": "The World's Fastest FC 26 & FC 27 Sniping Bot & Autobuyer Suite.",
       "sameAs": [
         "https://www.tiktok.com/@elitefutbotx",

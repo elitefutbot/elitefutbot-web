@@ -134,7 +134,17 @@ export default function ResetPasswordPage() {
           </span>
         </Link>
 
-        <Suspense fallback={null}>
+        <Suspense fallback={
+          <div className="glass-card p-8">
+            <h1 className="font-display text-3xl tracking-tight mb-1">
+              Reset Password
+            </h1>
+            <p className="text-sm text-gray-400 mb-6">
+              Choose a new password for your account.
+            </p>
+            <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin mx-auto" />
+          </div>
+        }>
           <ResetPasswordForm />
         </Suspense>
       </div>

@@ -240,9 +240,9 @@ export const futSnipingBot24Data: CompetitorData = {
   ],
 
   citations: [
-    { label: "Abandoned Forks vs Actively Maintained FUT Bots", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Web App API Security Changes from FC 24 to FC 27", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Abandoned Forks vs Actively Maintained FUT Bots", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Web App API Security Changes from FC 24 to FC 27", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

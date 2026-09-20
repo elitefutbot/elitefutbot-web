@@ -46,7 +46,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/api/', '/dashboard', '/forgot-password', '/reset-password'],
       }
     ],
-    sitemap: 'https://elitefutbot.com/sitemap.xml',
+    sitemap: 'https://www.elitefutbot.com/sitemap.xml',
   }
 }
 

@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "futcloud alternative",
     "zero ban fut sniper",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futcloud-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futcloud-vs-elitefutbot" },
   openGraph: {
     title: "FUTCloud vs Elite FUT SNIPER (2026 Review): Cloud Farm vs Local 20ms Bot",
     description:
       "FUTCloud vs Elite FUT SNIPER comparison. Real technical audit of cloud farming risks, EA credential sharing, datacenter IP bans, 250ms+ relay latency, and Elite's 100% local 20ms Chrome Side Panel bot.",
-    url: "https://elitefutbot.com/futcloud-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futcloud-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUTCloud vs Elite FUT SNIPER (2026 Review): Cloud Farm vs Local 20ms Bot",
     description:
       "FUTCloud vs Elite FUT SNIPER comparison. Real technical audit of cloud farming risks, EA credential sharing, datacenter IP bans, 250ms+ relay latency, and Elite's 100% local 20ms Chrome Side Panel bot.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

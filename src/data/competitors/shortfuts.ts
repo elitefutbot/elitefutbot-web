@@ -240,9 +240,9 @@ export const shortFutsData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Keyboard Hotkeys vs Autonomous Sniping Engines", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Ergonomics & Efficiency in High-Volume FUT Trading", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Keyboard Hotkeys vs Autonomous Sniping Engines", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Ergonomics & Efficiency in High-Volume FUT Trading", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

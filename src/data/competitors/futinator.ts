@@ -252,9 +252,9 @@ export const futinatorData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Futinator vs Next-Gen Bots Analysis", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Neural AI SBC Engine Architecture", url: "https://elitefutbot.com/ai-sbc-solver" },
-    { label: "FC 27 Day-One Extension Readiness", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Futinator vs Next-Gen Bots Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Neural AI SBC Engine Architecture", url: "https://www.elitefutbot.com/ai-sbc-solver" },
+    { label: "FC 27 Day-One Extension Readiness", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

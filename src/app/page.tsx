@@ -1,5 +1,7 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   PlayCircle,
@@ -29,18 +31,54 @@ import {
 // to real sale counts from Gumroad. Update these numbers manually until
 // that's automated (would need a Gumroad webhook feeding this from the backend).
 const PRICE_TIER = {
-  sold: 4,
-  threshold: 10,
+  sold: 88,
+  threshold: 100,
   currentPrice: 19.99,
   nextPrice: 29.99,
+};
+
+import { getHreflangAlternates } from "@/data/locales/registry";
+
+export const metadata: Metadata = {
+  title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Supported)",
+  description: "Dominate the EA Sports FC 27 transfer market with Elite FUT SNIPER. The world's fastest FC 27 FUT sniping bot and autobuyer, fully compatible with FC 27 & FC 26, featuring sub-20ms speeds and local anti-ban security.",
+  alternates: {
+    canonical: "https://www.elitefutbot.com/",
+    languages: getHreflangAlternates(""),
+  },
+  openGraph: {
+    title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Compatible)",
+    description: "World's fastest FC 27 FUT sniping bot and autobuyer, fully compatible with FC 27 & FC 26. Advanced anti-ban engine and cloud-based SBC solving.",
+    url: "https://www.elitefutbot.com/",
+    siteName: "Elite FUT SNIPER",
+    images: [
+      {
+        url: "https://www.elitefutbot.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Elite FUT SNIPER - #1 FC 27 Sniping Bot & Autobuyer (FC 26 Supported)",
+        type: "image/png",
+      }
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Supported)",
+    description: "Elite FC 27 FUT sniping bot and autobuyer, fully compatible with FC 27 & FC 26. Sub-20ms speeds and anti-ban engine.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
+    creator: "@FutSnipeBot",
+  },
 };
 
 export default function Home() {
   const reviewsJsonLd = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "@id": "https://elitefutbot.com/#software",
+    "@id": "https://www.elitefutbot.com/#software",
     "name": "Elite FUT SNIPER",
+    "inLanguage": "en",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
@@ -98,6 +136,7 @@ export default function Home() {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "inLanguage": "en",
     "mainEntity": [
       {
         "@type": "Question",
@@ -168,6 +207,7 @@ export default function Home() {
 
   return (
     <>
+      <SetDocumentLang lang="en" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -659,7 +699,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-400">
                   <X className="w-4 h-4 text-red-400/70 shrink-0" />
-                  <span>No Humanization++ Tech <span className="text-xs text-gray-500">(Pro Only)</span></span>
+                  <span>No Humanization++ Tech <span className="text-xs text-gray-400">(Pro Only)</span></span>
                 </li>
               </ul>
               <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">

@@ -240,9 +240,9 @@ export const fc26SnipingBotData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Multi-Season vs Title-Locked Bot Architecture", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "EA Sports FC 27 Early Access Sniping Protocols", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Technical Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Multi-Season vs Title-Locked Bot Architecture", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "EA Sports FC 27 Early Access Sniping Protocols", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 Technical Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

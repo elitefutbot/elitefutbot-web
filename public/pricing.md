@@ -12,7 +12,7 @@
   - Full Cross-Title Support for EA Sports FC 27 & FC 26
 
 ## Pro Sniper Tier (365-Day Full Access)
-- Price: $19.99 One-Time Payment (365 Days Access, No Monthly Subscriptions)
+- Price: $19.99 One-Time Payment (12 Spots Left at $19.99 · 88/100 sold · Next price: $29.99 · 365 Days Access, No Monthly Subscriptions)
 - Features:
   - All Free Trial features included
   - Unlimited Multi-Account & Multi-Tab local execution
@@ -37,4 +37,4 @@
 - Anti-Ban Protocol: Humanization++ Bézier Physics & Adaptive Gaussian Randomization
 
 ## Official Features Documentation
-- Feature Breakdown: https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features
+- Feature Breakdown: https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features

@@ -9,7 +9,7 @@ import { isAccountRoute } from "@/lib/accountRoutes";
 import { hasSession } from "@/lib/auth/authClient";
 import LanguageSelector from "@/components/LanguageSelector";
 
-import { SUPPORTED_LOCALES, isValidLocale, getLocaleData } from "@/data/locales";
+import { isValidLocale, getLocaleData } from "@/data/locales";
 
 // Moved out of app/layout.tsx (content below is otherwise unchanged) so
 // account routes (login/dashboard/etc.) can render their own chrome instead
@@ -62,7 +62,7 @@ export default function SiteNav() {
               Elite FUT <span className="text-primary">SNIPER</span>
             </span>
           </Link>
-          <div className="hidden md:flex items-center space-x-6 text-xs font-semibold text-gray-300">
+          <div className="hidden md:flex items-center gap-6 text-xs font-semibold text-gray-300">
             <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href={featuresHref}>{featuresLabel}</Link>
             <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href={pricingHref}>{pricingLabel}</Link>
             <Link className="hover:text-primary transition-colors py-2.5 px-3 rounded-lg hover:bg-white/5 inline-flex items-center min-h-[44px]" href={reviewsHref}>{reviewsLabel}</Link>

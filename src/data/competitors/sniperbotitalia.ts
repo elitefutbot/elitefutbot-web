@@ -241,9 +241,9 @@ export const sniperBotItaliaData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Universal vs Localized Script Automation in Ultimate Team", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Multi-Language Web App Architecture & Safety", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Global Sniping Bot Specifications", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Universal vs Localized Script Automation in Ultimate Team", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Multi-Language Web App Architecture & Safety", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Global Sniping Bot Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

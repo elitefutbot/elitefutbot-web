@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "ai sbc solver extension",
     "fut price database vs sniper",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futgg-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futgg-vs-elitefutbot" },
   openGraph: {
     title: "FUT.GG vs Elite FUT SNIPER (2026 Review): Passive Database vs 20ms Sniping Bot",
     description:
       "FUT.GG vs Elite FUT SNIPER comparison. Real audit of passive card database limits, community template price-fixing, manual alt-tab lag, and Elite's autonomous 20ms market sniper with AI SBC solver.",
-    url: "https://elitefutbot.com/futgg-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futgg-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUT.GG vs Elite FUT SNIPER (2026 Review): Passive Database vs 20ms Sniping Bot",
     description:
       "FUT.GG vs Elite FUT SNIPER comparison. Real audit of passive card database limits, community template price-fixing, manual alt-tab lag, and Elite's autonomous 20ms market sniper with AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

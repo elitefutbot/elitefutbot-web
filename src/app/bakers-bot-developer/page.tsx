@@ -7,11 +7,11 @@ import { Terminal, Network, Cpu, Laptop, Zap, Shield, Brain, Code2 } from 'lucid
 export const metadata: Metadata = {
   title: "Baker's Bot Developer Creates Elite FUT SNIPER",
   description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 & FC 26 sniping bot built from scratch.",
-  alternates: { canonical: "https://elitefutbot.com/bakers-bot-developer" },
+  alternates: { canonical: "https://www.elitefutbot.com/bakers-bot-developer" },
   openGraph: {
     title: "Baker's Bot Developer Creates Elite FUT SNIPER",
     description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 sniping bot with full FC 26 compatibility.",
-    url: "https://elitefutbot.com/bakers-bot-developer",
+    url: "https://www.elitefutbot.com/bakers-bot-developer",
     siteName: "Elite FUT SNIPER",
     type: "article",
   },

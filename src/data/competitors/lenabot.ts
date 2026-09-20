@@ -63,7 +63,7 @@ export const lenaBotData: CompetitorData = {
     headline: "Engineered for Club Preservation, Not Disposable Farms",
     badge: "Origin & Mission",
     text: "Commercial coin farms treat accounts as disposable commodities, burning through clubs with risky muling APIs. We built Elite FUT SNIPER for players who cherish their personal Ultimate Team clubs. Our sub-20ms WebSocket architecture, Humanization++ stealth suite, and neural AI SBC solver deliver elite market dominance directly within your browser without requiring server racks or risking your club's integrity.",
-    linkUrl: "https://elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/pricing",
     linkText: "Get Elite FUT SNIPER — $19.99/Year",
   },
 
@@ -265,7 +265,7 @@ export const lenaBotData: CompetitorData = {
   citations: [
     { label: "Sony PlayStation Remote Play Official Documentation", url: "https://remoteplay.dl.playstation.net/remoteplay/" },
     { label: "EA Sports Rules Against Coin Selling and Distribution", url: "https://help.ea.com/en/help/ea-sports-fc/transfer-market-rules-and-bans/" },
-    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://elitefutbot.com" },
+    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://www.elitefutbot.com" },
   ],
 
   comparisonRows: [

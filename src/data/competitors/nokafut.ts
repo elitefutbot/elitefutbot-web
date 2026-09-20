@@ -63,7 +63,7 @@ export const nokaFutData: CompetitorData = {
     headline: "Engineered for Autonomous Domination vs Assisted Manual Utility",
     badge: "Origin & Mission",
     text: "While NokaFut was created primarily as a manual assistant with keyboard shortcuts and calculators, Elite FUT SNIPER was engineered specifically as an autonomous, sub-20ms high-frequency trading engine. We spent 5+ years optimizing direct in-memory WebSocket protocols, Humanization++ stealth algorithms, and neural AI SBC solving to give competitive players an unassailable market advantage.",
-    linkUrl: "https://elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/pricing",
     linkText: "Get Elite FUT SNIPER — $19.99/Year",
   },
 
@@ -265,7 +265,7 @@ export const nokaFutData: CompetitorData = {
   citations: [
     { label: "Chrome Web Store NokaFut Listing", url: "https://chromewebstore.google.com/detail/noka-fut-fc-25/lphngfbnndkhdbmbgnlnhngihcpofkno" },
     { label: "EA Sports FC Transfer Market Safety Rules", url: "https://help.ea.com/en/help/ea-sports-fc/transfer-market-rules-and-bans/" },
-    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://elitefutbot.com" },
+    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://www.elitefutbot.com" },
   ],
 
   comparisonRows: [

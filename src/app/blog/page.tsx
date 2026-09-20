@@ -6,11 +6,11 @@ import { ArrowUpRight, Terminal, BarChart2, TrendingUp, Shield, Radio } from "lu
 export const metadata: Metadata = {
   title: "Tactical Intel Hub – FC 26 Trading Blog & News",
   description: "Get the latest market analysis, trading intel, and protocol updates for FC 26. Master the 59th minute with our expert trading guides.",
-  alternates: { canonical: "https://elitefutbot.com/blog" },
+  alternates: { canonical: "https://www.elitefutbot.com/blog" },
   openGraph: {
     title: "Tactical Intel Hub – FC 26 Trading Blog & News",
     description: "Get the latest market analysis, trading intel, and protocol updates for FC 26.",
-    url: "https://elitefutbot.com/blog",
+    url: "https://www.elitefutbot.com/blog",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },

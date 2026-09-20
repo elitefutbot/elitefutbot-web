@@ -187,9 +187,9 @@ export const deLocale: LocaleDictionary = {
         price: "19,99 €",
         originalPrice: "49,99 €",
         guarantee: "Einmalzahlung · 365 Tage · FC 27 & FC 26",
-        spotsLeft: "6 Plätze Übrig für 19,99 €",
-        soldText: "4/10 verkauft",
-        nextPrice: "29,99 €",
+        spotsLeft: "12 Plätze übrig für 19,99 €",
+        soldText: "88/100 verkauft",
+        nextPrice: "Nächster Preis: 29,99 €",
         featuresHeader: "Was enthalten ist",
         features: [
           { text: "Erweiterte Sub-20ms Sniping-Logik" },

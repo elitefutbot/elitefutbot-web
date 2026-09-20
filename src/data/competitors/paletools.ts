@@ -240,9 +240,9 @@ export const paleToolsData: CompetitorData = {
   ],
 
   citations: [
-    { label: "QoL UI Mods vs Autonomous Sniping Engines", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Paletools Workflow vs AI Automation", url: "https://elitefutbot.com/ai-sbc-solver" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "QoL UI Mods vs Autonomous Sniping Engines", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Paletools Workflow vs AI Automation", url: "https://www.elitefutbot.com/ai-sbc-solver" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

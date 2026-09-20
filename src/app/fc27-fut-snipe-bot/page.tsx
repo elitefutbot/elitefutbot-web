@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
+import SetDocumentLang from "@/components/SetDocumentLang";
+import { getHreflangAlternates } from "@/data/locales/registry";
 import {
   ArrowRight,
   PlayCircle,
@@ -55,25 +57,18 @@ export const metadata: Metadata = {
     "fut web app extension",
   ],
   alternates: {
-    canonical: "https://elitefutbot.com/fc27-fut-snipe-bot",
-    languages: {
-      "x-default": "https://elitefutbot.com/fc27-fut-snipe-bot",
-      en: "https://elitefutbot.com/fc27-fut-snipe-bot",
-      es: "https://elitefutbot.com/es/fc27-fut-snipe-bot",
-      pt: "https://elitefutbot.com/pt/fc27-fut-snipe-bot",
-      fr: "https://elitefutbot.com/fr/fc27-fut-snipe-bot",
-      de: "https://elitefutbot.com/de/fc27-fut-snipe-bot",
-    },
+    canonical: "https://www.elitefutbot.com/fc27-fut-snipe-bot",
+    languages: getHreflangAlternates("/fc27-fut-snipe-bot"),
   },
   openGraph: {
     title: "FC 27 Autobuyer & FUT Snipe Bot | Verified Working (Sep 17 FC 27 Update)",
     description:
       "Confirmed 100% working as of September 17 latest EA FC 27 Web App update. Sub-20ms transfer market autobuyer, 59th-minute sniping, 1-click AI SBC solver, and Humanization++ zero-ban protection.",
     type: "website",
-    url: "https://elitefutbot.com/fc27-fut-snipe-bot",
+    url: "https://www.elitefutbot.com/fc27-fut-snipe-bot",
     images: [
       {
-        url: "https://elitefutbot.com/og-image.png",
+        url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "FC 27 Autobuyer and FUT Snipe Bot Working Interface - Sep 17 Update",
@@ -85,7 +80,7 @@ export const metadata: Metadata = {
     title: "FC 27 Autobuyer & FUT Snipe Bot | Verified Working (Sep 17 FC 27 Update)",
     description:
       "Now fully compatible with EA Sports FC 27 Web App! Sub-20ms autobuyer, sniping bot, AI SBC solver, and zero password sharing.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 
@@ -398,13 +393,14 @@ export default function FC27FutSnipeBotPage() {
     "@graph": [
       {
         "@type": "SoftwareApplication",
-        "@id": "https://elitefutbot.com/fc27-fut-snipe-bot#software",
+        "@id": "https://www.elitefutbot.com/fc27-fut-snipe-bot#software",
         "name": "FC 27 Autobuyer & FUT Snipe Bot",
+        "inLanguage": "en",
         "operatingSystem": "Windows, macOS, ChromeOS",
         "applicationCategory": "GameApplication",
         "softwareVersion": "2.7.4 (Sep 17, 2026 EA FC 27 Web App Update)",
         "dateModified": "2026-09-17",
-        "image": "https://elitefutbot.com/og-image.png",
+        "image": "https://www.elitefutbot.com/og-image.png",
         "brand": {
           "@type": "Brand",
           "name": "Elite FUT SNIPER",
@@ -413,7 +409,7 @@ export default function FC27FutSnipeBotPage() {
           "Verified working as of September 17, 2026 for the EA FC 27 Web App update. The fastest, safest FC 27 autobuyer and FUT snipe bot Chrome extension with sub-20ms search speeds, Humanization++ anti-ban heuristics, automated mass bidding, and 1-click AI SBC solving.",
         "offers": {
           "@type": "Offer",
-          "url": "https://elitefutbot.com/fc27-fut-snipe-bot",
+          "url": "https://www.elitefutbot.com/fc27-fut-snipe-bot",
           "price": "19.99",
           "priceCurrency": "USD",
           "priceValidUntil": "2027-12-31",
@@ -433,26 +429,27 @@ export default function FC27FutSnipeBotPage() {
       },
       {
         "@type": "BreadcrumbList",
-        "@id": "https://elitefutbot.com/fc27-fut-snipe-bot#breadcrumb",
+        "@id": "https://www.elitefutbot.com/fc27-fut-snipe-bot#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://elitefutbot.com/",
+            "item": "https://www.elitefutbot.com/",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "FC 27 Autobuyer & FUT Snipe Bot",
-            "item": "https://elitefutbot.com/fc27-fut-snipe-bot",
+            "item": "https://www.elitefutbot.com/fc27-fut-snipe-bot",
           },
         ],
       },
       {
         "@type": "HowTo",
-        "@id": "https://elitefutbot.com/fc27-fut-snipe-bot#howto",
+        "@id": "https://www.elitefutbot.com/fc27-fut-snipe-bot#howto",
         "name": "How to Setup and Use the FC 27 Autobuyer on the EA FC 27 Web App",
+        "inLanguage": "en",
         "description":
           "Step-by-step tutorial to installing Elite FUT SNIPER Chrome extension and configuring automated transfer market autobuying and sniping on the EA FC 27 Web App.",
         "step": STEP_PROCESS.map((s, idx) => ({
@@ -464,7 +461,8 @@ export default function FC27FutSnipeBotPage() {
       },
       {
         "@type": "FAQPage",
-        "@id": "https://elitefutbot.com/fc27-fut-snipe-bot#faq",
+        "@id": "https://www.elitefutbot.com/fc27-fut-snipe-bot#faq",
+        "inLanguage": "en",
         "mainEntity": FAQS.map((faq) => ({
           "@type": "Question",
           "name": faq.q,
@@ -479,6 +477,7 @@ export default function FC27FutSnipeBotPage() {
 
   return (
     <>
+      <SetDocumentLang lang="en" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

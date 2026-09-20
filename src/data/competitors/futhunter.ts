@@ -238,9 +238,9 @@ export const futHunterData: CompetitorData = {
 
   citations: [
     { label: "FUT Hunter Store & Architecture Diagnostics", url: "https://www.futhunter.com/store/index.html" },
-    { label: "Account Farm vs Personal Bot Safety Analysis", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "EA Anti-Cheat Pattern Recognition Study", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "FC 27 Personal Sniping Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Account Farm vs Personal Bot Safety Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "EA Anti-Cheat Pattern Recognition Study", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "FC 27 Personal Sniping Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

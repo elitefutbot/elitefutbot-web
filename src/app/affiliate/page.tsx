@@ -2,20 +2,20 @@ import { Metadata } from "next";
 import AffiliatePageClient from "./AffiliatePageClient";
 
 export const metadata: Metadata = {
-  title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program | Elite FUT SNIPER",
+  title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
   description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the #1 FC 26 & FC 27 sniping bot & autobuyer. Instant Daily Payouts via Crypto USDT, PayPal & Bank Wire.",
   alternates: {
-    canonical: "https://elitefutbot.com/affiliate",
+    canonical: "https://www.elitefutbot.com/affiliate",
   },
   openGraph: {
-    title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program | Elite FUT SNIPER",
+    title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
     description: "Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the world's fastest FC 26 & FC 27 sniping bot. Instant Daily Payouts, 90-day cookies & special creator rates.",
-    url: "https://elitefutbot.com/affiliate",
+    url: "https://www.elitefutbot.com/affiliate",
     siteName: "Elite FUT SNIPER",
     type: "website",
     images: [
       {
-        url: "https://elitefutbot.com/og-image.png",
+        url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Elite FUT SNIPER Affiliate Program - Earn 50% Lifetime Commission",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
     description: "Earn $10 to $17.50+ per sale (50% Lifetime RevShare) promoting the #1 FC 26 & FC 27 Sniping Bot. Instant Daily Payouts & 90-day cookies.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   }
 };
 
@@ -77,13 +77,13 @@ export default function Page() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://elitefutbot.com/"
+            "item": "https://www.elitefutbot.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Affiliate Program",
-            "item": "https://elitefutbot.com/affiliate"
+            "item": "https://www.elitefutbot.com/affiliate"
           }
         ]
       },
@@ -94,7 +94,7 @@ export default function Page() {
         "provider": {
           "@type": "Organization",
           "name": "Elite FUT SNIPER",
-          "url": "https://elitefutbot.com"
+          "url": "https://www.elitefutbot.com"
         }
       },
       {
