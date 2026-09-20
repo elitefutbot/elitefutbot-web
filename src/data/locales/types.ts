@@ -183,6 +183,7 @@ export interface LocaleDictionary {
         badgeColor: string;
         img: string;
         alt: string;
+        quote?: string;
       }>;
       discordCta: string;
       githubCta: string;

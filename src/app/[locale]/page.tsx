@@ -154,6 +154,15 @@ export default async function LocalizedHomePage({ params }: PageProps) {
           bestRating: "5",
           worstRating: "1",
         },
+        review: dict.home.reviews.items
+          .filter((item) => item.quote)
+          .map((item) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: item.user },
+            reviewBody: item.quote,
+            reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+            datePublished: "2026-07-01",
+          })),
       },
       {
         "@type": "BreadcrumbList",
@@ -799,7 +808,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {dict.home.reviews.items.map((rev, idx) => (
-              <div
+              <figure
                 key={idx}
                 className={`relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col ${
                   idx === 6 ? "md:col-span-2 lg:col-span-1" : ""
@@ -825,7 +834,13 @@ export default async function LocalizedHomePage({ params }: PageProps) {
                     className="w-full h-auto rounded-xl"
                   />
                 </div>
-              </div>
+                {rev.quote && (
+                  <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                    <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;{rev.quote}&rdquo;</blockquote>
+                    <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— {rev.user}, Elite FUT SNIPER Discord</cite>
+                  </figcaption>
+                )}
+              </figure>
             ))}
           </div>
 

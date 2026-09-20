@@ -252,7 +252,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
               className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-bold text-sm uppercase tracking-widest rounded-xl hover:bg-white/10 transition-all flex items-center justify-center gap-2 hover:border-primary/40 group backdrop-blur-sm"
             >
               <PlayCircle className="w-4 h-4 text-primary group-hover:scale-110 transition-transform" />
-              <span>Watch Demo</span>
+              <span>{dict.snipeBot.hero.ctaSecondary}</span>
             </a>
             <Link
               href="#features-list"
@@ -290,12 +290,12 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
                   <div className="w-3 h-3 rounded-full bg-green-500/80" />
                   <span className="text-xs font-mono text-gray-400 ml-2">
-                    EA FC 27 Live Sniping &amp; Autobuyer HUD — Sep 17 Release
+                    {dict.snipeBot.hero.demoTitle}
                   </span>
                 </div>
                 <div className="flex items-center gap-1.5 text-xs text-primary font-bold font-mono">
                   <span className="w-2 h-2 rounded-full bg-primary animate-ping" />
-                  Video Walkthrough
+                  {dict.snipeBot.hero.demoBadge}
                 </div>
               </div>
               <div className="aspect-video w-full relative">
