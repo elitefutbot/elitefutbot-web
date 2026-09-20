@@ -9,7 +9,7 @@
   - Humanization++ Anti-Ban Mode (Bézier mouse curves, randomized micro-jitter, 0 bans to date)
   - Futbin Live Price reference overlay
   - Chrome Side Panel HUD with Live Profit & Coin Tracking
-  - Full Cross-Title Support for EA Sports FC 27 & FC 26
+  - Full Primary Support for active EA Sports FC 27 (with legacy FC 26 compatibility)
 
 ## Pro Sniper Tier (365-Day Full Access)
 - Price: $19.99 One-Time Payment (12 Spots Left at $19.99 · 88/100 sold · Next price: $29.99 · 365 Days Access, No Monthly Subscriptions)
@@ -19,8 +19,8 @@
   - Advanced Multi-Profile Filter Automation (Rating, Rarity, Position, League)
   - Auto-List & Auto-Sell with 5% EA Tax Net Profit Calculation
   - Priority Discord VIP Member Access & Daily Sniping Filter Drops
-  - Free Feature Updates (including upcoming AI SBC Solver Module)
-  - Continuous Day-One FC 27 Updates & Full FC 26 Support (Zero Upgrade Fees)
+  - Free Feature Updates (including integrated Neural AI SBC Solver Module)
+  - Continuous Day-One FC 27 Updates & Full Legacy FC 26 Support (Zero Upgrade Fees)
 
 ## Affiliate & Creator Partner Program
 - Commission: 50% Standard Lifetime RevShare ($10.00 to $17.50+ per sale)
@@ -33,7 +33,7 @@
 - Execution Model: 100% Local In-Browser (Home Residential IP, 0ms Datacenter Latency)
 - Dev Pedigree: Engineered by former developer of the legendary Baker's Bot
 - Password Requirement: Never Required (Zero Credential or Cookie Handover)
-- Compatibility: EA Sports FC 27, FC 26, and FC 25 Web App (Windows, Mac, Linux, ChromeOS)
+- Compatibility: Active EA Sports FC 27 Web App, plus legacy FC 26 and FC 25 (Windows, Mac, Linux, ChromeOS)
 - Anti-Ban Protocol: Humanization++ Bézier Physics & Adaptive Gaussian Randomization
 
 ## Official Features Documentation
