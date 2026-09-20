@@ -240,9 +240,9 @@ export const exeSniperData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Risks of Executable Binaries in Gaming Tools", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Chrome Manifest V3 Security Sandbox Standards", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Risks of Executable Binaries in Gaming Tools", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Chrome Manifest V3 Security Sandbox Standards", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

@@ -241,9 +241,9 @@ export const futMillionaireData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Desktop Autobuyer Evolution & Performance Review", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Monthly Subscription vs Lifetime FUT Tool Costs", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 In-Browser Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Desktop Autobuyer Evolution & Performance Review", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Monthly Subscription vs Lifetime FUT Tool Costs", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 In-Browser Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

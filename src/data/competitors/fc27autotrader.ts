@@ -63,7 +63,7 @@ export const fc27AutoTraderData: CompetitorData = {
     headline: "Battle-Tested Engineering vs Opportunistic New Extensions",
     badge: "Origin & Mission",
     text: "While generic developers release opportunistically named extensions to capture early game title searches, Elite FUT SNIPER was engineered over 5+ years of continuous market evolution. We developed our sub-20ms WebSocket core, Humanization++ stealth algorithms, and neural AI SBC solver to deliver enterprise-grade performance that protects your personal club across every single EA update.",
-    linkUrl: "https://elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/pricing",
     linkText: "Get Elite FUT SNIPER — $19.99/Year",
   },
 
@@ -265,7 +265,7 @@ export const fc27AutoTraderData: CompetitorData = {
   citations: [
     { label: "Chrome Web Store FC27 Auto Trader Listing", url: "https://chromewebstore.google.com/detail/fc27-auto-trader/kleleiocjfifnbklcnakkloaggahjanb" },
     { label: "EA Sports FC Transfer Market Safety Rules", url: "https://help.ea.com/en/help/ea-sports-fc/transfer-market-rules-and-bans/" },
-    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://elitefutbot.com" },
+    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://www.elitefutbot.com" },
   ],
 
   comparisonRows: [

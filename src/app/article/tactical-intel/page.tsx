@@ -5,11 +5,11 @@ import { BarChart2 } from "lucide-react";
 export const metadata: Metadata = {
   title: "59th Minute Sniping: FC 26 High-Frequency Protocol",
   description: "Learn elite sniping strategies for FC 26 & FC 27. Master the 59th minute algorithm patterns and predictive price drop anticipation.",
-  alternates: { canonical: "https://elitefutbot.com/article/tactical-intel" },
+  alternates: { canonical: "https://www.elitefutbot.com/article/tactical-intel" },
   openGraph: {
     title: "59th Minute Sniping: FC 26 High-Frequency Protocol",
     description: "Learn elite sniping strategies for FC 26 & FC 27. Mastering the 59th minute algorithm patterns.",
-    url: "https://elitefutbot.com/article/tactical-intel",
+    url: "https://www.elitefutbot.com/article/tactical-intel",
     siteName: "Elite FUT SNIPER",
     type: "article",
     publishedTime: "2026-07-28T08:00:00Z",
@@ -26,7 +26,7 @@ const jsonLd = {
   "@type": "Article",
   "headline": "How to Sniping 1M+ Coins Daily in FC 26 & FC 27",
   "description": "Learn elite sniping strategies for FC 26 & FC 27. Master the 59th minute algorithm patterns and predictive price drop anticipation.",
-  "image": "https://elitefutbot.com/og-image.png",
+  "image": "https://www.elitefutbot.com/og-image.png",
   "author": {
     "@type": "Organization",
     "name": "Elite FUT SNIPER"
@@ -36,7 +36,7 @@ const jsonLd = {
     "name": "Elite FUT SNIPER",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://elitefutbot.com/logo-elite.png"
+      "url": "https://www.elitefutbot.com/logo-elite.png"
     }
   },
   "datePublished": "2026-07-28T08:00:00Z",

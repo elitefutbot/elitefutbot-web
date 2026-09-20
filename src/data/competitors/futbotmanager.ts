@@ -253,9 +253,9 @@ export const futBotManagerData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Desktop App vs Browser Extension Analysis", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Cross-Platform FUT Sniping Guide", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Manifest V3 Extension Specs", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Desktop App vs Browser Extension Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Cross-Platform FUT Sniping Guide", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Manifest V3 Extension Specs", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

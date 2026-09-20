@@ -6,21 +6,21 @@ export const metadata: Metadata = {
   title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 50 Competitors",
   description: "Compare Elite FUT SNIPER against every major FUT sniping bot, autobuyer, and trading tool. Side-by-side speed, safety, and FC 27 feature breakdowns for 50 platforms.",
   alternates: {
-    canonical: "https://elitefutbot.com/tools/comparison-guide",
+    canonical: "https://www.elitefutbot.com/tools/comparison-guide",
   },
   openGraph: {
     title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 50 Competitors",
     description: "Compare Elite FUT SNIPER against every FUT bot and trading tool. Full breakdowns including speed, safety, and features.",
-    url: "https://elitefutbot.com/tools/comparison-guide",
+    url: "https://www.elitefutbot.com/tools/comparison-guide",
     siteName: "Elite FUT SNIPER",
     type: "website",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 50 Competitors",
     description: "Compare Elite FUT SNIPER against every FUT bot. Speed, safety, features — full side-by-side breakdowns.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 
@@ -32,13 +32,13 @@ export default function ComparisonGuidePage() {
         "@type": "CollectionPage",
         name: "FUT Bot Comparison Hub",
         description: "Comprehensive side-by-side comparisons of Elite FUT SNIPER against 50 automated trading tools and sniping extensions.",
-        url: "https://elitefutbot.com/tools/comparison-guide",
+        url: "https://www.elitefutbot.com/tools/comparison-guide",
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://elitefutbot.com/" },
-          { "@type": "ListItem", position: 2, name: "Compare", item: "https://elitefutbot.com/tools/comparison-guide" }
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.elitefutbot.com/" },
+          { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.elitefutbot.com/tools/comparison-guide" }
         ]
       },
       {
@@ -49,7 +49,7 @@ export default function ComparisonGuidePage() {
           "@type": "ListItem",
           position: idx + 1,
           name: `${comp.name} vs Elite FUT SNIPER`,
-          url: `https://elitefutbot.com/${comp.slug}`
+          url: `https://www.elitefutbot.com/${comp.slug}`
         }))
       }
     ]

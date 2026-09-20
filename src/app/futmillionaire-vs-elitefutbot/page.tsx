@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "best ea fc trading bot 2026",
     "in browser fut sniper",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futmillionaire-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futmillionaire-vs-elitefutbot" },
   openGraph: {
     title: "FUTMillionaire vs Elite FUT SNIPER (2026 Review): Desktop App vs 20ms Bot",
     description:
       "FUTMillionaire vs Elite FUT SNIPER comparison. Real technical audit of 850MB desktop software, $22.90/mo recurring fees, WebDriver lag (120ms+), and Elite's <40MB in-browser 20ms Chrome Side Panel with AI SBC solver.",
-    url: "https://elitefutbot.com/futmillionaire-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futmillionaire-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUTMillionaire vs Elite FUT SNIPER (2026 Review): Desktop App vs 20ms Bot",
     description:
       "FUTMillionaire vs Elite FUT SNIPER comparison. Real technical audit of 850MB desktop software, $22.90/mo recurring fees, WebDriver lag (120ms+), and Elite's <40MB in-browser 20ms Chrome Side Panel with AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

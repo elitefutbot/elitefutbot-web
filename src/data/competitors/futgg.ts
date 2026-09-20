@@ -241,9 +241,9 @@ export const futGgData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Passive Database vs Active Sniping Bot Comparison", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Transforming FUT Market Data into Automated Profit", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Passive Database vs Active Sniping Bot Comparison", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Transforming FUT Market Data into Automated Profit", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

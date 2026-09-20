@@ -240,9 +240,9 @@ export const futGenieData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Price Overlay Extensions vs Autonomous Sniping Bots", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Automated Profit Generation in Ultimate Team", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Price Overlay Extensions vs Autonomous Sniping Bots", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Automated Profit Generation in Ultimate Team", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

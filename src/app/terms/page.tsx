@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Elite FUT SNIPER",
+  title: "Terms of Service",
   description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 7-day free trial conditions.",
-  alternates: { canonical: "https://elitefutbot.com/terms" },
+  alternates: { canonical: "https://www.elitefutbot.com/terms" },
 };
 
 export default function TermsPage() {
@@ -27,7 +27,7 @@ export default function TermsPage() {
               1. Acceptance of Terms
             </h2>
             <p>
-              By accessing or using the Elite FUT SNIPER website (located at <a href="https://elitefutbot.com/" className="text-primary hover:underline underline">https://elitefutbot.com/</a>), services, browser helper overlays, and tools (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, do not access or use the Service.
+              By accessing or using the Elite FUT SNIPER website (located at <a href="https://www.elitefutbot.com/" className="text-primary hover:underline underline">https://www.elitefutbot.com/</a>), services, browser helper overlays, and tools (collectively, the &quot;Service&quot;), you agree to be bound by these Terms of Service. If you do not agree to all of these terms, do not access or use the Service.
             </p>
           </section>
 

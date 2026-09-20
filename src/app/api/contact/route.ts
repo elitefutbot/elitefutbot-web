@@ -60,8 +60,8 @@ export async function POST(req: Request) {
           headers: {
             "Content-Type": "application/json",
             Accept: "application/json",
-            Origin: "https://elitefutbot.com",
-            Referer: "https://elitefutbot.com/contact",
+            Origin: "https://www.elitefutbot.com",
+            Referer: "https://www.elitefutbot.com/contact",
           },
           body: JSON.stringify({
             name,
@@ -94,7 +94,7 @@ export async function POST(req: Request) {
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             username: "Support Ticket Bot",
-            avatar_url: "https://elitefutbot.com/logo-elite.png",
+            avatar_url: "https://www.elitefutbot.com/logo-elite.png",
             embeds: [
               {
                 title: `📩 New Support Inquiry: ${sanitizedSubject}`,

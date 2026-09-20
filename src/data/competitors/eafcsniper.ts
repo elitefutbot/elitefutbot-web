@@ -241,9 +241,9 @@ export const eafcSniperData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Seasonal Re-Buy vs Lifetime Sniping License Cost Audit", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "EAFC Sniping Bot Architecture & Performance Comparison", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Multi-Season Automation Specifications", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Seasonal Re-Buy vs Lifetime Sniping License Cost Audit", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "EAFC Sniping Bot Architecture & Performance Comparison", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "EA Sports FC 27 Multi-Season Automation Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

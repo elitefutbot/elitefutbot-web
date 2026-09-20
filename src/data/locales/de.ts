@@ -18,12 +18,12 @@ export const deLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "Elite FUT SNIPER – FC 26 & FC 27 Autobuyer & Sniping Bot auf Deutsch",
+      title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Kompatibel)",
       description:
-        "Beherrsche den Transfermarkt in EA FC 26 und FC 27. Der schnellste und sicherste deutsche FUT Autobuyer und Sniping Bot mit unter 20ms Geschwindigkeit und 0 Bans.",
+        "Beherrsche den Transfermarkt in EA FC 27 und FC 26. Der schnellste und sicherste deutsche FUT Autobuyer und Sniping Bot mit unter 20ms Geschwindigkeit und 0 Bans.",
       keywords:
         "fc 27 autobuyer deutsch, fut sniping bot fc 27, ea fc 27 trading bot, fifa 27 autobuyer, chrome erweiterung trading fc27, sbc löser ki deutsch",
-      ogTitle: "Elite FUT SNIPER – Der #1 FC 27 Autobuyer & Sniping Bot",
+      ogTitle: "Elite FUT SNIPER – Der #1 FC 27 Autobuyer & Sniping Bot (FC 26 Unterstützt)",
       ogDescription:
         "Erwirtschafte Millionen von Münzen in Ultimate Team mit unserer lokalen Chrome Erweiterung. Unter 20ms Reaktionszeit und 1-Klick KI SBC Löser.",
     },
@@ -36,11 +36,11 @@ export const deLocale: LocaleDictionary = {
     },
     hero: {
       titleLine1: "Der Weltweit Schnellste & Sicherste",
-      titleHighlight: "FC 26 & FC 27",
+      titleHighlight: "FC 27 & FC 26",
       titleHighlight2: "FUT SNIPING BOT",
       titleLine3: "Entwickelt von den Besten.",
       description:
-        "Elite FUT SNIPER ist der weltweit schnellste und sicherste EA FC 26 und FC 27 Sniping Bot und Autobuyer. Er läuft zu 100% lokal als Google Chrome Erweiterung direkt in deinem Browser, ermöglicht sub-20ms Suchgeschwindigkeiten und schützt deinen Account vollständig vor Cloud-Server-Banns.",
+        "Elite FUT SNIPER ist der weltweit schnellste und sicherste EA FC 27 Sniping Bot und Autobuyer — voll kompatibel mit FC 27 & FC 26. Er läuft zu 100% lokal als Google Chrome Erweiterung direkt in deinem Browser, ermöglicht sub-20ms Suchgeschwindigkeiten und schützt deinen Account vollständig vor Cloud-Server-Banns.",
       ctaPricing: "Preise & Pläne Ansehen",
       ctaDemo: "Live-Demo Ansehen",
       stats: {
@@ -169,14 +169,10 @@ export const deLocale: LocaleDictionary = {
         period: "/ 7 Tage",
         desc: "7 Tage begrenzter kostenloser Zugang. Perfekt zum Kennenlernen der Grundfunktionen des Snipings.",
         features: [
-          "7 Tage Begrenzter Kostenloser Zugang",
-          "Standard Sniping-Filter",
-          "1 Aktiver Account",
-          {
-            text: "Kostenlose Discord-Filter & Tipps",
-            subtext: "Tägliche kostenlose Low-Budget Filter und Tricks zum Münzenvermehren",
-          },
-          { text: "Multi-Tab Sniping", isNegative: true },
+          { text: "Basis Sniping-Funktionen" },
+          { text: "Bis zu 50 Snipes pro Tag" },
+          { text: "Futbin Basis-Preisanzeige" },
+          { text: "Discord Community Support" },
           {
             text: "Ohne Humanization++ Technologie",
             subtext: "(Nur in der Pro-Version)",
@@ -190,10 +186,10 @@ export const deLocale: LocaleDictionary = {
         title: "Pro Sniper",
         price: "19,99 €",
         originalPrice: "49,99 €",
-        guarantee: "Einmalzahlung · 365 Tage · FC 26 & FC 27",
-        spotsLeft: "6 Plätze Übrig für 19,99 €",
-        soldText: "4/10 verkauft",
-        nextPrice: "29,99 €",
+        guarantee: "Einmalzahlung · 365 Tage · FC 27 & FC 26",
+        spotsLeft: "12 Plätze übrig für 19,99 €",
+        soldText: "88/100 verkauft",
+        nextPrice: "Nächster Preis: 29,99 €",
         featuresHeader: "Was enthalten ist",
         features: [
           { text: "Erweiterte Sub-20ms Sniping-Logik" },
@@ -232,6 +228,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-amber-400",
           img: "/discord-review-1.png",
           alt: "Discord Bewertung von _mesirve_: Ihr macht das Leben der Leute schöner mit diesen FC26 Erweiterungen. 5 Sterne.",
+          quote: "Ihr erhellt das Leben der Leute, indem ihr diese Erweiterungen für FC26 entwickelt. 5 Sterne.",
         },
         {
           user: "Patrunjel Regele",
@@ -239,6 +236,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-emerald-400",
           img: "/discord-review-4.png",
           alt: "Discord Bewertung von Patrunjel Regele: Das Menü des Snipers ist großartig. Das Snipen funktioniert perfekt.",
+          quote: "Das Menü für den Sniper ist großartig, gefällt mir sehr. Das Snipen selbst funktioniert super.",
         },
         {
           user: "faresislol",
@@ -246,6 +244,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-amber-400",
           img: "/discord-review-2.png",
           alt: "Discord Bewertung von faresislol: Danke Bruder, ich gebe dir 5 Sterne.",
+          quote: "Alles klar, danke Bro, du bist der Beste, ich gebe dir eine 5-Sterne-Bewertung.",
         },
         {
           user: "astroa",
@@ -253,6 +252,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-primary",
           img: "/discord-review-3.png",
           alt: "Discord Bewertung von astroa: Ja, es ist wirklich sehr gut.",
+          quote: "Ja, es ist wirklich sehr gut.",
         },
         {
           user: "Phantom (GENO)",
@@ -260,6 +260,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-purple-300",
           img: "/discord-review-card.png",
           alt: "Discord Bewertung von Phantom: Es funktioniert, ich habe TOTS Yamal zweimal für 300k gesniped.",
+          quote: "Bro es funktioniert, ich habe TOTS YAMAL zweimal für 300k gesniped.",
         },
         {
           user: "Phantom (GENO)",
@@ -267,6 +268,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-amber-400",
           img: "/discord-review-5.png",
           alt: "Discord Bewertung von Phantom: Das ist der beste Bot, weil ich die schnellsten Münzen gemacht habe.",
+          quote: "Das ist der beste Bot, den ich nutze, weil ich am schnellsten Münzen gemacht habe.",
         },
         {
           user: "Phantom (GENO)",
@@ -274,6 +276,7 @@ export const deLocale: LocaleDictionary = {
           badgeColor: "text-emerald-400",
           img: "/discord-review-6.png",
           alt: "Münz-Beweis: Über 1 Million Münzen Kontostand mit 97er Lamine Yamal Karte.",
+          quote: "Kontostand über 1 Million Münzen mit 97er Yamal im Verein.",
         },
       ],
       discordCta: "Über 5.000 Tradern auf Discord Beitreten",
@@ -284,15 +287,15 @@ export const deLocale: LocaleDictionary = {
       title: "Häufig Gestellte",
       titleHighlight: "Fragen",
       subtitle:
-        "Finde Antworten zu unserem FC 26 & FC 27 Sniping Bot, Autobuyer-Funktionen und Sicherheitsmechanismen.",
+        "Finde Antworten zu unserem FC 27 & FC 26 Sniping Bot, Autobuyer-Funktionen und Sicherheitsmechanismen.",
       items: [
         {
-          q: "Was macht dies zum besten Sniping Bot für FC 26 & FC 27?",
+          q: "Was macht dies zum besten Sniping Bot für FC 27 & FC 26?",
           a: "Unser Bot ist eine native Chrome Erweiterung, die direkt in die EA Web App injiziert wird. Durch die 100% lokale Ausführung verlassen deine Zugangsdaten niemals deinen PC, was absolute Sicherheit und 20ms Geschwindigkeit garantiert.",
         },
         {
-          q: "Ist eine Autobuyer-Funktion für FC 26 & FC 27 enthalten?",
-          a: "Ja! Unsere Engine ist für alle kommenden Saisons optimiert, sodass deine Autobuyer-Tools ab Tag 1 einsatzbereit sind.",
+          q: "Ist eine Autobuyer-Funktion für FC 27 & FC 26 enthalten?",
+          a: "Ja! Wir haben unsere lokale Autobuyer-Engine bereits für den offiziellen Launch optimiert, damit deine FC 27 & FC 26 Autobuyer-Funktionen vom ersten Tag an direkt in deiner Browser-Erweiterung einsatzbereit sind.",
         },
         {
           q: "Was ist der Unterschied zwischen einem FUT Snipe Bot und einem Autobuyer?",
@@ -303,20 +306,20 @@ export const deLocale: LocaleDictionary = {
           a: "Cloud-Bots verlangen deine Passwörter auf fremden Servern mit hohem Bannrisiko. Unsere Erweiterung läuft lokal in deinem Browser mit Zufallspausen und Anti-Erkennungs-Algorithmen.",
         },
         {
-          q: "Unterstützt der Bot FC 25, FC 26 und FC 27 Web Apps?",
-          a: "Ja, Elite FUT SNIPER ist so aufgebaut, dass er über alle Generationen von EA Sports FC hinweg zuverlässig funktioniert.",
+          q: "Unterstützt Elite FUT SNIPER FC 27, FC 26 und FC 25 Web Apps?",
+          a: "Ja! Elite FUT SNIPER wurde für lückenlose titelübergreifende Kompatibilität für FC 27, FC 26 und FC 25 entwickelt. Unser Team aktualisiert Suchfilter und Web-App-Adapter kontinuierlich, damit deine FC 27 & FC 26 Autobuyer-Funktionen bei jedem Spielupdate voll einsatzbereit bleiben.",
         },
         {
-          q: "Wie funktioniert der KI SBC Löser?",
-          a: "Er berechnet mathematisch die günstigste Kartenkombination aus deinem Verein oder vom Transfermarkt und schließt Squad Building Challenges in Sekunden ab.",
+          q: "Wie funktioniert der EA FC 27 & FC 26 SBC Löser?",
+          a: "Unsere EA FC 27 & FC 26 SBC-Löser-Integration arbeitet direkt in deiner Browsersitzung, um automatisch die günstigsten Spieler für jede Squad Building Challenge zu finden und zu kaufen – das spart dir Stunden manueller Suche.",
         },
         {
           q: "Ist der Bot wirklich sicher vor EA Bannwellen?",
           a: "Sicherheit steht an erster Stelle. Dank lokaler Ausführung und Humanization++ mit echten Bézier-Kurven verzeichnen wir 0 Banns bis heute.",
         },
         {
-          q: "Wie erhalte ich kostenlosen Beta-Zugang?",
-          a: "Tritt einfach unserem offiziellen Discord bei! Wir vergeben kostenlose Beta-Plätze für frühe Community-Mitglieder.",
+          q: "Wie erhalte ich kostenlosen Beta-Zugang für den FC 27 & FC 26 Sniping Bot?",
+          a: "Tritt einfach unserer offiziellen Discord-Community bei! Wir bieten kostenlosen Lifetime-Beta-Zugang für Early Adopter. Nach dem Beitritt erhältst du Schritt-für-Schritt-Anleitungen zur Installation der Browser-Erweiterung und zur Konfiguration deiner ersten FC 27 & FC 26 Autobuyer-Filter.",
         },
       ],
     },
@@ -1047,8 +1050,8 @@ export const deLocale: LocaleDictionary = {
       title: "Häufig Gestellte Fragen",
       items: [
         {
-          q: "Was ist Elite FUT SNIPER und wie funktioniert es für FC 26 & FC 27?",
-          a: "Elite FUT SNIPER ist eine 100% lokale Chrome Erweiterung für EA FC 26 und FC 27. Sie injiziert sich in die Web App, um Filtersuche, 59. Minute Snipen und Relisten in sub-20ms auszuführen, ohne Daten extern zu speichern.",
+          q: "Was ist Elite FUT SNIPER und wie funktioniert es für FC 27 & FC 26?",
+          a: "Elite FUT SNIPER ist eine 100% lokale Chrome Erweiterung für EA FC 27 und FC 26. Sie injiziert sich in die Web App, um Filtersuche, 59. Minute Snipen und Relisten in sub-20ms auszuführen, ohne Daten extern zu speichern.",
         },
         {
           q: "Wie verhindert der Humanization++ Modus Banns in FC 27?",
@@ -1070,7 +1073,7 @@ export const deLocale: LocaleDictionary = {
     },
     cta: {
       title: "Bereit, den Markt in",
-      titleHighlight: "FC 26 & FC 27 zu Beherrschen?",
+      titleHighlight: "FC 27 & FC 26 zu Beherrschen?",
       subtitle:
         "Schließe dich tausenden Tradern an, die mit Elite FUT SNIPER wöchentlich Millionen von Münzen verdienen. Starte deine 7-tägige kostenlose Testphase noch heute.",
       button: "Kostenlose Testphase Starten",

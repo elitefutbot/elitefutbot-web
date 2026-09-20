@@ -240,9 +240,9 @@ export const easyFutWebData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Userscript vs Manifest V3 Extension Comparison", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Content Security Policy & Web Automation Standards", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Userscript vs Manifest V3 Extension Comparison", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Content Security Policy & Web Automation Standards", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

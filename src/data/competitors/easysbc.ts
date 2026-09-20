@@ -240,9 +240,9 @@ export const easySbcData: CompetitorData = {
   ],
 
   citations: [
-    { label: "AI SBC Solving vs Manual Blueprint Copying", url: "https://elitefutbot.com/ai-sbc-solver" },
-    { label: "Club Untradeable Fodder Optimization Math", url: "https://elitefutbot.com/sbc-solver" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "AI SBC Solving vs Manual Blueprint Copying", url: "https://www.elitefutbot.com/ai-sbc-solver" },
+    { label: "Club Untradeable Fodder Optimization Math", url: "https://www.elitefutbot.com/sbc-solver" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

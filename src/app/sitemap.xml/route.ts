@@ -13,144 +13,40 @@ interface SitemapEntry {
   };
 }
 
+import {
+  BASE_URL,
+  ACTIVE_LOCALES,
+  TRANSLATED_SUBPATHS,
+  getHreflangAlternates,
+  getLocaleUrl,
+} from '@/data/locales/registry';
+
 export async function GET() {
-  const baseUrl = 'https://elitefutbot.com';
+  const baseUrl = BASE_URL;
   const currentDate = new Date().toISOString();
 
-  const homeLanguages: Record<string, string> = {
-    'x-default': `${baseUrl}/`,
-    en: `${baseUrl}/`,
-    es: `${baseUrl}/es`,
-    pt: `${baseUrl}/pt`,
-    fr: `${baseUrl}/fr`,
-    de: `${baseUrl}/de`,
-  };
+  // Dynamically generate entries for the 3 translatable pages from the central registry
+  const localizedEntries: SitemapEntry[] = [];
 
-  const snipeBotLanguages: Record<string, string> = {
-    'x-default': `${baseUrl}/fc27-fut-snipe-bot`,
-    en: `${baseUrl}/fc27-fut-snipe-bot`,
-    es: `${baseUrl}/es/fc27-fut-snipe-bot`,
-    pt: `${baseUrl}/pt/fc27-fut-snipe-bot`,
-    fr: `${baseUrl}/fr/fc27-fut-snipe-bot`,
-    de: `${baseUrl}/de/fc27-fut-snipe-bot`,
-  };
+  for (const subpath of TRANSLATED_SUBPATHS) {
+    const alternates = getHreflangAlternates(subpath);
+    const isHome = subpath === '';
+    const changeFreq = isHome ? 'weekly' : 'daily';
+    const priority = isHome ? 1.0 : 0.95;
 
-  const featuresLanguages: Record<string, string> = {
-    'x-default': `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
-    en: `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
-    es: `${baseUrl}/es/fc27-fut-sniping-bot-autobuyer-features`,
-    pt: `${baseUrl}/pt/fc27-fut-sniping-bot-autobuyer-features`,
-    fr: `${baseUrl}/fr/fc27-fut-sniping-bot-autobuyer-features`,
-    de: `${baseUrl}/de/fc27-fut-sniping-bot-autobuyer-features`,
-  };
+    for (const locale of ACTIVE_LOCALES) {
+      localizedEntries.push({
+        url: getLocaleUrl(locale.prefix, subpath),
+        lastModified: currentDate,
+        changeFrequency: changeFreq,
+        priority: locale.isDefault ? priority : Math.min(priority, 0.95),
+        alternates: { languages: alternates },
+      });
+    }
+  }
 
   const entries: SitemapEntry[] = [
-    {
-      url: `${baseUrl}/`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 1.0,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: `${baseUrl}/fc27-fut-snipe-bot`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: snipeBotLanguages },
-    },
-    {
-      url: `${baseUrl}/fc27-fut-sniping-bot-autobuyer-features`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: featuresLanguages },
-    },
-    // Localized Tier-1 Pages (Spanish, Portuguese, French, German)
-    {
-      url: `${baseUrl}/es`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.95,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: `${baseUrl}/es/fc27-fut-snipe-bot`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: snipeBotLanguages },
-    },
-    {
-      url: `${baseUrl}/es/fc27-fut-sniping-bot-autobuyer-features`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: featuresLanguages },
-    },
-    {
-      url: `${baseUrl}/pt`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.95,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: `${baseUrl}/pt/fc27-fut-snipe-bot`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: snipeBotLanguages },
-    },
-    {
-      url: `${baseUrl}/pt/fc27-fut-sniping-bot-autobuyer-features`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: featuresLanguages },
-    },
-    {
-      url: `${baseUrl}/fr`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.95,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: `${baseUrl}/fr/fc27-fut-snipe-bot`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: snipeBotLanguages },
-    },
-    {
-      url: `${baseUrl}/fr/fc27-fut-sniping-bot-autobuyer-features`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: featuresLanguages },
-    },
-    {
-      url: `${baseUrl}/de`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.95,
-      alternates: { languages: homeLanguages },
-    },
-    {
-      url: `${baseUrl}/de/fc27-fut-snipe-bot`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: snipeBotLanguages },
-    },
-    {
-      url: `${baseUrl}/de/fc27-fut-sniping-bot-autobuyer-features`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.95,
-      alternates: { languages: featuresLanguages },
-    },
+    ...localizedEntries,
     {
       url: `${baseUrl}/sbc-solver`,
       lastModified: currentDate,

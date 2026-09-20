@@ -63,7 +63,7 @@ export const futAutoBuyerData: CompetitorData = {
     headline: "Professional Software Engineering vs Abandoned Macro Scripts",
     badge: "Origin & Mission",
     text: "FUT Auto Buyer exists primarily as a search engine landing page distributing legacy macro scripts. Elite FUT SNIPER is actively maintained by full-time software engineers and competitive Ultimate Team traders. We continuously update our decoupled Manifest V3 engine, refine our neural AI SBC solver, and benchmark anti-ban telemetry to deliver the safest and fastest trading tool on the market.",
-    linkUrl: "https://elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/pricing",
     linkText: "Get Elite FUT SNIPER — $19.99/Year",
   },
 
@@ -265,7 +265,7 @@ export const futAutoBuyerData: CompetitorData = {
   citations: [
     { label: "Chrome Extension Security Documentation", url: "https://developer.chrome.com/docs/extensions/mv3/" },
     { label: "EA Sports FC Transfer Market Safety Rules", url: "https://help.ea.com/en/help/ea-sports-fc/transfer-market-rules-and-bans/" },
-    { label: "Elite FUT SNIPER Engine Benchmarks", url: "https://elitefutbot.com" },
+    { label: "Elite FUT SNIPER Engine Benchmarks", url: "https://www.elitefutbot.com" },
   ],
 
   comparisonRows: [

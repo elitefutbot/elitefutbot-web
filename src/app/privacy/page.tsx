@@ -2,9 +2,9 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Elite FUT SNIPER",
+  title: "Privacy Policy",
   description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 7-day trial eligibility data, and transaction records.",
-  alternates: { canonical: "https://elitefutbot.com/privacy" },
+  alternates: { canonical: "https://www.elitefutbot.com/privacy" },
 };
 
 export default function PrivacyPage() {
@@ -27,7 +27,7 @@ export default function PrivacyPage() {
               1. Introduction
             </h2>
             <p>
-              At Elite FUT SNIPER (accessible via <a href="https://elitefutbot.com/" className="text-primary underline hover:underline">https://elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
+              At Elite FUT SNIPER (accessible via <a href="https://www.elitefutbot.com/" className="text-primary underline hover:underline">https://www.elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
             </p>
           </section>
 

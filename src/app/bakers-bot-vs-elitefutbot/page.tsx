@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "fut autobuyer",
     "ai sbc solver",
   ],
-  alternates: { canonical: "https://elitefutbot.com/bakers-bot-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/bakers-bot-vs-elitefutbot" },
   openGraph: {
     title: "Baker's Bot vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
     description:
       "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 26 & FC 27.",
-    url: "https://elitefutbot.com/bakers-bot-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/bakers-bot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Baker's Bot vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
     description:
       "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

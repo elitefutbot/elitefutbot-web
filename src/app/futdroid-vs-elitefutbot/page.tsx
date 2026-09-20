@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "ea fc 27 autobuyer",
     "futdroid download",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futdroid-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futdroid-vs-elitefutbot" },
   openGraph: {
     title: "FUTDroid vs Elite FUT SNIPER (2026 Review): Abandoned 66-User Script & Speed",
     description:
       "FUTDroid vs Elite FUT SNIPER comparison. Real audit of FUTDroid's v3.6.5 stagnation since October 2024, 66 users, data collection disclosures, and sub-20ms verified Chrome Side Panel HUD for EA FC 26 & FC 27.",
-    url: "https://elitefutbot.com/futdroid-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futdroid-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUTDroid vs Elite FUT SNIPER (2026 Review): Abandoned 66-User Script & Speed",
     description:
       "FUTDroid vs Elite FUT SNIPER comparison. Real audit of FUTDroid's v3.6.5 stagnation since October 2024, 66 users, data collection disclosures, and sub-20ms verified Chrome Side Panel HUD for EA FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

@@ -20,22 +20,22 @@ export const metadata: Metadata = {
     "ai sbc solver",
     "fut sniping bot 0 ban",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futsnipingbot-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futsnipingbot-vs-elitefutbot" },
   openGraph: {
     title: "FUT Sniping Bot vs Elite FUT SNIPER (2026 Review): Coin Selling Risks, Ban Telemetry & Speed",
     description:
       "Honest FUT Sniping Bot vs Elite FUT SNIPER review. Real data on futsnipingbot.com U7Buy coin selling ban hazards, seasonal rebuy fees, 7-day account locks, and sub-20ms sniping for FC 26 & FC 27.",
-    url: "https://elitefutbot.com/futsnipingbot-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futsnipingbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUT Sniping Bot vs Elite FUT SNIPER (2026 Review): Coin Selling Risks, Ban Telemetry & Speed",
     description:
       "Honest FUT Sniping Bot vs Elite FUT SNIPER review. Real data on futsnipingbot.com U7Buy coin selling ban hazards, seasonal rebuy fees, 7-day account locks, and sub-20ms sniping for FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

@@ -240,9 +240,9 @@ export const futSniperWebData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Web Portal Latency in High-Frequency Trading", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Cloud Proxies vs Native In-Browser Extensions", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Web Portal Latency in High-Frequency Trading", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Cloud Proxies vs Native In-Browser Extensions", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

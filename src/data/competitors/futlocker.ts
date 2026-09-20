@@ -239,10 +239,10 @@ export const futLockerData: CompetitorData = {
   ],
 
   citations: [
-    { label: "FUT Trading Signals vs Automated Execution Analysis", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Latency Impact on High-Value 59th-Minute Snipes", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
-    { label: "Heuristic Anti-Cheat & Cloud Bot IP Blacklists", url: "https://elitefutbot.com/bakers-bot-developer" },
+    { label: "FUT Trading Signals vs Automated Execution Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Latency Impact on High-Value 59th-Minute Snipes", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Heuristic Anti-Cheat & Cloud Bot IP Blacklists", url: "https://www.elitefutbot.com/bakers-bot-developer" },
   ],
 
   comparisonRows: [

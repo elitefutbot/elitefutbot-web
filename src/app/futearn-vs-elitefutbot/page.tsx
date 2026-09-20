@@ -21,22 +21,22 @@ export const metadata: Metadata = {
     "ai sbc solver",
     "fut sniping bot 0 ban",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futearn-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futearn-vs-elitefutbot" },
   openGraph: {
     title: "FUTEarn vs Elite FUT SNIPER (2026 Review): Cloud Bot Ban Risks, 50% Profit Cut & Speed",
     description:
       "Honest FUTEarn vs Elite FUT SNIPER review. Real data on cloud password risks, 50% profit tax, datacenter IP bans, and sub-20ms local sniping for FC 26 & FC 27.",
-    url: "https://elitefutbot.com/futearn-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futearn-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUTEarn vs Elite FUT SNIPER (2026 Review): Cloud Bot Ban Risks, 50% Profit Cut & Speed",
     description:
       "Honest FUTEarn vs Elite FUT SNIPER review. Real data on cloud password risks, 50% profit tax, datacenter IP bans, and sub-20ms local sniping for FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

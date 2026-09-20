@@ -222,10 +222,10 @@ export const bakersBotData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Origin Story & Engineering History (Former Baker's Bot Dev)", url: "https://elitefutbot.com/bakers-bot-developer" },
-    { label: "Complete 11-Module Features Arsenal", url: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features" },
-    { label: "EA Sports FC 27 Engine Specifications", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
-    { label: "Humanization++ Anti-Ban Technical Architecture", url: "https://elitefutbot.com/#features" },
+    { label: "Origin Story & Engineering History (Former Baker's Bot Dev)", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "Complete 11-Module Features Arsenal", url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features" },
+    { label: "EA Sports FC 27 Engine Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Humanization++ Anti-Ban Technical Architecture", url: "https://www.elitefutbot.com/#features" },
   ],
 
   // 12 Rows — ALL 12 WON BY ELITE FUT SNIPER (100% Dominance, Zero Ties, Zero Competitor Wins)

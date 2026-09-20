@@ -297,34 +297,34 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         "@type": "Article",
         headline: `${data?.competitorName || "Competitor"} vs Elite FUT SNIPER – Honest Comparison & Review`,
         description: data?.verdict || "",
-        image: "https://elitefutbot.com/og-image.png",
+        image: "https://www.elitefutbot.com/og-image.png",
         datePublished: data?.publishedDate || "2026-08-01",
         dateModified: data?.modifiedDate || "2026-08-30",
         citation: citations.map((cite) => cite.url),
         author: {
           "@type": "Person",
           name: "Elite FUT SNIPER Engineering Team",
-          url: "https://elitefutbot.com/bakers-bot-developer",
+          url: "https://www.elitefutbot.com/bakers-bot-developer",
         },
         publisher: {
           "@type": "Organization",
           name: "Elite FUT SNIPER",
           logo: {
             "@type": "ImageObject",
-            url: "https://elitefutbot.com/logo-elite.png",
+            url: "https://www.elitefutbot.com/logo-elite.png",
           },
         },
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://elitefutbot.com/" },
-          { "@type": "ListItem", position: 2, name: "Compare", item: "https://elitefutbot.com/tools/comparison-guide" },
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.elitefutbot.com/" },
+          { "@type": "ListItem", position: 2, name: "Compare", item: "https://www.elitefutbot.com/tools/comparison-guide" },
           {
             "@type": "ListItem",
             position: 3,
             name: `${data.competitorName} vs Elite FUT SNIPER`,
-            item: `https://elitefutbot.com/${data.slug}`,
+            item: `https://www.elitefutbot.com/${data.slug}`,
           },
         ],
       },
@@ -333,7 +333,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         name: "Elite FUT SNIPER",
         applicationCategory: "BrowserApplication",
         operatingSystem: "Web, Windows, macOS, ChromeOS, Linux",
-        image: "https://elitefutbot.com/og-image.png",
+        image: "https://www.elitefutbot.com/og-image.png",
         description:
           "The leading 100% local FC 27 & FC 26 sniping bot, autobuyer, and AI SBC solver Chrome extension with 0 bans to date.",
         brand: {
@@ -342,7 +342,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         },
         offers: {
           "@type": "Offer",
-          url: "https://elitefutbot.com/#pricing",
+          url: "https://www.elitefutbot.com/#pricing",
           price: "19.99",
           priceCurrency: "USD",
           priceValidUntil: "2027-12-31",
@@ -358,8 +358,8 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
       },
       {
         "@type": "WebPage",
-        "@id": `https://elitefutbot.com/${data.slug}`,
-        url: `https://elitefutbot.com/${data.slug}`,
+        "@id": `https://www.elitefutbot.com/${data.slug}`,
+        url: `https://www.elitefutbot.com/${data.slug}`,
         name: `${data.competitorName} vs Elite FUT SNIPER`,
         speakable: {
           "@type": "SpeakableSpecification",
@@ -467,9 +467,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                       <Cpu className="w-3 h-3" />
                       <span>{data.developerOriginNote.badge}</span>
                     </div>
-                    <h3 className="text-base sm:text-lg font-black text-white font-headline uppercase tracking-tight">
+                    <h2 className="text-base sm:text-lg font-black text-white font-headline uppercase tracking-tight">
                       {data.developerOriginNote.headline}
-                    </h3>
+                    </h2>
                     <p className="text-xs sm:text-sm text-gray-300 font-normal leading-relaxed max-w-3xl">
                       {data.developerOriginNote.text}
                     </p>
@@ -1168,7 +1168,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </div>
               <Link
                 href="/fc27-fut-sniping-bot-autobuyer-features"
-                aria-label="Explore all 11 EA FC 27 sniping bot and autobuyer features"
+                aria-label="Explore 11 Features – All EA FC 27 sniping bot and autobuyer features"
                 className="shrink-0 px-6 py-3 rounded-xl bg-primary text-black font-black text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_20px_rgba(204,255,0,0.25)] flex items-center gap-2"
               >
                 Explore 11 Features
@@ -1423,7 +1423,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link
                 href="/register"
-                aria-label="Start your 7-day free trial of Elite FUT SNIPER"
+                aria-label="Start Free 7-Day Trial of Elite FUT SNIPER"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)] inline-flex items-center justify-center gap-2"
               >
                 Start Free 7-Day Trial
@@ -1431,7 +1431,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               </Link>
               <Link
                 href="/#pricing"
-                aria-label="View Elite FUT SNIPER pricing plans"
+                aria-label="View Pricing Plans for Elite FUT SNIPER"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white/10 text-white font-bold text-sm uppercase tracking-wider hover:bg-white/20 transition-all"
               >
                 View Pricing Plans

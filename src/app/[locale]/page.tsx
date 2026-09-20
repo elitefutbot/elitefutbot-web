@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
+import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   PlayCircle,
@@ -31,6 +32,7 @@ import {
   SUPPORTED_LOCALES,
   isValidLocale,
   getLocaleData,
+  getHreflangAlternates,
 } from "@/data/locales";
 
 export function generateStaticParams() {
@@ -42,8 +44,8 @@ interface PageProps {
 }
 
 const PRICE_TIER = {
-  sold: 4,
-  threshold: 10,
+  sold: 88,
+  threshold: 100,
   currentPrice: 19.99,
   nextPrice: 29.99,
 };
@@ -70,22 +72,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!isValidLocale(locale)) return {};
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   return {
-    title: dict.home.meta.title,
+    title: {
+      absolute: dict.home.meta.title.includes("Elite FUT SNIPER")
+        ? dict.home.meta.title
+        : `${dict.home.meta.title} | Elite FUT SNIPER`,
+    },
     description: dict.home.meta.description,
     keywords: dict.home.meta.keywords,
     alternates: {
       canonical: `${baseUrl}/${locale}`,
-      languages: {
-        "x-default": `${baseUrl}/`,
-        en: `${baseUrl}/`,
-        es: `${baseUrl}/es`,
-        pt: `${baseUrl}/pt`,
-        fr: `${baseUrl}/fr`,
-        de: `${baseUrl}/de`,
-      },
+      languages: getHreflangAlternates(""),
     },
     openGraph: {
       title: dict.home.meta.ogTitle,
@@ -118,7 +117,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
   }
 
   const dict = getLocaleData(locale);
-  const baseUrl = "https://elitefutbot.com";
+  const baseUrl = "https://www.elitefutbot.com";
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -127,6 +126,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}#software`,
         name: "Elite FUT SNIPER",
+        inLanguage: locale,
         operatingSystem: "Windows, macOS, ChromeOS",
         applicationCategory: "GameApplication",
         image: `${baseUrl}/og-image.png`,
@@ -154,6 +154,15 @@ export default async function LocalizedHomePage({ params }: PageProps) {
           bestRating: "5",
           worstRating: "1",
         },
+        review: dict.home.reviews.items
+          .filter((item) => item.quote)
+          .map((item) => ({
+            "@type": "Review",
+            author: { "@type": "Person", name: item.user },
+            reviewBody: item.quote,
+            reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
+            datePublished: "2026-07-01",
+          })),
       },
       {
         "@type": "BreadcrumbList",
@@ -176,6 +185,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}#faq`,
+        inLanguage: locale,
         mainEntity: dict.home.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -190,6 +200,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
 
   return (
     <>
+      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -799,7 +810,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {dict.home.reviews.items.map((rev, idx) => (
-              <div
+              <figure
                 key={idx}
                 className={`relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col ${
                   idx === 6 ? "md:col-span-2 lg:col-span-1" : ""
@@ -825,7 +836,13 @@ export default async function LocalizedHomePage({ params }: PageProps) {
                     className="w-full h-auto rounded-xl"
                   />
                 </div>
-              </div>
+                {rev.quote && (
+                  <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                    <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;{rev.quote}&rdquo;</blockquote>
+                    <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— {rev.user}, Elite FUT SNIPER Discord</cite>
+                  </figcaption>
+                )}
+              </figure>
             ))}
           </div>
 

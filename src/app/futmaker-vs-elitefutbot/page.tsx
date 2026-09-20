@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "fut maker ban risk",
     "best ea fc sniping bot 2026",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futmaker-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futmaker-vs-elitefutbot" },
   openGraph: {
     title: "FUT Maker vs Elite FUT SNIPER (2026 Review): Desktop Client vs Chrome Extension",
     description:
       "FUT Maker vs Elite FUT SNIPER comparison. Real audit of heavy 1.2GB RAM Electron desktop bloat, high 100ms+ latency, Windows-only locks, and Elite's ultralight 20ms Chrome Side Panel with AI SBC solver.",
-    url: "https://elitefutbot.com/futmaker-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futmaker-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUT Maker vs Elite FUT SNIPER (2026 Review): Desktop Client vs Chrome Extension",
     description:
       "FUT Maker vs Elite FUT SNIPER comparison. Real audit of heavy 1.2GB RAM Electron desktop bloat, high 100ms+ latency, Windows-only locks, and Elite's ultralight 20ms Chrome Side Panel with AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

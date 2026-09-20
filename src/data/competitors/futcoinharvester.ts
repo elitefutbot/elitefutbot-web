@@ -63,7 +63,7 @@ export const futCoinHarvesterData: CompetitorData = {
     headline: "Engineered for Account Safety, Not Burner Farms",
     badge: "Origin & Mission",
     text: "We built Elite FUT SNIPER because commercial cloud autobuyers were getting thousands of legitimate players banned by forcing credential handovers and datacenter routing. We believe personal clubs deserve absolute safety. By keeping all execution local, utilizing an isolated Side Panel HUD, and engineering our sub-20ms WebSocket core with Humanization++, we deliver unmatched trading performance without ever touching your credentials.",
-    linkUrl: "https://elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/pricing",
     linkText: "Get Elite FUT SNIPER — $19.99/Year",
   },
 
@@ -266,7 +266,7 @@ export const futCoinHarvesterData: CompetitorData = {
   citations: [
     { label: "EA Account Security Best Practices", url: "https://help.ea.com/en/help/faq/stay-safe-online-with-ea-security-and-account-safety/" },
     { label: "Chrome Web Store Sandbox Documentation", url: "https://developer.chrome.com/docs/extensions/mv3/architecture-overview/" },
-    { label: "Elite FUT SNIPER Security Architecture", url: "https://elitefutbot.com" },
+    { label: "Elite FUT SNIPER Security Architecture", url: "https://www.elitefutbot.com" },
   ],
 
   comparisonRows: [

@@ -5,27 +5,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Globe, ChevronDown, Check } from "lucide-react";
 
-interface LanguageOption {
-  code: string;
-  name: string;
-  nativeName: string;
-  flag: string;
-}
-
-const LANGUAGES: LanguageOption[] = [
-  { code: "en", name: "English", nativeName: "English", flag: "🇬🇧" },
-  { code: "es", name: "Spanish", nativeName: "Español", flag: "🇪🇸" },
-  { code: "pt", name: "Portuguese", nativeName: "Português", flag: "🇧🇷" },
-  { code: "fr", name: "French", nativeName: "Français", flag: "🇫🇷" },
-  { code: "de", name: "German", nativeName: "Deutsch", flag: "🇩🇪" },
-];
-
-// Explicit list of pages that have translations
-const TRANSLATED_SUBPATHS = [
-  "",
-  "/fc27-fut-snipe-bot",
-  "/fc27-fut-sniping-bot-autobuyer-features",
-];
+import {
+  ACTIVE_LOCALES,
+  ACTIVE_LOCALE_PREFIXES,
+  TRANSLATED_SUBPATHS,
+  LocaleEntry,
+} from "@/data/locales/registry";
 
 export default function LanguageSelector({ className = "" }: { className?: string }) {
   const pathname = usePathname() || "/";
@@ -35,9 +20,10 @@ export default function LanguageSelector({ className = "" }: { className?: strin
   // Determine current active locale from pathname
   const segments = pathname.split("/").filter(Boolean);
   const firstSegment = segments[0];
-  const isLocalePrefix = ["es", "pt", "fr", "de"].includes(firstSegment);
+  const isLocalePrefix = ACTIVE_LOCALE_PREFIXES.includes(firstSegment);
   const currentLocaleCode = isLocalePrefix ? firstSegment : "en";
-  const currentLanguage = LANGUAGES.find((l) => l.code === currentLocaleCode) || LANGUAGES[0];
+  const currentLanguage =
+    ACTIVE_LOCALES.find((l) => (l.prefix || l.id) === currentLocaleCode) || ACTIVE_LOCALES[0];
 
   // Base path without the locale prefix (e.g. "" for root, or "/fc27-fut-snipe-bot")
   const rawSubpath = isLocalePrefix
@@ -45,17 +31,17 @@ export default function LanguageSelector({ className = "" }: { className?: strin
     : pathname;
 
   const normalizedSubpath = rawSubpath === "/" ? "" : rawSubpath;
-  const isTranslatablePage = TRANSLATED_SUBPATHS.includes(normalizedSubpath);
+  const isTranslatablePage = (TRANSLATED_SUBPATHS as readonly string[]).includes(normalizedSubpath);
 
   // Build target URL for a given language
-  const getTargetUrl = (langCode: string) => {
+  const getTargetUrl = (locale: LocaleEntry) => {
     // If the current page isn't translated, fallback to that language's homepage
     const targetSubpath = isTranslatablePage ? normalizedSubpath : "";
 
-    if (langCode === "en") {
+    if (!locale.prefix) {
       return targetSubpath || "/";
     }
-    return `/${langCode}${targetSubpath}`;
+    return `/${locale.prefix}${targetSubpath}`;
   };
 
   // Close dropdown on click outside
@@ -77,10 +63,10 @@ export default function LanguageSelector({ className = "" }: { className?: strin
         className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-semibold text-gray-300 hover:text-white transition-all focus:outline-none focus:ring-1 focus:ring-primary/50 min-h-[38px]"
         aria-expanded={isOpen}
         aria-haspopup="true"
-        aria-label="Select Language"
+        aria-label={`Select Language: ${currentLanguage.name} (${currentLanguage.id.toUpperCase()})`}
       >
         <span className="text-sm leading-none">{currentLanguage.flag}</span>
-        <span className="uppercase font-mono font-bold text-xs">{currentLanguage.code}</span>
+        <span className="uppercase font-mono font-bold text-xs">{currentLanguage.id}</span>
         <ChevronDown className={`w-3.5 h-3.5 text-gray-400 transition-transform duration-200 ${isOpen ? "rotate-180 text-primary" : ""}`} />
       </button>
 
@@ -92,13 +78,14 @@ export default function LanguageSelector({ className = "" }: { className?: strin
           </div>
 
           <div className="py-1">
-            {LANGUAGES.map((lang) => {
-              const isActive = lang.code === currentLocaleCode;
-              const targetUrl = getTargetUrl(lang.code);
+            {ACTIVE_LOCALES.map((lang) => {
+              const langKey = lang.prefix || lang.id;
+              const isActive = langKey === currentLocaleCode;
+              const targetUrl = getTargetUrl(lang);
 
               return (
                 <Link
-                  key={lang.code}
+                  key={lang.id}
                   href={targetUrl}
                   onClick={() => setIsOpen(false)}
                   className={`flex items-center justify-between px-3 py-2 text-xs transition-colors hover:bg-white/10 ${

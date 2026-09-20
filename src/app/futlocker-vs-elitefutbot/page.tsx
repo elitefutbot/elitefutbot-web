@@ -19,22 +19,22 @@ export const metadata: Metadata = {
     "fifa sniping bot vs signals",
     "fut locker pricing",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futlocker-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futlocker-vs-elitefutbot" },
   openGraph: {
     title: "FUT Locker vs Elite FUT SNIPER (2026 Review): Signals vs 20ms Sniping",
     description:
       "FUT Locker vs Elite FUT SNIPER comparison. Real audit of futlocker.com $240–$360/yr signal subscriptions, 15–45s notification delays, datacenter cloud bot risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
-    url: "https://elitefutbot.com/futlocker-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futlocker-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUT Locker vs Elite FUT SNIPER (2026 Review): Signals vs 20ms Sniping",
     description:
       "FUT Locker vs Elite FUT SNIPER comparison. Real audit of futlocker.com $240–$360/yr signal subscriptions, 15–45s notification delays, datacenter cloud bot risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
+import SetDocumentLang from "@/components/SetDocumentLang";
+import { getHreflangAlternates } from "@/data/locales/registry";
 import {
   ArrowRight,
   ShieldCheck,
@@ -31,31 +33,24 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "EA FC 27 Sniping Bot & Autobuyer Features – Everything You Need to Snipe | Elite FUT SNIPER",
+  title: "EA FC 27 Sniping Bot & Autobuyer Features – Everything You Need to Snipe",
   description:
     "Discover the complete 11-module trading suite for EA FC 26 & FC 27. Sub-20ms local sniping, Humanization++ anti-ban technology with 0 bans to date, live Futbin price reference, side panel HUD, and smart filters.",
   keywords:
     "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
   alternates: {
-    canonical: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
-    languages: {
-      "x-default": "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
-      en: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
-      es: "https://elitefutbot.com/es/fc27-fut-sniping-bot-autobuyer-features",
-      pt: "https://elitefutbot.com/pt/fc27-fut-sniping-bot-autobuyer-features",
-      fr: "https://elitefutbot.com/fr/fc27-fut-sniping-bot-autobuyer-features",
-      de: "https://elitefutbot.com/de/fc27-fut-sniping-bot-autobuyer-features",
-    },
+    canonical: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+    languages: getHreflangAlternates("/fc27-fut-sniping-bot-autobuyer-features"),
   },
   openGraph: {
     title: "EA FC 27 Sniping Bot & Autobuyer Features | Elite FUT SNIPER",
     description:
       "Everything you need to snipe, flip, and dominate the FC 26 & FC 27 transfer market. 100% local Chrome extension with zero bans to date.",
     type: "website",
-    url: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+    url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
     images: [
       {
-        url: "https://elitefutbot.com/og-image.png",
+        url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Elite FUT SNIPER 11-Module Features Arsenal",
@@ -67,7 +62,7 @@ export const metadata: Metadata = {
     title: "EA FC 27 Sniping Bot & Autobuyer Features | Elite FUT SNIPER",
     description:
       "Sub-20ms market scanning, Humanization++ anti-ban engine, Futbin pricing, and automated relisting for FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 
@@ -345,9 +340,10 @@ export default function FC27FeaturesPage() {
       {
         "@type": "SoftwareApplication",
         "name": "Elite FUT SNIPER – FC 26 & FC 27 Trading Suite",
+        "inLanguage": "en",
         "operatingSystem": "Chrome OS, Windows, macOS, Linux",
         "applicationCategory": "BrowserApplication",
-        "image": "https://elitefutbot.com/og-image.png",
+        "image": "https://www.elitefutbot.com/og-image.png",
         "brand": {
           "@type": "Brand",
           "name": "Elite FUT SNIPER",
@@ -356,7 +352,7 @@ export default function FC27FeaturesPage() {
           "100% local Chrome extension autobuyer and sniping bot for EA FC 26 & FC 27. Sub-20ms market search, Humanization++ anti-ban technology with 0 bans to date, live Futbin pricing, and 365-day licensing.",
         "offers": {
           "@type": "Offer",
-          "url": "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+          "url": "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
           "price": "19.99",
           "priceCurrency": "USD",
           "priceValidUntil": "2027-12-31",
@@ -367,6 +363,7 @@ export default function FC27FeaturesPage() {
       {
         "@type": "ItemList",
         "name": "Elite FUT SNIPER 11-Module Features Arsenal",
+        "inLanguage": "en",
         "itemListElement": FEATURES.map((feat, idx) => ({
           "@type": "ListItem",
           "position": idx + 1,
@@ -376,6 +373,7 @@ export default function FC27FeaturesPage() {
       },
       {
         "@type": "FAQPage",
+        "inLanguage": "en",
         "mainEntity": FAQS.map((faq) => ({
           "@type": "Question",
           "name": faq.q,
@@ -392,13 +390,13 @@ export default function FC27FeaturesPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://elitefutbot.com",
+            "item": "https://www.elitefutbot.com",
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "Features",
-            "item": "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+            "item": "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
           },
         ],
       },
@@ -407,6 +405,7 @@ export default function FC27FeaturesPage() {
 
   return (
     <div className="bg-dark text-white min-h-screen">
+      <SetDocumentLang lang="en" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -252,9 +252,9 @@ export const futManiaData: CompetitorData = {
   ],
 
   citations: [
-    { label: "FUT Bot Profit Margin & Commission Audit", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "EA Sports FC Transfer Tax Calculator", url: "https://elitefutbot.com/tools/tax-calculator" },
-    { label: "FC 27 Coin Generation Strategies", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "FUT Bot Profit Margin & Commission Audit", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "EA Sports FC Transfer Tax Calculator", url: "https://www.elitefutbot.com/tools/tax-calculator" },
+    { label: "FC 27 Coin Generation Strategies", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

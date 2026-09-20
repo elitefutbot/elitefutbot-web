@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "best ea fc sniping bot 2026",
     "sandboxed chrome autobuyer",
   ],
-  alternates: { canonical: "https://elitefutbot.com/exesniper-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/exesniper-vs-elitefutbot" },
   openGraph: {
     title: "ExeSniper vs Elite FUT SNIPER (2026 Review): Standalone .EXE vs Sandboxed Chrome Extension",
     description:
       "ExeSniper vs Elite FUT SNIPER comparison. In-depth security audit of unsigned .exe binary risks, antivirus malware alerts, WebDriver macro lag, and Elite's sandboxed 20ms Chrome Side Panel with AI SBC solver.",
-    url: "https://elitefutbot.com/exesniper-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/exesniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "ExeSniper vs Elite FUT SNIPER (2026 Review): Standalone .EXE vs Sandboxed Chrome Extension",
     description:
       "ExeSniper vs Elite FUT SNIPER comparison. In-depth security audit of unsigned .exe binary risks, antivirus malware alerts, WebDriver macro lag, and Elite's sandboxed 20ms Chrome Side Panel with AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

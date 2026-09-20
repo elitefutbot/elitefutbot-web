@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "best ea fc trading bot 2026",
     "ai sbc solver chrome extension",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futautobuyer-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futautobuyer-vs-elitefutbot" },
   openGraph: {
     title: "FUT Auto Buyer vs Elite FUT SNIPER (2026 Review): Macro Scripts vs 20ms AI Bot",
     description:
       "FUT Auto Buyer vs Elite FUT SNIPER comparison. Real technical audit of predictable linear timing loops, brittle DOM selector breakage, 80ms–150ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
-    url: "https://elitefutbot.com/futautobuyer-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futautobuyer-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FUT Auto Buyer vs Elite FUT SNIPER (2026 Review): Macro Scripts vs 20ms AI Bot",
     description:
       "FUT Auto Buyer vs Elite FUT SNIPER comparison. Real technical audit of predictable linear timing loops, brittle DOM selector breakage, 80ms–150ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

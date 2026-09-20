@@ -263,19 +263,19 @@ export const futSimpleTraderData: CompetitorData = {
   citations: [
     {
       label: "FUT Simple Trader Autobuyer Review & Technical Teardown",
-      url: "https://elitefutbot.com/futsimpletrader-vs-elitefutbot",
+      url: "https://www.elitefutbot.com/futsimpletrader-vs-elitefutbot",
     },
     {
       label: "Complete 11-Module Sniping & Autobuyer Features",
-      url: "https://elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
+      url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
     },
     {
       label: "EA Sports FC 27 Sniping Bot Specifications",
-      url: "https://elitefutbot.com/fc27-fut-snipe-bot",
+      url: "https://www.elitefutbot.com/fc27-fut-snipe-bot",
     },
     {
       label: "Neural AI SBC Solver Architecture",
-      url: "https://elitefutbot.com/ai-sbc-solver",
+      url: "https://www.elitefutbot.com/ai-sbc-solver",
     },
   ],
 

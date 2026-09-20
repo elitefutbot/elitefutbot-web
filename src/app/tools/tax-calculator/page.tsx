@@ -4,11 +4,11 @@ import TaxCalculatorComponent from "@/components/TaxCalculatorComponent";
 export const metadata: Metadata = {
   title: "EA FC 26 & FC 27 Tax Calculator – 5% Transfer Market Tax",
   description: "Calculate EA Sports FC 5% transfer market tax, net profit, break-even sell price, and profit margins with 100% precision.",
-  alternates: { canonical: "https://elitefutbot.com/tools/tax-calculator" },
+  alternates: { canonical: "https://www.elitefutbot.com/tools/tax-calculator" },
   openGraph: {
     title: "EA FC 26 & FC 27 Tax Calculator – 5% Transfer Market Tax",
     description: "Calculate EA Sports FC 5% transfer market tax, net profit, and break-even sell price.",
-    url: "https://elitefutbot.com/tools/tax-calculator",
+    url: "https://www.elitefutbot.com/tools/tax-calculator",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
@@ -27,7 +27,7 @@ const jsonLd = {
       applicationCategory: "BusinessApplication",
       operatingSystem: "Web Browser",
       description: "Free calculator for EA Sports FC 5% transfer market tax, net profit, and break-even sell price calculation.",
-      url: "https://elitefutbot.com/tools/tax-calculator"
+      url: "https://www.elitefutbot.com/tools/tax-calculator"
     },
     {
       "@type": "FAQPage",

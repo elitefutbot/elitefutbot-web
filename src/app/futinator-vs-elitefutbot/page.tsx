@@ -21,22 +21,22 @@ export const metadata: Metadata = {
     "ai sbc solver",
     "futinator extension",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futinator-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futinator-vs-elitefutbot" },
   openGraph: {
     title: "Futinator vs Elite FUT SNIPER (2026 Review): Real Pricing, Ban Risks & Speed",
     description:
       "Honest Futinator vs Elite FUT SNIPER review. Real data on futinator.com 54 € annual re-tax, admitted transfer market soft-bans, retro grey modal clutter, and sub-20ms sniping for FC 26 & FC 27.",
-    url: "https://elitefutbot.com/futinator-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futinator-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Futinator vs Elite FUT SNIPER (2026 Review): Real Pricing, Ban Risks & Speed",
     description:
       "Honest Futinator vs Elite FUT SNIPER review. Real data on futinator.com 54 € annual re-tax, admitted transfer market soft-bans, retro grey modal clutter, and sub-20ms sniping for FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

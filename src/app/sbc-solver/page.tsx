@@ -5,11 +5,11 @@ import { Sparkles, ArrowRight, ExternalLink } from "lucide-react";
 export const metadata: Metadata = {
   title: "EA FC 27 SBC Solutions – Cheapest SBC Squad Costs (FC 26 Supported)",
   description: "Browse the cheapest EA FC 27 & FC 26 SBC solutions for every active Squad Building Challenge. Filter Icon and Promo SBCs with real-time coin cost estimates.",
-  alternates: { canonical: "https://elitefutbot.com/sbc-solver" },
+  alternates: { canonical: "https://www.elitefutbot.com/sbc-solver" },
   openGraph: {
     title: "EA FC 27 SBC Solutions – Cheapest SBC Squad Costs (FC 26 Supported)",
     description: "Browse every active EA FC Squad Building Challenge solution with cheapest market prices.",
-    url: "https://elitefutbot.com/sbc-solver",
+    url: "https://www.elitefutbot.com/sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
@@ -26,7 +26,7 @@ const jsonLd = {
       "@type": "CollectionPage",
       name: "EA FC 27 & FC 26 SBC Solutions Database",
       description: "Database of active Squad Building Challenge solutions sorted by cheapest coin cost.",
-      url: "https://elitefutbot.com/sbc-solver"
+      url: "https://www.elitefutbot.com/sbc-solver"
     }
   ]
 };

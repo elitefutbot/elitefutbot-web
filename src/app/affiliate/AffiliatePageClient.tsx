@@ -111,7 +111,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
   const currentTier = getTier(referrals);
 
   const copySampleLink = () => {
-    navigator.clipboard?.writeText("https://elitefutbot.com/ref/yourname");
+    navigator.clipboard?.writeText("https://www.elitefutbot.com/ref/yourname");
     setCopiedLink(true);
     setTimeout(() => setCopiedLink(false), 2000);
   };
@@ -293,7 +293,7 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
                   {/* Copy Link Bar */}
                   <div className="bg-black/90 border border-primary/30 rounded-2xl p-2.5 mb-5 flex items-center justify-between gap-2">
                     <div className="truncate text-xs font-mono text-gray-300 pl-2">
-                      https://elitefutbot.com/ref/<span className="text-primary font-bold">yourcode</span>
+                      https://www.elitefutbot.com/ref/<span className="text-primary font-bold">yourcode</span>
                     </div>
                     <button
                       type="button"

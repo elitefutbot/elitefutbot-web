@@ -1,7 +1,18 @@
-export type SupportedLocale = "es" | "pt" | "fr" | "de";
+export type SupportedLocale =
+  | "de"
+  | "es"
+  | "es-mx"
+  | "pt"
+  | "pt-pt"
+  | "fr"
+  | "pl"
+  | "it"
+  | "tr"
+  | "ar"
+  | string;
 
 export interface LocaleMeta {
-  code: SupportedLocale;
+  code: string;
   name: string;
   nativeName: string;
   flag: string;
@@ -183,6 +194,7 @@ export interface LocaleDictionary {
         badgeColor: string;
         img: string;
         alt: string;
+        quote?: string;
       }>;
       discordCta: string;
       githubCta: string;

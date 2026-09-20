@@ -2,18 +2,22 @@ import { Metadata } from "next";
 import { TrendingUp } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Volt Velocity Design System | Elite FUT SNIPER",
+  title: "Volt Velocity Design System",
   description: "The core design system behind Elite FUT SNIPER. Kinetic aesthetics, high-performance UI components, and premium trading interfaces.",
-  alternates: { canonical: "https://elitefutbot.com/volt-velocity" },
+  alternates: { canonical: "https://www.elitefutbot.com/volt-velocity" },
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
-    title: "Volt Velocity Design System | Elite FUT SNIPER",
+    title: "Volt Velocity Design System",
     description: "The core design system behind Elite FUT SNIPER.",
-    url: "https://elitefutbot.com/volt-velocity",
+    url: "https://www.elitefutbot.com/volt-velocity",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
   twitter: {
-    title: "Volt Velocity Design System | Elite FUT SNIPER",
+    title: "Volt Velocity Design System",
     description: "The core design system behind Elite FUT SNIPER.",
   }
 };

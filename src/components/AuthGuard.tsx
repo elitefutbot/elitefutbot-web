@@ -39,6 +39,13 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
     };
   }, [router]);
 
-  if (status !== "authenticated") return null;
+  if (status !== "authenticated") {
+    return (
+      <div className="min-h-screen bg-dark text-white p-8 flex flex-col items-center justify-center">
+        <h1 className="sr-only">Trader Dashboard</h1>
+        <div className="w-8 h-8 border-2 border-primary border-t-transparent rounded-full animate-spin" />
+      </div>
+    );
+  }
   return <>{children}</>;
 }

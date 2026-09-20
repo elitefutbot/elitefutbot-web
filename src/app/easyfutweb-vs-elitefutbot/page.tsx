@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "easyfutweb ban risk",
     "best ea fc sniping bot 2026",
   ],
-  alternates: { canonical: "https://elitefutbot.com/easyfutweb-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/easyfutweb-vs-elitefutbot" },
   openGraph: {
     title: "EasyFUTWeb vs Elite FUT SNIPER (2026 Review): Userscript vs Chrome Extension",
     description:
       "EasyFUTWeb vs Elite FUT SNIPER comparison. Real audit of Tampermonkey script crashes, main-thread freezing, CSP blocking, and Elite's sandboxed 20ms Chrome Side Panel HUD with AI SBC solver.",
-    url: "https://elitefutbot.com/easyfutweb-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/easyfutweb-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "EasyFUTWeb vs Elite FUT SNIPER (2026 Review): Userscript vs Chrome Extension",
     description:
       "EasyFUTWeb vs Elite FUT SNIPER comparison. Real audit of Tampermonkey script crashes, main-thread freezing, CSP blocking, and Elite's sandboxed 20ms Chrome Side Panel HUD with AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

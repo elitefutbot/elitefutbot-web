@@ -19,22 +19,22 @@ export const metadata: Metadata = {
     "futtbot ban risk",
     "fifa cli trading bot",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futtbot-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futtbot-vs-elitefutbot" },
   openGraph: {
     title: "Futtbot vs Elite FUT SNIPER (2026 Review): CLI Scripts vs 20ms Chrome HUD",
     description:
       "Futtbot vs Elite FUT SNIPER comparison. Real audit of open-source CLI script friction, manual DevTools cookie sniffing, Node.js breaking updates, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
-    url: "https://elitefutbot.com/futtbot-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futtbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Futtbot vs Elite FUT SNIPER (2026 Review): CLI Scripts vs 20ms Chrome HUD",
     description:
       "Futtbot vs Elite FUT SNIPER comparison. Real audit of open-source CLI script friction, manual DevTools cookie sniffing, Node.js breaking updates, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     "fc27 web app side panel setup",
   ],
   alternates: {
-    canonical: "https://elitefutbot.com/install",
+    canonical: "https://www.elitefutbot.com/install",
   },
   openGraph: {
     title:
@@ -40,10 +40,10 @@ export const metadata: Metadata = {
     description:
       "Step-by-step setup documentation for Elite FUT SNIPER Chrome extension on EA FC 27 and FC 26 Web App. 2-minute installation, 100% local client sandbox, and 0 bans.",
     type: "article",
-    url: "https://elitefutbot.com/install",
+    url: "https://www.elitefutbot.com/install",
     images: [
       {
-        url: "https://elitefutbot.com/og-image.png",
+        url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "Elite FUT SNIPER Chrome Extension Installation Guide",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
       "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
     description:
       "2-minute step-by-step installation guide for Elite FUT SNIPER on EA FC 27 & FC 26 Web App. Manifest V3 local sandbox setup.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 
@@ -158,7 +158,7 @@ export default function InstallPage() {
       position: idx + 1,
       name: s.title,
       text: s.body,
-      url: `https://elitefutbot.com/install#step-${s.step}`,
+      url: `https://www.elitefutbot.com/install#step-${s.step}`,
     })),
   };
 
@@ -196,7 +196,7 @@ export default function InstallPage() {
     description:
       "Step-by-step walkthrough showing how to install Elite FUT SNIPER in Google Chrome via Developer Mode, dock to the Side Panel, and configure for EA FC 27 Web App.",
     thumbnailUrl: [
-      "https://elitefutbot.com/install-video-thumbnail.jpg",
+      "https://www.elitefutbot.com/install-video-thumbnail.jpg",
       "https://i.ytimg.com/vi/CSGzXr2Z_8Q/maxresdefault.jpg",
     ],
     uploadDate: "2026-09-17T00:00:00Z",

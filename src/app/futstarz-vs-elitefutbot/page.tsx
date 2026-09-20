@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "best ea fc trading bot 2026",
     "zero ban fut sniper",
   ],
-  alternates: { canonical: "https://elitefutbot.com/futstarz-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/futstarz-vs-elitefutbot" },
   openGraph: {
     title: "FutStarz vs Elite FUT SNIPER (2026 Review): Cloud Proxies vs Local 20ms Bot",
     description:
       "FutStarz vs Elite FUT SNIPER comparison. Real technical audit of cloud proxy queue lag (250ms+), session token exposure, datacenter ban risks, and Elite's 100% local 20ms Chrome Side Panel bot with AI SBC solver.",
-    url: "https://elitefutbot.com/futstarz-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/futstarz-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FutStarz vs Elite FUT SNIPER (2026 Review): Cloud Proxies vs Local 20ms Bot",
     description:
       "FutStarz vs Elite FUT SNIPER comparison. Real technical audit of cloud proxy queue lag (250ms+), session token exposure, datacenter ban risks, and Elite's 100% local 20ms Chrome Side Panel bot with AI SBC solver.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

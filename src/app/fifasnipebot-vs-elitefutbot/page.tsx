@@ -18,22 +18,22 @@ export const metadata: Metadata = {
     "fifa bot ban risk",
     "is fifa snipe bot safe",
   ],
-  alternates: { canonical: "https://elitefutbot.com/fifasnipebot-vs-elitefutbot" },
+  alternates: { canonical: "https://www.elitefutbot.com/fifasnipebot-vs-elitefutbot" },
   openGraph: {
     title: "FIFA Snipe Bot vs Elite FUT SNIPER (2026 Review): Legacy Script vs 20ms Engine",
     description:
       "FIFA Snipe Bot vs Elite FUT SNIPER comparison. Real audit of legacy FIFA script selector rot, linear timer ban risks, abandoned GitHub repositories, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
-    url: "https://elitefutbot.com/fifasnipebot-vs-elitefutbot",
+    url: "https://www.elitefutbot.com/fifasnipebot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
-    images: [{ url: "https://elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: "FIFA Snipe Bot vs Elite FUT SNIPER (2026 Review): Legacy Script vs 20ms Engine",
     description:
       "FIFA Snipe Bot vs Elite FUT SNIPER comparison. Real audit of legacy FIFA script selector rot, linear timer ban risks, abandoned GitHub repositories, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
-    images: ["https://elitefutbot.com/og-image.png"],
+    images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
 

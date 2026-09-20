@@ -63,7 +63,7 @@ export const fcCopilotData: CompetitorData = {
     headline: "Engineered for Single-Club Safety vs Legacy Botnet Ecosystems",
     badge: "Origin & Mission",
     text: "While FutBotManager engineered FC Copilot as an extension of their multi-account coin-farming desktop infrastructure, Elite FUT SNIPER was built from the ground up to protect individual competitive clubs. We spent 5+ years perfecting our sub-20ms WebSocket protocol core, Humanization++ anti-ban algorithms, and neural AI SBC solver to deliver enterprise-grade performance that guarantees account longevity across every EA update.",
-    linkUrl: "https://elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/pricing",
     linkText: "Get Elite FUT SNIPER — $19.99/Year",
   },
 
@@ -265,7 +265,7 @@ export const fcCopilotData: CompetitorData = {
   citations: [
     { label: "Chrome Web Store FC Copilot Listing", url: "https://chromewebstore.google.com" },
     { label: "EA Sports FC Transfer Market Safety Rules", url: "https://help.ea.com/en/help/ea-sports-fc/transfer-market-rules-and-bans/" },
-    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://elitefutbot.com" },
+    { label: "Elite FUT SNIPER Architecture Whitepaper", url: "https://www.elitefutbot.com" },
   ],
 
   comparisonRows: [

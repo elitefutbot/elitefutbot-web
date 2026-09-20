@@ -252,9 +252,9 @@ export const futCoinBuddyData: CompetitorData = {
   ],
 
   citations: [
-    { label: "Chrome Extension Security & Abandonment Audit", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Web App DOM vs WebSocket Execution Speed", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Day-One Extension Readiness", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Chrome Extension Security & Abandonment Audit", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Web App DOM vs WebSocket Execution Speed", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Day-One Extension Readiness", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

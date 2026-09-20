@@ -241,9 +241,9 @@ export const futUltimateSniperData: CompetitorData = {
 
   citations: [
     { label: "FUT Ultimate Sniper Portal & Diagnostics", url: "https://futultimatesniper.app" },
-    { label: "Chrome Developer Mode vs Web Store Security", url: "https://elitefutbot.com/tools/comparison-guide" },
-    { label: "Safe Extension Practices for EA Web App", url: "https://elitefutbot.com/tools/sniping-guide" },
-    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://elitefutbot.com/fc27-fut-snipe-bot" },
+    { label: "Chrome Developer Mode vs Web Store Security", url: "https://www.elitefutbot.com/tools/comparison-guide" },
+    { label: "Safe Extension Practices for EA Web App", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    { label: "FC 27 Manifest V3 Automation Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [

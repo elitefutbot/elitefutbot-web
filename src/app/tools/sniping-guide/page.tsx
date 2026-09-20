@@ -5,11 +5,11 @@ import { Timer, PauseCircle, Shield, CheckCircle2, Zap, ArrowRight, ExternalLink
 export const metadata: Metadata = {
   title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
   description: "Master transfer market sniping in EA Sports FC 27 & FC 26. Discover the best FUT filter settings for Icons and fodder with anti-detection safety rules.",
-  alternates: { canonical: "https://elitefutbot.com/tools/sniping-guide" },
+  alternates: { canonical: "https://www.elitefutbot.com/tools/sniping-guide" },
   openGraph: {
     title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
     description: "Master transfer market sniping with expert filter settings and anti-detection safety rules.",
-    url: "https://elitefutbot.com/tools/sniping-guide",
+    url: "https://www.elitefutbot.com/tools/sniping-guide",
     siteName: "Elite FUT SNIPER",
     type: "website",
   },
