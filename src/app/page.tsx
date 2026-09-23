@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import SetDocumentLang from "@/components/SetDocumentLang";
+import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
   ArrowRight,
   PlayCircle,
@@ -545,6 +546,24 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ELITE FUT SNIPER FEATURES — FC27 Autobuyer angle for homepage */}
+      <div className="max-w-6xl mx-auto">
+        <EliteFeaturesSection
+          badge="FC 27 Autobuyer Capabilities"
+          headingPre="Everything You Need to"
+          headingHighlight="Dominate FC 27"
+          description="Auto-snipe, auto-bid, auto-list — powered by a local Chrome extension that runs directly in your browser. No cloud servers, no account risk, just pure transfer market domination."
+          ctaLabel="Start Free Trial"
+          ctaHref="/fc27-fut-snipe-bot"
+          secondaryLabel="Explore All 12 Modules"
+          secondaryHref="/fc27-fut-sniping-bot-autobuyer-features"
+          imageSrc="/snipe-guide-bot-advanced.png"
+          imageAlt="Elite FUT SNIPER FC 27 autobuyer — advanced configuration mode with anti-ban sleep settings and auto-list margin"
+          imagePill="FC 27 Bot Settings"
+          sectionId="homepage-features"
+        />
+      </div>
 
       <section className="py-24 bg-dark relative overflow-hidden" id="comparison">
         <div className="absolute inset-0 opacity-[0.02]" style={{ backgroundImage: "radial-gradient(#ffffff 1px, transparent 1px)", backgroundSize: "30px 30px" }}></div>
