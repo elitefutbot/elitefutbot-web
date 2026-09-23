@@ -40,15 +40,19 @@ const PRICE_TIER = {
 import { getHreflangAlternates } from "@/data/locales/registry";
 
 export const metadata: Metadata = {
-  title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Supported)",
-  description: "Dominate the EA Sports FC 27 transfer market with Elite FUT SNIPER. The world's fastest FC 27 FUT sniping bot and autobuyer, fully compatible with FC 27 & FC 26, featuring sub-20ms speeds and local anti-ban security.",
+  title: {
+    absolute: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
+  },
+  description:
+    "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
   alternates: {
     canonical: "https://www.elitefutbot.com/",
     languages: getHreflangAlternates(""),
   },
   openGraph: {
-    title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Compatible)",
-    description: "World's fastest FC 27 FUT sniping bot and autobuyer, fully compatible with FC 27 & FC 26. Advanced anti-ban engine and cloud-based SBC solving.",
+    title: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
+    description:
+      "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
     url: "https://www.elitefutbot.com/",
     siteName: "Elite FUT SNIPER",
     images: [
@@ -56,7 +60,7 @@ export const metadata: Metadata = {
         url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Elite FUT SNIPER - #1 FC 27 Sniping Bot & Autobuyer (FC 26 Supported)",
+        alt: "Elite FUT SNIPER - EA FC 27 Sniping Bot & Autobuyer Ultimate Team",
         type: "image/png",
       }
     ],
@@ -65,8 +69,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Supported)",
-    description: "Elite FC 27 FUT sniping bot and autobuyer, fully compatible with FC 27 & FC 26. Sub-20ms speeds and anti-ban engine.",
+    title: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
+    description:
+      "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
     creator: "@FutSnipeBot",
   },

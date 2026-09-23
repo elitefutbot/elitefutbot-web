@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futGenieData } from "@/data/competitors/futgenie";
 
 export const metadata: Metadata = {
-  title: "FUT Genie vs Elite FUT SNIPER (2026 Review): Price Overlay vs 20ms Sniping Bot",
+  title: {
+    absolute: "FUT Genie vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUT Genie vs Elite FUT SNIPER comparison. Real audit of passive price overlays, 500ms human motor latency, injected DOM badge clutter, and Elite's autonomous 20ms Chrome Side Panel sniper with AI SBC solver.",
+    "FUTGenie vs Elite FUT SNIPER review: compare manual price lookups, lack of auto-buy, and Elite's autonomous sub-20ms Chrome extension with AI solver.",
   keywords: [
     "fut genie",
     "futgenie",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futgenie-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Genie vs Elite FUT SNIPER (2026 Review): Price Overlay vs 20ms Sniping Bot",
+    title: "FUT Genie vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Genie vs Elite FUT SNIPER comparison. Real audit of passive price overlays, 500ms human motor latency, injected DOM badge clutter, and Elite's autonomous 20ms Chrome Side Panel sniper with AI SBC solver.",
+      "FUTGenie vs Elite FUT SNIPER review: compare manual price lookups, lack of auto-buy, and Elite's autonomous sub-20ms Chrome extension with AI solver.",
     url: "https://www.elitefutbot.com/futgenie-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Genie vs Elite FUT SNIPER (2026 Review): Price Overlay vs 20ms Sniping Bot",
+    title: "FUT Genie vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Genie vs Elite FUT SNIPER comparison. Real audit of passive price overlays, 500ms human motor latency, injected DOM badge clutter, and Elite's autonomous 20ms Chrome Side Panel sniper with AI SBC solver.",
+      "FUTGenie vs Elite FUT SNIPER review: compare manual price lookups, lack of auto-buy, and Elite's autonomous sub-20ms Chrome extension with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

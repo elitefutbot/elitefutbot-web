@@ -4,20 +4,28 @@ import Image from "next/image";
 import { ArrowUpRight, Terminal, BarChart2, TrendingUp, Shield, Radio } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Tactical Intel Hub – FC 26 Trading Blog & News",
-  description: "Get the latest market analysis, trading intel, and protocol updates for FC 26. Master the 59th minute with our expert trading guides.",
+  title: {
+    absolute: "Tactical Intel Hub: FC 27 Trading Blog & Intel | Elite FUT Bot",
+  },
+  description:
+    "Get the latest market analysis, trading intel, and protocol updates for EA FC 27. Master the 59th minute and Ultimate Team market trends with expert guides.",
   alternates: { canonical: "https://www.elitefutbot.com/blog" },
   openGraph: {
-    title: "Tactical Intel Hub – FC 26 Trading Blog & News",
-    description: "Get the latest market analysis, trading intel, and protocol updates for FC 26.",
+    title: "Tactical Intel Hub: FC 27 Trading Blog & Intel | Elite FUT Bot",
+    description:
+      "Get the latest market analysis, trading intel, and protocol updates for EA FC 27. Master the 59th minute and Ultimate Team market trends with expert guides.",
     url: "https://www.elitefutbot.com/blog",
     siteName: "Elite FUT SNIPER",
     type: "website",
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
-    title: "Tactical Intel Hub – FC 26 Trading Blog & News",
-    description: "Get the latest market analysis and trading intel for FC 26.",
-  }
+    card: "summary_large_image",
+    title: "Tactical Intel Hub: FC 27 Trading Blog & Intel | Elite FUT Bot",
+    description:
+      "Get the latest market analysis, trading intel, and protocol updates for EA FC 27. Master the 59th minute and Ultimate Team market trends with expert guides.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
+  },
 };
 
 export default function BlogHubPage() {

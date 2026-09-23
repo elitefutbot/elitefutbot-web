@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futCoinBuddyData } from "@/data/competitors/futcoinbuddy";
 
 export const metadata: Metadata = {
-  title: "Futcoinbuddy vs Elite FUT SNIPER (2026 Review): Dead Domain, Ban Risks & Speed",
+  title: {
+    absolute: "Futcoinbuddy vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest Futcoinbuddy vs Elite FUT SNIPER review. Real data on futcoinbuddy.com dead domain infrastructure, 115 users, location tracking disclosures, and sub-20ms sniping for FC 26 & FC 27.",
+    "FUTCoinBuddy vs Elite FUT SNIPER review: compare macro click lag, soft bans, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
   keywords: [
     "futcoinbuddy",
     "futcoinbuddy review",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futcoinbuddy-vs-elitefutbot" },
   openGraph: {
-    title: "Futcoinbuddy vs Elite FUT SNIPER (2026 Review): Dead Domain, Ban Risks & Speed",
+    title: "Futcoinbuddy vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest Futcoinbuddy vs Elite FUT SNIPER review. Real data on futcoinbuddy.com dead domain infrastructure, 115 users, location tracking disclosures, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUTCoinBuddy vs Elite FUT SNIPER review: compare macro click lag, soft bans, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
     url: "https://www.elitefutbot.com/futcoinbuddy-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Futcoinbuddy vs Elite FUT SNIPER (2026 Review): Dead Domain, Ban Risks & Speed",
+    title: "Futcoinbuddy vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest Futcoinbuddy vs Elite FUT SNIPER review. Real data on futcoinbuddy.com dead domain infrastructure, 115 users, location tracking disclosures, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUTCoinBuddy vs Elite FUT SNIPER review: compare macro click lag, soft bans, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

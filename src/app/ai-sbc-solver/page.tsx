@@ -3,19 +3,24 @@ import Link from "next/link";
 import { LayoutGrid, Zap, Calculator, BookOpen, ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
-  description: "The ultimate AI SBC Solver for EA Sports FC 27. Auto-fill any Squad Building Challenge in 3 seconds using your untradeable club players with full FC 27 & FC 26 support. Join the free beta!",
+  title: {
+    absolute: "AI SBC Solver: Auto-Fill FC 27 SBCs in 3s | Elite FUT Bot",
+  },
+  description: "The ultimate AI SBC Solver for EA FC 27. Auto-fill any Squad Building Challenge in 3 seconds using untradeable club players. Start your 7-day free trial!",
   alternates: { canonical: "https://www.elitefutbot.com/ai-sbc-solver" },
   openGraph: {
-    title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
-    description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first.",
+    title: "AI SBC Solver: Auto-Fill FC 27 SBCs in 3s | Elite FUT Bot",
+    description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first. 7-day free trial.",
     url: "https://www.elitefutbot.com/ai-sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
-    title: "AI SBC Solver – Auto-Fill Squad Building Challenges (FC 27 & FC 26)",
+    card: "summary_large_image",
+    title: "AI SBC Solver: Auto-Fill FC 27 SBCs in 3s | Elite FUT Bot",
     description: "Automate any EA FC SBC with 33/33 chemistry.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
   }
 };
 

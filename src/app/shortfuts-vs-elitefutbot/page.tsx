@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { shortFutsData } from "@/data/competitors/shortfuts";
 
 export const metadata: Metadata = {
-  title: "Shortfuts vs Elite FUT SNIPER (2026 Review): Manual Hotkeys vs Autonomous 20ms Bot",
+  title: {
+    absolute: "Shortfuts vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Shortfuts vs Elite FUT SNIPER comparison. Real audit of manual keybind mashing, human reaction delay (500ms+), rapid soft bans, and Elite's fully autonomous 20ms Chrome Side Panel with AI SBC solver.",
+    "Shortfuts vs Elite FUT SNIPER review: compare manual keybind mashing, human reaction delay, and Elite's autonomous 20ms Chrome Side Panel with AI.",
   keywords: [
     "shortfuts",
     "short futs",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/shortfuts-vs-elitefutbot" },
   openGraph: {
-    title: "Shortfuts vs Elite FUT SNIPER (2026 Review): Manual Hotkeys vs Autonomous 20ms Bot",
+    title: "Shortfuts vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Shortfuts vs Elite FUT SNIPER comparison. Real audit of manual keybind mashing, human reaction delay (500ms+), rapid soft bans, and Elite's fully autonomous 20ms Chrome Side Panel with AI SBC solver.",
+      "Shortfuts vs Elite FUT SNIPER review: compare manual keybind mashing, human reaction delay, and Elite's autonomous 20ms Chrome Side Panel with AI.",
     url: "https://www.elitefutbot.com/shortfuts-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shortfuts vs Elite FUT SNIPER (2026 Review): Manual Hotkeys vs Autonomous 20ms Bot",
+    title: "Shortfuts vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Shortfuts vs Elite FUT SNIPER comparison. Real audit of manual keybind mashing, human reaction delay (500ms+), rapid soft bans, and Elite's fully autonomous 20ms Chrome Side Panel with AI SBC solver.",
+      "Shortfuts vs Elite FUT SNIPER review: compare manual keybind mashing, human reaction delay, and Elite's autonomous 20ms Chrome Side Panel with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

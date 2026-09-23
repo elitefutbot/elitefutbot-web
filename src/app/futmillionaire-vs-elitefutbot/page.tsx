@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futMillionaireData } from "@/data/competitors/futmillionaire";
 
 export const metadata: Metadata = {
-  title: "FUTMillionaire vs Elite FUT SNIPER (2026 Review): Desktop App vs 20ms Bot",
+  title: {
+    absolute: "FUTMillionaire vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUTMillionaire vs Elite FUT SNIPER comparison. Real technical audit of 850MB desktop software, $22.90/mo recurring fees, WebDriver lag (120ms+), and Elite's <40MB in-browser 20ms Chrome Side Panel with AI SBC solver.",
+    "FUTMillionaire vs Elite FUT SNIPER review: audit 850MB desktop software, recurring monthly fees, and Elite's lightweight 20ms Chrome Side Panel with AI.",
   keywords: [
     "futmillionaire",
     "fut millionaire",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futmillionaire-vs-elitefutbot" },
   openGraph: {
-    title: "FUTMillionaire vs Elite FUT SNIPER (2026 Review): Desktop App vs 20ms Bot",
+    title: "FUTMillionaire vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTMillionaire vs Elite FUT SNIPER comparison. Real technical audit of 850MB desktop software, $22.90/mo recurring fees, WebDriver lag (120ms+), and Elite's <40MB in-browser 20ms Chrome Side Panel with AI SBC solver.",
+      "FUTMillionaire vs Elite FUT SNIPER review: audit 850MB desktop software, recurring monthly fees, and Elite's lightweight 20ms Chrome Side Panel with AI.",
     url: "https://www.elitefutbot.com/futmillionaire-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTMillionaire vs Elite FUT SNIPER (2026 Review): Desktop App vs 20ms Bot",
+    title: "FUTMillionaire vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTMillionaire vs Elite FUT SNIPER comparison. Real technical audit of 850MB desktop software, $22.90/mo recurring fees, WebDriver lag (120ms+), and Elite's <40MB in-browser 20ms Chrome Side Panel with AI SBC solver.",
+      "FUTMillionaire vs Elite FUT SNIPER review: audit 850MB desktop software, recurring monthly fees, and Elite's lightweight 20ms Chrome Side Panel with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { easyFutWebData } from "@/data/competitors/easyfutweb";
 
 export const metadata: Metadata = {
-  title: "EasyFUTWeb vs Elite FUT SNIPER (2026 Review): Userscript vs Chrome Extension",
+  title: {
+    absolute: "EasyFUTWeb vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "EasyFUTWeb vs Elite FUT SNIPER comparison. Real audit of Tampermonkey script crashes, main-thread freezing, CSP blocking, and Elite's sandboxed 20ms Chrome Side Panel HUD with AI SBC solver.",
+    "EasyFUTWeb vs Elite FUT SNIPER comparison: compare Tampermonkey script crashes, CSP blocks, and Elite's sandboxed 20ms Chrome extension with AI solver.",
   keywords: [
     "easyfutweb",
     "easy fut web",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/easyfutweb-vs-elitefutbot" },
   openGraph: {
-    title: "EasyFUTWeb vs Elite FUT SNIPER (2026 Review): Userscript vs Chrome Extension",
+    title: "EasyFUTWeb vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EasyFUTWeb vs Elite FUT SNIPER comparison. Real audit of Tampermonkey script crashes, main-thread freezing, CSP blocking, and Elite's sandboxed 20ms Chrome Side Panel HUD with AI SBC solver.",
+      "EasyFUTWeb vs Elite FUT SNIPER comparison: compare Tampermonkey script crashes, CSP blocks, and Elite's sandboxed 20ms Chrome extension with AI solver.",
     url: "https://www.elitefutbot.com/easyfutweb-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EasyFUTWeb vs Elite FUT SNIPER (2026 Review): Userscript vs Chrome Extension",
+    title: "EasyFUTWeb vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EasyFUTWeb vs Elite FUT SNIPER comparison. Real audit of Tampermonkey script crashes, main-thread freezing, CSP blocking, and Elite's sandboxed 20ms Chrome Side Panel HUD with AI SBC solver.",
+      "EasyFUTWeb vs Elite FUT SNIPER comparison: compare Tampermonkey script crashes, CSP blocks, and Elite's sandboxed 20ms Chrome extension with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

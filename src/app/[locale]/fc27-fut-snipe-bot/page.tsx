@@ -75,9 +75,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: {
-      absolute: dict.snipeBot.meta.title.includes("Elite FUT SNIPER")
-        ? dict.snipeBot.meta.title
-        : `${dict.snipeBot.meta.title} | Elite FUT SNIPER`,
+      absolute: dict.snipeBot.meta.title,
     },
     description: dict.snipeBot.meta.description,
     keywords: dict.snipeBot.meta.keywords,

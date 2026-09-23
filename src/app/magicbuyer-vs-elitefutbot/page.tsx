@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { magicBuyerData } from "@/data/competitors/magicbuyer";
 
 export const metadata: Metadata = {
-  title: "MagicBuyer vs Elite FUT SNIPER (2026 Review): Userscript vs 20ms AI Bot",
+  title: {
+    absolute: "MagicBuyer vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "MagicBuyer (MagicBuyer-UT) vs Elite FUT SNIPER comparison. Real technical audit of Tampermonkey thread locking, soft ban warnings, 80ms–150ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "MagicBuyer vs Elite FUT SNIPER review: compare Tampermonkey thread locking, soft ban warnings, and Elite's sub-20ms Chrome Side Panel with AI solver.",
   keywords: [
     "magicbuyer",
     "magicbuyer ut",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/magicbuyer-vs-elitefutbot" },
   openGraph: {
-    title: "MagicBuyer vs Elite FUT SNIPER (2026 Review): Userscript vs 20ms AI Bot",
+    title: "MagicBuyer vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "MagicBuyer (MagicBuyer-UT) vs Elite FUT SNIPER comparison. Real technical audit of Tampermonkey thread locking, soft ban warnings, 80ms–150ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "MagicBuyer vs Elite FUT SNIPER review: compare Tampermonkey thread locking, soft ban warnings, and Elite's sub-20ms Chrome Side Panel with AI solver.",
     url: "https://www.elitefutbot.com/magicbuyer-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "MagicBuyer vs Elite FUT SNIPER (2026 Review): Userscript vs 20ms AI Bot",
+    title: "MagicBuyer vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "MagicBuyer (MagicBuyer-UT) vs Elite FUT SNIPER comparison. Real technical audit of Tampermonkey thread locking, soft ban warnings, 80ms–150ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "MagicBuyer vs Elite FUT SNIPER review: compare Tampermonkey thread locking, soft ban warnings, and Elite's sub-20ms Chrome Side Panel with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

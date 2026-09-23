@@ -3,19 +3,24 @@ import Link from "next/link";
 import { Timer, PauseCircle, Shield, CheckCircle2, Zap, ArrowRight, ExternalLink } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
+  title: {
+    absolute: "FC 27 Sniping Guide: Best FUT Filters & Methods | Elite FUT Bot",
+  },
   description: "Master transfer market sniping in EA Sports FC 27 & FC 26. Discover the best FUT filter settings for Icons and fodder with anti-detection safety rules.",
   alternates: { canonical: "https://www.elitefutbot.com/tools/sniping-guide" },
   openGraph: {
-    title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
+    title: "FC 27 Sniping Guide: Best FUT Filters & Methods | Elite FUT Bot",
     description: "Master transfer market sniping with expert filter settings and anti-detection safety rules.",
     url: "https://www.elitefutbot.com/tools/sniping-guide",
     siteName: "Elite FUT SNIPER",
     type: "website",
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
-    title: "FC 27 Sniping Guide – Best FUT Filters & Methods (FC 26 Supported)",
+    card: "summary_large_image",
+    title: "FC 27 Sniping Guide: Best FUT Filters & Methods | Elite FUT Bot",
     description: "Master transfer market sniping with expert filter settings.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
   }
 };
 

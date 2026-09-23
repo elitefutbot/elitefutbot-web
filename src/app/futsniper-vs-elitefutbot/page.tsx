@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futSniperData } from "@/data/competitors/futsniper";
 
 export const metadata: Metadata = {
-  title: "FUT Sniper vs Elite FUT SNIPER (2026 Review): Real Data, Domain Origins, Ban Risks & Speed",
+  title: {
+    absolute: "FUT Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest FUT Sniper vs Elite FUT SNIPER review. Real data on futsniperbot.com domain origins, unsigned .zip risks, DOM macro clickers, ban telemetry, and sub-20ms sniping for FC 26 & FC 27.",
+    "FUT Sniper vs Elite FUT SNIPER review: compare unsigned zip risks, DOM macro clickers, ban telemetry, and Elite's sub-20ms Chrome bot with AI solver.",
   keywords: [
     "futsniper",
     "fut sniper",
@@ -23,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futsniper-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Sniper vs Elite FUT SNIPER (2026 Review): Real Data, Domain Origins, Ban Risks & Speed",
+    title: "FUT Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FUT Sniper vs Elite FUT SNIPER review. Real data on futsniperbot.com domain origins, unsigned .zip risks, DOM macro clickers, ban telemetry, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUT Sniper vs Elite FUT SNIPER review: compare unsigned zip risks, DOM macro clickers, ban telemetry, and Elite's sub-20ms Chrome bot with AI solver.",
     url: "https://www.elitefutbot.com/futsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Sniper vs Elite FUT SNIPER (2026 Review): Real Data, Domain Origins, Ban Risks & Speed",
+    title: "FUT Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FUT Sniper vs Elite FUT SNIPER review. Real data on futsniperbot.com domain origins, unsigned .zip risks, DOM macro clickers, ban telemetry, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUT Sniper vs Elite FUT SNIPER review: compare unsigned zip risks, DOM macro clickers, ban telemetry, and Elite's sub-20ms Chrome bot with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

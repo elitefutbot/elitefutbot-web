@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { utSniperData } from "@/data/competitors/utsniper";
 
 export const metadata: Metadata = {
-  title: "UTSniper vs Elite FUT SNIPER (2026 Review): Linear Timers vs 20ms AI Bot",
+  title: {
+    absolute: "UTSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "UTSniper vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, floating screen overlays, DOM polling lag (60ms–110ms), and Elite's sub-20ms Chrome Side Panel bot with Gaussian jitter & AI SBC solver.",
+    "UTSniper vs Elite FUT SNIPER review: compare linear delay soft bans, floating overlays, DOM lag, and Elite's sub-20ms Chrome bot with AI SBC solver.",
   keywords: [
     "utsniper",
     "ut sniper",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/utsniper-vs-elitefutbot" },
   openGraph: {
-    title: "UTSniper vs Elite FUT SNIPER (2026 Review): Linear Timers vs 20ms AI Bot",
+    title: "UTSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "UTSniper vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, floating screen overlays, DOM polling lag (60ms–110ms), and Elite's sub-20ms Chrome Side Panel bot with Gaussian jitter & AI SBC solver.",
+      "UTSniper vs Elite FUT SNIPER review: compare linear delay soft bans, floating overlays, DOM lag, and Elite's sub-20ms Chrome bot with AI SBC solver.",
     url: "https://www.elitefutbot.com/utsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "UTSniper vs Elite FUT SNIPER (2026 Review): Linear Timers vs 20ms AI Bot",
+    title: "UTSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "UTSniper vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, floating screen overlays, DOM polling lag (60ms–110ms), and Elite's sub-20ms Chrome Side Panel bot with Gaussian jitter & AI SBC solver.",
+      "UTSniper vs Elite FUT SNIPER review: compare linear delay soft bans, floating overlays, DOM lag, and Elite's sub-20ms Chrome bot with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

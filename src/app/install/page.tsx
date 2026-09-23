@@ -15,10 +15,10 @@ import {
 export const metadata: Metadata = {
   title: {
     absolute:
-      "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
+      "How to Install FC 27 Sniping Bot & Autobuyer | Elite FUT Bot",
   },
   description:
-    "Official installation guide for Elite FUT SNIPER Chrome extension on EA FC 27 and FC 26 Web App. 2-minute setup, Developer Mode activation, and first snipe configuration.",
+    "Official setup guide for Elite FUT Bot Chrome extension on EA FC 27 & FC 26 Web App. 2-minute setup, Developer Mode activation, and initial configuration.",
   keywords: [
     "how to install fc 27 autobuyer",
     "fc 27 sniping bot installation",
@@ -36,9 +36,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title:
-      "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
+      "How to Install FC 27 Sniping Bot & Autobuyer | Elite FUT Bot",
     description:
-      "Step-by-step setup documentation for Elite FUT SNIPER Chrome extension on EA FC 27 and FC 26 Web App. 2-minute installation, 100% local client sandbox, and 0 bans.",
+      "Official setup guide for Elite FUT Bot Chrome extension on EA FC 27 & FC 26 Web App. 2-minute setup, Developer Mode activation, and initial configuration.",
     type: "article",
     url: "https://www.elitefutbot.com/install",
     images: [
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "How to Install FUT SNIPING BOT FC27 | Step-by-Step Setup Guide | Elite FUT SNIPER",
+      "How to Install FC 27 Sniping Bot & Autobuyer | Elite FUT Bot",
     description:
       "2-minute step-by-step installation guide for Elite FUT SNIPER on EA FC 27 & FC 26 Web App. Manifest V3 local sandbox setup.",
     images: ["https://www.elitefutbot.com/og-image.png"],

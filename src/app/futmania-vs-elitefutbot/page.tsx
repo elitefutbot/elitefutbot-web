@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futManiaData } from "@/data/competitors/futmania";
 
 export const metadata: Metadata = {
-  title: "FUTMania vs Elite FUT SNIPER (2026 Review): 50% Coin Tax, Ban Risks & Speed",
+  title: {
+    absolute: "FUTMania vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest FUTMania vs Elite FUT SNIPER review. Real data on futmania.gg 30%–50% coin commission siphons, password security risks, player selection bans, and sub-20ms sniping for FC 26 & FC 27.",
+    "FUTMania vs Elite FUT SNIPER review: compare 30%–50% coin commission fees, security risks, and Elite's zero-commission 20ms Chrome extension with AI.",
   keywords: [
     "futmania",
     "futmania review",
@@ -23,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futmania-vs-elitefutbot" },
   openGraph: {
-    title: "FUTMania vs Elite FUT SNIPER (2026 Review): 50% Coin Tax, Ban Risks & Speed",
+    title: "FUTMania vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FUTMania vs Elite FUT SNIPER review. Real data on futmania.gg 30%–50% coin commission siphons, password security risks, player selection bans, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUTMania vs Elite FUT SNIPER review: compare 30%–50% coin commission fees, security risks, and Elite's zero-commission 20ms Chrome extension with AI.",
     url: "https://www.elitefutbot.com/futmania-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTMania vs Elite FUT SNIPER (2026 Review): 50% Coin Tax, Ban Risks & Speed",
+    title: "FUTMania vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FUTMania vs Elite FUT SNIPER review. Real data on futmania.gg 30%–50% coin commission siphons, password security risks, player selection bans, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUTMania vs Elite FUT SNIPER review: compare 30%–50% coin commission fees, security risks, and Elite's zero-commission 20ms Chrome extension with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

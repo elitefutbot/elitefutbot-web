@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futUltimateSniperData } from "@/data/competitors/futultimatesniper";
 
 export const metadata: Metadata = {
-  title: "FUT Ultimate Sniper vs Elite FUT SNIPER (2026 Review): Developer Zip Risks & Speed",
+  title: {
+    absolute: "FUT Ultimate Sniper vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "FUT Ultimate Sniper vs Elite FUT SNIPER comparison. Real audit of futultimatesniper.app Developer Mode zip sideloading, 3,500ms delay throttles, and sub-20ms verified Chrome Store security for EA FC 26 & FC 27.",
+    "FUT Ultimate Sniper vs Elite FUT SNIPER: compare developer zip sideloading, 3500ms delay throttles, and Elite's 20ms Chrome Store bot with AI.",
   keywords: [
     "fut ultimate sniper",
     "fut ultimate sniper review",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futultimatesniper-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Ultimate Sniper vs Elite FUT SNIPER (2026 Review): Developer Zip Risks & Speed",
+    title: "FUT Ultimate Sniper vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Ultimate Sniper vs Elite FUT SNIPER comparison. Real audit of futultimatesniper.app Developer Mode zip sideloading, 3,500ms delay throttles, and sub-20ms verified Chrome Store security for EA FC 26 & FC 27.",
+      "FUT Ultimate Sniper vs Elite FUT SNIPER: compare developer zip sideloading, 3500ms delay throttles, and Elite's 20ms Chrome Store bot with AI.",
     url: "https://www.elitefutbot.com/futultimatesniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Ultimate Sniper vs Elite FUT SNIPER (2026 Review): Developer Zip Risks & Speed",
+    title: "FUT Ultimate Sniper vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Ultimate Sniper vs Elite FUT SNIPER comparison. Real audit of futultimatesniper.app Developer Mode zip sideloading, 3,500ms delay throttles, and sub-20ms verified Chrome Store security for EA FC 26 & FC 27.",
+      "FUT Ultimate Sniper vs Elite FUT SNIPER: compare developer zip sideloading, 3500ms delay throttles, and Elite's 20ms Chrome Store bot with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { bakersBotData } from "@/data/competitors/bakers-bot";
 
 export const metadata: Metadata = {
-  title: "Baker's Bot vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
+  title: {
+    absolute: "Baker's Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 26 & FC 27.",
+    "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 27.",
   keywords: [
     "baker's bot",
     "bakers bot",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/bakers-bot-vs-elitefutbot" },
   openGraph: {
-    title: "Baker's Bot vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
+    title: "Baker's Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 26 & FC 27.",
+      "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 27.",
     url: "https://www.elitefutbot.com/bakers-bot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baker's Bot vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
+    title: "Baker's Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 26 & FC 27.",
+      "Honest Baker's Bot vs Elite FUT SNIPER review. Built by original dev: sub-20ms speed, 0 bans, clean Side Panel HUD & AI SBC solver for EA FC 27.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

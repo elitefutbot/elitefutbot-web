@@ -18,14 +18,14 @@ export const ptPtLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "Elite FUT SNIPER – Bot de Sniping & Autobuyer FC 27 (Suporta FC 26)",
+      title: "EA FC 27 Bot de Sniping e Autobuyer Ultimate Team | Elite FUT Bot",
       description:
-        "Domina o mercado de transferências no EA Sports FC 27 com o Elite FUT SNIPER em Portugal. O bot de sniping e autobuyer mais rápido e seguro do mundo, velocidade sub-20ms, tecnologia anti-ban Human++ e 0 banimentos registados.",
+        "Bot de sniping e autobuyer de FUT para EA FC 27 Ultimate Team. Faz snipe a jogadores baratos, compra e lista automaticamente com filtros inteligentes numa extensão local do Chrome.",
       keywords:
         "bot sniping fc 27 portugal, autobuyer ea fc 27 portugues, bot trade fifa 27, extensao chrome autobuyer, sbc solver ia portugal, comprar jogadores bot fc27 moedas",
-      ogTitle: "Elite FUT SNIPER – Bot de Sniping e Autobuyer #1 para FC 27 (FC 26)",
+      ogTitle: "EA FC 27 Bot de Sniping e Autobuyer Ultimate Team | Elite FUT Bot",
       ogDescription:
-        "Ganha milhões de moedas no Ultimate Team com a nossa extensão local de Chrome. Velocidade sub-20ms, resolução de SBCs com IA e zero banimentos.",
+        "Bot de sniping e autobuyer de FUT para EA FC 27 Ultimate Team. Faz snipe a jogadores baratos, compra e lista automaticamente com filtros inteligentes numa extensão local do Chrome.",
     },
     creatorBadge: {
       originalCreator: "CRIADOR ORIGINAL",
@@ -338,14 +338,14 @@ export const ptPtLocale: LocaleDictionary = {
   },
   snipeBot: {
     meta: {
-      title: "FC 27 Autobuyer & FUT Snipe Bot em Portugal | Verificado e a Funcionar",
+      title: "FC 27 FUT Bot de Sniping e Autobuyer | Dicas e Guia de Trade UT Grátis",
       description:
-        "Confirmado 100% funcional com a mais recente atualização da Web App do EA FC 27. Autobuyer e bot de sniping para FC 27 com resposta sub-20ms, heurística Humanization++ com zero banimentos e resolução de SBCs com IA em 1 clique.",
+        "Utiliza o Elite FUT SNIPER na Web App do EA FC 27 para fazeres snipe a jogadores baratos, comprares e listares automaticamente com filtros inteligentes, execução local no Chrome e teste grátis.",
       keywords:
         "fc27 autobuyer portugal, ea fc 27 autobuyer portugues, fc 27 fut snipe bot, bot sniping fc 27, fut 27 autobuyer, mercado de transferencias fc 27, bot minuto 59 fc 27",
-      ogTitle: "FC 27 Autobuyer & FUT Snipe Bot | Verificado e a Funcionar",
+      ogTitle: "FC 27 FUT Bot de Sniping e Autobuyer | Dicas e Guia de Trade UT Grátis",
       ogDescription:
-        "Funcionamento confirmado a 100%. Autobuyer no mercado de transferências sub-20ms, sniping ao minuto 59, resolução de SBC com IA e proteção Human++.",
+        "Utiliza o Elite FUT SNIPER na Web App do EA FC 27 para fazeres snipe a jogadores baratos, comprares e listares automaticamente com filtros inteligentes, execução local no Chrome e teste grátis.",
     },
     hero: {
       badge: "Verificado e Funcional · Atualização EA FC 27",
@@ -608,14 +608,14 @@ export const ptPtLocale: LocaleDictionary = {
   },
   featuresPage: {
     meta: {
-      title: "Funcionalidades EA FC 27 Sniping Bot & Autobuyer – Conjunto Completo | Elite FUT SNIPER",
+      title: "Funcionalidades GRÁTIS de Bot de Sniping e Autobuyer FC 27 | Elite FUT Bot",
       description:
-        "Explora o arsenal de 11 módulos para o EA FC 26 e FC 27 em Portugal. Sniping sub-20ms, tecnologia anti-ban Humanization++ com zero suspensões, cotações Futbin e filtros avançados.",
+        "Descobre as funcionalidades do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços Futbin, filtros de trade grátis e 7 dias de teste grátis.",
       keywords:
         "funcionalidades bot sniping fc27, autobuyer ea fc 27 portugal, fut snipe bot, humanization anti ban, precos futbin em direto, extensao chrome local, moedas fc27 bot",
-      ogTitle: "Funcionalidades EA FC 27 Sniping Bot & Autobuyer | Elite FUT SNIPER",
+      ogTitle: "Funcionalidades GRÁTIS de Bot de Sniping e Autobuyer FC 27 | Elite FUT Bot",
       ogDescription:
-        "Todas as ferramentas indispensáveis para snipar e lucrar em FC 26 e FC 27. Extensão de Chrome 100% local com zero banimentos registados.",
+        "Descobre as funcionalidades do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços Futbin, filtros de trade grátis e 7 dias de teste grátis.",
     },
     hero: {
       eyebrow: "Conjunto de 11 Módulos // Detalhe Técnico Integral",

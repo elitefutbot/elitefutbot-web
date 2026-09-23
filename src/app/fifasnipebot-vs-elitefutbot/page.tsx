@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { fifaSnipeBotData } from "@/data/competitors/fifasnipebot";
 
 export const metadata: Metadata = {
-  title: "FIFA Snipe Bot vs Elite FUT SNIPER (2026 Review): Legacy Script vs 20ms Engine",
+  title: {
+    absolute: "FIFA Snipe Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FIFA Snipe Bot vs Elite FUT SNIPER comparison. Real audit of legacy FIFA script selector rot, linear timer ban risks, abandoned GitHub repositories, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+    "FIFA Snipe Bot vs Elite FUT SNIPER review: audit legacy FIFA scripts, DOM polling delays, and Elite's sub-20ms Chrome extension with AI SBC solver.",
   keywords: [
     "fifa snipe bot",
     "fifasnipebot",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fifasnipebot-vs-elitefutbot" },
   openGraph: {
-    title: "FIFA Snipe Bot vs Elite FUT SNIPER (2026 Review): Legacy Script vs 20ms Engine",
+    title: "FIFA Snipe Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FIFA Snipe Bot vs Elite FUT SNIPER comparison. Real audit of legacy FIFA script selector rot, linear timer ban risks, abandoned GitHub repositories, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "FIFA Snipe Bot vs Elite FUT SNIPER review: audit legacy FIFA scripts, DOM polling delays, and Elite's sub-20ms Chrome extension with AI SBC solver.",
     url: "https://www.elitefutbot.com/fifasnipebot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FIFA Snipe Bot vs Elite FUT SNIPER (2026 Review): Legacy Script vs 20ms Engine",
+    title: "FIFA Snipe Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FIFA Snipe Bot vs Elite FUT SNIPER comparison. Real audit of legacy FIFA script selector rot, linear timer ban risks, abandoned GitHub repositories, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "FIFA Snipe Bot vs Elite FUT SNIPER review: audit legacy FIFA scripts, DOM polling delays, and Elite's sub-20ms Chrome extension with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

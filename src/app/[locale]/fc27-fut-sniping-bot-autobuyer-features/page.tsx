@@ -76,9 +76,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: {
-      absolute: dict.featuresPage.meta.title.includes("Elite FUT SNIPER")
-        ? dict.featuresPage.meta.title
-        : `${dict.featuresPage.meta.title} | Elite FUT SNIPER`,
+      absolute: dict.featuresPage.meta.title,
     },
     description: dict.featuresPage.meta.description,
     keywords: dict.featuresPage.meta.keywords,
@@ -354,7 +352,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
                         <Icon className="w-5 h-5" />
                       </div>
                       <span className="font-mono text-xs font-bold text-gray-400">
-                        {feat.num} //
+                        {feat.num} {"//"}
                       </span>
                     </div>
 

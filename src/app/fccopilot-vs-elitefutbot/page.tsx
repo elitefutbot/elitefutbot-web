@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { fcCopilotData } from "@/data/competitors/fccopilot";
 
 export const metadata: Metadata = {
-  title: "FC Copilot vs Elite FUT SNIPER (2026 Review): 3.67★ Tool vs 20ms AI Bot",
+  title: {
+    absolute: "FC Copilot vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FC Copilot (fccopilot.com / FutBotManager) vs Elite FUT SNIPER comparison. Technical audit of 3.67★ store rating, expiring FCP token points, 70ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FC Copilot vs Elite FUT SNIPER review: compare manual overlay friction, subscription costs, and Elite's automated 20ms Chrome extension with AI solver.",
   keywords: [
     "fc copilot",
     "fccopilot",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fccopilot-vs-elitefutbot" },
   openGraph: {
-    title: "FC Copilot vs Elite FUT SNIPER (2026 Review): 3.67★ Tool vs 20ms AI Bot",
+    title: "FC Copilot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC Copilot (fccopilot.com / FutBotManager) vs Elite FUT SNIPER comparison. Technical audit of 3.67★ store rating, expiring FCP token points, 70ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FC Copilot vs Elite FUT SNIPER review: compare manual overlay friction, subscription costs, and Elite's automated 20ms Chrome extension with AI solver.",
     url: "https://www.elitefutbot.com/fccopilot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC Copilot vs Elite FUT SNIPER (2026 Review): 3.67★ Tool vs 20ms AI Bot",
+    title: "FC Copilot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC Copilot (fccopilot.com / FutBotManager) vs Elite FUT SNIPER comparison. Technical audit of 3.67★ store rating, expiring FCP token points, 70ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FC Copilot vs Elite FUT SNIPER review: compare manual overlay friction, subscription costs, and Elite's automated 20ms Chrome extension with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

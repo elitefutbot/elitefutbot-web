@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { nokaFutData } from "@/data/competitors/nokafut";
 
 export const metadata: Metadata = {
-  title: "NokaFut vs Elite FUT SNIPER (2026 Review): NOLTOK Hotkeys vs 20ms AI Bot",
+  title: {
+    absolute: "NokaFut vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "NokaFut (NOKA FUT FC 25/26) vs Elite FUT SNIPER comparison. Technical audit of 'NOLTOK' hotkeys, in-DOM latency, 80ms–150ms delays, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "NokaFut vs Elite FUT SNIPER review: compare NOLTOK hotkey delays, DOM latency, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
   keywords: [
     "nokafut",
     "noka fut",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/nokafut-vs-elitefutbot" },
   openGraph: {
-    title: "NokaFut vs Elite FUT SNIPER (2026 Review): NOLTOK Hotkeys vs 20ms AI Bot",
+    title: "NokaFut vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "NokaFut (NOKA FUT FC 25/26) vs Elite FUT SNIPER comparison. Technical audit of 'NOLTOK' hotkeys, in-DOM latency, 80ms–150ms delays, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "NokaFut vs Elite FUT SNIPER review: compare NOLTOK hotkey delays, DOM latency, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
     url: "https://www.elitefutbot.com/nokafut-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NokaFut vs Elite FUT SNIPER (2026 Review): NOLTOK Hotkeys vs 20ms AI Bot",
+    title: "NokaFut vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "NokaFut (NOKA FUT FC 25/26) vs Elite FUT SNIPER comparison. Technical audit of 'NOLTOK' hotkeys, in-DOM latency, 80ms–150ms delays, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "NokaFut vs Elite FUT SNIPER review: compare NOLTOK hotkey delays, DOM latency, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

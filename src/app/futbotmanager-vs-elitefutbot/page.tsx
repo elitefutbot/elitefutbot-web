@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futBotManagerData } from "@/data/competitors/futbotmanager";
 
 export const metadata: Metadata = {
-  title: "FutBotManager vs Elite FUT SNIPER (2026 Review): FBM Points, Ban Risks & Speed",
+  title: {
+    absolute: "FutBotManager vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest FutBotManager vs Elite FUT SNIPER review. Real data on futbotmanager.com FBM Points token trap, API SELL mule ban hazards, Windows .EXE bloat, and sub-20ms sniping for FC 26 & FC 27.",
+    "FUTBotManager vs Elite FUT SNIPER comparison: audit external app complexity, ban risks, and Elite's sub-20ms in-browser Chrome extension with AI.",
   keywords: [
     "futbotmanager",
     "futbotmanager review",
@@ -24,9 +26,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futbotmanager-vs-elitefutbot" },
   openGraph: {
-    title: "FutBotManager vs Elite FUT SNIPER (2026 Review): FBM Points, Ban Risks & Speed",
+    title: "FutBotManager vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FutBotManager vs Elite FUT SNIPER review. Real data on futbotmanager.com FBM Points token trap, API SELL mule ban hazards, Windows .EXE bloat, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUTBotManager vs Elite FUT SNIPER comparison: audit external app complexity, ban risks, and Elite's sub-20ms in-browser Chrome extension with AI.",
     url: "https://www.elitefutbot.com/futbotmanager-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FutBotManager vs Elite FUT SNIPER (2026 Review): FBM Points, Ban Risks & Speed",
+    title: "FutBotManager vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FutBotManager vs Elite FUT SNIPER review. Real data on futbotmanager.com FBM Points token trap, API SELL mule ban hazards, Windows .EXE bloat, and sub-20ms sniping for FC 26 & FC 27.",
+      "FUTBotManager vs Elite FUT SNIPER comparison: audit external app complexity, ban risks, and Elite's sub-20ms in-browser Chrome extension with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

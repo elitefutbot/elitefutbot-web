@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futMakerData } from "@/data/competitors/futmaker";
 
 export const metadata: Metadata = {
-  title: "FUT Maker vs Elite FUT SNIPER (2026 Review): Desktop Client vs Chrome Extension",
+  title: {
+    absolute: "FUT Maker vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUT Maker vs Elite FUT SNIPER comparison. Real audit of heavy 1.2GB RAM Electron desktop bloat, high 100ms+ latency, Windows-only locks, and Elite's ultralight 20ms Chrome Side Panel with AI SBC solver.",
+    "FUTMaker vs Elite FUT SNIPER review: compare desktop software friction, driver lag, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
   keywords: [
     "fut maker",
     "futmaker",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futmaker-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Maker vs Elite FUT SNIPER (2026 Review): Desktop Client vs Chrome Extension",
+    title: "FUT Maker vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Maker vs Elite FUT SNIPER comparison. Real audit of heavy 1.2GB RAM Electron desktop bloat, high 100ms+ latency, Windows-only locks, and Elite's ultralight 20ms Chrome Side Panel with AI SBC solver.",
+      "FUTMaker vs Elite FUT SNIPER review: compare desktop software friction, driver lag, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
     url: "https://www.elitefutbot.com/futmaker-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Maker vs Elite FUT SNIPER (2026 Review): Desktop Client vs Chrome Extension",
+    title: "FUT Maker vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Maker vs Elite FUT SNIPER comparison. Real audit of heavy 1.2GB RAM Electron desktop bloat, high 100ms+ latency, Windows-only locks, and Elite's ultralight 20ms Chrome Side Panel with AI SBC solver.",
+      "FUTMaker vs Elite FUT SNIPER review: compare desktop software friction, driver lag, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

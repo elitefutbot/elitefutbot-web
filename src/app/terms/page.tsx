@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 7-day free trial conditions.",
   alternates: { canonical: "https://www.elitefutbot.com/terms" },
+  openGraph: {
+    title: "Terms of Service | Elite FUT SNIPER",
+    description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 7-day free trial conditions.",
+    url: "https://www.elitefutbot.com/terms",
+    siteName: "Elite FUT SNIPER",
+    type: "website",
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service | Elite FUT SNIPER",
+    description: "Read the Terms of Service for Elite FUT SNIPER. User agreements, billing terms, and trial conditions.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
+  },
 };
 
 export default function TermsPage() {

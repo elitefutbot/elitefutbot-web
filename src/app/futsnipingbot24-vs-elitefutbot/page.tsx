@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futSnipingBot24Data } from "@/data/competitors/futsnipingbot24";
 
 export const metadata: Metadata = {
-  title: "FUT Sniping Bot 24 vs Elite FUT SNIPER (2026 Review): Abandoned Fork vs 20ms Engine",
+  title: {
+    absolute: "FUT Sniping Bot 24 vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "FUT Sniping Bot 24 vs Elite FUT SNIPER comparison. Real audit of abandoned FC 24 codebases, selector rot, Manifest V2 Chrome blocking, and Elite's actively maintained sub-20ms engine with AI SBC solver.",
+    "FUT Sniping Bot 24 vs Elite FUT SNIPER: audit abandoned FC 24 codebases, Manifest V2 blocks, and Elite's active 20ms Chrome engine with AI solver.",
   keywords: [
     "fut sniping bot 24",
     "futsnipingbot24",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futsnipingbot24-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Sniping Bot 24 vs Elite FUT SNIPER (2026 Review): Abandoned Fork vs 20ms Engine",
+    title: "FUT Sniping Bot 24 vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Sniping Bot 24 vs Elite FUT SNIPER comparison. Real audit of abandoned FC 24 codebases, selector rot, Manifest V2 Chrome blocking, and Elite's actively maintained sub-20ms engine with AI SBC solver.",
+      "FUT Sniping Bot 24 vs Elite FUT SNIPER: audit abandoned FC 24 codebases, Manifest V2 blocks, and Elite's active 20ms Chrome engine with AI solver.",
     url: "https://www.elitefutbot.com/futsnipingbot24-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Sniping Bot 24 vs Elite FUT SNIPER (2026 Review): Abandoned Fork vs 20ms Engine",
+    title: "FUT Sniping Bot 24 vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Sniping Bot 24 vs Elite FUT SNIPER comparison. Real audit of abandoned FC 24 codebases, selector rot, Manifest V2 Chrome blocking, and Elite's actively maintained sub-20ms engine with AI SBC solver.",
+      "FUT Sniping Bot 24 vs Elite FUT SNIPER: audit abandoned FC 24 codebases, Manifest V2 blocks, and Elite's active 20ms Chrome engine with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
