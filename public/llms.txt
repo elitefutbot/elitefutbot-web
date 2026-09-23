@@ -77,17 +77,19 @@ To install Elite FUT SNIPER on Google Chrome, Brave, Microsoft Edge, or Opera:
 
 ## Key Pages & Documentation
 
-- [Homepage](https://www.elitefutbot.com/) — World's fastest and safest EA Sports FC 27 FUT sniping bot and autobuyer
-- [FC 27 Sniping Bot & Autobuyer Features](https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features) — Complete 12-module breakdown, sub-20ms speed benchmarks, and Humanization++ overview
-- [FC 27 Autobuyer & FUT Snipe Bot](https://www.elitefutbot.com/fc27-fut-snipe-bot) — Confirmed 100% working as of September 17 latest FC 27 Web App update. Fully compatible FC 27 autobuyer and transfer market sniping bot with sub-20ms DOM execution, Humanization++ anti-ban heuristics, automated mass bidding, and 1-click AI SBC solver
-- [Install Guide](https://www.elitefutbot.com/install) — Complete step-by-step Chrome extension installation documentation, video walkthrough (https://youtu.be/CSGzXr2Z_8Q), Developer Mode guide, and 30-second first snipe configuration
-- [AI SBC Solver](https://www.elitefutbot.com/ai-sbc-solver) — Automated cheapest FC 27 SBC solver and club untradeable optimizer
-- [SBC Solutions](https://www.elitefutbot.com/sbc-solver) — Live FC 27 SBC challenge cost tracker and cheapest solution solver
+- [EA FC 27 Sniping Bot & Autobuyer Ultimate Team](https://www.elitefutbot.com/) — World's fastest and safest EA Sports FC 27 FUT sniping bot and autobuyer
+- [FREE FC 27 Sniping Bot & Autobuyer Features](https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features) — Complete 12-module breakdown, sub-20ms speed benchmarks, and Humanization++ overview
+- [FC 27 FUT Sniping Bot & Autobuyer | Free UT Trading Tips & Guide](https://www.elitefutbot.com/fc27-fut-snipe-bot) — Confirmed 100% working as of September 17 latest FC 27 Web App update. Fully compatible FC 27 autobuyer and transfer market sniping bot with sub-20ms DOM execution, Humanization++ anti-ban heuristics, automated mass bidding, and 1-click AI SBC solver
+- [How to Install FC 27 Sniping Bot & Autobuyer](https://www.elitefutbot.com/install) — Complete step-by-step Chrome extension installation documentation, video walkthrough (https://youtu.be/CSGzXr2Z_8Q), Developer Mode guide, and 30-second first snipe configuration
+- [AI SBC Solver: Auto-Fill FC 27 SBCs in 3s](https://www.elitefutbot.com/ai-sbc-solver) — Automated cheapest FC 27 SBC solver and club untradeable optimizer
+- [EA FC 27 SBC Solutions: Cheapest Squad Costs](https://www.elitefutbot.com/sbc-solver) — Live FC 27 SBC challenge cost tracker and cheapest solution solver
+- [Tactical Intel Hub: FC 27 Trading Blog & Intel](https://www.elitefutbot.com/blog) — Expert market insights, price trend forecasts, and high-frequency trading guides for FC 27 Ultimate Team
+- [59th Minute Sniping: FC 27 High-Frequency Trading Protocol](https://www.elitefutbot.com/article/tactical-intel) — Advanced guide to dominating the 59th-minute transfer market window with sub-20ms execution
 - [Developer Origin Story (Former Baker's Bot Dev)](https://www.elitefutbot.com/bakers-bot-developer) — Former Baker's Bot lead developer background and 5-year bot engineering history
-- [Local vs Cloud Comparison Guide](https://www.elitefutbot.com/tools/comparison-guide) — Architectural deep-dive: local browser execution vs cloud proxy bot security hazards
-- [EA Tax Calculator](https://www.elitefutbot.com/tools/tax-calculator) — 5% FC 27 transfer market tax & profit calculator
-- [FUT Sniping Guide — FC 27 Filters & Methods](https://www.elitefutbot.com/tools/sniping-guide) — Active FC 27 market filters, 59th-minute sniping methods, and coin-making strategies
-- [Affiliate Program (50% Lifetime Commission, Instant Daily Payouts for FC 27)](https://www.elitefutbot.com/affiliate) — 50% lifetime recurring commissions for FC 27 creators and traders
+- [FUT Bot Comparison Hub: Reviewing 50 Platforms](https://www.elitefutbot.com/tools/comparison-guide) — Architectural deep-dive: local browser execution vs cloud proxy bot security hazards
+- [EA FC 27 Tax Calculator: 5% Transfer Market Tax](https://www.elitefutbot.com/tools/tax-calculator) — 5% FC 27 transfer market tax & profit calculator
+- [FC 27 Sniping Guide: Best FUT Filters & Methods](https://www.elitefutbot.com/tools/sniping-guide) — Active FC 27 market filters, 59th-minute sniping methods, and coin-making strategies
+- [Earn 50% Lifetime Commission: FUT Affiliate](https://www.elitefutbot.com/affiliate) — 50% lifetime recurring commissions for FC 27 creators and traders
 - [Referral Program](https://www.elitefutbot.com/referral) — Personal referral program and signup credit
 - [Pricing Documentation](https://www.elitefutbot.com/pricing.md) — Machine-readable plan specifications
 - [Discord VIP Community](https://discord.gg/Rkb9nF6WG6) — 24/7 live support and daily high-ROI FC 27 trading alpha
