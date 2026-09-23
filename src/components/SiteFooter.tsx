@@ -134,7 +134,7 @@ export default function SiteFooter() {
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futmania-vs-elitefutbot">vs FUTMania</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/steviessniper-vs-elitefutbot">vs Stevie&apos;s Sniper</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/paletools-vs-elitefutbot">vs Paletools</Link></li>
-                <li><Link className="text-primary hover:underline transition-colors focus-visible:text-primary focus-visible:outline-none block py-1 font-bold text-xs" href="/tools/comparison-guide">View All 49 Comparisons &rarr;</Link></li>
+                <li><Link className="text-primary hover:underline transition-colors focus-visible:text-primary focus-visible:outline-none block py-1 font-bold text-xs" href="/tools/comparison-guide">View All 54 Comparisons &rarr;</Link></li>
               </ul>
             </nav>
 
@@ -167,10 +167,15 @@ export default function SiteFooter() {
         <div className="pt-8 pb-12 border-t border-white/5 space-y-4">
           <div className="flex items-center justify-between">
             <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400">Direct Competitor Breakdowns</span>
-            <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (50 Tools)</Link>
+            <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (54 Tools)</Link>
           </div>
           <div className="flex flex-wrap gap-3 text-xs">
             {[
+              { slug: "fcautobuyer-vs-elitefutbot", name: "FC AutoBuyer" },
+              { slug: "eafcsnipingbot-vs-elitefutbot", name: "EAFC Sniping Bot" },
+              { slug: "remx-vs-elitefutbot", name: "RemX Sniping Bot" },
+              { slug: "abfut-vs-elitefutbot", name: "ABFut 27" },
+              { slug: "futeasy-vs-elitefutbot", name: "FutEasy" },
               { slug: "bakers-bot-vs-elitefutbot", name: "Baker's Bot" },
               { slug: "futsimpletrader-vs-elitefutbot", name: "FUT Simple Trader" },
               { slug: "futearn-vs-elitefutbot", name: "FutEarn" },

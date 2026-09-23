@@ -4,15 +4,15 @@ import { COMPARISONS } from "@/data/comparisons-hub";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "FUT Bot Comparison Hub: Reviewing 50 Platforms | Elite FUT Bot",
+    absolute: "FUT Bot Comparison Hub: Reviewing 54 Platforms | Elite FUT Bot",
   },
-  description: "Compare Elite FUT SNIPER against 50 major FUT bots, autobuyers, and trading tools. Side-by-side speed, safety, and FC 27 feature breakdowns.",
+  description: "Compare Elite FUT SNIPER against 54 major FUT bots, autobuyers, and trading tools. Side-by-side speed, safety, and FC 27 feature breakdowns.",
   alternates: {
     canonical: "https://www.elitefutbot.com/tools/comparison-guide",
   },
   openGraph: {
-    title: "FUT Bot Comparison Hub: Reviewing 50 Platforms | Elite FUT Bot",
-    description: "Compare Elite FUT SNIPER against 50 major FUT bots, autobuyers, and trading tools. Full breakdowns including speed, safety, and features.",
+    title: "FUT Bot Comparison Hub: Reviewing 54 Platforms | Elite FUT Bot",
+    description: "Compare Elite FUT SNIPER against 54 major FUT bots, autobuyers, and trading tools. Full breakdowns including speed, safety, and features.",
     url: "https://www.elitefutbot.com/tools/comparison-guide",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Bot Comparison Hub: Reviewing 50 Platforms | Elite FUT Bot",
-    description: "Compare Elite FUT SNIPER against 50 FUT bots. Speed, safety, features — full side-by-side breakdowns.",
+    title: "FUT Bot Comparison Hub: Reviewing 54 Platforms | Elite FUT Bot",
+    description: "Compare Elite FUT SNIPER against 54 FUT bots. Speed, safety, features — full side-by-side breakdowns.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
@@ -33,7 +33,7 @@ export default function ComparisonGuidePage() {
       {
         "@type": "CollectionPage",
         name: "FUT Bot Comparison Hub",
-        description: "Comprehensive side-by-side comparisons of Elite FUT SNIPER against 50 automated trading tools and sniping extensions.",
+        description: "Comprehensive side-by-side comparisons of Elite FUT SNIPER against 54 automated trading tools and sniping extensions.",
         url: "https://www.elitefutbot.com/tools/comparison-guide",
       },
       {
