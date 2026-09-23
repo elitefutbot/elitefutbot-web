@@ -77,7 +77,37 @@ export async function GET() {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    // Competitor comparison pages (All 36 platforms)
+    // Competitor comparison pages (All 54 platforms)
+    {
+      url: `${baseUrl}/fcautobuyer-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/eafcsnipingbot-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/remx-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/abfut-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
+    {
+      url: `${baseUrl}/futeasy-vs-elitefutbot`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+    },
     {
       url: `${baseUrl}/bakers-bot-vs-elitefutbot`,
       lastModified: currentDate,
