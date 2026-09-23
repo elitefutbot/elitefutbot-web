@@ -3,6 +3,7 @@ import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
 import SetDocumentLang from "@/components/SetDocumentLang";
 import { getHreflangAlternates } from "@/data/locales/registry";
+import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
   ArrowRight,
   PlayCircle,
@@ -842,6 +843,24 @@ export default function FC27FutSnipeBotPage() {
             </div>
           </div>
         </section>
+
+        {/* ELITE FUT SNIPER FEATURES — sniping-bot angle */}
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <EliteFeaturesSection
+            badge="FC 27 Sniping Bot Modules"
+            headingPre="All the Tools Inside"
+            headingHighlight="One Sniping Bot"
+            description="From 59th-minute instant sniping to overnight mass bidding and auto-relisting — every module you need to flip the FC 27 transfer market in your favour, 24/7."
+            ctaLabel="Try Free for 7 Days"
+            ctaHref="/fc27-fut-snipe-bot#pricing"
+            secondaryLabel="See Full Feature List"
+            secondaryHref="/fc27-fut-sniping-bot-autobuyer-features"
+            imageSrc="/snipe-guide-bot-advanced.png"
+            imageAlt="Elite FUT SNIPER FC 27 sniping bot advanced settings — action delay, sleep settings, purchase limits and auto-list configuration"
+            imagePill="Sniping Bot Config"
+            sectionId="fc27-snipe-features"
+          />
+        </div>
 
         {/* COMPARISON BENCHMARK TABLE */}
         <section className="py-20 bg-[#090909] border-b border-white/5" id="comparison">

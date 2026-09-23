@@ -3,6 +3,7 @@ import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
 import SetDocumentLang from "@/components/SetDocumentLang";
 import { getHreflangAlternates } from "@/data/locales/registry";
+import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
   ArrowRight,
   ShieldCheck,
@@ -600,6 +601,24 @@ export default function FC27FeaturesPage() {
           })}
         </div>
       </section>
+
+      {/* ELITE FUT SNIPER FEATURES — autobuyer angle */}
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <EliteFeaturesSection
+          badge="Autobuyer Feature Breakdown"
+          headingPre="How the FC 27 Autobuyer"
+          headingHighlight="Works for You"
+          description="Every module in the suite works together — snipe fast, bid smart, sell automatically, and keep your account safe. Here’s the full capability breakdown."
+          ctaLabel="Get the Bot — Free Trial"
+          ctaHref="/register"
+          secondaryLabel="See FC 27 Sniping Bot"
+          secondaryHref="/fc27-fut-snipe-bot"
+          imageSrc="/snipe-guide-bot-advanced.png"
+          imageAlt="Elite FUT SNIPER FC 27 autobuyer feature configuration — action delay, sleep settings, limits and tax-aware auto-list"
+          imagePill="Autobuyer Settings"
+          sectionId="autobuyer-breakdown"
+        />
+      </div>
 
       {/* Humanization++ Deep Dive Flagship Section */}
       <section className="py-20 bg-dark relative border-y border-white/5 overflow-hidden">
