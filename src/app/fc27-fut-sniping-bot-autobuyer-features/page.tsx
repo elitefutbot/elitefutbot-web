@@ -21,7 +21,6 @@ import {
   Clock,
   Coins,
   CheckCircle2,
-  Tv,
   Wallet,
   Filter,
   Shield,
@@ -33,9 +32,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "EA FC 27 Sniping Bot & Autobuyer Features – Everything You Need to Snipe",
+  title: {
+    absolute: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
+  },
   description:
-    "Discover the complete 11-module trading suite for EA FC 26 & FC 27. Sub-20ms local sniping, Humanization++ anti-ban technology with 0 bans to date, live Futbin price reference, side panel HUD, and smart filters.",
+    "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 7-day free trial.",
   keywords:
     "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
   alternates: {
@@ -43,9 +44,9 @@ export const metadata: Metadata = {
     languages: getHreflangAlternates("/fc27-fut-sniping-bot-autobuyer-features"),
   },
   openGraph: {
-    title: "EA FC 27 Sniping Bot & Autobuyer Features | Elite FUT SNIPER",
+    title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
     description:
-      "Everything you need to snipe, flip, and dominate the FC 26 & FC 27 transfer market. 100% local Chrome extension with zero bans to date.",
+      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 7-day free trial.",
     type: "website",
     url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
     images: [
@@ -53,15 +54,15 @@ export const metadata: Metadata = {
         url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Elite FUT SNIPER 11-Module Features Arsenal",
+        alt: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EA FC 27 Sniping Bot & Autobuyer Features | Elite FUT SNIPER",
+    title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
     description:
-      "Sub-20ms market scanning, Humanization++ anti-ban engine, Futbin pricing, and automated relisting for FC 26 & FC 27.",
+      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 7-day free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
@@ -558,7 +559,7 @@ export default function FC27FeaturesPage() {
                         <Icon className="w-5 h-5" />
                       </div>
                       <span className="font-mono text-xs font-bold text-gray-400">
-                        {feat.num} //
+                        {feat.num} {"//"}
                       </span>
                     </div>
 

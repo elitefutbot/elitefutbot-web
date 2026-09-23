@@ -5,20 +5,23 @@ import { CheckCircle2, Zap, ArrowRight, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Official Links & Socials",
-  description: "Claim free beta access to the #1 FC 26 sniping bot. Join our official Discord, follow on TikTok, Instagram, X/Twitter, and Telegram.",
+  description: "Start your 7-day free trial for the #1 FC 27 sniping bot & autobuyer. Connect on Discord, TikTok, Instagram, X/Twitter, and Telegram.",
   alternates: {
     canonical: "https://www.elitefutbot.com/bio",
   },
   openGraph: {
-    title: "Official Links & Socials",
-    description: "Claim free beta access and connect with Elite FUT SNIPER on Discord, TikTok, Instagram, X, and Telegram.",
+    title: "Official Links & Socials | Elite FUT SNIPER",
+    description: "Start your 7-day free trial and connect with Elite FUT SNIPER on Discord, TikTok, Instagram, X, and Telegram.",
     url: "https://www.elitefutbot.com/bio",
     siteName: "Elite FUT SNIPER",
     type: "website",
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
   },
   twitter: {
-    title: "Official Links & Socials",
-    description: "Claim free beta access and join our official channels on TikTok, Instagram, X, and Discord.",
+    card: "summary_large_image",
+    title: "Official Links & Socials | Elite FUT SNIPER",
+    description: "Start your 7-day free trial and join our official channels on TikTok, Instagram, X, and Discord.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
   }
 };
 
@@ -190,7 +193,7 @@ export default function BioPage() {
                 Elite FUT <span className="text-primary italic">SNIPER</span>
               </h1>
               <p className="text-xs text-gray-400 mt-1 max-w-xs mx-auto font-medium">
-                The World's Fastest FC 26 &amp; FC 27 Sniping Bot &amp; Autobuyer Suite
+                The World&apos;s Fastest EA FC 27 Sniping Bot &amp; Autobuyer Suite
               </p>
             </div>
           </div>

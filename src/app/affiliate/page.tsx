@@ -2,14 +2,16 @@ import { Metadata } from "next";
 import AffiliatePageClient from "./AffiliatePageClient";
 
 export const metadata: Metadata = {
-  title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
-  description: "Join the Elite FUT SNIPER Affiliate Program. Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the #1 FC 26 & FC 27 sniping bot & autobuyer. Instant Daily Payouts via Crypto USDT, PayPal & Bank Wire.",
+  title: {
+    absolute: "Earn 50% Lifetime Commission: FUT Affiliate | Elite FUT Bot",
+  },
+  description: "Join the Elite FUT Bot Affiliate Program. Earn 50% lifetime recurring commission promoting the #1 FC 27 sniping bot. Instant daily crypto & wire payouts.",
   alternates: {
     canonical: "https://www.elitefutbot.com/affiliate",
   },
   openGraph: {
-    title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
-    description: "Earn 50% lifetime recurring commission ($10 to $17.50+ per sale) promoting the world's fastest FC 26 & FC 27 sniping bot. Instant Daily Payouts, 90-day cookies & special creator rates.",
+    title: "Earn 50% Lifetime Commission: FUT Affiliate | Elite FUT Bot",
+    description: "Earn 50% lifetime recurring commission promoting the world's fastest FC 27 sniping bot. Instant daily payouts and 90-day cookies.",
     url: "https://www.elitefutbot.com/affiliate",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -24,10 +26,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Earn 50% Lifetime Commission – FC 26 & FC 27 Bot Affiliate Program",
-    description: "Earn $10 to $17.50+ per sale (50% Lifetime RevShare) promoting the #1 FC 26 & FC 27 Sniping Bot. Instant Daily Payouts & 90-day cookies.",
+    title: "Earn 50% Lifetime Commission: FUT Affiliate | Elite FUT Bot",
+    description: "Earn 50% lifetime commission promoting the fastest FC 27 sniping bot.",
     images: ["https://www.elitefutbot.com/og-image.png"],
-  }
+  },
 };
 
 export default function Page() {

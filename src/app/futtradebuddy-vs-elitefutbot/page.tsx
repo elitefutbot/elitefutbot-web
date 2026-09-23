@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futTradeBuddyData } from "@/data/competitors/futtradebuddy";
 
 export const metadata: Metadata = {
-  title: "FUT Trade Buddy vs Elite FUT SNIPER (2026 Review): Bidding Tool vs 20ms AI Bot",
+  title: {
+    absolute: "FUT Trade Buddy vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "FUT Trade Buddy vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, single-filter bidding limitations, 70ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FUT Trade Buddy vs Elite FUT SNIPER review: compare linear delay soft bans, single-filter bidding, and Elite's sub-20ms Chrome extension with AI.",
   keywords: [
     "fut trade buddy",
     "fut trade buddy review",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futtradebuddy-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Trade Buddy vs Elite FUT SNIPER (2026 Review): Bidding Tool vs 20ms AI Bot",
+    title: "FUT Trade Buddy vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Trade Buddy vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, single-filter bidding limitations, 70ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUT Trade Buddy vs Elite FUT SNIPER review: compare linear delay soft bans, single-filter bidding, and Elite's sub-20ms Chrome extension with AI.",
     url: "https://www.elitefutbot.com/futtradebuddy-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Trade Buddy vs Elite FUT SNIPER (2026 Review): Bidding Tool vs 20ms AI Bot",
+    title: "FUT Trade Buddy vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Trade Buddy vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, single-filter bidding limitations, 70ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUT Trade Buddy vs Elite FUT SNIPER review: compare linear delay soft bans, single-filter bidding, and Elite's sub-20ms Chrome extension with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

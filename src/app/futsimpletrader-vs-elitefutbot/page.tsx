@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futSimpleTraderData } from "@/data/competitors/futsimpletrader";
 
 export const metadata: Metadata = {
-  title: "FUT Simple Trader vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
+  title: {
+    absolute: "FUT Simple Trader vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "Honest FUT Simple Trader vs Elite FUT SNIPER review. Real data on ban risks, pricing checks, external dashboard UI, and 20ms execution for FC 26 & FC 27.",
+    "FUT Simple Trader vs Elite FUT SNIPER review: compare ban risks, pricing checks, external UI, and Elite's sub-20ms Chrome extension with AI solver.",
   keywords: [
     "fut simple trader",
     "futsimpletrader",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futsimpletrader-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Simple Trader vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
+    title: "FUT Simple Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "Honest FUT Simple Trader vs Elite FUT SNIPER review. Real data on ban risks, pricing checks, external dashboard UI, and 20ms execution for FC 26 & FC 27.",
+      "FUT Simple Trader vs Elite FUT SNIPER review: compare ban risks, pricing checks, external UI, and Elite's sub-20ms Chrome extension with AI solver.",
     url: "https://www.elitefutbot.com/futsimpletrader-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Simple Trader vs Elite FUT SNIPER (2026 Review): Real Data, Ban Risks & Speed",
+    title: "FUT Simple Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "Honest FUT Simple Trader vs Elite FUT SNIPER review. Real data on ban risks, pricing checks, external dashboard UI, and 20ms execution for FC 26 & FC 27.",
+      "FUT Simple Trader vs Elite FUT SNIPER review: compare ban risks, pricing checks, external UI, and Elite's sub-20ms Chrome extension with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

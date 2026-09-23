@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futRichData } from "@/data/competitors/futrich";
 
 export const metadata: Metadata = {
-  title: "FUTRich vs Elite FUT SNIPER (2026 Review): Title-Lock Fees & Device Limits",
+  title: {
+    absolute: "FUTRich vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUTRich vs Elite FUT SNIPER comparison. Real audit of futrich.com €39.99 single-title lock, strict single-device restrictions, linear delay macro risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+    "FUTRich vs Elite FUT SNIPER review: compare €39.99 single-title lock, device limits, macro risks, and Elite's sub-20ms Side Panel HUD for FC 26 & FC 27.",
   keywords: [
     "futrich",
     "futrich review",
@@ -22,9 +24,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futrich-vs-elitefutbot" },
   openGraph: {
-    title: "FUTRich vs Elite FUT SNIPER (2026 Review): Title-Lock Fees & Device Limits",
+    title: "FUTRich vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTRich vs Elite FUT SNIPER comparison. Real audit of futrich.com €39.99 single-title lock, strict single-device restrictions, linear delay macro risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "FUTRich vs Elite FUT SNIPER review: compare €39.99 single-title lock, device limits, macro risks, and Elite's sub-20ms Side Panel HUD for FC 26 & FC 27.",
     url: "https://www.elitefutbot.com/futrich-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -32,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTRich vs Elite FUT SNIPER (2026 Review): Title-Lock Fees & Device Limits",
+    title: "FUTRich vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTRich vs Elite FUT SNIPER comparison. Real audit of futrich.com €39.99 single-title lock, strict single-device restrictions, linear delay macro risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "FUTRich vs Elite FUT SNIPER review: compare €39.99 single-title lock, device limits, macro risks, and Elite's sub-20ms Side Panel HUD for FC 26 & FC 27.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

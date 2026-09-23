@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { eafcSniperData } from "@/data/competitors/eafcsniper";
 
 export const metadata: Metadata = {
-  title: "EAFC Sniper vs Elite FUT SNIPER (2026 Review): Seasonal Re-Buys vs 20ms AI Bot",
+  title: {
+    absolute: "EAFC Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "EAFC Sniper vs Elite FUT SNIPER comparison. Real technical audit of title-locked seasonal re-buy fees ($35–$45), screen overlay banners, 50ms–100ms script lag, and Elite's unified 365-day 20ms Chrome Side Panel with AI SBC solver.",
+    "EAFC Sniper vs Elite FUT SNIPER review: audit seasonal re-buy fees, overlay banners, script lag, and Elite's 20ms Chrome Side Panel with AI solver.",
   keywords: [
     "eafc sniper",
     "eafcsniper",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/eafcsniper-vs-elitefutbot" },
   openGraph: {
-    title: "EAFC Sniper vs Elite FUT SNIPER (2026 Review): Seasonal Re-Buys vs 20ms AI Bot",
+    title: "EAFC Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EAFC Sniper vs Elite FUT SNIPER comparison. Real technical audit of title-locked seasonal re-buy fees ($35–$45), screen overlay banners, 50ms–100ms script lag, and Elite's unified 365-day 20ms Chrome Side Panel with AI SBC solver.",
+      "EAFC Sniper vs Elite FUT SNIPER review: audit seasonal re-buy fees, overlay banners, script lag, and Elite's 20ms Chrome Side Panel with AI solver.",
     url: "https://www.elitefutbot.com/eafcsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EAFC Sniper vs Elite FUT SNIPER (2026 Review): Seasonal Re-Buys vs 20ms AI Bot",
+    title: "EAFC Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EAFC Sniper vs Elite FUT SNIPER comparison. Real technical audit of title-locked seasonal re-buy fees ($35–$45), screen overlay banners, 50ms–100ms script lag, and Elite's unified 365-day 20ms Chrome Side Panel with AI SBC solver.",
+      "EAFC Sniper vs Elite FUT SNIPER review: audit seasonal re-buy fees, overlay banners, script lag, and Elite's 20ms Chrome Side Panel with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

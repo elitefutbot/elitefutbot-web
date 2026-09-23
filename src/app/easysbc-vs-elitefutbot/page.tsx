@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { easySbcData } from "@/data/competitors/easysbc";
 
 export const metadata: Metadata = {
-  title: "EasySBC vs Elite FUT SNIPER (2026 Review): External Blueprints vs 1-Click AI Auto-Buy",
+  title: {
+    absolute: "EasySBC vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "EasySBC vs Elite FUT SNIPER comparison. Real audit of manual blueprint alt-tabbing, public price-fixing traps, zero market bot features, and Elite's in-browser AI SBC solver with 1-click auto-buy & 20ms sniper.",
+    "EasySBC vs Elite FUT SNIPER review: audit manual blueprint alt-tabbing, price fixing traps, and Elite's 20ms autonomous bot with AI SBC solver.",
   keywords: [
     "easysbc",
     "easy sbc",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/easysbc-vs-elitefutbot" },
   openGraph: {
-    title: "EasySBC vs Elite FUT SNIPER (2026 Review): External Blueprints vs 1-Click AI Auto-Buy",
+    title: "EasySBC vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EasySBC vs Elite FUT SNIPER comparison. Real audit of manual blueprint alt-tabbing, public price-fixing traps, zero market bot features, and Elite's in-browser AI SBC solver with 1-click auto-buy & 20ms sniper.",
+      "EasySBC vs Elite FUT SNIPER review: audit manual blueprint alt-tabbing, price fixing traps, and Elite's 20ms autonomous bot with AI SBC solver.",
     url: "https://www.elitefutbot.com/easysbc-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EasySBC vs Elite FUT SNIPER (2026 Review): External Blueprints vs 1-Click AI Auto-Buy",
+    title: "EasySBC vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EasySBC vs Elite FUT SNIPER comparison. Real audit of manual blueprint alt-tabbing, public price-fixing traps, zero market bot features, and Elite's in-browser AI SBC solver with 1-click auto-buy & 20ms sniper.",
+      "EasySBC vs Elite FUT SNIPER review: audit manual blueprint alt-tabbing, price fixing traps, and Elite's 20ms autonomous bot with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

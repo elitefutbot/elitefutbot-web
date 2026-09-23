@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futinatorData } from "@/data/competitors/futinator";
 
 export const metadata: Metadata = {
-  title: "Futinator vs Elite FUT SNIPER (2026 Review): Real Pricing, Ban Risks & Speed",
+  title: {
+    absolute: "Futinator vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest Futinator vs Elite FUT SNIPER review. Real data on futinator.com 54 € annual re-tax, admitted transfer market soft-bans, retro grey modal clutter, and sub-20ms sniping for FC 26 & FC 27.",
+    "Futinator vs Elite FUT SNIPER review: compare €54/yr annual re-tax, soft-ban risks, and Elite's sub-20ms local Chrome extension with neural AI solver.",
   keywords: [
     "futinator",
     "futinator review",
@@ -23,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futinator-vs-elitefutbot" },
   openGraph: {
-    title: "Futinator vs Elite FUT SNIPER (2026 Review): Real Pricing, Ban Risks & Speed",
+    title: "Futinator vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest Futinator vs Elite FUT SNIPER review. Real data on futinator.com 54 € annual re-tax, admitted transfer market soft-bans, retro grey modal clutter, and sub-20ms sniping for FC 26 & FC 27.",
+      "Futinator vs Elite FUT SNIPER review: compare €54/yr annual re-tax, soft-ban risks, and Elite's sub-20ms local Chrome extension with neural AI solver.",
     url: "https://www.elitefutbot.com/futinator-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Futinator vs Elite FUT SNIPER (2026 Review): Real Pricing, Ban Risks & Speed",
+    title: "Futinator vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest Futinator vs Elite FUT SNIPER review. Real data on futinator.com 54 € annual re-tax, admitted transfer market soft-bans, retro grey modal clutter, and sub-20ms sniping for FC 26 & FC 27.",
+      "Futinator vs Elite FUT SNIPER review: compare €54/yr annual re-tax, soft-ban risks, and Elite's sub-20ms local Chrome extension with neural AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

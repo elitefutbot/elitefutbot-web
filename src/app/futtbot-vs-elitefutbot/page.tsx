@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futtBotData } from "@/data/competitors/futtbot";
 
 export const metadata: Metadata = {
-  title: "Futtbot vs Elite FUT SNIPER (2026 Review): CLI Scripts vs 20ms Chrome HUD",
+  title: {
+    absolute: "Futtbot vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Futtbot vs Elite FUT SNIPER comparison. Real audit of open-source CLI script friction, manual DevTools cookie sniffing, Node.js breaking updates, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+    "Futtbot vs Elite FUT SNIPER review: compare CLI script setup friction, breaking Node updates, and Elite's sub-20ms Chrome Side Panel HUD with AI solver.",
   keywords: [
     "futtbot",
     "futtbot review",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futtbot-vs-elitefutbot" },
   openGraph: {
-    title: "Futtbot vs Elite FUT SNIPER (2026 Review): CLI Scripts vs 20ms Chrome HUD",
+    title: "Futtbot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Futtbot vs Elite FUT SNIPER comparison. Real audit of open-source CLI script friction, manual DevTools cookie sniffing, Node.js breaking updates, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "Futtbot vs Elite FUT SNIPER review: compare CLI script setup friction, breaking Node updates, and Elite's sub-20ms Chrome Side Panel HUD with AI solver.",
     url: "https://www.elitefutbot.com/futtbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Futtbot vs Elite FUT SNIPER (2026 Review): CLI Scripts vs 20ms Chrome HUD",
+    title: "Futtbot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Futtbot vs Elite FUT SNIPER comparison. Real audit of open-source CLI script friction, manual DevTools cookie sniffing, Node.js breaking updates, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "Futtbot vs Elite FUT SNIPER review: compare CLI script setup friction, breaking Node updates, and Elite's sub-20ms Chrome Side Panel HUD with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

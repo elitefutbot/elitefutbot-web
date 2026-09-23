@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { snipeSenseiData } from "@/data/competitors/snipesensei";
 
 export const metadata: Metadata = {
-  title: "Snipe Sensei vs Elite FUT SNIPER (2026 Review): TikTok Bot vs 20ms AI Sniper",
+  title: {
+    absolute: "Snipe Sensei vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Snipe Sensei vs Elite FUT SNIPER comparison. Real audit of snipesensei.com £24.99 ($32.50) email script, mechanical DOM delays, alt-account ban risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+    "Snipe Sensei vs Elite FUT SNIPER review: compare £24.99 email script fees, DOM delays, ban risks, and Elite's sub-20ms Side Panel HUD with AI solver.",
   keywords: [
     "snipe sensei",
     "snipesensei",
@@ -22,9 +24,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/snipesensei-vs-elitefutbot" },
   openGraph: {
-    title: "Snipe Sensei vs Elite FUT SNIPER (2026 Review): TikTok Bot vs 20ms AI Sniper",
+    title: "Snipe Sensei vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Snipe Sensei vs Elite FUT SNIPER comparison. Real audit of snipesensei.com £24.99 ($32.50) email script, mechanical DOM delays, alt-account ban risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "Snipe Sensei vs Elite FUT SNIPER review: compare £24.99 email script fees, DOM delays, ban risks, and Elite's sub-20ms Side Panel HUD with AI solver.",
     url: "https://www.elitefutbot.com/snipesensei-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -32,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Snipe Sensei vs Elite FUT SNIPER (2026 Review): TikTok Bot vs 20ms AI Sniper",
+    title: "Snipe Sensei vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Snipe Sensei vs Elite FUT SNIPER comparison. Real audit of snipesensei.com £24.99 ($32.50) email script, mechanical DOM delays, alt-account ban risks, and sub-20ms Side Panel HUD for EA FC 26 & FC 27.",
+      "Snipe Sensei vs Elite FUT SNIPER review: compare £24.99 email script fees, DOM delays, ban risks, and Elite's sub-20ms Side Panel HUD with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

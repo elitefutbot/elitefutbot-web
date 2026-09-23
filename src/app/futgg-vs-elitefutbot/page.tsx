@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futGgData } from "@/data/competitors/futgg";
 
 export const metadata: Metadata = {
-  title: "FUT.GG vs Elite FUT SNIPER (2026 Review): Passive Database vs 20ms Sniping Bot",
+  title: {
+    absolute: "FUT.GG vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUT.GG vs Elite FUT SNIPER comparison. Real audit of passive card database limits, community template price-fixing, manual alt-tab lag, and Elite's autonomous 20ms market sniper with AI SBC solver.",
+    "FUT.GG vs Elite FUT SNIPER review: audit manual web database limits, lack of bot automation, and Elite's 20ms live Chrome autobuyer with AI solver.",
   keywords: [
     "fut.gg",
     "fut gg",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futgg-vs-elitefutbot" },
   openGraph: {
-    title: "FUT.GG vs Elite FUT SNIPER (2026 Review): Passive Database vs 20ms Sniping Bot",
+    title: "FUT.GG vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT.GG vs Elite FUT SNIPER comparison. Real audit of passive card database limits, community template price-fixing, manual alt-tab lag, and Elite's autonomous 20ms market sniper with AI SBC solver.",
+      "FUT.GG vs Elite FUT SNIPER review: audit manual web database limits, lack of bot automation, and Elite's 20ms live Chrome autobuyer with AI solver.",
     url: "https://www.elitefutbot.com/futgg-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT.GG vs Elite FUT SNIPER (2026 Review): Passive Database vs 20ms Sniping Bot",
+    title: "FUT.GG vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT.GG vs Elite FUT SNIPER comparison. Real audit of passive card database limits, community template price-fixing, manual alt-tab lag, and Elite's autonomous 20ms market sniper with AI SBC solver.",
+      "FUT.GG vs Elite FUT SNIPER review: audit manual web database limits, lack of bot automation, and Elite's 20ms live Chrome autobuyer with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

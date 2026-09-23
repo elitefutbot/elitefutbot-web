@@ -5,18 +5,20 @@ import LiteYouTubeEmbed from '@/components/LiteYouTubeEmbed';
 import { Terminal, Network, Cpu, Laptop, Zap, Shield, Brain, Code2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: "Baker's Bot Developer Creates Elite FUT SNIPER",
+  title: {
+    absolute: "Baker's Bot Developer Creates Elite FUT Bot",
+  },
   description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 & FC 26 sniping bot built from scratch.",
   alternates: { canonical: "https://www.elitefutbot.com/bakers-bot-developer" },
   openGraph: {
-    title: "Baker's Bot Developer Creates Elite FUT SNIPER",
+    title: "Baker's Bot Developer Creates Elite FUT Bot",
     description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 sniping bot with full FC 26 compatibility.",
     url: "https://www.elitefutbot.com/bakers-bot-developer",
     siteName: "Elite FUT SNIPER",
     type: "article",
   },
   twitter: {
-    title: "Baker's Bot Developer Creates Elite FUT SNIPER",
+    title: "Baker's Bot Developer Creates Elite FUT Bot",
     description: "Built by the core engineer behind Baker's Bot.",
   }
 };

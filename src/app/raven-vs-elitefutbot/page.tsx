@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { ravenData } from "@/data/competitors/raven";
 
 export const metadata: Metadata = {
-  title: "Raven vs Elite FUT SNIPER (2026 Review): Tampermonkey Script vs 20ms AI Bot",
+  title: {
+    absolute: "Raven vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Raven (Raven for FIFA) vs Elite FUT SNIPER comparison. Real technical audit of abandoned GitHub script selector rot, linear delay soft bans, 70ms–140ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "Raven vs Elite FUT SNIPER review: compare abandoned GitHub scripts, linear delay soft bans, and Elite's sub-20ms Chrome Side Panel with neural AI.",
   keywords: [
     "raven for fifa",
     "raven fifa autobuyer",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/raven-vs-elitefutbot" },
   openGraph: {
-    title: "Raven vs Elite FUT SNIPER (2026 Review): Tampermonkey Script vs 20ms AI Bot",
+    title: "Raven vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Raven (Raven for FIFA) vs Elite FUT SNIPER comparison. Real technical audit of abandoned GitHub script selector rot, linear delay soft bans, 70ms–140ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "Raven vs Elite FUT SNIPER review: compare abandoned GitHub scripts, linear delay soft bans, and Elite's sub-20ms Chrome Side Panel with neural AI.",
     url: "https://www.elitefutbot.com/raven-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Raven vs Elite FUT SNIPER (2026 Review): Tampermonkey Script vs 20ms AI Bot",
+    title: "Raven vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Raven (Raven for FIFA) vs Elite FUT SNIPER comparison. Real technical audit of abandoned GitHub script selector rot, linear delay soft bans, 70ms–140ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "Raven vs Elite FUT SNIPER review: compare abandoned GitHub scripts, linear delay soft bans, and Elite's sub-20ms Chrome Side Panel with neural AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

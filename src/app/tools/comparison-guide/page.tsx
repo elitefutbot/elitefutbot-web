@@ -3,14 +3,16 @@ import ComparisonHubClient from "./ComparisonHubClient";
 import { COMPARISONS } from "@/data/comparisons-hub";
 
 export const metadata: Metadata = {
-  title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 50 Competitors",
-  description: "Compare Elite FUT SNIPER against every major FUT sniping bot, autobuyer, and trading tool. Side-by-side speed, safety, and FC 27 feature breakdowns for 50 platforms.",
+  title: {
+    absolute: "FUT Bot Comparison Hub: Reviewing 50 Platforms | Elite FUT Bot",
+  },
+  description: "Compare Elite FUT SNIPER against 50 major FUT bots, autobuyers, and trading tools. Side-by-side speed, safety, and FC 27 feature breakdowns.",
   alternates: {
     canonical: "https://www.elitefutbot.com/tools/comparison-guide",
   },
   openGraph: {
-    title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 50 Competitors",
-    description: "Compare Elite FUT SNIPER against every FUT bot and trading tool. Full breakdowns including speed, safety, and features.",
+    title: "FUT Bot Comparison Hub: Reviewing 50 Platforms | Elite FUT Bot",
+    description: "Compare Elite FUT SNIPER against 50 major FUT bots, autobuyers, and trading tools. Full breakdowns including speed, safety, and features.",
     url: "https://www.elitefutbot.com/tools/comparison-guide",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -18,8 +20,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Bot Comparison Hub – Elite FUT SNIPER vs All 50 Competitors",
-    description: "Compare Elite FUT SNIPER against every FUT bot. Speed, safety, features — full side-by-side breakdowns.",
+    title: "FUT Bot Comparison Hub: Reviewing 50 Platforms | Elite FUT Bot",
+    description: "Compare Elite FUT SNIPER against 50 FUT bots. Speed, safety, features — full side-by-side breakdowns.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

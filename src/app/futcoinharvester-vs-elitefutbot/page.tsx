@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futCoinHarvesterData } from "@/data/competitors/futcoinharvester";
 
 export const metadata: Metadata = {
-  title: "FUT Coin Harvester vs Elite FUT SNIPER (2026 Review): Cloud Bot vs 20ms AI Bot",
+  title: {
+    absolute: "FUT Coin Harvester vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "FUT Coin Harvester vs Elite FUT SNIPER comparison. Real technical audit of credential handover security risks, datacenter IP banwaves, 250ms–400ms proxy lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FUT Coin Harvester vs Elite FUT SNIPER: compare desktop macro risks, laggy searches, and Elite's sub-20ms local Chrome extension with AI SBC solver.",
   keywords: [
     "fut coin harvester",
     "fut coin harvester review",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futcoinharvester-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Coin Harvester vs Elite FUT SNIPER (2026 Review): Cloud Bot vs 20ms AI Bot",
+    title: "FUT Coin Harvester vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Coin Harvester vs Elite FUT SNIPER comparison. Real technical audit of credential handover security risks, datacenter IP banwaves, 250ms–400ms proxy lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUT Coin Harvester vs Elite FUT SNIPER: compare desktop macro risks, laggy searches, and Elite's sub-20ms local Chrome extension with AI SBC solver.",
     url: "https://www.elitefutbot.com/futcoinharvester-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Coin Harvester vs Elite FUT SNIPER (2026 Review): Cloud Bot vs 20ms AI Bot",
+    title: "FUT Coin Harvester vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Coin Harvester vs Elite FUT SNIPER comparison. Real technical audit of credential handover security risks, datacenter IP banwaves, 250ms–400ms proxy lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUT Coin Harvester vs Elite FUT SNIPER: compare desktop macro risks, laggy searches, and Elite's sub-20ms local Chrome extension with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

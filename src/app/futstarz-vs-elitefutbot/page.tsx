@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futStarzData } from "@/data/competitors/futstarz";
 
 export const metadata: Metadata = {
-  title: "FutStarz vs Elite FUT SNIPER (2026 Review): Cloud Proxies vs Local 20ms Bot",
+  title: {
+    absolute: "FutStarz vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FutStarz vs Elite FUT SNIPER comparison. Real technical audit of cloud proxy queue lag (250ms+), session token exposure, datacenter ban risks, and Elite's 100% local 20ms Chrome Side Panel bot with AI SBC solver.",
+    "FutStarz vs Elite FUT SNIPER review: compare cloud queue delays, token exposure, datacenter bans, and Elite's local 20ms Chrome Side Panel with AI.",
   keywords: [
     "futstarz",
     "fut starz",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futstarz-vs-elitefutbot" },
   openGraph: {
-    title: "FutStarz vs Elite FUT SNIPER (2026 Review): Cloud Proxies vs Local 20ms Bot",
+    title: "FutStarz vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FutStarz vs Elite FUT SNIPER comparison. Real technical audit of cloud proxy queue lag (250ms+), session token exposure, datacenter ban risks, and Elite's 100% local 20ms Chrome Side Panel bot with AI SBC solver.",
+      "FutStarz vs Elite FUT SNIPER review: compare cloud queue delays, token exposure, datacenter bans, and Elite's local 20ms Chrome Side Panel with AI.",
     url: "https://www.elitefutbot.com/futstarz-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FutStarz vs Elite FUT SNIPER (2026 Review): Cloud Proxies vs Local 20ms Bot",
+    title: "FutStarz vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FutStarz vs Elite FUT SNIPER comparison. Real technical audit of cloud proxy queue lag (250ms+), session token exposure, datacenter ban risks, and Elite's 100% local 20ms Chrome Side Panel bot with AI SBC solver.",
+      "FutStarz vs Elite FUT SNIPER review: compare cloud queue delays, token exposure, datacenter bans, and Elite's local 20ms Chrome Side Panel with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

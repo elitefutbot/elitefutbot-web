@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { fc27AutoTraderData } from "@/data/competitors/fc27autotrader";
 
 export const metadata: Metadata = {
-  title: "FC27 Auto Trader vs Elite FUT SNIPER (2026 Review): In-DOM Tool vs 20ms AI Bot",
+  title: {
+    absolute: "FC27 Auto Trader vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "FC27 Auto Trader (Data Menu Limited) vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, Telegram webhook telemetry, 60ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FC27 Auto Trader vs Elite FUT SNIPER review: compare linear delay soft bans, webhook risks, and Elite's sub-20ms Chrome Side Panel with AI solver.",
   keywords: [
     "fc27 auto trader",
     "fc 27 auto trader",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fc27autotrader-vs-elitefutbot" },
   openGraph: {
-    title: "FC27 Auto Trader vs Elite FUT SNIPER (2026 Review): In-DOM Tool vs 20ms AI Bot",
+    title: "FC27 Auto Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC27 Auto Trader (Data Menu Limited) vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, Telegram webhook telemetry, 60ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FC27 Auto Trader vs Elite FUT SNIPER review: compare linear delay soft bans, webhook risks, and Elite's sub-20ms Chrome Side Panel with AI solver.",
     url: "https://www.elitefutbot.com/fc27autotrader-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC27 Auto Trader vs Elite FUT SNIPER (2026 Review): In-DOM Tool vs 20ms AI Bot",
+    title: "FC27 Auto Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC27 Auto Trader (Data Menu Limited) vs Elite FUT SNIPER comparison. Real technical audit of linear delay soft bans, Telegram webhook telemetry, 60ms–110ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FC27 Auto Trader vs Elite FUT SNIPER review: compare linear delay soft bans, webhook risks, and Elite's sub-20ms Chrome Side Panel with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

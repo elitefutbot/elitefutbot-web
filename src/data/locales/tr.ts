@@ -18,14 +18,14 @@ export const trLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "Elite FUT SNIPER – FC 27 Sniping Botu & Autobuyer (FC 26 Destekli)",
+      title: "EA FC 27 Sniping Botu ve Otomatik Alıcı Ultimate Team | Elite FUT Bot",
       description:
-        "EA Sports FC 27 transfer pazarını Elite FUT SNIPER ile fethedin. Dünyanın en hızlı ve güvenli FC 27 FUT sniping botu ve autobuyer'ı; 20ms altı hız, yerel Human++ anti-ban koruması ve bugüne kadar 0 ban.",
+        "EA FC 27 Ultimate Team için FUT sniping botu ve otomatik alıcı (autobuyer). Yerel Chrome eklentisiyle ucuz oyuncuları snipe'layın, otomatik satın alıp listeleyin ve akıllı filtreler kullanın.",
       keywords:
         "fc 27 coin kasma botu, ea fc 27 autobuyer türkçe, fc 27 sniping botu, fifa 27 autobuyer, chrome eklentisi autobuyer, kkg çözücü yapay zeka, fc27 oyuncu alma botu",
-      ogTitle: "Elite FUT SNIPER – FC 27 Sniping Bot & Autobuyer (FC 26 Uyumlu)",
+      ogTitle: "EA FC 27 Sniping Botu ve Otomatik Alıcı Ultimate Team | Elite FUT Bot",
       ogDescription:
-        "FC 27 ve FC 26 için dünyanın en hızlı transfer pazarı botu. 20ms altı işlem hızı, Human++ anti-ban motoru ve yapay zeka KKG çözücü.",
+        "EA FC 27 Ultimate Team için FUT sniping botu ve otomatik alıcı (autobuyer). Yerel Chrome eklentisiyle ucuz oyuncuları snipe'layın, otomatik satın alıp listeleyin ve akıllı filtreler kullanın.",
     },
     creatorBadge: {
       originalCreator: "ORİJİNAL GELİŞTİRİCİ",
@@ -338,14 +338,14 @@ export const trLocale: LocaleDictionary = {
   },
   snipeBot: {
     meta: {
-      title: "FC 27 Autobuyer & FUT Snipe Botu | Doğrulanmış ve Çalışıyor (FC 27 Update)",
+      title: "FC 27 FUT Sniping Botu ve Otomatik Alıcı | Ücretsiz UT Ticaret İpuçları ve Rehberi",
       description:
-        "En son EA FC 27 Web App güncellemesiyle %100 çalıştığı doğrulandı. 20ms altı tepki süresi, sıfır banlı Humanization++ motoru ve tek tıkla yapay zeka KKG çözücüye sahip FC 27 autobuyer ve snipe botu.",
+        "EA FC 27 Web App üzerinde ucuza oyuncu snipe'lamak, akıllı filtrelerle otomatik alıp satmak için yerel Chrome eklentisi ve ücretsiz denemesiyle Elite FUT SNIPER'ı kullanın.",
       keywords:
         "fc27 autobuyer, ea fc 27 autobuyer, fc 27 fut snipe botu, fc 27 sniping bot, fut 27 autobuyer, ea fc 27 coin kasma, 59 dakika snipe botu fc 27, fc 27 sbc cozucu",
-      ogTitle: "FC 27 Autobuyer & FUT Snipe Botu | Doğrulanmış ve Çalışıyor",
+      ogTitle: "FC 27 FUT Sniping Botu ve Otomatik Alıcı | Ücretsiz UT Ticaret İpuçları ve Rehberi",
       ogDescription:
-        "20ms altı transfer pazarı autobuyer, 59. dakika sniping, tek tıkla KKG çözücü ve Humanization++ ban koruması.",
+        "EA FC 27 Web App üzerinde ucuza oyuncu snipe'lamak, akıllı filtrelerle otomatik alıp satmak için yerel Chrome eklentisi ve ücretsiz denemesiyle Elite FUT SNIPER'ı kullanın.",
     },
     hero: {
       badge: "Doğrulandı & Çalışıyor · EA FC 27 Güncellemesi",
@@ -608,14 +608,14 @@ export const trLocale: LocaleDictionary = {
   },
   featuresPage: {
     meta: {
-      title: "EA FC 27 Sniping Bot & Autobuyer Özellikleri – Her Şey Dahil | Elite FUT SNIPER",
+      title: "ÜCRETSİZ FC 27 Sniping Botu ve Otomatik Alıcı Özellikleri | Elite FUT Bot",
       description:
-        "EA FC 26 & FC 27 için geliştirilmiş 11 modüllü transfer paketi. 20ms altı yerel sniping, bugüne kadar 0 banlı Humanization++ koruması, canlı Futbin fiyatları ve akıllı filtreler.",
+        "EA FC 27 için Elite FUT Bot özelliklerini keşfedin: otomatik snipe, autobuyer, otomatik listeleme, akıllı filtreler, Futbin fiyatları, ücretsiz ticaret filtreleri ve 7 günlük ücretsiz deneme.",
       keywords:
         "fc27 fut sniping botu özellikleri, ea fc 27 autobuyer özellikleri, fut snipe bot, humanization anti ban, futbin canlı fiyat, yerel chrome eklentisi, fc27 coin kasma botu",
-      ogTitle: "EA FC 27 Sniping Bot & Autobuyer Özellikleri | Elite FUT SNIPER",
+      ogTitle: "ÜCRETSİZ FC 27 Sniping Botu ve Otomatik Alıcı Özellikleri | Elite FUT Bot",
       ogDescription:
-        "FC 26 ve FC 27 transfer pazarında kart snipelamak ve zengin olmak için gereken her şey. %100 yerel ve sıfır banlı Chrome eklentisi.",
+        "EA FC 27 için Elite FUT Bot özelliklerini keşfedin: otomatik snipe, autobuyer, otomatik listeleme, akıllı filtreler, Futbin fiyatları, ücretsiz ticaret filtreleri ve 7 günlük ücretsiz deneme.",
     },
     hero: {
       eyebrow: "11 Modüllü Özellik Cephaneliği // Tam Teknik Döküm",

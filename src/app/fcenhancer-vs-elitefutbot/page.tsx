@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { fcEnhancerData } from "@/data/competitors/fcenhancer";
 
 export const metadata: Metadata = {
-  title: "FC Enhancer vs Elite FUT SNIPER (2026 Review): Injected DOM vs 20ms AI Bot",
+  title: {
+    absolute: "FC Enhancer vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FC Enhancer (FUT Enhancer by FUTNext) vs Elite FUT SNIPER comparison. Real technical audit of injected button clutter, selector breakage on EA patches, 60ms–120ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FC Enhancer vs Elite FUT SNIPER comparison: audit UI overlay clogs, click lag, and Elite's sub-20ms docked Chrome Side Panel with neural AI SBC solver.",
   keywords: [
     "fc enhancer",
     "fc26 enhancer",
@@ -24,9 +26,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fcenhancer-vs-elitefutbot" },
   openGraph: {
-    title: "FC Enhancer vs Elite FUT SNIPER (2026 Review): Injected DOM vs 20ms AI Bot",
+    title: "FC Enhancer vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC Enhancer (FUT Enhancer by FUTNext) vs Elite FUT SNIPER comparison. Real technical audit of injected button clutter, selector breakage on EA patches, 60ms–120ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FC Enhancer vs Elite FUT SNIPER comparison: audit UI overlay clogs, click lag, and Elite's sub-20ms docked Chrome Side Panel with neural AI SBC solver.",
     url: "https://www.elitefutbot.com/fcenhancer-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,9 +36,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC Enhancer vs Elite FUT SNIPER (2026 Review): Injected DOM vs 20ms AI Bot",
+    title: "FC Enhancer vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC Enhancer (FUT Enhancer by FUTNext) vs Elite FUT SNIPER comparison. Real technical audit of injected button clutter, selector breakage on EA patches, 60ms–120ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FC Enhancer vs Elite FUT SNIPER comparison: audit UI overlay clogs, click lag, and Elite's sub-20ms docked Chrome Side Panel with neural AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

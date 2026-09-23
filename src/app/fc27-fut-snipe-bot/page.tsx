@@ -26,18 +26,17 @@ import {
   Check,
   X,
   ArrowUpRight,
-  RefreshCw,
   Calendar,
   BadgeCheck,
-  Cpu,
-  Layers,
   ShoppingBag,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "FC 27 Autobuyer & FUT Snipe Bot | Verified Working (Sep 17 FC 27 Update)",
+  title: {
+    absolute: "FC 27 FUT Sniping Bot & Autobuyer | Free UT Trading Tips & Guide",
+  },
   description:
-    "Confirmed 100% working as of September 17 latest EA FC 27 Web App update. Fully compatible FC 27 autobuyer and FUT sniping bot with sub-20ms execution, Humanization++ zero-ban heuristics, and 1-click AI SBC solver.",
+    "Use Elite FUT SNIPER on the EA FC 27 Web App to snipe underpriced players, auto-buy and auto-list with smart filters, local Chrome execution and a free trial.",
   keywords: [
     "fc27 autobuyer",
     "ea fc 27 autobuyer",
@@ -61,9 +60,9 @@ export const metadata: Metadata = {
     languages: getHreflangAlternates("/fc27-fut-snipe-bot"),
   },
   openGraph: {
-    title: "FC 27 Autobuyer & FUT Snipe Bot | Verified Working (Sep 17 FC 27 Update)",
+    title: "FC 27 FUT Sniping Bot & Autobuyer | Free UT Trading Tips & Guide",
     description:
-      "Confirmed 100% working as of September 17 latest EA FC 27 Web App update. Sub-20ms transfer market autobuyer, 59th-minute sniping, 1-click AI SBC solver, and Humanization++ zero-ban protection.",
+      "Use Elite FUT SNIPER on the EA FC 27 Web App to snipe underpriced players, auto-buy and auto-list with smart filters, local Chrome execution and a free trial.",
     type: "website",
     url: "https://www.elitefutbot.com/fc27-fut-snipe-bot",
     images: [
@@ -71,15 +70,15 @@ export const metadata: Metadata = {
         url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FC 27 Autobuyer and FUT Snipe Bot Working Interface - Sep 17 Update",
+        alt: "FC 27 FUT Sniping Bot & Autobuyer | Free UT Trading Tips & Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC 27 Autobuyer & FUT Snipe Bot | Verified Working (Sep 17 FC 27 Update)",
+    title: "FC 27 FUT Sniping Bot & Autobuyer | Free UT Trading Tips & Guide",
     description:
-      "Now fully compatible with EA Sports FC 27 Web App! Sub-20ms autobuyer, sniping bot, AI SBC solver, and zero password sharing.",
+      "Use Elite FUT SNIPER on the EA FC 27 Web App to snipe underpriced players, auto-buy and auto-list with smart filters, local Chrome execution and a free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -5,6 +5,20 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 7-day trial eligibility data, and transaction records.",
   alternates: { canonical: "https://www.elitefutbot.com/privacy" },
+  openGraph: {
+    title: "Privacy Policy | Elite FUT SNIPER",
+    description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 7-day trial eligibility data, and transaction records.",
+    url: "https://www.elitefutbot.com/privacy",
+    siteName: "Elite FUT SNIPER",
+    type: "website",
+    images: [{ url: "https://www.elitefutbot.com/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy Policy | Elite FUT SNIPER",
+    description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we safeguard user data and trial information.",
+    images: ["https://www.elitefutbot.com/og-image.png"],
+  },
 };
 
 export default function PrivacyPage() {

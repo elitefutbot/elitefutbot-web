@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futHunterData } from "@/data/competitors/futhunter";
 
 export const metadata: Metadata = {
-  title: "FUT Hunter vs Elite FUT SNIPER (2026 Review): Coin Farm Risks, RAM Bloat & Speed",
+  title: {
+    absolute: "FUT Hunter vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUT Hunter vs Elite FUT SNIPER comparison. Real audit of futhunter.com Windows .NET requirement, 15B+ coin API liquidation hazards, proxy costs, and sub-20ms personal club protection for EA FC 26 & FC 27.",
+    "FUTHunter vs Elite FUT SNIPER review: compare slow DOM macro delays, soft ban triggers, and Elite's sub-20ms Chrome Side Panel with neural AI solver.",
   keywords: [
     "fut hunter",
     "fut hunter review",
@@ -22,9 +24,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futhunter-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Hunter vs Elite FUT SNIPER (2026 Review): Coin Farm Risks, RAM Bloat & Speed",
+    title: "FUT Hunter vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Hunter vs Elite FUT SNIPER comparison. Real audit of futhunter.com Windows .NET requirement, 15B+ coin API liquidation hazards, proxy costs, and sub-20ms personal club protection for EA FC 26 & FC 27.",
+      "FUTHunter vs Elite FUT SNIPER review: compare slow DOM macro delays, soft ban triggers, and Elite's sub-20ms Chrome Side Panel with neural AI solver.",
     url: "https://www.elitefutbot.com/futhunter-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -32,9 +34,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Hunter vs Elite FUT SNIPER (2026 Review): Coin Farm Risks, RAM Bloat & Speed",
+    title: "FUT Hunter vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Hunter vs Elite FUT SNIPER comparison. Real audit of futhunter.com Windows .NET requirement, 15B+ coin API liquidation hazards, proxy costs, and sub-20ms personal club protection for EA FC 26 & FC 27.",
+      "FUTHunter vs Elite FUT SNIPER review: compare slow DOM macro delays, soft ban triggers, and Elite's sub-20ms Chrome Side Panel with neural AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

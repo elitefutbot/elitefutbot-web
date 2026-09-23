@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futFunData } from "@/data/competitors/futfun";
 
 export const metadata: Metadata = {
-  title: "FutFun vs Elite FUT SNIPER (2026 Review): Coin Commission vs 20ms AI Bot",
+  title: {
+    absolute: "FutFun vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FutFun vs Elite FUT SNIPER comparison. Real technical audit of predatory 10%–20% profit commissions, linear delay soft bans, 80ms–140ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FUTFun vs Elite FUT SNIPER review: audit browser script bugs, DOM polling delays, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
   keywords: [
     "futfun",
     "futfun review",
@@ -19,9 +21,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futfun-vs-elitefutbot" },
   openGraph: {
-    title: "FutFun vs Elite FUT SNIPER (2026 Review): Coin Commission vs 20ms AI Bot",
+    title: "FutFun vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FutFun vs Elite FUT SNIPER comparison. Real technical audit of predatory 10%–20% profit commissions, linear delay soft bans, 80ms–140ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUTFun vs Elite FUT SNIPER review: audit browser script bugs, DOM polling delays, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
     url: "https://www.elitefutbot.com/futfun-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -29,9 +31,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FutFun vs Elite FUT SNIPER (2026 Review): Coin Commission vs 20ms AI Bot",
+    title: "FutFun vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FutFun vs Elite FUT SNIPER comparison. Real technical audit of predatory 10%–20% profit commissions, linear delay soft bans, 80ms–140ms click lag, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUTFun vs Elite FUT SNIPER review: audit browser script bugs, DOM polling delays, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { sniperBotItaliaData } from "@/data/competitors/sniperbotitalia";
 
 export const metadata: Metadata = {
-  title: "SniperBot Italia vs Elite FUT SNIPER (2026 Review): Telegram Script vs 20ms AI Bot",
+  title: {
+    absolute: "SniperBot Italia vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "SniperBot Italia vs Elite FUT SNIPER comparison. Real technical audit of unverified Telegram zip scripts, Italian locale crashes, 70ms–130ms polling delays, and Elite's universal multi-language 20ms Chrome Side Panel bot with AI SBC solver.",
+    "SniperBot Italia vs Elite FUT SNIPER review: audit unverified Telegram scripts, locale crashes, and Elite's universal 20ms Chrome bot with AI solver.",
   keywords: [
     "sniperbot italia",
     "sniper bot italia",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/sniperbotitalia-vs-elitefutbot" },
   openGraph: {
-    title: "SniperBot Italia vs Elite FUT SNIPER (2026 Review): Telegram Script vs 20ms AI Bot",
+    title: "SniperBot Italia vs Elite FUT SNIPER: 2026 Review",
     description:
-      "SniperBot Italia vs Elite FUT SNIPER comparison. Real technical audit of unverified Telegram zip scripts, Italian locale crashes, 70ms–130ms polling delays, and Elite's universal multi-language 20ms Chrome Side Panel bot with AI SBC solver.",
+      "SniperBot Italia vs Elite FUT SNIPER review: audit unverified Telegram scripts, locale crashes, and Elite's universal 20ms Chrome bot with AI solver.",
     url: "https://www.elitefutbot.com/sniperbotitalia-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SniperBot Italia vs Elite FUT SNIPER (2026 Review): Telegram Script vs 20ms AI Bot",
+    title: "SniperBot Italia vs Elite FUT SNIPER: 2026 Review",
     description:
-      "SniperBot Italia vs Elite FUT SNIPER comparison. Real technical audit of unverified Telegram zip scripts, Italian locale crashes, 70ms–130ms polling delays, and Elite's universal multi-language 20ms Chrome Side Panel bot with AI SBC solver.",
+      "SniperBot Italia vs Elite FUT SNIPER review: audit unverified Telegram scripts, locale crashes, and Elite's universal 20ms Chrome bot with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

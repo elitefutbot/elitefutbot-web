@@ -23,7 +23,6 @@ import {
   XCircle,
   X,
   Flame,
-  Clock,
   HelpCircle,
   ChevronDown,
   MessageSquare,
@@ -76,9 +75,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title: {
-      absolute: dict.home.meta.title.includes("Elite FUT SNIPER")
-        ? dict.home.meta.title
-        : `${dict.home.meta.title} | Elite FUT SNIPER`,
+      absolute: dict.home.meta.title,
     },
     description: dict.home.meta.description,
     keywords: dict.home.meta.keywords,

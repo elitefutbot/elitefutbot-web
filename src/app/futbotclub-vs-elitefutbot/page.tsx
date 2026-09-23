@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futBotClubData } from "@/data/competitors/futbotclub";
 
 export const metadata: Metadata = {
-  title: "FUT Bot Club vs Elite FUT SNIPER (2026 Review): Community Server vs Zero-Telemetry Local Bot",
+  title: {
+    absolute: "FUT Bot Club vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUT Bot Club vs Elite FUT SNIPER comparison. Real audit of community server crashes, 6 PM promo downtime, trade telemetry logging, and Elite's 100% local 20ms Chrome Side Panel with AI SBC solver.",
+    "FUTBotClub vs Elite FUT SNIPER comparison: audit subscription costs, manual settings friction, and Elite's 20ms Chrome Side Panel with AI SBC solver.",
   keywords: [
     "fut bot club",
     "futbotclub",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futbotclub-vs-elitefutbot" },
   openGraph: {
-    title: "FUT Bot Club vs Elite FUT SNIPER (2026 Review): Community Server vs Zero-Telemetry Local Bot",
+    title: "FUT Bot Club vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Bot Club vs Elite FUT SNIPER comparison. Real audit of community server crashes, 6 PM promo downtime, trade telemetry logging, and Elite's 100% local 20ms Chrome Side Panel with AI SBC solver.",
+      "FUTBotClub vs Elite FUT SNIPER comparison: audit subscription costs, manual settings friction, and Elite's 20ms Chrome Side Panel with AI SBC solver.",
     url: "https://www.elitefutbot.com/futbotclub-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUT Bot Club vs Elite FUT SNIPER (2026 Review): Community Server vs Zero-Telemetry Local Bot",
+    title: "FUT Bot Club vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Bot Club vs Elite FUT SNIPER comparison. Real audit of community server crashes, 6 PM promo downtime, trade telemetry logging, and Elite's 100% local 20ms Chrome Side Panel with AI SBC solver.",
+      "FUTBotClub vs Elite FUT SNIPER comparison: audit subscription costs, manual settings friction, and Elite's 20ms Chrome Side Panel with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

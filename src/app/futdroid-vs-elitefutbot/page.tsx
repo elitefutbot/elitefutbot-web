@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futDroidData } from "@/data/competitors/futdroid";
 
 export const metadata: Metadata = {
-  title: "FUTDroid vs Elite FUT SNIPER (2026 Review): Abandoned 66-User Script & Speed",
+  title: {
+    absolute: "FUTDroid vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "FUTDroid vs Elite FUT SNIPER comparison. Real audit of FUTDroid's v3.6.5 stagnation since October 2024, 66 users, data collection disclosures, and sub-20ms verified Chrome Side Panel HUD for EA FC 26 & FC 27.",
+    "FUTDroid vs Elite FUT SNIPER review: compare Android emulator setups, UI lag, and Elite's native sub-20ms Chrome Side Panel with neural AI SBC solver.",
   keywords: [
     "futdroid",
     "futdroid review",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futdroid-vs-elitefutbot" },
   openGraph: {
-    title: "FUTDroid vs Elite FUT SNIPER (2026 Review): Abandoned 66-User Script & Speed",
+    title: "FUTDroid vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTDroid vs Elite FUT SNIPER comparison. Real audit of FUTDroid's v3.6.5 stagnation since October 2024, 66 users, data collection disclosures, and sub-20ms verified Chrome Side Panel HUD for EA FC 26 & FC 27.",
+      "FUTDroid vs Elite FUT SNIPER review: compare Android emulator setups, UI lag, and Elite's native sub-20ms Chrome Side Panel with neural AI SBC solver.",
     url: "https://www.elitefutbot.com/futdroid-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTDroid vs Elite FUT SNIPER (2026 Review): Abandoned 66-User Script & Speed",
+    title: "FUTDroid vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTDroid vs Elite FUT SNIPER comparison. Real audit of FUTDroid's v3.6.5 stagnation since October 2024, 66 users, data collection disclosures, and sub-20ms verified Chrome Side Panel HUD for EA FC 26 & FC 27.",
+      "FUTDroid vs Elite FUT SNIPER review: compare Android emulator setups, UI lag, and Elite's native sub-20ms Chrome Side Panel with neural AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

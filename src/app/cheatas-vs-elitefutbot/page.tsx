@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { cheatAsData } from "@/data/competitors/cheatas";
 
 export const metadata: Metadata = {
-  title: "Cheat.as vs Elite FUT SNIPER (2026 Review): Desktop Cheat vs 20ms AI Bot",
+  title: {
+    absolute: "Cheat.as vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Cheat.as (Webapp SBC + Snipe Bot) vs Elite FUT SNIPER comparison. Technical audit of $29/mo desktop cheat launchers, EA Anti-Cheat (EAAC) ban risks, 80ms–140ms latency, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "Cheat.as vs Elite FUT SNIPER review: compare $29/mo launchers, EA Anti-Cheat ban risks, and Elite's sub-20ms Chrome extension with AI SBC solver.",
   keywords: [
     "cheat.as",
     "cheat as fut bot",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/cheatas-vs-elitefutbot" },
   openGraph: {
-    title: "Cheat.as vs Elite FUT SNIPER (2026 Review): Desktop Cheat vs 20ms AI Bot",
+    title: "Cheat.as vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Cheat.as (Webapp SBC + Snipe Bot) vs Elite FUT SNIPER comparison. Technical audit of $29/mo desktop cheat launchers, EA Anti-Cheat (EAAC) ban risks, 80ms–140ms latency, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "Cheat.as vs Elite FUT SNIPER review: compare $29/mo launchers, EA Anti-Cheat ban risks, and Elite's sub-20ms Chrome extension with AI SBC solver.",
     url: "https://www.elitefutbot.com/cheatas-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cheat.as vs Elite FUT SNIPER (2026 Review): Desktop Cheat vs 20ms AI Bot",
+    title: "Cheat.as vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Cheat.as (Webapp SBC + Snipe Bot) vs Elite FUT SNIPER comparison. Technical audit of $29/mo desktop cheat launchers, EA Anti-Cheat (EAAC) ban risks, 80ms–140ms latency, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "Cheat.as vs Elite FUT SNIPER review: compare $29/mo launchers, EA Anti-Cheat ban risks, and Elite's sub-20ms Chrome extension with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

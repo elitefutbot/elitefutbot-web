@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { fc26SnipingBotData } from "@/data/competitors/fc26snipingbot";
 
 export const metadata: Metadata = {
-  title: "FC26 Sniping Bot vs Elite FUT SNIPER (2026 Review): Title-Locked vs Multi-Season",
+  title: {
+    absolute: "FC26 Sniping Bot vs Elite FUT SNIPER: 2026 Review",
+  },
   description:
-    "FC26 Sniping Bot vs Elite FUT SNIPER comparison. In-depth audit of single-season repurchase costs, 80ms DOM polling, heuristic ban flags, and Elite's unified 20ms FC 26 & FC 27 engine with AI SBC solver.",
+    "FC26 Sniping Bot vs Elite FUT SNIPER review: audit single-season repurchases, 80ms lag, ban flags, and Elite's unified 20ms FC 27 bot with AI solver.",
   keywords: [
     "fc26 sniping bot",
     "fc26snipingbot",
@@ -20,9 +22,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fc26snipingbot-vs-elitefutbot" },
   openGraph: {
-    title: "FC26 Sniping Bot vs Elite FUT SNIPER (2026 Review): Title-Locked vs Multi-Season",
+    title: "FC26 Sniping Bot vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC26 Sniping Bot vs Elite FUT SNIPER comparison. In-depth audit of single-season repurchase costs, 80ms DOM polling, heuristic ban flags, and Elite's unified 20ms FC 26 & FC 27 engine with AI SBC solver.",
+      "FC26 Sniping Bot vs Elite FUT SNIPER review: audit single-season repurchases, 80ms lag, ban flags, and Elite's unified 20ms FC 27 bot with AI solver.",
     url: "https://www.elitefutbot.com/fc26snipingbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -30,9 +32,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC26 Sniping Bot vs Elite FUT SNIPER (2026 Review): Title-Locked vs Multi-Season",
+    title: "FC26 Sniping Bot vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC26 Sniping Bot vs Elite FUT SNIPER comparison. In-depth audit of single-season repurchase costs, 80ms DOM polling, heuristic ban flags, and Elite's unified 20ms FC 26 & FC 27 engine with AI SBC solver.",
+      "FC26 Sniping Bot vs Elite FUT SNIPER review: audit single-season repurchases, 80ms lag, ban flags, and Elite's unified 20ms FC 27 bot with AI solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

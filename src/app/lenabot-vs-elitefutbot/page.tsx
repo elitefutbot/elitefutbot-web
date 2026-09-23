@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { lenaBotData } from "@/data/competitors/lenabot";
 
 export const metadata: Metadata = {
-  title: "Lena Bot vs Elite FUT SNIPER (2026 Review): Remote Play Bot vs 20ms AI Suite",
+  title: {
+    absolute: "Lena Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Lena Bot (lenabot.com) vs Elite FUT SNIPER comparison. Real technical audit of coin muling ban hazards, 200ms–500ms Remote Play streaming lag, $120/yr per console fees, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "Lena Bot vs Elite FUT SNIPER review: compare Remote Play streaming lag, $120/yr console fees, and Elite's sub-20ms local Chrome extension with AI.",
   keywords: [
     "lena bot",
     "lena bot review",
@@ -21,9 +23,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/lenabot-vs-elitefutbot" },
   openGraph: {
-    title: "Lena Bot vs Elite FUT SNIPER (2026 Review): Remote Play Bot vs 20ms AI Suite",
+    title: "Lena Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Lena Bot (lenabot.com) vs Elite FUT SNIPER comparison. Real technical audit of coin muling ban hazards, 200ms–500ms Remote Play streaming lag, $120/yr per console fees, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "Lena Bot vs Elite FUT SNIPER review: compare Remote Play streaming lag, $120/yr console fees, and Elite's sub-20ms local Chrome extension with AI.",
     url: "https://www.elitefutbot.com/lenabot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lena Bot vs Elite FUT SNIPER (2026 Review): Remote Play Bot vs 20ms AI Suite",
+    title: "Lena Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Lena Bot (lenabot.com) vs Elite FUT SNIPER comparison. Real technical audit of coin muling ban hazards, 200ms–500ms Remote Play streaming lag, $120/yr per console fees, and Elite's sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "Lena Bot vs Elite FUT SNIPER review: compare Remote Play streaming lag, $120/yr console fees, and Elite's sub-20ms local Chrome extension with AI.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -3,9 +3,11 @@ import CompetitorComparisonPage from "@/components/CompetitorComparisonPage";
 import { futEarnData } from "@/data/competitors/futearn";
 
 export const metadata: Metadata = {
-  title: "FUTEarn vs Elite FUT SNIPER (2026 Review): Cloud Bot Ban Risks, 50% Profit Cut & Speed",
+  title: {
+    absolute: "FUTEarn vs Elite FUT SNIPER: 2026 Review & Comparison",
+  },
   description:
-    "Honest FUTEarn vs Elite FUT SNIPER review. Real data on cloud password risks, 50% profit tax, datacenter IP bans, and sub-20ms local sniping for FC 26 & FC 27.",
+    "FUTEarn vs Elite FUT SNIPER review: compare high subscription costs, manual trading filters, and Elite's sub-20ms Chrome extension with AI SBC solver.",
   keywords: [
     "futearn",
     "futearn review",
@@ -23,9 +25,9 @@ export const metadata: Metadata = {
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futearn-vs-elitefutbot" },
   openGraph: {
-    title: "FUTEarn vs Elite FUT SNIPER (2026 Review): Cloud Bot Ban Risks, 50% Profit Cut & Speed",
+    title: "FUTEarn vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FUTEarn vs Elite FUT SNIPER review. Real data on cloud password risks, 50% profit tax, datacenter IP bans, and sub-20ms local sniping for FC 26 & FC 27.",
+      "FUTEarn vs Elite FUT SNIPER review: compare high subscription costs, manual trading filters, and Elite's sub-20ms Chrome extension with AI SBC solver.",
     url: "https://www.elitefutbot.com/futearn-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -33,9 +35,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FUTEarn vs Elite FUT SNIPER (2026 Review): Cloud Bot Ban Risks, 50% Profit Cut & Speed",
+    title: "FUTEarn vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Honest FUTEarn vs Elite FUT SNIPER review. Real data on cloud password risks, 50% profit tax, datacenter IP bans, and sub-20ms local sniping for FC 26 & FC 27.",
+      "FUTEarn vs Elite FUT SNIPER review: compare high subscription costs, manual trading filters, and Elite's sub-20ms Chrome extension with AI SBC solver.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
