@@ -14,6 +14,9 @@ import {
   Activity,
   Trophy,
   PlayCircle,
+  Headphones,
+  Mail,
+  MessageSquare,
 } from "lucide-react";
 import { AffiliateLinkCard } from "@/components/AffiliateLinkCard";
 import { AuthGuard } from "@/components/AuthGuard";
@@ -346,6 +349,53 @@ function DashboardContent() {
               </div>
             </div>
 
+            {/* Installation & Community Support Section — Visible to all users */}
+            <div className="relative overflow-hidden p-5 sm:p-6 rounded-2xl bg-card border border-white/10 hover:border-primary/30 transition-colors">
+              <div className="absolute top-0 right-0 -z-0 size-[260px] rounded-full bg-primary/[0.04] blur-[80px] pointer-events-none" />
+              <div className="relative z-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-5">
+                <div className="flex items-start sm:items-center gap-4">
+                  <div className="size-11 sm:size-12 rounded-xl bg-primary/10 border border-primary/20 grid place-items-center shrink-0">
+                    <Headphones className="size-5 sm:size-6 text-primary" />
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <span className="font-mono text-[10px] font-bold uppercase tracking-widest text-primary">
+                        Support &amp; Community
+                      </span>
+                      <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                        24/7 Available
+                      </span>
+                    </div>
+                    <h2 className="text-base sm:text-lg font-bold text-white mt-1">
+                      Need help installing or configuring your bot?
+                    </h2>
+                    <p className="text-xs text-gray-400 mt-0.5 max-w-xl">
+                      Get direct setup guidance, troubleshooting, and daily sniping filters from our team and Discord community.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 w-full lg:w-auto shrink-0">
+                  <a
+                    href="https://discord.gg/Rkb9nF6WG6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-[#5865F2] hover:bg-[#4752C4] text-white font-bold text-xs uppercase tracking-wider transition-all shadow-[0_0_20px_rgba(88,101,242,0.25)] hover:shadow-[0_0_25px_rgba(88,101,242,0.4)]"
+                  >
+                    <MessageSquare className="size-4 shrink-0" />
+                    <span>Join Discord Server</span>
+                  </a>
+                  <a
+                    href="mailto:support@elitefutbot.com"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/15 hover:border-white/30 text-white font-bold text-xs uppercase tracking-wider transition-colors"
+                  >
+                    <Mail className="size-4 text-gray-300 shrink-0" />
+                    <span>Email Support</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Session stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {sessionStats.map((s) => (
@@ -367,8 +417,16 @@ function DashboardContent() {
             </div>
 
             <AffiliateLinkCard
-              referralCode={stats?.referralCode}
-              referralConversions={stats?.referralConversions}
+              referralCode={
+                stats?.referralCode ??
+                (process.env.NODE_ENV === "development"
+                  ? "ELITE-VIP-DEV"
+                  : undefined)
+              }
+              referralConversions={
+                stats?.referralConversions ??
+                (process.env.NODE_ENV === "development" ? 3 : undefined)
+              }
             />
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
