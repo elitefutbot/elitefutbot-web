@@ -876,6 +876,10 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
             </div>
           </div>
 
+          <p className="text-[11px] text-gray-500 text-center mt-3 font-normal">
+            * Terms of service: minimum payout threshold is 2 sales.
+          </p>
+
         </div>
       </section>
 
@@ -1021,6 +1025,10 @@ export default function AffiliatePageClient({ faqs }: AffiliatePageClientProps) 
             </div>
           </div>
         </div>
+
+        <p className="mt-8 text-center text-xs text-gray-500 font-normal">
+          Affiliate Program Policy &amp; Terms: Minimum payout threshold is 2 sales.
+        </p>
       </section>
 
     </div>

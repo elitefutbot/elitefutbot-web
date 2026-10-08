@@ -59,13 +59,6 @@ export const remxData: CompetitorData = {
       "RemX paywalls its essential daily sniping filters into a separate purchase, while Elite FUT SNIPER provides the bot, the AI SBC solver, and daily VIP Discord filter drops together for a single flat $19.99 fee with zero upsells.",
   },
 
-  developerOriginNote: {
-    headline: "Built by Baker's Bot Lead Engineer",
-    badge: "5+ Years Bot Architecture",
-    text: "While storefronts like RemX package basic scripts with marketing upsells, Elite FUT SNIPER was engineered by the former lead developer of Baker's Bot, ensuring enterprise-grade software quality, unblemished anti-cheat safety, and genuine technical innovation.",
-    linkUrl: "/bakers-bot-developer",
-    linkText: "Read the Lead Architect's Story",
-  },
 
   communityIssuesAudit: {
     headline: "Hidden Costs and Gaps in Multi-Tier Sniping Packages",

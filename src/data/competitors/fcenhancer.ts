@@ -241,7 +241,7 @@ export const fcEnhancerData: CompetitorData = {
 
   citations: [
     { label: "Injected DOM Overlays vs Chrome Side Panel Ergonomics", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Protocol-Level Web App Automation Architecture", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "Protocol-Level Web App Automation Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "EA Sports FC 27 High-Frequency Trading Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 

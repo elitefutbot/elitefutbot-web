@@ -61,6 +61,7 @@ const ICONS_MAP: Record<string, React.ComponentType<{ className?: string }>> = {
   Calculator,
   TrendingUp,
   ShieldCheck,
+  CheckCircle2,
   GraduationCap,
   CalendarCheck,
   MessageSquare,
@@ -218,14 +219,8 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               <span className="text-xs font-semibold text-gray-300 flex items-center gap-1.5">
                 {dict.home.creatorBadge.byDeveloper}
                 <span className="inline-flex items-center gap-1.5 bg-primary/15 border border-primary/40 px-2.5 py-0.5 rounded-full text-white font-black shadow-[0_0_12px_rgba(204,255,0,0.2)]">
-                  <Image
-                    alt="Bakers Bot Logo"
-                    width={16}
-                    height={16}
-                    className="w-4 h-4 rounded-full object-cover border border-primary/50"
-                    src="/bakersbot-avatar.webp"
-                  />
-                  <span className="text-primary font-black">Bakers Bot</span>
+                  <span className="w-3.5 h-3.5 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
+                  <span className="text-primary font-black">FutSniping Bot</span>
                 </span>
               </span>
             </div>
@@ -293,15 +288,9 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               <span className="text-[9px] font-black text-primary uppercase tracking-tighter mr-1">
                 PROVEN LEGACY
               </span>
-              <Image
-                alt="Bakers Bot Dev Team"
-                width={20}
-                height={20}
-                className="w-5 h-5 rounded-full object-cover border border-primary/40 shadow-sm"
-                src="/bakersbot-avatar.webp"
-              />
+              <span className="w-4 h-4 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
               <span className="text-white font-bold text-xs">
-                {dict.home.hero.stats.provenLegacy}
+                FIFASniping Bot Dev Team
               </span>
             </div>
           </div>
@@ -440,33 +429,50 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               </div>
             </div>
 
-            {/* 11 Module Cards */}
+            {/* Module Cards */}
             {dict.home.outperform.cards.map((card, idx) => {
               const IconComp = ICONS_MAP[card.iconName] || Zap;
               const isDiscord = card.iconName === "MessageSquare";
+              const isMultiFilter = card.iconName === "Filter";
               return (
                 <div
                   key={idx}
-                  className={`glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 ${
+                  className={`p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 relative overflow-hidden ${
                     isDiscord
-                      ? "border-[#5865F2]/40 shadow-[0_0_25px_rgba(88,101,242,0.08)] bg-gradient-to-br from-[#5865F2]/[0.08] to-transparent"
-                      : ""
+                      ? "border border-[#5865F2]/40 shadow-[0_0_25px_rgba(88,101,242,0.08)] bg-gradient-to-br from-[#5865F2]/[0.08] to-transparent"
+                      : isMultiFilter
+                      ? "border-2 border-primary/50 shadow-[0_0_35px_rgba(204,255,0,0.14)] bg-gradient-to-b from-primary/[0.08] to-dark ring-1 ring-primary/30"
+                      : "glass-card"
                   }`}
                 >
-                  <div
-                    className={`w-12 h-12 rounded-xl flex items-center justify-center mb-6 transition-colors ${
-                      isDiscord
-                        ? "bg-[#5865F2]/20 group-hover:bg-[#5865F2]"
-                        : "bg-primary/10 group-hover:bg-primary"
-                    }`}
-                  >
-                    <IconComp
-                      className={`w-6 h-6 transition-colors ${
+                  {isMultiFilter && (
+                    <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
+                  )}
+                  <div className="flex items-center justify-between mb-6">
+                    <div
+                      className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors ${
                         isDiscord
-                          ? "text-[#8EA1FF] group-hover:text-white"
-                          : "text-primary group-hover:text-black"
+                          ? "bg-[#5865F2]/20 group-hover:bg-[#5865F2]"
+                          : isMultiFilter
+                          ? "bg-primary text-black font-black shadow-md shadow-primary/20"
+                          : "bg-primary/10 group-hover:bg-primary"
                       }`}
-                    />
+                    >
+                      <IconComp
+                        className={`w-6 h-6 transition-colors ${
+                          isDiscord
+                            ? "text-[#8EA1FF] group-hover:text-white"
+                            : isMultiFilter
+                            ? "text-black"
+                            : "text-primary group-hover:text-black"
+                        }`}
+                      />
+                    </div>
+                    {card.badge && (
+                      <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30">
+                        {card.badge}
+                      </span>
+                    )}
                   </div>
                   {isDiscord && (
                     <div className="flex items-center gap-2 mb-2">
@@ -810,7 +816,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               <figure
                 key={idx}
                 className={`relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col ${
-                  idx === 6 ? "md:col-span-2 lg:col-span-1" : ""
+                  idx === dict.home.reviews.items.length - 1 && dict.home.reviews.items.length % 2 !== 0 ? "md:col-span-2 lg:col-span-1" : ""
                 }`}
               >
                 <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
@@ -836,7 +842,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
                 {rev.quote && (
                   <figcaption className="px-3.5 py-2.5 border-t border-white/5">
                     <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;{rev.quote}&rdquo;</blockquote>
-                    <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— {rev.user}, Elite FUT SNIPER Discord</cite>
+                    <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— {rev.user}, {rev.platform || "Elite FUT SNIPER Discord"}</cite>
                   </figcaption>
                 )}
               </figure>

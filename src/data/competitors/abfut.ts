@@ -59,13 +59,6 @@ export const abFutData: CompetitorData = {
       "ABFut charges recurring monthly subscriptions that automatically renew, whereas Elite FUT SNIPER provides a 7-day free trial followed by a single flat $19.99 fee for 365 days of unrestricted desktop automation, AI SBC solving, and VIP Discord alpha.",
   },
 
-  developerOriginNote: {
-    headline: "Engineered by Baker's Bot Lead Architect",
-    badge: "5+ Years Bot Architecture",
-    text: "While mobile apps face strict OS limits and API crackdowns, Elite FUT SNIPER was created by the former lead developer of Baker's Bot, ensuring five years of proven browser automation expertise and 0-ban security.",
-    linkUrl: "/bakers-bot-developer",
-    linkText: "Read the Lead Architect's Story",
-  },
 
   communityIssuesAudit: {
     headline: "Critical Operational Pitfalls of Mobile Autobuyers",

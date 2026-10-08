@@ -29,14 +29,14 @@ export const trLocale: LocaleDictionary = {
     },
     creatorBadge: {
       originalCreator: "ORİJİNAL GELİŞTİRİCİ",
-      byDeveloper: "Efsanevi Bakers Bot baş geliştiricisinden",
+      byDeveloper: "Efsanevi FutSniping Bot baş geliştiricisinden",
       freeBeta: "ÜCRETSİZ BETA",
       slotsFilled: "87/100 Kontenjan Doldu",
       statusText: "En Son EA FC 27 Güncellemeleriyle %100 Uyumlu",
     },
     hero: {
       titleLine1: "Dünyanın En Hızlı ve Güvenli",
-      titleHighlight: "FC 27 & FC 26",
+      titleHighlight: "FC 27",
       titleHighlight2: "FUT SNIPING BOTU",
       titleLine3: "Ve Autobuyer'ı.",
       description:
@@ -46,7 +46,7 @@ export const trLocale: LocaleDictionary = {
       stats: {
         antiBan: "Human++ Anti-Ban Teknolojisi · Bugüne Kadar 0 Ban",
         localExtension: "Chrome Eklentisi (%100 Yerel)",
-        provenLegacy: "Bakers Bot Dev Ekibi",
+        provenLegacy: "FIFASniping Bot Dev Ekibi",
       },
       proof: {
         snipeProfitBadge: "SNIPE KÂRI",
@@ -58,7 +58,7 @@ export const trLocale: LocaleDictionary = {
       title: "Neden Tüm Rakiplerden",
       titleHighlight: "Çok Daha Üstünüz.",
       subtitle:
-        "Elite FUT SNIPER, harici bulut sunucularına bağlanmadan doğrudan tarayıcınızda yerel çalıştığı için piyasadaki tüm botları geride bırakır. Efsanevi Bakers Bot ekibi tarafından tasarlanan bu mimari, gecikmeyi ortadan kaldırarak kartları milisaniyeler içinde güvenle snipelamanızı sağlar.",
+        "Elite FUT SNIPER, harici bulut sunucularına bağlanmadan doğrudan tarayıcınızda yerel çalıştığı için piyasadaki tüm botları geride bırakır. Efsanevi FutSniping Bot ekibi tarafından tasarlanan bu mimari, gecikmeyi ortadan kaldırarak kartları milisaniyeler içinde güvenle snipelamanızı sağlar.",
       humanization: {
         badge: "Amiral Gemisi Anti-Ban Motoru",
         title: "Humanization++ Modu",
@@ -86,8 +86,8 @@ export const trLocale: LocaleDictionary = {
           iconName: "Tag",
         },
         {
-          title: "Futbin Entegrasyonu",
-          description: "Canlı piyasa fiyatlarını doğrudan Web App arayüzünde görün. Asla piyasa değerinin üstünde oyuncu almayın.",
+          title: "FUTBIN ve FUTGG Entegrasyonu",
+          description: "Canlı piyasa fiyatlarını hem FUTBIN hem de FUTGG üzerinden doğrudan Web App arayüzünde görün. Asla piyasa değerinin üstünde oyuncu almayın.",
           iconName: "Cpu",
         },
         {
@@ -96,13 +96,26 @@ export const trLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Çoklu Filtre Arama",
-          description: "Birden fazla aramayı aynı anda yürütün. Her oturumda kârınızı katlamak için pazarın daha geniş bölümünü tarayın.",
-          iconName: "Filter",
+          title: "Otomatik Teklif Motoru",
+          description: "Süresi dolmak üzere olan transfer pazarı açık artırmalarına otomatik teklif verin. Belirlenen tavan sınırlarla kartları piyasa fiyatının altında kazanın.",
+          iconName: "TrendingUp",
+          badge: "Yeni v1.0.20",
         },
         {
-          title: "Reytinge Göre Sniping",
-          description: "Belirli reytingleri cerrahi hassasiyetle filtreleyin. Promosyon dönemlerinde fodder ticareti için kusursuzdur.",
+          title: "Çoklu Filtre Arama",
+          description: "Birden fazla aramayı aynı anda yürütün: Ülke/Milliyet, Kulüp, Lig, Pozisyon, Kalite (Altın/Gümüş/Bronz), Nadirlik (TOTW, Promos, İkonlar), reytingler ve sarf malzemeleri.",
+          iconName: "Filter",
+          badge: "v1.0.20",
+        },
+        {
+          title: "Sarf Malzemeleri ve Kimya Stilleri",
+          description: "Sarf malzemelerini doğrudan filtreleyin (Avcı, Gölge, Pozisyon Değiştirici, Sözleşmeler) veya uygulanan kimya stilleriyle karlı kartları anında yakalayın.",
+          iconName: "Sparkles",
+          badge: "v1.0.20",
+        },
+        {
+          title: "Reyting ve Nadirlik Hassasiyeti",
+          description: "Belirli oyuncu reytinglerini (83+, 84+, 88+) ve tam nadirlik kademelerini cerrahi hassasiyetle hedefleyin. KKM (SBC) fodder biriktirmek için kusursuzdur.",
           iconName: "Award",
         },
         {
@@ -208,8 +221,10 @@ export const trLocale: LocaleDictionary = {
               "Geliştiricilerden doğrudan birebir destek",
             ],
           },
+          { text: "Öncelikli Güncellemeler ve Anında Yama Erişimi" },
           { text: "10M+ Coin Kazanma Potansiyeli" },
           { text: "Yapay Zeka KKG Çözücü", isSoon: true },
+          { text: "Mobil Uygulamalar (iOS & Android)", isSoon: true },
         ],
         cta: "Pro Sniper Erişimi Al",
       },
@@ -227,14 +242,16 @@ export const trLocale: LocaleDictionary = {
           img: "/discord-review-1.png",
           alt: "Discord yorumu _mesirve_: FC26 için bu eklentileri yaparak insanların hayatını güzelleştiriyorsunuz. 5 yıldız.",
           quote: "FC26 için bu eklentileri geliştirerek insanların hayatına neşe katıyorsunuz. Kesinlikle 5 yıldız.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
-          user: "Patrunjel Regele",
-          badge: "Doğrulanmış Test Kullanıcısı",
-          badgeColor: "text-emerald-400",
-          img: "/discord-review-4.png",
-          alt: "Discord yorumu Patrunjel Regele: Sniper menüsü harika. Sniping kusursuz çalışıyor.",
-          quote: "Sniper arayüzü mükemmel, çok beğendim. Kart yakalama hızı kesinlikle kusursuz çalışıyor.",
+          user: "George CHICKELDAY",
+          badge: "⭐ 5 Yıldızlı Alıcı",
+          badgeColor: "text-amber-400",
+          img: "/gumroad-review-george.webp",
+          alt: "Gumroad 5 yıldızlı yorum George CHICKELDAY: Kullandığım en iyi bot, kartları %100 alıyor ve 2 günde 200k kâr elde ettim.",
+          quote: "Dürüst olmak gerekirse şimdiye kadar kullandığım en iyi bot. Aradığım kartları %100 sorunsuz yakalıyor ve son 2 günde 200k kâr yaptım.",
+          platform: "Doğrulanmış Gumroad Yorumu",
         },
         {
           user: "faresislol",
@@ -243,6 +260,25 @@ export const trLocale: LocaleDictionary = {
           img: "/discord-review-2.png",
           alt: "Discord yorumu faresislol: Teşekkürler kardeşim, 5 yıldız veriyorum.",
           quote: "Teşekkür ederim dostum harikasın, hak ettiğin gibi 5 yıldız veriyorum.",
+          platform: "Elite FUT SNIPER Discord",
+        },
+        {
+          user: "Ry4n",
+          badge: "⚡ 1 Dakikada 19.5k Kâr",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-ry4n.webp",
+          alt: "Discord snipe kanıtı Ry4n: cheap snipe get too it. 86 Pau Cubarsi 8.400'e alındı, 1 dk 11 sn içinde 19.495 kâr.",
+          quote: "cheap snipe get too it — Pau Cubarsí 86, 8.400'e yakalandı; 1 dakikada 19.495 kâr.",
+          platform: "Elite FUT SNIPER Discord",
+        },
+        {
+          user: "Patrunjel Regele",
+          badge: "Doğrulanmış Test Kullanıcısı",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-4.png",
+          alt: "Discord yorumu Patrunjel Regele: Sniper menüsü harika. Sniping kusursuz çalışıyor.",
+          quote: "Sniper arayüzü mükemmel, çok beğendim. Kart yakalama hızı kesinlikle kusursuz çalışıyor.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "astroa",
@@ -251,6 +287,7 @@ export const trLocale: LocaleDictionary = {
           img: "/discord-review-3.png",
           alt: "Discord yorumu astroa: Evet gerçekten çok çok iyi.",
           quote: "Evet gerçekten çok başarılı ve kusursuz çalışıyor.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "Phantom (GENO)",
@@ -259,6 +296,7 @@ export const trLocale: LocaleDictionary = {
           img: "/discord-review-card.png",
           alt: "Discord yorumu Phantom: Çalışıyor, 300k'ya 2 kez TOTS Yamal snipeladım.",
           quote: "Dostum harika çalışıyor, 300k fiyata 2 kez TOTS YAMAL yakaladım.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "Phantom (GENO)",
@@ -267,6 +305,7 @@ export const trLocale: LocaleDictionary = {
           img: "/discord-review-5.png",
           alt: "Discord yorumu Phantom: En hızlı coini bu botla kastığım için kullandığım en iyi bot.",
           quote: "En hızlı coini bu botla kastım, açık ara kullandığım en başarılı bot.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "Phantom (GENO)",
@@ -275,6 +314,7 @@ export const trLocale: LocaleDictionary = {
           img: "/discord-review-6.png",
           alt: "Coin bakiyesi kanıtı: 97 Lamine Yamal kartıyla 1 milyon üzeri coin bakiyesi.",
           quote: "Kulüpte 97 Yamal varken 1 milyonun üzerinde coin bakiyesi.",
+          platform: "Elite FUT SNIPER Discord",
         },
       ],
       discordCta: "Discord'da 5.000+ Oyuncuya Katıl",
@@ -806,7 +846,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           feature: "Geliştirici Geçmişi",
-          elite: "Orijinal Bakers Bot Dev Ekibi (5+ yıl)",
+          elite: "Orijinal FutSniping Bot Dev Ekibi (5+ yıl)",
           cloud: "Anonim kopya yazılımlar",
         },
         {
@@ -854,12 +894,12 @@ export const trLocale: LocaleDictionary = {
         },
         {
           title: "Çoklu Filtre Arama",
-          desc: "Pazarın en kârlı bölümlerini yakalamak için birden fazla sorguyu aynı anda çalıştırın.",
+          desc: "Ülke, Kulüp, Lig, Pozisyon, Nadirlik ve tam reytingler üzerinden birden fazla sorguyu aynı anda çalıştırın.",
           iconName: "Filter",
         },
         {
           title: "Reytinge Göre Sniping",
-          desc: "Belirli reytingleri tam isabetle filtreleyin — promosyon dönemlerinde fodder ticareti için ideal.",
+          desc: "Belirli reytingleri (83+, 84+, 88+) cerrahi hassasiyetle hedefleyin — promosyon dönemlerinde KKM (SBC) fodder ticareti için ideal.",
           iconName: "Sliders",
         },
         {

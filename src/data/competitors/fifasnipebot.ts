@@ -242,7 +242,7 @@ export const fifaSnipeBotData: CompetitorData = {
 
   citations: [
     { label: "Legacy vs Modern FUT Bot Architecture Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Evolution of EA Web App Security & Anti-Cheat", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "Evolution of EA Web App Security & Anti-Cheat", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "EA Sports FC 27 Bot Readiness Protocol", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "Safe Extension Practices for EA Web App", url: "https://www.elitefutbot.com/tools/sniping-guide" },
   ],

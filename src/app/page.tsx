@@ -88,8 +88,8 @@ export default function Home() {
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "5.0",
-      "reviewCount": "6",
-      "ratingCount": "6",
+      "reviewCount": "8",
+      "ratingCount": "8",
       "bestRating": "5",
       "worstRating": "1"
     },
@@ -100,6 +100,13 @@ export default function Home() {
         "reviewBody": "You brighten people's lives by creating these extensions for FC26. 5 stars.",
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "George CHICKELDAY" },
+        "reviewBody": "This honestly is the best bot I have ever used it 100% gets me the cards im looking for with no problem and I am currently up 200k profit with the snipes i have done in the past 2 days of using it",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-10-01"
       },
       {
         "@type": "Review",
@@ -114,6 +121,13 @@ export default function Home() {
         "reviewBody": "alr thanks bro your goated ill give u a 5 star review",
         "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
         "datePublished": "2026-07-01"
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Ry4n" },
+        "reviewBody": "cheap snipe get too it — Sniped 86 Pau Cubarsi for 8,400 coins, 4 cards bought in 1m 11s with 19,495 profit",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "datePublished": "2026-09-30"
       },
       {
         "@type": "Review",
@@ -234,14 +248,8 @@ export default function Home() {
               <span className="text-xs font-semibold text-gray-300 flex items-center gap-1.5">
                 By original lead developer behind
                 <span className="inline-flex items-center gap-1.5 bg-primary/15 border border-primary/40 px-2.5 py-0.5 rounded-full text-white font-black shadow-[0_0_12px_rgba(204,255,0,0.2)]">
-                  <Image 
-                    alt="Bakers Bot Logo" 
-                    width={16}
-                    height={16}
-                    className="w-4 h-4 rounded-full object-cover border border-primary/50" 
-                    src="/bakersbot-avatar.webp" 
-                  />
-                  <span className="text-primary font-black">Bakers Bot</span>
+                  <span className="w-3.5 h-3.5 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
+                  <span className="text-primary font-black">FutSniping Bot</span>
                 </span>
               </span>
             </div>
@@ -259,7 +267,7 @@ export default function Home() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black mb-5 tracking-tight leading-tight text-white">
             The World&apos;s Fastest &amp; Safest <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_8px_rgba(204,255,0,0.35)]">
-              FC 27 &amp; FC 26
+              FC 27
             </span> <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary uppercase drop-shadow-[0_0_8px_rgba(204,255,0,0.35)]">
               FUT SNIPING BOT
@@ -300,14 +308,8 @@ export default function Home() {
             <div className="hidden md:block w-1 h-1 bg-gray-700 rounded-full"></div>
             <div className="flex items-center gap-2 bg-primary/10 px-3 py-1 rounded-full border border-primary/20">
               <span className="text-[9px] font-black text-primary uppercase tracking-tighter mr-1">PROVEN LEGACY</span>
-              <Image 
-                alt="Bakers Bot Dev Team" 
-                width={20}
-                height={20}
-                className="w-5 h-5 rounded-full object-cover border border-primary/40 shadow-sm" 
-                src="/bakersbot-avatar.webp" 
-              />
-              <span className="text-white font-bold text-xs">Bakers Bot Dev Team</span>
+              <span className="w-4 h-4 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
+              <span className="text-white font-bold text-xs">FIFASniping Bot Dev Team</span>
             </div>
           </div>
           <div className="mt-16 sm:mt-24 relative mx-auto max-w-4xl flex items-center justify-center">
@@ -373,7 +375,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-6">Why We <span className="text-primary">Outperform</span> Everything.</h2>
             <p className="text-gray-300 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed font-normal">
-              Elite FUT SNIPER outperforms competitor bots because it runs locally inside your browser rather than relying on external cloud servers. Developed by the legendary Bakers Bot Dev Team, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 27 &amp; FC 26 players in milliseconds without compromising account safety.
+              Elite FUT SNIPER outperforms competitor bots because it runs locally inside your browser rather than relying on external cloud servers. Developed by the legendary FIFASniping Bot Dev Team, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 27 &amp; FC 26 players in milliseconds without compromising account safety.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -441,13 +443,13 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-3 text-white">List Automatically</h3>
               <p className="text-gray-300 text-sm leading-relaxed font-normal">Instant listing after sniping. Maximize your coin flow with immediate turnover of your inventory.</p>
             </div>
-            {/* Futbin Integration */}
+            {/* FUTBIN & FUTGG Integration */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <Cpu className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Futbin Integration</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">See real-time market prices directly in the Web App interface. Never miss a profitable deal again.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">FUTBIN &amp; FUTGG Integration</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">See real-time market prices from both FUTBIN and FUTGG directly in the Web App interface. Never miss a profitable deal again.</p>
             </div>
             {/* Stealth Technology */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 border-primary/30 shadow-[0_0_20px_rgba(204,255,0,0.05)] ring-2 ring-primary/50 bg-primary/[0.03]">
@@ -459,37 +461,73 @@ export default function Home() {
                 <span className="text-primary font-bold">100% Local:</span> Runs directly in your browser session. Your EA password and cookies are never sent to third-party cloud servers.
               </p>
             </div>
-            {/* Multi-Filter Search */}
+            {/* Auto-Bidding Engine */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <Filter className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
+                <TrendingUp className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Multi-Filter Search</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">Run multiple search queries simultaneously. Cast a wider net across the transfer market for maximum profit.</p>
-            </div>
-            {/* Snipe by Rating */}
-            <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <Award className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-primary/20 text-primary border border-primary/30">
+                  New v1.0.20
+                </span>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Snipe by Rating</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">Target specific player ratings with surgical precision. Perfect for high-volume SBC fodder trading.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Auto-Bidding Engine</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">
+                Automatically place competitive bids on expiring transfer market auctions. Win high-value cards under market price with strict bid ceiling bounds.
+              </p>
             </div>
-            {/* Auto Rarity Filler */}
+            {/* Multi-Filter Search (Highlighted Feature) */}
+            <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300 relative border-primary/45 shadow-[0_0_35px_rgba(204,255,0,0.12)] bg-gradient-to-b from-primary/[0.07] via-dark/40 to-transparent ring-1 ring-primary/30">
+              <div className="w-12 h-12 rounded-xl bg-primary flex items-center justify-center mb-6 text-black shadow-[0_0_20px_rgba(204,255,0,0.3)] group-hover:scale-105 transition-transform">
+                <Filter className="w-6 h-6" />
+              </div>
+              <div className="flex flex-wrap items-center gap-1.5 mb-2">
+                <span className="text-[10px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-primary text-black">
+                  v1.0.20 All Filters
+                </span>
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-primary/20 text-primary border border-primary/30">
+                  Multi-Target
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-white group-hover:text-primary transition-colors">
+                Multi-Filter Search
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal mb-4">
+                Execute simultaneous multi-target searches across every EA FC 27 transfer market parameter: Country/Nation, Club, League, Position, Quality (Gold, Silver, Bronze), Card Rarity (TOTW, Promos, Icons, Heroes), and specific Rating thresholds (83+, 84+, 88+).
+              </p>
+              <div className="flex flex-wrap gap-1.5 pt-3 border-t border-white/10 text-[10px] font-mono">
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-primary font-bold">Country</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-primary font-bold">Club</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-primary font-bold">League</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-primary font-bold">Position</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-primary font-bold">Rarity</span>
+                <span className="px-2 py-0.5 rounded bg-white/5 border border-white/10 text-primary font-bold">83+ Fodder</span>
+              </div>
+            </div>
+            {/* Consumables & Chem Style Options */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <Sparkles className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Auto Rarity Filler</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">Smart detection automatically identifies and sets card rarity filters, saving you time and preventing errors.</p>
+              <div className="flex items-center gap-2 mb-2">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-primary/20 text-primary border border-primary/30">
+                  v1.0.20
+                </span>
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-white">Consumables &amp; Chem Styles</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">
+                Filter consumables directly (Hunter, Shadow, Position, Contracts) or target player listings with valuable consumable options pre-applied for instant profit flips.
+              </p>
             </div>
-            {/* Snipe Price Calculator */}
+            {/* Snipe by Rating & Rarity */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
-                <Calculator className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
+                <Award className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">Snipe Price Calculator</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">Automated optimal price setting ensures you always buy at a price that guarantees profit after tax.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Rating &amp; Rarity Precision</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">
+                Target specific player ratings (83+, 84+, 88+) and exact card rarities across tiers with surgical accuracy. Perfect for high-volume SBC fodder accumulation.
+              </p>
             </div>
             {/* Profit Calculator */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
@@ -540,7 +578,7 @@ export default function Home() {
               href="/fc27-fut-sniping-bot-autobuyer-features"
               className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-widest hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)]"
             >
-              View Full 11-Module Feature Suite
+              View Full 12-Module Feature Suite
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
@@ -636,7 +674,7 @@ export default function Home() {
                     </td>
                   </tr>
                   <tr className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-6 px-8 font-bold text-white">Futbin Live Price Overlay</td>
+                    <td className="py-6 px-8 font-bold text-white">FUTBIN &amp; FUTGG Live Price Overlay</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
                       <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
@@ -828,11 +866,20 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  Priority Updates &amp; Immediate Patch Access
+                </li>
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   10M+ Coins Earning Potential
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <Clock className="w-4 h-4 text-amber-400 shrink-0" />
                   AI SBC Solver
+                  <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
+                </li>
+                <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
+                  <Clock className="w-4 h-4 text-amber-400 shrink-0" />
+                  Mobile Apps (iOS &amp; Android)
                   <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
                 </li>
               </ul>
@@ -857,12 +904,12 @@ export default function Home() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 bg-purple-500/10 border border-purple-500/20 px-3.5 py-1.5 rounded-full text-xs font-bold text-purple-400 mb-4">
               <svg className="w-4 h-4 fill-current text-[#5865F2]" viewBox="0 0 24 24">
-                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.373-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128c.126-.093.252-.19.373-.287a.075.075 0 0 1 .078-.01c3.927 1.793 8.18 1.793 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.077.077 0 0 1-.006.128 12.299 12.299 0 0 1-1.873.891.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.078.078 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.028zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
               </svg>
-              VERIFIED DISCORD TESTIMONIALS
+              VERIFIED TRADER &amp; DISCORD REVIEWS
             </div>
             <h2 className="text-4xl md:text-6xl font-black mb-4 text-white">Real <span className="text-purple-400">Community Reviews</span></h2>
-            <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Authentic feedback & snipe proof shared directly by our Ultimate Team traders inside Discord.</p>
+            <p className="text-gray-400 max-w-2xl mx-auto text-sm md:text-base">Authentic feedback, 5-star ratings, and live snipe proof shared directly by our Ultimate Team traders.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
@@ -891,26 +938,26 @@ export default function Home() {
               </figcaption>
             </figure>
 
-            {/* SCREENSHOT 2: Patrunjel Regele */}
+            {/* SCREENSHOT 2: George CHICKELDAY Gumroad Review */}
             <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Patrunjel Regele
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> George CHICKELDAY
                 </span>
-                <span className="text-emerald-400 font-semibold text-[11px]">Verified Tester</span>
+                <span className="text-amber-400 font-semibold text-[11px]">⭐ 5-Star Verified Buyer</span>
               </div>
               <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
                 <Image 
-                  src="/discord-review-4.png" 
-                  alt="Discord Review by Patrunjel Regele: The menu for the sniper is great I really like it. The sniping itself works."
-                  width={794}
-                  height={570}
+                  src="/gumroad-review-george.webp" 
+                  alt="Gumroad Review by George CHICKELDAY: This honestly is the best bot I have ever used it 100% gets me the cards im looking for with no problem and I am currently up 200k profit with the snipes i have done in the past 2 days of using it"
+                  width={1024}
+                  height={863}
                   className="w-full h-auto rounded-xl"
                 />
               </div>
               <figcaption className="px-3.5 py-2.5 border-t border-white/5">
-                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;The menu for the sniper is great I really like it. The sniping itself works.&rdquo;</blockquote>
-                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Patrunjel Regele, Elite FUT SNIPER Discord</cite>
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;This honestly is the best bot I have ever used it 100% gets me the cards im looking for with no problem and I am currently up 200k profit with the snipes i have done in the past 2 days of using it &rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— George CHICKELDAY, Verified Gumroad Review</cite>
               </figcaption>
             </figure>
 
@@ -937,7 +984,53 @@ export default function Home() {
               </figcaption>
             </figure>
 
-            {/* SCREENSHOT 4: astroa */}
+            {/* SCREENSHOT 4: Ry4n Discord Snipe Proof */}
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Ry4n
+                </span>
+                <span className="text-emerald-400 font-semibold text-[11px]">⚡ 19.5k Profit in 1m 11s</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-ry4n.webp" 
+                  alt="Discord Snipe Proof by Ry4n: cheap snipe get too it. Sniped 86 Pau Cubarsi for 8,400 coins, 4 cards bought in 1m 11s with 19,495 profit"
+                  width={1024}
+                  height={1008}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;cheap snipe get too it&rdquo; <span className="text-emerald-400 font-medium not-italic text-[11px] block mt-0.5">86 CB Pau Cubarsí sniped for 8,400 • 4 cards bought in 1:11 with 19,495 profit</span></blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Ry4n, Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
+
+            {/* SCREENSHOT 5: Patrunjel Regele */}
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
+              <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
+                <span className="text-purple-400 font-bold flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Patrunjel Regele
+                </span>
+                <span className="text-emerald-400 font-semibold text-[11px]">Verified Tester</span>
+              </div>
+              <div className="p-1 flex-1 flex items-center justify-center bg-[#050505]">
+                <Image 
+                  src="/discord-review-4.png" 
+                  alt="Discord Review by Patrunjel Regele: The menu for the sniper is great I really like it. The sniping itself works."
+                  width={794}
+                  height={570}
+                  className="w-full h-auto rounded-xl"
+                />
+              </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;The menu for the sniper is great I really like it. The sniping itself works.&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Patrunjel Regele, Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
+
+            {/* SCREENSHOT 6: astroa */}
             <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
@@ -960,7 +1053,7 @@ export default function Home() {
               </figcaption>
             </figure>
 
-            {/* SCREENSHOT 5: Phantom Yamal Snipe */}
+            {/* SCREENSHOT 7: Phantom Yamal Snipe */}
             <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
@@ -983,7 +1076,7 @@ export default function Home() {
               </figcaption>
             </figure>
 
-            {/* SCREENSHOT 6: Phantom Quick Coins Review */}
+            {/* SCREENSHOT 8: Phantom Quick Coins Review */}
             <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
@@ -1006,8 +1099,8 @@ export default function Home() {
               </figcaption>
             </figure>
 
-            {/* SCREENSHOT 7: Phantom 97 Yamal Snipe + 1M Coins Balance Proof */}
-            <div className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-1">
+            {/* SCREENSHOT 9: Phantom 97 Yamal Snipe + 1M Coins Balance Proof */}
+            <figure className="relative group rounded-2xl p-1 bg-[#0d0d0d] border border-white/10 shadow-xl overflow-hidden hover:border-purple-500/40 hover:-translate-y-1 transition-all duration-300 flex flex-col md:col-span-2 lg:col-span-1">
               <div className="bg-[#141414] px-3.5 py-2 border-b border-white/10 flex items-center justify-between text-xs">
                 <span className="text-purple-400 font-bold flex items-center gap-1.5">
                   <span className="w-2 h-2 rounded-full bg-emerald-400"></span> Phantom (GENO)
@@ -1023,7 +1116,11 @@ export default function Home() {
                   className="w-full h-auto max-h-[380px] object-contain rounded-xl"
                 />
               </div>
-            </div>
+              <figcaption className="px-3.5 py-2.5 border-t border-white/5">
+                <blockquote className="text-gray-300 text-xs leading-relaxed italic">&ldquo;Account balance over 1,000,000 coins with 97 TOTS Yamal in club.&rdquo;</blockquote>
+                <cite className="text-purple-400 text-[10px] font-bold not-italic mt-1 block">— Phantom (GENO), Elite FUT SNIPER Discord</cite>
+              </figcaption>
+            </figure>
 
           </div>
 

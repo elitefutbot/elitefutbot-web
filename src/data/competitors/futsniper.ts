@@ -265,7 +265,7 @@ export const futSniperData: CompetitorData = {
 
   citations: [
     { label: "Risks of Unsigned Third-Party Extensions", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "DOM Macro Clickers vs Protocol-Level WebSockets", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "DOM Macro Clickers vs Protocol-Level WebSockets", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "FC 27 Local Browser Bot Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "11 Core Sniping & AI SBC Solver Features", url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features" },
   ],

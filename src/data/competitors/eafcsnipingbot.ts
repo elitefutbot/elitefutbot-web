@@ -58,13 +58,6 @@ export const eafcSnipingBotData: CompetitorData = {
       "EAFC Sniping Bot restricts free testing to a brief 12-hour window, whereas Elite FUT SNIPER offers a full 7-day free trial followed by a flat $19.99 annual license covering all features, continuous updates, and VIP Discord alpha.",
   },
 
-  developerOriginNote: {
-    headline: "Architected by Baker's Bot Lead Engineer",
-    badge: "5+ Years Bot Architecture",
-    text: "While standalone bots like EAFC Sniping Bot struggle with legacy codebase updates, Elite FUT SNIPER is engineered by the original lead developer of Baker's Bot, delivering half a decade of anti-cheat research and robust zero-day updates.",
-    linkUrl: "/bakers-bot-developer",
-    linkText: "Read the Lead Architect's Story",
-  },
 
   communityIssuesAudit: {
     headline: "Operational Bottlenecks in Standalone Sniping Tools",

@@ -118,8 +118,18 @@ export default function SiteFooter() {
             <nav className="space-y-6" aria-labelledby="footer-tools">
               <h2 id="footer-tools" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Tools &amp; Intel</h2>
               <ul className="space-y-2 text-sm font-medium">
-                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fc27-fut-snipe-bot">FC 27 Snipe Bot</Link></li>
-                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fc27-fut-sniping-bot-autobuyer-features">FC 27 Bot Features</Link></li>
+                <li>
+                  <Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none flex items-center justify-between py-1.5 group" href="/fc27-fut-snipe-bot">
+                    <span>FC 27 Snipe Bot</span>
+                    <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-primary/10 text-primary border border-primary/20">v1.0.20</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none flex items-center justify-between py-1.5 group" href="/fc27-fut-sniping-bot-autobuyer-features">
+                    <span>FC 27 Bot Features</span>
+                    <span className="text-[10px] font-mono font-bold px-1.5 py-0.5 rounded bg-primary/10 text-primary border border-primary/20">All Filters</span>
+                  </Link>
+                </li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/blog">Tactical Intel Hub</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/article/tactical-intel">Latest Briefing</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/tools/comparison-guide">Comparison Hub</Link></li>

@@ -36,7 +36,7 @@ export const esLocale: LocaleDictionary = {
     },
     hero: {
       titleLine1: "El Bot de Sniping y Autobuyer",
-      titleHighlight: "FC 27 y FC 26",
+      titleHighlight: "FC 27",
       titleHighlight2: "FUT SNIPING BOT",
       titleLine3: "Más Rápido y Seguro del Mundo.",
       description:
@@ -46,7 +46,7 @@ export const esLocale: LocaleDictionary = {
       stats: {
         antiBan: "Tecnología Anti-Baneo Human++ · 0 Baneos a la Fecha",
         localExtension: "Extensión de Chrome (100% Local)",
-        provenLegacy: "Equipo Dev de Bakers Bot",
+        provenLegacy: "Equipo Dev FIFASniping Bot",
       },
       proof: {
         snipeProfitBadge: "GANANCIA DE SNIPE",
@@ -58,7 +58,7 @@ export const esLocale: LocaleDictionary = {
       title: "Por Qué Superamos a",
       titleHighlight: "Cualquier Competidor.",
       subtitle:
-        "Elite FUT SNIPER supera a todos los bots porque se ejecuta de forma local en tu navegador sin depender de servidores en la nube. Creado por el legendario equipo de Bakers Bot, esta arquitectura elimina la latencia para snipar cartas en milisegundos con total seguridad.",
+        "Elite FUT SNIPER supera a todos los bots porque se ejecuta de forma local en tu navegador sin depender de servidores en la nube. Creado por el legendario equipo de FutSniping Bot, esta arquitectura elimina la latencia para snipar cartas en milisegundos con total seguridad.",
       humanization: {
         badge: "Motor Anti-Baneo Insignia",
         title: "Modo Humanization++",
@@ -86,8 +86,8 @@ export const esLocale: LocaleDictionary = {
           iconName: "Tag",
         },
         {
-          title: "Integración con Futbin",
-          description: "Visualiza precios de mercado en tiempo real directamente en la Web App. No vuelvas a comprar por encima de valor.",
+          title: "Integración con FUTBIN & FUTGG",
+          description: "Visualiza precios de mercado en tiempo real de FUTBIN y FUTGG directamente en la Web App. No vuelvas a comprar por encima de valor.",
           iconName: "Cpu",
         },
         {
@@ -96,13 +96,26 @@ export const esLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Búsqueda Multi-Filtro",
-          description: "Ejecuta múltiples búsquedas simultáneamente. Abarca más mercado para maximizar beneficios en cada sesión.",
-          iconName: "Filter",
+          title: "Motor de Auto-Puja",
+          description: "Coloca pujas competitivas automáticamente en subastas a punto de expirar. Gana cartas por debajo de su valor de mercado con techos estrictos.",
+          iconName: "TrendingUp",
+          badge: "Nuevo v1.0.20",
         },
         {
-          title: "Snipe por Valoración",
-          description: "Filtra medias específicas con precisión quirúrgica. Ideal para tradeo masivo de medias para SBCs.",
+          title: "Búsqueda Multi-Filtro",
+          description: "Ejecuta múltiples búsquedas simultáneamente: País/Nacionalidad, Club, Liga, Posición, Calidad (Oro/Plata/Bronce), Rareza (TOTW, Promos, Iconos), medias y consumibles.",
+          iconName: "Filter",
+          badge: "v1.0.20",
+        },
+        {
+          title: "Consumibles y Estilos de Química",
+          description: "Filtra consumibles directamente (Cazador, Sombra, Cambios de posición, Contratos) o cartas de jugadores con químicas aplicadas para beneficios instantáneos.",
+          iconName: "Sparkles",
+          badge: "v1.0.20",
+        },
+        {
+          title: "Precisión de Medias y Rarezas",
+          description: "Filtra medias específicas (83+, 84+, 88+) y niveles exactos de rareza con precisión quirúrgica. Ideal para acumular medias para SBCs.",
           iconName: "Award",
         },
         {
@@ -211,8 +224,10 @@ export const esLocale: LocaleDictionary = {
               "Soporte técnico directo 1-a-1 con desarrolladores",
             ],
           },
+          { text: "Actualizaciones Prioritarias y Acceso Rápido a Parches" },
           { text: "Potencial de Ganancia de 10M+ Monedas" },
           { text: "SBC Solver con IA", isSoon: true },
+          { text: "Apps Móviles (iOS y Android)", isSoon: true },
         ],
         cta: "Obtener Acceso Pro Sniper",
       },
@@ -230,14 +245,16 @@ export const esLocale: LocaleDictionary = {
           img: "/discord-review-1.png",
           alt: "Reseña de _mesirve_: Alegrais la vida creando estas extensiones para FC26. 5 estrellas.",
           quote: "Alegrais la vida creando estas extensiones para FC26. 5 estrellas.",
+          platform: "Discord de Elite FUT SNIPER",
         },
         {
-          user: "Patrunjel Regele",
-          badge: "Tester Verificado",
-          badgeColor: "text-emerald-400",
-          img: "/discord-review-4.png",
-          alt: "Reseña de Patrunjel Regele: El menú del sniper es genial. El sniping funciona perfecto.",
-          quote: "El menú del sniper es genial, me gusta mucho. El sniping funciona perfecto.",
+          user: "George CHICKELDAY",
+          badge: "⭐ Comprador 5 Estrellas",
+          badgeColor: "text-amber-400",
+          img: "/gumroad-review-george.webp",
+          alt: "Reseña de Gumroad de George CHICKELDAY: El mejor bot que he usado, consigo cartas sin problemas y llevo 200k de beneficio en 2 días.",
+          quote: "Sinceramente es el mejor bot que he usado, consigue 100% las cartas que busco sin problemas y actualmente llevo 200k de beneficio con los snipes en los últimos 2 días.",
+          platform: "Reseña Verificada de Gumroad",
         },
         {
           user: "faresislol",
@@ -246,6 +263,25 @@ export const esLocale: LocaleDictionary = {
           img: "/discord-review-2.png",
           alt: "Reseña de faresislol: Gracias hermano, os doy 5 estrellas.",
           quote: "De acuerdo gracias hermano eres un crack te daré una reseña de 5 estrellas.",
+          platform: "Discord de Elite FUT SNIPER",
+        },
+        {
+          user: "Ry4n",
+          badge: "⚡ 19.5k Beneficio en 1m",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-ry4n.webp",
+          alt: "Prueba de snipe en Discord por Ry4n: cheap snipe get too it. 86 Pau Cubarsi snipado por 8.400 con 19.495 de beneficio en 1m 11s.",
+          quote: "cheap snipe get too it — Pau Cubarsí 86 snipado por 8.400 con 19.495 de beneficio en 1 minuto.",
+          platform: "Discord de Elite FUT SNIPER",
+        },
+        {
+          user: "Patrunjel Regele",
+          badge: "Tester Verificado",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-4.png",
+          alt: "Reseña de Patrunjel Regele: El menú del sniper es genial. El sniping funciona perfecto.",
+          quote: "El menú del sniper es genial, me gusta mucho. El sniping funciona perfecto.",
+          platform: "Discord de Elite FUT SNIPER",
         },
         {
           user: "astroa",
@@ -254,6 +290,7 @@ export const esLocale: LocaleDictionary = {
           img: "/discord-review-3.png",
           alt: "Reseña de astroa: Sí, es muy bueno.",
           quote: "Sí, es muy bueno.",
+          platform: "Discord de Elite FUT SNIPER",
         },
         {
           user: "Phantom (GENO)",
@@ -262,6 +299,7 @@ export const esLocale: LocaleDictionary = {
           img: "/discord-review-card.png",
           alt: "Reseña de Phantom: Funciona, he snipado a Yamal TOTS dos veces por 300k.",
           quote: "Hermano funciona, snipeé a YAMAL TOTS dos veces por 300k.",
+          platform: "Discord de Elite FUT SNIPER",
         },
         {
           user: "Phantom (GENO)",
@@ -270,6 +308,7 @@ export const esLocale: LocaleDictionary = {
           img: "/discord-review-5.png",
           alt: "Reseña de Phantom: Es el mejor bot porque hice monedas rápidas al instante.",
           quote: "Este es el mejor que uso porque conseguí monedas rápidas al instante.",
+          platform: "Discord de Elite FUT SNIPER",
         },
         {
           user: "Phantom (GENO)",
@@ -278,6 +317,7 @@ export const esLocale: LocaleDictionary = {
           img: "/discord-review-6.png",
           alt: "Prueba de monedas: Balance de más de 1 millón de monedas con Lamine Yamal 97.",
           quote: "Balance de más de 1 millón de monedas con Lamine Yamal 97 en el club.",
+          platform: "Discord de Elite FUT SNIPER",
         },
       ],
       discordCta: "Unirse a 5,000+ Traders en Discord",
@@ -728,7 +768,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           label: "Ingeniería",
-          title: "Equipo Dev Bakers Bot",
+          title: "Equipo Dev FutSniping Bot",
           desc: "Más de 5 años de trayectoria",
         },
       ],
@@ -920,7 +960,7 @@ export const esLocale: LocaleDictionary = {
       badge: "Ventaja Arquitectónica",
       title: "Por Qué Superamos a Cualquier Bot.",
       subtitle:
-        "Elite FUT SNIPER supera a los bots de la competencia porque se ejecuta 100% de forma local en tu navegador en lugar de servidores en la nube. Desarrollado por el legendario equipo de Bakers Bot, esta arquitectura elimina la latencia para snipar en milisegundos sin comprometer la seguridad.",
+        "Elite FUT SNIPER supera a los bots de la competencia porque se ejecuta 100% de forma local en tu navegador en lugar de servidores en la nube. Desarrollado por el legendario equipo de FutSniping Bot, esta arquitectura elimina la latencia para snipar en milisegundos sin comprometer la seguridad.",
       col1: "Parámetro de Tradeo",
       col2: "Elite FUT SNIPER (Cliente Local)",
       col3: "Autobuyers en la Nube (FutEarn, Hunter, etc.)",
@@ -947,7 +987,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Trayectoria del Equipo Dev",
-          elite: "Equipo Dev Bakers Bot (5+ años de experiencia)",
+          elite: "Equipo Dev FutSniping Bot (5+ años de experiencia)",
           cloud: "Scripts anónimos de imitación",
         },
         {
@@ -995,12 +1035,12 @@ export const esLocale: LocaleDictionary = {
         },
         {
           title: "Búsqueda Multi-Filtro",
-          desc: "Ejecuta múltiples consultas concurrentemente para abarcar sectores más rentables del mercado.",
+          desc: "Ejecuta múltiples consultas concurrentemente sobre País/Nación, Club, Liga, Posición, Rareza y medias exactas para capturar los sectores más rentables.",
           iconName: "Filter",
         },
         {
           title: "Snipe por Valoración",
-          desc: "Filtra medias específicas con precisión quirúrgica — perfecto para tradear medias en eventos promocionales.",
+          desc: "Filtra medias específicas (83+, 84+, 88+) con precisión quirúrgica — perfecto para tradear medias para SBCs durante promociones.",
           iconName: "Sliders",
         },
         {

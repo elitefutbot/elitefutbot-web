@@ -242,7 +242,7 @@ export const futtbotData: CompetitorData = {
 
   citations: [
     { label: "Open-Source Script vs Chrome Extension Bot Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Token Signature Security in Web Automation", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "Token Signature Security in Web Automation", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "FC 27 Native Browser Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "Safe Extension Practices for EA Web App", url: "https://www.elitefutbot.com/tools/sniping-guide" },
   ],

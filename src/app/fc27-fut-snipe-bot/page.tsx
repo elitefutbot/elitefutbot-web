@@ -132,47 +132,58 @@ const FEATURE_MODULES = [
   },
   {
     num: "04",
-    title: "Automated Mass Bidding & Relisting",
-    badge: "Automated Cashflow",
+    title: "Auto-Bidding Engine & Mass Relisting",
+    badge: "v1.0.20 Auto-Bidder",
     badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
     icon: TrendingUp,
     tagline: "Automated Bidding Engine & 5% Tax Calculation",
     description:
-      "Places high-volume bids on expiring auctions with strict bid ceiling bounds, then automatically relists acquired inventory at target profit multipliers with automated 5% EA transfer tax deductions factored in.",
+      "Automatically places high-volume, precision bids on expiring transfer market auctions within strict bid ceiling bounds, winning cards below market floor price. Then automatically relists acquired inventory with automated 5% EA transfer tax deductions factored in.",
     highlights: [
-      "Automated mass bidding on expiring cards",
-      "Automatic 5% EA tax deduction calculation",
-      "24/7 autonomous relisting of unsold auctions",
+      "Automated mass bidding on expiring auctions",
+      "Strict max bid ceiling safeguards to prevent overpaying",
+      "24/7 autonomous relisting with 5% tax-aware profit margins",
     ],
   },
   {
     num: "05",
-    title: "Futbin Real-Time Price Telemetry",
+    title: "FUTBIN & FUTGG Real-Time Price Telemetry",
     badge: "Live Telemetry",
     badgeColor: "bg-purple-500/15 text-purple-300 border-purple-500/30",
     icon: Tag,
-    tagline: "In-Game Market Value & Profit Badges",
+    tagline: "In-Game Dual-Source Market Value & Profit Badges",
     description:
-      "Directly overlays real-time Futbin market valuations, hourly price trends, and target profit margins on every card in the Web App interface, preventing accidental purchases of falling cards.",
+      "Directly overlays real-time FUTBIN and FUTGG market valuations, hourly price trends, and target profit margins on every card in the Web App interface, preventing accidental purchases of falling cards.",
     highlights: [
       "Direct in-app price badge overlay",
-      "Live price fluctuation tracking",
+      "Dual-source live price fluctuation tracking",
       "Eliminates manual browser tab switching",
     ],
   },
   {
     num: "06",
-    title: "Multi-Target Smart Filter Matrix",
-    badge: "Granular Precision",
-    badgeColor: "bg-blue-500/15 text-blue-300 border-blue-500/30",
+    title: "Multi-Filter Search & Consumables Matrix",
+    badge: "v1.0.20 All Market Filters",
+    badgeColor: "bg-primary/20 text-primary border-primary/40",
     icon: SlidersHorizontal,
-    tagline: "Simultaneous Multi-Player Search Profiles",
+    tagline: "Country, Club, League, Position, Rarity, Rating & Consumables",
+    highlight: true,
+    tags: [
+      "Country / Nation",
+      "Club",
+      "League",
+      "Position",
+      "Gold / Silver / Bronze",
+      "Card Rarity",
+      "83+ / 84+ / 88+ Fodder",
+      "Consumables Matrix",
+    ],
     description:
-      "Configure complex buying rules by player rating, position, chemistry style, league, nation, card rarity, and minimum profit margins. Scan multiple target profiles concurrently to capture market-wide dips.",
+      "Execute simultaneous multi-filter search queries across every transfer market parameter: Country/Nation, Club, League, Position, Quality (Gold, Silver, Bronze), Card Rarity (TOTW, Promos, Icons, Heroes), and specific Player Ratings (83+, 84+, 88+). Filter consumables directly (Hunter, Shadow, Position Modifiers, Contracts, Managers) or target player listings with valuable consumable options pre-applied for high-margin flips.",
     highlights: [
-      "Concurrent multi-player filter profiles",
-      "Exact rating & position constraints",
-      "Custom chemistry style & rarity targeting",
+      "Simultaneous queries across Country/Nation, Club, League & Position",
+      "Laser-targeted rating boundaries (83+, 84+, 88+) for promo SBC fodder",
+      "Quality (Gold, Silver, Bronze), card rarities & full consumables matrix",
     ],
   },
   {
@@ -308,8 +319,8 @@ const COMPARISON_ROWS = [
     manual: "20+ minutes manual card search",
   },
   {
-    feature: "Futbin Real-Time Price Sync",
-    elite: "Direct in-app live badge overlay",
+    feature: "FUTBIN & FUTGG Real-Time Price Sync",
+    elite: "Direct in-app live badge overlay (Dual-Source)",
     cloud: "Manual external tab lookup required",
     manual: "Manual tab switching required",
   },
@@ -502,7 +513,7 @@ export default function FC27FutSnipeBotPage() {
               </span>
               <span className="hidden sm:inline-block text-gray-500">•</span>
               <span className="text-[11px] font-bold text-gray-300 font-mono">
-                Now Fully Compatible for FC 27
+                v1.0.20 Multi-Filter &amp; Auto-Bidding Live
               </span>
             </div>
 
@@ -521,7 +532,7 @@ export default function FC27FutSnipeBotPage() {
                 <span>Verified Status: Updated September 17, 2026 • 100% Operational for FC 27</span>
               </div>
               <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-medium">
-                <strong>Elite FUT SNIPER is confirmed 100% working and fully compatible with the September 17 EA FC 27 Web App update.</strong> Operating locally inside Google Chrome with sub-20ms DOM-level response times, this autonomous FC 27 autobuyer and sniping bot executes 59th-minute card sniping, high-volume mass bidding, 1-click AI SBC solving, and automated tax-deducted relisting with zero password sharing and Humanization++ zero-ban protection.
+                <strong>Elite FUT SNIPER is confirmed 100% working and fully compatible with the September 17 EA FC 27 Web App update.</strong> Operating locally inside Google Chrome with sub-20ms DOM-level response times, this autonomous FC 27 autobuyer and sniping bot executes 59th-minute card sniping, multi-filter search (country/nation, club, league, position, card rarity, specific ratings 83+, Gold/Silver/Bronze, consumables &amp; chem styles), high-volume auto-bidding, 1-click AI SBC solving, and automated tax-deducted relisting with zero password sharing and Humanization++ zero-ban protection.
               </p>
             </div>
 
@@ -761,7 +772,7 @@ export default function FC27FutSnipeBotPage() {
                     </li>
                     <li className="flex items-center gap-2">
                       <Check className="w-3.5 h-3.5 text-emerald-400" />
-                      <span>Dynamic undercut or Futbin pricing sync</span>
+                      <span>Dynamic undercut or FUTBIN &amp; FUTGG pricing sync</span>
                     </li>
                   </ul>
                 </div>
@@ -792,11 +803,20 @@ export default function FC27FutSnipeBotPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {FEATURE_MODULES.map((module) => {
                 const IconComponent = module.icon;
+                const isHighlight = "highlight" in module && Boolean(module.highlight);
+                const tags = "tags" in module && Array.isArray(module.tags) ? module.tags : [];
                 return (
                   <div
                     key={module.num}
-                    className="p-6 sm:p-7 rounded-2xl bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40 transition-all duration-300 relative overflow-hidden group shadow-xl hover:-translate-y-1"
+                    className={`p-6 sm:p-7 rounded-2xl transition-all duration-300 relative overflow-hidden group shadow-xl hover:-translate-y-1 ${
+                      isHighlight
+                        ? "bg-[#13160d]/95 hover:bg-[#171b10] border-2 border-primary/60 shadow-[0_0_35px_rgba(204,255,0,0.15)] ring-1 ring-primary/30"
+                        : "bg-[#111111]/80 hover:bg-[#161616] border border-white/10 hover:border-primary/40"
+                    }`}
                   >
+                    {isHighlight && (
+                      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
+                    )}
                     <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 blur-[35px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
                     <div className="flex items-center justify-between mb-4">
@@ -804,7 +824,13 @@ export default function FC27FutSnipeBotPage() {
                         <span className="text-2xl font-black text-primary font-mono">
                           {module.num}
                         </span>
-                        <div className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-colors">
+                        <div
+                          className={`w-10 h-10 rounded-xl flex items-center justify-center transition-colors ${
+                            isHighlight
+                              ? "bg-primary text-black font-black shadow-md shadow-primary/20"
+                              : "bg-white/5 border border-white/10 text-primary group-hover:bg-primary group-hover:text-black"
+                          }`}
+                        >
                           <IconComponent className="w-5 h-5" />
                         </div>
                       </div>
@@ -815,12 +841,30 @@ export default function FC27FutSnipeBotPage() {
                       </span>
                     </div>
 
-                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors">
-                      {module.title}
+                    <h3 className="text-lg sm:text-xl font-bold text-white mb-1 group-hover:text-primary transition-colors flex items-center gap-2">
+                      <span>{module.title}</span>
+                      {isHighlight && (
+                        <span className="text-[10px] font-mono font-bold px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/40 uppercase">
+                          Featured
+                        </span>
+                      )}
                     </h3>
-                    <div className="text-xs font-mono text-gray-400 mb-3">
+                    <div className="text-xs font-mono text-primary/90 mb-3 font-semibold">
                       {module.tagline}
                     </div>
+
+                    {tags.length > 0 && (
+                      <div className="flex flex-wrap gap-1.5 mb-4">
+                        {tags.map((tag: string) => (
+                          <span
+                            key={tag}
+                            className="text-[10px] font-mono font-semibold px-2 py-0.5 rounded-md bg-white/5 text-gray-300 border border-white/10 group-hover:border-primary/30 group-hover:text-primary transition-colors"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
 
                     <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-5">
                       {module.description}

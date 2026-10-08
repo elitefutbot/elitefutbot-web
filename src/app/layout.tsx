@@ -67,7 +67,18 @@ export const metadata: Metadata = {
       "msvalidate.01": "DF183DB29828D77C74770B08A8F24DD0",
       "yandex-verification": "a303969db4d28193",
     }
-  }
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 };
 
 const jsonLd = {
