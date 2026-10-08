@@ -256,7 +256,7 @@ const OUTPERFORM_COMPARISON = [
   },
   {
     feature: "Pricing Model",
-    elite: "$19.99 One-Time Payment (365 Full Days)",
+    elite: "€19.90 One-Time Payment (365 Full Days)",
     cloud: "$15–$30/mo recurring subscriptions",
     highlight: false,
   },
@@ -383,8 +383,8 @@ export default function FC27FeaturesPage() {
         "offers": {
           "@type": "Offer",
           "url": "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
-          "price": "19.99",
-          "priceCurrency": "USD",
+          "price": "19.90",
+          "priceCurrency": "EUR",
           "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
         },

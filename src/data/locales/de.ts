@@ -178,7 +178,7 @@ export const deLocale: LocaleDictionary = {
       freeCard: {
         badge: "7 Tage Begrenzter Zugang",
         title: "Kostenlose Testphase (7 Tage)",
-        price: "0 €",
+        price: "€0",
         period: "/ 7 Tage",
         desc: "7 Tage begrenzter kostenloser Zugang. Perfekt zum Kennenlernen der Grundfunktionen des Snipings.",
         features: [
@@ -197,12 +197,12 @@ export const deLocale: LocaleDictionary = {
       proCard: {
         badge: "Bester Wert",
         title: "Pro Sniper",
-        price: "19,99 €",
-        originalPrice: "49,99 €",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Einmalzahlung · 365 Tage · FC 27 & FC 26",
-        spotsLeft: "12 Plätze übrig für 19,99 €",
+        spotsLeft: "12 Plätze übrig für €19.90",
         soldText: "88/100 verkauft",
-        nextPrice: "Nächster Preis: 29,99 €",
+        nextPrice: "Nächster Preis: €29.90",
         featuresHeader: "Was enthalten ist",
         features: [
           { text: "Erweiterte Sub-20ms Sniping-Logik" },
@@ -614,7 +614,7 @@ export const deLocale: LocaleDictionary = {
         },
         {
           feature: "Preise & Modell",
-          elite: "19,99 € Einmalzahlung (365 Tage + Testphase)",
+          elite: "€19.90 Einmalzahlung (365 Tage + Testphase)",
           cloud: "15 € – 35 € / Monat Abo",
           manual: "Kostenlos (Kostet 4+ Stunden täglich)",
         },
@@ -706,7 +706,7 @@ export const deLocale: LocaleDictionary = {
         },
         {
           q: "Wie unterscheidet sich Elite FUT SNIPER von Cloud-Bots wie FutBot oder FutEarn?",
-          a: "Cloud-Bots leiten Anfragen über geteilte Server mit 150ms–350ms Latenz und verlangen dein Passwort. Elite FUT SNIPER arbeitet lokal mit unter 20ms, benötigt keine Daten und kostet einmalig nur 19,99 € im Jahr.",
+          a: "Cloud-Bots leiten Anfragen über geteilte Server mit 150ms–350ms Latenz und verlangen dein Passwort. Elite FUT SNIPER arbeitet lokal mit unter 20ms, benötigt keine Daten und kostet einmalig nur €19.90 im Jahr.",
         },
         {
           q: "Woher erhalte ich profitable Filter und Unterstützung?",
@@ -996,7 +996,7 @@ export const deLocale: LocaleDictionary = {
         },
         {
           feature: "Preise & Modell",
-          elite: "19,99 € Einmalzahlung (365 volle Tage)",
+          elite: "€19.90 Einmalzahlung (365 volle Tage)",
           cloud: "15 €–30 € / Monat fortlaufend",
         },
         {

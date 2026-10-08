@@ -604,7 +604,7 @@ const ALL_LINKS: DirectoryLink[] = [
     href: "/futfun-vs-elitefutbot",
     label: "FutFun vs Elite FUT SNIPER",
     category: "Competitor Comparisons",
-    desc: "FutFun predatory 10%–20% profit commission vs flat $19.99/yr license with 100% profit retention.",
+    desc: "FutFun predatory 10%–20% profit commission vs flat €19.90/yr license with 100% profit retention.",
     tag: "Comparison",
     badge: "Coin Siphon",
     badgeColor: "bg-rose-500/15 text-rose-300 border-rose-500/30",

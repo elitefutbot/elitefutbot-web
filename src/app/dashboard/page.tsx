@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -28,7 +28,52 @@ import { useAccountStats, type AccountStats } from "@/lib/auth/useAccountStats";
 import { useLeaderboard } from "@/lib/auth/useLeaderboard";
 import { type LeaderboardEntry } from "@/lib/auth/authClient";
 import { setUpPushNotifications } from "@/lib/firebase/messaging";
+import { emitRefresh } from "@/lib/firebase/refreshBus";
 import { computeTrialDaysLeft, TRIAL_LENGTH_DAYS } from "@/lib/trial";
+import {
+  consumeBuyIntent,
+  PRO_PRICE_LABEL,
+  startCheckout,
+} from "@/lib/payments";
+
+const DAY_MS = 24 * 60 * 60 * 1000;
+// Show the renew prompt once a license is this close to expiring.
+const RENEW_WARNING_DAYS = 30;
+// After returning from Stripe, re-check this often (and for this long)
+// while the webhook activates the license.
+const ACTIVATION_POLL_MS = 3000;
+const ACTIVATION_TIMEOUT_MS = 45000;
+
+type PaymentReturn = "activating" | "activated" | "delayed" | "cancelled";
+
+// Mirrors User.isLicenseActive() on the backend: isPaid stays true after a
+// license runs out, so the expiry has to be checked too.
+function getLicenseState(isPaid: boolean, expiresAt: string | null) {
+  const msLeft = expiresAt ? new Date(expiresAt).getTime() - Date.now() : null;
+  const active = isPaid && (msLeft === null || msLeft > 0);
+  return {
+    active,
+    expired: isPaid && !active,
+    daysLeft: msLeft === null ? null : Math.max(0, Math.ceil(msLeft / DAY_MS)),
+  };
+}
+
+// Stripe sends buyers back to /dashboard?payment=success|cancelled. Only
+// rendered client-side (behind AuthGuard), so reading the URL here is safe.
+function readPaymentReturn(): PaymentReturn | null {
+  const payment = new URLSearchParams(window.location.search).get("payment");
+  if (payment === "success") return "activating";
+  if (payment === "cancelled") return "cancelled";
+  return null;
+}
+
+function formatDate(iso: string): string {
+  return new Date(iso).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+}
 
 interface BotActiveFilters {
   minPrice?: string;
@@ -169,6 +214,22 @@ function DashboardContent() {
   const stats = useAccountStats();
   const leaderboardData = useLeaderboard();
   const [upgradeModalOpen, setUpgradeModalOpen] = useState(false);
+  const [checkoutPending, setCheckoutPending] = useState(false);
+  const [checkoutError, setCheckoutError] = useState("");
+  const [paymentReturn, setPaymentReturn] = useState<PaymentReturn | null>(
+    readPaymentReturn,
+  );
+
+  const beginCheckout = useCallback(async () => {
+    setCheckoutPending(true);
+    setCheckoutError("");
+    const result = await startCheckout();
+    // On success the browser is already navigating to Stripe.
+    if (!result.ok) {
+      setCheckoutError(result.message);
+      setCheckoutPending(false);
+    }
+  }, []);
 
   // Best-effort: request notification permission and register this
   // browser's FCM token so bot-status/purchase updates land as an
@@ -177,9 +238,54 @@ function DashboardContent() {
     void setUpPushNotifications();
   }, []);
 
+  // Drop ?payment=… once read so a reload doesn't replay the message, and
+  // honour ?buy=1 from buy buttons elsewhere on the site.
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    if (url.searchParams.has("payment")) {
+      url.searchParams.delete("payment");
+      window.history.replaceState(null, "", url.pathname + url.search + url.hash);
+    }
+    if (consumeBuyIntent()) {
+      void startCheckout().then((result) => {
+        if (!result.ok) setCheckoutError(result.message);
+      });
+    }
+  }, []);
+
   const displayName = user?.name ?? "there";
   const createdAt = stats?.createdAt ?? user?.createdAt;
   const isPaid = stats?.isPaid ?? user?.isPaid ?? false;
+  const licenseExpiresAt = stats?.licenseExpiresAt ?? null;
+  const {
+    active: licenseActive,
+    expired: licenseExpired,
+    daysLeft: licenseDaysLeft,
+  } = getLicenseState(isPaid, licenseExpiresAt);
+  const renewSoon =
+    licenseActive &&
+    licenseDaysLeft !== null &&
+    licenseDaysLeft <= RENEW_WARNING_DAYS;
+
+  // The webhook usually lands within a second or two of the redirect, but
+  // poll briefly instead of waiting for the regular 60s refresh.
+  const paymentNotice: PaymentReturn | null =
+    (paymentReturn === "activating" || paymentReturn === "delayed") &&
+    licenseActive
+      ? "activated"
+      : paymentReturn;
+  useEffect(() => {
+    if (paymentReturn !== "activating" || licenseActive) return;
+    const intervalId = window.setInterval(emitRefresh, ACTIVATION_POLL_MS);
+    const timeoutId = window.setTimeout(
+      () => setPaymentReturn("delayed"),
+      ACTIVATION_TIMEOUT_MS,
+    );
+    return () => {
+      window.clearInterval(intervalId);
+      window.clearTimeout(timeoutId);
+    };
+  }, [paymentReturn, licenseActive]);
   const isDuplicateTrial = stats?.isDuplicateTrial ?? user?.isDuplicateTrial ?? false;
   const totalTrialDays = isDuplicateTrial
     ? 0
@@ -238,7 +344,13 @@ function DashboardContent() {
     },
     {
       label: "Days Left",
-      value: isPaid ? "—" : String(daysLeft),
+      value: licenseActive
+        ? licenseDaysLeft === null
+          ? "∞"
+          : String(licenseDaysLeft)
+        : licenseExpired
+          ? "0"
+          : String(daysLeft),
       icon: CalendarDays,
     },
   ];
@@ -295,20 +407,62 @@ function DashboardContent() {
               <ArrowRight className="size-5 text-primary shrink-0 group-hover:translate-x-1 transition-transform" />
             </a>
 
-            {/* Trial banner */}
-            <div className={`bg-card relative overflow-hidden p-6 md:p-8 rounded-2xl border ${isDuplicateTrial ? "border-red-500/40 shadow-[0_4px_24px_rgba(239,68,68,0.15)]" : "border-primary/30 shadow-[0_4px_24px_rgba(0,0,0,0.2)]"}`}>
+            {/* Return from Stripe Checkout */}
+            {paymentNotice && (
+              <div
+                role="status"
+                className={`p-4 rounded-2xl border text-sm font-bold ${
+                  paymentNotice === "activated"
+                    ? "bg-emerald-500/10 border-emerald-500/30 text-emerald-300"
+                    : paymentNotice === "cancelled"
+                      ? "bg-white/5 border-white/15 text-gray-300"
+                      : "bg-primary/10 border-primary/30 text-primary"
+                }`}
+              >
+                {paymentNotice === "activating" && (
+                  <span className="flex items-center gap-3">
+                    <span className="size-4 border-2 border-primary border-t-transparent rounded-full animate-spin shrink-0" />
+                    Payment received — activating your Pro access…
+                  </span>
+                )}
+                {paymentNotice === "activated" &&
+                  `✅ Payment successful — Pro is active${
+                    licenseExpiresAt ? ` until ${formatDate(licenseExpiresAt)}` : ""
+                  }. Thank you!`}
+                {paymentNotice === "delayed" && (
+                  <>
+                    Your payment went through, but activation is taking
+                    longer than usual. Refresh this page in a minute — if Pro
+                    still isn&apos;t active, email{" "}
+                    <a href="mailto:support@elitefutbot.com" className="underline">
+                      support@elitefutbot.com
+                    </a>
+                    .
+                  </>
+                )}
+                {paymentNotice === "cancelled" &&
+                  "Checkout cancelled — you haven't been charged."}
+              </div>
+            )}
+
+            {/* Plan banner */}
+            <div className={`bg-card relative overflow-hidden p-6 md:p-8 rounded-2xl border ${isDuplicateTrial && !licenseActive ? "border-red-500/40 shadow-[0_4px_24px_rgba(239,68,68,0.15)]" : "border-primary/30 shadow-[0_4px_24px_rgba(0,0,0,0.2)]"}`}>
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
                 <div className="flex-1">
-                  <span className={`font-mono text-[10px] font-bold uppercase tracking-widest ${isDuplicateTrial ? "text-red-400" : "text-primary"}`}>
-                    {isPaid
+                  <span className={`font-mono text-[10px] font-bold uppercase tracking-widest ${(isDuplicateTrial && !licenseActive) || licenseExpired ? "text-red-400" : "text-primary"}`}>
+                    {licenseActive
                       ? "Elite FUT SNIPER Pro"
-                      : isDuplicateTrial
-                        ? "Previous Trial Detected"
-                        : `${totalTrialDays}-Day Free Trial`}
+                      : licenseExpired
+                        ? "Pro License Expired"
+                        : isDuplicateTrial
+                          ? "Previous Trial Detected"
+                          : `${totalTrialDays}-Day Free Trial`}
                   </span>
                   <h1 className="font-display text-3xl tracking-tight mt-1 mb-3">
-                    {isPaid ? (
+                    {licenseActive ? (
                       "You have full access"
+                    ) : licenseExpired ? (
+                      "Your Pro license has expired"
                     ) : isDuplicateTrial ? (
                       <>
                         <span className="bg-red-500 text-white px-[0.06em] rounded-[0.06em] box-decoration-clone">0 days</span> left
@@ -321,7 +475,20 @@ function DashboardContent() {
                       </>
                     )}
                   </h1>
-                  {isDuplicateTrial ? (
+                  {licenseActive ? (
+                    licenseExpiresAt && (
+                      <p className={`text-xs mt-2 ${renewSoon ? "text-amber-400 font-bold" : "text-gray-400"}`}>
+                        {renewSoon ? "⚠️ " : ""}
+                        Pro until {formatDate(licenseExpiresAt)} ·{" "}
+                        {licenseDaysLeft} {licenseDaysLeft === 1 ? "day" : "days"} left
+                        {renewSoon && " — renew now to keep your access. Unused days carry over."}
+                      </p>
+                    )
+                  ) : licenseExpired ? (
+                    <p className="text-xs text-red-400 mt-2">
+                      Your license ended on {formatDate(licenseExpiresAt!)}. Renew for {PRO_PRICE_LABEL} to get another 365 days of full access.
+                    </p>
+                  ) : isDuplicateTrial ? (
                     <p className="text-xs text-red-400 mt-2">
                       We detected that a free trial was already used on this device. Upgrade to Pro below to unlock full bot access.
                     </p>
@@ -336,17 +503,38 @@ function DashboardContent() {
                 </div>
                 <div className="shrink-0 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                   <DownloadExtensionButton className="w-full sm:w-auto justify-center" />
-                  {!isPaid && (
+                  {(!licenseActive || renewSoon) && (
                     <button
                       type="button"
-                      onClick={() => setUpgradeModalOpen(true)}
-                      className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)]"
+                      onClick={() => void beginCheckout()}
+                      disabled={checkoutPending}
+                      className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)] disabled:opacity-60 disabled:hover:scale-100"
                     >
-                      Upgrade Now
+                      {checkoutPending
+                        ? "Opening checkout…"
+                        : isPaid
+                          ? `Renew · ${PRO_PRICE_LABEL}`
+                          : `Upgrade Now · ${PRO_PRICE_LABEL}`}
                     </button>
                   )}
                 </div>
               </div>
+              {(checkoutError || !licenseActive) && (
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-end gap-2 text-xs">
+                  {checkoutError && (
+                    <p className="text-red-400 sm:mr-auto">{checkoutError}</p>
+                  )}
+                  {!licenseActive && (
+                    <button
+                      type="button"
+                      onClick={() => setUpgradeModalOpen(true)}
+                      className="text-gray-400 hover:text-white underline underline-offset-2"
+                    >
+                      Have a license key?
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Installation & Community Support Section — Visible to all users */}

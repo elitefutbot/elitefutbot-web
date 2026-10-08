@@ -171,7 +171,7 @@ export const plLocale: LocaleDictionary = {
         { feature: "Silnik Rozwiązywania SBC przez AI", elite: true, typical: false },
         { feature: "Zero Udostępniania Hasła (Pełne Bezpieczeństwo)", elite: true, typical: false },
         { feature: "Filtry Handlowe o Wysokiej Marży na Discordzie", elite: true, typical: false },
-        { feature: "Pojedyncza Opłata Roczna ($19.99/rok)", elite: true, typical: false },
+        { feature: "Pojedyncza Opłata Roczna (€19.90/rok)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -181,7 +181,7 @@ export const plLocale: LocaleDictionary = {
       freeCard: {
         badge: "Darmowy Start",
         title: "Darmowa Beta",
-        price: "$0",
+        price: "€0",
         period: "Zawsze Za Darmo",
         desc: "Podstawowe narzędzia do snajpienia, aby na własne oczy przekonać się o prędkości bota.",
         features: [
@@ -199,12 +199,12 @@ export const plLocale: LocaleDictionary = {
       proCard: {
         badge: "Najczęściej Wybierany",
         title: "Przepustka Pro Sniper",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Licencja na 365 Dni · Aktualizacje do FC 26 & FC 27 w Cenie",
-        spotsLeft: "12 Wolnych miejsc za $19.99",
+        spotsLeft: "12 Wolnych miejsc za €19.90",
         soldText: "88/100 sprzedanych",
-        nextPrice: "Następna cena: $29.99",
+        nextPrice: "Następna cena: €29.90",
         featuresHeader: "Wszystko co w planie Free, plus:",
         features: [
           {
@@ -554,7 +554,7 @@ export const plLocale: LocaleDictionary = {
         },
         {
           feature: "Model Płatności",
-          elite: "$19.99/rok (365 dni) · 7-dniowy okres próbny",
+          elite: "€19.90/rok (365 dni) · 7-dniowy okres próbny",
           cloud: "Abonamenty od $15 do $30 każdego miesiąca",
           manual: "Darmowe (Kosztuje setki straconych godzin)",
         },
@@ -856,7 +856,7 @@ export const plLocale: LocaleDictionary = {
         },
         {
           feature: "Model Cenowy",
-          elite: "$19.99 Jednorazowo (Pełne 365 Dni)",
+          elite: "€19.90 Jednorazowo (Pełne 365 Dni)",
           cloud: "$15–$30 co miesiąc w subskrypcji",
         },
         {

@@ -171,7 +171,7 @@ export const esMxLocale: LocaleDictionary = {
         { feature: "Motor Solver de SBC con IA", elite: true, typical: false },
         { feature: "Cero Compartición de Contraseña (Seguridad Total)", elite: true, typical: false },
         { feature: "Filtros de Tradeo de Alto Margen en Discord", elite: true, typical: false },
-        { feature: "Pago Único Anual ($19.99/año)", elite: true, typical: false },
+        { feature: "Pago Único Anual (€19.90/año)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -181,7 +181,7 @@ export const esMxLocale: LocaleDictionary = {
       freeCard: {
         badge: "Inicio Gratis",
         title: "Beta Gratis",
-        price: "$0",
+        price: "€0",
         period: "Gratis Para Siempre",
         desc: "Herramientas esenciales de sniping para comprobar la velocidad de Elite FUT SNIPER.",
         features: [
@@ -199,12 +199,12 @@ export const esMxLocale: LocaleDictionary = {
       proCard: {
         badge: "Más Popular",
         title: "Pase Pro Sniper",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Licencia de 365 Días · Todas las Actualizaciones de FC 26 & FC 27 Incluidas",
-        spotsLeft: "12 Lugares restantes a $19.99",
+        spotsLeft: "12 Lugares restantes a €19.90",
         soldText: "88/100 vendidos",
-        nextPrice: "Siguiente precio: $29.99",
+        nextPrice: "Siguiente precio: €29.90",
         featuresHeader: "Todo lo del plan Free, más:",
         features: [
           {
@@ -554,7 +554,7 @@ export const esMxLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "$19.99/año (365 días) · Prueba gratis de 7 días",
+          elite: "€19.90/año (365 días) · Prueba gratis de 7 días",
           cloud: "Suscripciones mensuales de $15 a $30 USD",
           manual: "Gratis (Cuesta cientos de horas)",
         },
@@ -856,7 +856,7 @@ export const esMxLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "$19.99 Pago Único (365 Días Completos)",
+          elite: "€19.90 Pago Único (365 Días Completos)",
           cloud: "$15–$30 USD mensuales en suscripción",
         },
         {

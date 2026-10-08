@@ -178,7 +178,7 @@ export const ptLocale: LocaleDictionary = {
       freeCard: {
         badge: "Acesso Limitado de 7 Dias",
         title: "Teste Grátis (7 Dias)",
-        price: "R$0",
+        price: "€0",
         period: "/ 7 dias",
         desc: "7 dias de acesso gratuito limitado. Ideal para testar as ferramentas e aprender os fundamentos do sniping.",
         features: [
@@ -201,12 +201,12 @@ export const ptLocale: LocaleDictionary = {
       proCard: {
         badge: "Melhor Escolha",
         title: "Pro Sniper",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Pagamento Único · 365 Dias · FC 27 e FC 26",
-        spotsLeft: "12 Vagas restantes a $19.99",
+        spotsLeft: "12 Vagas restantes a €19.90",
         soldText: "88/100 vendidos",
-        nextPrice: "Próximo preço: $29.99",
+        nextPrice: "Próximo preço: €29.90",
         featuresHeader: "O que está incluso",
         features: [
           { text: "Lógica Avanzada de Sniping Sub-20ms" },
@@ -618,7 +618,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Preço",
-          elite: "$19.99 Pagamento Único (365 Dias + Teste Grátis)",
+          elite: "€19.90 Pagamento Único (365 Dias + Teste Grátis)",
           cloud: "$15 – $35 / mês assinatura recorrente",
           manual: "Grátis (Custa 4+ horas diárias)",
         },
@@ -710,7 +710,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           q: "Qual a diferença entre o Elite FUT SNIPER e bots em nuvem como FutBot ou FutEarn?",
-          a: "Bots em nuvem passam por servidores remotos compartilhados, gerando 150ms–350ms de atraso e exigindo sua senha. O Elite FUT SNIPER roda local a <20ms, não compartilha dados e tem custo de apenas $19.99 por ano.",
+          a: "Bots em nuvem passam por servidores remotos compartilhados, gerando 150ms–350ms de atraso e exigindo sua senha. O Elite FUT SNIPER roda local a <20ms, não compartilha dados e tem custo de apenas €19.90 por ano.",
         },
         {
           q: "Onde consigo filtros de trade lucrativos e suporte?",
@@ -1000,7 +1000,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Cobrança",
-          elite: "$19.99 Pagamento Único (365 Dias Completos)",
+          elite: "€19.90 Pagamento Único (365 Dias Completos)",
           cloud: "$15–$30 / mês assinaturas recorrentes",
         },
         {

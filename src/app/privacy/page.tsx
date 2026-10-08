@@ -54,7 +54,7 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Account Registration &amp; 7-Day Trial Data:</strong> When you register or activate our 7-day free trial (e.g., using Discord authorization or email), we collect your email address, username, profile identifier, and hardware/device fingerprints necessary to enforce trial duration, prevent duplicate trial abuse, and maintain license integrity.</li>
-              <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, transactional data is handled securely by certified third-party payment gateways (such as Gumroad). <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We retain transaction references, timestamps, and product tokens to verify your digital license entitlement. Because SaaS licenses are delivered immediately and are non-refundable, transaction records are securely logged for accounting and fraud prevention.</li>
+              <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, transactional data is handled securely by certified third-party payment gateways (such as Stripe). <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We retain transaction references, timestamps, and product tokens to verify your digital license entitlement. Because SaaS licenses are delivered immediately and are non-refundable, transaction records are securely logged for accounting and fraud prevention.</li>
               <li><strong>Usage &amp; Performance Data:</strong> We automatically collect information about how you interact with our website and extension companion, including IP address, browser type, device information, and diagnostic telemetry, to help us optimize performance and safeguard platform security.</li>
             </ul>
           </section>
@@ -84,7 +84,7 @@ export default function PrivacyPage() {
               <strong>We do not sell, rent, or trade your personal information to third parties.</strong> We share data exclusively with trusted service providers necessary to operate the Service:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Payment Processors:</strong> We use Gumroad to securely process payments. This provider adheres to strict industry security standards and its own privacy policy.</li>
+              <li><strong>Payment Processors:</strong> We use Stripe to securely process payments (license keys purchased earlier were processed by Gumroad). This provider adheres to strict industry security standards and its own privacy policy.</li>
               <li><strong>Hosting &amp; Infrastructure:</strong> Our web services, APIs, and databases are hosted on secure modern cloud infrastructure (such as Vercel).</li>
               <li><strong>Legal Compliance &amp; Protection:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities, or to defend against fraudulent chargeback attempts.</li>
             </ul>

@@ -4,15 +4,15 @@ export const futRichData: CompetitorData = {
   slug: "futrich-vs-elitefutbot",
   competitorName: "FUTRich",
   competitorType: "extension",
-  tagline: "Break Free from Single-Title €39.99 Re-Taxes & Device Locks for Flat $19.99 Sub-20ms Sniping with True AI SBC Solving.",
+  tagline: "Break Free from Single-Title €39.99 Re-Taxes & Device Locks for Flat €19.90 Sub-20ms Sniping with True AI SBC Solving.",
   summaryPassage:
-    "In a direct comparison between FUTRich and Elite FUT SNIPER, FUTRich charges €39.99 locked strictly to 'All FC26 duration' (or €5.99/month), enforces a strict single-device lockout, and relies on linear delay DOM macros with floating canvas overlays, whereas Elite FUT SNIPER provides an all-inclusive $19.99 365-day license covering both FC 26 and FC 27 with sub-20ms WebSocket speed, docked Chrome Side Panel ergonomics, neural AI SBC solving, and Humanization++ zero-ban protection.",
+    "In a direct comparison between FUTRich and Elite FUT SNIPER, FUTRich charges €39.99 locked strictly to 'All FC26 duration' (or €5.99/month), enforces a strict single-device lockout, and relies on linear delay DOM macros with floating canvas overlays, whereas Elite FUT SNIPER provides an all-inclusive €19.90 365-day license covering both FC 26 and FC 27 with sub-20ms WebSocket speed, docked Chrome Side Panel ergonomics, neural AI SBC solving, and Humanization++ zero-ban protection.",
   verdict:
-    "FUTRich (futrich.com) markets an entry-level browser extension, but locks its highest tier (€39.99) strictly to 'All FC26 duration'—forcing users to re-purchase another license when FC 27 launches—while enforcing strict single-device restrictions ('can't use on multiple devices simultaneously') and relying on linear delay intervals vulnerable to EA heuristic flags. Elite FUT SNIPER delivers an all-inclusive 365-day license for a flat $19.99 with full FC 26 & FC 27 forward compatibility, sub-20ms direct protocol execution, a clean native Chrome Side Panel HUD, personal workstation flexibility, and a neural AI SBC solver with an unbroken 0-ban track record.",
+    "FUTRich (futrich.com) markets an entry-level browser extension, but locks its highest tier (€39.99) strictly to 'All FC26 duration'—forcing users to re-purchase another license when FC 27 launches—while enforcing strict single-device restrictions ('can't use on multiple devices simultaneously') and relying on linear delay intervals vulnerable to EA heuristic flags. Elite FUT SNIPER delivers an all-inclusive 365-day license for a flat €19.90 with full FC 26 & FC 27 forward compatibility, sub-20ms direct protocol execution, a clean native Chrome Side Panel HUD, personal workstation flexibility, and a neural AI SBC solver with an unbroken 0-ban track record.",
   publishedDate: "2026-08-01",
   modifiedDate: "2026-09-09",
   fc27SupportNote:
-    "While FUTRich restricts its top license strictly to 'All FC26 duration' requiring a €39.99 re-purchase for FC 27, Elite FUT SNIPER's flat $19.99 license includes unrestricted day-one compatibility for both EA FC 26 and FC 27 with automated updates.",
+    "While FUTRich restricts its top license strictly to 'All FC26 duration' requiring a €39.99 re-purchase for FC 27, Elite FUT SNIPER's flat €19.90 license includes unrestricted day-one compatibility for both EA FC 26 and FC 27 with automated updates.",
 
   competitorOverview:
     "FUTRich (futrich.com, developed under Italian VAT registration by Pittarello Fabio) is a Chrome extension (~3,000 users, 5.0★ across 372 ratings) that automates search and buy cycles on the EA Web App. While it advertises features such as automatic bidding and unassigned handling, it suffers from significant structural concerns: its highest tier (€39.99) is title-locked exclusively to FC 26 with zero carry-over to FC 27, and its parent business concurrently operates a coin-selling 'comfort trade' service requesting customer Web App emails, passwords, and backup codes—introducing major security and trust concerns.",
@@ -33,7 +33,7 @@ export const futRichData: CompetitorData = {
     "No concurrent multi-target scanning; restricted to sequential single search filter loops",
   ],
   elitePros: [
-    "Flat $19.99 all-inclusive 365-day license covering all 11 modules and both EA FC 26 and FC 27 day-one",
+    "Flat €19.90 all-inclusive 365-day license covering all 11 modules and both EA FC 26 and FC 27 day-one",
     "Sub-20ms direct in-memory WebSocket response time that captures elite 59th-minute deals with zero DOM lag",
     "True integrated neural AI SBC solver that analyzes club untradeables, solves chemistry in sub-500ms, and auto-submits",
     "Hardware-accelerated Chrome Side Panel HUD leaving the official EA Web App viewport 100% unobstructed",
@@ -43,7 +43,7 @@ export const futRichData: CompetitorData = {
   ],
   idealFor: {
     competitor: "Casual traders wanting a basic 5-day trial on a single machine who don't mind paying €39.99 per annual game cycle.",
-    elite: "Serious traders demanding sub-20ms speed, flat $19.99 pricing covering FC 26 & FC 27, multi-device freedom, and dynamic AI SBC solving.",
+    elite: "Serious traders demanding sub-20ms speed, flat €19.90 pricing covering FC 26 & FC 27, multi-device freedom, and dynamic AI SBC solving.",
   },
 
   communityIssuesAudit: {
@@ -58,7 +58,7 @@ export const futRichData: CompetitorData = {
         competitorFlaw:
           "FUTRich markets its top tier as 'Elite Trader' for €39.99, but its fine print explicitly restricts this to 'All FC26 duration'. When EA FC 27 launches, this license immediately expires, requiring users to pay another €39.99. Over two consecutive seasons, traders pay €79.98 (~$88 USD), or €5.99/month (€71.88/year) on monthly subscriptions.",
         eliteSolution:
-          "Elite FUT SNIPER operates on a flat, transparent $19.99 365-day license. Every license includes continuous day-one support for both EA FC 26 and FC 27 with seamless automatic updates, saving you $60+ while delivering enterprise-grade performance.",
+          "Elite FUT SNIPER operates on a flat, transparent €19.90 365-day license. Every license includes continuous day-one support for both EA FC 26 and FC 27 with seamless automatic updates, saving you $60+ while delivering enterprise-grade performance.",
       },
       {
         title: "Enforced Single-Device Lockout ('Cannot Use on Multiple Devices Simultaneously')",
@@ -204,22 +204,22 @@ export const futRichData: CompetitorData = {
   },
 
   pricingTeardown: {
-    headline: "Pricing Reality: Title-Locked €39.99 Fees & Monthly Subs vs Flat $19.99 Annual License",
+    headline: "Pricing Reality: Title-Locked €39.99 Fees & Monthly Subs vs Flat €19.90 Annual License",
     subheadline:
-      "Analyzing why FUTRich's €39.99 single-title restriction and monthly subscriptions drain your bankroll compared to Elite FUT SNIPER's flat $19.99 license.",
+      "Analyzing why FUTRich's €39.99 single-title restriction and monthly subscriptions drain your bankroll compared to Elite FUT SNIPER's flat €19.90 license.",
     competitorModel: {
       title: "FUTRich Title-Locked & Monthly Pricing",
       price: "€5.99 / mo, €15.99 / 3 mos, or €39.99 / FC 26 Only",
       hiddenCosts: [
         "Elite Trader tier (€39.99) valid ONLY for 'All FC26 duration'—requires full repurchase for FC 27",
-        "Two seasons of access costs €79.98 (~$88 USD) vs Elite's flat $19.99 365-day license",
+        "Two seasons of access costs €79.98 (~$88 USD) vs Elite's flat €19.90 365-day license",
         "Monthly subscription (€5.99/mo) costs €71.88/year ($79+/year)",
         "Strict single-device restriction prohibits using the license across desktop and laptop machines",
       ],
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive License",
-      price: "$19.99 / year (Flat Fee)",
+      price: "€19.90 / year (Flat Fee)",
       inclusions: [
         "Full 365 days of unrestricted access to all 11 modules",
         "Sub-20ms sniping engine and neural AI SBC solver included free",
@@ -229,11 +229,11 @@ export const futRichData: CompetitorData = {
       ],
     },
     summary:
-      "FUTRich charges €39.99 locked exclusively to FC 26, forcing another €39.99 repurchase when FC 27 drops. Elite FUT SNIPER covers all 11 modules, personal workstations, and both titles for a flat $19.99.",
+      "FUTRich charges €39.99 locked exclusively to FC 26, forcing another €39.99 repurchase when FC 27 drops. Elite FUT SNIPER covers all 11 modules, personal workstations, and both titles for a flat €19.90.",
   },
 
   keyStatistics: [
-    { label: "Multi-Title Cost Savings", value: "Save $68+ Across FC 26 & FC 27 ($19.99 vs €79.98)", source: "Two-Season Total Cost of Ownership Audit" },
+    { label: "Multi-Title Cost Savings", value: "Save $68+ Across FC 26 & FC 27 (€19.90 vs €79.98)", source: "Two-Season Total Cost of Ownership Audit" },
     { label: "Device Flexibility", value: "Multi-Workstation Sync vs Strict 1-Device Lock", source: "Official FUTRich Terms & Conditions" },
     { label: "AI SBC Engine Capability", value: "Dynamic Club Fodder Solver vs Static Futbin Importer", source: "SBC Engine Architecture Audit" },
     { label: "Anti-Ban Protection", value: "0 Bans (Humanization++) vs Heuristic Risk (Linear Delays)", source: "Telemetry & Anti-Cheat Audit" },
@@ -247,7 +247,7 @@ export const futRichData: CompetitorData = {
   ],
 
   comparisonRows: [
-    { feature: "Pricing Model & Multi-Title Value", elite: "$19.99 All-Inclusive 365-Day License (Covers FC 26 & FC 27)", competitor: "€39.99 / FC 26 Only (€79.98+ Across Two Titles) or €5.99/mo", winner: "elite" },
+    { feature: "Pricing Model & Multi-Title Value", elite: "€19.90 All-Inclusive 365-Day License (Covers FC 26 & FC 27)", competitor: "€39.99 / FC 26 Only (€79.98+ Across Two Titles) or €5.99/mo", winner: "elite" },
     { feature: "Game Title Forward Compatibility", elite: "Included Day-One for Both EA FC 26 and FC 27", competitor: "Locked to 'All FC26 duration' (Separate Repurchase for FC 27)", winner: "elite" },
     { feature: "Device Access & Multi-System Flexibility", elite: "Flexible Multi-Workstation Access with Cloud Preset Sync", competitor: "Strict Device Lockout ('Can't use on multiple devices simultaneously')", winner: "elite" },
     { feature: "Anti-Ban Security Track Record", elite: "Humanization++ Bézier Physics & Gaussian Jitter (0 Bans)", competitor: "Linear Step Delays (70ms–130ms) Vulnerable to Heuristic Flags", winner: "elite" },
@@ -267,7 +267,7 @@ export const futRichData: CompetitorData = {
     {
       question: "How does Elite FUT SNIPER compare in price to FUTRich?",
       answer:
-        "FUTRich charges €39.99 for its 'Elite Trader' tier, but restricts it exclusively to 'All FC26 duration', requiring you to pay another €39.99 when FC 27 launches (€79.98 / ~$88 total). FUTRich also offers €5.99/month subscriptions. In contrast, Elite FUT SNIPER costs a single flat fee of $19.99 for a full 365-day license that includes day-one support for both EA FC 26 and FC 27, saving you over $68.",
+        "FUTRich charges €39.99 for its 'Elite Trader' tier, but restricts it exclusively to 'All FC26 duration', requiring you to pay another €39.99 when FC 27 launches (€79.98 / ~$88 total). FUTRich also offers €5.99/month subscriptions. In contrast, Elite FUT SNIPER costs a single flat fee of €19.90 for a full 365-day license that includes day-one support for both EA FC 26 and FC 27, saving you over $68.",
     },
     {
       question: "Can I use FUTRich on multiple computers?",
@@ -303,7 +303,7 @@ export const futRichData: CompetitorData = {
 
   reviewQuotes: [
     {
-      text: "Realized FUTRich's €39.99 key was locked strictly to FC 26 with zero transferability to FC 27, forcing players to pay all over again. Switched to Elite FUT SNIPER for $19.99 flat, got both titles covered, and the 20ms speed is night and day.",
+      text: "Realized FUTRich's €39.99 key was locked strictly to FC 26 with zero transferability to FC 27, forcing players to pay all over again. Switched to Elite FUT SNIPER for €19.90 flat, got both titles covered, and the 20ms speed is night and day.",
       author: "Verified Division 1 Competitor",
       platform: "Competitive FUT Discord",
     },

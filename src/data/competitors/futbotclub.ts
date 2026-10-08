@@ -6,9 +6,9 @@ export const futBotClubData: CompetitorData = {
   competitorType: "cloud",
   tagline: "Protect Your Club Data with Zero-Telemetry Local Sniping Instead of Centralized Community Server Relays.",
   summaryPassage:
-    "In a direct technical comparison between FUT Bot Club and Elite FUT SNIPER, FUT Bot Club routes trading actions through shared community servers (logging trade telemetry to third-party databases, suffering server crashes during 6 PM promo drops, and adding 150ms+ latency with no SBC tools), whereas Elite FUT SNIPER operates on a 100% decentralized local model in Chrome with sub-20ms speed, neural AI SBC solving, and Humanization++ zero-ban protection for $19.99/year.",
+    "In a direct technical comparison between FUT Bot Club and Elite FUT SNIPER, FUT Bot Club routes trading actions through shared community servers (logging trade telemetry to third-party databases, suffering server crashes during 6 PM promo drops, and adding 150ms+ latency with no SBC tools), whereas Elite FUT SNIPER operates on a 100% decentralized local model in Chrome with sub-20ms speed, neural AI SBC solving, and Humanization++ zero-ban protection for €19.90/year.",
   verdict:
-    "FUT Bot Club forces users to register on an external web portal and route trading instructions through shared community servers. This centralized architecture introduces severe server downtime during peak 6 PM promo releases, logs your trading telemetry to third-party databases, and adds 150ms–250ms of network latency that loses 59th-minute snipes. Elite FUT SNIPER operates on a strict zero-telemetry, privacy-first architecture—running 100% locally inside your genuine Google Chrome session with sub-20ms WebSocket speed, neural AI SBC solving, and 100% uptime during high-traffic promo drops for a flat $19.99/year.",
+    "FUT Bot Club forces users to register on an external web portal and route trading instructions through shared community servers. This centralized architecture introduces severe server downtime during peak 6 PM promo releases, logs your trading telemetry to third-party databases, and adds 150ms–250ms of network latency that loses 59th-minute snipes. Elite FUT SNIPER operates on a strict zero-telemetry, privacy-first architecture—running 100% locally inside your genuine Google Chrome session with sub-20ms WebSocket speed, neural AI SBC solving, and 100% uptime during high-traffic promo drops for a flat €19.90/year.",
   publishedDate: "2026-08-01",
   modifiedDate: "2026-09-09",
   fc27SupportNote:
@@ -39,7 +39,7 @@ export const futBotClubData: CompetitorData = {
     "Humanization++ mode with authentic Bézier cursor dynamics and a proven record of 0 bans across all seasons",
     "100% local uptime: Your bot never crashes or lags during high-traffic promo drops",
     "Docked Chrome Side Panel HUD keeping your Web App workspace clean, responsive, and uncluttered",
-    "Flat $19.99/year single license with guaranteed day-one access for both EA Sports FC 26 and FC 27",
+    "Flat €19.90/year single license with guaranteed day-one access for both EA Sports FC 26 and FC 27",
   ],
   idealFor: {
     competitor: "Casual users who care more about social chat forums than execution speed and don't mind sharing their trading data.",
@@ -168,7 +168,7 @@ export const futBotClubData: CompetitorData = {
         competitorReality:
           "Recurring monthly fees ($12–$25/month) adding up to $144–$300 annually for crash-prone server access.",
         eliteAdvantage:
-          "Transparent flat $19.99/year single license with zero monthly bills, free FC 27 rollover, and 24/7 VIP Discord support.",
+          "Transparent flat €19.90/year single license with zero monthly bills, free FC 27 rollover, and 24/7 VIP Discord support.",
       },
     ],
   },
@@ -219,7 +219,7 @@ export const futBotClubData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER Universal Single License",
-      price: "$19.99 / year (Flat Single Fee)",
+      price: "€19.90 / year (Flat Single Fee)",
       inclusions: [
         "Autonomous sub-20ms direct protocol transfer market sniping bot with dynamic auto-relisting",
         "Integrated neural AI SBC solver with 1-click auto-buying and club untradeable optimization",
@@ -229,7 +229,7 @@ export const futBotClubData: CompetitorData = {
       ],
     },
     summary:
-      "FUT Bot Club charges up to $300/year for crash-prone community servers that harvest your data. Elite FUT SNIPER delivers 100% local privacy, 20ms speed, and AI SBC solving for just $19.99/year.",
+      "FUT Bot Club charges up to $300/year for crash-prone community servers that harvest your data. Elite FUT SNIPER delivers 100% local privacy, 20ms speed, and AI SBC solving for just €19.90/year.",
   },
 
   keyStatistics: [
@@ -258,7 +258,7 @@ export const futBotClubData: CompetitorData = {
     { feature: "Live Market Pricing Sync", elite: "Real-Time Futbin Integration + 5% EA Tax", competitor: "Delayed Server-Side Cached Price Feeds", winner: "elite" },
     { feature: "Automated Batch Relisting", elite: "Dynamic Market Floor Repricing in 3s", competitor: "Basic Static Relist Only", winner: "elite" },
     { feature: "FC 27 Day-One Support", elite: "Guaranteed Day-One Launch Included", competitor: "Dependent on Community Server Re-Hosting", winner: "elite" },
-    { feature: "Pricing Model & ROI", elite: "Flat $19.99 / Year (All Modules Included)", competitor: "Recurring $12–$25/mo ($144–$300/yr)", winner: "elite" },
+    { feature: "Pricing Model & ROI", elite: "Flat €19.90 / Year (All Modules Included)", competitor: "Recurring $12–$25/mo ($144–$300/yr)", winner: "elite" },
     { feature: "Support & VIP Community", elite: "24/7 VIP Discord + Active Core Engineers", competitor: "Public Community Forum Moderators", winner: "elite" },
   ],
 
@@ -291,7 +291,7 @@ export const futBotClubData: CompetitorData = {
     {
       question: "What is the total price difference between Elite FUT SNIPER and FUT Bot Club?",
       answer:
-        "FUT Bot Club charges between $144 and $300 per year via recurring monthly subscriptions for crash-prone server access. Elite FUT SNIPER costs a single flat fee of $19.99 per year for complete unlimited sub-20ms sniping, neural AI SBC solving, and guaranteed day-one FC 26 & FC 27 support.",
+        "FUT Bot Club charges between $144 and $300 per year via recurring monthly subscriptions for crash-prone server access. Elite FUT SNIPER costs a single flat fee of €19.90 per year for complete unlimited sub-20ms sniping, neural AI SBC solving, and guaranteed day-one FC 26 & FC 27 support.",
     },
   ],
 

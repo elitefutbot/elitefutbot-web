@@ -8,7 +8,7 @@ export const easyFutWebData: CompetitorData = {
   summaryPassage:
     "In a direct technical comparison between EasyFUTWeb and Elite FUT SNIPER, EasyFUTWeb is a third-party userscript requiring Tampermonkey/Violentmonkey injectors (prone to browser crashes, CSP blocks, DOM clutter, and zero SBC tools), whereas Elite FUT SNIPER is a verified Manifest V3 Chrome extension delivering sub-20ms WebSocket speed, a dedicated Side Panel HUD, neural AI SBC solving, and Humanization++ zero-ban protection.",
   verdict:
-    "EasyFUTWeb relies on fragile userscript managers like Tampermonkey and Violentmonkey to inject raw JavaScript directly into the EA Web App's main UI thread. This legacy method causes severe tab crashes during promo drops, breaks whenever EA updates its Content Security Policy (CSP), and clutters the transfer market with overlapping DOM buttons. Elite FUT SNIPER is engineered natively as a Google Chrome Manifest V3 extension—providing complete thread sandboxing, sub-20ms protocol execution, a docked Side Panel HUD, an integrated neural AI SBC solver, and 0 bans across all seasons for a flat $19.99/year.",
+    "EasyFUTWeb relies on fragile userscript managers like Tampermonkey and Violentmonkey to inject raw JavaScript directly into the EA Web App's main UI thread. This legacy method causes severe tab crashes during promo drops, breaks whenever EA updates its Content Security Policy (CSP), and clutters the transfer market with overlapping DOM buttons. Elite FUT SNIPER is engineered natively as a Google Chrome Manifest V3 extension—providing complete thread sandboxing, sub-20ms protocol execution, a docked Side Panel HUD, an integrated neural AI SBC solver, and 0 bans across all seasons for a flat €19.90/year.",
   publishedDate: "2026-08-01",
   modifiedDate: "2026-09-09",
   fc27SupportNote:
@@ -219,7 +219,7 @@ export const easyFutWebData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER Commercial Enterprise License",
-      price: "$19.99 / year (Flat Single Fee)",
+      price: "€19.90 / year (Flat Single Fee)",
       inclusions: [
         "Sub-20ms direct protocol sniping engine capturing meta 59th-minute deals",
         "Integrated neural AI SBC solver with instant untradeable inventory optimization",
@@ -229,7 +229,7 @@ export const easyFutWebData: CompetitorData = {
       ],
     },
     summary:
-      "While EasyFUTWeb is free, its frequent tab crashes, crude timer ban risks, and total lack of SBC automation make it a high-risk liability. Elite FUT SNIPER delivers professional 20ms execution, neural AI SBC solving, and complete peace of mind for just $19.99/year.",
+      "While EasyFUTWeb is free, its frequent tab crashes, crude timer ban risks, and total lack of SBC automation make it a high-risk liability. Elite FUT SNIPER delivers professional 20ms execution, neural AI SBC solving, and complete peace of mind for just €19.90/year.",
   },
 
   keyStatistics: [

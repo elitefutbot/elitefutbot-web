@@ -171,7 +171,7 @@ export const trLocale: LocaleDictionary = {
         { feature: "Yapay Zeka KKG (SBC) Çözücü", elite: true, typical: false },
         { feature: "Sıfır Şifre Paylaşımı (Tam Güvenlik)", elite: true, typical: false },
         { feature: "Discord Yüksek Kârlı Ticaret Filtreleri", elite: true, typical: false },
-        { feature: "Tek Seferlik Yıllık Ücret (19.99$/yıl)", elite: true, typical: false },
+        { feature: "Tek Seferlik Yıllık Ücret (€19.90/yıl)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -181,7 +181,7 @@ export const trLocale: LocaleDictionary = {
       freeCard: {
         badge: "Ücretsiz Başlangıç",
         title: "Ücretsiz Beta",
-        price: "$0",
+        price: "€0",
         period: "Sonsuza Dek Ücretsiz",
         desc: "Elite FUT SNIPER hızını bizzat deneyimlemeniz için temel sniping araçları.",
         features: [
@@ -199,12 +199,12 @@ export const trLocale: LocaleDictionary = {
       proCard: {
         badge: "En Çok Tercih Edilen",
         title: "Pro Sniper Bileti",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "365 Günlük Lisans · Tüm FC 26 & FC 27 Güncellemeleri Dahil",
-        spotsLeft: "19,99 $'dan Son 12 Kontenjan",
+        spotsLeft: "€19.90'dan Son 12 Kontenjan",
         soldText: "88/100 satıldı",
-        nextPrice: "Sonraki fiyat: $29.99",
+        nextPrice: "Sonraki fiyat: €29.90",
         featuresHeader: "Free plandaki her şey ve fazlası:",
         features: [
           {
@@ -554,7 +554,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           feature: "Fiyatlandırma Modeli",
-          elite: "$19.99/yıl (365 gün) · 7 günlük deneme",
+          elite: "€19.90/yıl (365 gün) · 7 günlük deneme",
           cloud: "Aylık $15–$30 yinelenen abonelikler",
           manual: "Ücretsiz (Yüzlerce saat emek harcatır)",
         },
@@ -856,7 +856,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           feature: "Fiyatlandırma Modeli",
-          elite: "$19.99 Tek Seferlik (365 Gün Tam Erişim)",
+          elite: "€19.90 Tek Seferlik (365 Gün Tam Erişim)",
           cloud: "Aylık $15–$30 yinelenen abonelikler",
         },
         {

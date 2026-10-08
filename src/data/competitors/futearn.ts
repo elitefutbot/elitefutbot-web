@@ -229,7 +229,7 @@ export const futEarnData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive License",
-      price: "$19.99 One-Time (Full 365 Days Access)",
+      price: "€19.90 One-Time (Full 365 Days Access)",
       inclusions: [
         "100% of all coins sniped remain 100% yours — 0% commission, zero profit cut",
         "Full access to all 11 automation modules including sub-20ms high-frequency sniper",
@@ -239,7 +239,7 @@ export const futEarnData: CompetitorData = {
       ],
     },
     summary:
-      "If you make 2,000,000 coins trading, FUTEarn takes 1,000,000 coins from your account—worth over $60 in third-party coin value—while exposing your account to datacenter IP bans. With Elite FUT SNIPER, you pay a single flat $19.99 fee and keep all 2,000,000 coins safely inside your club.",
+      "If you make 2,000,000 coins trading, FUTEarn takes 1,000,000 coins from your account—worth over $60 in third-party coin value—while exposing your account to datacenter IP bans. With Elite FUT SNIPER, you pay a single flat €19.90 fee and keep all 2,000,000 coins safely inside your club.",
   },
 
   keyStatistics: [
@@ -363,7 +363,7 @@ export const futEarnData: CompetitorData = {
     {
       question: "Why is FUTEarn's 50% profit split actually far more expensive than Elite FUT SNIPER?",
       answer:
-        "FUTEarn claims to be 'free' because there is no upfront card payment, but it siphons 50% of every coin profit you generate. If you make 2,000,000 coins, FUTEarn takes 1,000,000 coins (worth over $60 on the open market). Combined with EA's 5% transfer tax, you give away more than 52.5% of your gross earnings while taking 100% of the ban risk. Elite FUT SNIPER charges a single, transparent flat fee of $19.99 for 365 days of access and has a strict 0% commission policy: every single coin you earn remains 100% in your club.",
+        "FUTEarn claims to be 'free' because there is no upfront card payment, but it siphons 50% of every coin profit you generate. If you make 2,000,000 coins, FUTEarn takes 1,000,000 coins (worth over $60 on the open market). Combined with EA's 5% transfer tax, you give away more than 52.5% of your gross earnings while taking 100% of the ban risk. Elite FUT SNIPER charges a single, transparent flat fee of €19.90 for 365 days of access and has a strict 0% commission policy: every single coin you earn remains 100% in your club.",
     },
     {
       question: "Why does EA reset passwords and ban accounts when using FUTEarn?",

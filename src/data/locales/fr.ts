@@ -178,7 +178,7 @@ export const frLocale: LocaleDictionary = {
       freeCard: {
         badge: "Accès Limité 7 Jours",
         title: "Essai Gratuit (7 Jours)",
-        price: "0 €",
+        price: "€0",
         period: "/ 7 jours",
         desc: "7 jours d'accès gratuit limité. Parfait pour tester les fonctions et apprendre les bases du sniping.",
         features: [
@@ -201,12 +201,12 @@ export const frLocale: LocaleDictionary = {
       proCard: {
         badge: "Meilleure Offre",
         title: "Pro Sniper",
-        price: "19,99 €",
-        originalPrice: "49,99 €",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Paiement Unique · 365 Jours · FC 27 & FC 26",
-        spotsLeft: "12 Places restantes à 19,99 €",
+        spotsLeft: "12 Places restantes à €19.90",
         soldText: "88/100 vendus",
-        nextPrice: "Prochain prix : 29,99 €",
+        nextPrice: "Prochain prix : €29.90",
         featuresHeader: "Ce qui est inclus",
         features: [
           { text: "Logique Avancée de Sniping Sub-20ms" },
@@ -618,7 +618,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Modèle Tarifaire",
-          elite: "19,99 € Paiement Unique (365 Jours + Essai)",
+          elite: "€19.90 Paiement Unique (365 Jours + Essai)",
           cloud: "15 € – 35 € / mois récurrent",
           manual: "Gratuit (Coûte 4+ heures par jour)",
         },
@@ -710,7 +710,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           q: "Quelle différence entre Elite FUT SNIPER et des bots cloud comme FutBot ou FutEarn ?",
-          a: "Les bots cloud transitent par des serveurs partagés, générant 150ms–350ms de latence et exigeant votre mot de passe. Elite FUT SNIPER fonctionne localement à <20ms, ne transmet aucune donnée et ne coûte qu'un paiement unique de 19,99 € par an.",
+          a: "Les bots cloud transitent par des serveurs partagés, générant 150ms–350ms de latence et exigeant votre mot de passe. Elite FUT SNIPER fonctionne localement à <20ms, ne transmet aucune donnée et ne coûte qu'un paiement unique de €19.90 par an.",
         },
         {
           q: "Où trouver des filtres de sniping rentables et de l'aide ?",
@@ -1000,7 +1000,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Modèle de Tarification",
-          elite: "19,99 € Paiement Unique (365 Jours Complets)",
+          elite: "€19.90 Paiement Unique (365 Jours Complets)",
           cloud: "15 €–30 € / mois abonnements récurrents",
         },
         {

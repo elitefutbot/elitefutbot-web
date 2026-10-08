@@ -45,8 +45,8 @@ interface PageProps {
 const PRICE_TIER = {
   sold: 88,
   threshold: 100,
-  currentPrice: 19.99,
-  nextPrice: 29.99,
+  currentPrice: 19.9,
+  nextPrice: 29.9,
 };
 
 // Map string icon names to Lucide components
@@ -136,8 +136,8 @@ export default async function LocalizedHomePage({ params }: PageProps) {
         offers: {
           "@type": "Offer",
           url: `${baseUrl}/${locale}`,
-          price: "19.99",
-          priceCurrency: "USD",
+          price: "19.90",
+          priceCurrency: "EUR",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
           seller: {
@@ -771,9 +771,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none" />
               <Link
                 className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]"
-                href="https://futbotelite.gumroad.com/l/elitebotfc"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/dashboard?buy=1"
               >
                 {dict.home.pricing.proCard.cta}
               </Link>

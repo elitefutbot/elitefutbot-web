@@ -204,7 +204,7 @@ export const arLocale: LocaleDictionary = {
       freeCard: {
         badge: "الخطة المجانية",
         title: "النسخة المجانية",
-        price: "$0",
+        price: "€0",
         period: "مدى الحياة",
         desc: "مثالية للمبتدئين الراغبين في تجربة قوة البوت وقنص الصفقات الأولى مجاناً.",
         features: [
@@ -221,12 +221,12 @@ export const arLocale: LocaleDictionary = {
       proCard: {
         badge: "الأكثر طلباً بين المحترفين",
         title: "باقة PRO الاحترافية",
-        price: "$19.99",
-        originalPrice: "$39.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "ضمان استرجاع الأموال خلال 14 يوماً بدون شروط معقدة",
-        spotsLeft: "متبقي 12 مقعداً فقط بسعر $19.99",
+        spotsLeft: "متبقي 12 مقعداً فقط بسعر €19.90",
         soldText: "تم بيع 88/100 ترخيص",
-        nextPrice: "السعر التالي: $29.99",
+        nextPrice: "السعر التالي: €29.90",
         featuresHeader: "كل ما تحتاجه للسيطرة على سوق الكوينز:",
         features: [
           {

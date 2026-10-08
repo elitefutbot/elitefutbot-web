@@ -6,9 +6,9 @@ export const sniperBotItaliaData: CompetitorData = {
   competitorType: "extension",
   tagline: "Experience Enterprise-Grade Sub-20ms Sniping and AI SBC Solving Beyond Localized Italian Telegram Scripts.",
   summaryPassage:
-    "In a direct technical comparison between SniperBot Italia and Elite FUT SNIPER, SniperBot Italia is a regional Italian Telegram script requiring unverified zip installations, suffering from hardcoded Italian locale DOM crashes, slow 70ms–130ms script polling, and zero AI SBC solving, whereas Elite FUT SNIPER is an internationally supported Chrome extension with universal multi-language compatibility, sub-20ms speed, neural AI SBC solving, and Humanization++ anti-ban technology (0 bans to date) for $19.99/year.",
+    "In a direct technical comparison between SniperBot Italia and Elite FUT SNIPER, SniperBot Italia is a regional Italian Telegram script requiring unverified zip installations, suffering from hardcoded Italian locale DOM crashes, slow 70ms–130ms script polling, and zero AI SBC solving, whereas Elite FUT SNIPER is an internationally supported Chrome extension with universal multi-language compatibility, sub-20ms speed, neural AI SBC solving, and Humanization++ anti-ban technology (0 bans to date) for €19.90/year.",
   verdict:
-    "SniperBot Italia is a regional automation script distributed through Italian Telegram trading groups. While it caters to Italian-speaking traders, its reliance on unverified Telegram zip files, hardcoded Italian DOM text selectors (which break when playing in English or Spanish), sluggish 70ms–130ms script polling, and total absence of AI SBC solving severely limits its utility. Elite FUT SNIPER provides an internationally verified, enterprise-grade trading suite — offering universal multi-language DOM hooks, sub-20ms direct in-memory WebSocket execution, an integrated neural AI SBC solver, and a docked Chrome Side Panel HUD with full day-one compatibility for EA Sports FC 26 & FC 27 for a flat $19.99/year.",
+    "SniperBot Italia is a regional automation script distributed through Italian Telegram trading groups. While it caters to Italian-speaking traders, its reliance on unverified Telegram zip files, hardcoded Italian DOM text selectors (which break when playing in English or Spanish), sluggish 70ms–130ms script polling, and total absence of AI SBC solving severely limits its utility. Elite FUT SNIPER provides an internationally verified, enterprise-grade trading suite — offering universal multi-language DOM hooks, sub-20ms direct in-memory WebSocket execution, an integrated neural AI SBC solver, and a docked Chrome Side Panel HUD with full day-one compatibility for EA Sports FC 26 & FC 27 for a flat €19.90/year.",
   publishedDate: "2026-08-01",
   modifiedDate: "2026-09-09",
   fc27SupportNote:
@@ -40,7 +40,7 @@ export const sniperBotItaliaData: CompetitorData = {
     "Docked Chrome Side Panel HUD leaving the Web App completely unobstructed and responsive",
     "Official Chrome Web Store verification with automatic zero-click background updates",
     "Parallel multi-filter engine scanning 15+ player targets simultaneously in one continuous loop",
-    "Flat $19.99/year single license covering both EA FC 26 and FC 27 with 24/7 VIP Discord support",
+    "Flat €19.90/year single license covering both EA FC 26 and FC 27 with 24/7 VIP Discord support",
   ],
   idealFor: {
     competitor: "Italian-speaking players who prefer communicating exclusively via Italian Telegram channels and only use basic single filters.",
@@ -220,7 +220,7 @@ export const sniperBotItaliaData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER Universal Single License",
-      price: "$19.99 / year (Flat Single Fee)",
+      price: "€19.90 / year (Flat Single Fee)",
       inclusions: [
         "Fully autonomous 24/7 background market sniping engine running locally at sub-20ms speeds",
         "Integrated neural AI SBC solver with 1-click auto-buying and club untradeable optimization",
@@ -230,7 +230,7 @@ export const sniperBotItaliaData: CompetitorData = {
       ],
     },
     summary:
-      "SniperBot Italia requires sideloading unverified Telegram zip files and breaks on non-Italian locales without offering AI SBC tools. Elite FUT SNIPER provides verified sub-20ms execution, universal multi-language support, neural AI SBC solving, and complete account safety for just $19.99/year.",
+      "SniperBot Italia requires sideloading unverified Telegram zip files and breaks on non-Italian locales without offering AI SBC tools. Elite FUT SNIPER provides verified sub-20ms execution, universal multi-language support, neural AI SBC solving, and complete account safety for just €19.90/year.",
   },
 
   keyStatistics: [
@@ -260,7 +260,7 @@ export const sniperBotItaliaData: CompetitorData = {
     { feature: "Concurrent Multi-Filter Sniping", elite: "15+ Simultaneous Target Filters", competitor: "Single Filter Execution Only", winner: "elite" },
     { feature: "Live Market Pricing Sync", elite: "Real-Time Futbin Integration + Dynamic Margins", competitor: "Not Supported", winner: "elite" },
     { feature: "Automated Batch Relisting", elite: "Dynamic Market Floor Repricing in 3s", competitor: "Manual Single-Card Listing Only", winner: "elite" },
-    { feature: "Annual Ownership Cost", elite: "Flat $19.99 / year Single License", competitor: "€15–€25 / season Telegram Donations", winner: "elite" },
+    { feature: "Annual Ownership Cost", elite: "Flat €19.90 / year Single License", competitor: "€15–€25 / season Telegram Donations", winner: "elite" },
   ],
 
   faqs: [
@@ -292,7 +292,7 @@ export const sniperBotItaliaData: CompetitorData = {
     {
       question: "What is the price of Elite FUT SNIPER?",
       answer:
-        "Elite FUT SNIPER costs a single flat fee of $19.99 per year, granting full unlimited access to sub-20ms autonomous market sniping, neural AI SBC solving, and guaranteed day-one access for both EA Sports FC 26 & FC 27.",
+        "Elite FUT SNIPER costs a single flat fee of €19.90 per year, granting full unlimited access to sub-20ms autonomous market sniping, neural AI SBC solving, and guaranteed day-one access for both EA Sports FC 26 & FC 27.",
     },
   ],
 
@@ -303,7 +303,7 @@ export const sniperBotItaliaData: CompetitorData = {
       platform: "Discord Community",
     },
     {
-      text: "Switching from localized Telegram bots to Elite FUT SNIPER gave me 20ms speed and total reliability across every promo drop. Best $19.99 investment in Ultimate Team.",
+      text: "Switching from localized Telegram bots to Elite FUT SNIPER gave me 20ms speed and total reliability across every promo drop. Best €19.90 investment in Ultimate Team.",
       author: "Verified Division 1 Competitor",
       platform: "Trustpilot Review",
     },

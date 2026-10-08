@@ -6,7 +6,7 @@ export const shortFutsData: CompetitorData = {
   competitorType: "extension",
   tagline: "Move Beyond Manual Keybind Mashing to Fully Autonomous Sub-20ms Sniping & 1-Click AI SBC Solving.",
   summaryPassage:
-    "In a direct technical comparison between Shortfuts and Elite FUT SNIPER, Shortfuts is a basic browser shortcut tool requiring constant physical key tapping, suffering from 500ms human latency, rapid soft bans, and zero AI SBC solving, whereas Elite FUT SNIPER is a fully autonomous in-browser engine executing sub-20ms snipes, dynamic auto-relisting, and neural AI SBC solving with Humanization++ zero-ban protection for $19.99/year.",
+    "In a direct technical comparison between Shortfuts and Elite FUT SNIPER, Shortfuts is a basic browser shortcut tool requiring constant physical key tapping, suffering from 500ms human latency, rapid soft bans, and zero AI SBC solving, whereas Elite FUT SNIPER is a fully autonomous in-browser engine executing sub-20ms snipes, dynamic auto-relisting, and neural AI SBC solving with Humanization++ zero-ban protection for €19.90/year.",
   verdict:
     "Shortfuts is a lightweight browser extension that maps keyboard hotkeys to Web App navigation buttons, allowing players to press number keys instead of clicking mouse buttons. However, Shortfuts is strictly a manual assistance tool—it does not automate decision making, cannot snipe autonomously, and requires hours of physical key mashing that results in hand fatigue, sluggish human reaction times (350ms–700ms), and rapid soft bans. Elite FUT SNIPER provides 100% hands-free autonomous trading at sub-20ms speeds, neural AI SBC solving with 1-click auto-buying, and a docked Chrome Side Panel HUD for EA Sports FC 26 & FC 27.",
   publishedDate: "2026-08-01",
@@ -39,7 +39,7 @@ export const shortFutsData: CompetitorData = {
     "Humanization++ mode with Gaussian micro-jitter and authentic Bézier cursor physics (0 bans to date)",
     "Docked Chrome Side Panel HUD keeping your Web App workspace clean, organized, and responsive",
     "Parallel multi-filter engine scanning 15+ player targets simultaneously in one continuous loop",
-    "Flat $19.99/year single license with guaranteed day-one access for both EA Sports FC 26 and FC 27",
+    "Flat €19.90/year single license with guaranteed day-one access for both EA Sports FC 26 and FC 27",
   ],
   idealFor: {
     competitor: "Casual gamers who prefer using keyboard hotkeys over mouse clicks for manual browsing.",
@@ -168,7 +168,7 @@ export const shortFutsData: CompetitorData = {
         competitorReality:
           "Free open-source shortcut script that generates zero automated income or fodder savings.",
         eliteAdvantage:
-          "Flat $19.99/year single license delivering millions of coins in automated profit and hundreds of hours saved on SBCs.",
+          "Flat €19.90/year single license delivering millions of coins in automated profit and hundreds of hours saved on SBCs.",
       },
     ],
   },
@@ -219,7 +219,7 @@ export const shortFutsData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER Universal Single License",
-      price: "$19.99 / year (Flat Single Fee)",
+      price: "€19.90 / year (Flat Single Fee)",
       inclusions: [
         "Fully autonomous 24/7 background market sniping engine running hands-free at sub-20ms speeds",
         "Integrated neural AI SBC solver with 1-click auto-buying and club untradeable optimization",
@@ -229,7 +229,7 @@ export const shortFutsData: CompetitorData = {
       ],
     },
     summary:
-      "Shortfuts makes manual clicking slightly faster, but cannot trade for you. Elite FUT SNIPER provides 100% autonomous 20ms sniping, neural AI SBC auto-buying, and complete account safety for just $19.99/year.",
+      "Shortfuts makes manual clicking slightly faster, but cannot trade for you. Elite FUT SNIPER provides 100% autonomous 20ms sniping, neural AI SBC auto-buying, and complete account safety for just €19.90/year.",
   },
 
   keyStatistics: [
@@ -291,7 +291,7 @@ export const shortFutsData: CompetitorData = {
     {
       question: "What is the price of Elite FUT SNIPER?",
       answer:
-        "Elite FUT SNIPER costs a single flat fee of $19.99 per year, granting full unlimited access to sub-20ms autonomous market sniping, neural AI SBC solving, and guaranteed day-one access for both EA Sports FC 26 & FC 27.",
+        "Elite FUT SNIPER costs a single flat fee of €19.90 per year, granting full unlimited access to sub-20ms autonomous market sniping, neural AI SBC solving, and guaranteed day-one access for both EA Sports FC 26 & FC 27.",
     },
   ],
 
@@ -302,7 +302,7 @@ export const shortFutsData: CompetitorData = {
       platform: "Discord Community",
     },
     {
-      text: "Hands-free 20ms trading plus the AI SBC solver is the ultimate combination. I make 250k+ coins a day without touching my keyboard. Best $19.99 investment in FUT.",
+      text: "Hands-free 20ms trading plus the AI SBC solver is the ultimate combination. I make 250k+ coins a day without touching my keyboard. Best €19.90 investment in FUT.",
       author: "Verified Division 1 Competitor",
       platform: "Trustpilot Review",
     },

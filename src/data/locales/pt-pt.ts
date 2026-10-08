@@ -171,7 +171,7 @@ export const ptPtLocale: LocaleDictionary = {
         { feature: "Motor de Resolução de SBC com IA", elite: true, typical: false },
         { feature: "Zero Partilha de Palavra-passe (Segurança Total)", elite: true, typical: false },
         { feature: "Filtros de Mercado de Alta Margem no Discord", elite: true, typical: false },
-        { feature: "Taxa Anual Única (19,99€/ano)", elite: true, typical: false },
+        { feature: "Taxa Anual Única (€19.90/ano)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -181,7 +181,7 @@ export const ptPtLocale: LocaleDictionary = {
       freeCard: {
         badge: "Início Gratuito",
         title: "Beta Gratuita",
-        price: "0€",
+        price: "€0",
         period: "Gratuito para Sempre",
         desc: "Ferramentas essenciais de sniping para comprovares a rapidez do Elite FUT SNIPER.",
         features: [
@@ -199,12 +199,12 @@ export const ptPtLocale: LocaleDictionary = {
       proCard: {
         badge: "Mais Popular",
         title: "Passe Pro Sniper",
-        price: "19,99€",
-        originalPrice: "49,99€",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Licença de 365 Dias · Todas as Atualizações FC 26 e FC 27 Incluídas",
-        spotsLeft: "12 Vagas restantes a 19,99 €",
+        spotsLeft: "12 Vagas restantes a €19.90",
         soldText: "88/100 vendidos",
-        nextPrice: "Próximo preço: 29,99 €",
+        nextPrice: "Próximo preço: €29.90",
         featuresHeader: "Tudo o que está incluído no Free, mais:",
         features: [
           {
@@ -554,7 +554,7 @@ export const ptPtLocale: LocaleDictionary = {
         },
         {
           feature: "Formato de Pagamento",
-          elite: "19,99€/ano (365 dias) · Período experimental de 7 dias",
+          elite: "€19.90/ano (365 dias) · Período experimental de 7 dias",
           cloud: "Mensalidades repetidas de 15€ a 30€ por mês",
           manual: "Gratuito (Exige centenas de horas de esforço)",
         },
@@ -856,7 +856,7 @@ export const ptPtLocale: LocaleDictionary = {
         },
         {
           feature: "Formato Comercial",
-          elite: "19,99€ Valor Único (365 Dias de Acesso)",
+          elite: "€19.90 Valor Único (365 Dias de Acesso)",
           cloud: "Mensalidades repetidas de 15€ a 30€ por mês",
         },
         {

@@ -179,7 +179,7 @@ export const esLocale: LocaleDictionary = {
       freeCard: {
         badge: "Acceso Gratuito",
         title: "Prueba Gratuita",
-        price: "$0",
+        price: "€0",
         period: "por 7 días",
         desc: "7 días de acceso gratuito limitado. Perfecto para probar funciones y dominar los conceptos básicos del sniping.",
         features: [
@@ -198,12 +198,12 @@ export const esLocale: LocaleDictionary = {
       proCard: {
         badge: "Mejor Valor",
         title: "Pro Sniper",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Pago Único · 365 Días · FC 27 y FC 26",
-        spotsLeft: "12 Plazas restantes a $19.99",
+        spotsLeft: "12 Plazas restantes a €19.90",
         soldText: "88/100 vendidos",
-        nextPrice: "Próximo precio: $29.99",
+        nextPrice: "Próximo precio: €29.90",
         featuresHeader: "Qué incluye",
         features: [
           { text: "Lógica Avanzada de Sniping Sub-20ms" },
@@ -615,7 +615,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "$19.99 Pago Único (365 Días + Prueba Gratis)",
+          elite: "€19.90 Pago Único (365 Días + Prueba Gratis)",
           cloud: "$15 – $35 / mes suscripción recurrente",
           manual: "Gratis (Cuesta 4+ horas diarias)",
         },
@@ -707,7 +707,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           q: "¿Cómo se compara Elite FUT SNIPER con bots en la nube como FutBot o FutEarn?",
-          a: "Los bots en la nube enrutan solicitudes a través de servidores compartidos, introduciendo 150ms–350ms de latencia y exigiendo tu contraseña. Elite FUT SNIPER opera localmente a <20ms, no comparte datos y cuesta un único pago anual de $19.99.",
+          a: "Los bots en la nube enrutan solicitudes a través de servidores compartidos, introduciendo 150ms–350ms de latencia y exigiendo tu contraseña. Elite FUT SNIPER opera localmente a <20ms, no comparte datos y cuesta un único pago anual de €19.90.",
         },
         {
           q: "¿Dónde consigo filtros de sniping rentables y soporte?",
@@ -997,7 +997,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "$19.99 Pago Único (365 Días Completos)",
+          elite: "€19.90 Pago Único (365 Días Completos)",
           cloud: "$15–$30 / mes suscripciones recurrentes",
         },
         {

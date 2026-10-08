@@ -343,8 +343,8 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         offers: {
           "@type": "Offer",
           url: "https://www.elitefutbot.com/#pricing",
-          price: "19.99",
-          priceCurrency: "USD",
+          price: "19.90",
+          priceCurrency: "EUR",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
         },

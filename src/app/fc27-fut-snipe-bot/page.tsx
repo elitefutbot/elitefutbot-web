@@ -326,7 +326,7 @@ const COMPARISON_ROWS = [
   },
   {
     feature: "Pricing Model",
-    elite: "$19.99 One-Time (365 Full Days + Free Trial)",
+    elite: "€19.90 One-Time (365 Full Days + Free Trial)",
     cloud: "$15 – $35/month recurring subscription",
     manual: "Free (Costs 4+ hours daily)",
   },
@@ -421,8 +421,8 @@ export default function FC27FutSnipeBotPage() {
         "offers": {
           "@type": "Offer",
           "url": "https://www.elitefutbot.com/fc27-fut-snipe-bot",
-          "price": "19.99",
-          "priceCurrency": "USD",
+          "price": "19.90",
+          "priceCurrency": "EUR",
           "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
           "seller": {
