@@ -241,7 +241,7 @@ export const futTradeBuddyData: CompetitorData = {
 
   citations: [
     { label: "Single-Filter vs Parallel Multi-Filter Trading Bot Architecture", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Linear Delay Detection in Web App Anti-Cheat Systems", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "Linear Delay Detection in Web App Anti-Cheat Systems", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "EA Sports FC 27 High-Frequency Trading Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 

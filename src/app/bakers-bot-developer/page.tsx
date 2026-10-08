@@ -1,25 +1,24 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import Image from 'next/image';
 import LiteYouTubeEmbed from '@/components/LiteYouTubeEmbed';
 import { Terminal, Network, Cpu, Laptop, Zap, Shield, Brain, Code2 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Baker's Bot Developer Creates Elite FUT Bot",
+    absolute: "Engine Developer Behind FutSniping Bot & FIFASniping Bot Creates Elite FUT Bot",
   },
-  description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 & FC 26 sniping bot built from scratch.",
+  description: "Built by the core engineer behind FutSniping Bot and FIFASniping Bot. Elite FUT SNIPER is an independent 100% local FC 27 sniping bot built from scratch.",
   alternates: { canonical: "https://www.elitefutbot.com/bakers-bot-developer" },
   openGraph: {
-    title: "Baker's Bot Developer Creates Elite FUT Bot",
-    description: "Built by the core engineer behind Baker's Bot. Elite FUT SNIPER is an independent 100% local FC 27 sniping bot with full FC 26 compatibility.",
+    title: "Engine Developer Behind FutSniping Bot & FIFASniping Bot Creates Elite FUT Bot",
+    description: "Built by the core engineer behind FutSniping Bot and FIFASniping Bot. Elite FUT SNIPER is an independent 100% local FC 27 sniping bot.",
     url: "https://www.elitefutbot.com/bakers-bot-developer",
     siteName: "Elite FUT SNIPER",
     type: "article",
   },
   twitter: {
-    title: "Baker's Bot Developer Creates Elite FUT Bot",
-    description: "Built by the core engineer behind Baker's Bot.",
+    title: "Engine Developer Behind FutSniping Bot & FIFASniping Bot Creates Elite FUT Bot",
+    description: "Built by the core engineer behind FutSniping Bot and FIFASniping Bot.",
   }
 };
 
@@ -30,18 +29,18 @@ export default function BakersBotDeveloperPage() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: "Is Elite FUT SNIPER made by the same developer who built Baker's Bot?",
+        name: "Is Elite FUT SNIPER made by the same developer who built FutSniping Bot?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Yes. From 2020 to 2025, I was hired directly by the owner of Baker's Bot to build its core automation engine, market search timing, and anti-ban systems. In 2025, I launched Elite FUT SNIPER independently as a new codebase.",
+          text: "Yes. From 2020 to 2025, I was hired directly by the owner of FIFASniping Bot to build its core automation engine, market search timing, and anti-ban systems. In 2025, I launched Elite FUT SNIPER independently as a new codebase.",
         },
       },
       {
         '@type': 'Question',
-        name: "What's different from Baker's Bot?",
+        name: "What's different from FutSniping Bot & FIFASniping Bot?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "Elite FUT SNIPER was re-architected from scratch to run 100% locally as a Chrome extension. It operates with 20ms search speeds, includes an integrated AI SBC solver, and processes all request pacing directly in your browser without external servers.",
+          text: "Elite FUT SNIPER was re-architected from scratch to run 100% locally as a Chrome extension. Compared to legacy tools like FIFASniping Bot, it operates with 20ms search speeds, includes an integrated AI SBC solver, and processes all request pacing directly in your browser without external servers.",
         },
       },
       {
@@ -71,22 +70,16 @@ export default function BakersBotDeveloperPage() {
           {/* Top Badge & Header */}
           <header className="space-y-6 text-center max-w-4xl mx-auto">
             <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-primary/10 border border-primary/30 text-primary text-xs font-bold uppercase tracking-widest shadow-[0_0_20px_rgba(204,255,0,0.15)]">
-              <Image 
-                src="/bakersbot-avatar.webp" 
-                alt="Bakers Bot Lead Developer" 
-                width={20} 
-                height={20} 
-                className="w-5 h-5 rounded-full object-cover border border-primary/40 shadow-sm"
-              />
+              <span className="w-4 h-4 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
               <span>Engineering History &amp; Origin</span>
             </div>
 
             <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.1] uppercase font-headline">
-              The Developer Behind <span className="text-primary">Baker&apos;s Bot</span> Built Something New: <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary">Elite FUT SNIPER</span>
+              The Developer Behind <span className="text-primary font-black">FutSniping Bot</span> Built Something New: <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-white to-primary">Elite FUT SNIPER</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-300 font-medium leading-relaxed max-w-3xl mx-auto">
-              I spent five years engineering the core market-search engine and automation logic for Baker&apos;s Bot. In 2025, I stepped out to build a completely independent codebase from scratch — designed around 100% local browser execution, transparent architecture, and zero password sharing.
+              I spent five years engineering the core market-search engine and automation logic for <span className="text-primary font-bold">FIFASniping Bot</span>. In 2025, I stepped out to build a completely independent codebase from scratch — designed around 100% local browser execution, transparent architecture, and zero password sharing.
             </p>
           </header>
 
@@ -94,7 +87,7 @@ export default function BakersBotDeveloperPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/10 backdrop-blur-md">
             <div className="text-center p-4 rounded-xl bg-black/40 border border-white/5 space-y-1">
               <span className="block text-2xl sm:text-3xl font-black text-primary font-headline">5 Years</span>
-              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-semibold">Baker&apos;s Bot Engine Dev</span>
+              <span className="text-[10px] sm:text-xs text-gray-400 uppercase tracking-widest font-semibold">FIFASniping Bot Engine Dev</span>
             </div>
             <div className="text-center p-4 rounded-xl bg-black/40 border border-white/5 space-y-1">
               <span className="block text-2xl sm:text-3xl font-black text-white font-headline">100%</span>
@@ -147,12 +140,12 @@ export default function BakersBotDeveloperPage() {
                 <div className="flex items-center gap-3 text-primary">
                   <Terminal className="w-6 h-6" />
                   <h2 className="text-xl sm:text-2xl font-bold font-headline uppercase tracking-wider text-white">
-                    Five Years Engineering Baker&apos;s Bot&apos;s Core Logic
+                    Five Years Engineering FutSniping Bot&apos;s Core Logic
                   </h2>
                 </div>
                 
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
-                  As a 10-year full-stack automation developer, I was hired directly by the owner of Baker&apos;s Bot in 2020 to design and build its core technical foundation. Over the next five years, I developed the search engine timing, request throttling, market data parsing, and humanized input delays that powered its automated trading.
+                  As a 10-year full-stack automation developer, I was hired directly by the owner of FIFASniping Bot in 2020 to design and build its core technical foundation. Over the next five years, I developed the search engine timing, request throttling, market data parsing, and humanized input delays that powered its automated trading.
                 </p>
                 
                 <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
@@ -235,7 +228,7 @@ export default function BakersBotDeveloperPage() {
             </ul>
 
             <p className="text-gray-300 leading-relaxed pt-2">
-              Whether you need a specialized <span className="text-white font-semibold">FC 27 sniping bot</span> (fully compatible with FC 26) or a flexible <span className="text-white font-semibold">FUT autobuyer</span>, local execution ensures your session data never leaves your computer.
+              Whether you need a specialized <span className="text-white font-semibold">FC 27 sniping bot</span> or a flexible <span className="text-white font-semibold">FUT autobuyer</span>, local execution ensures your session data never leaves your computer.
             </p>
           </section>
 
@@ -267,19 +260,19 @@ export default function BakersBotDeveloperPage() {
             <div className="space-y-4">
               <div className="p-6 rounded-xl bg-white/[0.02] border border-white/10 space-y-2">
                 <h3 className="text-lg font-bold text-white font-headline">
-                  Is Elite FUT SNIPER made by the same developer who built Baker&apos;s Bot?
+                  Is Elite FUT SNIPER made by the same developer who built FutSniping Bot?
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Yes. From 2020 to 2025, I was hired directly by the owner of Baker&apos;s Bot to build its core automation engine, market search timing systems, and anti-ban safeguards. In 2025, I launched Elite FUT SNIPER independently as a new, standalone codebase.
+                  Yes. From 2020 to 2025, I was hired directly by the owner of FIFASniping Bot to build its core automation engine, market search timing systems, and anti-ban safeguards. In 2025, I launched Elite FUT SNIPER independently as a new, standalone codebase.
                 </p>
               </div>
 
               <div className="p-6 rounded-xl bg-white/[0.02] border border-white/10 space-y-2">
                 <h3 className="text-lg font-bold text-white font-headline">
-                  What&apos;s different from Baker&apos;s Bot?
+                  What&apos;s different from FutSniping Bot &amp; FIFASniping Bot?
                 </h3>
                 <p className="text-gray-400 text-sm leading-relaxed">
-                  Elite FUT SNIPER was re-architected from scratch to run 100% locally inside your browser as a Chrome extension. It delivers 20ms search speeds, features a built-in AI SBC solver, and operates without any cloud server dependencies or external request relays.
+                  Elite FUT SNIPER was re-architected from scratch to run 100% locally inside your browser as a Chrome extension. Compared to legacy tools like FIFASniping Bot, it delivers 20ms search speeds, features a built-in AI SBC solver, and operates without any cloud server dependencies or external request relays.
                 </p>
               </div>
 

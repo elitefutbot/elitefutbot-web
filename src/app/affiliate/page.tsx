@@ -44,7 +44,7 @@ export default function Page() {
     },
     {
       q: "When and how do I receive my affiliate payouts?",
-      a: "Affiliate payouts are processed Daily with zero processing fees. You can request or receive automated daily withdrawals directly to your Crypto wallet (USDT TRC20/ERC20, Bitcoin), PayPal, or Direct Bank Wire Transfer."
+      a: "Affiliate payouts are processed Daily with zero processing fees. You can request or receive automated daily withdrawals directly to your Crypto wallet (USDT TRC20/ERC20, Bitcoin), PayPal, or Direct Bank Wire Transfer. (Affiliate ToS policy: minimum payout threshold is 2 sales)."
     },
     {
       q: "Are TikTok, YouTube, and Twitch content creators eligible for special VIP rates?",

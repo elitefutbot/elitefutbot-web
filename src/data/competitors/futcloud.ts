@@ -242,7 +242,7 @@ export const futCloudData: CompetitorData = {
 
   citations: [
     { label: "Cloud Bot Farming vs Local Browser Automation", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Datacenter Proxy Detection in Ultimate Team", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "Datacenter Proxy Detection in Ultimate Team", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "EA Sports FC 27 Local Sniping Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 

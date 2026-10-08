@@ -195,6 +195,7 @@ export interface LocaleDictionary {
         img: string;
         alt: string;
         quote?: string;
+        platform?: string;
       }>;
       discordCta: string;
       githubCta: string;

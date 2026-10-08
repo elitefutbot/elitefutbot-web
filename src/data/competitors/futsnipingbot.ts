@@ -267,7 +267,7 @@ export const futSnipingBotData: CompetitorData = {
 
   citations: [
     { label: "Dangers of Third-Party Coin Selling Integrations", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "DOM Injection vs Chrome Side Panel Architecture", url: "https://www.elitefutbot.com/bakers-bot-developer" },
+    { label: "DOM Injection vs Chrome Side Panel Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "FC 27 Local Browser Bot Specifications", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
     { label: "11 Core Sniping & AI SBC Solver Features", url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features" },
   ],

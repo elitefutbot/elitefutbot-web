@@ -8,7 +8,7 @@ export const fcAutoBuyerData: CompetitorData = {
   summaryPassage:
     "In a direct technical comparison between FC AutoBuyer and Elite FUT SNIPER, FC AutoBuyer is an unvetted Chrome extension operating in free open beta with 48-hour Discord keys that explicitly admits ban risk, lacks bidding routines, and has no AI SBC solver, whereas Elite FUT SNIPER provides a battle-tested Chrome Side Panel HUD with sub-20ms WebSocket speed, integrated neural AI SBC solving, and Humanization++ 0-ban protection across 14,000+ sessions for $19.99/year.",
   verdict:
-    "FC AutoBuyer (fcautobuyer.com) enters the FC 27 market as a free open-beta Chrome extension offering Buy-Now sniping, auto-listing, and Discord alerts behind temporary 48-hour Discord-issued beta keys. However, its own FAQ acknowledges that 'no autobuyer is risk-free' due to standard delay-based pacing, while key modules like mass bidding remain unreleased and AI SBC solving is completely non-existent. In contrast, Elite FUT SNIPER delivers an enterprise-grade commercial platform engineered by the former lead developer of Baker's Bot — combining sub-20ms direct in-memory execution, authentic Bézier curve physics with Gaussian micro-jitter (maintaining a verified 0-ban record across 14,000+ sessions), a docked Chrome Side Panel HUD, and an integrated 1-click Neural AI SBC solver for a flat $19.99/year with full FC 27 and legacy FC 26 support.",
+    "FC AutoBuyer (fcautobuyer.com) enters the FC 27 market as a free open-beta Chrome extension offering Buy-Now sniping, auto-listing, and Discord alerts behind temporary 48-hour Discord-issued beta keys. However, its own FAQ acknowledges that 'no autobuyer is risk-free' due to standard delay-based pacing, while key modules like mass bidding remain unreleased and AI SBC solving is completely non-existent. In contrast, Elite FUT SNIPER delivers an enterprise-grade commercial platform — combining sub-20ms direct in-memory execution, authentic Bézier curve physics with Gaussian micro-jitter (maintaining a verified 0-ban record across 14,000+ sessions), a docked Chrome Side Panel HUD, and an integrated 1-click Neural AI SBC solver for a flat $19.99/year with full FC 27 and legacy FC 26 support.",
   publishedDate: "2026-09-23",
   modifiedDate: "2026-09-23",
   fc27SupportNote:
@@ -58,13 +58,6 @@ export const fcAutoBuyerData: CompetitorData = {
       "FC AutoBuyer offers free temporary testing with uncertain future pricing and key expiration, whereas Elite FUT SNIPER provides an immediate 7-day free trial followed by a transparent, single $19.99 annual license covering all features, updates, and Discord alpha.",
   },
 
-  developerOriginNote: {
-    headline: "Engineered by Baker's Bot Original Architect",
-    badge: "5+ Years Bot Architecture",
-    text: "While new tools like FC AutoBuyer are just entering beta testing in FC 27, Elite FUT SNIPER was created by the original lead developer of Baker's Bot — the most trusted automation suite in FUT history. Benefit from half a decade of anti-cheat research and millions of hours of battle-tested trading logic.",
-    linkUrl: "/bakers-bot-developer",
-    linkText: "Read the Lead Architect's Story",
-  },
 
   communityIssuesAudit: {
     headline: "Critical Shortcomings in Early-Stage Beta Autobuyers",

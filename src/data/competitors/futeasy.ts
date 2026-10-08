@@ -58,13 +58,6 @@ export const futEasyData: CompetitorData = {
       "FutEasy operates with ambiguous regional monetization and language barriers, while Elite FUT SNIPER provides an immediate 7-day free trial followed by a single flat $19.99 annual fee covering all features, continuous updates, and VIP Discord alpha.",
   },
 
-  developerOriginNote: {
-    headline: "Engineered by Baker's Bot Lead Architect",
-    badge: "5+ Years Bot Architecture",
-    text: "While scripts like FutEasy rely on fragile DOM injection and manual keybinds, Elite FUT SNIPER was created by the original lead developer of Baker's Bot, ensuring five years of proven browser automation expertise and 0-ban security.",
-    linkUrl: "/bakers-bot-developer",
-    linkText: "Read the Lead Architect's Story",
-  },
 
   communityIssuesAudit: {
     headline: "Technical Hazards of Injected Browser Grinding Plugins",

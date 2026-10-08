@@ -113,7 +113,7 @@ export const futGgData: CompetitorData = {
         competitorReality:
           "Displays delayed historical trend lines, but cannot act on live price spikes or execute automatic flips.",
         eliteAdvantage:
-          "Real-time streaming Futbin integration with dynamic undercut percentages, automatically relisting 100 cards in 3 seconds.",
+          "Real-time streaming FUTBIN and FUT.GG integration with dynamic undercut percentages, automatically relisting 100 cards in 3 seconds.",
       },
       {
         advertisedName: "Autonomous Sniping Loop",

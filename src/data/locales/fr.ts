@@ -36,7 +36,7 @@ export const frLocale: LocaleDictionary = {
     },
     hero: {
       titleLine1: "Le Bot d'Achat Revente & Sniping",
-      titleHighlight: "FC 27 & FC 26",
+      titleHighlight: "FC 27",
       titleHighlight2: "FUT SNIPING BOT",
       titleLine3: "Le Plus Rapide et Sécurisé au Monde.",
       description:
@@ -46,7 +46,7 @@ export const frLocale: LocaleDictionary = {
       stats: {
         antiBan: "Technologie Anti-Ban Human++ · 0 Bannissement à ce Jour",
         localExtension: "Extension Chrome (100% Locale)",
-        provenLegacy: "Équipe Dev de Bakers Bot",
+        provenLegacy: "Équipe Dev FIFASniping Bot",
       },
       proof: {
         snipeProfitBadge: "BÉNÉFICE SNIPE",
@@ -58,7 +58,7 @@ export const frLocale: LocaleDictionary = {
       title: "Pourquoi Nous Surpassons",
       titleHighlight: "Tous les Concurrents.",
       subtitle:
-        "Elite FUT SNIPER surpasse tous les autres bots car il s'exécute localement dans votre navigateur sans dépendre de serveurs distants. Conçu par l'équipe légendaire de Bakers Bot, cette architecture élimine la latence réseau pour vous permettre de sniper des joueurs FC 27 & FC 26 en quelques millisecondes sans compromettre la sécurité de votre compte.",
+        "Elite FUT SNIPER surpasse tous les autres bots car il s'exécute localement dans votre navigateur sans dépendre de serveurs distants. Conçu par l'équipe légendaire de FutSniping Bot, cette architecture élimine la latence réseau pour vous permettre de sniper des joueurs FC 27 en quelques millisecondes sans compromettre la sécurité de votre compte.",
       humanization: {
         badge: "Moteur Anti-Ban Phare",
         title: "Mode Humanization++",
@@ -86,8 +86,8 @@ export const frLocale: LocaleDictionary = {
           iconName: "Tag",
         },
         {
-          title: "Intégration Futbin",
-          description: "Consultez les prix du marché en temps réel directement dans la Web App. Ne surpayez plus jamais une carte.",
+          title: "Intégration FUTBIN & FUTGG",
+          description: "Consultez les prix du marché en temps réel depuis FUTBIN et FUTGG directement dans la Web App. Ne surpayez plus jamais une carte.",
           iconName: "Cpu",
         },
         {
@@ -96,13 +96,26 @@ export const frLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
-          title: "Recherche Multi-Filtres",
-          description: "Exécutez plusieurs requêtes simultanément pour capturer les meilleures opportunités du marché.",
-          iconName: "Filter",
+          title: "Moteur d'Auto-Enchère",
+          description: "Placez automatiquement des enchères compétitives sur les cartes en fin de vente. Remportez des cartes sous le prix du marché avec un plafond strict.",
+          iconName: "TrendingUp",
+          badge: "Nouveau v1.0.20",
         },
         {
-          title: "Sniping par Note (Général)",
-          description: "Ciblez des notes exactes avec une précision chirurgicale. Idéal pour l'achat revente de gros volumes de DCE.",
+          title: "Recherche Multi-Filtres",
+          description: "Exécutez plusieurs requêtes simultanément sur Pays/Nationalité, Club, Championnat, Poste, Qualité Or/Argent/Bronze, Rareté (TOTW, Promos, Icônes), notes exactes et consommables.",
+          iconName: "Filter",
+          badge: "v1.0.20",
+        },
+        {
+          title: "Consommables & Styles",
+          description: "Filtrez directement les consommables (Chasseur, Ombre, Changement de poste, Contrats) ou ciblez les joueurs avec consommables appliqués pour des bénéfices instantanés.",
+          iconName: "Sparkles",
+          badge: "v1.0.20",
+        },
+        {
+          title: "Précision Notes & Raretés",
+          description: "Ciblez des notes précises (83+, 84+, 88+) et des raretés exactes avec une précision chirurgicale. Idéal pour accumuler du fodder pour les DCE.",
           iconName: "Award",
         },
         {
@@ -214,8 +227,10 @@ export const frLocale: LocaleDictionary = {
               "Assistance technique directe en tête-à-tête avec les devs",
             ],
           },
+          { text: "Mises à Jour Prioritaires & Accès Patch Rapide" },
           { text: "Potentiel de Gain de 10M+ Crédits" },
           { text: "Solveur de DCE par IA", isSoon: true },
+          { text: "Applications Mobiles (iOS & Android)", isSoon: true },
         ],
         cta: "Obtenir l'Accès Pro Sniper",
       },
@@ -233,14 +248,16 @@ export const frLocale: LocaleDictionary = {
           img: "/discord-review-1.png",
           alt: "Avis de _mesirve_: Vous embellissez la vie des gens avec ces extensions pour FC26. 5 étoiles.",
           quote: "Vous illuminez la vie des gens en créant ces extensions pour FC26. 5 étoiles.",
+          platform: "Discord Elite FUT SNIPER",
         },
         {
-          user: "Patrunjel Regele",
-          badge: "Testeur Vérifié",
-          badgeColor: "text-emerald-400",
-          img: "/discord-review-4.png",
-          alt: "Avis de Patrunjel Regele: Le menu du sniper est génial. Le sniping fonctionne parfaitement.",
-          quote: "Le menu du sniper est génial, j'aime beaucoup. Le sniping lui-même fonctionne très bien.",
+          user: "George CHICKELDAY",
+          badge: "⭐ Acheteur 5 Étoiles",
+          badgeColor: "text-amber-400",
+          img: "/gumroad-review-george.webp",
+          alt: "Avis Gumroad de George CHICKELDAY: Le meilleur bot que j'ai jamais utilisé, attrape 100% des cartes et 200k de bénéfice en 2 jours.",
+          quote: "Honnêtement, c'est le meilleur bot que j'ai jamais utilisé. Il me trouve sans problème 100% des cartes que je cherche et je suis déjà à 200k de bénéfice en seulement 2 jours d'utilisation.",
+          platform: "Avis Vérifié Gumroad",
         },
         {
           user: "faresislol",
@@ -249,6 +266,25 @@ export const frLocale: LocaleDictionary = {
           img: "/discord-review-2.png",
           alt: "Avis de faresislol: Merci beaucoup frérot, je vous donne 5 étoiles.",
           quote: "Merci beaucoup frérot t'es trop fort je vais te mettre un avis 5 étoiles.",
+          platform: "Discord Elite FUT SNIPER",
+        },
+        {
+          user: "Ry4n",
+          badge: "⚡ 19.5k Bénéfice en 1m",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-ry4n.webp",
+          alt: "Preuve de snipe Discord par Ry4n: cheap snipe get too it. 86 Pau Cubarsi snipé pour 8 400 avec 19 495 de bénéfice en 1m 11s.",
+          quote: "cheap snipe get too it — Pau Cubarsí 86 snipé pour 8 400 avec 19 495 de bénéfice en 1 minute.",
+          platform: "Discord Elite FUT SNIPER",
+        },
+        {
+          user: "Patrunjel Regele",
+          badge: "Testeur Vérifié",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-4.png",
+          alt: "Avis de Patrunjel Regele: Le menu du sniper est génial. Le sniping fonctionne parfaitement.",
+          quote: "Le menu du sniper est génial, j'aime beaucoup. Le sniping lui-même fonctionne très bien.",
+          platform: "Discord Elite FUT SNIPER",
         },
         {
           user: "astroa",
@@ -257,6 +293,7 @@ export const frLocale: LocaleDictionary = {
           img: "/discord-review-3.png",
           alt: "Avis de astroa: Oui, c'est vraiment très bon.",
           quote: "Oui c'est vraiment très bon.",
+          platform: "Discord Elite FUT SNIPER",
         },
         {
           user: "Phantom (GENO)",
@@ -265,6 +302,7 @@ export const frLocale: LocaleDictionary = {
           img: "/discord-review-card.png",
           alt: "Avis de Phantom: Ça marche nickel, j'ai snipé Yamal TOTS deux fois pour 300k.",
           quote: "Frère ça marche j'ai snipé YAMAL TOTS deux fois pour 300k.",
+          platform: "Discord Elite FUT SNIPER",
         },
         {
           user: "Phantom (GENO)",
@@ -273,6 +311,7 @@ export const frLocale: LocaleDictionary = {
           img: "/discord-review-5.png",
           alt: "Avis de Phantom: C'est le meilleur bot car j'ai fait des crédits très rapidement.",
           quote: "C'est le meilleur bot car j'ai fait des crédits très rapidement.",
+          platform: "Discord Elite FUT SNIPER",
         },
         {
           user: "Phantom (GENO)",
@@ -281,6 +320,7 @@ export const frLocale: LocaleDictionary = {
           img: "/discord-review-6.png",
           alt: "Preuve de crédits: Solde de plus de 1 million de crédits avec Lamine Yamal 97.",
           quote: "Solde de plus de 1 million de crédits avec Lamine Yamal 97 au club.",
+          platform: "Discord Elite FUT SNIPER",
         },
       ],
       discordCta: "Rejoindre 5 000+ Traders sur Discord",
@@ -440,13 +480,13 @@ export const frLocale: LocaleDictionary = {
       },
       {
         num: "05",
-        title: "Télémétrie des Prix Futbin en Direct",
+        title: "Télémétrie des Prix FUTBIN & FUTGG en Direct",
         badge: "Télémétrie en Direct",
         badgeColor: "bg-purple-500/15 text-purple-300 border-purple-500/30",
         iconName: "Tag",
         tagline: "Cote de Marché et Bénéfice Directement dans la Web App",
         description:
-          "Affiche en temps réel la valeur Futbin, les tendances horaires et les marges de gain sur chaque carte de la Web App pour éviter les surpaiements.",
+          "Affiche en temps réel la valeur FUTBIN et FUTGG, les tendances horaires et les marges de gain sur chaque carte de la Web App pour éviter les surpaiements.",
         highlights: [
           "Insigne de cote intégré sur l'interface",
           "Suivi des variations de prix en direct",
@@ -571,8 +611,8 @@ export const frLocale: LocaleDictionary = {
           manual: "20+ minutes de recherche manuelle",
         },
         {
-          feature: "Cotes Futbin en Temps Réel",
-          elite: "Insigne incrusté sur la Web App",
+          feature: "Cotes FUTBIN & FUTGG en Temps Réel",
+          elite: "Insigne incrusté sur la Web App (Double Source)",
           cloud: "Recherche manuelle sur un autre onglet",
           manual: "Recherche manuelle sur un autre onglet",
         },
@@ -731,7 +771,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           label: "Ingénierie",
-          title: "Équipe Dev Bakers Bot",
+          title: "Équipe Dev FutSniping Bot",
           desc: "Plus de 5 ans d'expérience reconnue",
         },
       ],
@@ -923,7 +963,7 @@ export const frLocale: LocaleDictionary = {
       badge: "Avantage d'Architecture",
       title: "Pourquoi Nous Surpassons Tous les Bots.",
       subtitle:
-        "Elite FUT SNIPER dépasse les solutions concurrentes car il s'exécute à 100% en local dans votre navigateur plutôt que sur des serveurs distants. Conçu par l'équipe emblématique de Bakers Bot, cette architecture supprime la latence réseau pour acheter en quelques millisecondes en toute sûreté.",
+        "Elite FUT SNIPER dépasse les solutions concurrentes car il s'exécute à 100% en local dans votre navigateur plutôt que sur des serveurs distants. Conçu par l'équipe emblématique de FutSniping Bot, cette architecture supprime la latence réseau pour acheter en quelques millisecondes en toute sûreté.",
       col1: "Critère d'Achat Revente",
       col2: "Elite FUT SNIPER (Client Local)",
       col3: "Autobuyers Cloud (FutEarn, Hunter, etc.)",
@@ -950,7 +990,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Historique de l'Équipe Dev",
-          elite: "Équipe Dev Bakers Bot (5+ années d'expérience)",
+          elite: "Équipe Dev FutSniping Bot (5+ années d'expérience)",
           cloud: "Scripts anonymes d'imitation",
         },
         {
@@ -998,12 +1038,12 @@ export const frLocale: LocaleDictionary = {
         },
         {
           title: "Recherche Multi-Filtres",
-          desc: "Exécutez plusieurs profils de joueurs simultanément pour couvrir davantage de secteurs lucratifs.",
+          desc: "Exécutez plusieurs requêtes simultanément sur Pays/Nationalité, Club, Championnat, Poste, Rareté et notes précises pour capturer les secteurs les plus rentables.",
           iconName: "Filter",
         },
         {
           title: "Sniping par Note",
-          desc: "Ciblez des notes précises (83+, 84+, 88+) pour l'achat revente de gros volumes de cartes DCE.",
+          desc: "Ciblez des notes spécifiques (83+, 84+, 88+) avec une précision chirurgicale — parfait pour le trading de cartes DCE pendant les promos.",
           iconName: "Sliders",
         },
         {

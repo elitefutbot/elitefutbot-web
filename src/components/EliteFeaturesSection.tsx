@@ -29,36 +29,44 @@ export interface EliteFeaturesSectionProps {
   sectionId?: string;
 }
 
-const LEFT_FEATURES = [
+const LEFT_FEATURES: Array<{
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  desc: string;
+  highlight?: boolean;
+  badge?: string;
+}> = [
   {
     icon: Zap,
-    title: "Auto Buyer",
-    desc: "Buy FUT cards automatically. Buy all listed FUT cards for the inserted price and filters.",
-  },
-  {
-    icon: Target,
-    title: "Auto Sniper",
-    desc: "Snipe FUT cards for cheap prices — faster than anyone else on the transfer market.",
+    title: "Auto Buyer & Sniper",
+    desc: "Sub-20ms market execution. Snipes undervalued cards the instant they drop in the 59th-minute window.",
   },
   {
     icon: TrendingUp,
-    title: "Auto Bidder",
-    desc: "Bid on FUT cards automatically. FUT Bot gets all the time-of-the-world deals.",
-  },
-  {
-    icon: Coins,
-    title: "Auto Seller",
-    desc: "Sell all your successful transfers or auto-list for a profit margin automatically.",
+    title: "Auto-Bidding Engine",
+    desc: "Automatically place bids on expiring auctions with ceiling caps. Win cards below market value without overbidding.",
   },
   {
     icon: Sliders,
-    title: "SBC Solver",
-    desc: "Solve SBCs using the FUTBIN.com integration. Match squads in seconds.",
+    title: "Multi-Filter Search",
+    desc: "Target any transfer market filter: Country/Nation, Club, League, Position, Card Rarity (TOTW, Promos, Icons), exact Ratings (83+, 84+, 88+), and Gold/Silver/Bronze tiers.",
+    highlight: true,
+    badge: "v1.0.20 All Filters",
   },
   {
     icon: Filter,
-    title: "All FUT Cards",
-    desc: "All players at all skill, club tiers, and all consumables can be found and targeted.",
+    title: "Consumables & Chem Styles",
+    desc: "Filter chemistry styles (Hunter, Shadow), position modifiers, contracts, or snipe players with consumable options pre-applied.",
+  },
+  {
+    icon: Coins,
+    title: "Auto Seller & Relister",
+    desc: "Instantly list won transfers with automated 5% EA tax deduction and configurable profit margins for 24/7 coin flow.",
+  },
+  {
+    icon: Target,
+    title: "AI SBC Solver",
+    desc: "Solve SBCs using dual FUTBIN & FUTGG price telemetry. Matches cheapest squad solutions and auto-buys missing cards.",
   },
 ];
 
@@ -131,19 +139,36 @@ export default function EliteFeaturesSection({
 
       {/* Mobile & Tablet: stacked cards */}
       <div className="lg:hidden px-4 sm:px-6 space-y-3 mb-8">
-        {LEFT_FEATURES.map(({ icon: Icon, title, desc }) => (
+        {LEFT_FEATURES.map(({ icon: Icon, title, desc, highlight, badge }) => (
           <div
             key={title}
-            className="flex items-start gap-3 p-4 rounded-xl bg-white/[0.03] border border-white/[0.07] hover:border-primary/20 transition-colors group"
+            className={`flex items-start gap-3 p-4 rounded-xl transition-all group ${
+              highlight
+                ? "bg-primary/[0.08] border-2 border-primary/50 shadow-[0_0_25px_rgba(204,255,0,0.12)]"
+                : "bg-white/[0.03] border border-white/[0.07] hover:border-primary/20"
+            }`}
           >
-            <div className="flex-shrink-0 w-9 h-9 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 transition-all mt-0.5">
-              <Icon className="w-4 h-4 text-primary" />
+            <div
+              className={`flex-shrink-0 w-9 h-9 rounded-full flex items-center justify-center transition-all mt-0.5 ${
+                highlight
+                  ? "bg-primary text-black font-bold shadow-md"
+                  : "bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary/20"
+              }`}
+            >
+              <Icon className="w-4 h-4" />
             </div>
             <div>
-              <p className="font-bold text-white text-sm group-hover:text-primary transition-colors">
-                {title}
-              </p>
-              <p className="text-xs text-gray-500 leading-relaxed mt-0.5">{desc}</p>
+              <div className="flex items-center gap-2">
+                <p className="font-bold text-white text-sm group-hover:text-primary transition-colors">
+                  {title}
+                </p>
+                {badge && (
+                  <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-primary/20 text-primary border border-primary/30">
+                    {badge}
+                  </span>
+                )}
+              </div>
+              <p className="text-xs text-gray-400 leading-relaxed mt-0.5">{desc}</p>
             </div>
           </div>
         ))}
@@ -191,18 +216,38 @@ export default function EliteFeaturesSection({
       {/* Desktop: original 3-column layout */}
       <div className="hidden lg:grid grid-cols-[1fr_auto_1fr] gap-4 items-center px-4 sm:px-6">
         {/* LEFT COLUMN */}
-        <div className="space-y-5">
-          {LEFT_FEATURES.map(({ icon: Icon, title, desc }) => (
-            <div key={title} className="flex items-center gap-4 group">
+        <div className="space-y-4">
+          {LEFT_FEATURES.map(({ icon: Icon, title, desc, highlight, badge }) => (
+            <div
+              key={title}
+              className={`flex items-center gap-4 group p-2.5 rounded-xl transition-all ${
+                highlight
+                  ? "bg-primary/[0.06] border border-primary/40 shadow-[0_0_25px_rgba(204,255,0,0.1)] -mr-2 pr-3"
+                  : ""
+              }`}
+            >
               <div className="flex-1 text-right space-y-0.5">
-                <p className="font-bold text-white text-sm group-hover:text-primary transition-colors">
-                  {title}
-                </p>
-                <p className="text-xs text-gray-500 leading-relaxed">{desc}</p>
+                <div className="flex items-center justify-end gap-2">
+                  {badge && (
+                    <span className="text-[9px] font-mono font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-primary text-black font-black">
+                      {badge}
+                    </span>
+                  )}
+                  <p className="font-bold text-white text-sm group-hover:text-primary transition-colors">
+                    {title}
+                  </p>
+                </div>
+                <p className="text-xs text-gray-400 leading-relaxed">{desc}</p>
               </div>
               <div className="flex items-center gap-2 flex-shrink-0">
-                <div className="w-10 h-10 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center group-hover:bg-primary/20 group-hover:border-primary/40 transition-all">
-                  <Icon className="w-5 h-5 text-primary" />
+                <div
+                  className={`w-10 h-10 rounded-full flex items-center justify-center transition-all ${
+                    highlight
+                      ? "bg-primary text-black font-black shadow-[0_0_15px_rgba(204,255,0,0.3)]"
+                      : "bg-primary/10 border border-primary/20 text-primary group-hover:bg-primary/20 group-hover:border-primary/40"
+                  }`}
+                >
+                  <Icon className="w-5 h-5" />
                 </div>
                 <ArrowRight className="w-4 h-4 text-primary/50 group-hover:text-primary transition-colors" />
               </div>

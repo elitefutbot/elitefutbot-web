@@ -36,7 +36,7 @@ export const enLocale: LocaleDictionary = {
     },
     hero: {
       titleLine1: "The World's Fastest & Safest",
-      titleHighlight: "FC 27 & FC 26",
+      titleHighlight: "FC 27",
       titleHighlight2: "FUT SNIPING BOT",
       titleLine3: "And Autobuyer.",
       description:
@@ -46,7 +46,7 @@ export const enLocale: LocaleDictionary = {
       stats: {
         antiBan: "Human++ Anti-Ban Tech · 0 Bans to Date",
         localExtension: "Chrome Extension (100% Local)",
-        provenLegacy: "Bakers Bot Dev Team",
+        provenLegacy: "FIFASniping Bot Dev Team",
       },
       proof: {
         snipeProfitBadge: "SNIPE PROFIT",
@@ -58,7 +58,7 @@ export const enLocale: LocaleDictionary = {
       title: "Why We Outperform",
       titleHighlight: "Any Competitor.",
       subtitle:
-        "Elite FUT SNIPER outperforms every bot on the market because it runs locally inside your browser without external cloud servers. Built by the legendary Bakers Bot team, this architecture eliminates latency so you can snipe cards in milliseconds with complete safety.",
+        "Elite FUT SNIPER outperforms every bot on the market because it runs locally inside your browser without external cloud servers. Built by the legendary FutSniping Bot team, this architecture eliminates latency so you can snipe cards in milliseconds with complete safety.",
       humanization: {
         badge: "Flagship Anti-Ban Engine",
         title: "Humanization++ Mode",
@@ -86,8 +86,8 @@ export const enLocale: LocaleDictionary = {
           iconName: "Tag",
         },
         {
-          title: "Futbin Integration",
-          description: "See real-time market prices directly in the Web App. Never buy above market value.",
+          title: "FUTBIN & FUTGG Integration",
+          description: "See real-time market prices from both FUTBIN and FUTGG directly in the Web App interface. Never miss a profitable deal again.",
           iconName: "Cpu",
         },
         {
@@ -96,29 +96,32 @@ export const enLocale: LocaleDictionary = {
           iconName: "Shield",
         },
         {
+          title: "Auto-Bidding Engine",
+          description: "Automatically place competitive bids on expiring transfer market auctions. Win high-value cards under market price with strict bid ceiling bounds.",
+          iconName: "TrendingUp",
+          badge: "New v1.0.20",
+        },
+        {
           title: "Multi-Filter Search",
-          description: "Run multiple searches simultaneously. Cover more of the market to maximize profit each session.",
+          description: "Run multiple search queries simultaneously across Country/Nation, Club, League, Position, Gold/Silver/Bronze quality, Card Rarity (TOTW, Promos, Icons), specific ratings, and consumables.",
           iconName: "Filter",
+          badge: "v1.0.20",
         },
         {
-          title: "Rating-Based Sniping",
-          description: "Filter by specific ratings with pinpoint precision. Perfect for fodder trading during promos.",
-          iconName: "Award",
-        },
-        {
-          title: "Auto Rarity Detection",
-          description: "Smart detection applies rarity filters automatically, saving setup time and preventing errors.",
+          title: "Consumables & Chem Styles",
+          description: "Filter consumables directly (Hunter, Shadow, Position, Contracts) or target player listings with valuable consumable options pre-applied for instant profit flips.",
           iconName: "Sparkles",
+          badge: "v1.0.20",
         },
         {
-          title: "Snipe Price Calculator",
-          description: "Automated calculations ensure you always buy below market value with guaranteed profit.",
-          iconName: "Calculator",
+          title: "Rating & Rarity Precision",
+          description: "Target specific player ratings (83+, 84+, 88+) and exact card rarities across tiers with surgical accuracy. Perfect for high-volume SBC fodder accumulation.",
+          iconName: "Award",
         },
         {
           title: "Profit Tracking",
           description: "Track your coin generation in real-time. See exactly how much you earn each session.",
-          iconName: "TrendingUp",
+          iconName: "Calculator",
         },
         {
           title: "Coin Safety Limits",
@@ -128,16 +131,16 @@ export const enLocale: LocaleDictionary = {
         {
           title: "One-Time Annual Fee",
           description: "Full 365-day access. No surprise monthly charges or recurring subscriptions.",
-          iconName: "Clock",
+          iconName: "CalendarCheck",
         },
         {
           title: "Discord Trading Filters & Daily Tips",
-          description: "Free daily high-margin sniping filters, low-budget trading tricks, and live alerts shared on Discord to multiply your coins.",
+          description: "Daily free low-budget trading filters, market tricks, and coin-making tips shared inside our Discord. Make more coins daily with beginner-friendly setups and live flip alerts.",
           iconName: "MessageSquare",
           badge: "VIP Alpha",
         },
       ],
-      viewAllFeaturesCta: "View All 11 Features & Technical Specs",
+      viewAllFeaturesCta: "View All 12 Features & Technical Specs",
       discordAlphaBadge: "VIP Discord Alpha",
       discordFreeBadge: "Daily Free Filters",
     },
@@ -208,17 +211,19 @@ export const enLocale: LocaleDictionary = {
               "Direct 1-on-1 developer support",
             ],
           },
+          { text: "Priority Updates & Early Patch Access" },
           { text: "10M+ Coins Earning Potential" },
           { text: "AI SBC Solver", isSoon: true },
+          { text: "Mobile Apps (iOS & Android)", isSoon: true },
         ],
         cta: "Get Pro Sniper Access",
       },
     },
     reviews: {
-      badge: "VERIFIED DISCORD EXPERIENCE",
+      badge: "VERIFIED TRADER & DISCORD REVIEWS",
       title: "Real Reviews From The",
       titleHighlight: "Community",
-      subtitle: "Authentic feedback and snipe proofs direct from our traders on Discord.",
+      subtitle: "Authentic feedback, 5-star ratings, and live snipe proof shared directly by our Ultimate Team traders.",
       items: [
         {
           user: "_mesirve_",
@@ -227,14 +232,16 @@ export const enLocale: LocaleDictionary = {
           img: "/discord-review-1.png",
           alt: "Discord review from _mesirve_: You brighten people's lives by creating these extensions for FC26. 5 stars.",
           quote: "You brighten people's lives by creating these extensions for FC26. 5 stars.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
-          user: "Patrunjel Regele",
-          badge: "Verified Tester",
-          badgeColor: "text-emerald-400",
-          img: "/discord-review-4.png",
-          alt: "Discord review from Patrunjel Regele: The sniper menu is great. Sniping works perfectly.",
-          quote: "The menu for the sniper is great, really like it. The sniping itself works awesome.",
+          user: "George CHICKELDAY",
+          badge: "⭐ 5-Star Buyer",
+          badgeColor: "text-amber-400",
+          img: "/gumroad-review-george.webp",
+          alt: "Gumroad 5-star review from George CHICKELDAY: This honestly is the best bot I have ever used it 100% gets me the cards im looking for with no problem and I am currently up 200k profit with the snipes i have done in the past 2 days of using it.",
+          quote: "This honestly is the best bot I have ever used it 100% gets me the cards im looking for with no problem and I am currently up 200k profit with the snipes i have done in the past 2 days of using it.",
+          platform: "Verified Gumroad Review",
         },
         {
           user: "faresislol",
@@ -243,6 +250,25 @@ export const enLocale: LocaleDictionary = {
           img: "/discord-review-2.png",
           alt: "Discord review from faresislol: Thank you brother, I give you 5 stars.",
           quote: "Alright bro thank you you are the goat i will rate 5 star.",
+          platform: "Elite FUT SNIPER Discord",
+        },
+        {
+          user: "Ry4n",
+          badge: "⚡ 19.5k Profit / 1m",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-ry4n.webp",
+          alt: "Discord snipe proof from Ry4n: cheap snipe get too it. 86 Pau Cubarsi sniped for 8,400 with 19,495 profit in 1m 11s.",
+          quote: "cheap snipe get too it — 86 Pau Cubarsí sniped for 8,400 with 19,495 profit in 1m 11s.",
+          platform: "Elite FUT SNIPER Discord",
+        },
+        {
+          user: "Patrunjel Regele",
+          badge: "Verified Tester",
+          badgeColor: "text-emerald-400",
+          img: "/discord-review-4.png",
+          alt: "Discord review from Patrunjel Regele: The sniper menu is great. Sniping works perfectly.",
+          quote: "The menu for the sniper is great, really like it. The sniping itself works awesome.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "astroa",
@@ -251,6 +277,7 @@ export const enLocale: LocaleDictionary = {
           img: "/discord-review-3.png",
           alt: "Discord review from astroa: Yes, it is very good indeed.",
           quote: "Yeah it is very good indeed.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "Phantom (GENO)",
@@ -259,6 +286,7 @@ export const enLocale: LocaleDictionary = {
           img: "/discord-review-card.png",
           alt: "Discord review from Phantom: It works, sniped TOTS Yamal twice for 300k.",
           quote: "Bro it works i sniped TOTS YAMAL 2 times for 300k.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "Phantom (GENO)",
@@ -267,6 +295,7 @@ export const enLocale: LocaleDictionary = {
           img: "/discord-review-5.png",
           alt: "Discord review from Phantom: This is the best bot because I made the quickest coins.",
           quote: "This is the best bot i use cuz made the quickest coins.",
+          platform: "Elite FUT SNIPER Discord",
         },
         {
           user: "Phantom (GENO)",
@@ -275,6 +304,7 @@ export const enLocale: LocaleDictionary = {
           img: "/discord-review-6.png",
           alt: "Coin balance proof: Over 1 million coins balance with 97 Lamine Yamal card.",
           quote: "Account balance over 1 million coins with 97 Yamal in club.",
+          platform: "Elite FUT SNIPER Discord",
         },
       ],
       discordCta: "Join 5,000+ Traders on Discord",
@@ -431,20 +461,20 @@ export const enLocale: LocaleDictionary = {
           "Automatically relists freshly sniped cards at target profit margins, automatically factoring in the 5% EA transfer tax and maintaining a continuous 100-item transfer list rotation.",
         highlights: [
           "Automated 5% EA tax deduction math",
-          "Dynamic Futbin price undercut margins",
+          "Dynamic FUTBIN & FUTGG price undercut margins",
           "100-item transfer list auto-relist loop",
           "Real-time profit tracking telemetry",
         ],
       },
       {
         num: "05",
-        title: "Futbin Live Market Price Overlay",
+        title: "FUTBIN & FUTGG Live Market Price Overlay",
         badge: "Live Telemetry",
         badgeColor: "bg-cyan-500/15 text-cyan-400 border-cyan-500/30",
         iconName: "Tag",
         tagline: "In-Game Valuation HUD & Price History",
         description:
-          "Overlays real-time Futbin market values, hourly price changes, and margin projections directly onto player cards inside the FC 27 Web App without requiring tab switching.",
+          "Overlays real-time FUTBIN and FUTGG market values, hourly price changes, and margin projections directly onto player cards inside the FC 27 Web App without requiring tab switching.",
         highlights: [
           "Live card valuation badge overlay",
           "Zero-latency cached price queries",
@@ -507,8 +537,8 @@ export const enLocale: LocaleDictionary = {
           manual: "Manual external search on Futbin (15+ min)",
         },
         {
-          feature: "Live Futbin HUD Overlay",
-          elite: "Directly embedded in Web App cards",
+          feature: "Live FUTBIN & FUTGG HUD Overlay",
+          elite: "Directly embedded in Web App cards (Dual-Source)",
           cloud: "External dashboard only",
           manual: "Manual tab switching required",
         },
@@ -806,7 +836,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           feature: "Developer Heritage",
-          elite: "Original Bakers Bot Dev Team (5+ yrs)",
+          elite: "Original FutSniping Bot Dev Team (5+ yrs)",
           cloud: "Anonymous copycat scripts",
         },
         {
@@ -843,8 +873,8 @@ export const enLocale: LocaleDictionary = {
           iconName: "TrendingUp",
         },
         {
-          title: "Futbin Integration",
-          desc: "Live prices right inside the Web App interface to consistently buy below market value.",
+          title: "FUTBIN & FUTGG Integration",
+          desc: "Live prices from both FUTBIN and FUTGG right inside the Web App interface to consistently buy below market value.",
           iconName: "Tag",
         },
         {
@@ -854,12 +884,12 @@ export const enLocale: LocaleDictionary = {
         },
         {
           title: "Multi-Filter Search",
-          desc: "Run multiple queries concurrently to capture the most profitable sectors of the market.",
+          desc: "Run multiple queries concurrently across Country/Nation, Club, League, Position, Card Rarity, and specific ratings to capture the most profitable market sectors.",
           iconName: "Filter",
         },
         {
           title: "Rating-Based Sniping",
-          desc: "Filter specific ratings with surgical precision — perfect for trading fodder during promos.",
+          desc: "Target specific player ratings (83+, 84+, 88+) with surgical precision — perfect for high-volume SBC fodder trading during promos.",
           iconName: "Sliders",
         },
         {

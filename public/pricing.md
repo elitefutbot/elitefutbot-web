@@ -18,7 +18,9 @@
   - Unlimited Multi-Account & Multi-Tab local execution
   - Advanced Multi-Profile Filter Automation (Rating, Rarity, Position, League)
   - Auto-List & Auto-Sell with 5% EA Tax Net Profit Calculation
-  - Priority Discord VIP Member Access & Daily Sniping Filter Drops
+  - Priority Updates & Immediate EA Patch Access
+  - AI SBC Solver (Soon)
+  - Mobile Apps (iOS & Android) (Soon)
   - Free Feature Updates (including integrated Neural AI SBC Solver Module)
   - Continuous Day-One FC 27 Updates & Full Legacy FC 26 Support (Zero Upgrade Fees)
 

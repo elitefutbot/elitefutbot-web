@@ -302,9 +302,9 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         dateModified: data?.modifiedDate || "2026-08-30",
         citation: citations.map((cite) => cite.url),
         author: {
-          "@type": "Person",
+          "@type": "Organization",
           name: "Elite FUT SNIPER Engineering Team",
-          url: "https://www.elitefutbot.com/bakers-bot-developer",
+          url: "https://www.elitefutbot.com",
         },
         publisher: {
           "@type": "Organization",
@@ -454,13 +454,8 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             >
               <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
                 <div className="flex items-start gap-4">
-                  <div className="relative w-12 h-12 rounded-2xl overflow-hidden border-2 border-primary/50 shrink-0 shadow-[0_0_15px_rgba(204,255,0,0.2)]">
-                    <Image
-                      src="/bakersbot-avatar.webp"
-                      alt="Original Engine Architect"
-                      fill
-                      className="object-cover"
-                    />
+                  <div className="relative w-12 h-12 rounded-2xl border border-primary/40 shrink-0 bg-primary/10 flex items-center justify-center shadow-[0_0_15px_rgba(204,255,0,0.2)]">
+                    <Cpu className="w-6 h-6 text-primary" />
                   </div>
                   <div className="space-y-1">
                     <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-full bg-primary/20 text-primary text-[10px] font-bold font-mono uppercase tracking-wider">
