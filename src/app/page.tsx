@@ -722,21 +722,21 @@ export default function Home() {
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
               <div className="mb-8">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
-                  7-Day Limited Access
+                  2-Day Limited Access
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Free Trial</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-5xl font-black text-white">$0</span>
-                  <span className="text-gray-400 font-medium">/ 7 days</span>
+                  <span className="text-gray-400 font-medium">/ 2 days</span>
                 </div>
                 <p className="text-sm text-gray-400 mt-4">
-                  7 days limited free access. Perfect for testing the waters and learning the basics of sniping.
+                  2 days limited free access. Perfect for testing the waters and learning the basics of sniping.
                 </p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  7 Days Limited Free Access
+                  2 Days Limited Free Access
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -765,7 +765,7 @@ export default function Home() {
                 </li>
               </ul>
               <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">
-                Start 7-Day Free Trial
+                Start 2-Day Free Trial
               </Link>
             </div>
             <div className="glass-card rounded-3xl p-8 flex flex-col border-primary/40 bg-primary/5 relative overflow-hidden shadow-[0_0_40px_rgba(204,255,0,0.05)] transform md:-translate-y-4" data-purpose="pricing-card">

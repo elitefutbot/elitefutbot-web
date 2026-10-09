@@ -1,6 +1,9 @@
-// Must match TRIAL_DAYS on fifa-snipe-bot-backend (controllers/authController.js).
-// Backend defaults to 7 days (or user.trialDays if set).
-export const TRIAL_LENGTH_DAYS = 7;
+// Must match TRIAL_DAYS on elitefutbot-backend (controllers/authController.js).
+// New signups get 2 days; the backend reports each user's own trialDays.
+export const TRIAL_LENGTH_DAYS = 2;
+// Trials started before the switch to 2 days keep their stored 7 — never
+// show more than this.
+export const MAX_TRIAL_DAYS = 7;
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 

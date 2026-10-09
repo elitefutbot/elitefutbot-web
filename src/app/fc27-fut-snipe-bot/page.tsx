@@ -895,7 +895,7 @@ export default function FC27FutSnipeBotPage() {
             headingPre="All the Tools Inside"
             headingHighlight="One Sniping Bot"
             description="From 59th-minute instant sniping to overnight mass bidding and auto-relisting — every module you need to flip the FC 27 transfer market in your favour, 24/7."
-            ctaLabel="Try Free for 7 Days"
+            ctaLabel="Try Free for 2 Days"
             ctaHref="/fc27-fut-snipe-bot#pricing"
             secondaryLabel="See Full Feature List"
             secondaryHref="/fc27-fut-sniping-bot-autobuyer-features"

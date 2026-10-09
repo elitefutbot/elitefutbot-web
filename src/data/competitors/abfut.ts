@@ -54,9 +54,9 @@ export const abFutData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "$1.99/month or $12.99/year recurring subscription via mobile app store",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 7-Day Free Trial)",
+    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
     difference:
-      "ABFut charges recurring monthly subscriptions that automatically renew, whereas Elite FUT SNIPER provides a 7-day free trial followed by a single flat €19.90 fee for 365 days of unrestricted desktop automation, AI SBC solving, and VIP Discord alpha.",
+      "ABFut charges recurring monthly subscriptions that automatically renew, whereas Elite FUT SNIPER provides a 2-day free trial followed by a single flat €19.90 fee for 365 days of unrestricted desktop automation, AI SBC solving, and VIP Discord alpha.",
   },
 
 

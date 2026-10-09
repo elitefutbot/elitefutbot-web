@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: {
     absolute: "AI SBC Solver: Auto-Fill FC 27 SBCs in 3s | Elite FUT Bot",
   },
-  description: "The ultimate AI SBC Solver for EA FC 27. Auto-fill any Squad Building Challenge in 3 seconds using untradeable club players. Start your 7-day free trial!",
+  description: "The ultimate AI SBC Solver for EA FC 27. Auto-fill any Squad Building Challenge in 3 seconds using untradeable club players. Start your 2-day free trial!",
   alternates: { canonical: "https://www.elitefutbot.com/ai-sbc-solver" },
   openGraph: {
     title: "AI SBC Solver: Auto-Fill FC 27 SBCs in 3s | Elite FUT Bot",
-    description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first. 7-day free trial.",
+    description: "Automate EA FC Squad Building Challenges in 1 click. Uses your untradeable club inventory first. 2-day free trial.",
     url: "https://www.elitefutbot.com/ai-sbc-solver",
     siteName: "Elite FUT SNIPER",
     type: "website",

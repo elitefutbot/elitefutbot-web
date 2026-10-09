@@ -554,7 +554,7 @@ export const plLocale: LocaleDictionary = {
         },
         {
           feature: "Model Płatności",
-          elite: "€19.90/rok (365 dni) · 7-dniowy okres próbny",
+          elite: "€19.90/rok (365 dni) · 2-dniowy okres próbny",
           cloud: "Abonamenty od $15 do $30 każdego miesiąca",
           manual: "Darmowe (Kosztuje setki straconych godzin)",
         },
@@ -650,12 +650,12 @@ export const plLocale: LocaleDictionary = {
     meta: {
       title: "DARMOWE Funkcje Bota do Snipowania i Autobuyera FC 27 | Elite FUT Bot",
       description:
-        "Poznaj funkcje Elite FUT Bot dla EA FC 27: auto-snipe, autobuyer, auto-list, inteligentne filtry, ceny Futbin, darmowe filtry handlowe i 7-dniowy darmowy okres próbny.",
+        "Poznaj funkcje Elite FUT Bot dla EA FC 27: auto-snipe, autobuyer, auto-list, inteligentne filtry, ceny Futbin, darmowe filtry handlowe i 2-dniowy darmowy okres próbny.",
       keywords:
         "funkcje bota do snajpienia fc27, ea fc 27 autobuyer funkcje, fut snipe bot, humanization anti ban, ceny futbin na zywo, lokalne rozszerzenie chrome, zarabianie w fc27",
       ogTitle: "DARMOWE Funkcje Bota do Snipowania i Autobuyera FC 27 | Elite FUT Bot",
       ogDescription:
-        "Poznaj funkcje Elite FUT Bot dla EA FC 27: auto-snipe, autobuyer, auto-list, inteligentne filtry, ceny Futbin, darmowe filtry handlowe i 7-dniowy darmowy okres próbny.",
+        "Poznaj funkcje Elite FUT Bot dla EA FC 27: auto-snipe, autobuyer, auto-list, inteligentne filtry, ceny Futbin, darmowe filtry handlowe i 2-dniowy darmowy okres próbny.",
     },
     hero: {
       eyebrow: "Arsenał 11 Modułów // Pełny Przegląd Techniczny",
@@ -975,7 +975,7 @@ export const plLocale: LocaleDictionary = {
       title: "Gotowy na Dominację na Rynku Transferowym w",
       titleHighlight: "FC 27 i FC 26?",
       subtitle:
-        "Dołącz do tysięcy graczy używających Elite FUT SNIPER do zarabiania milionów coinsów każdego tygodnia. Rozpocznij 7-dniowy darmowy okres próbny już dziś.",
+        "Dołącz do tysięcy graczy używających Elite FUT SNIPER do zarabiania milionów coinsów każdego tygodnia. Rozpocznij 2-dniowy darmowy okres próbny już dziś.",
       button: "Odbierz Darmowy Dostęp Próbny",
       discord: "Dołącz do VIP Discorda",
       disclaimer: "Natychmiastowa Aktywacja · Brak Wymogu Podawania Karty · Rozszerzenie 100% Lokalne",

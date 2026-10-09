@@ -5,13 +5,13 @@ import { CheckCircle2, Zap, ArrowRight, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Official Links & Socials",
-  description: "Start your 7-day free trial for the #1 FC 27 sniping bot & autobuyer. Connect on Discord, TikTok, Instagram, X/Twitter, and Telegram.",
+  description: "Start your 2-day free trial for the #1 FC 27 sniping bot & autobuyer. Connect on Discord, TikTok, Instagram, X/Twitter, and Telegram.",
   alternates: {
     canonical: "https://www.elitefutbot.com/bio",
   },
   openGraph: {
     title: "Official Links & Socials | Elite FUT SNIPER",
-    description: "Start your 7-day free trial and connect with Elite FUT SNIPER on Discord, TikTok, Instagram, X, and Telegram.",
+    description: "Start your 2-day free trial and connect with Elite FUT SNIPER on Discord, TikTok, Instagram, X, and Telegram.",
     url: "https://www.elitefutbot.com/bio",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Official Links & Socials | Elite FUT SNIPER",
-    description: "Start your 7-day free trial and join our official channels on TikTok, Instagram, X, and Discord.",
+    description: "Start your 2-day free trial and join our official channels on TikTok, Instagram, X, and Discord.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   }
 };

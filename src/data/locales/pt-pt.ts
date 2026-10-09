@@ -554,7 +554,7 @@ export const ptPtLocale: LocaleDictionary = {
         },
         {
           feature: "Formato de Pagamento",
-          elite: "€19.90/ano (365 dias) · Período experimental de 7 dias",
+          elite: "€19.90/ano (365 dias) · Período experimental de 2 dias",
           cloud: "Mensalidades repetidas de 15€ a 30€ por mês",
           manual: "Gratuito (Exige centenas de horas de esforço)",
         },
@@ -650,12 +650,12 @@ export const ptPtLocale: LocaleDictionary = {
     meta: {
       title: "Funcionalidades GRÁTIS de Bot de Sniping e Autobuyer FC 27 | Elite FUT Bot",
       description:
-        "Descobre as funcionalidades do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços Futbin, filtros de trade grátis e 7 dias de teste grátis.",
+        "Descobre as funcionalidades do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços Futbin, filtros de trade grátis e 2 dias de teste grátis.",
       keywords:
         "funcionalidades bot sniping fc27, autobuyer ea fc 27 portugal, fut snipe bot, humanization anti ban, precos futbin em direto, extensao chrome local, moedas fc27 bot",
       ogTitle: "Funcionalidades GRÁTIS de Bot de Sniping e Autobuyer FC 27 | Elite FUT Bot",
       ogDescription:
-        "Descobre as funcionalidades do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços Futbin, filtros de trade grátis e 7 dias de teste grátis.",
+        "Descobre as funcionalidades do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços Futbin, filtros de trade grátis e 2 dias de teste grátis.",
     },
     hero: {
       eyebrow: "Conjunto de 11 Módulos // Detalhe Técnico Integral",
@@ -975,7 +975,7 @@ export const ptPtLocale: LocaleDictionary = {
       title: "Pronto para Dominar o Mercado no",
       titleHighlight: "FC 27 e FC 26?",
       subtitle:
-        "Junta-te a milhares de utilizadores que confiam no Elite FUT SNIPER para acumular milhões de moedas semanalmente. Começa já o teu teste grátis de 7 dias.",
+        "Junta-te a milhares de utilizadores que confiam no Elite FUT SNIPER para acumular milhões de moedas semanalmente. Começa já o teu teste grátis de 2 dias.",
       button: "Iniciar Teste Gratuito",
       discord: "Entrar no Discord VIP",
       disclaimer: "Ativação Rápida · Não Pede Cartão de Crédito · Extensão 100% Local",

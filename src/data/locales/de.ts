@@ -176,11 +176,11 @@ export const deLocale: LocaleDictionary = {
       titleHighlight: "Version",
       subtitle: "Transparente Preise. Keine versteckten Gebühren oder Abos.",
       freeCard: {
-        badge: "7 Tage Begrenzter Zugang",
-        title: "Kostenlose Testphase (7 Tage)",
+        badge: "2 Tage Begrenzter Zugang",
+        title: "Kostenlose Testphase (2 Tage)",
         price: "€0",
-        period: "/ 7 Tage",
-        desc: "7 Tage begrenzter kostenloser Zugang. Perfekt zum Kennenlernen der Grundfunktionen des Snipings.",
+        period: "/ 2 Tage",
+        desc: "2 Tage begrenzter kostenloser Zugang. Perfekt zum Kennenlernen der Grundfunktionen des Snipings.",
         features: [
           { text: "Basis Sniping-Funktionen" },
           { text: "Bis zu 50 Snipes pro Tag" },
@@ -192,7 +192,7 @@ export const deLocale: LocaleDictionary = {
             isNegative: true,
           },
         ],
-        cta: "7 Tage Kostenlos Testen",
+        cta: "2 Tage Kostenlos Testen",
       },
       proCard: {
         badge: "Bester Wert",
@@ -733,12 +733,12 @@ export const deLocale: LocaleDictionary = {
     meta: {
       title: "KOSTENLOSE FC 27 Sniping Bot & Autobuyer Funktionen | Elite FUT Bot",
       description:
-        "Entdecke die Elite FUT Bot Funktionen für EA FC 27: Auto-Snipe, Autobuyer, Auto-List, smarte Filter, Futbin-Preise, kostenlose Trading-Filter und 7 Tage kostenlos testen.",
+        "Entdecke die Elite FUT Bot Funktionen für EA FC 27: Auto-Snipe, Autobuyer, Auto-List, smarte Filter, Futbin-Preise, kostenlose Trading-Filter und 2 Tage kostenlos testen.",
       keywords:
         "funktionen bot fc27, autobuyer ea fc 27 deutsch, bot sniping fc27, chrome erweiterung trading fc27, anti ban fut sniping, sbc löser ki",
       ogTitle: "KOSTENLOSE FC 27 Sniping Bot & Autobuyer Funktionen | Elite FUT Bot",
       ogDescription:
-        "Entdecke die Elite FUT Bot Funktionen für EA FC 27: Auto-Snipe, Autobuyer, Auto-List, smarte Filter, Futbin-Preise, kostenlose Trading-Filter und 7 Tage kostenlos testen.",
+        "Entdecke die Elite FUT Bot Funktionen für EA FC 27: Auto-Snipe, Autobuyer, Auto-List, smarte Filter, Futbin-Preise, kostenlose Trading-Filter und 2 Tage kostenlos testen.",
     },
     hero: {
       eyebrow: "EA FC 26 & FC 27 Ultimate Team Suite",
@@ -747,7 +747,7 @@ export const deLocale: LocaleDictionary = {
       titleLine2: ", Traden und Gewinnen",
       directAnswerSnippet:
         "Elite FUT SNIPER ist eine 100% lokale Chrome Erweiterung für EA FC 26 und FC 27. Sie automatisiert Transfermarktabfragen in sub-20ms Zyklen mit Humanization++ Bézier Anti-Detektion, erfordert keine Passwortweitergabe und verzeichnet bis heute 0 Banns auf dem Transfermarkt.",
-      ctaPrimary: "Kostenlose 7-Tage-Testphase Starten",
+      ctaPrimary: "Kostenlose 2-Tage-Testphase Starten",
       ctaSecondary: "Alle 11 Module Entdecken",
       trustHighlights: [
         {

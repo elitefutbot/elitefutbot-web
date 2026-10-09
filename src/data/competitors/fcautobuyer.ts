@@ -53,9 +53,9 @@ export const fcAutoBuyerData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "Free open beta (gated by 48-hour Discord keys; commercial pricing TBA)",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 7-Day Free Trial)",
+    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
     difference:
-      "FC AutoBuyer offers free temporary testing with uncertain future pricing and key expiration, whereas Elite FUT SNIPER provides an immediate 7-day free trial followed by a transparent, single €19.90 annual license covering all features, updates, and Discord alpha.",
+      "FC AutoBuyer offers free temporary testing with uncertain future pricing and key expiration, whereas Elite FUT SNIPER provides an immediate 2-day free trial followed by a transparent, single €19.90 annual license covering all features, updates, and Discord alpha.",
   },
 
 
@@ -173,7 +173,7 @@ export const fcAutoBuyerData: CompetitorData = {
     {
       question: "How does pricing compare between the two platforms?",
       answer:
-        "FC AutoBuyer is temporarily free during its open beta, but requires renewing 48-hour access keys via Discord with unannounced future pricing. Elite FUT SNIPER provides a 7-day free trial followed by a single, transparent €19.90 payment for 365 days of full season access with no surprise paywalls.",
+        "FC AutoBuyer is temporarily free during its open beta, but requires renewing 48-hour access keys via Discord with unannounced future pricing. Elite FUT SNIPER provides a 2-day free trial followed by a single, transparent €19.90 payment for 365 days of full season access with no surprise paywalls.",
     },
   ],
 

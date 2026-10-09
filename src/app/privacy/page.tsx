@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 7-day trial eligibility data, and transaction records.",
+  description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 2-day trial eligibility data, and transaction records.",
   alternates: { canonical: "https://www.elitefutbot.com/privacy" },
   openGraph: {
     title: "Privacy Policy | Elite FUT SNIPER",
-    description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 7-day trial eligibility data, and transaction records.",
+    description: "Read the Privacy Policy for Elite FUT SNIPER. Learn how we collect, use, and safeguard personal information, 2-day trial eligibility data, and transaction records.",
     url: "https://www.elitefutbot.com/privacy",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -53,7 +53,7 @@ export default function PrivacyPage() {
               We collect information to provide a reliable user experience, manage trial eligibility, and facilitate digital SaaS transaction processing. This includes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Account Registration &amp; 7-Day Trial Data:</strong> When you register or activate our 7-day free trial (e.g., using Discord authorization or email), we collect your email address, username, profile identifier, and hardware/device fingerprints necessary to enforce trial duration, prevent duplicate trial abuse, and maintain license integrity.</li>
+              <li><strong>Account Registration &amp; 2-Day Trial Data:</strong> When you register or activate our 2-day free trial (e.g., using Discord authorization or email), we collect your email address, username, profile identifier, and hardware/device fingerprints necessary to enforce trial duration, prevent duplicate trial abuse, and maintain license integrity.</li>
               <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, transactional data is handled securely by certified third-party payment gateways (such as Stripe). <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We retain transaction references, timestamps, and product tokens to verify your digital license entitlement. Because SaaS licenses are delivered immediately and are non-refundable, transaction records are securely logged for accounting and fraud prevention.</li>
               <li><strong>Usage &amp; Performance Data:</strong> We automatically collect information about how you interact with our website and extension companion, including IP address, browser type, device information, and diagnostic telemetry, to help us optimize performance and safeguard platform security.</li>
             </ul>
@@ -68,7 +68,7 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li>To provide, operate, and maintain our SBC helper, sniper overlay, and market tools.</li>
-              <li>To administer the 7-day free trial period, evaluate device trial eligibility, and prevent trial exploitation.</li>
+              <li>To administer the 2-day free trial period, evaluate device trial eligibility, and prevent trial exploitation.</li>
               <li>To process digital SaaS license provisioning, verify active subscriptions, and handle authorized cancellations.</li>
               <li>To send transactional communications, including receipts, access links, and critical system alerts.</li>
               <li>To respond to customer support inquiries and provide technical assistance.</li>

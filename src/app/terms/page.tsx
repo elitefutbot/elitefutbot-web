@@ -3,11 +3,11 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Terms of Service",
-  description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 7-day free trial conditions.",
+  description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 2-day free trial conditions.",
   alternates: { canonical: "https://www.elitefutbot.com/terms" },
   openGraph: {
     title: "Terms of Service | Elite FUT SNIPER",
-    description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 7-day free trial conditions.",
+    description: "Read the Terms of Service for Elite FUT SNIPER. Understand user agreements, billing terms, our strict no-refund SaaS policy, and 2-day free trial conditions.",
     url: "https://www.elitefutbot.com/terms",
     siteName: "Elite FUT SNIPER",
     type: "website",
@@ -79,7 +79,7 @@ export default function TermsPage() {
 
           <section className="space-y-4 p-6 rounded-xl bg-white/[0.02] border border-primary/20">
             <h2 className="text-2xl font-headline font-bold text-primary border-b border-primary/10 pb-2">
-              5. No Refunds Policy, 7-Day Free Trial &amp; Cancellations
+              5. No Refunds Policy, 2-Day Free Trial &amp; Cancellations
             </h2>
             <p>
               Please read our billing terms carefully before completing any transaction. Because Elite FUT SNIPER provides immediate digital access to proprietary Software-as-a-Service (SaaS) tools and intellectual property, the following policy applies to all users:
@@ -89,7 +89,7 @@ export default function TermsPage() {
                 <strong>Strict No-Refund Policy:</strong> Due to the digital, intangible nature of SaaS products, immediate software license provisioning, and instant access to proprietary algorithms and automated tools, <strong>all purchases and subscription charges are strictly non-refundable and final</strong>. Once payment is processed, no refunds, partial refunds, or prorated credits will be issued under any circumstances.
               </li>
               <li>
-                <strong>Always Available 7-Day Free Trial:</strong> To ensure complete satisfaction and transparency before making any financial commitment, <strong>we provide a 7-day free trial on all new accounts</strong>. No credit card or payment information is required to access the trial. You can always use this 7-day trial period to test all features, bot settings, browser compatibility, and performance in your environment prior to purchasing. By completing a purchase, you acknowledge that you have had the opportunity to evaluate the software during the 7-day trial and expressly waive any right to claim a refund.
+                <strong>Always Available 2-Day Free Trial:</strong> To ensure complete satisfaction and transparency before making any financial commitment, <strong>we provide a 2-day free trial on all new accounts</strong>. No credit card or payment information is required to access the trial. You can always use this 2-day trial period to test all features, bot settings, browser compatibility, and performance in your environment prior to purchasing. By completing a purchase, you acknowledge that you have had the opportunity to evaluate the software during the 2-day trial and expressly waive any right to claim a refund.
               </li>
               <li>
                 <strong>Cancellations:</strong> You can cancel your recurring subscription at any time directly from your account settings page or by contacting support. Following cancellation, your payment method will not be charged again, and you will continue to have access to premium features until the end of your current active billing period.

@@ -554,7 +554,7 @@ export const esMxLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "€19.90/año (365 días) · Prueba gratis de 7 días",
+          elite: "€19.90/año (365 días) · Prueba gratis de 2 días",
           cloud: "Suscripciones mensuales de $15 a $30 USD",
           manual: "Gratis (Cuesta cientos de horas)",
         },
@@ -650,12 +650,12 @@ export const esMxLocale: LocaleDictionary = {
     meta: {
       title: "Funciones GRATIS de Bot de Sniping y Autobuyer FC 27 | Elite FUT Bot",
       description:
-        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 7 días de prueba gratis.",
+        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 2 días de prueba gratis.",
       keywords:
         "funciones bot sniping fc27, autobuyer ea fc 27 funciones, fut snipe bot, humanization anti ban, precios futbin en vivo, extension chrome local, monedas fc27 bot",
       ogTitle: "Funciones GRATIS de Bot de Sniping y Autobuyer FC 27 | Elite FUT Bot",
       ogDescription:
-        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 7 días de prueba gratis.",
+        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 2 días de prueba gratis.",
     },
     hero: {
       eyebrow: "Suite de 11 Módulos // Resumen Técnico Completo",
@@ -975,7 +975,7 @@ export const esMxLocale: LocaleDictionary = {
       title: "¿Listo para Dominar el Mercado de",
       titleHighlight: "FC 27 y FC 26?",
       subtitle:
-        "Únete a miles de jugadores que usan Elite FUT SNIPER para generar millones de monedas cada semana. Empieza hoy tu prueba gratis de 7 días.",
+        "Únete a miles de jugadores que usan Elite FUT SNIPER para generar millones de monedas cada semana. Empieza hoy tu prueba gratis de 2 días.",
       button: "Empezar Prueba Gratis",
       discord: "Entrar al Discord VIP",
       disclaimer: "Activación Inmediata · No Requiere Tarjeta de Crédito · Extensión 100% Local",

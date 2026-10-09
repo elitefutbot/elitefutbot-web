@@ -78,7 +78,7 @@ const steps: Step[] = [
   {
     step: "01",
     title: "Log in to your account",
-    body: "Elite FUT SNIPER needs an account to run — it's what your 7-day free trial and license are tied to. Create one (or log in if you already have one) before downloading the extension.",
+    body: "Elite FUT SNIPER needs an account to run — it's what your 2-day free trial and license are tied to. Create one (or log in if you already have one) before downloading the extension.",
     links: [
       { href: "/register", label: "Create Account", primary: true },
       { href: "/login", label: "Log In", primary: false },
@@ -185,7 +185,7 @@ export default function InstallPage() {
       "@type": "Offer",
       price: "0",
       priceCurrency: "USD",
-      description: "7-Day Free Trial",
+      description: "2-Day Free Trial",
     },
   };
 
@@ -237,7 +237,7 @@ export default function InstallPage() {
             </span>
           </h1>
           <p className="text-gray-400 max-w-xl text-base sm:text-lg">
-            Try it free for 7 days, and setup takes about two minutes.
+            Try it free for 2 days, and setup takes about two minutes.
           </p>
         </header>
 
@@ -454,7 +454,7 @@ export default function InstallPage() {
                 href="/register"
                 className="w-full sm:w-auto px-8 py-4 bg-primary text-dark font-black text-sm uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.3)] flex items-center justify-center gap-2"
               >
-                Start Free 7-Day Trial
+                Start Free 2-Day Trial
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link

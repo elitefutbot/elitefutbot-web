@@ -32,7 +32,7 @@ export const COMPARISONS: ComparisonItem[] = [
     type: "Standalone Web Bot",
     badge: "12-Hr Trial Limit",
     badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/30",
-    summary: "Standalone bot on legacy FC 25 endpoints with 12-hr trial limit vs 7-day free trial and 1-click AI SBC solving.",
+    summary: "Standalone bot on legacy FC 25 endpoints with 12-hr trial limit vs 2-day free trial and 1-click AI SBC solving.",
     eliteAdvantage: "9 of 10 categories",
     highlightMetric: "Sub-20ms vs 100ms DOM",
   },

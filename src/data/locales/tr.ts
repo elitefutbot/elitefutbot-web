@@ -554,7 +554,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           feature: "Fiyatlandırma Modeli",
-          elite: "€19.90/yıl (365 gün) · 7 günlük deneme",
+          elite: "€19.90/yıl (365 gün) · 2 günlük deneme",
           cloud: "Aylık $15–$30 yinelenen abonelikler",
           manual: "Ücretsiz (Yüzlerce saat emek harcatır)",
         },
@@ -650,12 +650,12 @@ export const trLocale: LocaleDictionary = {
     meta: {
       title: "ÜCRETSİZ FC 27 Sniping Botu ve Otomatik Alıcı Özellikleri | Elite FUT Bot",
       description:
-        "EA FC 27 için Elite FUT Bot özelliklerini keşfedin: otomatik snipe, autobuyer, otomatik listeleme, akıllı filtreler, Futbin fiyatları, ücretsiz ticaret filtreleri ve 7 günlük ücretsiz deneme.",
+        "EA FC 27 için Elite FUT Bot özelliklerini keşfedin: otomatik snipe, autobuyer, otomatik listeleme, akıllı filtreler, Futbin fiyatları, ücretsiz ticaret filtreleri ve 2 günlük ücretsiz deneme.",
       keywords:
         "fc27 fut sniping botu özellikleri, ea fc 27 autobuyer özellikleri, fut snipe bot, humanization anti ban, futbin canlı fiyat, yerel chrome eklentisi, fc27 coin kasma botu",
       ogTitle: "ÜCRETSİZ FC 27 Sniping Botu ve Otomatik Alıcı Özellikleri | Elite FUT Bot",
       ogDescription:
-        "EA FC 27 için Elite FUT Bot özelliklerini keşfedin: otomatik snipe, autobuyer, otomatik listeleme, akıllı filtreler, Futbin fiyatları, ücretsiz ticaret filtreleri ve 7 günlük ücretsiz deneme.",
+        "EA FC 27 için Elite FUT Bot özelliklerini keşfedin: otomatik snipe, autobuyer, otomatik listeleme, akıllı filtreler, Futbin fiyatları, ücretsiz ticaret filtreleri ve 2 günlük ücretsiz deneme.",
     },
     hero: {
       eyebrow: "11 Modüllü Özellik Cephaneliği // Tam Teknik Döküm",
@@ -975,7 +975,7 @@ export const trLocale: LocaleDictionary = {
       title: "FC 27 ve FC 26 Transfer Pazarını",
       titleHighlight: "Domine Etmeye Hazır mısınız?",
       subtitle:
-        "Her hafta milyonlarca coin kazanmak için Elite FUT SNIPER kullanan binlerce oyuncuya katılın. 7 günlük ücretsiz denemenizi bugün başlatın.",
+        "Her hafta milyonlarca coin kazanmak için Elite FUT SNIPER kullanan binlerce oyuncuya katılın. 2 günlük ücretsiz denemenizi bugün başlatın.",
       button: "Ücretsiz Denemeyi Başlat",
       discord: "VIP Discord'a Katıl",
       disclaimer: "Anında Aktivasyon · Kredi Kartı Gerekmez · %100 Yerel Eklenti",

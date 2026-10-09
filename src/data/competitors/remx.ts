@@ -38,7 +38,7 @@ export const remxData: CompetitorData = {
     "Daily curated high-ROI sniping filters included 100% free within the single flat license",
     "Humanization++ mode with mathematical Bézier physics and Gaussian jitter (0 bans across 14,000+ sessions)",
     "Clean Manifest V3 Chrome Side Panel HUD docking beside the Web App with zero DOM overlay clutter",
-    "Generous 7-day free trial with instant activation and no credit card required",
+    "Generous 2-day free trial with instant activation and no credit card required",
     "Single flat €19.90 payment for 365-day full-season access covering both FC 27 and legacy FC 26",
     "24/7 VIP Discord trading alpha with direct access to core software engineers",
   ],
@@ -54,7 +54,7 @@ export const remxData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "£14.99 bot + £14.99 filter group (£24.99 bundled package; regular £59.99)",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 7-Day Free Trial)",
+    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
     difference:
       "RemX paywalls its essential daily sniping filters into a separate purchase, while Elite FUT SNIPER provides the bot, the AI SBC solver, and daily VIP Discord filter drops together for a single flat €19.90 fee with zero upsells.",
   },
@@ -90,7 +90,7 @@ export const remxData: CompetitorData = {
         competitorFlaw:
           "RemX offers no free trial. Users must pay £14.99 to £24.99 upfront via Shopify with no opportunity to verify search speed, interface stability, or account safety before committing funds.",
         eliteSolution:
-          "Elite FUT SNIPER provides a completely free 7-day trial with full feature access and instant activation, allowing users to experience sub-20ms speed and earn millions of coins before paying anything.",
+          "Elite FUT SNIPER provides a completely free 2-day trial with full feature access and instant activation, allowing users to experience sub-20ms speed and earn millions of coins before paying anything.",
       },
     ],
   },
@@ -136,7 +136,7 @@ export const remxData: CompetitorData = {
     { label: "Search Latency", value: "Sub-20ms (Elite) vs ~100ms (RemX)" },
     { label: "Daily Filter Cost", value: "Free (Elite) vs £14.99 Addon (RemX)" },
     { label: "AI SBC Solver", value: "Built-In (Elite) vs None (RemX)" },
-    { label: "Free Trial Length", value: "7 Days (Elite) vs None (RemX)" },
+    { label: "Free Trial Length", value: "2 Days (Elite) vs None (RemX)" },
   ],
 
   citations: [
@@ -163,7 +163,7 @@ export const remxData: CompetitorData = {
     {
       question: "Can I test Elite FUT SNIPER before purchasing?",
       answer:
-        "Yes. Elite FUT SNIPER offers a full 7-day free trial with zero payment information required. RemX requires an immediate upfront purchase through Shopify with no testing period.",
+        "Yes. Elite FUT SNIPER offers a full 2-day free trial with zero payment information required. RemX requires an immediate upfront purchase through Shopify with no testing period.",
     },
     {
       question: "Does RemX Sniping Bot have an AI SBC solver?",

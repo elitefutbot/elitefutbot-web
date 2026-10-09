@@ -29,7 +29,11 @@ import { useLeaderboard } from "@/lib/auth/useLeaderboard";
 import { type LeaderboardEntry } from "@/lib/auth/authClient";
 import { setUpPushNotifications } from "@/lib/firebase/messaging";
 import { emitRefresh } from "@/lib/firebase/refreshBus";
-import { computeTrialDaysLeft, TRIAL_LENGTH_DAYS } from "@/lib/trial";
+import {
+  computeTrialDaysLeft,
+  MAX_TRIAL_DAYS,
+  TRIAL_LENGTH_DAYS,
+} from "@/lib/trial";
 import {
   consumeBuyIntent,
   PRO_PRICE_LABEL,
@@ -291,7 +295,7 @@ function DashboardContent() {
     ? 0
     : Math.min(
         stats?.trialDays ?? user?.trialDays ?? TRIAL_LENGTH_DAYS,
-        TRIAL_LENGTH_DAYS,
+        MAX_TRIAL_DAYS,
       );
   const daysLeft =
     createdAt && !isDuplicateTrial

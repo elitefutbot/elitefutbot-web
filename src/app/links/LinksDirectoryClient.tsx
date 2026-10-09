@@ -251,7 +251,7 @@ const ALL_LINKS: DirectoryLink[] = [
     href: "/terms",
     label: "Terms of Service",
     category: "Support & Legal",
-    desc: "Software licensing terms, strict no-refund SaaS policy, 7-day trial terms, and acceptable usage agreements.",
+    desc: "Software licensing terms, strict no-refund SaaS policy, 2-day trial terms, and acceptable usage agreements.",
     tag: "Legal",
     badge: "Terms",
     badgeColor: "bg-gray-500/15 text-gray-300 border-gray-500/30",

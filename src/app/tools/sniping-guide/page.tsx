@@ -465,7 +465,7 @@ export default function SnipingGuidePage() {
             </div>
             <div className="flex flex-col gap-3 items-center shrink-0">
               <Link href="/fc27-fut-snipe-bot" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-black font-black text-sm uppercase tracking-wider hover:brightness-110 transition-all flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(204,255,0,0.3)]">
-                Start 7-Day Free Trial
+                Start 2-Day Free Trial
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link href="/fc27-fut-sniping-bot-autobuyer-features" className="text-xs text-gray-500 hover:text-gray-300 transition-colors underline underline-offset-2">
@@ -870,7 +870,7 @@ export default function SnipingGuidePage() {
             headingPre="Elite FUT SNIPER"
             headingHighlight="Features"
             description="One Chrome extension that replaces hours of manual market grinding. Every function you need — automated, tax-aware, and anti-ban by design."
-            ctaLabel="Start 7-Day Free Trial"
+            ctaLabel="Start 2-Day Free Trial"
             ctaHref="/fc27-fut-snipe-bot"
             secondaryLabel="View All 12 Features"
             secondaryHref="/fc27-fut-sniping-bot-autobuyer-features"
@@ -1098,11 +1098,11 @@ export default function SnipingGuidePage() {
               <span className="text-primary">Fully Automated.</span>
             </h2>
             <p className="text-gray-400 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
-              Elite FUT SNIPER runs all six filters in this guide simultaneously — sniping, tax-aware auto-listing, FUTBIN price sync, and human-mode anti-ban — all from inside the EA FC 27 Web App. Start your 7-day free trial — no credit card required.
+              Elite FUT SNIPER runs all six filters in this guide simultaneously — sniping, tax-aware auto-listing, FUTBIN price sync, and human-mode anti-ban — all from inside the EA FC 27 Web App. Start your 2-day free trial — no credit card required.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link href="/fc27-fut-snipe-bot" className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-primary text-black font-black text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_40px_rgba(204,255,0,0.25)]">
-                Start 7-Day Free Trial <ArrowRight className="w-4 h-4" />
+                Start 2-Day Free Trial <ArrowRight className="w-4 h-4" />
               </Link>
               <Link href="/tools/tax-calculator" className="inline-flex items-center gap-2 text-sm font-bold text-gray-400 hover:text-white transition-colors">
                 <Cpu className="w-4 h-4" />
