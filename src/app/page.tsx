@@ -726,7 +726,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Free Trial</h3>
                 <div className="flex items-baseline gap-1">
-                  <span className="text-5xl font-black text-white">$0</span>
+                  <span className="text-5xl font-black text-white">€0</span>
                   <span className="text-gray-400 font-medium">/ 2 days</span>
                 </div>
                 <p className="text-sm text-gray-400 mt-4">
@@ -800,7 +800,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center justify-between text-xs mt-2">
                     <span className="text-gray-400">{PRICE_TIER.sold}/{PRICE_TIER.threshold} sold</span>
-                    <span className="font-bold text-white">Next price: ${PRICE_TIER.nextPrice}</span>
+                    <span className="font-bold text-white">Next price: €{PRICE_TIER.nextPrice.toFixed(2)}</span>
                   </div>
                 </div>
               </div>
