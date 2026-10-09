@@ -30,11 +30,16 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
         }
       }
 
+      // A logged-out visitor who clicked a buy button is most likely new:
+      // send them to sign up (register links to log in for existing users).
+      // The buy intent survives either way and opens checkout afterwards.
       if (
         new URLSearchParams(window.location.search).get(BUY_QUERY_PARAM) ===
         "1"
       ) {
         rememberBuyIntent();
+        router.replace("/register");
+        return;
       }
       router.replace("/login");
     }

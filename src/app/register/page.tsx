@@ -12,19 +12,8 @@ import {
   getReferralCodeFromCookie,
 } from "@/lib/referral/cookie";
 
-const LICENSE_KEY_REGEX = /^[A-Z0-9]{8}(-[A-Z0-9]{8}){3}$/;
-
-function formatLicenseKeyInput(raw: string): string {
-  const chars = raw
-    .toUpperCase()
-    .replace(/[^A-Z0-9]/g, "")
-    .slice(0, 32);
-  return chars.match(/.{1,8}/g)?.join("-") ?? chars;
-}
-
 export default function RegisterPage() {
   const router = useRouter();
-  const [licenseKey, setLicenseKey] = useState("");
   const [referralCode, setReferralCode] = useState("");
   const [referralCookie, setReferralCookie] = useState<{
     code: string;
@@ -40,10 +29,6 @@ export default function RegisterPage() {
     if (clickedAt) setReferralCookie({ code, clickedAt });
   }, []);
 
-  const handleLicenseKeyChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setLicenseKey(formatLicenseKeyInput(e.target.value));
-  };
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError(null);
@@ -53,13 +38,6 @@ export default function RegisterPage() {
     const lastName = String(formData.get("lastName") ?? "").trim();
     const email = String(formData.get("email") ?? "");
     const password = String(formData.get("password") ?? "");
-
-    if (licenseKey && !LICENSE_KEY_REGEX.test(licenseKey)) {
-      setError(
-        "License key must be in the format XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX.",
-      );
-      return;
-    }
 
     const trimmedReferralCode = referralCode.trim();
     const referralClickedAt =
@@ -73,7 +51,6 @@ export default function RegisterPage() {
       lastName,
       email,
       password,
-      licenseKey: licenseKey || undefined,
       referralCode: trimmedReferralCode || undefined,
       referralClickedAt,
       deviceId: getDeviceId(),
@@ -103,8 +80,7 @@ export default function RegisterPage() {
             Create Account
           </h1>
           <p className="text-sm text-gray-400 mb-6">
-            Create your account to start a 2-day free trial. Have a license
-            key already? Add it below to activate Elite FUT SNIPER.
+            Create your account to start a 2-day free trial.
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -159,27 +135,6 @@ export default function RegisterPage() {
                 placeholder="••••••••"
                 className="w-full px-4 py-3 rounded-xl border border-white/10 bg-dark text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-primary transition-colors"
               />
-            </div>
-
-            <div>
-              <label className="block font-mono text-[10px] text-primary/80 font-bold uppercase tracking-widest mb-2">
-                License Key <span className="normal-case text-gray-300 font-normal">(optional)</span>
-              </label>
-              <input
-                name="licenseKey"
-                type="text"
-                value={licenseKey}
-                onChange={handleLicenseKeyChange}
-                placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
-                maxLength={35}
-                autoCapitalize="characters"
-                autoCorrect="off"
-                spellCheck={false}
-                className="w-full px-4 py-3 rounded-xl border border-white/10 bg-dark text-white text-sm font-mono placeholder:text-gray-500 focus:outline-none focus:border-primary transition-colors"
-              />
-              <p className="text-xs text-gray-400 mt-2">
-                Leave this blank to start a 2-day free trial instead.
-              </p>
             </div>
 
             <div>
