@@ -343,8 +343,8 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
         offers: {
           "@type": "Offer",
           url: "https://www.elitefutbot.com/#pricing",
-          price: "19.99",
-          priceCurrency: "USD",
+          price: "19.90",
+          priceCurrency: "EUR",
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
         },
@@ -1418,10 +1418,10 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link
                 href="/register"
-                aria-label="Start Free 7-Day Trial of Elite FUT SNIPER"
+                aria-label="Start Free 2-Day Trial of Elite FUT SNIPER"
                 className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-dark font-black text-sm uppercase tracking-wider hover:scale-105 transition-all shadow-[0_0_25px_rgba(204,255,0,0.3)] inline-flex items-center justify-center gap-2"
               >
-                Start Free 7-Day Trial
+                Start Free 2-Day Trial
                 <ArrowRight className="w-4 h-4" />
               </Link>
               <Link

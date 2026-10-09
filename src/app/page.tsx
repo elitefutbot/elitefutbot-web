@@ -34,8 +34,8 @@ import {
 const PRICE_TIER = {
   sold: 88,
   threshold: 100,
-  currentPrice: 19.99,
-  nextPrice: 29.99,
+  currentPrice: 19.9,
+  nextPrice: 29.9,
 };
 
 import { getHreflangAlternates } from "@/data/locales/registry";
@@ -722,21 +722,21 @@ export default function Home() {
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
               <div className="mb-8">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
-                  7-Day Limited Access
+                  2-Day Limited Access
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Free Trial</h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-5xl font-black text-white">$0</span>
-                  <span className="text-gray-400 font-medium">/ 7 days</span>
+                  <span className="text-gray-400 font-medium">/ 2 days</span>
                 </div>
                 <p className="text-sm text-gray-400 mt-4">
-                  7 days limited free access. Perfect for testing the waters and learning the basics of sniping.
+                  2 days limited free access. Perfect for testing the waters and learning the basics of sniping.
                 </p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  7 Days Limited Free Access
+                  2 Days Limited Free Access
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -765,7 +765,7 @@ export default function Home() {
                 </li>
               </ul>
               <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">
-                Start 7-Day Free Trial
+                Start 2-Day Free Trial
               </Link>
             </div>
             <div className="glass-card rounded-3xl p-8 flex flex-col border-primary/40 bg-primary/5 relative overflow-hidden shadow-[0_0_40px_rgba(204,255,0,0.05)] transform md:-translate-y-4" data-purpose="pricing-card">
@@ -777,8 +777,8 @@ export default function Home() {
               <div className="mb-6 relative z-10">
                 <h3 className="text-xl font-bold mb-3 text-white">Pro Sniper</h3>
                 <div className="flex items-baseline gap-2">
-                  <span className="text-5xl font-black text-white">$19.99</span>
-                  <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">$49.99</span>
+                  <span className="text-5xl font-black text-white">€19.90</span>
+                  <span className="text-gray-400 line-through text-lg decoration-2 decoration-red-500/50">€49.90</span>
                 </div>
                 <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
                   <CheckCircle2 className="w-4 h-4 shrink-0" />
@@ -789,7 +789,7 @@ export default function Home() {
                   <div className="flex items-center gap-2 mb-2.5">
                     <Flame className="w-4 h-4 text-amber-400 shrink-0" />
                     <span className="text-amber-400 font-black text-sm uppercase tracking-wide">
-                      {PRICE_TIER.threshold - PRICE_TIER.sold} Spots Left at $19.99
+                      {PRICE_TIER.threshold - PRICE_TIER.sold} Spots Left at €19.90
                     </span>
                   </div>
                   <div className="w-full h-2 bg-gray-800 rounded-full overflow-hidden">
@@ -886,9 +886,7 @@ export default function Home() {
               <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-primary/10 to-transparent pointer-events-none"></div>
               <Link
                 className="relative z-10 block text-center py-4 rounded-xl bg-primary text-dark font-black hover:scale-[1.02] active:scale-[0.98] transition-all shadow-[0_0_20px_rgba(204,255,0,0.3)]"
-                href="https://futbotelite.gumroad.com/l/elitebotfc"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/dashboard?buy=1"
               >
                 Get Pro Sniper Access
               </Link>

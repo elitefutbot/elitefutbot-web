@@ -23,6 +23,7 @@ export interface AccountStats {
   isDuplicateTrial?: boolean;
   isTrialActive: boolean;
   hasAccess: boolean;
+  licenseExpiresAt: string | null;
   botStatus: BotStatus;
   activeFilters: Record<string, unknown> | null;
   lastSnipeAt: string | null;

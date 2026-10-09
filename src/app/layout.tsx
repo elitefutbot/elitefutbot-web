@@ -101,8 +101,8 @@ const jsonLd = {
       "offers": {
         "@type": "Offer",
         "url": "https://www.elitefutbot.com/#pricing",
-        "price": "19.99",
-        "priceCurrency": "USD",
+        "price": "19.90",
+        "priceCurrency": "EUR",
         "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
         "seller": {
@@ -114,7 +114,7 @@ const jsonLd = {
           "shippingRate": {
             "@type": "MonetaryAmount",
             "value": "0",
-            "currency": "USD"
+            "currency": "EUR"
           },
           "shippingDestination": [
             {

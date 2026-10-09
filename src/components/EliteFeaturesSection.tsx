@@ -98,7 +98,7 @@ export default function EliteFeaturesSection({
   headingPre = "Elite FUT SNIPER",
   headingHighlight = "Features",
   description = "One Chrome extension that replaces hours of manual market grinding. Every function you need — automated, tax-aware, and anti-ban by design.",
-  ctaLabel = "Start 7-Day Free Trial",
+  ctaLabel = "Start 2-Day Free Trial",
   ctaHref = "/fc27-fut-snipe-bot",
   secondaryLabel = "View All 12 Features",
   secondaryHref = "/fc27-fut-sniping-bot-autobuyer-features",

@@ -11,8 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { authFetch } from "@/lib/auth/authClient";
 import { emitRefresh } from "@/lib/firebase/refreshBus";
-
-const GUMROAD_PRODUCT_URL = "https://futbotelite.gumroad.com/l/elitebotfc";
+import { PRO_PRICE_LABEL, startCheckout } from "@/lib/payments";
 
 export function LicenseKeyModal({
   open,
@@ -24,6 +23,18 @@ export function LicenseKeyModal({
   const [licenseKey, setLicenseKey] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState("");
+  const [checkoutPending, setCheckoutPending] = useState(false);
+
+  const handleBuy = async () => {
+    setCheckoutPending(true);
+    setError("");
+    const result = await startCheckout();
+    // On success the browser is already navigating to Stripe.
+    if (!result.ok) {
+      setError(result.message);
+      setCheckoutPending(false);
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -68,8 +79,8 @@ export function LicenseKeyModal({
             Activate your license
           </DialogTitle>
           <DialogDescription>
-            Paste the license key from your Gumroad purchase confirmation
-            email.
+            Bought a license key before we moved to card checkout? Paste it
+            from your Gumroad purchase confirmation email.
           </DialogDescription>
         </DialogHeader>
 
@@ -97,21 +108,22 @@ export function LicenseKeyModal({
         <div className="relative mt-3 p-4 rounded-xl bg-gradient-to-br from-primary/15 via-primary/5 to-surface/80 border border-primary/30 flex flex-col sm:flex-row items-center justify-between gap-3 shadow-[0_0_20px_rgba(209,250,75,0.08)]">
           <div className="text-center sm:text-left">
             <p className="text-xs font-bold text-white flex items-center justify-center sm:justify-start gap-1.5">
-              <span>⚡</span> Don&apos;t have a license key yet?
+              <span>⚡</span> Don&apos;t have a license key?
             </p>
             <p className="text-[11px] text-gray-400 mt-0.5">
-              Unlock unlimited snipes, AI SBC solver, and instant access.
+              No key needed — pay by card and Pro activates on this account
+              instantly.
             </p>
           </div>
-          <a
-            href={GUMROAD_PRODUCT_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-dark font-black text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-md"
+          <button
+            type="button"
+            onClick={handleBuy}
+            disabled={checkoutPending}
+            className="shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-primary text-dark font-black text-xs uppercase tracking-wider hover:scale-105 transition-all shadow-md disabled:opacity-60 disabled:hover:scale-100"
           >
-            Get License
+            {checkoutPending ? "Opening…" : `Buy Pro · ${PRO_PRICE_LABEL}`}
             <ArrowUpRight className="size-3.5" />
-          </a>
+          </button>
         </div>
       </DialogContent>
     </Dialog>

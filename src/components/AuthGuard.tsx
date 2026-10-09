@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getAccessToken, getRefreshToken } from "@/lib/auth/tokenStorage";
 import { refreshSession } from "@/lib/auth/authClient";
+import { BUY_QUERY_PARAM, rememberBuyIntent } from "@/lib/payments";
 
 type Status = "checking" | "authenticated";
 
@@ -29,6 +30,12 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
         }
       }
 
+      if (
+        new URLSearchParams(window.location.search).get(BUY_QUERY_PARAM) ===
+        "1"
+      ) {
+        rememberBuyIntent();
+      }
       router.replace("/login");
     }
 

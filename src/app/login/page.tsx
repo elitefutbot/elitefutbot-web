@@ -109,7 +109,7 @@ export default function LoginPage() {
               </Link>
             </div>
             <p className="text-xs text-gray-300 mt-1.5">
-              Free 7-day trial, no license key required.
+              Free 2-day trial, no license key required.
             </p>
           </div>
         </div>

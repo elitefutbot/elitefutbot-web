@@ -161,7 +161,7 @@ export const enLocale: LocaleDictionary = {
         { feature: "AI SBC Solver Engine", elite: true, typical: false },
         { feature: "Zero Password Sharing (Full Security)", elite: true, typical: false },
         { feature: "Discord High-Margin Trading Filters", elite: true, typical: false },
-        { feature: "One-Time Annual Fee ($19.99/yr)", elite: true, typical: false },
+        { feature: "One-Time Annual Fee (€19.90/yr)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -171,7 +171,7 @@ export const enLocale: LocaleDictionary = {
       freeCard: {
         badge: "Free Starter",
         title: "Free Beta",
-        price: "$0",
+        price: "€0",
         period: "Forever Free",
         desc: "Essential sniping tools to experience the speed of Elite FUT SNIPER.",
         features: [
@@ -189,12 +189,12 @@ export const enLocale: LocaleDictionary = {
       proCard: {
         badge: "Most Popular",
         title: "Pro Sniper Pass",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "365-Day License · All FC 26 & FC 27 Updates Included",
-        spotsLeft: "12 Spots Left at $19.99",
+        spotsLeft: "12 Spots Left at €19.90",
         soldText: "88/100 sold",
-        nextPrice: "Next price: $29.99",
+        nextPrice: "Next price: €29.90",
         featuresHeader: "Everything in Free, plus:",
         features: [
           {
@@ -544,7 +544,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           feature: "Pricing Model",
-          elite: "$19.99/year (365 days) · 7-day free trial",
+          elite: "€19.90/year (365 days) · 2-day free trial",
           cloud: "$15–$30/month recurring subscriptions",
           manual: "Free (Costs hundreds of hours)",
         },
@@ -640,12 +640,12 @@ export const enLocale: LocaleDictionary = {
     meta: {
       title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
       description:
-        "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 7-day free trial.",
+        "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 2-day free trial.",
       keywords:
         "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
       ogTitle: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
       ogDescription:
-        "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 7-day free trial.",
+        "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, Futbin pricing, free trading filters and a 2-day free trial.",
     },
     hero: {
       eyebrow: "11-Module Features Arsenal // Complete Technical Breakdown",
@@ -846,7 +846,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           feature: "Pricing Model",
-          elite: "$19.99 One-Time (Full 365 Days)",
+          elite: "€19.90 One-Time (Full 365 Days)",
           cloud: "$15–$30 / month recurring subscriptions",
         },
         {
@@ -965,7 +965,7 @@ export const enLocale: LocaleDictionary = {
       title: "Ready to Dominate the Transfer Market in",
       titleHighlight: "FC 27 and FC 26?",
       subtitle:
-        "Join thousands of traders using Elite FUT SNIPER to generate millions of coins every week. Start your free 7-day trial today.",
+        "Join thousands of traders using Elite FUT SNIPER to generate millions of coins every week. Start your free 2-day trial today.",
       button: "Claim Free Trial",
       discord: "Join VIP Discord",
       disclaimer: "Instant Activation · No Credit Card Required · 100% Local Extension",

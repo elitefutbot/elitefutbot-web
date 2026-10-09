@@ -179,9 +179,9 @@ export const esLocale: LocaleDictionary = {
       freeCard: {
         badge: "Acceso Gratuito",
         title: "Prueba Gratuita",
-        price: "$0",
-        period: "por 7 días",
-        desc: "7 días de acceso gratuito limitado. Perfecto para probar funciones y dominar los conceptos básicos del sniping.",
+        price: "€0",
+        period: "por 2 días",
+        desc: "2 días de acceso gratuito limitado. Perfecto para probar funciones y dominar los conceptos básicos del sniping.",
         features: [
           { text: "Funciones Básicas de Sniping" },
           { text: "Hasta 50 Snipes Diarios" },
@@ -193,17 +193,17 @@ export const esLocale: LocaleDictionary = {
             isNegative: true,
           },
         ],
-        cta: "Empezar Prueba Gratis de 7 Días",
+        cta: "Empezar Prueba Gratis de 2 Días",
       },
       proCard: {
         badge: "Mejor Valor",
         title: "Pro Sniper",
-        price: "$19.99",
-        originalPrice: "$49.99",
+        price: "€19.90",
+        originalPrice: "€49.90",
         guarantee: "Pago Único · 365 Días · FC 27 y FC 26",
-        spotsLeft: "12 Plazas restantes a $19.99",
+        spotsLeft: "12 Plazas restantes a €19.90",
         soldText: "88/100 vendidos",
-        nextPrice: "Próximo precio: $29.99",
+        nextPrice: "Próximo precio: €29.90",
         featuresHeader: "Qué incluye",
         features: [
           { text: "Lógica Avanzada de Sniping Sub-20ms" },
@@ -615,7 +615,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "$19.99 Pago Único (365 Días + Prueba Gratis)",
+          elite: "€19.90 Pago Único (365 Días + Prueba Gratis)",
           cloud: "$15 – $35 / mes suscripción recurrente",
           manual: "Gratis (Cuesta 4+ horas diarias)",
         },
@@ -707,7 +707,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           q: "¿Cómo se compara Elite FUT SNIPER con bots en la nube como FutBot o FutEarn?",
-          a: "Los bots en la nube enrutan solicitudes a través de servidores compartidos, introduciendo 150ms–350ms de latencia y exigiendo tu contraseña. Elite FUT SNIPER opera localmente a <20ms, no comparte datos y cuesta un único pago anual de $19.99.",
+          a: "Los bots en la nube enrutan solicitudes a través de servidores compartidos, introduciendo 150ms–350ms de latencia y exigiendo tu contraseña. Elite FUT SNIPER opera localmente a <20ms, no comparte datos y cuesta un único pago anual de €19.90.",
         },
         {
           q: "¿Dónde consigo filtros de sniping rentables y soporte?",
@@ -734,12 +734,12 @@ export const esLocale: LocaleDictionary = {
     meta: {
       title: "Funciones GRATIS de Bot de Sniping y Autobuyer FC 27 | Elite FUT Bot",
       description:
-        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 7 días de prueba gratuita.",
+        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 2 días de prueba gratuita.",
       keywords:
         "funciones bot fc27, autobuyer ea fc 27 español, bot sniping fc27, extension chrome tradeo fc27, anti ban fut sniping, sbc solver ia",
       ogTitle: "Funciones GRATIS de Bot de Sniping y Autobuyer FC 27 | Elite FUT Bot",
       ogDescription:
-        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 7 días de prueba gratuita.",
+        "Descubre las funciones de Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, precios de Futbin, filtros de tradeo gratis y 2 días de prueba gratuita.",
     },
     hero: {
       eyebrow: "Suite para EA FC 26 y FC 27 Ultimate Team",
@@ -748,7 +748,7 @@ export const esLocale: LocaleDictionary = {
       titleLine2: ", Tradear y Ganar",
       directAnswerSnippet:
         "Elite FUT SNIPER es una suite de autobuyer y sniping 100% local en extensión de Chrome para EA FC 26 y FC 27. Automatiza las búsquedas del mercado en ciclos sub-20ms con física anti-detección Bézier Humanization++, sin compartir contraseñas y manteniendo 0 baneos en el mercado de transferencias a la fecha.",
-      ctaPrimary: "Iniciar Prueba Gratuita de 7 Días",
+      ctaPrimary: "Iniciar Prueba Gratuita de 2 Días",
       ctaSecondary: "Explorar los 11 Módulos",
       trustHighlights: [
         {
@@ -997,7 +997,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "$19.99 Pago Único (365 Días Completos)",
+          elite: "€19.90 Pago Único (365 Días Completos)",
           cloud: "$15–$30 / mes suscripciones recurrentes",
         },
         {
@@ -1116,7 +1116,7 @@ export const esLocale: LocaleDictionary = {
       title: "¿Listo para Dominar el Mercado de",
       titleHighlight: "FC 27 y FC 26?",
       subtitle:
-        "Únete a miles de traders que usan Elite FUT SNIPER para generar millones de monedas cada semana. Empieza tu prueba gratuita de 7 días hoy mismo.",
+        "Únete a miles de traders que usan Elite FUT SNIPER para generar millones de monedas cada semana. Empieza tu prueba gratuita de 2 días hoy mismo.",
       button: "Activar Prueba Gratuita",
       discord: "Unirse al Discord VIP",
       disclaimer:

@@ -326,7 +326,7 @@ const COMPARISON_ROWS = [
   },
   {
     feature: "Pricing Model",
-    elite: "$19.99 One-Time (365 Full Days + Free Trial)",
+    elite: "€19.90 One-Time (365 Full Days + Free Trial)",
     cloud: "$15 – $35/month recurring subscription",
     manual: "Free (Costs 4+ hours daily)",
   },
@@ -421,8 +421,8 @@ export default function FC27FutSnipeBotPage() {
         "offers": {
           "@type": "Offer",
           "url": "https://www.elitefutbot.com/fc27-fut-snipe-bot",
-          "price": "19.99",
-          "priceCurrency": "USD",
+          "price": "19.90",
+          "priceCurrency": "EUR",
           "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
           "seller": {
@@ -895,7 +895,7 @@ export default function FC27FutSnipeBotPage() {
             headingPre="All the Tools Inside"
             headingHighlight="One Sniping Bot"
             description="From 59th-minute instant sniping to overnight mass bidding and auto-relisting — every module you need to flip the FC 27 transfer market in your favour, 24/7."
-            ctaLabel="Try Free for 7 Days"
+            ctaLabel="Try Free for 2 Days"
             ctaHref="/fc27-fut-snipe-bot#pricing"
             secondaryLabel="See Full Feature List"
             secondaryHref="/fc27-fut-sniping-bot-autobuyer-features"

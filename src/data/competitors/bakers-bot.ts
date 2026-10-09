@@ -196,7 +196,7 @@ export const bakersBotData: CompetitorData = {
         "100% of all 11 modules included (Sub-20ms engine, Side Panel HUD, AI SBC solver)",
         "All VIP Discord trading filters, daily coin-making tricks, and alpha drops included at $0 extra",
         "Guaranteed day-one compatibility for both EA FC 26 and FC 27 with zero upgrade fees",
-        "7-day free trial with 24/7 direct Discord developer support",
+        "2-day free trial with 24/7 direct Discord developer support",
       ],
     },
     summary:

@@ -103,7 +103,7 @@ export default function RegisterPage() {
             Create Account
           </h1>
           <p className="text-sm text-gray-400 mb-6">
-            Create your account to start a 7-day free trial. Have a license
+            Create your account to start a 2-day free trial. Have a license
             key already? Add it below to activate Elite FUT SNIPER.
           </p>
 
@@ -178,7 +178,7 @@ export default function RegisterPage() {
                 className="w-full px-4 py-3 rounded-xl border border-white/10 bg-dark text-white text-sm font-mono placeholder:text-gray-500 focus:outline-none focus:border-primary transition-colors"
               />
               <p className="text-xs text-gray-400 mt-2">
-                Leave this blank to start a 7-day free trial instead.
+                Leave this blank to start a 2-day free trial instead.
               </p>
             </div>
 

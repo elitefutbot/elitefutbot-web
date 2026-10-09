@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     absolute: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
   },
   description:
-    "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 7-day free trial.",
+    "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 2-day free trial.",
   keywords:
     "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, futgg price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
   alternates: {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
     description:
-      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 7-day free trial.",
+      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 2-day free trial.",
     type: "website",
     url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
     images: [
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
     description:
-      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 7-day free trial.",
+      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 2-day free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
@@ -256,7 +256,7 @@ const OUTPERFORM_COMPARISON = [
   },
   {
     feature: "Pricing Model",
-    elite: "$19.99 One-Time Payment (365 Full Days)",
+    elite: "€19.90 One-Time Payment (365 Full Days)",
     cloud: "$15–$30/mo recurring subscriptions",
     highlight: false,
   },
@@ -383,8 +383,8 @@ export default function FC27FeaturesPage() {
         "offers": {
           "@type": "Offer",
           "url": "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
-          "price": "19.99",
-          "priceCurrency": "USD",
+          "price": "19.90",
+          "priceCurrency": "EUR",
           "priceValidUntil": "2027-12-31",
           "availability": "https://schema.org/InStock",
         },
@@ -475,7 +475,7 @@ export default function FC27FeaturesPage() {
               href="/register"
               className="w-full sm:w-auto px-8 py-4 bg-primary text-dark font-black text-sm uppercase tracking-widest rounded-xl hover:scale-105 transition-all shadow-[0_0_30px_rgba(204,255,0,0.3)] flex items-center justify-center gap-2"
             >
-              Start Free 7-Day Trial
+              Start Free 2-Day Trial
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
@@ -910,7 +910,7 @@ export default function FC27FeaturesPage() {
             <span className="text-primary">FC 26 &amp; FC 27 Market?</span>
           </h2>
           <p className="text-gray-300 text-base sm:text-lg max-w-xl mx-auto mb-10 font-normal">
-            Join thousands of traders using Elite FUT SNIPER to generate millions of coins every week. Start your 7-day free trial right now.
+            Join thousands of traders using Elite FUT SNIPER to generate millions of coins every week. Start your 2-day free trial right now.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

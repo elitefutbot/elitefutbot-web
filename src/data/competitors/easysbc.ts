@@ -6,7 +6,7 @@ export const easySbcData: CompetitorData = {
   competitorType: "web-app",
   tagline: "Move Beyond Static External SBC Blueprints: 1-Click In-Browser AI Solving, Auto-Buy Fodder & 20ms Sniping.",
   summaryPassage:
-    "In a direct technical comparison between EasySBC and Elite FUT SNIPER, EasySBC is an external web blueprint viewer requiring manual alt-tab copying, third-party club uploads, and buying cards by hand with no market bot, whereas Elite FUT SNIPER is an in-browser Chrome extension delivering a sub-500ms neural AI SBC solver (that uses club untradeables and auto-buys missing fodder) paired with an autonomous sub-20ms sniping engine for a flat $19.99/year.",
+    "In a direct technical comparison between EasySBC and Elite FUT SNIPER, EasySBC is an external web blueprint viewer requiring manual alt-tab copying, third-party club uploads, and buying cards by hand with no market bot, whereas Elite FUT SNIPER is an in-browser Chrome extension delivering a sub-500ms neural AI SBC solver (that uses club untradeables and auto-buys missing fodder) paired with an autonomous sub-20ms sniping engine for a flat €19.90/year.",
   verdict:
     "EasySBC operates as an external squad blueprint website and mobile reference tool. Because its template solutions are publicly visible, thousands of users rush to buy the same cards, causing massive price-fixing spikes that erase coin savings. More critically, EasySBC cannot buy cards or submit squads, forcing players into exhausting manual copy-paste routines. Elite FUT SNIPER executes directly inside the EA Web App—reading your live untradeable club inventory locally, generating private non-inflated solutions, auto-buying missing fodder in sub-20ms, and providing a full autonomous transfer market sniping bot for FC 26 & FC 27.",
   publishedDate: "2026-08-01",
@@ -39,7 +39,7 @@ export const easySbcData: CompetitorData = {
     "Generates private, unique chemistry combinations that bypass public price-fixing spikes",
     "Includes full autonomous sub-20ms transfer market sniping bot with Humanization++ zero-ban protection",
     "Docked Chrome Side Panel HUD leaving the official Web App viewport completely clean and responsive",
-    "Single flat $19.99/year license covering both unlimited AI SBC solving and 24/7 autonomous market trading",
+    "Single flat €19.90/year license covering both unlimited AI SBC solving and 24/7 autonomous market trading",
   ],
   idealFor: {
     competitor: "Players who only want an external reference website to manually plan squad chemistry on their phone.",
@@ -76,7 +76,7 @@ export const easySbcData: CompetitorData = {
         competitorFlaw:
           "EasySBC is solely an SBC reference calculator. It provides zero market sniping loops, zero automated relisting, and zero coin-generating automation. Users still have to find, configure, and pay for an independent autobuyer tool to actually fund their SBC submissions.",
         eliteSolution:
-          "Elite FUT SNIPER delivers a complete all-in-one suite. For a single flat $19.99/year fee, you receive both our neural AI SBC solver and a full autonomous sub-20ms transfer market sniping bot with Humanization++ zero-ban protection.",
+          "Elite FUT SNIPER delivers a complete all-in-one suite. For a single flat €19.90/year fee, you receive both our neural AI SBC solver and a full autonomous sub-20ms transfer market sniping bot with Humanization++ zero-ban protection.",
       },
     ],
   },
@@ -168,7 +168,7 @@ export const easySbcData: CompetitorData = {
         competitorReality:
           "Charges €5–€10/month (€60–€120/year) for premium web calculator features while offering zero trading bots.",
         eliteAdvantage:
-          "Flat $19.99/year single license combining unlimited AI SBC solving and 24/7 20ms market sniping.",
+          "Flat €19.90/year single license combining unlimited AI SBC solving and 24/7 20ms market sniping.",
       },
     ],
   },
@@ -206,7 +206,7 @@ export const easySbcData: CompetitorData = {
   pricingTeardown: {
     headline: "Pricing Teardown: Monthly Blueprint Subscriptions vs All-In-One Value",
     subheadline:
-      "Why paying monthly for an external blueprint viewer makes no sense when Elite provides a full bot and solver for $19.99/year.",
+      "Why paying monthly for an external blueprint viewer makes no sense when Elite provides a full bot and solver for €19.90/year.",
     competitorModel: {
       title: "EasySBC Pro Monthly Subscription",
       price: "€5 – €10 / month (€60 – €120 / year)",
@@ -219,7 +219,7 @@ export const easySbcData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive Annual License",
-      price: "$19.99 / year (Flat Single Fee)",
+      price: "€19.90 / year (Flat Single Fee)",
       inclusions: [
         "Integrated neural AI SBC solver with 1-click auto-buying using club untradeables",
         "Autonomous sub-20ms direct protocol transfer market sniping bot with dynamic auto-relisting",
@@ -229,7 +229,7 @@ export const easySbcData: CompetitorData = {
       ],
     },
     summary:
-      "EasySBC charges up to €120/year for external blueprints that still force you to buy cards manually. Elite FUT SNIPER combines 1-click AI solving, auto-buying, and an autonomous 20ms market sniper for just $19.99/year.",
+      "EasySBC charges up to €120/year for external blueprints that still force you to buy cards manually. Elite FUT SNIPER combines 1-click AI solving, auto-buying, and an autonomous 20ms market sniper for just €19.90/year.",
   },
 
   keyStatistics: [
@@ -258,7 +258,7 @@ export const easySbcData: CompetitorData = {
     { feature: "Multi-Filter Market Trading", elite: "Up to 15+ Target Filters Simultaneously", competitor: "Not Supported", winner: "elite" },
     { feature: "Live Market Pricing Sync", elite: "Real-Time Futbin Integration + 5% EA Tax", competitor: "Cached Web Server Price Estimates", winner: "elite" },
     { feature: "FC 27 Day-One Compatibility", elite: "Guaranteed Day-One Launch Included", competitor: "Delayed Database Blueprint Updates", winner: "elite" },
-    { feature: "Licensing Value", elite: "Flat $19.99 / Year (Bot + AI Solver)", competitor: "Recurring €5–€10/mo (€60–€120/yr)", winner: "elite" },
+    { feature: "Licensing Value", elite: "Flat €19.90 / Year (Bot + AI Solver)", competitor: "Recurring €5–€10/mo (€60–€120/yr)", winner: "elite" },
     { feature: "Support & VIP Community", elite: "24/7 VIP Discord + Active Core Engineers", competitor: "Standard Forum / Discord Support", winner: "elite" },
   ],
 
@@ -291,7 +291,7 @@ export const easySbcData: CompetitorData = {
     {
       question: "What is the total price difference between Elite FUT SNIPER and EasySBC?",
       answer:
-        "EasySBC charges between €60 and €120 per year for its Pro subscription without providing any market sniping bot. Elite FUT SNIPER costs a flat single fee of just $19.99 per year for both the neural AI SBC solver and the 20ms market sniping suite.",
+        "EasySBC charges between €60 and €120 per year for its Pro subscription without providing any market sniping bot. Elite FUT SNIPER costs a flat single fee of just €19.90 per year for both the neural AI SBC solver and the 20ms market sniping suite.",
     },
   ],
 
@@ -302,7 +302,7 @@ export const easySbcData: CompetitorData = {
       platform: "Discord Community",
     },
     {
-      text: "Having the AI solver use my own untradeable club fodder and auto-buy the missing links saved me over 700k coins this season. Plus the 20ms sniping bot made me millions on the side. Best $19.99 ever spent.",
+      text: "Having the AI solver use my own untradeable club fodder and auto-buy the missing links saved me over 700k coins this season. Plus the 20ms sniping bot made me millions on the side. Best €19.90 ever spent.",
       author: "Verified Ultimate Team Competitor",
       platform: "Trustpilot Review",
     },

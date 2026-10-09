@@ -765,7 +765,7 @@ export default function TaxCalculatorPage() {
                     href="/fc27-fut-snipe-bot"
                     className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl bg-primary text-black font-black text-sm uppercase tracking-wide hover:brightness-110 transition-all shadow-[0_0_30px_rgba(204,255,0,0.2)]"
                   >
-                    Start 7-Day Free Trial
+                    Start 2-Day Free Trial
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
@@ -782,7 +782,7 @@ export default function TaxCalculatorPage() {
                     { val: "10 RPM", label: "Max search speed" },
                     { val: "5%", label: "Tax auto-calculated" },
                     { val: "3", label: "FUT accounts included" },
-                    { val: "7 Days", label: "Free trial — no card" },
+                    { val: "2 Days", label: "Free trial — no card" },
                   ].map((s) => (
                     <div key={s.label}>
                       <p className="text-2xl font-black text-primary font-mono">
@@ -923,7 +923,7 @@ export default function TaxCalculatorPage() {
                   href="/fc27-fut-snipe-bot"
                   className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-primary text-black font-black text-sm uppercase tracking-wider hover:brightness-110 transition-all shadow-[0_0_40px_rgba(204,255,0,0.25)]"
                 >
-                  Start 7-Day Free Trial
+                  Start 2-Day Free Trial
                   <ArrowRight className="w-4 h-4" />
                 </Link>
                 <Link
