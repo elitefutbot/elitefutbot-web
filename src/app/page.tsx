@@ -287,7 +287,7 @@ export default function Home() {
             </Link>
             <a
               className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm hover:border-primary/40 group"
-              href="https://youtu.be/bfqc1hCIAoQ"
+              href="https://youtu.be/4XvOT_gckgg?si=y7iKNJmsgdON-9-f"
               target="_blank"
               rel="noopener noreferrer"
             >
