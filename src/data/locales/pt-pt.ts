@@ -18,14 +18,14 @@ export const ptPtLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "EA FC 27 Bot de Sniping e Autobuyer Ultimate Team | Elite FUT Bot",
+      title: "EA FC 27 FUT Sniping Bot e Autobuyer | Elite FUT Sniper",
       description:
-        "Bot de sniping e autobuyer de FUT para EA FC 27 Ultimate Team. Faz snipe a jogadores baratos, compra e lista automaticamente com filtros inteligentes numa extensão local do Chrome.",
+        "Elite FUT Sniper é o #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot e autobuyer do Ultimate Team (compatível com FC 27). 0 banimentos de mercado e teste grátis.",
       keywords:
-        "bot sniping fc 27 portugal, autobuyer ea fc 27 portugues, bot trade fifa 27, extensao chrome autobuyer, sbc solver ia portugal, comprar jogadores bot fc27 moedas",
-      ogTitle: "EA FC 27 Bot de Sniping e Autobuyer Ultimate Team | Elite FUT Bot",
+        "fut sniping bot, fut snipe bot, fifa snipe bot, bot sniping fc 27 portugal, autobuyer ea fc 27 portugues, bot trade fifa 27, extensao chrome autobuyer, sbc solver ia portugal, comprar jogadores bot fc27 moedas",
+      ogTitle: "EA FC 27 FUT Sniping Bot e Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "Bot de sniping e autobuyer de FUT para EA FC 27 Ultimate Team. Faz snipe a jogadores baratos, compra e lista automaticamente com filtros inteligentes numa extensão local do Chrome.",
+        "Elite FUT Sniper é o #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot e autobuyer do Ultimate Team (compatível com FC 27). 0 banimentos de mercado e teste grátis.",
     },
     creatorBadge: {
       originalCreator: "CRIADOR ORIGINAL",
@@ -35,12 +35,12 @@ export const ptPtLocale: LocaleDictionary = {
       statusText: "Totalmente Compatível com as Últimas Atualizações do EA FC 27",
     },
     hero: {
-      titleLine1: "O Bot de Sniping e Autobuyer",
+      titleLine1: "O Mais Rápido e Seguro do Mundo",
       titleHighlight: "FC 27",
-      titleHighlight2: "FUT SNIPING BOT",
-      titleLine3: "Mais Rápido e Seguro do Mundo.",
+      titleHighlight2: "FUT SNIPING BOT E AUTOBUYER",
+      titleLine3: "Desenvolvido pela Elite.",
       description:
-        "O Elite FUT SNIPER é o bot de sniping e autobuyer mais veloz e seguro para o EA FC 27 — totalmente compatível com o FC 27 e FC 26. Funciona a 100% em local como extensão do Chrome diretamente no teu navegador, alcançando velocidades de pesquisa sub-20ms e protegendo a tua conta de banimentos de servidores na cloud.",
+        "O Elite FUT SNIPER é o EA FC 27 FUT sniping bot, FUT snipe bot e autobuyer de Ultimate Team mais veloz e seguro do mundo — totalmente compatível com o FC 27 e FC 26. Funciona a 100% em local como extensão do Chrome diretamente no teu navegador, alcançando velocidades de pesquisa sub-20ms e protegendo a tua conta de banimentos de servidores na cloud.",
       ctaPricing: "Ver Planos e Preços",
       ctaDemo: "Ver Demonstração ao Vivo",
       stats: {
@@ -55,8 +55,8 @@ export const ptPtLocale: LocaleDictionary = {
       },
     },
     outperform: {
-      title: "Porque Superamos",
-      titleHighlight: "Qualquer Concorrente.",
+      title: "Porque o Nosso FUT Sniping Bot",
+      titleHighlight: "Supera Todos.",
       subtitle:
         "O Elite FUT SNIPER supera qualquer bot do mercado porque é executado localmente no teu computador sem depender de servidores externos na cloud. Desenvolvido pela lendária equipa do FutSniping Bot, esta arquitetura anula a latência para snipar cartas em milissegundos com máxima segurança.",
       humanization: {
@@ -155,8 +155,8 @@ export const ptPtLocale: LocaleDictionary = {
       discordFreeBadge: "Filtros Gratuitos Diários",
     },
     comparison: {
-      title: "Como o Elite FUT SNIPER se Compara",
-      titleHighlight: "com Outros Bots",
+      title: "Elite FUT Sniper vs.",
+      titleHighlight: "Bots Concorrentes",
       subtitle:
         "Descobre porque a nossa arquitetura local em extensão de Chrome e o motor Humanization++ deixam os tradicionais bots de cloud para trás.",
       col1: "Funcionalidade",
@@ -175,8 +175,8 @@ export const ptPtLocale: LocaleDictionary = {
       ],
     },
     pricing: {
-      title: "Preços Claros e",
-      titleHighlight: "Transparentes",
+      title: "Preços do FUT Sniping Bot e",
+      titleHighlight: "Autobuyer",
       subtitle: "Escolhe o plano ideal para os teus objetivos no mercado. Todos os planos incluem atualizações futuras.",
       freeCard: {
         badge: "Início Gratuito",
@@ -371,9 +371,9 @@ export const ptPtLocale: LocaleDictionary = {
     ctaBottom2: {
       title: "Junta-te à Comunidade",
       titleHighlight: "Elite",
-      subtitle: "Entra hoje no nosso Discord e assegura uma das últimas",
-      subtitleHighlight: "vagas com acesso gratuito vitalício",
-      button: "Entrar no Discord e Garantir Vaga",
+      subtitle: "Entra hoje no nosso Discord para dicas gratuitas de trade, guias e",
+      subtitleHighlight: "filtros de sniping diários",
+      button: "Entrar no Discord — Filtros de Sniping Diários",
     },
   },
   snipeBot: {

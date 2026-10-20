@@ -18,14 +18,14 @@ export const enLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
+      title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
       description:
-        "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
+        "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
       keywords:
-        "fc 27 sniping bot, ea fc 27 autobuyer, fc 27 fut snipe bot, fifa 27 autobuyer, chrome extension autobuyer, ai sbc solver, buy players bot fc27",
-      ogTitle: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
+        "fut sniping bot, fut snipe bot, fifa sniping bot, fifa snipe bot, ea fc 27 fut sniping bot, fc 27 sniping bot, ea fc 27 autobuyer, fc 27 fut snipe bot, fifa 27 autobuyer, chrome extension autobuyer, ai sbc solver, buy players bot fc27",
+      ogTitle: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
+        "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
     },
     creatorBadge: {
       originalCreator: "ORIGINAL CREATOR",
@@ -37,10 +37,10 @@ export const enLocale: LocaleDictionary = {
     hero: {
       titleLine1: "The World's Fastest & Safest",
       titleHighlight: "FC 27",
-      titleHighlight2: "FUT SNIPING BOT",
-      titleLine3: "And Autobuyer.",
+      titleHighlight2: "FUT SNIPING BOT & AUTOBUYER",
+      titleLine3: "Engineered by Elites.",
       description:
-        "Elite FUT SNIPER is the world's fastest and safest EA FC 27 sniping bot and autobuyer — fully compatible with FC 27 & FC 26. Runs 100% locally as a Chrome extension in your browser, achieving sub-20ms search speeds while keeping your account completely safe from cloud-server bans.",
+        "Elite FUT SNIPER is the world's fastest and safest EA FC 27 FUT sniping bot, FUT snipe bot, and Ultimate Team autobuyer — fully compatible with FC 27 & FC 26. It operates as a 100% local Chrome extension running directly in your browser, enabling sub-20ms market search speeds while completely protecting your account from cloud-server bans.",
       ctaPricing: "View Plans & Pricing",
       ctaDemo: "Watch Live Demo",
       stats: {
@@ -55,8 +55,8 @@ export const enLocale: LocaleDictionary = {
       },
     },
     outperform: {
-      title: "Why We Outperform",
-      titleHighlight: "Any Competitor.",
+      title: "Why Our FUT Sniping Bot",
+      titleHighlight: "Outperforms Everything.",
       subtitle:
         "Elite FUT SNIPER outperforms every bot on the market because it runs locally inside your browser without external cloud servers. Built by the legendary FutSniping Bot team, this architecture eliminates latency so you can snipe cards in milliseconds with complete safety.",
       humanization: {
@@ -145,8 +145,8 @@ export const enLocale: LocaleDictionary = {
       discordFreeBadge: "Daily Free Filters",
     },
     comparison: {
-      title: "How Elite FUT SNIPER Compares",
-      titleHighlight: "To Other Bots",
+      title: "Elite FUT Sniper vs.",
+      titleHighlight: "Competitor Bots",
       subtitle:
         "See why our local Chrome extension architecture and Humanization++ engine leave traditional cloud bots behind.",
       col1: "Feature",
@@ -165,7 +165,7 @@ export const enLocale: LocaleDictionary = {
       ],
     },
     pricing: {
-      title: "Fair, Transparent",
+      title: "FUT Sniping Bot & Autobuyer",
       titleHighlight: "Pricing",
       subtitle: "Choose the plan that fits your trading goals. All plans include all future updates.",
       freeCard: {
@@ -361,9 +361,9 @@ export const enLocale: LocaleDictionary = {
     ctaBottom2: {
       title: "Join the",
       titleHighlight: "Elite Community",
-      subtitle: "Join our Discord today and secure one of the last",
-      subtitleHighlight: "lifetime free access spots",
-      button: "Join Discord & Secure Access",
+      subtitle: "Join our Discord today for free FUT trading tips, guides, and",
+      subtitleHighlight: "daily sniping filters",
+      button: "Join Discord for Daily Free Sniping Filters",
     },
   },
   snipeBot: {

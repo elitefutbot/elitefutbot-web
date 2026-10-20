@@ -34,20 +34,20 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
+    absolute: "FC 27 FUT Sniping Bot & Autobuyer Features | Elite FUT Sniper",
   },
   description:
-    "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 2-day free trial.",
+    "Explore Elite FUT Sniper's EA FC 27 FUT sniping bot & autobuyer features: sub-20ms FUT snipe bot, auto-bidding, FUTBIN/FUT.GG auto-pricing, 0 bans & free trial.",
   keywords:
-    "fc27 fut sniping bot features, ea fc 27 autobuyer features, fut snipe bot, humanization anti ban, futbin price sync, futgg price sync, local chrome extension, fc27 transfer market bot, elite fut sniper, fc27 autobuyer settings, 59th minute sniping bot",
+    "fut sniping bot features, fc 27 fut sniping bot, fut snipe bot, fc 27 autobuyer features, fut auto bidder, futbin auto pricing bot, humanization anti ban fut bot, elite fut sniper features",
   alternates: {
     canonical: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
     languages: getHreflangAlternates("/fc27-fut-sniping-bot-autobuyer-features"),
   },
   openGraph: {
-    title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
+    title: "FC 27 FUT Sniping Bot & Autobuyer Features | Elite FUT Sniper",
     description:
-      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 2-day free trial.",
+      "Explore Elite FUT Sniper's EA FC 27 FUT sniping bot & autobuyer features: sub-20ms FUT snipe bot, auto-bidding, FUTBIN/FUT.GG auto-pricing, 0 bans & free trial.",
     type: "website",
     url: "https://www.elitefutbot.com/fc27-fut-sniping-bot-autobuyer-features",
     images: [
@@ -55,15 +55,15 @@ export const metadata: Metadata = {
         url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
+        alt: "FC 27 FUT Sniping Bot & Autobuyer Features | Elite FUT Sniper",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "FREE FC 27 Sniping Bot & Autobuyer Features | Elite FUT Bot",
+    title: "FC 27 FUT Sniping Bot & Autobuyer Features | Elite FUT Sniper",
     description:
-      "Explore Elite FUT Bot features for EA FC 27: auto-snipe, autobuyer, auto-list, smart filters, FUTBIN & FUTGG pricing, free trading filters and a 2-day free trial.",
+      "Explore Elite FUT Sniper's EA FC 27 FUT sniping bot & autobuyer features: sub-20ms FUT snipe bot, auto-bidding, FUTBIN/FUT.GG auto-pricing, 0 bans & free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
@@ -458,15 +458,15 @@ export default function FC27FeaturesPage() {
             <span>v1.0.20 Update Live • Multi-Filter, Auto-Bidding &amp; Consumables</span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-[1.08] mb-6">
-            Everything You Need to <br className="hidden sm:inline" />
+          <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-[1.08] mb-6">
+            EA FC 27 FUT Sniping Bot &amp; Autobuyer Features — Built to{" "}
             <span className="bg-primary text-dark px-2 rounded box-decoration-clone">Snipe</span>, Flip &amp; Profit
           </h1>
 
           {/* Standalone AEO / GEO Definition Passage (40-60 Words) */}
           <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-white/[0.04] border border-white/10 mb-8 text-left">
             <p className="text-gray-200 text-sm sm:text-base leading-relaxed font-normal">
-              <strong className="text-primary font-bold">Elite FUT SNIPER</strong> is a 100% local Chrome extension autobuyer and sniping suite for EA FC 26 and FC 27. Featuring our new v1.0.20 update with multi-filter search (country/nation, club, league, position, card rarity, specific ratings 83+, Gold/Silver/Bronze, consumables &amp; chem styles), and high-frequency auto-bidding, it operates in sub-20ms cycles with Humanization++ Bézier anti-detection physics and <strong className="text-white">0 transfer market bans to date</strong> across all seasons.
+              <strong className="text-primary font-bold">Elite FUT SNIPER</strong> is a 100% local Chrome extension <strong className="text-white">EA FC 27 FUT sniping bot, FUT snipe bot, and Ultimate Team autobuyer</strong> (compatible with FC 27 &amp; FC 26). Featuring our new v1.0.20 update with multi-filter search (country/nation, club, league, position, card rarity, specific ratings 83+, Gold/Silver/Bronze, consumables &amp; chem styles), and high-frequency auto-bidding, it operates in sub-20ms cycles with Humanization++ Bézier anti-detection physics and <strong className="text-white">0 transfer market bans to date</strong> across all seasons.
             </p>
           </div>
 
@@ -537,7 +537,7 @@ export default function FC27FeaturesPage() {
               </div>
               <div className="aspect-video w-full relative">
                 <LiteYouTubeEmbed
-                  videoId="bfqc1hCIAoQ"
+                  videoId="4XvOT_gckgg"
                   title="EA FC 27 Sniping Bot & Autobuyer Demonstration"
                   customPoster="/fc27-video-thumbnail.jpg"
                 />
@@ -554,7 +554,7 @@ export default function FC27FeaturesPage() {
             Core Arsenal // 12 Modules
           </div>
           <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white mb-4">
-            Engineered For Extreme Speed &amp; Total Stealth
+            FUT Snipe Bot Features Engineered for Speed &amp; Stealth
           </h2>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed font-normal">
             Every module in Elite FUT SNIPER is purpose-built to deliver an insurmountable competitive edge on the FC 26 &amp; FC 27 transfer market while protecting your account.
@@ -724,7 +724,7 @@ export default function FC27FeaturesPage() {
               Architectural Advantage
             </div>
             <h2 className="font-display text-3xl sm:text-5xl font-black tracking-tight text-white mb-6">
-              Why We Outperform Everything.
+              Why Our FUT Sniping Bot Features Outperform Competitors.
             </h2>
             <p className="text-gray-300 text-base sm:text-lg leading-relaxed font-normal">
               Elite FUT SNIPER outperforms competitor bots because it runs <strong className="text-white">100% locally inside your browser</strong> rather than relying on external cloud servers. Developed by the legendary <strong className="text-white">FutSniping Bot Dev Team</strong>, this secure architecture eliminates datacenter ping latency, ensuring you snipe FC 26 &amp; FC 27 players in milliseconds without compromising account safety.

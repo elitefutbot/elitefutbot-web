@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import SetDocumentLang from "@/components/SetDocumentLang";
+import { getHreflangAlternates } from "@/data/locales/registry";
 import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
   Timer,
@@ -34,19 +36,39 @@ import {
 export const metadata: Metadata = {
   title: {
     absolute:
-      "FC 27 Sniping Guide: Best FUT Filters & Trading Tips | Elite FUT Bot",
+      "FC 27 FUT Sniping Guide: Best Free & Discord Snipe Filters",
   },
   description:
-    "Complete FC 27 FUT sniping guide: best transfer market filters, how to make FUT coins, daily Discord tips, coin investment strategies, and auto-snipe bot settings. Updated September 2026.",
-  alternates: { canonical: "https://www.elitefutbot.com/tools/sniping-guide" },
+    "EA FC 27 FUT sniping guide with daily free Discord sniping filters, best 5K–100K budget filters, mass bidding tips, FUTBIN 27 floors & FUT snipe bot settings.",
+  alternates: {
+    canonical: "https://www.elitefutbot.com/tools/sniping-guide",
+    languages: getHreflangAlternates("/tools/sniping-guide"),
+  },
   keywords: [
-    "FC 27 sniping guide",
+    "fc 27 sniping guide",
+    "fut sniping guide",
+    "fc 27 sniping filters",
+    "best fut sniping filters",
+    "free fut sniping filters",
+    "free fc 27 sniping filters",
+    "discord sniping filters",
+    "discord snipe filters",
+    "daily discord sniping filters",
+    "fc 27 trading discord",
+    "free fut trading discord",
+    "fut trading discord",
     "best FUT sniping filters FC 27",
+    "low budget sniping filters fc 27",
+    "10k sniping filters fc 27",
+    "50k sniping filters fc 27",
+    "100k sniping filters fc 27",
+    "fut mass bidding filters",
     "FUT trading tips",
     "how to make FUT coins",
     "FUT coin investment strategy",
     "FC 27 transfer market guide",
     "FUT snipe bot",
+    "fut sniping bot",
     "best FUT filters FC 27",
     "FUT trading strategy 2026",
     "EA FC 27 autobuyer chrome extension",
@@ -66,15 +88,13 @@ export const metadata: Metadata = {
     "daily discord tips and tricks",
     "discord fut trading tips",
     "make fut coins discord",
-    "discord snipe filters",
-    "fc 27 trading discord",
     "fut investment discord",
   ],
   openGraph: {
     title:
-      "FC 27 Sniping Guide: Best FUT Filters & Trading Tips",
+      "FC 27 FUT Sniping Guide: Best Free & Discord Snipe Filters",
     description:
-      "Complete FC 27 FUT sniping guide: best transfer market filters, how to make FUT coins, daily Discord tips, coin investment strategies, and auto-snipe bot settings. Updated September 2026.",
+      "EA FC 27 FUT sniping guide with daily free Discord sniping filters, best 5K–100K budget filters, mass bidding tips, FUTBIN 27 floors & FUT snipe bot settings.",
     url: "https://www.elitefutbot.com/tools/sniping-guide",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -84,17 +104,18 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FC 27 Sniping Guide: Best FUT Filters & Trading Tips",
+    title: "FC 27 FUT Sniping Guide: Best Free & Discord Snipe Filters",
     description:
-      "Best FC 27 FUT sniping filters, trading tips, daily Discord coin strategies, and auto-snipe bot settings. Updated September 2026.",
+      "EA FC 27 FUT sniping guide with daily free Discord sniping filters, best 5K–100K budget filters, mass bidding tips, FUTBIN 27 floors & FUT snipe bot settings.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
   other: {
     "article:published_time": "2026-09-20T00:00:00.000Z",
-    "article:modified_time": "2026-09-24T00:00:00.000Z",
+    "article:modified_time": "2026-10-21T00:00:00.000Z",
     "article:author": "https://www.elitefutbot.com",
-    "article:section": "FUT Trading Guides",
-    "article:tag": "FC 27, FUT, sniping, trading, filters, coins, investment",
+    "article:section": "FUT Sniping Filters & Trading Guides",
+    "article:tag":
+      "FC 27 sniping guide, FUT sniping filters, free sniping filters, Discord snipe filters, FC 27 trading Discord, FUT trading tips, mass bidding filters, FUT snipe bot",
   },
 };
 
@@ -103,11 +124,11 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Article",
-      headline: "FC 27 Sniping Guide: Best FUT Filters, Trading Tips & Coin Investment Strategy",
-      description: "Complete FC 27 FUT sniping guide with best transfer market filters, daily Discord tips, coin investment strategies, and auto-snipe bot settings.",
+      headline: "EA FC 27 FUT Sniping Guide: Best Free Filters, Daily Discord Snipe Filters & Trading Tips",
+      description: "EA FC 27 FUT sniping guide with daily free Discord sniping filters, best 5K–100K budget filters, mass bidding tips, FUTBIN 27 floors & FUT snipe bot settings.",
       url: "https://www.elitefutbot.com/tools/sniping-guide",
       datePublished: "2026-09-20T00:00:00.000Z",
-      dateModified: "2026-09-24T00:00:00.000Z",
+      dateModified: "2026-10-21T00:00:00.000Z",
       image: "https://www.elitefutbot.com/og-image.png",
       author: {
         "@type": "Organization",
@@ -160,6 +181,14 @@ const jsonLd = {
     {
       "@type": "FAQPage",
       mainEntity: [
+        {
+          "@type": "Question",
+          name: "Where can I get free FC 27 FUT sniping filters and Discord trading tips?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "You can get daily free FC 27 FUT sniping filters, 83–89 OVR fodder floor prices, mass-bidding targets, and 24-hour market roadmaps inside the official Elite FUT Sniper Discord server (#daily-filters and Community Alpha channels). All filters include exact Buy-Now/bid prices, target sell prices, and net profit after EA's 5% transfer tax.",
+          },
+        },
         {
           "@type": "Question",
           name: "What is the best FC 27 sniping filter?",
@@ -371,6 +400,7 @@ const SAFETY_RULES = [
 export default function SnipingGuidePage() {
   return (
     <>
+      <SetDocumentLang lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 relative overflow-hidden font-sans">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary/8 blur-[160px] rounded-full pointer-events-none -z-10" />
@@ -378,62 +408,259 @@ export default function SnipingGuidePage() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
 
-          {/* HERO */}
-          <div className="text-center space-y-5 max-w-4xl mx-auto">
-            <div className="flex flex-wrap items-center justify-center gap-3">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold uppercase tracking-widest text-primary">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                Complete FC 27 FUT Trading Guide
-              </div>
-              <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/[0.04] border border-white/10 text-xs font-medium text-gray-400">
-                <svg className="w-3 h-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                Updated Sep 2026
-              </div>
-            </div>
-            <h1 className="text-4xl sm:text-6xl font-black font-headline tracking-tight uppercase leading-tight">
-              FC 27 <span className="text-primary italic">SNIPING GUIDE</span>
-            </h1>
-            <p className="text-base sm:text-xl text-gray-300 font-medium leading-relaxed max-w-3xl mx-auto">
-              The complete FC 27 sniping guide — best FUT transfer market filters, how to make FUT coins fast, daily Discord trading tips, coin investment strategies, and auto-snipe bot settings for EA Sports FC 27.
-            </p>
-            <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 pt-2 text-sm">
-              {[
-                { val: "6 Filter Presets", label: "ready to use" },
-                { val: "6 Trading Tips", label: "tested strategies" },
-                { val: "10 FAQs", label: "incl. PAA answers" },
-                { val: "5% EA Tax", label: "auto-calculated by bot" },
-                { val: "14,000+", label: "sessions completed" },
-              ].map((s) => (
-                <div key={s.label} className="text-center">
-                  <span className="font-black text-primary font-mono">{s.val}</span>{" "}
-                  <span className="text-gray-500">{s.label}</span>
+          {/* HERO SECTION */}
+          <header className="relative rounded-3xl bg-gradient-to-b from-white/[0.04] via-[#0b0d14]/80 to-[#070707] border border-white/10 p-6 sm:p-10 lg:p-12 shadow-[0_20px_70px_rgba(0,0,0,0.8)] overflow-hidden">
+            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-primary/15 blur-[130px] rounded-full pointer-events-none" />
+            <div className="absolute top-1/2 -right-24 w-[400px] h-[300px] bg-[#5865F2]/15 blur-[120px] rounded-full pointer-events-none" />
+
+            <div className="relative z-10 text-center space-y-6 max-w-4xl mx-auto">
+              <div className="flex flex-wrap items-center justify-center gap-2.5">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/30 text-xs font-bold uppercase tracking-widest text-primary">
+                  <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                  Daily Free Discord Sniping Filters &amp; Guide
                 </div>
-              ))}
-            </div>
-            {/* TABLE OF CONTENTS */}
-            <nav aria-label="Table of Contents" className="pt-4">
-              <div className="inline-flex flex-wrap justify-center gap-2">
+                <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-[#5865F2]/15 border border-[#5865F2]/40 text-xs font-bold text-[#9ba6ff] font-mono">
+                  <DiscordIcon className="w-3.5 h-3.5 text-[#5865F2]" />
+                  FUTBIN 27 Verified Alpha Drops
+                </div>
+              </div>
+
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black font-headline tracking-tight uppercase leading-[1.08]">
+                EA FC 27 <span className="text-primary italic">FUT Sniping Guide:</span>{" "}
+                Best Free Filters, Discord Filters &amp; Trading Tips
+              </h1>
+
+              {/* Standalone AEO / GEO Definition Box */}
+              <div className="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-white/[0.03] border border-white/10 text-left backdrop-blur-md">
+                <p className="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
+                  The complete <strong className="text-primary font-bold">EA FC 27 FUT sniping guide</strong> — featuring the <strong className="text-white">best free FUT sniping filters</strong>, <strong className="text-white">daily Discord snipe filters</strong> (5K–500K+ coin budgets), 59th-minute mass-bidding tips, live FUTBIN 27 fodder floors, and <strong className="text-white">FUT snipe bot &amp; autobuyer</strong> settings for EA Sports FC 27 &amp; FC 26.
+                </p>
+              </div>
+
+              {/* Primary Hero CTAs */}
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-1">
+                <a
+                  href="https://discord.gg/Rkb9nF6WG6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto px-8 py-4 rounded-xl bg-[#5865F2] hover:bg-[#4752c4] text-white font-black text-sm uppercase tracking-wider transition-all hover:scale-105 flex items-center justify-center gap-2.5 shadow-[0_0_35px_rgba(88,101,242,0.45)]"
+                >
+                  <DiscordIcon className="w-5 h-5" />
+                  <span>Join Discord for Daily Free Sniping Filters</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+                <Link
+                  href="/register"
+                  className="w-full sm:w-auto px-8 py-4 rounded-xl bg-primary text-black font-black text-sm uppercase tracking-wider hover:scale-105 transition-all flex items-center justify-center gap-2 shadow-[0_0_30px_rgba(204,255,0,0.3)]"
+                >
+                  <span>Start 2-Day Free Bot Trial</span>
+                  <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+
+              {/* Quick Metrics Bar */}
+              <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 pt-2 text-xs sm:text-sm">
                 {[
-                  { href: "#filter-presets", label: "Filter Presets" },
-                  { href: "#bot-features", label: "Bot Features" },
-                  { href: "#trading-tips", label: "Trading Tips" },
-                  { href: "#advanced-techniques", label: "Advanced Techniques" },
-                  { href: "#safety-protocols", label: "Anti-Ban Safety" },
-                  { href: "#timing-guide", label: "Best Times" },
-                  { href: "#discord-community", label: "Discord Tips" },
-                  { href: "#faq", label: "FAQ" },
-                ].map(({ href, label }) => (
-                  <a
-                    key={href}
-                    href={href}
-                    className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-gray-400 hover:text-primary hover:border-primary/30 hover:bg-primary/5 transition-all"
-                  >
-                    <span className="text-primary/40">↓</span> {label}
-                  </a>
+                  { val: "Daily Drops", label: "free Discord sniping filters" },
+                  { val: "+36% to +90%", label: "verified net ROI flips" },
+                  { val: "6 Filter Presets", label: "ready to plug & play" },
+                  { val: "5% EA Tax", label: "auto-calculated in every call" },
+                  { val: "14,000+", label: "0-ban bot sessions" },
+                ].map((s) => (
+                  <div key={s.label} className="text-center">
+                    <span className="font-black text-primary font-mono">{s.val}</span>{" "}
+                    <span className="text-gray-400">{s.label}</span>
+                  </div>
                 ))}
               </div>
-            </nav>
-          </div>
+
+              {/* TABLE OF CONTENTS */}
+              <nav aria-label="Table of Contents" className="pt-2">
+                <div className="inline-flex flex-wrap justify-center gap-2">
+                  {[
+                    { href: "#discord-community", label: "Live Discord Filter Proofs" },
+                    { href: "#filter-presets", label: "Filter Presets" },
+                    { href: "#bot-features", label: "Bot Features" },
+                    { href: "#trading-tips", label: "Trading Tips" },
+                    { href: "#advanced-techniques", label: "Advanced Techniques" },
+                    { href: "#safety-protocols", label: "Anti-Ban Safety" },
+                    { href: "#timing-guide", label: "Best Times" },
+                    { href: "#faq", label: "FAQ" },
+                  ].map(({ href, label }) => (
+                    <a
+                      key={href}
+                      href={href}
+                      className="inline-flex items-center gap-1 px-3 py-1 rounded-lg bg-white/[0.04] border border-white/[0.08] text-xs font-medium text-gray-300 hover:text-primary hover:border-primary/30 hover:bg-primary/5 transition-all"
+                    >
+                      <span className="text-primary/60">↓</span> {label}
+                    </a>
+                  ))}
+                </div>
+              </nav>
+            </div>
+
+            {/* HERO FEATURED PROOF PREVIEW: 3 Real Discord Filter & Roadmap Drops at Full 1:1 Clarity */}
+            <div className="relative z-10 mt-10 pt-8 border-t border-white/10 max-w-5xl mx-auto">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6 bg-[#5865F2]/10 border border-[#5865F2]/30 rounded-2xl p-4 sm:p-5">
+                <div className="space-y-1 text-left">
+                  <div className="flex items-center gap-2">
+                    <span className="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping" />
+                    <span className="text-xs sm:text-sm font-black uppercase tracking-wider text-white font-mono">
+                      Live Proof From Our Discord: Daily Sniping Filters &amp; 24H Market Roadmaps
+                    </span>
+                  </div>
+                  <p className="text-xs sm:text-sm text-gray-300">
+                    Every day we drop exact buy/bid prices, target sell prices, after-tax ROI math, and FUTBIN 27 fodder floors in Discord.
+                  </p>
+                </div>
+                <a
+                  href="https://discord.gg/Rkb9nF6WG6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full md:w-auto shrink-0 px-6 py-3 rounded-xl bg-[#5865F2] hover:bg-[#4752c4] text-white font-black text-xs uppercase tracking-wider transition-all hover:scale-105 flex items-center justify-center gap-2 shadow-[0_0_25px_rgba(88,101,242,0.5)]"
+                >
+                  <DiscordIcon className="w-4 h-4" />
+                  <span>Join Our Discord Free</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              </div>
+
+              <div className="space-y-7">
+                {/* Full-Width Crystal-Clear Screenshot 1: Free Community Alpha */}
+                <div className="rounded-3xl bg-[#0c0e17] border-2 border-primary/40 p-4 sm:p-6 shadow-[0_15px_50px_rgba(0,0,0,0.85)] hover:border-primary transition-all">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10 text-left">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-2 mb-1">
+                        <span className="text-[11px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-primary text-black">
+                          ⚡ Free Daily Community Alpha
+                        </span>
+                        <span className="text-xs font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/30 px-2.5 py-0.5 rounded">
+                          +36.56% to +90.00% Net ROI After Tax
+                        </span>
+                      </div>
+                      <h3 className="text-base sm:text-xl font-black text-white uppercase tracking-tight">
+                        1. 84 OVR Floor Mass-Bidding (750–850 Coins) &amp; Objective Club Flips
+                      </h3>
+                    </div>
+                    <a
+                      href="https://discord.gg/Rkb9nF6WG6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-primary hover:underline font-mono shrink-0"
+                    >
+                      <DiscordIcon className="w-4 h-4" />
+                      Get Today&apos;s Free Alpha in Discord →
+                    </a>
+                  </div>
+                  <div className="rounded-2xl overflow-hidden border border-white/15 bg-[#111214] shadow-2xl">
+                    <img
+                      src="/discord-community-alpha-filters.png"
+                      alt="Elite FUT Bot Discord Community Alpha: 84 OVR Item Score Floor Mass-Bidding 750-850 coins sell 1150-1250 (+36.56% Net ROI) and Milton Delgado Objective Argentinian & Marquee Matchups flips (+90.00% Net ROI)"
+                      width={1024}
+                      height={541}
+                      className="w-full h-auto block"
+                    />
+                  </div>
+                </div>
+
+                {/* Full-Width Crystal-Clear Screenshot 2: #daily-vip-filters Campaign Alert */}
+                <div className="rounded-3xl bg-[#0c0e17] border-2 border-[#5865F2]/50 p-4 sm:p-6 shadow-[0_15px_50px_rgba(0,0,0,0.85)] hover:border-[#5865F2] transition-all">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10 text-left">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-2 mb-1">
+                        <span className="text-[11px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-[#5865F2] text-white">
+                          #daily-vip-filters
+                        </span>
+                        <span className="text-xs font-mono font-bold text-amber-300 bg-amber-500/10 border border-amber-500/30 px-2.5 py-0.5 rounded">
+                          +3,925 to +8,200 Coins Net Profit / Card
+                        </span>
+                      </div>
+                      <h3 className="text-base sm:text-xl font-black text-white uppercase tracking-tight">
+                        2. Dynamic Floor Anchors &amp; Special Card Snipe Targets (Console &amp; PC)
+                      </h3>
+                    </div>
+                    <a
+                      href="https://discord.gg/Rkb9nF6WG6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-[#9ba6ff] hover:underline font-mono shrink-0"
+                    >
+                      <DiscordIcon className="w-4 h-4" />
+                      Unlock #daily-vip-filters in Discord →
+                    </a>
+                  </div>
+                  <div className="rounded-2xl overflow-hidden border border-white/15 bg-[#111214] shadow-2xl">
+                    <img
+                      src="/discord-daily-vip-filters.png"
+                      alt="Elite FUT Bot #daily-vip-filters channel showing Campaign #45: Nicolò Tresoldi 86 FS buy 40000 sell 46500-51000 (+8200 net profit), Peio Canales & Finn Jeltsch 85 FS targets, and 86 OVR fodder anchors"
+                      width={1024}
+                      height={599}
+                      className="w-full h-auto block"
+                    />
+                  </div>
+                </div>
+
+                {/* Full-Width Crystal-Clear Screenshot 3: 24-Hour VIP Market Summary & Roadmap */}
+                <div className="rounded-3xl bg-[#0c0e17] border-2 border-purple-500/45 p-4 sm:p-6 shadow-[0_15px_50px_rgba(0,0,0,0.85)] hover:border-purple-400 transition-all">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4 pb-3 border-b border-white/10 text-left">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-2 mb-1">
+                        <span className="text-[11px] font-mono font-black uppercase tracking-wider px-2.5 py-0.5 rounded bg-purple-500/30 text-purple-200 border border-purple-400/40">
+                          🗺️ 24-Hour Market Roadmap
+                        </span>
+                        <span className="text-xs font-mono font-bold text-cyan-300 bg-cyan-500/10 border border-cyan-500/30 px-2.5 py-0.5 rounded">
+                          83–89 OVR Live Fodder Floors • 5 Trading Phases
+                        </span>
+                      </div>
+                      <h3 className="text-base sm:text-xl font-black text-white uppercase tracking-tight">
+                        3. Daily FUTBIN 27 Market Summary &amp; Hour-by-Hour Sniping Schedule
+                      </h3>
+                    </div>
+                    <a
+                      href="https://discord.gg/Rkb9nF6WG6"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-purple-300 hover:underline font-mono shrink-0"
+                    >
+                      <DiscordIcon className="w-4 h-4" />
+                      Read Daily Market Roadmaps on Discord →
+                    </a>
+                  </div>
+                  <div className="rounded-2xl overflow-hidden border border-white/15 bg-[#111214] shadow-2xl">
+                    <img
+                      src="/discord-vip-market-roadmap.png"
+                      alt="Elite FUT Bot VIP Market Summary & 24-Hour Forward Roadmap: Live 83-89 OVR Item Score Fodder Floors and 5-Phase trading schedule from WL sell-off sniping to UCL build-up"
+                      width={1024}
+                      height={463}
+                      className="w-full h-auto block"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Prominent Bottom Hero Discord CTA Bar */}
+              <div className="mt-7 p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-[#5865F2]/25 via-primary/15 to-[#5865F2]/25 border border-primary/40 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div className="text-center sm:text-left">
+                  <p className="text-base sm:text-lg font-black text-white uppercase tracking-tight">
+                    Want Today&apos;s Free Sniping Filters &amp; Trading Calls?
+                  </p>
+                  <p className="text-xs sm:text-sm text-gray-200 mt-0.5">
+                    Join 5,000+ traders in our official Discord for daily free sniping filters, fodder floor alerts, and live bot setup help.
+                  </p>
+                </div>
+                <a
+                  href="https://discord.gg/Rkb9nF6WG6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto shrink-0 px-8 py-4 rounded-xl bg-primary text-black font-black text-sm uppercase tracking-wider hover:scale-105 transition-all flex items-center justify-center gap-2.5 shadow-[0_0_35px_rgba(204,255,0,0.45)]"
+                >
+                  <DiscordIcon className="w-5 h-5" />
+                  <span>Join Our Discord — Free Daily Filters</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            </div>
+          </header>
 
           {/* QUICK-START CTA BOX */}
           <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-br from-primary/15 via-black/60 to-black/60 border border-primary/30 flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_0_50px_rgba(204,255,0,0.12)]">
@@ -444,7 +671,7 @@ export default function SnipingGuidePage() {
               </div>
               <h2 className="text-2xl sm:text-3xl font-black text-white uppercase tracking-tight leading-tight">
                 Skip the Manual Grind.{" "}
-                <span className="text-primary">Let the Bot Snipe 24/7.</span>
+                <span className="text-primary">Let Our FUT Snipe Bot Trade 24/7.</span>
               </h2>
               <p className="text-sm text-gray-300 leading-relaxed max-w-lg">
                 Elite FUT SNIPER runs every filter in this guide automatically — sniping, auto-listing with your profit margin and 5% EA tax already priced in, sleeping between sessions, and tracking every coin made. No manual clicking required.
@@ -480,12 +707,12 @@ export default function SnipingGuidePage() {
             <div className="text-center max-w-3xl mx-auto space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#5865F2]/10 border border-[#5865F2]/30 text-xs font-bold uppercase tracking-widest text-[#8b96f7]">
                 <MessageSquare className="w-3.5 h-3.5 text-[#5865F2]" />
-                <span>Daily Discord Tips & Tricks</span>
+                <span>Free FUT Trading Discord &amp; Daily Filters</span>
               </div>
               <h2 id="discord-community" className="text-3xl sm:text-5xl font-black uppercase tracking-tight leading-tight">
-                Make FUT Coins Daily With{" "}
+                Daily Free{" "}
                 <span className="text-[#5865F2] bg-gradient-to-r from-[#5865F2] via-indigo-300 to-purple-400 bg-clip-text text-transparent">
-                  Discord Snipe Filters & Tips
+                  Discord Sniping Filters &amp; FUT Trading Tips
                 </span>
               </h2>
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
@@ -758,9 +985,9 @@ export default function SnipingGuidePage() {
           {/* FILTER PRESETS */}
           <section aria-labelledby="filter-presets">
             <div className="text-center mb-12">
-              <SectionBadge text="FUT Transfer Market Filters" />
+              <SectionBadge text="Free FUT Transfer Market Filters" />
               <h2 id="filter-presets" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">
-                Best FC 27 <span className="text-primary">Sniping Filters</span>
+                Best Free FC 27 <span className="text-primary">FUT Sniping Filters (5K–500K+ Budgets)</span>
               </h2>
               <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
                 Every filter below has been tested across multiple FC 27 market cycles. Configure any of these directly in Elite FUT SNIPER and let the bot run them automatically.
@@ -798,7 +1025,7 @@ export default function SnipingGuidePage() {
             <div className="text-center">
               <SectionBadge text="Elite FUT SNIPER — Live Demo" />
               <h2 id="bot-in-action" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">
-                See the Bot <span className="text-primary">Running These Filters</span>
+                See the FUT Sniping Bot <span className="text-primary">Running These Filters</span>
               </h2>
               <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
                 Elite FUT SNIPER applies every filter setting in this guide automatically. Here&apos;s a real session — Dybala sniped twice in under 15 minutes, auto-listed, taxed, and profit logged.
@@ -912,7 +1139,7 @@ export default function SnipingGuidePage() {
             <div className="text-center mb-12">
               <SectionBadge text="Advanced Sniping Techniques" />
               <h2 id="advanced-techniques" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">
-                Pro Tricks That <span className="text-primary">Most Guides Skip</span>
+                Pro FUT Sniping Tricks That <span className="text-primary">Most Guides Skip</span>
               </h2>
               <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
                 These techniques are not taught in basic guides. Master them to outpace every manual sniper and stay ahead of bans.
@@ -997,7 +1224,7 @@ export default function SnipingGuidePage() {
             <div className="text-center mb-12">
               <SectionBadge text="Anti-Detection Safety Protocols" />
               <h2 id="safety-protocols" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">
-                Zero Bans. <span className="text-primary">Non-Negotiable Rules.</span>
+                Zero Bans: <span className="text-primary">Safe FUT Sniping Bot &amp; Trading Rules</span>
               </h2>
               <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base leading-relaxed">
                 14,000+ Elite FUT SNIPER sessions completed with zero transfer market bans. Here&apos;s exactly why — and what you must never skip.
@@ -1035,7 +1262,7 @@ export default function SnipingGuidePage() {
             <div className="text-center mb-10">
               <SectionBadge text="FUT Market Timing Guide" />
               <h2 id="timing-guide" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">
-                Best Times to <span className="text-primary">Snipe &amp; Trade</span>
+                Best Times to <span className="text-primary">Snipe &amp; Trade in FC 27 FUT</span>
               </h2>
             </div>
             <div className="overflow-x-auto rounded-3xl bg-white/[0.02] border border-white/10 backdrop-blur-xl">
@@ -1073,10 +1300,11 @@ export default function SnipingGuidePage() {
           <section aria-labelledby="faq">
             <div className="text-center mb-10">
               <SectionBadge text="10 Most Asked Questions" />
-              <h2 id="faq" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">FC 27 Sniping Guide FAQ</h2>
+              <h2 id="faq" className="text-3xl sm:text-4xl font-black uppercase tracking-tight">FC 27 FUT Sniping Guide &amp; Filters FAQ</h2>
               <p className="text-gray-400 mt-3 max-w-2xl mx-auto text-sm sm:text-base">Covering every common sniping, trading, and FUT coin investment question — including the ones Google highlights as &quot;People Also Ask.&quot;</p>
             </div>
             <div className="p-6 sm:p-8 rounded-3xl bg-white/[0.02] border border-white/[0.07] backdrop-blur-xl divide-y divide-white/[0.07]">
+              <FaqItem q="Where can I get free FC 27 FUT sniping filters & Discord trading tips?" a="You can get daily free FC 27 FUT sniping filters, live 83–89 OVR FUTBIN fodder floor prices, low-budget mass-bidding targets (5K–50K budgets), and 24-hour market roadmaps inside our official Discord community (#daily-filters and Community Alpha channels). Every call includes exact buy/bid limits, target sell prices, and net ROI after EA's 5% tax." />
               <FaqItem q="What is the best FC 27 sniping filter?" a="The best all-round filter for FC 27 is 84–85 rated gold rares with Exact Rating and a Max Buy of 800–1,100 coins. This targets SBC fodder at high volume with near-zero risk. For higher profits use 90+ promo cards set at 15% below the current FUTBIN BIN price." />
               <FaqItem q="How do I make FUT coins with sniping?" a="To make FUT coins with sniping: find cards listed below their market value on the FC 27 transfer market, buy them instantly, then re-list at market price. You profit the difference minus EA's 5% transaction tax. A snipe bot like Elite FUT SNIPER automates this continuously — scanning up to 10 searches per minute, buying the moment a cheap card appears, and auto-listing at your target margin." />
               <FaqItem q="What is the best time to snipe in FC 27?" a="The best sniping windows in FC 27 are: 6 PM UK during content drops (misplaced listings spike 300%), Monday morning after Weekend League rewards are delivered, Lightning Round events, and 9–10 AM UK when Asian market sellers list fresh overnight stock. EA content drop days always produce the highest volume of underpriced listings." />
