@@ -43,7 +43,7 @@ export const futEarnData: CompetitorData = {
     "Native Chrome Side Panel HUD (Manifest V3) running at 60 FPS directly beside the Web App with zero DOM tampering",
     "Real-time Futbin API valuation overlay with automatic 5% EA transfer tax deduction for guaranteed net profit margins",
     "Play on your console or Web App anytime with zero session conflicts or artificial 20-minute trading lockouts",
-    "Transparent one-time license covering all 11 modules with free daily VIP Discord trading filters and FC 26/FC 27 updates",
+    "Transparent flat yearly license covering all 11 modules with free daily VIP Discord trading filters and FC 26/FC 27 updates",
   ],
   idealFor: {
     competitor:
@@ -130,7 +130,7 @@ export const futEarnData: CompetitorData = {
         competitorReality:
           "Not free in reality: FUTEarn takes a 50% cut of all coin profits made on your account. After EA's 5% tax, users lose over half their earnings.",
         eliteAdvantage:
-          "Strict 0% commission policy. Every single coin sniped belongs 100% to you, backed by transparent one-time licensing.",
+          "Strict 0% commission policy. Every single coin sniped belongs 100% to you, backed by transparent flat yearly licensing.",
       },
       {
         advertisedName: "2. Safe & Secure Cloud Bot",
@@ -229,7 +229,7 @@ export const futEarnData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive License",
-      price: "€19.90 One-Time (Full 365 Days Access)",
+      price: "€19.90/year (Cancel Anytime)",
       inclusions: [
         "100% of all coins sniped remain 100% yours — 0% commission, zero profit cut",
         "Full access to all 11 automation modules including sub-20ms high-frequency sniper",
@@ -239,7 +239,7 @@ export const futEarnData: CompetitorData = {
       ],
     },
     summary:
-      "If you make 2,000,000 coins trading, FUTEarn takes 1,000,000 coins from your account—worth over $60 in third-party coin value—while exposing your account to datacenter IP bans. With Elite FUT SNIPER, you pay a single flat €19.90 fee and keep all 2,000,000 coins safely inside your club.",
+      "If you make 2,000,000 coins trading, FUTEarn takes 1,000,000 coins from your account—worth over $60 in third-party coin value—while exposing your account to datacenter IP bans. With Elite FUT SNIPER, you pay a flat €19.90/year and keep all 2,000,000 coins safely inside your club.",
   },
 
   keyStatistics: [

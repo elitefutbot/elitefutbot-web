@@ -38,7 +38,7 @@ export const futUltimateSniperData: CompetitorData = {
     "Integrated neural AI SBC solver that automatically builds chemistry with club untradeables",
     "Humanization++ mode with randomized Bézier mouse dynamics and a verified record of 0 bans to date",
     "Docked Chrome Side Panel HUD leaving the official Web App canvas completely unobstructed",
-    "Transparent flat €19.90 365-day access license with all 11 modules included and zero recurring fees",
+    "Transparent flat €19.90 365-day access license with all 11 modules included and zero monthly fees",
     "24/7 VIP Discord community with direct access to lead engine architects, open 7 days a week",
   ],
   idealFor: {

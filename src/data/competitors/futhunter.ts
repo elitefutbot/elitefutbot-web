@@ -36,7 +36,7 @@ export const futHunterData: CompetitorData = {
     "Humanization++ mode with Bézier mouse curves and a verified record of 0 bans to date",
     "Integrated neural AI SBC solver that automatically builds chemistry with club untradeables",
     "Lightweight native Chrome Side Panel HUD consuming under 45MB RAM across Mac, Windows, and Linux",
-    "Transparent flat €19.90 365-day access license with all 11 modules included and zero recurring fees",
+    "Transparent flat €19.90 365-day access license with all 11 modules included and zero monthly fees",
   ],
   idealFor: {
     competitor: "Commercial coin-selling operations managing bulk account farms for black-market coin liquidation.",

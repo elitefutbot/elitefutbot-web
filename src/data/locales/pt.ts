@@ -144,8 +144,8 @@ export const ptLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Pagamento Único Anual",
-          description: "365 dias de acesso irrestrito. Sua licença continua válida mesmo com atualizações do jogo.",
+          title: "Preço Anual Acessível",
+          description: "€19.90 por ano, cobrado anualmente. Válido mesmo com atualizações do jogo – cancele quando quiser.",
           iconName: "CalendarCheck",
         },
       ],
@@ -174,7 +174,7 @@ export const ptLocale: LocaleDictionary = {
     pricing: {
       title: "Preços do FUT Sniping Bot e",
       titleHighlight: "Autobuyer",
-      subtitle: "Preços transparentes. Sem taxas ocultas nem assinaturas recorrentes.",
+      subtitle: "Preços transparentes. Sem taxas ocultas, cancele quando quiser.",
       freeCard: {
         badge: "Acesso Limitado de 2 Dias",
         title: "Teste Grátis (2 Dias)",
@@ -203,7 +203,7 @@ export const ptLocale: LocaleDictionary = {
         title: "Pro Sniper",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "Pagamento Único · 365 Dias · FC 27 e FC 26",
+        guarantee: "Cobrança Anual · Cancele Quando Quiser · FC 27 e FC 26",
         spotsLeft: "12 Vagas restantes a €19.90",
         soldText: "88/100 vendidos",
         nextPrice: "Próximo preço: €29.90",
@@ -230,7 +230,7 @@ export const ptLocale: LocaleDictionary = {
           { text: "Atualizações Prioritárias e Acesso Imediato a Patches" },
           { text: "Potencial de Lucro de 10M+ Coins" },
           { text: "Resolvedor de DME com IA", isSoon: true },
-          { text: "Aplicativos Móveis (iOS e Android)", isSoon: true },
+          { text: "Complemento Acesso ao App Móvel · +€10/ano", isSoon: true },
         ],
         cta: "Garantir Acesso Pro Sniper",
       },
@@ -618,7 +618,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Preço",
-          elite: "€19.90 Pagamento Único (365 Dias + Teste Grátis)",
+          elite: "€19.90/ano · cancele quando quiser (+ Teste Grátis)",
           cloud: "$15 – $35 / mês assinatura recorrente",
           manual: "Grátis (Custa 4+ horas diárias)",
         },
@@ -1000,7 +1000,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Cobrança",
-          elite: "€19.90 Pagamento Único (365 Dias Completos)",
+          elite: "€19.90/ano · Cancele Quando Quiser",
           cloud: "$15–$30 / mês assinaturas recorrentes",
         },
         {
@@ -1072,8 +1072,8 @@ export const ptLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Pagamento Único Anual",
-          desc: "365 dias de acesso irrestrito com suporte contínuo para o FC 26 e o FC 27.",
+          title: "Preço Anual Acessível",
+          desc: "€19.90/ano com suporte contínuo para o FC 26 e o FC 27. Cancele quando quiser.",
           iconName: "Clock",
         },
       ],
@@ -1084,7 +1084,7 @@ export const ptLocale: LocaleDictionary = {
       description:
         "Em desenvolvimento ativo — nosso futuro motor de inteligência artificial resolverá Desafios de Montagem de Elenco com itens do clube ou sem clube, calculando a combinação matemática mais econômica que atenda aos requisitos de química e classificação.",
       status: "Em Desenvolvimento Ativo",
-      licenseBadge: "Licença de 365 Dias",
+      licenseBadge: "Plano Pro",
       licenseTitle: "Atualização Gratuita",
       licenseDesc:
         "Todos os assinantes com licença ativa receberão acesso automático no lançamento.",
@@ -1107,7 +1107,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           q: "Minha licença cobre tanto o EA FC 27 quanto a Web App do EA FC 26?",
-          a: "Sim. Cada licença oferece 365 dias de acesso com atualizações automáticas e gratuitas quando novas temporadas forem lançadas.",
+          a: "Sim. O Pro cobre ambos por €19.90 por ano, com atualizações automáticas e gratuitas quando novas temporadas forem lançadas. Cancele quando quiser e mantenha o acesso até o fim do ano pago.",
         },
         {
           q: "Posso usar várias contas ou abas simultaneamente?",

@@ -256,7 +256,7 @@ const OUTPERFORM_COMPARISON = [
   },
   {
     feature: "Pricing Model",
-    elite: "€19.90 One-Time Payment (365 Full Days)",
+    elite: "€19.90/year (Cancel Anytime)",
     cloud: "$15–$30/mo recurring subscriptions",
     highlight: false,
   },
@@ -334,8 +334,8 @@ const OUTPERFORM_POINTS = [
     icon: MessageSquare,
   },
   {
-    title: "One Time Purchase",
-    desc: "365 days of full access. Your license remains valid and updated across both EA FC 26 and FC 27.",
+    title: "Simple Yearly Plan",
+    desc: "€19.90 per year with full access, kept updated across both EA FC 26 and FC 27. Cancel anytime.",
     icon: Clock,
   },
 ];

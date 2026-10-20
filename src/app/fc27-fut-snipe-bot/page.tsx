@@ -330,7 +330,7 @@ const COMPARISON_ROWS = [
   },
   {
     feature: "Pricing Model",
-    elite: "€19.90 One-Time (365 Full Days + Free Trial)",
+    elite: "€19.90/year (Cancel Anytime + Free Trial)",
     cloud: "$15 – $35/month recurring subscription",
     manual: "Free (Costs 4+ hours daily)",
   },

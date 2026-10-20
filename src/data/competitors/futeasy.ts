@@ -53,7 +53,7 @@ export const futEasyData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "Freemium / regional pricing model with unclear tier specifications",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
+    elitePricing: "€19.90/year (Cancel Anytime + 2-Day Free Trial)",
     difference:
       "FutEasy operates with ambiguous regional monetization and language barriers, while Elite FUT SNIPER provides an immediate 2-day free trial followed by a single flat €19.90 annual fee covering all features, continuous updates, and VIP Discord alpha.",
   },

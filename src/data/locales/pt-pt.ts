@@ -139,8 +139,8 @@ export const ptPtLocale: LocaleDictionary = {
           iconName: "CheckCircle2",
         },
         {
-          title: "Taxa Anual Única",
-          description: "365 dias de acesso total. Sem surpresas de pagamentos mensais ou subscrições repetidas.",
+          title: "Preço Anual Acessível",
+          description: "€19.90 por ano, cobrado anualmente. Sem pagamentos mensais, cancela quando quiseres.",
           iconName: "Clock",
         },
         {
@@ -171,7 +171,7 @@ export const ptPtLocale: LocaleDictionary = {
         { feature: "Motor de Resolução de SBC com IA", elite: true, typical: false },
         { feature: "Zero Partilha de Palavra-passe (Segurança Total)", elite: true, typical: false },
         { feature: "Filtros de Mercado de Alta Margem no Discord", elite: true, typical: false },
-        { feature: "Taxa Anual Única (€19.90/ano)", elite: true, typical: false },
+        { feature: "Preço Anual Acessível (€19.90/ano, Cancela Quando Quiseres)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -201,7 +201,7 @@ export const ptPtLocale: LocaleDictionary = {
         title: "Passe Pro Sniper",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "Licença de 365 Dias · Todas as Atualizações FC 26 e FC 27 Incluídas",
+        guarantee: "Cobrança Anual · Cancela Quando Quiseres · Todas as Atualizações FC 26 e FC 27 Incluídas",
         spotsLeft: "12 Vagas restantes a €19.90",
         soldText: "88/100 vendidos",
         nextPrice: "Próximo preço: €29.90",
@@ -224,7 +224,7 @@ export const ptPtLocale: LocaleDictionary = {
           { text: "Atualizações Prioritárias e Acesso Imediato a Patches" },
           { text: "Potencial de Ganho Superior a 10M de Moedas" },
           { text: "Resolução de SBCs com IA", isSoon: true },
-          { text: "Aplicações Móveis (iOS e Android)", isSoon: true },
+          { text: "Extra Acesso à App Móvel · +€10/ano", isSoon: true },
         ],
         cta: "Obter Acesso Pro Sniper",
       },
@@ -554,7 +554,7 @@ export const ptPtLocale: LocaleDictionary = {
         },
         {
           feature: "Formato de Pagamento",
-          elite: "€19.90/ano (365 dias) · Período experimental de 2 dias",
+          elite: "€19.90/ano · cancela quando quiseres · Período experimental de 2 dias",
           cloud: "Mensalidades repetidas de 15€ a 30€ por mês",
           manual: "Gratuito (Exige centenas de horas de esforço)",
         },
@@ -642,7 +642,7 @@ export const ptPtLocale: LocaleDictionary = {
         "Extensão 100% Local para o Chrome",
         "Velocidade de Snipe Sub-20ms",
         "0 Banimentos Registados",
-        "Licença de 365 Dias",
+        "€19.90/Ano · Cancela Quando Quiseres",
       ],
     },
   },
@@ -856,7 +856,7 @@ export const ptPtLocale: LocaleDictionary = {
         },
         {
           feature: "Formato Comercial",
-          elite: "€19.90 Valor Único (365 Dias de Acesso)",
+          elite: "€19.90/ano · Cancela Quando Quiseres",
           cloud: "Mensalidades repetidas de 15€ a 30€ por mês",
         },
         {
@@ -928,8 +928,8 @@ export const ptPtLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Pagamento Anual Único",
-          desc: "365 dias de acesso irrestrito com atualizações regulares para o FC 26 e FC 27.",
+          title: "Preço Anual Acessível",
+          desc: "€19.90/ano com atualizações regulares para o FC 26 e FC 27. Cancela quando quiseres.",
           iconName: "Clock",
         },
       ],
@@ -940,7 +940,7 @@ export const ptPtLocale: LocaleDictionary = {
       description:
         "Em fase de desenvolvimento adiantado — o nosso módulo inteligente completará Desafios de Construção de Plantel aproveitando cartas do clube e adquirindo as restantes ao preço mais económico.",
       status: "Em Fase de Desenvolvimento",
-      licenseBadge: "Licença de 365 Dias",
+      licenseBadge: "Plano Pro",
       licenseTitle: "Melhoria Incluída",
       licenseDesc:
         "Todos os utilizadores com licença ativa terão acesso automático assim que for disponibilizado.",
@@ -963,7 +963,7 @@ export const ptPtLocale: LocaleDictionary = {
         },
         {
           q: "A licença adquirida serve tanto para o EA FC 26 como para a Web App do EA FC 27?",
-          a: "Sim. Cada licença assegura 365 dias completos de utilização com acesso a todas as atualizações de novas épocas da EA sem custos extra.",
+          a: "Sim. O Pro cobre ambos por €19.90 por ano, com acesso a todas as atualizações de novas épocas da EA sem custos extra. Cancela quando quiseres e mantém o acesso até ao fim do ano pago.",
         },
         {
           q: "É possível gerir mais do que uma conta ou ter vários separadores?",

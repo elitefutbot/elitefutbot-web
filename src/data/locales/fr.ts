@@ -144,8 +144,8 @@ export const frLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Achat Unique Annuel",
-          description: "365 jours d'accès complet. Votre licence reste valide même lors des mises à jour de saison.",
+          title: "Petit Prix Annuel",
+          description: "€19.90 par an, facturé annuellement. Reste valide lors des mises à jour de saison – résiliable à tout moment.",
           iconName: "CalendarCheck",
         },
       ],
@@ -174,7 +174,7 @@ export const frLocale: LocaleDictionary = {
     pricing: {
       title: "Tarifs FUT Sniping Bot &",
       titleHighlight: "Autobuyer",
-      subtitle: "Tarification transparente. Sans frais cachés ni abonnement récurrent.",
+      subtitle: "Tarification transparente. Sans frais cachés, résiliable à tout moment.",
       freeCard: {
         badge: "Accès Limité 2 Jours",
         title: "Essai Gratuit (2 Jours)",
@@ -203,7 +203,7 @@ export const frLocale: LocaleDictionary = {
         title: "Pro Sniper",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "Paiement Unique · 365 Jours · FC 27 & FC 26",
+        guarantee: "Facturé Annuellement · Résiliable à Tout Moment · FC 27 & FC 26",
         spotsLeft: "12 Places restantes à €19.90",
         soldText: "88/100 vendus",
         nextPrice: "Prochain prix : €29.90",
@@ -230,7 +230,7 @@ export const frLocale: LocaleDictionary = {
           { text: "Mises à Jour Prioritaires & Accès Patch Rapide" },
           { text: "Potentiel de Gain de 10M+ Crédits" },
           { text: "Solveur de DCE par IA", isSoon: true },
-          { text: "Applications Mobiles (iOS & Android)", isSoon: true },
+          { text: "Option Accès Application Mobile · +€10/an", isSoon: true },
         ],
         cta: "Obtenir l'Accès Pro Sniper",
       },
@@ -618,7 +618,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Modèle Tarifaire",
-          elite: "€19.90 Paiement Unique (365 Jours + Essai)",
+          elite: "€19.90/an · résiliable à tout moment (+ Essai)",
           cloud: "15 € – 35 € / mois récurrent",
           manual: "Gratuit (Coûte 4+ heures par jour)",
         },
@@ -710,7 +710,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           q: "Quelle différence entre Elite FUT SNIPER et des bots cloud comme FutBot ou FutEarn ?",
-          a: "Les bots cloud transitent par des serveurs partagés, générant 150ms–350ms de latence et exigeant votre mot de passe. Elite FUT SNIPER fonctionne localement à <20ms, ne transmet aucune donnée et ne coûte qu'un paiement unique de €19.90 par an.",
+          a: "Les bots cloud transitent par des serveurs partagés, générant 150ms–350ms de latence et exigeant votre mot de passe. Elite FUT SNIPER fonctionne localement à <20ms, ne transmet aucune donnée et ne coûte que €19.90 par an, résiliable à tout moment.",
         },
         {
           q: "Où trouver des filtres de sniping rentables et de l'aide ?",
@@ -1000,7 +1000,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Modèle de Tarification",
-          elite: "€19.90 Paiement Unique (365 Jours Complets)",
+          elite: "€19.90/an · Résiliable à Tout Moment",
           cloud: "15 €–30 € / mois abonnements récurrents",
         },
         {
@@ -1072,8 +1072,8 @@ export const frLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Achat Unique Annuel",
-          desc: "365 jours d'accès complet avec mises à jour garanties pour FC 26 et FC 27.",
+          title: "Petit Prix Annuel",
+          desc: "€19.90/an avec mises à jour garanties pour FC 26 et FC 27. Résiliable à tout moment.",
           iconName: "Clock",
         },
       ],
@@ -1084,7 +1084,7 @@ export const frLocale: LocaleDictionary = {
       description:
         "En cours de développement actif — notre futur moteur d'intelligence artificielle résoudra les Défis de Création d'Équipe à partir de vos joueurs non assignés et de votre club, calculant la composition la plus économique respectant les critères de note et de collectif.",
       status: "En Développement Actif",
-      licenseBadge: "Licence 365 Jours",
+      licenseBadge: "Abonnement Pro",
       licenseTitle: "Mise à Niveau Offerte",
       licenseDesc:
         "Tous les titulaires d'une licence active recevront un accès automatique lors du déploiement.",
@@ -1107,7 +1107,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           q: "Ma licence est-elle valide pour EA FC 27 et la Web App d'EA FC 26 ?",
-          a: "Oui. Chaque licence comprend 365 jours d'accès complet avec mises à jour automatiques sans surcoût lors des sorties de nouvelles saisons.",
+          a: "Oui. Pro couvre les deux pour €19.90 par an, avec mises à jour automatiques sans surcoût lors des nouvelles saisons. Résiliable à tout moment, l'accès reste actif jusqu'à la fin de l'année payée.",
         },
         {
           q: "Puis-je faire tourner plusieurs comptes ou onglets en même temps ?",

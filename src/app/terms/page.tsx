@@ -32,7 +32,7 @@ export default function TermsPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Terms of <span className="text-primary italic">Service</span>
           </h1>
-          <p className="text-sm text-gray-400 font-medium">Last updated: September 18, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: October 16, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">
@@ -71,8 +71,9 @@ export default function TermsPage() {
               Certain premium parts of the Service require a paid license or subscription. By purchasing a subscription or license, you receive immediate digital access to the software and agree to pay all applicable fees, including taxes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Billing Cycle:</strong> Subscriptions are billed on a recurring basis (monthly or annually) or sold as fixed-duration access passes depending on the plan selected at checkout.</li>
-              <li><strong>Automatic Renewal:</strong> For recurring plans, your subscription will automatically renew at the end of each billing cycle unless you cancel it before the renewal date.</li>
+              <li><strong>Billing Cycle:</strong> The Pro plan is billed annually (€19.90 per year at the current price). Licenses purchased before the switch to yearly billing remain valid until their stated expiry date.</li>
+              <li><strong>Automatic Renewal:</strong> Your subscription automatically renews at the end of each yearly billing cycle and the payment method on file is charged, unless you cancel before the renewal date. If you already hold an active license when you turn on automatic renewal, nothing is charged until that license&apos;s expiry date, which becomes your renewal date.</li>
+              <li><strong>Mobile App Access Add-on:</strong> Mobile App Access is an optional add-on (€10 per year at the current price) available only together with an active Pro plan. It works only while your Pro plan is active and ends when your Pro plan ends. When added to an existing plan or license, it is charged pro rata for the time remaining until your renewal or expiry date, and from then on renews together with Pro.</li>
               <li><strong>Price Adjustments:</strong> We reserve the right to change our subscription fees. Any price changes will be communicated in advance and will apply only to subsequent billing periods.</li>
             </ul>
           </section>
@@ -92,7 +93,7 @@ export default function TermsPage() {
                 <strong>Always Available 2-Day Free Trial:</strong> To ensure complete satisfaction and transparency before making any financial commitment, <strong>we provide a 2-day free trial on all new accounts</strong>. No credit card or payment information is required to access the trial. You can always use this 2-day trial period to test all features, bot settings, browser compatibility, and performance in your environment prior to purchasing. By completing a purchase, you acknowledge that you have had the opportunity to evaluate the software during the 2-day trial and expressly waive any right to claim a refund.
               </li>
               <li>
-                <strong>Cancellations:</strong> You can cancel your recurring subscription at any time directly from your account settings page or by contacting support. Following cancellation, your payment method will not be charged again, and you will continue to have access to premium features until the end of your current active billing period.
+                <strong>Cancellations:</strong> You can cancel your recurring subscription at any time via &ldquo;Manage subscription&rdquo; on your account dashboard or by contacting support. Following cancellation, your payment method will not be charged again, and you will continue to have access to premium features until the end of your current active billing period.
               </li>
               <li>
                 <strong>Chargebacks &amp; Dispute Policy:</strong> If a chargeback or payment dispute is initiated without first contacting our customer support team, your license keys, account access, and associated hardware identifiers will be permanently suspended.

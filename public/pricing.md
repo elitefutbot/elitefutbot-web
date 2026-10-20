@@ -12,8 +12,8 @@
   - Free Daily Discord Community Alpha Sniping Filters (https://discord.gg/Rkb9nF6WG6)
   - Full Primary Support for active EA Sports FC 27 (with legacy FC 26 compatibility)
 
-## Pro Sniper Pass (365-Day Full Access)
-- Price: €19.90 One-Time Payment (12 Spots Left at €19.90 · 88/100 sold · Next price: €29.90 · 365 Days Access, No Monthly Subscriptions)
+## Pro Sniper Pass (Yearly Subscription)
+- Price: €19.90/year, renews automatically, cancel anytime (12 Spots Left at €19.90 · 88/100 sold · Next price: €29.90 · No monthly fees)
 - Features:
   - All Free Trial features included
   - Unlimited Multi-Account & Multi-Tab local execution
@@ -24,6 +24,10 @@
   - Integrated Neural AI SBC Solver Module (v1.0.21)
   - Priority Updates & Immediate EA Patch Access
   - Continuous Day-One FC 27 Updates & Full Legacy FC 26 Support (Zero Upgrade Fees)
+
+## Mobile App Access Add-on (Coming Soon)
+- Price: €10/year on top of an active Pro plan (existing Pro members pay only for the time left until their renewal date)
+- iOS & Android; works only while Pro is active and renews together with Pro
 
 ## Affiliate & Creator Partner Program
 - Commission: 50% Standard Lifetime RevShare ($10.00 to $17.50+ per sale)

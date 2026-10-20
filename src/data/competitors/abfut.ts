@@ -39,7 +39,7 @@ export const abFutData: CompetitorData = {
     "Continuous, uninterrupted 24/7 background execution with zero mobile OS throttling or battery drain",
     "Humanization++ mode with mathematical Bézier physics and Gaussian jitter (0 bans across 14,000+ sessions)",
     "Clean Manifest V3 Chrome Side Panel HUD docking beside the Web App with zero canvas clutter",
-    "Single flat €19.90 payment for 365-day full-season access covering both FC 27 and legacy FC 26",
+    "Flat €19.90/year for full-season access covering both FC 27 and legacy FC 26",
     "24/7 VIP Discord trading community with daily high-ROI filter drops included free",
   ],
   idealFor: {
@@ -54,9 +54,9 @@ export const abFutData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "$1.99/month or $12.99/year recurring subscription via mobile app store",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
+    elitePricing: "€19.90/year (Cancel Anytime + 2-Day Free Trial)",
     difference:
-      "ABFut charges recurring monthly subscriptions that automatically renew, whereas Elite FUT SNIPER provides a 2-day free trial followed by a single flat €19.90 fee for 365 days of unrestricted desktop automation, AI SBC solving, and VIP Discord alpha.",
+      "ABFut charges recurring monthly subscriptions that automatically renew, whereas Elite FUT SNIPER provides a 2-day free trial followed by a flat €19.90/year fee for unrestricted desktop automation, AI SBC solving, and VIP Discord alpha.",
   },
 
 

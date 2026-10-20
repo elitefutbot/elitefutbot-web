@@ -53,7 +53,7 @@ export const eafcSnipingBotData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "12-hour free trial; paid access from approx. €24.99/season",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
+    elitePricing: "€19.90/year (Cancel Anytime + 2-Day Free Trial)",
     difference:
       "EAFC Sniping Bot restricts free testing to a brief 12-hour window, whereas Elite FUT SNIPER offers a full 2-day free trial followed by a flat €19.90 annual license covering all features, continuous updates, and VIP Discord alpha.",
   },
