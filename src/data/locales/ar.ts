@@ -223,7 +223,7 @@ export const arLocale: LocaleDictionary = {
         title: "باقة PRO الاحترافية",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "ضمان استرجاع الأموال خلال 14 يوماً بدون شروط معقدة",
+        guarantee: "€19.90 سنوياً · يتجدد تلقائياً · إلغاء في أي وقت",
         spotsLeft: "متبقي 12 مقعداً فقط بسعر €19.90",
         soldText: "تم بيع 88/100 ترخيص",
         nextPrice: "السعر التالي: €29.90",
@@ -251,7 +251,7 @@ export const arLocale: LocaleDictionary = {
             isSoon: true,
           },
           {
-            text: "تطبيقات الهواتف الذكية (iOS و Android)",
+            text: "إضافة الوصول إلى تطبيق الهاتف · +€10 سنوياً",
             isSoon: true,
           },
           {
@@ -756,7 +756,7 @@ export const arLocale: LocaleDictionary = {
       description:
         "نواصل تحديث البوت أسبوعياً لمواكبة كافة تحديثات EA Sports وإضافة المزيد من الأدوات الذكية لخدمة مجتمع التجار.",
       status: "تحديثات مستمرة ونشطة",
-      licenseBadge: "ترخيص مدى الحياة / مواسم",
+      licenseBadge: "اشتراك PRO السنوي",
       licenseTitle: "دعم فني وتحديثات متواصلة",
       licenseDesc: "استمتع بكافة التحديثات والتحسينات المستقبلية تلقائياً دون أي تكاليف خفية إضافية.",
     },

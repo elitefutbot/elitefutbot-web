@@ -227,7 +227,7 @@ export const futSniperData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive License",
-      price: "€19.90 One-Time (Full 365 Days Access)",
+      price: "€19.90/year (Cancel Anytime)",
       inclusions: [
         "100% of all coins sniped remain 100% yours — 0% commission, zero profit cut",
         "Full access to all 11 automation modules including sub-20ms high-frequency sniper",
@@ -237,7 +237,7 @@ export const futSniperData: CompetitorData = {
       ],
     },
     summary:
-      "FUT Sniper forces international traders to navigate confusing Russian payment portals for basic weekly macro scripts with strict device caps. Elite FUT SNIPER gives you 365 days of full, unrestricted access to sub-20ms sniping, AI SBC solving, and VIP Discord filters for a single flat €19.90 payment.",
+      "FUT Sniper forces international traders to navigate confusing Russian payment portals for basic weekly macro scripts with strict device caps. Elite FUT SNIPER gives you 365 days of full, unrestricted access to sub-20ms sniping, AI SBC solving, and VIP Discord filters for a flat €19.90/year.",
   },
 
   keyStatistics: [
@@ -386,7 +386,7 @@ export const futSniperData: CompetitorData = {
     {
       question: "How does FUT Sniper's pricing compare to Elite FUT SNIPER?",
       answer:
-        "FUT Sniper operates on confusing weekly and monthly tiers denominated in Russian Rubles (400₽–2600₽), requiring foreign payment gateways like Lava and Enot while restricting users to 1 PC / 3 accounts on base tiers. Elite FUT SNIPER offers transparent global pricing: a single €19.90 flat payment gives you full, unrestricted access to all 11 modules for 365 days with zero commission and free daily VIP Discord trading filters.",
+        "FUT Sniper operates on confusing weekly and monthly tiers denominated in Russian Rubles (400₽–2600₽), requiring foreign payment gateways like Lava and Enot while restricting users to 1 PC / 3 accounts on base tiers. Elite FUT SNIPER offers transparent global pricing: a flat €19.90/year gives you full, unrestricted access to all 11 modules for 365 days with zero commission and free daily VIP Discord trading filters.",
     },
   ],
 

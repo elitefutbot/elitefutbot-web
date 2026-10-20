@@ -38,7 +38,7 @@ export const fcAutoBuyerData: CompetitorData = {
     "Humanization++ mode with mathematical Bézier physics and Gaussian timing variance (0 bans across 14,000+ sessions)",
     "Clean Manifest V3 Chrome Side Panel HUD docking beside the Web App with zero DOM overlay clutter",
     "Both high-frequency Buy-Now sniping and automated mass bidding operational on day one",
-    "Full 365-day access for a single flat €19.90 payment covering both FC 27 and legacy FC 26",
+    "Full access for a flat €19.90/year covering both FC 27 and legacy FC 26",
     "24/7 VIP Discord trading community with daily high-ROI filter drops at zero extra cost",
   ],
   idealFor: {
@@ -53,7 +53,7 @@ export const fcAutoBuyerData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "Free open beta (gated by 48-hour Discord keys; commercial pricing TBA)",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
+    elitePricing: "€19.90/year (Cancel Anytime + 2-Day Free Trial)",
     difference:
       "FC AutoBuyer offers free temporary testing with uncertain future pricing and key expiration, whereas Elite FUT SNIPER provides an immediate 2-day free trial followed by a transparent, single €19.90 annual license covering all features, updates, and Discord alpha.",
   },

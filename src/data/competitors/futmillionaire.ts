@@ -248,7 +248,7 @@ export const futMillionaireData: CompetitorData = {
 
   comparisonRows: [
     { feature: "Software Delivery", elite: "1-Click Native Chrome Extension (<40MB)", competitor: "Heavy Standalone Desktop Software (850MB+)", winner: "elite" },
-    { feature: "Pricing Model", elite: "€19.90 One-Time (365 Days Access)", competitor: "Recurring Monthly Subscription ($22.90/month)", winner: "elite" },
+    { feature: "Pricing Model", elite: "€19.90/year (Cancel Anytime)", competitor: "Recurring Monthly Subscription ($22.90/month)", winner: "elite" },
     { feature: "Market Search Speed", elite: "Sub-20ms Direct In-Browser WebSocket", competitor: "80ms–150ms Emulated Desktop WebDriver", winner: "elite" },
     { feature: "AI SBC Chemistry Solver", elite: "Integrated Real-Time AI Auto-Buy", competitor: "Basic Static Blueprint Guide (No Auto-Solver)", winner: "elite" },
     { feature: "Operating System Support", elite: "Windows, macOS, Linux, ChromeOS", competitor: "Windows PC Only (Requires .NET Runtime)", winner: "elite" },

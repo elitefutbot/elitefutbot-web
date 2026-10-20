@@ -139,8 +139,8 @@ export const itLocale: LocaleDictionary = {
           iconName: "CheckCircle2",
         },
         {
-          title: "Prezzo Annuale Unico",
-          description: "365 giorni di accesso completo. Nessun costo mensile ricorrente o abbonamento a sorpresa.",
+          title: "Prezzo Annuale Contenuto",
+          description: "€19.90 all'anno, fatturati annualmente. Nessun costo mensile, disdici quando vuoi.",
           iconName: "Clock",
         },
         {
@@ -171,7 +171,7 @@ export const itLocale: LocaleDictionary = {
         { feature: "Motore Risolutore SBC con IA", elite: true, typical: false },
         { feature: "Nessuna Condivisione Password (Sicurezza Totale)", elite: true, typical: false },
         { feature: "Filtri Discord ad Alto Margine", elite: true, typical: false },
-        { feature: "Quota Annuale Singola (€19.90/anno)", elite: true, typical: false },
+        { feature: "Prezzo Annuale Contenuto (€19.90/anno, Disdici Quando Vuoi)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -201,7 +201,7 @@ export const itLocale: LocaleDictionary = {
         title: "Pass Pro Sniper",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "Licenza 365 Giorni · Tutti gli Aggiornamenti FC 26 & FC 27 Inclusi",
+        guarantee: "Fatturazione Annuale · Disdici Quando Vuoi · Tutti gli Aggiornamenti FC 26 & FC 27 Inclusi",
         spotsLeft: "12 Posti rimanenti a €19.90",
         soldText: "88/100 venduti",
         nextPrice: "Prezzo successivo: €29.90",
@@ -224,7 +224,7 @@ export const itLocale: LocaleDictionary = {
           { text: "Aggiornamenti Prioritari e Accesso Immediato alle Patch" },
           { text: "Potenziale di Guadagno di Oltre 10 Milioni di Crediti" },
           { text: "Risolutore SBC con IA", isSoon: true },
-          { text: "App Mobile (iOS e Android)", isSoon: true },
+          { text: "Add-on Accesso App Mobile · +€10/anno", isSoon: true },
         ],
         cta: "Ottieni Accesso Pro Sniper",
       },
@@ -554,7 +554,7 @@ export const itLocale: LocaleDictionary = {
         },
         {
           feature: "Modello di Prezzo",
-          elite: "€19.90/anno (365 giorni) · Prova gratuita 2 giorni",
+          elite: "€19.90/anno · disdici quando vuoi · Prova gratuita 2 giorni",
           cloud: "Abbonamenti ricorrenti da 15€ a 30€/mese",
           manual: "Gratuito (Costa centinaia di ore)",
         },
@@ -642,7 +642,7 @@ export const itLocale: LocaleDictionary = {
         "Estensione Chrome 100% Locale",
         "Velocità di Snipe Sub-20ms",
         "0 Ban Documentati",
-        "Licenza da 365 Giorni",
+        "€19.90/Anno · Disdici Quando Vuoi",
       ],
     },
   },
@@ -856,7 +856,7 @@ export const itLocale: LocaleDictionary = {
         },
         {
           feature: "Modello di Prezzo",
-          elite: "€19.90 Singola Quota (365 Giorni Completi)",
+          elite: "€19.90/anno · Disdici Quando Vuoi",
           cloud: "Abbonamenti ricorrenti da 15€ a 30€ al mese",
         },
         {
@@ -928,8 +928,8 @@ export const itLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Quota Singola Annuale",
-          desc: "365 giorni di accesso totale con aggiornamenti costanti sia per FC 26 che per FC 27.",
+          title: "Prezzo Annuale Contenuto",
+          desc: "€19.90/anno con aggiornamenti costanti sia per FC 26 che per FC 27. Disdici quando vuoi.",
           iconName: "Clock",
         },
       ],
@@ -940,7 +940,7 @@ export const itLocale: LocaleDictionary = {
       description:
         "Attualmente in fase di sviluppo attivo — il nostro prossimo motore di intelligenza artificiale risolverà le Sfide Creazione Rosa usando le carte non scambiabili del tuo club e completando i ruoli mancanti al minor costo matematico possibile.",
       status: "In Sviluppo Attivo",
-      licenseBadge: "Licenza da 365 Giorni",
+      licenseBadge: "Piano Pro",
       licenseTitle: "Aggiornamento Gratuito",
       licenseDesc:
         "Tutti gli utenti con licenza attiva riceveranno accesso automatico non appena disponibile.",
@@ -963,7 +963,7 @@ export const itLocale: LocaleDictionary = {
         },
         {
           q: "La mia licenza copre sia EA FC 26 che la Web App di EA FC 27?",
-          a: "Sì. Ogni licenza include 365 giorni completi di accesso con aggiornamenti automatici senza costi aggiuntivi all'uscita delle nuove stagioni.",
+          a: "Sì. Pro copre entrambi a €19.90 all'anno, con aggiornamenti automatici senza costi aggiuntivi all'uscita delle nuove stagioni. Disdici quando vuoi e mantieni l'accesso fino alla fine dell'anno pagato.",
         },
         {
           q: "Posso utilizzare più account o schede contemporaneamente?",

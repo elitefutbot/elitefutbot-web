@@ -129,8 +129,8 @@ export const enLocale: LocaleDictionary = {
           iconName: "CheckCircle2",
         },
         {
-          title: "One-Time Annual Fee",
-          description: "Full 365-day access. No surprise monthly charges or recurring subscriptions.",
+          title: "One Low Yearly Price",
+          description: "€19.90 per year, billed yearly. No monthly fees, cancel anytime.",
           iconName: "CalendarCheck",
         },
         {
@@ -161,7 +161,7 @@ export const enLocale: LocaleDictionary = {
         { feature: "AI SBC Solver Engine", elite: true, typical: false },
         { feature: "Zero Password Sharing (Full Security)", elite: true, typical: false },
         { feature: "Discord High-Margin Trading Filters", elite: true, typical: false },
-        { feature: "One-Time Annual Fee (€19.90/yr)", elite: true, typical: false },
+        { feature: "Low Yearly Price (€19.90/yr, Cancel Anytime)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -191,7 +191,7 @@ export const enLocale: LocaleDictionary = {
         title: "Pro Sniper Pass",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "365-Day License · All FC 26 & FC 27 Updates Included",
+        guarantee: "Billed Yearly · Cancel Anytime · All FC 26 & FC 27 Updates Included",
         spotsLeft: "12 Spots Left at €19.90",
         soldText: "88/100 sold",
         nextPrice: "Next price: €29.90",
@@ -214,7 +214,7 @@ export const enLocale: LocaleDictionary = {
           { text: "Priority Updates & Early Patch Access" },
           { text: "10M+ Coins Earning Potential" },
           { text: "AI SBC Solver", isSoon: true },
-          { text: "Mobile Apps (iOS & Android)", isSoon: true },
+          { text: "Mobile App Access add-on · +€10/year", isSoon: true },
         ],
         cta: "Get Pro Sniper Access",
       },
@@ -544,7 +544,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           feature: "Pricing Model",
-          elite: "€19.90/year (365 days) · 2-day free trial",
+          elite: "€19.90/year · cancel anytime · 2-day free trial",
           cloud: "$15–$30/month recurring subscriptions",
           manual: "Free (Costs hundreds of hours)",
         },
@@ -632,7 +632,7 @@ export const enLocale: LocaleDictionary = {
         "100% Local Chrome Extension",
         "Sub-20ms Snipe Speed",
         "0 Bans Documented",
-        "365-Day License",
+        "€19.90/Year · Cancel Anytime",
       ],
     },
   },
@@ -846,7 +846,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           feature: "Pricing Model",
-          elite: "€19.90 One-Time (Full 365 Days)",
+          elite: "€19.90/year · Cancel Anytime",
           cloud: "$15–$30 / month recurring subscriptions",
         },
         {
@@ -918,8 +918,8 @@ export const enLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "One-Time Annual Fee",
-          desc: "365 days of complete access with continuous updates for FC 26 and FC 27.",
+          title: "One Low Yearly Price",
+          desc: "€19.90/year with continuous updates for FC 26 and FC 27. Cancel anytime.",
           iconName: "Clock",
         },
       ],
@@ -930,7 +930,7 @@ export const enLocale: LocaleDictionary = {
       description:
         "Currently in active development — our upcoming artificial intelligence engine will solve Squad Building Challenges using unassigned players and cards from your club, calculating the mathematically cheapest combination satisfying chemistry and rating requirements.",
       status: "In Active Development",
-      licenseBadge: "365-Day License",
+      licenseBadge: "Pro Plan",
       licenseTitle: "Free Upgrade",
       licenseDesc:
         "All users with an active license will receive automatic access upon launch.",
@@ -953,7 +953,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           q: "Does my license cover both EA FC 26 and the EA FC 27 Web App?",
-          a: "Yes. Every license includes a full 365 days of access with automatic updates at no extra cost whenever EA rolls out new seasons.",
+          a: "Yes. Pro covers both for €19.90 per year, with automatic updates at no extra cost whenever EA rolls out new seasons. Cancel anytime and keep access until the end of your paid year.",
         },
         {
           q: "Can I use multiple accounts or tabs at once?",

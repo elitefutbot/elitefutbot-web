@@ -144,8 +144,8 @@ export const esLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Pago Único Anual",
-          description: "365 días de acceso total. Tu licencia permanece válida incluso con actualizaciones de parches del juego.",
+          title: "Precio Anual Reducido",
+          description: "€19.90 al año, facturado anualmente. Válido incluso con actualizaciones del juego – cancela cuando quieras.",
           iconName: "CalendarCheck",
         },
       ],
@@ -175,7 +175,7 @@ export const esLocale: LocaleDictionary = {
       title: "Precios de FUT Sniping Bot y",
       titleHighlight: "Autobuyer",
       subtitle:
-        "Elige el plan que se adapte a ti. Sin cargos ocultos ni suscripciones mensuales obligatorias.",
+        "Elige el plan que se adapte a ti. Sin cargos ocultos ni mensualidades. Cancela cuando quieras.",
       freeCard: {
         badge: "Acceso Gratuito",
         title: "Prueba Gratuita",
@@ -200,7 +200,7 @@ export const esLocale: LocaleDictionary = {
         title: "Pro Sniper",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "Pago Único · 365 Días · FC 27 y FC 26",
+        guarantee: "Facturación Anual · Cancela Cuando Quieras · FC 27 y FC 26",
         spotsLeft: "12 Plazas restantes a €19.90",
         soldText: "88/100 vendidos",
         nextPrice: "Próximo precio: €29.90",
@@ -227,7 +227,7 @@ export const esLocale: LocaleDictionary = {
           { text: "Actualizaciones Prioritarias y Acceso Rápido a Parches" },
           { text: "Potencial de Ganancia de 10M+ Monedas" },
           { text: "SBC Solver con IA", isSoon: true },
-          { text: "Apps Móviles (iOS y Android)", isSoon: true },
+          { text: "Complemento Acceso App Móvil · +€10/año", isSoon: true },
         ],
         cta: "Obtener Acceso Pro Sniper",
       },
@@ -615,7 +615,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "€19.90 Pago Único (365 Días + Prueba Gratis)",
+          elite: "€19.90/año · cancela cuando quieras (+ Prueba Gratis)",
           cloud: "$15 – $35 / mes suscripción recurrente",
           manual: "Gratis (Cuesta 4+ horas diarias)",
         },
@@ -707,7 +707,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           q: "¿Cómo se compara Elite FUT SNIPER con bots en la nube como FutBot o FutEarn?",
-          a: "Los bots en la nube enrutan solicitudes a través de servidores compartidos, introduciendo 150ms–350ms de latencia y exigiendo tu contraseña. Elite FUT SNIPER opera localmente a <20ms, no comparte datos y cuesta un único pago anual de €19.90.",
+          a: "Los bots en la nube enrutan solicitudes a través de servidores compartidos, introduciendo 150ms–350ms de latencia y exigiendo tu contraseña. Elite FUT SNIPER opera localmente a <20ms, no comparte datos y cuesta solo €19.90 al año, cancelable cuando quieras.",
         },
         {
           q: "¿Dónde consigo filtros de sniping rentables y soporte?",
@@ -997,7 +997,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Precios",
-          elite: "€19.90 Pago Único (365 Días Completos)",
+          elite: "€19.90/año · Cancela Cuando Quieras",
           cloud: "$15–$30 / mes suscripciones recurrentes",
         },
         {
@@ -1069,8 +1069,8 @@ export const esLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Pago Único Anual",
-          desc: "365 días de acceso total con actualizaciones continuas para FC 26 y FC 27.",
+          title: "Precio Anual Reducido",
+          desc: "€19.90/año con actualizaciones continuas para FC 26 y FC 27. Cancela cuando quieras.",
           iconName: "Clock",
         },
       ],
@@ -1081,7 +1081,7 @@ export const esLocale: LocaleDictionary = {
       description:
         "Actualmente en desarrollo activo — nuestro próximo motor de inteligencia artificial resolverá Desafíos de Creación de Plantillas utilizando jugadores sin asignar y cartas de tu club, calculando la combinación matemáticamente más económica que cumpla con los requisitos de media y química.",
       status: "En Desarrollo Activo",
-      licenseBadge: "Licencia de 365 Días",
+      licenseBadge: "Plan Pro",
       licenseTitle: "Actualización Gratuita",
       licenseDesc:
         "Todos los usuarios con licencia activa recibirán acceso automático en su lanzamiento.",
@@ -1104,7 +1104,7 @@ export const esLocale: LocaleDictionary = {
         },
         {
           q: "¿Mi licencia cubre tanto EA FC 26 como la Web App de EA FC 27?",
-          a: "Sí. Cada licencia incluye 365 días completos de acceso con actualizaciones automáticas sin coste adicional cuando EA lance nuevas temporadas.",
+          a: "Sí. Pro cubre ambos por €19.90 al año, con actualizaciones automáticas sin coste adicional cuando EA lance nuevas temporadas. Cancela cuando quieras y conserva el acceso hasta el final del año pagado.",
         },
         {
           q: "¿Puedo usar múltiples cuentas o pestañas a la vez?",

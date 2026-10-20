@@ -590,13 +590,13 @@ export default function Home() {
                 Daily free low-budget trading filters, market tricks, and coin-making tips shared inside our Discord. Make more coins daily with beginner-friendly setups and live flip alerts.
               </p>
             </div>
-            {/* One Time Purchase */}
+            {/* Yearly Plan */}
             <div className="glass-card p-8 rounded-2xl group hover:-translate-y-2 transition-all duration-300">
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
                 <CalendarCheck className="w-6 h-6 text-primary group-hover:text-black transition-colors" />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-white">One Time Purchase</h3>
-              <p className="text-gray-300 text-sm leading-relaxed font-normal">365 days of full access. Your license remains valid even across game version updates during that year.</p>
+              <h3 className="text-xl font-bold mb-3 text-white">Simple Yearly Plan</h3>
+              <p className="text-gray-300 text-sm leading-relaxed font-normal">€19.90 per year with full access, valid across game version updates. Renews yearly — cancel anytime.</p>
             </div>
           </div>
 
@@ -743,7 +743,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black mb-4">FUT Sniping Bot &amp; Autobuyer <span className="text-primary">Pricing</span></h2>
-            <p className="text-gray-400">Simple pricing. No hidden fees. No subscriptions.</p>
+            <p className="text-gray-400">Simple pricing. No hidden fees. No monthly charges — cancel anytime.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
@@ -809,7 +809,7 @@ export default function Home() {
                 </div>
                 <div className="mt-3 inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold px-3 py-1.5 rounded-full">
                   <CheckCircle2 className="w-4 h-4 shrink-0" />
-                  One-Time Payment · 365 Days · FC 27 &amp; FC 26
+                  Per Year · Cancel Anytime · FC 27 &amp; FC 26
                 </div>
 
                 <div className="mt-5 rounded-xl border border-amber-400/30 bg-amber-400/[0.06] px-4 py-3.5">
@@ -906,7 +906,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <Clock className="w-4 h-4 text-amber-400 shrink-0" />
-                  Mobile Apps (iOS &amp; Android)
+                  Mobile App Access add-on · +€10/year
                   <span className="text-[10px] text-amber-400 bg-amber-400/10 border border-amber-400/30 px-1.5 py-0.5 rounded uppercase tracking-wide">Soon</span>
                 </li>
               </ul>

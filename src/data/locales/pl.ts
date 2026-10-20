@@ -139,8 +139,8 @@ export const plLocale: LocaleDictionary = {
           iconName: "CheckCircle2",
         },
         {
-          title: "Jednorazowa Opłata Roczna",
-          description: "Pełne 365 dni nielimitowanego dostępu. Żadnych niespodziewanych miesięcznych subskrypcji.",
+          title: "Niska Cena Roczna",
+          description: "€19.90 rocznie, płatne raz w roku. Bez opłat miesięcznych, możesz anulować w każdej chwili.",
           iconName: "Clock",
         },
         {
@@ -171,7 +171,7 @@ export const plLocale: LocaleDictionary = {
         { feature: "Silnik Rozwiązywania SBC przez AI", elite: true, typical: false },
         { feature: "Zero Udostępniania Hasła (Pełne Bezpieczeństwo)", elite: true, typical: false },
         { feature: "Filtry Handlowe o Wysokiej Marży na Discordzie", elite: true, typical: false },
-        { feature: "Pojedyncza Opłata Roczna (€19.90/rok)", elite: true, typical: false },
+        { feature: "Niska Cena Roczna (€19.90/rok, Anulujesz Kiedy Chcesz)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -201,7 +201,7 @@ export const plLocale: LocaleDictionary = {
         title: "Przepustka Pro Sniper",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "Licencja na 365 Dni · Aktualizacje do FC 26 & FC 27 w Cenie",
+        guarantee: "Płatność Roczna · Anulujesz Kiedy Chcesz · Aktualizacje do FC 26 & FC 27 w Cenie",
         spotsLeft: "12 Wolnych miejsc za €19.90",
         soldText: "88/100 sprzedanych",
         nextPrice: "Następna cena: €29.90",
@@ -224,7 +224,7 @@ export const plLocale: LocaleDictionary = {
           { text: "Priorytetowe Aktualizacje i Natychmiastowy Dostęp do Patchy" },
           { text: "Potencjał Zarobku Ponad 10M Coinsów" },
           { text: "Rozwiązywacz SBC przez AI", isSoon: true },
-          { text: "Aplikacje Mobilne (iOS i Android)", isSoon: true },
+          { text: "Dodatek Dostęp do Aplikacji Mobilnej · +€10/rok", isSoon: true },
         ],
         cta: "Kup Dostęp Pro Sniper",
       },
@@ -554,7 +554,7 @@ export const plLocale: LocaleDictionary = {
         },
         {
           feature: "Model Płatności",
-          elite: "€19.90/rok (365 dni) · 2-dniowy okres próbny",
+          elite: "€19.90/rok · anulujesz kiedy chcesz · 2-dniowy okres próbny",
           cloud: "Abonamenty od $15 do $30 każdego miesiąca",
           manual: "Darmowe (Kosztuje setki straconych godzin)",
         },
@@ -642,7 +642,7 @@ export const plLocale: LocaleDictionary = {
         "100% Lokalne Rozszerzenie Chrome",
         "Prędkość Snajpienia Poniżej 20ms",
         "0 Odnotowanych Banów",
-        "Licencja na 365 Dni",
+        "€19.90/Rok · Anulujesz Kiedy Chcesz",
       ],
     },
   },
@@ -856,7 +856,7 @@ export const plLocale: LocaleDictionary = {
         },
         {
           feature: "Model Cenowy",
-          elite: "€19.90 Jednorazowo (Pełne 365 Dni)",
+          elite: "€19.90/rok · Anulujesz Kiedy Chcesz",
           cloud: "$15–$30 co miesiąc w subskrypcji",
         },
         {
@@ -928,8 +928,8 @@ export const plLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Jednorazowa Opłata Roczna",
-          desc: "365 dni nielimitowanego dostępu ze stałymi aktualizacjami dla FC 26 i FC 27.",
+          title: "Niska Cena Roczna",
+          desc: "€19.90/rok ze stałymi aktualizacjami dla FC 26 i FC 27. Anulujesz kiedy chcesz.",
           iconName: "Clock",
         },
       ],
@@ -940,7 +940,7 @@ export const plLocale: LocaleDictionary = {
       description:
         "Aktualnie w intensywnym rozwoju — nasz nadchodzący silnik sztucznej inteligencji będzie automatycznie rozwiązywać Wyzwania Budowania Składu z użyciem kart z klubu i najtańszych uzupełnień z rynku.",
       status: "W Aktywnej Fazie Rozwoju",
-      licenseBadge: "Licencja na 365 Dni",
+      licenseBadge: "Plan Pro",
       licenseTitle: "Darmowa Aktualizacja",
       licenseDesc:
         "Wszyscy użytkownicy z aktywną licencją otrzymają dostęp automatycznie w momencie premiery.",
@@ -963,7 +963,7 @@ export const plLocale: LocaleDictionary = {
         },
         {
           q: "Czy licencja obejmuje zarówno EA FC 26, jak i Web App do EA FC 27?",
-          a: "Tak. Każda zakupiona licencja gwarantuje 365 pełnych dni dostępu z darmowymi aktualizacjami przy premierze nowych sezonów EA.",
+          a: "Tak. Pro obejmuje oba za €19.90 rocznie, z darmowymi aktualizacjami przy premierze nowych sezonów EA. Możesz anulować w każdej chwili i zachowujesz dostęp do końca opłaconego roku.",
         },
         {
           q: "Czy mogę używać wielu kont lub kart przeglądarki jednocześnie?",

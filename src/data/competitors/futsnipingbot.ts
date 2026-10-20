@@ -229,7 +229,7 @@ export const futSnipingBotData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive License",
-      price: "€19.90 One-Time (Full 365 Days Access)",
+      price: "€19.90/year (Cancel Anytime)",
       inclusions: [
         "100% of all coins sniped remain 100% yours — 0% commission, zero profit cut",
         "Full access to all 11 automation modules including sub-20ms high-frequency sniper",

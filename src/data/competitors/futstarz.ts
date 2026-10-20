@@ -292,7 +292,7 @@ export const futStarzData: CompetitorData = {
     {
       question: "What is the annual cost difference between FutStarz and Elite FUT SNIPER?",
       answer:
-        "FutStarz charges between $15 and $25 per month, totaling $180 to $300 per year in recurring subscription fees. Elite FUT SNIPER provides 365 days of full unlimited access for a single flat payment of €19.90, saving you over $160 to $280 annually.",
+        "FutStarz charges between $15 and $25 per month, totaling $180 to $300 per year in recurring subscription fees. Elite FUT SNIPER provides 365 days of full unlimited access for a flat €19.90/year, saving you over $160 to $280 annually.",
     },
   ],
 

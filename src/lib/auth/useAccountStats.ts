@@ -24,6 +24,13 @@ export interface AccountStats {
   isTrialActive: boolean;
   hasAccess: boolean;
   licenseExpiresAt: string | null;
+  // Billing (backend User.billingSummary()). Optional until every backend
+  // deployment sends them.
+  hasMobileAccess?: boolean;
+  mobileAccessExpiresAt?: string | null;
+  subscriptionStatus?: string | null;
+  subscriptionCancelAt?: string | null;
+  mobileAddonAvailable?: boolean;
   botStatus: BotStatus;
   activeFilters: Record<string, unknown> | null;
   lastSnipeAt: string | null;

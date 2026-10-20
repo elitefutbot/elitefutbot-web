@@ -139,8 +139,8 @@ export const trLocale: LocaleDictionary = {
           iconName: "CheckCircle2",
         },
         {
-          title: "Tek Seferlik Yıllık Ücret",
-          description: "365 gün kesintisiz tam erişim. Sürpriz aylık ödemeler veya yinelenen abonelikler yoktur.",
+          title: "Uygun Yıllık Fiyat",
+          description: "Yıllık €19.90, yılda bir kez faturalandırılır. Aylık ücret yok, istediğiniz zaman iptal edin.",
           iconName: "Clock",
         },
         {
@@ -171,7 +171,7 @@ export const trLocale: LocaleDictionary = {
         { feature: "Yapay Zeka KKG (SBC) Çözücü", elite: true, typical: false },
         { feature: "Sıfır Şifre Paylaşımı (Tam Güvenlik)", elite: true, typical: false },
         { feature: "Discord Yüksek Kârlı Ticaret Filtreleri", elite: true, typical: false },
-        { feature: "Tek Seferlik Yıllık Ücret (€19.90/yıl)", elite: true, typical: false },
+        { feature: "Uygun Yıllık Fiyat (€19.90/yıl, İstediğiniz Zaman İptal)", elite: true, typical: false },
       ],
     },
     pricing: {
@@ -201,7 +201,7 @@ export const trLocale: LocaleDictionary = {
         title: "Pro Sniper Bileti",
         price: "€19.90",
         originalPrice: "€49.90",
-        guarantee: "365 Günlük Lisans · Tüm FC 26 & FC 27 Güncellemeleri Dahil",
+        guarantee: "Yıllık Faturalandırma · İstediğiniz Zaman İptal · Tüm FC 26 & FC 27 Güncellemeleri Dahil",
         spotsLeft: "€19.90'dan Son 12 Kontenjan",
         soldText: "88/100 satıldı",
         nextPrice: "Sonraki fiyat: €29.90",
@@ -224,7 +224,7 @@ export const trLocale: LocaleDictionary = {
           { text: "Öncelikli Güncellemeler ve Anında Yama Erişimi" },
           { text: "10M+ Coin Kazanma Potansiyeli" },
           { text: "Yapay Zeka KKG Çözücü", isSoon: true },
-          { text: "Mobil Uygulamalar (iOS & Android)", isSoon: true },
+          { text: "Mobil Uygulama Erişimi eklentisi · +€10/yıl", isSoon: true },
         ],
         cta: "Pro Sniper Erişimi Al",
       },
@@ -554,7 +554,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           feature: "Fiyatlandırma Modeli",
-          elite: "€19.90/yıl (365 gün) · 2 günlük deneme",
+          elite: "€19.90/yıl · istediğiniz zaman iptal · 2 günlük deneme",
           cloud: "Aylık $15–$30 yinelenen abonelikler",
           manual: "Ücretsiz (Yüzlerce saat emek harcatır)",
         },
@@ -642,7 +642,7 @@ export const trLocale: LocaleDictionary = {
         "%100 Yerel Chrome Eklentisi",
         "20ms Altı Snipe Hızı",
         "0 Belgelenmiş Ban",
-        "365 Günlük Lisans",
+        "€19.90/Yıl · İstediğiniz Zaman İptal",
       ],
     },
   },
@@ -856,7 +856,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           feature: "Fiyatlandırma Modeli",
-          elite: "€19.90 Tek Seferlik (365 Gün Tam Erişim)",
+          elite: "€19.90/yıl · İstediğiniz Zaman İptal",
           cloud: "Aylık $15–$30 yinelenen abonelikler",
         },
         {
@@ -928,8 +928,8 @@ export const trLocale: LocaleDictionary = {
           iconName: "MessageSquare",
         },
         {
-          title: "Tek Seferlik Yıllık Ücret",
-          desc: "FC 26 ve FC 27 için sürekli güncellemelerle 365 gün sınırsız tam erişim.",
+          title: "Uygun Yıllık Fiyat",
+          desc: "FC 26 ve FC 27 için sürekli güncellemelerle yıllık €19.90. İstediğiniz zaman iptal edin.",
           iconName: "Clock",
         },
       ],
@@ -940,7 +940,7 @@ export const trLocale: LocaleDictionary = {
       description:
         "Şu anda aktif geliştirmede — yapay zeka motorumuz kulübünüzdeki kartları kullanarak ve eksik mevkileri en ucuza tamamlayarak Kadro Kurma Görevlerini en optimal maliyetle çözecek.",
       status: "Aktif Geliştirme Aşamasında",
-      licenseBadge: "365 Günlük Lisans",
+      licenseBadge: "Pro Plan",
       licenseTitle: "Ücretsiz Yükseltme",
       licenseDesc:
         "Aktif lisansı bulunan tüm kullanıcılar yayınlandığında otomatik erişim hakkı kazanacaktır.",
@@ -963,7 +963,7 @@ export const trLocale: LocaleDictionary = {
         },
         {
           q: "Lisansım hem EA FC 26'yı hem de EA FC 27 Web App'ini kapsıyor mu?",
-          a: "Evet. Her lisans, EA yeni sezonları ve güncellemeleri yayınladığında ek ücret talep edilmeksizin 365 tam günlük erişim hakkı içerir.",
+          a: "Evet. Pro, yıllık €19.90 karşılığında ikisini de kapsar; EA yeni sezonlar yayınladığında güncellemeler ek ücretsizdir. İstediğiniz zaman iptal edebilir, ödenen yılın sonuna kadar erişiminizi korursunuz.",
         },
         {
           q: "Aynı anda birden fazla hesap veya sekme kullanabilir miyim?",

@@ -39,7 +39,7 @@ export const remxData: CompetitorData = {
     "Humanization++ mode with mathematical Bézier physics and Gaussian jitter (0 bans across 14,000+ sessions)",
     "Clean Manifest V3 Chrome Side Panel HUD docking beside the Web App with zero DOM overlay clutter",
     "Generous 2-day free trial with instant activation and no credit card required",
-    "Single flat €19.90 payment for 365-day full-season access covering both FC 27 and legacy FC 26",
+    "Flat €19.90/year for full-season access covering both FC 27 and legacy FC 26",
     "24/7 VIP Discord trading alpha with direct access to core software engineers",
   ],
   idealFor: {
@@ -54,9 +54,9 @@ export const remxData: CompetitorData = {
   },
   pricingComparison: {
     competitorPricing: "£14.99 bot + £14.99 filter group (£24.99 bundled package; regular £59.99)",
-    elitePricing: "€19.90 One-Time Payment (365 Days Full Season Access + 2-Day Free Trial)",
+    elitePricing: "€19.90/year (Cancel Anytime + 2-Day Free Trial)",
     difference:
-      "RemX paywalls its essential daily sniping filters into a separate purchase, while Elite FUT SNIPER provides the bot, the AI SBC solver, and daily VIP Discord filter drops together for a single flat €19.90 fee with zero upsells.",
+      "RemX paywalls its essential daily sniping filters into a separate purchase, while Elite FUT SNIPER provides the bot, the AI SBC solver, and daily VIP Discord filter drops together for a flat €19.90/year with zero upsells.",
   },
 
 

@@ -35,14 +35,28 @@ import {
   TRIAL_LENGTH_DAYS,
 } from "@/lib/trial";
 import {
+  addMobileAccess,
+  type CheckoutResult,
   consumeBuyIntent,
+  formatEuro,
+  isSubscriptionLive,
+  MOBILE_PRICE_EUR,
+  MOBILE_PRICE_LABEL,
+  mobileProrationEstimate,
+  openBillingPortal,
+  PRO_PRICE_EUR,
   PRO_PRICE_LABEL,
+  type Purchase,
   startCheckout,
 } from "@/lib/payments";
 
 const DAY_MS = 24 * 60 * 60 * 1000;
-// Show the renew prompt once a license is this close to expiring.
+// Highlight the auto-renew prompt once a license is this close to expiring.
 const RENEW_WARNING_DAYS = 30;
+// The backend can only anchor a renewal within a year of the expiry date,
+// and below two days left it charges today instead of on the expiry date.
+const MAX_RENEW_AHEAD_DAYS = 365;
+const MIN_FREE_RENEW_DAYS = 2;
 // After returning from Stripe, re-check this often (and for this long)
 // while the webhook activates the license.
 const ACTIVATION_POLL_MS = 3000;
@@ -70,6 +84,13 @@ function readPaymentReturn(): PaymentReturn | null {
   if (payment === "cancelled") return "cancelled";
   return null;
 }
+
+function readPurchase(): Purchase {
+  const purchase = new URLSearchParams(window.location.search).get("purchase");
+  return purchase === "renew" || purchase === "mobile" ? purchase : "pro";
+}
+
+type BillingAction = "checkout" | "mobile" | "portal";
 
 function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString(undefined, {
@@ -218,22 +239,40 @@ function DashboardContent() {
   const stats = useAccountStats();
   const leaderboardData = useLeaderboard();
   const [upgradeModalOpen, setUpgradeModalOpen] = useState(false);
-  const [checkoutPending, setCheckoutPending] = useState(false);
+  const [billingPending, setBillingPending] = useState<BillingAction | null>(null);
   const [checkoutError, setCheckoutError] = useState("");
+  const [withMobile, setWithMobile] = useState(false);
   const [paymentReturn, setPaymentReturn] = useState<PaymentReturn | null>(
     readPaymentReturn,
   );
+  const [purchase, setPurchase] = useState<Purchase>(readPurchase);
 
-  const beginCheckout = useCallback(async () => {
-    setCheckoutPending(true);
-    setCheckoutError("");
-    const result = await startCheckout();
-    // On success the browser is already navigating to Stripe.
-    if (!result.ok) {
-      setCheckoutError(result.message);
-      setCheckoutPending(false);
-    }
-  }, []);
+  // Runs a billing call. A Stripe redirect unloads the page; a change the
+  // backend applied to the existing subscription instead (no checkout) is
+  // waited for the same way as a return from Stripe.
+  const runBilling = useCallback(
+    async (
+      action: BillingAction,
+      call: () => Promise<CheckoutResult>,
+      appliedAs?: Purchase,
+    ) => {
+      setBillingPending(action);
+      setCheckoutError("");
+      const result = await call();
+      if (!result.ok) {
+        setCheckoutError(result.message);
+        setBillingPending(null);
+      } else if (!result.redirected) {
+        setBillingPending(null);
+        if (appliedAs) {
+          setPurchase(appliedAs);
+          setPaymentReturn("activating");
+          emitRefresh();
+        }
+      }
+    },
+    [],
+  );
 
   // Best-effort: request notification permission and register this
   // browser's FCM token so bot-status/purchase updates land as an
@@ -248,11 +287,18 @@ function DashboardContent() {
     const url = new URL(window.location.href);
     if (url.searchParams.has("payment")) {
       url.searchParams.delete("payment");
+      url.searchParams.delete("purchase");
       window.history.replaceState(null, "", url.pathname + url.search + url.hash);
     }
     if (consumeBuyIntent()) {
       void startCheckout().then((result) => {
-        if (!result.ok) setCheckoutError(result.message);
+        if (!result.ok) {
+          setCheckoutError(result.message);
+        } else if (!result.redirected) {
+          setPurchase("renew");
+          setPaymentReturn("activating");
+          emitRefresh();
+        }
       });
     }
   }, []);
@@ -271,15 +317,58 @@ function DashboardContent() {
     licenseDaysLeft !== null &&
     licenseDaysLeft <= RENEW_WARNING_DAYS;
 
+  const subscriptionStatus = stats?.subscriptionStatus ?? null;
+  const subscriptionCancelAt = stats?.subscriptionCancelAt ?? null;
+  const autoRenewOn = isSubscriptionLive(subscriptionStatus) && !subscriptionCancelAt;
+  const paymentFailed = subscriptionStatus === "past_due";
+  const hasMobileAccess = stats?.hasMobileAccess ?? false;
+  const mobileAccessExpiresAt = stats?.mobileAccessExpiresAt ?? null;
+  const mobileAddonAvailable = stats?.mobileAddonAvailable ?? false;
+  const renewalTotal = PRO_PRICE_EUR + (hasMobileAccess ? MOBILE_PRICE_EUR : 0);
+  // Existing Pro (Dodo, Gumroad, one-time Stripe, or a cancelled
+  // subscription) that won't renew on its own yet.
+  const canTurnOnAutoRenew =
+    licenseActive &&
+    !autoRenewOn &&
+    licenseDaysLeft !== null &&
+    licenseDaysLeft <= MAX_RENEW_AHEAD_DAYS;
+  const freeAutoRenew =
+    licenseDaysLeft !== null && licenseDaysLeft >= MIN_FREE_RENEW_DAYS;
+  const mobileEstimate = mobileProrationEstimate(licenseExpiresAt);
+  const canAddMobile =
+    licenseActive &&
+    mobileAddonAvailable &&
+    !hasMobileAccess &&
+    mobileEstimate !== null &&
+    licenseDaysLeft !== null &&
+    licenseDaysLeft <= MAX_RENEW_AHEAD_DAYS &&
+    (isSubscriptionLive(subscriptionStatus) || licenseDaysLeft >= MIN_FREE_RENEW_DAYS);
+
+  const beginCheckout = () =>
+    void runBilling(
+      "checkout",
+      () => startCheckout({ mobile: !licenseActive && withMobile && mobileAddonAvailable }),
+      "renew",
+    );
+  const beginAddMobile = () => void runBilling("mobile", addMobileAccess, "mobile");
+  const beginManage = () => void runBilling("portal", openBillingPortal);
+
   // The webhook usually lands within a second or two of the redirect, but
-  // poll briefly instead of waiting for the regular 60s refresh.
+  // poll briefly instead of waiting for the regular 60s refresh. What
+  // counts as done depends on what was bought.
+  const purchaseDone =
+    purchase === "renew"
+      ? autoRenewOn
+      : purchase === "mobile"
+        ? hasMobileAccess
+        : licenseActive;
   const paymentNotice: PaymentReturn | null =
     (paymentReturn === "activating" || paymentReturn === "delayed") &&
-    licenseActive
+    purchaseDone
       ? "activated"
       : paymentReturn;
   useEffect(() => {
-    if (paymentReturn !== "activating" || licenseActive) return;
+    if (paymentReturn !== "activating" || purchaseDone) return;
     const intervalId = window.setInterval(emitRefresh, ACTIVATION_POLL_MS);
     const timeoutId = window.setTimeout(
       () => setPaymentReturn("delayed"),
@@ -289,7 +378,7 @@ function DashboardContent() {
       window.clearInterval(intervalId);
       window.clearTimeout(timeoutId);
     };
-  }, [paymentReturn, licenseActive]);
+  }, [paymentReturn, purchaseDone]);
   const isDuplicateTrial = stats?.isDuplicateTrial ?? user?.isDuplicateTrial ?? false;
   const totalTrialDays = isDuplicateTrial
     ? 0
@@ -426,17 +515,31 @@ function DashboardContent() {
                 {paymentNotice === "activating" && (
                   <span className="flex items-center gap-3">
                     <span className="size-4 border-2 border-primary border-t-transparent rounded-full animate-spin shrink-0" />
-                    Payment received — activating your Pro access…
+                    {purchase === "renew"
+                      ? "Turning on auto-renew…"
+                      : purchase === "mobile"
+                        ? "Payment received — activating Mobile App Access…"
+                        : "Payment received — activating your Pro access…"}
                   </span>
                 )}
                 {paymentNotice === "activated" &&
-                  `✅ Payment successful — Pro is active${
-                    licenseExpiresAt ? ` until ${formatDate(licenseExpiresAt)}` : ""
-                  }. Thank you!`}
+                  (purchase === "renew"
+                    ? `✅ Auto-renew is on — nothing charged today.${
+                        licenseExpiresAt
+                          ? ` Next charge ${formatEuro(renewalTotal)} on ${formatDate(licenseExpiresAt)}.`
+                          : ""
+                      }`
+                    : purchase === "mobile"
+                      ? `✅ Mobile App Access is active${
+                          mobileAccessExpiresAt ? ` until ${formatDate(mobileAccessExpiresAt)}` : ""
+                        }. Thank you!`
+                      : `✅ Payment successful — Pro is active${
+                          licenseExpiresAt ? ` until ${formatDate(licenseExpiresAt)}` : ""
+                        } and renews yearly. Thank you!`)}
                 {paymentNotice === "delayed" && (
                   <>
-                    Your payment went through, but activation is taking
-                    longer than usual. Refresh this page in a minute — if Pro
+                    Stripe confirmed your checkout, but activation is taking
+                    longer than usual. Refresh this page in a minute — if it
                     still isn&apos;t active, email{" "}
                     <a href="mailto:support@elitefutbot.com" className="underline">
                       support@elitefutbot.com
@@ -480,17 +583,46 @@ function DashboardContent() {
                     )}
                   </h1>
                   {licenseActive ? (
-                    licenseExpiresAt && (
-                      <p className={`text-xs mt-2 ${renewSoon ? "text-amber-400 font-bold" : "text-gray-400"}`}>
-                        {renewSoon ? "⚠️ " : ""}
-                        Pro until {formatDate(licenseExpiresAt)} ·{" "}
-                        {licenseDaysLeft} {licenseDaysLeft === 1 ? "day" : "days"} left
-                        {renewSoon && " — renew now to keep your access. Unused days carry over."}
-                      </p>
-                    )
+                    <div className="mt-2 space-y-1 text-xs">
+                      {licenseExpiresAt &&
+                        (autoRenewOn ? (
+                          <p className="text-gray-400">
+                            Pro · renews on {formatDate(licenseExpiresAt)} for{" "}
+                            {formatEuro(renewalTotal)}/year
+                          </p>
+                        ) : (
+                          <p className={renewSoon ? "text-amber-400 font-bold" : "text-gray-400"}>
+                            {renewSoon ? "⚠️ " : ""}
+                            Pro until {formatDate(licenseExpiresAt)} ·{" "}
+                            {licenseDaysLeft} {licenseDaysLeft === 1 ? "day" : "days"} left
+                            {canTurnOnAutoRenew &&
+                              (renewSoon
+                                ? " — turn on auto-renew to keep your access."
+                                : " · auto-renew is off")}
+                          </p>
+                        ))}
+                      {paymentFailed && (
+                        <p className="text-red-400 font-bold">
+                          Your last renewal payment failed — update your card
+                          under Manage subscription to keep Pro.
+                        </p>
+                      )}
+                      {hasMobileAccess ? (
+                        <p className="text-emerald-300">
+                          📱 Mobile App Access
+                          {mobileAccessExpiresAt
+                            ? ` · until ${formatDate(mobileAccessExpiresAt)}`
+                            : ""}
+                        </p>
+                      ) : (
+                        mobileAddonAvailable && (
+                          <p className="text-gray-500">📱 Mobile App Access · not active</p>
+                        )
+                      )}
+                    </div>
                   ) : licenseExpired ? (
                     <p className="text-xs text-red-400 mt-2">
-                      Your license ended on {formatDate(licenseExpiresAt!)}. Renew for {PRO_PRICE_LABEL} to get another 365 days of full access.
+                      Your license ended on {formatDate(licenseExpiresAt!)}. Renew for {PRO_PRICE_LABEL} — renews yearly, cancel anytime.
                     </p>
                   ) : isDuplicateTrial ? (
                     <p className="text-xs text-red-400 mt-2">
@@ -507,26 +639,87 @@ function DashboardContent() {
                 </div>
                 <div className="shrink-0 w-full sm:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                   <DownloadExtensionButton className="w-full sm:w-auto justify-center" />
-                  {(!licenseActive || renewSoon) && (
+                  {!licenseActive && (
                     <button
                       type="button"
-                      onClick={() => void beginCheckout()}
-                      disabled={checkoutPending}
+                      onClick={beginCheckout}
+                      disabled={billingPending !== null}
                       className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)] disabled:opacity-60 disabled:hover:scale-100"
                     >
-                      {checkoutPending
+                      {billingPending === "checkout"
                         ? "Opening checkout…"
                         : isPaid
                           ? `Renew · ${PRO_PRICE_LABEL}`
-                          : `Upgrade Now · ${PRO_PRICE_LABEL}`}
+                          : `Subscribe · ${PRO_PRICE_LABEL}`}
+                    </button>
+                  )}
+                  {canTurnOnAutoRenew && (
+                    <button
+                      type="button"
+                      onClick={beginCheckout}
+                      disabled={billingPending !== null}
+                      title={`${formatEuro(PRO_PRICE_EUR)}/year from ${formatDate(licenseExpiresAt!)}. Cancel anytime.`}
+                      className={`w-full sm:w-auto px-6 py-3 rounded-full font-black text-xs uppercase tracking-widest transition-transform disabled:opacity-60 ${
+                        renewSoon
+                          ? "bg-primary text-dark hover:scale-105 hover:shadow-[0_0_35px_rgba(204,255,0,0.35)] disabled:hover:scale-100"
+                          : "border border-primary/40 text-primary hover:bg-primary/10"
+                      }`}
+                    >
+                      {billingPending === "checkout"
+                        ? "Opening…"
+                        : `Turn on auto-renew · ${
+                            freeAutoRenew ? "€0" : formatEuro(PRO_PRICE_EUR)
+                          } today`}
                     </button>
                   )}
                 </div>
               </div>
-              {(checkoutError || !licenseActive) && (
-                <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-end gap-2 text-xs">
+              {(checkoutError ||
+                !licenseActive ||
+                canAddMobile ||
+                subscriptionStatus) && (
+                <div className="mt-4 flex flex-col sm:flex-row sm:items-center sm:justify-end gap-3 text-xs">
                   {checkoutError && (
                     <p className="text-red-400 sm:mr-auto">{checkoutError}</p>
+                  )}
+                  {!licenseActive && !checkoutError && (
+                    <span className="text-gray-500 sm:mr-auto">
+                      Renews yearly · cancel anytime
+                    </span>
+                  )}
+                  {!licenseActive && mobileAddonAvailable && (
+                    <label className="flex items-center gap-2 text-gray-300 cursor-pointer select-none">
+                      <input
+                        type="checkbox"
+                        checked={withMobile}
+                        onChange={(e) => setWithMobile(e.target.checked)}
+                        className="size-4 accent-[#CCFF00]"
+                      />
+                      Add Mobile App Access · +{MOBILE_PRICE_LABEL}
+                    </label>
+                  )}
+                  {canAddMobile && (
+                    <button
+                      type="button"
+                      onClick={beginAddMobile}
+                      disabled={billingPending !== null}
+                      title={`${MOBILE_PRICE_LABEL}, prorated to ${formatDate(licenseExpiresAt!)}. Works while Pro is active.`}
+                      className="px-4 py-2 rounded-full border border-primary/40 text-primary font-bold hover:bg-primary/10 disabled:opacity-60"
+                    >
+                      {billingPending === "mobile"
+                        ? "Adding…"
+                        : `📱 Add Mobile App Access · ≈${formatEuro(mobileEstimate!)} today`}
+                    </button>
+                  )}
+                  {subscriptionStatus && (
+                    <button
+                      type="button"
+                      onClick={beginManage}
+                      disabled={billingPending !== null}
+                      className="text-gray-400 hover:text-white underline underline-offset-2 disabled:opacity-60"
+                    >
+                      {billingPending === "portal" ? "Opening…" : "Manage subscription"}
+                    </button>
                   )}
                   {!licenseActive && (
                     <button
