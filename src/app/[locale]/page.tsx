@@ -219,8 +219,14 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               <span className="text-xs font-semibold text-gray-300 flex items-center gap-1.5">
                 {dict.home.creatorBadge.byDeveloper}
                 <span className="inline-flex items-center gap-1.5 bg-primary/15 border border-primary/40 px-2.5 py-0.5 rounded-full text-white font-black shadow-[0_0_12px_rgba(204,255,0,0.2)]">
-                  <span className="w-3.5 h-3.5 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
-                  <span className="text-primary font-black">FutSniping Bot</span>
+                  <Image 
+                    alt="Jokers Bot Logo" 
+                    width={16} 
+                    height={16} 
+                    className="w-4 h-4 rounded-full object-cover border border-primary/50" 
+                    src="/jokersbot-avatar.webp" 
+                  />
+                  <span className="text-primary font-black">Jokers FUTSnipe Bot</span>
                 </span>
               </span>
             </div>
@@ -290,9 +296,15 @@ export default async function LocalizedHomePage({ params }: PageProps) {
               <span className="text-[9px] font-black text-primary uppercase tracking-tighter mr-1">
                 PROVEN LEGACY
               </span>
-              <span className="w-4 h-4 rounded-full bg-[#f97316] shadow-[0_0_8px_#f97316] blur-[1.5px] inline-block flex-shrink-0" aria-hidden="true" />
+              <Image 
+                alt="Jokers Bot Dev Team" 
+                width={20} 
+                height={20} 
+                className="w-5 h-5 rounded-full object-cover border border-primary/40 shadow-sm" 
+                src="/jokersbot-avatar.webp" 
+              />
               <span className="text-white font-bold text-xs">
-                FIFASniping Bot Dev Team
+                Jokers FIFA SNIPE Bot Dev Team
               </span>
             </div>
           </div>
