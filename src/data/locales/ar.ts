@@ -18,14 +18,14 @@ export const arLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "بوت السنايب والشراء التلقائي EA FC 27 لألتيميت تيم | Elite FUT Bot",
+      title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
       description:
-        "أفضل بوت سنايب وشراء تلقائي (Autobuyer) للعبة EA FC 27 ألتيميت تيم. صيد اللاعبين بأسعار رخيصة والشراء والبيع التلقائي بفلاتر ذكية عبر إضافة كروم محلية آمنة.",
+        "Elite FUT Sniper هو #1 بوت سنايب EA FC 27 FUT Sniping Bot و FUT FIFA Snipe Bot وأوتوبايير ألتيميت تيم (متوافق مع FC 27). 0 حظر في سوق الانتقالات وتجربة مجانية.",
       keywords:
-        "بوت سنايب fc 27, اوتوبايير فيفا 27, تجارة كوينز fc 27, بوت شراء لاعبين تلقائي, روبوت سوق الانتقالات التيميت تيم, حل تحديات sbc, سكريبت سنايب فيفا, برنامج تجميع كوينز fc27",
-      ogTitle: "بوت السنايب والشراء التلقائي EA FC 27 لألتيميت تيم | Elite FUT Bot",
+        "fut sniping bot, fut snipe bot, fifa snipe bot, بوت سنايب fc 27, اوتوبايير فيفا 27, تجارة كوينز fc 27, بوت شراء لاعبين تلقائي, روبوت سوق الانتقالات التيميت تيم, حل تحديات sbc, سكريبت سنايب فيفا, برنامج تجميع كوينز fc27",
+      ogTitle: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "أفضل بوت سنايب وشراء تلقائي (Autobuyer) للعبة EA FC 27 ألتيميت تيم. صيد اللاعبين بأسعار رخيصة والشراء والبيع التلقائي بفلاتر ذكية عبر إضافة كروم محلية آمنة.",
+        "Elite FUT Sniper هو #1 بوت سنايب EA FC 27 FUT Sniping Bot و FUT FIFA Snipe Bot وأوتوبايير ألتيميت تيم (متوافق مع FC 27). 0 حظر في سوق الانتقالات وتجربة مجانية.",
     },
     creatorBadge: {
       originalCreator: "المطور الأصلي",
@@ -35,12 +35,12 @@ export const arLocale: LocaleDictionary = {
       statusText: "متوافق 100% مع أحدث تحديثات سوق انتقالات EA FC 27",
     },
     hero: {
-      titleLine1: "أسرع وأأمن بوت",
-      titleHighlight: "سنايب واوتوبايير",
-      titleHighlight2: "FC 27 & FC 26",
-      titleLine3: "في العالم لتجارة الكوينز.",
+      titleLine1: "الأسرع والأأمن في العالم",
+      titleHighlight: "FC 27",
+      titleHighlight2: "FUT SNIPING BOT & AUTOBUYER",
+      titleLine3: "مُصمم بواسطة النخبة.",
       description:
-        "يُعد Elite FUT SNIPER أسرع وأأمن روبوت تجارة واوتوبايير للعبة EA FC 27 — ومتوافق بالكامل مع FC 27 و FC 26. يعمل محلياً 100% كإضافة متصفح Chrome دون إرسال بياناتك لسيرفرات سحابية خارجية، مما يضمن سرعة بحث فائقة تحت 20 مللي ثانية ويحمي حسابك تماماً من مخاطر الحظر.",
+        "يُعد Elite FUT SNIPER أسرع وأأمن بوت سنايب EA FC 27 FUT sniping bot و FUT snipe bot وأوتوبايير ألتيميت تيم — ومتوافق بالكامل مع FC 27 و FC 26. يعمل محلياً 100% كإضافة متصفح Chrome دون إرسال بياناتك لسيرفرات سحابية خارجية، مما يضمن سرعة بحث فائقة تحت 20 مللي ثانية ويحمي حسابك تماماً من مخاطر الحظر.",
       ctaPricing: "عرض الباقات والأسعار",
       ctaDemo: "مشاهدة تجربة حية للبوت",
       stats: {
@@ -55,8 +55,8 @@ export const arLocale: LocaleDictionary = {
       },
     },
     outperform: {
-      title: "لماذا يتفوق البوت على",
-      titleHighlight: "جميع المنافسين في السوق.",
+      title: "لماذا يتفوق بوت السنايب FUT Sniping Bot",
+      titleHighlight: "على كل شيء.",
       subtitle:
         "يتفوق Elite FUT SNIPER على جميع الأدوات المنافسة بفضل عمله محلياً بنسبة 100% داخل متصفحك دون وسيط سحابي. صُمم بواسطة الفريق الأسطوري وراء FutSniping Bot ليلغي زمن التأخير ويقنص الكروت النادرة والصفقات فور ظهورها في السوق.",
       humanization: {
@@ -197,8 +197,8 @@ export const arLocale: LocaleDictionary = {
       ],
     },
     pricing: {
-      title: "باقات واضحة وبسيطة،",
-      titleHighlight: "بدون أي رسوم خفية.",
+      title: "أسعار بوت السنايب FUT Sniping Bot و",
+      titleHighlight: "الأوتوبايير",
       subtitle:
         "انضم لأكثر من 10,000 تاجر ومحترف في لعبة FC Ultimate Team يضاعفون كوينزاتهم يومياً بأمان تام.",
       freeCard: {
@@ -338,11 +338,11 @@ export const arLocale: LocaleDictionary = {
       disclaimer: "لا تتطلب بطاقة ائتمان · تثبيت سهل في دقيقة واحدة",
     },
     ctaBottom2: {
-      title: "وفر مئات الساعات وابنِ تشكيلة أحلامك",
-      titleHighlight: "مع أقوى أدوات السنايب المؤتمتة.",
-      subtitle: "استمتع بتجربة أسرع اوتوبايير محلي للعبة EA Sports FC 27.",
-      subtitleHighlight: "سرعة تحت 20ms وأمان لا يضاهى.",
-      button: "احصل على ترخيص PRO الآن",
+      title: "انضم إلى",
+      titleHighlight: "مجتمع النخبة",
+      subtitle: "انضم إلى ديسكورد اليوم للحصول على نصائح تجارة مجانية، أدلة و",
+      subtitleHighlight: "فلاتر سنايب يومية",
+      button: "انضم إلى ديسكورد — فلاتر سنايب يومية مجانية",
     },
   },
   snipeBot: {

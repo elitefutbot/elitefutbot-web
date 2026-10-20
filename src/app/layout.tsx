@@ -34,13 +34,13 @@ const cairo = Cairo({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elitefutbot.com'),
   title: {
-    default: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
+    default: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
     template: "%s | Elite FUT SNIPER"
   },
-  description: "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
+  description: "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
   openGraph: {
-    title: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
-    description: "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
+    title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
+    description: "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
     url: "https://www.elitefutbot.com/",
     siteName: "Elite FUT SNIPER",
     images: [
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
         url: "https://www.elitefutbot.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Elite FUT SNIPER - EA FC 27 Sniping Bot & Autobuyer Ultimate Team",
+        alt: "Elite FUT Sniper - EA FC 27 FUT Sniping Bot & Autobuyer",
         type: "image/png",
       }
     ],
@@ -57,8 +57,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "EA FC 27 Sniping Bot & Autobuyer Ultimate Team | Elite FUT Bot",
-    description: "EA FC 27 sniping bot and FUT autobuyer for Ultimate Team. Snipe underpriced players, auto-buy, auto-list and use smart filters with a local Chrome extension.",
+    title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
+    description: "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
     creator: "@FutSnipeBot",
   },

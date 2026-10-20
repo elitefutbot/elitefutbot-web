@@ -18,14 +18,14 @@ export const trLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "EA FC 27 Sniping Botu ve Otomatik Alıcı Ultimate Team | Elite FUT Bot",
+      title: "EA FC 27 FUT Sniping Botu ve Autobuyer | Elite FUT Sniper",
       description:
-        "EA FC 27 Ultimate Team için FUT sniping botu ve otomatik alıcı (autobuyer). Yerel Chrome eklentisiyle ucuz oyuncuları snipe'layın, otomatik satın alıp listeleyin ve akıllı filtreler kullanın.",
+        "Elite FUT Sniper, #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot ve Ultimate Team autobuyer'dır (FC 27 uyumlu). 0 transfer pazarı banı ve ücretsiz deneme.",
       keywords:
-        "fc 27 coin kasma botu, ea fc 27 autobuyer türkçe, fc 27 sniping botu, fifa 27 autobuyer, chrome eklentisi autobuyer, kkg çözücü yapay zeka, fc27 oyuncu alma botu",
-      ogTitle: "EA FC 27 Sniping Botu ve Otomatik Alıcı Ultimate Team | Elite FUT Bot",
+        "fut sniping bot, fut snipe bot, fifa snipe bot, fc 27 coin kasma botu, ea fc 27 autobuyer türkçe, fc 27 sniping botu, fifa 27 autobuyer, chrome eklentisi autobuyer, kkg çözücü yapay zeka, fc27 oyuncu alma botu",
+      ogTitle: "EA FC 27 FUT Sniping Botu ve Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "EA FC 27 Ultimate Team için FUT sniping botu ve otomatik alıcı (autobuyer). Yerel Chrome eklentisiyle ucuz oyuncuları snipe'layın, otomatik satın alıp listeleyin ve akıllı filtreler kullanın.",
+        "Elite FUT Sniper, #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot ve Ultimate Team autobuyer'dır (FC 27 uyumlu). 0 transfer pazarı banı ve ücretsiz deneme.",
     },
     creatorBadge: {
       originalCreator: "ORİJİNAL GELİŞTİRİCİ",
@@ -37,10 +37,10 @@ export const trLocale: LocaleDictionary = {
     hero: {
       titleLine1: "Dünyanın En Hızlı ve Güvenli",
       titleHighlight: "FC 27",
-      titleHighlight2: "FUT SNIPING BOTU",
-      titleLine3: "Ve Autobuyer'ı.",
+      titleHighlight2: "FUT SNIPING BOTU & AUTOBUYER",
+      titleLine3: "Elitler Tarafından Tasarlandı.",
       description:
-        "Elite FUT SNIPER, EA FC 27 için geliştirilmiş dünyanın en hızlı ve en güvenli sniping botu ve autobuyer yazılımıdır — FC 27 ve FC 26 ile tam uyumludur. Doğrudan tarayıcınızda %100 yerel bir Chrome eklentisi olarak çalışır, 20ms altı arama hızlarına ulaşır ve hesabınızı bulut sunucu banlarından tamamen korur.",
+        "Elite FUT SNIPER, EA FC 27 için geliştirilmiş dünyanın en hızlı ve en güvenli FUT sniping bot, FUT snipe bot ve Ultimate Team autobuyer yazılımıdır — FC 27 ve FC 26 ile tam uyumludur. Doğrudan tarayıcınızda %100 yerel bir Chrome eklentisi olarak çalışır, 20ms altı arama hızlarına ulaşır ve hesabınızı bulut sunucu banlarından tamamen korur.",
       ctaPricing: "Planları ve Fiyatları Gör",
       ctaDemo: "Canlı Demoyu İzle",
       stats: {
@@ -55,8 +55,8 @@ export const trLocale: LocaleDictionary = {
       },
     },
     outperform: {
-      title: "Neden Tüm Rakiplerden",
-      titleHighlight: "Çok Daha Üstünüz.",
+      title: "FUT Sniping Botumuz Neden",
+      titleHighlight: "Her Şeyden Üstün.",
       subtitle:
         "Elite FUT SNIPER, harici bulut sunucularına bağlanmadan doğrudan tarayıcınızda yerel çalıştığı için piyasadaki tüm botları geride bırakır. Efsanevi FutSniping Bot ekibi tarafından tasarlanan bu mimari, gecikmeyi ortadan kaldırarak kartları milisaniyeler içinde güvenle snipelamanızı sağlar.",
       humanization: {
@@ -155,8 +155,8 @@ export const trLocale: LocaleDictionary = {
       discordFreeBadge: "Günlük Ücretsiz Filtreler",
     },
     comparison: {
-      title: "Elite FUT SNIPER Diğer Botlarla",
-      titleHighlight: "Nasıl Karşılaştırılır?",
+      title: "Elite FUT Sniper vs.",
+      titleHighlight: "Rakip Botlar",
       subtitle:
         "Yerel Chrome eklentisi mimarimizin ve Humanization++ motorumuzun geleneksel bulut botlarını neden geride bıraktığını görün.",
       col1: "Özellik",
@@ -175,7 +175,7 @@ export const trLocale: LocaleDictionary = {
       ],
     },
     pricing: {
-      title: "Adil ve Şeffaf",
+      title: "FUT Sniping Bot ve Autobuyer",
       titleHighlight: "Fiyatlandırma",
       subtitle: "Ticaret hedeflerinize en uygun planı seçin. Tüm planlar gelecekteki güncellemeleri içerir.",
       freeCard: {
@@ -371,9 +371,9 @@ export const trLocale: LocaleDictionary = {
     ctaBottom2: {
       title: "Elite Topluluğuna",
       titleHighlight: "Katılın",
-      subtitle: "Bugün Discord sunucumuza katılın ve son kalan",
-      subtitleHighlight: "ömür boyu ücretsiz erişim hakkından",
-      button: "Discord'a Katıl & Erişimi Kap",
+      subtitle: "Ücretsiz FUT ticaret ipuçları, rehberler ve",
+      subtitleHighlight: "günlük sniping filtreleri için Discord'a katılın",
+      button: "Discord'a Katıl — Günlük Ücretsiz Sniping Filtreleri",
     },
   },
   snipeBot: {

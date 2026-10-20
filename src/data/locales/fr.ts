@@ -18,14 +18,14 @@ export const frLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "EA FC 27 Bot de Sniping & Autobuyer Ultimate Team | Elite FUT Bot",
+      title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
       description:
-        "EA FC 27 bot de sniping et autobuyer FUT pour Ultimate Team. Snipez des joueurs sous-cotés, achetez et revendez automatiquement avec des filtres intelligents via une extension Chrome locale.",
+        "Elite FUT Sniper est le #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot et autobuyer Ultimate Team (compatible FC 27). 0 ban marché des transferts et essai gratuit.",
       keywords:
-        "bot achat revente fc 27, autobuyer ea fc 27 francais, bot sniping fifa 27, extension chrome achat revente fc27, solveur dce ia francais",
-      ogTitle: "EA FC 27 Bot de Sniping & Autobuyer Ultimate Team | Elite FUT Bot",
+        "fut sniping bot, fut snipe bot, fifa snipe bot, bot achat revente fc 27, autobuyer ea fc 27 francais, bot sniping fifa 27, extension chrome achat revente fc27, solveur dce ia francais",
+      ogTitle: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "EA FC 27 bot de sniping et autobuyer FUT pour Ultimate Team. Snipez des joueurs sous-cotés, achetez et revendez automatiquement avec des filtres intelligents via une extension Chrome locale.",
+        "Elite FUT Sniper est le #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot et autobuyer Ultimate Team (compatible FC 27). 0 ban marché des transferts et essai gratuit.",
     },
     creatorBadge: {
       originalCreator: "CRÉATEUR ORIGINAL",
@@ -35,12 +35,12 @@ export const frLocale: LocaleDictionary = {
       statusText: "Compatible avec les dernières mises à jour d'EA FC 27",
     },
     hero: {
-      titleLine1: "Le Bot d'Achat Revente & Sniping",
+      titleLine1: "Le Plus Rapide et Sécurisé au Monde",
       titleHighlight: "FC 27",
-      titleHighlight2: "FUT SNIPING BOT",
-      titleLine3: "Le Plus Rapide et Sécurisé au Monde.",
+      titleHighlight2: "FUT SNIPING BOT & AUTOBUYER",
+      titleLine3: "Conçu par l'Élite.",
       description:
-        "Elite FUT SNIPER est le bot de sniping et autobuyer EA FC 27 le plus rapide et le plus sûr au monde — entièrement compatible avec FC 27 & FC 26. Fonctionnant à 100% en local sous forme d'extension Chrome directement dans votre navigateur, il permet des vitesses de recherche sous les 20ms tout en protégeant totalement votre compte contre les bannissements de serveurs cloud.",
+        "Elite FUT SNIPER est le EA FC 27 FUT sniping bot, FUT snipe bot et autobuyer Ultimate Team le plus rapide et le plus sûr au monde — entièrement compatible avec FC 27 & FC 26. Fonctionnant à 100% en local sous forme d'extension Chrome directement dans votre navigateur, il permet des vitesses de recherche sous les 20ms tout en protégeant totalement votre compte contre les bannissements de serveurs cloud.",
       ctaPricing: "Voir les Tarifs",
       ctaDemo: "Voir la Démo en Direct",
       stats: {
@@ -55,8 +55,8 @@ export const frLocale: LocaleDictionary = {
       },
     },
     outperform: {
-      title: "Pourquoi Nous Surpassons",
-      titleHighlight: "Tous les Concurrents.",
+      title: "Pourquoi Notre FUT Sniping Bot",
+      titleHighlight: "Surpasse Tout.",
       subtitle:
         "Elite FUT SNIPER surpasse tous les autres bots car il s'exécute localement dans votre navigateur sans dépendre de serveurs distants. Conçu par l'équipe légendaire de FutSniping Bot, cette architecture élimine la latence réseau pour vous permettre de sniper des joueurs FC 27 en quelques millisecondes sans compromettre la sécurité de votre compte.",
       humanization: {
@@ -154,8 +154,8 @@ export const frLocale: LocaleDictionary = {
       discordFreeBadge: "Filtres Quotidiens Gratuits",
     },
     comparison: {
-      title: "Nous vs.",
-      titleHighlight: "Concurrents",
+      title: "Elite FUT Sniper vs.",
+      titleHighlight: "Bots Concurrents",
       subtitle:
         "Contrairement aux bots cloud traditionnels qui exposent votre compte au vol d'identifiants et aux bans, Elite FUT SNIPER est une extension locale pour Chrome avec une vitesse de 20ms et un solveur de DCE par IA.",
       col1: "Capacité Clé",
@@ -172,8 +172,8 @@ export const frLocale: LocaleDictionary = {
       ],
     },
     pricing: {
-      title: "Choisissez Votre",
-      titleHighlight: "Formule",
+      title: "Tarifs FUT Sniping Bot &",
+      titleHighlight: "Autobuyer",
       subtitle: "Tarification transparente. Sans frais cachés ni abonnement récurrent.",
       freeCard: {
         badge: "Accès Limité 2 Jours",
@@ -377,9 +377,9 @@ export const frLocale: LocaleDictionary = {
     ctaBottom2: {
       title: "Rejoignez la",
       titleHighlight: "Communauté Elite",
-      subtitle: "Rejoignez notre Discord dès aujourd'hui pour réclamer l'une des dernières places d'",
-      subtitleHighlight: "accès gratuit à vie",
-      button: "Rejoindre Discord et Réclamer l'Accès",
+      subtitle: "Rejoignez notre Discord dès aujourd'hui pour des astuces d'achat-revente, guides et",
+      subtitleHighlight: "filtres de sniping quotidiens",
+      button: "Rejoindre Discord — Filtres de Sniping Quotidiens",
     },
   },
   snipeBot: {

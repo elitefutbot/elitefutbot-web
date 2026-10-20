@@ -264,13 +264,15 @@ export default async function LocalizedHomePage({ params }: PageProps) {
                 <ArrowRight className="w-5 h-5" />
               </span>
             </Link>
-            <Link
-              className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm"
-              href={`/${locale}/fc27-fut-snipe-bot#demo`}
+            <a
+              className="px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold text-base rounded-xl hover:bg-white/10 transition-all flex items-center gap-2 backdrop-blur-sm hover:border-primary/40 group"
+              href="https://youtu.be/4XvOT_gckgg?si=y7iKNJmsgdON-9-f"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <PlayCircle className="w-5 h-5" />
+              <PlayCircle className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
               {dict.home.hero.ctaDemo}
-            </Link>
+            </a>
           </div>
 
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 text-xs sm:text-sm text-gray-400 font-medium border-t border-white/5 pt-6 sm:pt-8 max-w-4xl mx-auto">
