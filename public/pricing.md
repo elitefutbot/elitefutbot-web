@@ -1,27 +1,28 @@
 # Pricing — Elite FUT SNIPER
 
-## 7-Day Free Trial Tier (Active)
-- Price: $0 (No Credit Card Required)
-- Access: Instant activation upon account registration
+## 2-Day Free Trial Tier (Active)
+- Price: €0 (No Credit Card Required)
+- Access: Instant activation upon account registration at https://www.elitefutbot.com/register
 - Features: 
   - 100% Local Chrome Extension (Zero EA password sharing)
   - Sub-20ms market search triggers
   - Humanization++ Anti-Ban Mode (Bézier mouse curves, randomized micro-jitter, 0 bans to date)
-  - Futbin Live Price reference overlay
+  - FUTBIN & FUT.GG Live Price reference overlay
   - Chrome Side Panel HUD with Live Profit & Coin Tracking
+  - Free Daily Discord Community Alpha Sniping Filters (https://discord.gg/Rkb9nF6WG6)
   - Full Primary Support for active EA Sports FC 27 (with legacy FC 26 compatibility)
 
-## Pro Sniper Tier (365-Day Full Access)
-- Price: $19.99 One-Time Payment (12 Spots Left at $19.99 · 88/100 sold · Next price: $29.99 · 365 Days Access, No Monthly Subscriptions)
+## Pro Sniper Pass (365-Day Full Access)
+- Price: €19.90 One-Time Payment (12 Spots Left at €19.90 · 88/100 sold · Next price: €29.90 · 365 Days Access, No Monthly Subscriptions)
 - Features:
   - All Free Trial features included
   - Unlimited Multi-Account & Multi-Tab local execution
-  - Advanced Multi-Profile Filter Automation (Rating, Rarity, Position, League)
+  - Advanced Multi-Filter Search & Consumables Matrix (Country/Nation, Club, League, Position, Quality, Card Rarity, Ratings 83+, Consumables & Chem Styles)
+  - High-Frequency Auto-Bidding Engine on Expiring Auctions
   - Auto-List & Auto-Sell with 5% EA Tax Net Profit Calculation
+  - VIP Discord Access (#daily-vip-filters & 24-Hour FUTBIN 27 Market Roadmaps)
+  - Integrated Neural AI SBC Solver Module (v1.0.21)
   - Priority Updates & Immediate EA Patch Access
-  - AI SBC Solver (Soon)
-  - Mobile Apps (iOS & Android) (Soon)
-  - Free Feature Updates (including integrated Neural AI SBC Solver Module)
   - Continuous Day-One FC 27 Updates & Full Legacy FC 26 Support (Zero Upgrade Fees)
 
 ## Affiliate & Creator Partner Program
@@ -33,7 +34,7 @@
 
 ## Security & Architectural Superiority
 - Execution Model: 100% Local In-Browser (Home Residential IP, 0ms Datacenter Latency)
-- Dev Pedigree: Engineered by former developer of the legendary Baker's Bot
+- Dev Pedigree: Engineered by original core developer of FIFASniping Bot (domain fifasnipebot.com, which permanently redirects to bakers-bot.com)
 - Password Requirement: Never Required (Zero Credential or Cookie Handover)
 - Compatibility: Active EA Sports FC 27 Web App, plus legacy FC 26 and FC 25 (Windows, Mac, Linux, ChromeOS)
 - Anti-Ban Protocol: Humanization++ Bézier Physics & Adaptive Gaussian Randomization
