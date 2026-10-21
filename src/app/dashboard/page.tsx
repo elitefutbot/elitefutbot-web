@@ -44,6 +44,7 @@ import {
   MOBILE_PRICE_LABEL,
   mobileProrationEstimate,
   openBillingPortal,
+  peekBuyIntent,
   PRO_PRICE_EUR,
   PRO_PRICE_LABEL,
   type Purchase,
@@ -246,6 +247,10 @@ function DashboardContent() {
     readPaymentReturn,
   );
   const [purchase, setPurchase] = useState<Purchase>(readPurchase);
+  // Came from a buy button by way of login/register: point at Subscribe.
+  const [highlightSubscribe] = useState(
+    () => peekBuyIntent() === "after-sign-in",
+  );
 
   // Runs a billing call. A Stripe redirect unloads the page; a change the
   // backend applied to the existing subscription instead (no checkout) is
@@ -282,7 +287,8 @@ function DashboardContent() {
   }, []);
 
   // Drop ?payment=… once read so a reload doesn't replay the message, and
-  // honour ?buy=1 from buy buttons elsewhere on the site.
+  // honour ?buy=1 from buy buttons elsewhere on the site: straight to
+  // checkout when already signed in, otherwise just point at Subscribe.
   useEffect(() => {
     const url = new URL(window.location.href);
     if (url.searchParams.has("payment")) {
@@ -290,7 +296,7 @@ function DashboardContent() {
       url.searchParams.delete("purchase");
       window.history.replaceState(null, "", url.pathname + url.search + url.hash);
     }
-    if (consumeBuyIntent()) {
+    if (consumeBuyIntent() === "direct") {
       void startCheckout().then((result) => {
         if (!result.ok) {
           setCheckoutError(result.message);
@@ -644,7 +650,11 @@ function DashboardContent() {
                       type="button"
                       onClick={beginCheckout}
                       disabled={billingPending !== null}
-                      className="w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)] disabled:opacity-60 disabled:hover:scale-100"
+                      className={`w-full sm:w-auto px-6 py-3 rounded-full bg-primary text-dark font-black text-xs uppercase tracking-widest hover:scale-105 transition-transform shadow-[0_0_0_rgba(204,255,0,0)] hover:shadow-[0_0_35px_rgba(204,255,0,0.35)] disabled:opacity-60 disabled:hover:scale-100 ${
+                        highlightSubscribe
+                          ? "ring-2 ring-primary ring-offset-2 ring-offset-dark animate-pulse hover:animate-none"
+                          : ""
+                      }`}
                     >
                       {billingPending === "checkout"
                         ? "Opening checkout…"

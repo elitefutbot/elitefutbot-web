@@ -31,7 +31,14 @@ export function mobileProrationEstimate(paidUntil: string | null): number | null
 // visitor gets bounced through /login or /register first (both always land
 // on /dashboard), so AuthGuard stashes the intent here and the dashboard
 // picks it up after sign-in.
+//
+// Only a signed-in click goes straight to Stripe. After the sign-in detour
+// the dashboard just points at Subscribe: a new account may well want its
+// free trial first, and landing on a payment page right after registering
+// reads as a forced paywall.
 export const BUY_QUERY_PARAM = "buy";
+
+export type BuyIntent = "direct" | "after-sign-in";
 const BUY_INTENT_KEY = "EliteFutBot_buy_intent";
 
 export function rememberBuyIntent(): void {
@@ -42,10 +49,24 @@ export function rememberBuyIntent(): void {
   }
 }
 
-// True when the current visit asked to buy — via ?buy=1 or an intent saved
-// before a login/register detour. Clears both so a reload doesn't reopen
-// checkout.
-export function consumeBuyIntent(): boolean {
+// consumeBuyIntent()'s answer without clearing anything, so it's safe to
+// call while rendering.
+export function peekBuyIntent(): BuyIntent | null {
+  if (new URLSearchParams(window.location.search).get(BUY_QUERY_PARAM) === "1") {
+    return "direct";
+  }
+  try {
+    if (window.sessionStorage.getItem(BUY_INTENT_KEY) === "1") return "after-sign-in";
+  } catch {
+    // ignore
+  }
+  return null;
+}
+
+// Whether the current visit asked to buy: "direct" via ?buy=1 while signed
+// in, "after-sign-in" via an intent saved before a login/register detour.
+// Clears both so a reload doesn't repeat it.
+export function consumeBuyIntent(): BuyIntent | null {
   let fromStorage = false;
   try {
     fromStorage = window.sessionStorage.getItem(BUY_INTENT_KEY) === "1";
@@ -59,7 +80,8 @@ export function consumeBuyIntent(): boolean {
     url.searchParams.delete(BUY_QUERY_PARAM);
     window.history.replaceState(null, "", url.pathname + url.search + url.hash);
   }
-  return fromStorage || fromQuery;
+  if (fromQuery) return "direct";
+  return fromStorage ? "after-sign-in" : null;
 }
 
 // What a purchase was, carried back from Stripe as ?purchase=… (see the
