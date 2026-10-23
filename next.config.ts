@@ -43,6 +43,13 @@ const nextConfig: NextConfig = {
             key: 'X-Frame-Options',
             value: 'SAMEORIGIN',
           },
+          // Framing-only CSP (modern equivalent of X-Frame-Options). Deliberately
+          // no script-src etc. — a full policy would risk breaking GA, Clarity,
+          // YouTube embeds and Firebase.
+          {
+            key: 'Content-Security-Policy',
+            value: "frame-ancestors 'self'",
+          },
           {
             key: 'X-XSS-Protection',
             value: '1; mode=block',
