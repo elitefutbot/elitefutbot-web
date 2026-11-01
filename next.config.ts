@@ -1,8 +1,20 @@
 import type { NextConfig } from "next";
 import path from "path";
+import { ACTIVE_ROUTED_LOCALES } from "./src/data/locales/registry";
 
 const BACKEND_API_URL =
   process.env.BACKEND_API_URL ?? "https://elitefutbot-backend-three.vercel.app";
+
+// The single root layout server-renders <html lang="en"> for every route, so
+// localized pages only get their real language after client JS runs. Send the
+// correct Content-Language header so non-rendering crawlers (Bing/Copilot, AI
+// search fetchers) see the right language in the raw response.
+const localeLanguageHeaders = ACTIVE_ROUTED_LOCALES.flatMap((locale) =>
+  [`/${locale.prefix}`, `/${locale.prefix}/:path*`].map((source) => ({
+    source,
+    headers: [{ key: "Content-Language", value: locale.hreflang }],
+  }))
+);
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
@@ -73,10 +85,18 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      ...localeLanguageHeaders,
     ];
   },
   async redirects() {
     return [
+      // There is no /pricing route; pricing lives in the homepage #pricing
+      // section. Catch old/external links instead of serving a 404.
+      {
+        source: "/pricing",
+        destination: "/#pricing",
+        permanent: true,
+      },
       {
         source: "/support",
         destination: "/contact",

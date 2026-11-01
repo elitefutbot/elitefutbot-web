@@ -63,7 +63,7 @@ export const magicBuyerData: CompetitorData = {
     headline: "Professional Extension Engineering vs Unofficial Userscripts",
     badge: "Origin & Mission",
     text: "While open-source userscripts are interesting hobby projects, serious trading demands enterprise-grade architecture. Elite FUT SNIPER was engineered by dedicated software engineers to solve the flaws of userscripts: we eliminated DOM scraping, moved execution to dedicated protocol streams, built an autonomous neural AI SBC solver, and developed Humanization++ to guarantee personal club safety.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 

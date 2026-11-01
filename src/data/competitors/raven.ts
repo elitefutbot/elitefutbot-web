@@ -63,7 +63,7 @@ export const ravenData: CompetitorData = {
     headline: "Active Engineering vs Abandoned Open-Source Scripts",
     badge: "Origin & Mission",
     text: "While open-source userscripts served early FIFA titles, modern EA anti-cheat telemetry easily detects primitive scripts like Raven. Elite FUT SNIPER is built and actively maintained by full-time software engineers and competitive Ultimate Team players. We continuously update our decoupled Manifest V3 engine, refine our neural AI SBC solver, and benchmark anti-ban telemetry to deliver the safest and fastest trading tool on the market.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 

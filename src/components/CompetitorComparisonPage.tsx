@@ -348,13 +348,8 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
           priceValidUntil: "2027-12-31",
           availability: "https://schema.org/InStock",
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          ratingCount: "1420",
-          bestRating: "5",
-          worstRating: "1",
-        },
+        // No aggregateRating here: Google requires ratings in markup to be
+        // visible on the page, and these comparison pages show no reviews.
       },
       {
         "@type": "WebPage",
