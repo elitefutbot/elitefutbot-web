@@ -144,13 +144,8 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
             name: "Elite FUT SNIPER",
           },
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "1420",
-          bestRating: "5",
-          worstRating: "1",
-        },
+        // No aggregateRating: Google requires markup ratings to be visible on
+        // the page, and this page shows no review count.
       },
       {
         "@type": "BreadcrumbList",

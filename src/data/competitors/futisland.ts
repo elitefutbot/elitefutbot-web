@@ -63,7 +63,7 @@ export const futIslandData: CompetitorData = {
     headline: "Enterprise-Grade Engineering vs Niche Extension Marketing",
     badge: "Origin & Mission",
     text: "While niche software vendors like L&P International promote commercial extensions with risky anti-captcha claims, Elite FUT SNIPER was engineered over 5+ years of continuous architectural development. We built our sub-20ms WebSocket core, Humanization++ stealth algorithms, and neural AI SBC solver to deliver enterprise-grade performance that protects your personal club across every single EA update.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 

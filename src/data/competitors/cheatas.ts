@@ -63,7 +63,7 @@ export const cheatAsData: CompetitorData = {
     headline: "Specialized FUT Trading Engineering vs Indiscriminate Cheat Resellers",
     badge: "Origin & Mission",
     text: "While generic hack portals like Cheat.as bundle rudimentary bots alongside aimbots and wallhacks, Elite FUT SNIPER was engineered over 5+ years solely dedicated to EA Sports FC market intelligence. We built our sub-20ms WebSocket core, Humanization++ stealth algorithms, and neural AI SBC solver to deliver enterprise-grade performance that protects your personal club across every single EA update.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 

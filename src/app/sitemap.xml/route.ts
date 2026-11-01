@@ -420,12 +420,9 @@ export async function GET() {
       changeFrequency: 'monthly',
       priority: 0.6,
     },
-    {
-      url: `${baseUrl}/volt-velocity`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
+    // /volt-velocity is intentionally excluded: the page is noindex (internal
+    // design-system showcase), and listing noindex URLs in a sitemap sends
+    // Google conflicting signals ("Submitted URL marked 'noindex'").
     {
       url: `${baseUrl}/bakers-bot-developer`,
       lastModified: currentDate,

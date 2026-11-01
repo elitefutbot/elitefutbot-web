@@ -63,7 +63,7 @@ export const lenaBotData: CompetitorData = {
     headline: "Engineered for Club Preservation, Not Disposable Farms",
     badge: "Origin & Mission",
     text: "Commercial coin farms treat accounts as disposable commodities, burning through clubs with risky muling APIs. We built Elite FUT SNIPER for players who cherish their personal Ultimate Team clubs. Our sub-20ms WebSocket architecture, Humanization++ stealth suite, and neural AI SBC solver deliver elite market dominance directly within your browser without requiring server racks or risking your club's integrity.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 

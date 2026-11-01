@@ -63,7 +63,7 @@ export const futFunData: CompetitorData = {
     headline: "Built by Competitive Traders, Not Commission Siphoners",
     badge: "Origin & Mission",
     text: "Elite FUT SNIPER was engineered from the ground up to protect personal Ultimate Team clubs. We reject predatory coin commissions and deceptive 'coin generator' marketing. Every coin you earn belongs to you. Our sub-20ms engine, Humanization++ safety suite, and neural AI SBC solver were crafted to give individual traders professional-grade automation with absolute transparency.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 

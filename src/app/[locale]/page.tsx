@@ -145,13 +145,8 @@ export default async function LocalizedHomePage({ params }: PageProps) {
             name: "Elite FUT SNIPER",
           },
         },
-        aggregateRating: {
-          "@type": "AggregateRating",
-          ratingValue: "4.9",
-          reviewCount: "1420",
-          bestRating: "5",
-          worstRating: "1",
-        },
+        // No aggregateRating: markup ratings must match what's visible on the
+        // page. The individual reviews below are rendered on the page.
         review: dict.home.reviews.items
           .filter((item) => item.quote)
           .map((item) => ({

@@ -63,7 +63,7 @@ export const futCoinHarvesterData: CompetitorData = {
     headline: "Engineered for Account Safety, Not Burner Farms",
     badge: "Origin & Mission",
     text: "We built Elite FUT SNIPER because commercial cloud autobuyers were getting thousands of legitimate players banned by forcing credential handovers and datacenter routing. We believe personal clubs deserve absolute safety. By keeping all execution local, utilizing an isolated Side Panel HUD, and engineering our sub-20ms WebSocket core with Humanization++, we deliver unmatched trading performance without ever touching your credentials.",
-    linkUrl: "https://www.elitefutbot.com/pricing",
+    linkUrl: "https://www.elitefutbot.com/#pricing",
     linkText: "Get Elite FUT SNIPER — €19.90/Year",
   },
 
