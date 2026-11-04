@@ -95,6 +95,7 @@ const STATIC_PATHS = [
   "/contact",
   "/bio",
   "/install",
+  "/fut-sniping-bot-free-trial",
   "/referral",
   "/terms",
   "/privacy",

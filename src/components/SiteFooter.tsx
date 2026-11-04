@@ -163,6 +163,7 @@ export default function SiteFooter() {
                     </span>
                   </Link>
                 </li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fut-sniping-bot-free-trial">Free Trial</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/affiliate">Affiliate Program</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/volt-velocity">Volt Velocity</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/bakers-bot-developer">Origin Story</Link></li>

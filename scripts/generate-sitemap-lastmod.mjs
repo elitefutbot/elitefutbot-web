@@ -2,16 +2,17 @@
 /**
  * Regenerates src/data/sitemap-lastmod.ts: the <lastmod> date of every sitemap URL.
  *
- * A page's date is the most recent change to the files that make up its content:
- *   - its page source (src/app/<path>/page.tsx and anything beside it)
+ * A page's date is the most recent *content* change to the files behind it:
+ *   - its page source (src/app/(site)/<path>/ or src/app/[locale]/<path>/)
  *   - the data files that page imports from "@/data/..."
  *   - for translated pages, that language's dictionary (src/data/locales/<id>.ts)
- * Files with uncommitted edits count as changed today.
+ * Pure file moves/renames do not count as a change (so re-organising folders
+ * does not reset every date). Files with uncommitted edits count as today.
  *
  * Run it before deploying:  npm run sitemap:lastmod
  */
 import { execSync } from 'node:child_process';
-import { existsSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 
 const ROOT = new URL('..', import.meta.url).pathname;
@@ -31,27 +32,61 @@ const localeIds = readdirSync(join(ROOT, 'src/data/locales'))
   .filter((f) => f.endsWith('.ts') && !['index.ts', 'registry.ts', 'types.ts'].includes(f))
   .map((f) => f.replace(/\.ts$/, ''));
 
-/** Last-change date (YYYY-MM-DD) of the newest file in the list. */
+/**
+ * Last content-change date (YYYY-MM-DD) of one file.
+ * Pure moves and tiny edits do not count: a rename counts as a change only when
+ * the file was also meaningfully rewritten (git similarity below 95%).
+ */
+function fileDate(file) {
+  if (!existsSync(join(ROOT, file))) return '';
+  if (sh(`git status --porcelain -- "${file}"`)) return today;
+  const log = sh(`git log --follow -M --name-status --format=COMMIT:%cs -- "${file}"`);
+  let date = '';
+  let firstAdded = '';
+  for (const line of log.split('\n')) {
+    if (line.startsWith('COMMIT:')) {
+      date = line.slice(7);
+      continue;
+    }
+    const status = line.split('\t')[0];
+    if (!status) continue;
+    if (status === 'M') return date;
+    if (status === 'A') firstAdded = date;
+    if (status[0] === 'R' && Number(status.slice(1)) < 95) return date;
+    if (status[0] === 'R') firstAdded = firstAdded || date;
+  }
+  return firstAdded || date;
+}
+
+/** Newest date among a list of files. */
 function newest(files) {
   let best = '';
   for (const file of files) {
-    if (!existsSync(join(ROOT, file))) continue;
-    const dirty = sh(`git status --porcelain -- "${file}"`);
-    const date = dirty ? today : sh(`git log -1 --format=%cs -- "${file}"`);
-    if (date > best) best = date;
+    const d = fileDate(file);
+    if (d > best) best = d;
   }
   return best;
 }
 
-/** The page's own folder plus the "@/data/..." modules its page.tsx imports. */
-function pageFiles(appDir) {
-  const files = [appDir];
-  const page = join(ROOT, appDir, 'page.tsx');
-  if (existsSync(page)) {
-    for (const m of readFileSync(page, 'utf8').matchAll(/from\s+["']@\/(data\/[^"']+)["']/g)) {
-      for (const ext of ['.ts', '.tsx', '/index.ts']) {
-        if (existsSync(join(ROOT, 'src', m[1] + ext))) files.push(`src/${m[1]}${ext}`);
-      }
+/** Folders a route's source can live in (English pages sit in the (site) group). */
+function routeDir(path) {
+  for (const base of ['src/app/(site)', 'src/app']) {
+    const dir = path === '/' ? base : `${base}${path}`;
+    if (existsSync(join(ROOT, dir, 'page.tsx'))) return dir;
+  }
+  return null;
+}
+
+/** Files directly inside a route folder plus the "@/data/..." modules its page imports. */
+function pageFiles(dir) {
+  if (!dir) return [];
+  const files = readdirSync(join(ROOT, dir))
+    .filter((f) => statSync(join(ROOT, dir, f)).isFile())
+    .map((f) => `${dir}/${f}`);
+  const page = join(ROOT, dir, 'page.tsx');
+  for (const m of readFileSync(page, 'utf8').matchAll(/from\s+["']@\/(data\/[^"']+)["']/g)) {
+    for (const ext of ['.ts', '.tsx', '/index.ts']) {
+      if (existsSync(join(ROOT, 'src', m[1] + ext))) files.push(`src/${m[1]}${ext}`);
     }
   }
   return files;
@@ -60,17 +95,26 @@ function pageFiles(appDir) {
 const result = {};
 
 for (const path of staticPaths) {
-  result[path] = newest(pageFiles(`src/app${path}`));
+  result[path] = newest(pageFiles(routeDir(path)));
 }
 
 for (const id of localeIds) {
   const isEnglish = id === 'en';
   for (const sub of subpaths) {
     const urlPath = isEnglish ? sub || '/' : `/${id}${sub}`;
-    const appDir = isEnglish ? `src/app${sub}` : `src/app/[locale]${sub}`;
-    const files = [`${appDir}/page.tsx`, `src/data/locales/${id}.ts`];
-    result[urlPath] = newest(files);
+    const dir = isEnglish
+      ? routeDir(sub || '/')
+      : existsSync(join(ROOT, `src/app/[locale]${sub}/page.tsx`))
+        ? `src/app/[locale]${sub}`
+        : null;
+    result[urlPath] = newest([...pageFiles(dir), `src/data/locales/${id}.ts`]);
   }
+}
+
+const missing = Object.entries(result).filter(([, v]) => !v).map(([k]) => k);
+if (missing.length) {
+  console.error('No date found for:', missing.join(', '));
+  process.exit(1);
 }
 
 const sorted = Object.fromEntries(Object.entries(result).sort(([a], [b]) => a.localeCompare(b)));
