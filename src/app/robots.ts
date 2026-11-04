@@ -6,7 +6,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/dashboard', '/forgot-password', '/reset-password'],
+        // /dashboard, /forgot-password and /reset-password are not blocked here on
+        // purpose: they are marked noindex, and Google can only see a noindex on a
+        // page it is allowed to fetch.
+        disallow: ['/api/'],
       },
       {
         userAgent: [
@@ -43,7 +46,10 @@ export default function robots(): MetadataRoute.Robots {
           'DuckDuckBot',
         ],
         allow: '/',
-        disallow: ['/api/', '/dashboard', '/forgot-password', '/reset-password'],
+        // /dashboard, /forgot-password and /reset-password are not blocked here on
+        // purpose: they are marked noindex, and Google can only see a noindex on a
+        // page it is allowed to fetch.
+        disallow: ['/api/'],
       }
     ],
     sitemap: 'https://www.elitefutbot.com/sitemap.xml',

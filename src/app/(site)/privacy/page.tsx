@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Privacy <span className="text-primary italic">Policy</span>
           </h1>
-          <p className="text-sm text-gray-400 font-medium">Last updated: September 18, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: November 5, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
               1. Introduction
             </h2>
             <p>
-              At Elite FUT SNIPER (accessible via <a href="https://www.elitefutbot.com/" className="text-primary underline hover:underline">https://www.elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, tools, and companion overlay services.
+              At Elite FUT SNIPER (accessible via <a href="https://www.elitefutbot.com/" className="text-primary underline hover:underline">https://www.elitefutbot.com/</a>), we respect your privacy and are committed to protecting any personal data we process. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit or use our website, our FUT sniping bot browser extension, and our related tools and services.
             </p>
           </section>
 
@@ -54,7 +54,7 @@ export default function PrivacyPage() {
             </p>
             <ul className="list-disc pl-6 space-y-2">
               <li><strong>Account Registration &amp; 2-Day Trial Data:</strong> When you register or activate our 2-day free trial (e.g., using Discord authorization or email), we collect your email address, username, profile identifier, and hardware/device fingerprints necessary to enforce trial duration, prevent duplicate trial abuse, and maintain license integrity.</li>
-              <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, transactional data is handled securely by certified third-party payment gateways (such as Stripe). <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We retain transaction references, timestamps, and product tokens to verify your digital license entitlement. Because SaaS licenses are delivered immediately and are non-refundable, transaction records are securely logged for accounting and fraud prevention.</li>
+              <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, payments are processed by <strong>Stripe</strong>. You enter your card and billing details directly at Stripe Checkout. <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We receive from Stripe a transaction reference, your billing email, subscription status, renewal dates, and product tokens, which we use to verify your digital license entitlement. Because SaaS licenses are delivered immediately and purchases are final and non-refundable (see our Terms of Service), transaction records are securely logged for accounting, tax, and fraud prevention.</li>
               <li><strong>Usage &amp; Performance Data:</strong> We automatically collect information about how you interact with our website and extension companion, including IP address, browser type, device information, and diagnostic telemetry, to help us optimize performance and safeguard platform security.</li>
             </ul>
           </section>
@@ -67,7 +67,7 @@ export default function PrivacyPage() {
               We use the information we collect for essential operational and business purposes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li>To provide, operate, and maintain our SBC helper, sniper overlay, and market tools.</li>
+              <li>To provide, operate, and maintain our FUT sniping bot, market tools, and SBC helper tools (and the AI SBC Solver once it is released).</li>
               <li>To administer the 2-day free trial period, evaluate device trial eligibility, and prevent trial exploitation.</li>
               <li>To process digital SaaS license provisioning, verify active subscriptions, and handle authorized cancellations.</li>
               <li>To send transactional communications, including receipts, access links, and critical system alerts.</li>
@@ -84,7 +84,8 @@ export default function PrivacyPage() {
               <strong>We do not sell, rent, or trade your personal information to third parties.</strong> We share data exclusively with trusted service providers necessary to operate the Service:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Payment Processors:</strong> We use Stripe to securely process payments (license keys purchased earlier were processed by Gumroad). This provider adheres to strict industry security standards and its own privacy policy.</li>
+              <li><strong>Payment Processors:</strong> We use Stripe to securely process payments and manage subscriptions (license keys purchased earlier were processed by Gumroad). These providers adhere to strict industry security standards and have their own privacy policies.</li>
+              <li><strong>Analytics:</strong> We use analytics tools, including Google Tag Manager, Google Analytics, and Microsoft Clarity, to understand how the website is used and to improve it. Clarity may record how you interact with pages (such as clicks and scrolling).</li>
               <li><strong>Hosting &amp; Infrastructure:</strong> Our web services, APIs, and databases are hosted on secure modern cloud infrastructure (such as Vercel).</li>
               <li><strong>Legal Compliance &amp; Protection:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities, or to defend against fraudulent chargeback attempts.</li>
             </ul>

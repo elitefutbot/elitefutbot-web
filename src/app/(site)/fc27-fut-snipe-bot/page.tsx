@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
-import SetDocumentLang from "@/components/SetDocumentLang";
 import { getHreflangAlternates } from "@/data/locales/registry";
 import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
@@ -487,7 +486,6 @@ export default function FC27FutSnipeBotPage() {
 
   return (
     <>
-      <SetDocumentLang lang="en" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -1,8 +1,8 @@
+import { getLocaleEntry } from "@/data/locales/registry";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
-import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   PlayCircle,
@@ -123,7 +123,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#software`,
         name: dict.snipeBot.meta.title,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         operatingSystem: "Windows, macOS, ChromeOS",
         applicationCategory: "GameApplication",
         image: `${baseUrl}/og-image.png`,
@@ -175,7 +175,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
         "@type": "HowTo",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#howto`,
         name: dict.snipeBot.howItWorks.title,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         description: dict.snipeBot.howItWorks.subtitle,
         step: dict.snipeBot.howItWorks.steps.map((s, idx) => ({
           "@type": "HowToStep",
@@ -187,7 +187,7 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/fc27-fut-snipe-bot#faq`,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         mainEntity: dict.snipeBot.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -202,7 +202,6 @@ export default async function LocalizedFC27FutSnipeBotPage({ params }: PageProps
 
   return (
     <>
-      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

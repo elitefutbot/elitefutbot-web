@@ -44,45 +44,10 @@ const jsonLd = {
         url: "https://www.elitefutbot.com/ai-sbc-solver",
         price: "0",
         priceCurrency: "USD",
-        priceValidUntil: "2027-12-31",
         availability: "https://schema.org/PreOrder",
         seller: {
           "@type": "Organization",
           name: "Elite FUT SNIPER"
-        },
-        shippingDetails: {
-          "@type": "OfferShippingDetails",
-          shippingRate: {
-            "@type": "MonetaryAmount",
-            value: "0",
-            currency: "USD"
-          },
-          shippingDestination: [
-            {
-              "@type": "DefinedRegion",
-              addressCountry: "US"
-            }
-          ],
-          deliveryTime: {
-            "@type": "ShippingDeliveryTime",
-            handlingTime: {
-              "@type": "QuantitativeValue",
-              minValue: 0,
-              maxValue: 0,
-              unitCode: "DAY"
-            },
-            transitTime: {
-              "@type": "QuantitativeValue",
-              minValue: 0,
-              maxValue: 0,
-              unitCode: "DAY"
-            }
-          }
-        },
-        hasMerchantReturnPolicy: {
-          "@type": "MerchantReturnPolicy",
-          applicableCountry: "US",
-          returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted"
         }
       }
     },

@@ -74,7 +74,7 @@ const RIGHT_HIGHLIGHTS = [
   {
     icon: Zap,
     title: "Simple and Powerful",
-    desc: "Simple to use, customizable, configurable, and beautifully designed. Search, list, buy, stop — after 5 tries, pause. Multiple search requests per search. Update cycle animated and receive notify yourself through Telegram.",
+    desc: "Simple to use, customizable, configurable, and beautifully designed. Search, list, buy, stop — after 5 tries, pause. Multiple search requests per search. Animated update cycle, and get Telegram notifications for every update.",
   },
   {
     icon: BarChart3,
@@ -84,12 +84,12 @@ const RIGHT_HIGHLIGHTS = [
   {
     icon: RefreshCcw,
     title: "Web-App on PC / Mac / Linux",
-    desc: "Use the Web-App on your favourite browser with our integrated script on your PC or Mac. One notebook, and even on your Android or iOS device!",
+    desc: "Use the Web-App in your favourite browser with our integrated script on your PC or Mac. Mobile access is coming soon.",
   },
   {
     icon: ShieldCheck,
     title: "Support and Upgrades",
-    desc: "Very frequent updates, fixes, improvements and new features! Contacted us with live 24/7 support, bug reporting, and feature requests.",
+    desc: "Very frequent updates, fixes, improvements and new features! Contact us anytime: live 24/7 support, bug reporting and feature requests.",
   },
 ];
 

@@ -1,8 +1,8 @@
+import { getLocaleEntry } from "@/data/locales/registry";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { notFound } from "next/navigation";
-import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   PlayCircle,
@@ -124,7 +124,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}#software`,
         name: "Elite FUT SNIPER",
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         operatingSystem: "Windows, macOS, ChromeOS",
         applicationCategory: "GameApplication",
         image: `${baseUrl}/og-image.png`,
@@ -145,17 +145,8 @@ export default async function LocalizedHomePage({ params }: PageProps) {
             name: "Elite FUT SNIPER",
           },
         },
-        // No aggregateRating: markup ratings must match what's visible on the
-        // page. The individual reviews below are rendered on the page.
-        review: dict.home.reviews.items
-          .filter((item) => item.quote)
-          .map((item) => ({
-            "@type": "Review",
-            author: { "@type": "Person", name: item.user },
-            reviewBody: item.quote,
-            reviewRating: { "@type": "Rating", ratingValue: "5", bestRating: "5" },
-            datePublished: "2026-07-01",
-          })),
+        // No review or aggregateRating markup: Google needs a visible, verifiable
+        // overall rating before it accepts reviews, so none is declared here.
       },
       {
         "@type": "BreadcrumbList",
@@ -178,7 +169,7 @@ export default async function LocalizedHomePage({ params }: PageProps) {
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}#faq`,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         mainEntity: dict.home.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -193,7 +184,6 @@ export default async function LocalizedHomePage({ params }: PageProps) {
 
   return (
     <>
-      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

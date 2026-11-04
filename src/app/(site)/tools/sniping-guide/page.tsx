@@ -1,7 +1,5 @@
 import { Metadata } from "next";
 import Link from "next/link";
-import SetDocumentLang from "@/components/SetDocumentLang";
-import { getHreflangAlternates } from "@/data/locales/registry";
 import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
   Timer,
@@ -42,7 +40,6 @@ export const metadata: Metadata = {
     "EA FC 27 FUT sniping guide with daily free Discord sniping filters, best 5K–100K budget filters, mass bidding tips, FUTBIN 27 floors & FUT snipe bot settings.",
   alternates: {
     canonical: "https://www.elitefutbot.com/tools/sniping-guide",
-    languages: getHreflangAlternates("/tools/sniping-guide"),
   },
   keywords: [
     "fc 27 sniping guide",
@@ -400,7 +397,6 @@ const SAFETY_RULES = [
 export default function SnipingGuidePage() {
   return (
     <>
-      <SetDocumentLang lang="en" />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <div className="min-h-screen bg-[#050505] text-white pt-24 pb-20 relative overflow-hidden font-sans">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-primary/8 blur-[160px] rounded-full pointer-events-none -z-10" />

@@ -18,14 +18,14 @@ export const frLocale: LocaleDictionary = {
   },
   home: {
     meta: {
-      title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
+      title: "EA FC 27 FUT Sniping Bot et Autobuyer | Elite FUT Sniper",
       description:
-        "Elite FUT Sniper est le #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot et autobuyer Ultimate Team (compatible FC 27). 0 ban marché des transferts et essai gratuit.",
+        "Elite FUT Sniper est le #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot et autobuyer Ultimate Team (compatible FC 27). 0 ban sur le marché, essai gratuit.",
       keywords:
         "fut sniping bot, fut snipe bot, fifa snipe bot, bot achat revente fc 27, autobuyer ea fc 27 francais, bot sniping fifa 27, extension chrome achat revente fc27, solveur dce ia francais",
-      ogTitle: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
+      ogTitle: "EA FC 27 FUT Sniping Bot et Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "Elite FUT Sniper est le #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot et autobuyer Ultimate Team (compatible FC 27). 0 ban marché des transferts et essai gratuit.",
+        "Elite FUT Sniper est le #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot et autobuyer Ultimate Team (compatible FC 27). 0 ban sur le marché, essai gratuit.",
     },
     creatorBadge: {
       originalCreator: "CRÉATEUR ORIGINAL",
@@ -145,7 +145,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           title: "Petit Prix Annuel",
-          description: "€19.90 par an, facturé annuellement. Reste valide lors des mises à jour de saison – résiliable à tout moment.",
+          description: "19,90 € par an, facturé annuellement. Reste valide lors des mises à jour de saison – résiliable à tout moment.",
           iconName: "CalendarCheck",
         },
       ],
@@ -176,42 +176,34 @@ export const frLocale: LocaleDictionary = {
       titleHighlight: "Autobuyer",
       subtitle: "Tarification transparente. Sans frais cachés, résiliable à tout moment.",
       freeCard: {
-        badge: "Accès Limité 2 Jours",
+        badge: "Accès Complet 2 Jours",
         title: "Essai Gratuit (2 Jours)",
-        price: "€0",
+        price: "0 €",
         period: "/ 2 jours",
-        desc: "2 jours d'accès gratuit limité. Parfait pour tester les fonctions et apprendre les bases du sniping.",
+        desc:
+          "2 jours d'accès gratuit à toutes les fonctionnalités. Testez le bot complet, Humanization++ inclus, avant de payer.",
         features: [
-          "2 Jours d'Accès Gratuit Limité",
-          "Filtres de Sniping Standard",
-          "1 Compte Actif",
-          {
-            text: "Filtres Discord Gratuits & Astuces",
-            subtext: "Filtres quotidiens gratuits pour petit budget et astuces pour accumuler des crédits",
-          },
-          { text: "Sniping Multi-Onglets", isNegative: true },
-          {
-            text: "Sans Technologie Humanization++",
-            subtext: "(Version Pro Uniquement)",
-            isNegative: true,
-          },
+          "Accès complet à toutes les fonctionnalités",
+          "Technologie anti-ban Humanization++ incluse",
+          "Prix Futbin en direct",
+          "Support de la communauté Discord",
         ],
         cta: "Commencer l'Essai Gratuit de 2 Jours",
       },
       proCard: {
         badge: "Meilleure Offre",
         title: "Pro Sniper",
-        price: "€19.90",
-        originalPrice: "€49.90",
+        price: "19,90 €",
+        originalPrice: "49,90 €",
         guarantee: "Facturé Annuellement · Résiliable à Tout Moment · FC 27 & FC 26",
-        spotsLeft: "12 Places restantes à €19.90",
+        spotsLeft: "12 Places restantes à 19,90 €",
         soldText: "88/100 vendus",
-        nextPrice: "Prochain prix : €29.90",
+        nextPrice: "Prochain prix : 29,90 €",
         featuresHeader: "Ce qui est inclus",
         features: [
           { text: "Logique Avancée de Sniping Sub-20ms" },
           { text: "Filtres Pro Joueurs Gratuits" },
-          { text: "Support Multi-Comptes Illimité" },
+          { text: "Jusqu'à 2 Appareils Actifs" },
           { text: "Sniping Multi-Onglets Local" },
           {
             text: "Technologie Anti-Ban Human++",
@@ -230,7 +222,7 @@ export const frLocale: LocaleDictionary = {
           { text: "Mises à Jour Prioritaires & Accès Patch Rapide" },
           { text: "Potentiel de Gain de 10M+ Crédits" },
           { text: "Solveur de DCE par IA", isSoon: true },
-          { text: "Option Accès Application Mobile · +€10/an", isSoon: true },
+          { text: "Option Accès Application Mobile · +10 €/an", isSoon: true },
         ],
         cta: "Obtenir l'Accès Pro Sniper",
       },
@@ -365,6 +357,26 @@ export const frLocale: LocaleDictionary = {
           q: "Comment obtenir un accès Bêta Gratuit pour le Bot de Sniping FC 27 & FC 26 ?",
           a: "Rejoignez simplement notre communauté Discord officielle ! Nous offrons un accès bêta à vie gratuit pour les premiers arrivés. Dès votre arrivée, vous recevrez des instructions détaillées pour installer l'extension de navigateur et configurer vos premiers filtres d'Autobuyer FC 27 & FC 26.",
         },
+        {
+          q: "Proposez-vous des remboursements ?",
+          a: "Non. Tous les achats sont définitifs, c'est pourquoi chaque nouveau compte bénéficie d'un essai gratuit de 2 jours avec toutes les fonctionnalités. Vous pouvez résilier à tout moment pour arrêter les renouvellements futurs, mais la résiliation ne rembourse pas la période en cours.",
+        },
+        {
+          q: "De quoi ai-je besoin pour utiliser Elite FUT SNIPER ?",
+          a: "Un navigateur de bureau basé sur Chrome (Chrome, Brave, Opera ou Edge) sous Windows, macOS ou ChromeOS, et l'accès à la Web App EA FC. L'accès mobile arrive bientôt.",
+        },
+        {
+          q: "Comment l'installer ? Est-il sur le Chrome Web Store ?",
+          a: "Il n'est pas listé sur le Chrome Web Store. Vous téléchargez un fichier ZIP depuis le tableau de bord de votre compte, activez le mode développeur dans Chrome et le chargez en tant qu'extension non empaquetée. Le guide pas à pas sur elitefutbot.com/install prend environ 2 minutes.",
+        },
+        {
+          q: "Puis-je quand même être banni ?",
+          a: "Utiliser n'importe quel outil d'automatisation, y compris Elite FUT SNIPER, peut aller à l'encontre des conditions d'EA et mettre votre compte en danger. Humanization++ est conçu pour réduire ce risque et aucun bannissement n'a été signalé à ce jour, mais nous ne pouvons pas garantir que votre compte ne sera jamais restreint. Consultez nos Conditions d'utilisation pour plus de détails.",
+        },
+        {
+          q: "Combien de crédits puis-je gagner ?",
+          a: "Cela dépend du marché, de vos filtres, de votre budget et du temps d'utilisation, nous ne pouvons donc promettre aucun montant. L'essai gratuit de 2 jours vous permet de tester par vous-même avant de payer.",
+        },
       ],
     },
     ctaBottom1: {
@@ -386,12 +398,12 @@ export const frLocale: LocaleDictionary = {
     meta: {
       title: "FC 27 FUT Bot de Sniping & Autobuyer | Conseils et Guide d'Achat-Revente UT Gratuits",
       description:
-        "Utilisez Elite FUT SNIPER sur la Web App EA FC 27 pour sniper des joueurs sous-cotés, acheter et lister en automatique avec des filtres intelligents, exécution locale sur Chrome et essai gratuit.",
+        "Utilisez Elite FUT SNIPER sur la Web App EA FC 27 : sniper des joueurs sous-cotés, acheter et lister en automatique, filtres intelligents, exécution locale.",
       keywords:
         "fc27 fut snipe bot francais, ea fc 27 autobuyer france, bot achat revente fc27, bot sniping fc27, extension chrome autobuyer fc27, solveur dce ia",
       ogTitle: "FC 27 FUT Bot de Sniping & Autobuyer | Conseils et Guide d'Achat-Revente UT Gratuits",
       ogDescription:
-        "Utilisez Elite FUT SNIPER sur la Web App EA FC 27 pour sniper des joueurs sous-cotés, acheter et lister en automatique avec des filtres intelligents, exécution locale sur Chrome et essai gratuit.",
+        "Utilisez Elite FUT SNIPER sur la Web App EA FC 27 : sniper des joueurs sous-cotés, acheter et lister en automatique, filtres intelligents, exécution locale.",
     },
     hero: {
       badge: "Suite de Sniping pour EA FC 27 & FC 26",
@@ -618,7 +630,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Modèle Tarifaire",
-          elite: "€19.90/an · résiliable à tout moment (+ Essai)",
+          elite: "19,90 €/an · résiliable à tout moment (+ Essai)",
           cloud: "15 € – 35 € / mois récurrent",
           manual: "Gratuit (Coûte 4+ heures par jour)",
         },
@@ -710,7 +722,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           q: "Quelle différence entre Elite FUT SNIPER et des bots cloud comme FutBot ou FutEarn ?",
-          a: "Les bots cloud transitent par des serveurs partagés, générant 150ms–350ms de latence et exigeant votre mot de passe. Elite FUT SNIPER fonctionne localement à <20ms, ne transmet aucune donnée et ne coûte que €19.90 par an, résiliable à tout moment.",
+          a: "Les bots cloud transitent par des serveurs partagés, générant 150ms–350ms de latence et exigeant votre mot de passe. Elite FUT SNIPER fonctionne localement à <20ms, ne transmet aucune donnée et ne coûte que 19,90 € par an, résiliable à tout moment.",
         },
         {
           q: "Où trouver des filtres de sniping rentables et de l'aide ?",
@@ -737,12 +749,12 @@ export const frLocale: LocaleDictionary = {
     meta: {
       title: "Fonctionnalités GRATUITES Bot de Sniping & Autobuyer FC 27 | Elite FUT Bot",
       description:
-        "Découvrez les fonctionnalités d'Elite FUT Bot pour EA FC 27 : auto-snipe, autobuyer, auto-list, filtres intelligents, prix Futbin, filtres d'achat-revente gratuits et essai gratuit de 2 jours.",
+        "Fonctionnalités d'Elite FUT Bot pour EA FC 27 : auto-snipe, autobuyer, auto-list, filtres intelligents, prix Futbin, filtres gratuits et essai de 2 jours.",
       keywords:
         "fonctionnalites bot fc27, autobuyer ea fc 27 francais, bot sniping fc27, extension chrome achat revente fc27, anti ban fut sniping, solveur dce ia",
       ogTitle: "Fonctionnalités GRATUITES Bot de Sniping & Autobuyer FC 27 | Elite FUT Bot",
       ogDescription:
-        "Découvrez les fonctionnalités d'Elite FUT Bot pour EA FC 27 : auto-snipe, autobuyer, auto-list, filtres intelligents, prix Futbin, filtres d'achat-revente gratuits et essai gratuit de 2 jours.",
+        "Fonctionnalités d'Elite FUT Bot pour EA FC 27 : auto-snipe, autobuyer, auto-list, filtres intelligents, prix Futbin, filtres gratuits et essai de 2 jours.",
     },
     hero: {
       eyebrow: "Suite pour EA FC 26 & FC 27 Ultimate Team",
@@ -1000,7 +1012,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           feature: "Modèle de Tarification",
-          elite: "€19.90/an · Résiliable à Tout Moment",
+          elite: "19,90 €/an · Résiliable à Tout Moment",
           cloud: "15 €–30 € / mois abonnements récurrents",
         },
         {
@@ -1073,7 +1085,7 @@ export const frLocale: LocaleDictionary = {
         },
         {
           title: "Petit Prix Annuel",
-          desc: "€19.90/an avec mises à jour garanties pour FC 26 et FC 27. Résiliable à tout moment.",
+          desc: "19,90 €/an avec mises à jour garanties pour FC 26 et FC 27. Résiliable à tout moment.",
           iconName: "Clock",
         },
       ],
@@ -1107,11 +1119,11 @@ export const frLocale: LocaleDictionary = {
         },
         {
           q: "Ma licence est-elle valide pour EA FC 27 et la Web App d'EA FC 26 ?",
-          a: "Oui. Pro couvre les deux pour €19.90 par an, avec mises à jour automatiques sans surcoût lors des nouvelles saisons. Résiliable à tout moment, l'accès reste actif jusqu'à la fin de l'année payée.",
+          a: "Oui. Pro couvre les deux pour 19,90 € par an, avec mises à jour automatiques sans surcoût lors des nouvelles saisons. Résiliable à tout moment, l'accès reste actif jusqu'à la fin de l'année payée.",
         },
         {
           q: "Puis-je faire tourner plusieurs comptes ou onglets en même temps ?",
-          a: "Oui. Grâce à Google Chrome, vous pouvez créer des profils séparés pour piloter plusieurs comptes avec des filtres et sessions distincts.",
+          a: "Oui, jusqu'à 2 appareils en même temps avec une licence Pro (l'essai gratuit en inclut 1). Le sniping multi-onglets fonctionne sur chaque appareil.",
         },
       ],
     },

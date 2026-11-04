@@ -1,7 +1,7 @@
+import { getLocaleEntry } from "@/data/locales/registry";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import SetDocumentLang from "@/components/SetDocumentLang";
 import {
   ArrowRight,
   ShieldCheck,
@@ -124,7 +124,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
         "@type": "SoftwareApplication",
         "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#software`,
         name: dict.featuresPage.meta.title,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         operatingSystem: "Chrome OS, Windows, macOS, Linux",
         applicationCategory: "BrowserApplication",
         image: `${baseUrl}/og-image.png`,
@@ -152,7 +152,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
       {
         "@type": "ItemList",
         name: `Elite FUT SNIPER 11-Module Features Arsenal (${dict.locale.nativeName})`,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         itemListElement: dict.featuresPage.features.map((feat, idx) => ({
           "@type": "ListItem",
           position: idx + 1,
@@ -163,7 +163,7 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
       {
         "@type": "FAQPage",
         "@id": `${baseUrl}/${locale}/fc27-fut-sniping-bot-autobuyer-features#faq`,
-        inLanguage: locale,
+        inLanguage: getLocaleEntry(locale)?.hreflang ?? locale,
         mainEntity: dict.featuresPage.faqs.items.map((faq) => ({
           "@type": "Question",
           name: faq.q,
@@ -202,7 +202,6 @@ export default async function LocalizedFeaturesPage({ params }: PageProps) {
 
   return (
     <div className="bg-dark text-white min-h-screen">
-      <SetDocumentLang lang={locale} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

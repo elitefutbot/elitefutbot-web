@@ -123,10 +123,8 @@
           <table>
             <thead>
               <tr>
-                <th style="width: 50%;">URL</th>
-                <th style="width: 15%;">Languages</th>
-                <th style="width: 10%;">Priority</th>
-                <th style="width: 10%;">Change Freq.</th>
+                <th style="width: 60%;">URL</th>
+                <th style="width: 25%;">Languages</th>
                 <th style="width: 15%;">Last Modified</th>
               </tr>
             </thead>
@@ -147,12 +145,6 @@
                     <xsl:if test="not(xhtml:link)">
                       <span class="tag-lang">en</span>
                     </xsl:if>
-                  </td>
-                  <td>
-                    <xsl:value-of select="sitemap:priority"/>
-                  </td>
-                  <td>
-                    <xsl:value-of select="sitemap:changefreq"/>
                   </td>
                   <td>
                     <xsl:value-of select="substring(sitemap:lastmod, 0, 11)"/>

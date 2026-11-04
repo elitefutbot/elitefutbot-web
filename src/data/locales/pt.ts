@@ -20,12 +20,12 @@ export const ptLocale: LocaleDictionary = {
     meta: {
       title: "EA FC 27 FUT Sniping Bot e Autobuyer | Elite FUT Sniper",
       description:
-        "Elite FUT Sniper é o #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot e autobuyer do Ultimate Team (compatível com FC 27). 0 banimentos de mercado e teste grátis.",
+        "Elite FUT Sniper é o #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot e autobuyer do Ultimate Team (compatível com FC 27). 0 banimentos e teste grátis.",
       keywords:
         "fut sniping bot, fut snipe bot, fifa snipe bot, autobuyer fc 27 portugues brasil, bot de trade fc 27, fut sniping bot fc27, bot comprar jogadores fifa 27, extensao chrome trade fc27, resolver dme ia",
       ogTitle: "EA FC 27 FUT Sniping Bot e Autobuyer | Elite FUT Sniper",
       ogDescription:
-        "Elite FUT Sniper é o #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot e autobuyer do Ultimate Team (compatível com FC 27). 0 banimentos de mercado e teste grátis.",
+        "Elite FUT Sniper é o #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot e autobuyer do Ultimate Team (compatível com FC 27). 0 banimentos e teste grátis.",
     },
     creatorBadge: {
       originalCreator: "CRIADOR ORIGINAL",
@@ -145,7 +145,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           title: "Preço Anual Acessível",
-          description: "€19.90 por ano, cobrado anualmente. Válido mesmo com atualizações do jogo – cancele quando quiser.",
+          description: "€19,90 por ano, cobrado anualmente. Válido mesmo com atualizações do jogo – cancele quando quiser.",
           iconName: "CalendarCheck",
         },
       ],
@@ -176,42 +176,34 @@ export const ptLocale: LocaleDictionary = {
       titleHighlight: "Autobuyer",
       subtitle: "Preços transparentes. Sem taxas ocultas, cancele quando quiser.",
       freeCard: {
-        badge: "Acesso Limitado de 2 Dias",
+        badge: "Acesso Completo de 2 Dias",
         title: "Teste Grátis (2 Dias)",
         price: "€0",
         period: "/ 2 dias",
-        desc: "2 dias de acesso gratuito limitado. Ideal para testar as ferramentas e aprender os fundamentos do sniping.",
+        desc:
+          "2 dias de acesso gratuito a todos os recursos. Teste o bot completo, com Humanization++ incluído, antes de pagar.",
         features: [
-          "2 Dias de Acesso Gratuito Limitado",
-          "Filtros Padrão de Sniping",
-          "1 Conta Ativa",
-          {
-            text: "Filtros Grátis no Discord e Dicas",
-            subtext: "Filtros diários grátis de baixo orçamento e truques para fazer coins",
-          },
-          { text: "Sniping Multi-Abas", isNegative: true },
-          {
-            text: "Sem Tecnologia Humanization++",
-            subtext: "(Apenas Pro)",
-            isNegative: true,
-          },
+          "Acesso completo a todos os recursos",
+          "Tecnologia anti-banimento Humanization++ incluída",
+          "Preços do Futbin em tempo real",
+          "Suporte na comunidade do Discord",
         ],
         cta: "Iniciar Teste Grátis de 2 Dias",
       },
       proCard: {
         badge: "Melhor Escolha",
         title: "Pro Sniper",
-        price: "€19.90",
-        originalPrice: "€49.90",
+        price: "€19,90",
+        originalPrice: "€49,90",
         guarantee: "Cobrança Anual · Cancele Quando Quiser · FC 27 e FC 26",
-        spotsLeft: "12 Vagas restantes a €19.90",
+        spotsLeft: "12 Vagas restantes a €19,90",
         soldText: "88/100 vendidos",
-        nextPrice: "Próximo preço: €29.90",
+        nextPrice: "Próximo preço: €29,90",
         featuresHeader: "O que está incluso",
         features: [
-          { text: "Lógica Avanzada de Sniping Sub-20ms" },
+          { text: "Lógica Avançada de Sniping Sub-20ms" },
           { text: "Filtros Pro de Jogadores Grátis" },
-          { text: "Suporte Multi-Contas Ilimitado" },
+          { text: "Até 2 Dispositivos Ativos" },
           { text: "Sniping Multi-Abas Local" },
           {
             text: "Tecnologia Anti-Ban Human++",
@@ -315,7 +307,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           user: "Phantom (GENO)",
-          badge: "💰 1,005,378 Coins",
+          badge: "💰 1.005.378 Coins",
           badgeColor: "text-emerald-400",
           quote: "Mais de 1 milhão de moedas de lucro com o Lamine Yamal 97 snipado.",
           img: "/discord-review-6.png",
@@ -365,6 +357,26 @@ export const ptLocale: LocaleDictionary = {
           q: "Como consigo acesso ao Beta Gratuito?",
           a: "Basta entrar no nosso Discord oficial! Estamos disponibilizando vagas gratuitas para os primeiros usuários da comunidade.",
         },
+        {
+          q: "Vocês oferecem reembolso?",
+          a: "Não. Todas as compras são definitivas, por isso toda conta nova recebe um teste grátis de 2 dias com todos os recursos. Você pode cancelar a qualquer momento para interromper renovações futuras, mas o cancelamento não reembolsa o período atual.",
+        },
+        {
+          q: "O que preciso para usar o Elite FUT SNIPER?",
+          a: "Um navegador de computador baseado em Chrome (Chrome, Brave, Opera ou Edge) no Windows, macOS ou ChromeOS, e acesso ao Web App do EA FC. O acesso pelo celular chega em breve.",
+        },
+        {
+          q: "Como instalo? Está na Chrome Web Store?",
+          a: "Não está na Chrome Web Store. Você baixa um arquivo ZIP no painel da sua conta, ativa o Modo do desenvolvedor no Chrome e carrega a extensão descompactada. O passo a passo em elitefutbot.com/install leva cerca de 2 minutos.",
+        },
+        {
+          q: "Ainda posso ser banido?",
+          a: "Usar qualquer ferramenta de automação, incluindo o Elite FUT SNIPER, pode ir contra os termos da EA e colocar sua conta em risco. O Humanization++ foi criado para reduzir esse risco e não há relatos de banimento até hoje, mas não podemos garantir que sua conta nunca será restringida. Veja nossos Termos de Serviço para mais detalhes.",
+        },
+        {
+          q: "Quantas moedas posso ganhar?",
+          a: "Depende do mercado, dos seus filtros, do seu orçamento e do tempo de uso, por isso não podemos prometer nenhum valor. O teste grátis de 2 dias permite experimentar antes de pagar.",
+        },
       ],
     },
     ctaBottom1: {
@@ -386,12 +398,12 @@ export const ptLocale: LocaleDictionary = {
     meta: {
       title: "FC 27 FUT Bot de Sniping e Autobuyer | Dicas e Guia de Trade UT Grátis",
       description:
-        "Use o Elite FUT SNIPER no Web App do EA FC 27 para snipar jogadores baratos, comprar e listar automaticamente com filtros inteligentes, execução local no Chrome e teste gratuito.",
+        "Use o Elite FUT SNIPER no Web App do EA FC 27: snipe jogadores baratos, compre e liste automaticamente com filtros inteligentes e execução local no Chrome.",
       keywords:
         "fc27 fut snipe bot portugues, ea fc 27 autobuyer brasil, bot de trade fc27, bot comprar jogadores fc27, extension chrome autobuyer fc27, resolvedor dme ia fc27",
       ogTitle: "FC 27 FUT Bot de Sniping e Autobuyer | Dicas e Guia de Trade UT Grátis",
       ogDescription:
-        "Use o Elite FUT SNIPER no Web App do EA FC 27 para snipar jogadores baratos, comprar e listar automaticamente com filtros inteligentes, execução local no Chrome e teste gratuito.",
+        "Use o Elite FUT SNIPER no Web App do EA FC 27: snipe jogadores baratos, compre e liste automaticamente com filtros inteligentes e execução local no Chrome.",
     },
     hero: {
       badge: "Suite de Sniping para EA FC 27 e FC 26",
@@ -618,7 +630,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Preço",
-          elite: "€19.90/ano · cancele quando quiser (+ Teste Grátis)",
+          elite: "€19,90/ano · cancele quando quiser (+ Teste Grátis)",
           cloud: "$15 – $35 / mês assinatura recorrente",
           manual: "Grátis (Custa 4+ horas diárias)",
         },
@@ -710,7 +722,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           q: "Qual a diferença entre o Elite FUT SNIPER e bots em nuvem como FutBot ou FutEarn?",
-          a: "Bots em nuvem passam por servidores remotos compartilhados, gerando 150ms–350ms de atraso e exigindo sua senha. O Elite FUT SNIPER roda local a <20ms, não compartilha dados e tem custo de apenas €19.90 por ano.",
+          a: "Bots em nuvem passam por servidores remotos compartilhados, gerando 150ms–350ms de atraso e exigindo sua senha. O Elite FUT SNIPER roda local a <20ms, não compartilha dados e tem custo de apenas €19,90 por ano.",
         },
         {
           q: "Onde consigo filtros de trade lucrativos e suporte?",
@@ -737,12 +749,12 @@ export const ptLocale: LocaleDictionary = {
     meta: {
       title: "Recursos GRÁTIS de Bot de Sniping e Autobuyer FC 27 | Elite FUT Bot",
       description:
-        "Conheça os recursos do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços do Futbin, filtros de trade grátis e teste gratuito de 2 dias.",
+        "Recursos do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços do Futbin, filtros de trade e teste grátis de 2 dias.",
       keywords:
         "recursos bot fc27, autobuyer ea fc 27 brasil, bot sniping fc27 portugues, extension chrome trade fc27, anti ban fut sniping, resolvedor dme ia",
       ogTitle: "Recursos GRÁTIS de Bot de Sniping e Autobuyer FC 27 | Elite FUT Bot",
       ogDescription:
-        "Conheça os recursos do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços do Futbin, filtros de trade grátis e teste gratuito de 2 dias.",
+        "Recursos do Elite FUT Bot para EA FC 27: auto-snipe, autobuyer, auto-list, filtros inteligentes, preços do Futbin, filtros de trade e teste grátis de 2 dias.",
     },
     hero: {
       eyebrow: "Suite para EA FC 26 & FC 27 Ultimate Team",
@@ -1000,7 +1012,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           feature: "Modelo de Cobrança",
-          elite: "€19.90/ano · Cancele Quando Quiser",
+          elite: "€19,90/ano · Cancele Quando Quiser",
           cloud: "$15–$30 / mês assinaturas recorrentes",
         },
         {
@@ -1073,7 +1085,7 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           title: "Preço Anual Acessível",
-          desc: "€19.90/ano com suporte contínuo para o FC 26 e o FC 27. Cancele quando quiser.",
+          desc: "€19,90/ano com suporte contínuo para o FC 26 e o FC 27. Cancele quando quiser.",
           iconName: "Clock",
         },
       ],
@@ -1107,11 +1119,11 @@ export const ptLocale: LocaleDictionary = {
         },
         {
           q: "Minha licença cobre tanto o EA FC 27 quanto a Web App do EA FC 26?",
-          a: "Sim. O Pro cobre ambos por €19.90 por ano, com atualizações automáticas e gratuitas quando novas temporadas forem lançadas. Cancele quando quiser e mantenha o acesso até o fim do ano pago.",
+          a: "Sim. O Pro cobre ambos por €19,90 por ano, com atualizações automáticas e gratuitas quando novas temporadas forem lançadas. Cancele quando quiser e mantenha o acesso até o fim do ano pago.",
         },
         {
           q: "Posso usar várias contas ou abas simultaneamente?",
-          a: "Sim. Como roda no Google Chrome, você pode criar perfis separados de navegador para controlar várias contas com filtros isolados.",
+          a: "Sim, até 2 dispositivos ao mesmo tempo com uma licença Pro (o teste grátis inclui 1). O sniping multiabas funciona dentro de cada dispositivo.",
         },
       ],
     },
