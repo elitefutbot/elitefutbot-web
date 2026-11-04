@@ -1,9 +1,13 @@
 import { authFetch } from "@/lib/auth/authClient";
+import {
+  PRO_PRICE_EUR,
+  MOBILE_PRICE_EUR,
+  PRO_PRICE_LABEL,
+  MOBILE_PRICE_LABEL,
+} from "@/lib/pricing";
 
-export const PRO_PRICE_EUR = 19.9;
-export const MOBILE_PRICE_EUR = 10;
-export const PRO_PRICE_LABEL = "€19.90/year";
-export const MOBILE_PRICE_LABEL = "€10/year";
+// Prices live in src/lib/pricing.ts; re-exported so existing imports keep working.
+export { PRO_PRICE_EUR, MOBILE_PRICE_EUR, PRO_PRICE_LABEL, MOBILE_PRICE_LABEL };
 
 // Subscription states in which Stripe still bills (past_due: retrying the
 // card). Mirrors LIVE_STATUSES in the backend's paymentController.
