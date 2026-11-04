@@ -5,10 +5,10 @@ import { ACTIVE_ROUTED_LOCALES } from "./src/data/locales/registry";
 const BACKEND_API_URL =
   process.env.BACKEND_API_URL ?? "https://elitefutbot-backend-three.vercel.app";
 
-// The single root layout server-renders <html lang="en"> for every route, so
-// localized pages only get their real language after client JS runs. Send the
-// correct Content-Language header so non-rendering crawlers (Bing/Copilot, AI
-// search fetchers) see the right language in the raw response.
+// Translated pages (/<locale>) have their own root layout, which server-renders
+// the correct <html lang> and dir. Also send a Content-Language header so
+// non-rendering crawlers (Bing/Copilot, AI search fetchers) see the language
+// in the raw response too.
 const localeLanguageHeaders = ACTIVE_ROUTED_LOCALES.flatMap((locale) =>
   [`/${locale.prefix}`, `/${locale.prefix}/:path*`].map((source) => ({
     source,
@@ -55,16 +55,14 @@ const nextConfig: NextConfig = {
             key: 'X-Frame-Options',
             value: 'SAMEORIGIN',
           },
-          // Framing-only CSP (modern equivalent of X-Frame-Options). Deliberately
-          // no script-src etc. — a full policy would risk breaking GA, Clarity,
-          // YouTube embeds and Firebase.
+          // Minimal CSP: framing control plus two directives that block plugin
+          // content (object-src) and <base> tag hijacking (base-uri). The site
+          // uses neither, so nothing breaks. Deliberately no script-src etc. —
+          // a full policy would risk breaking GA, Clarity, YouTube embeds,
+          // Firebase and Stripe.
           {
             key: 'Content-Security-Policy',
-            value: "frame-ancestors 'self'",
-          },
-          {
-            key: 'X-XSS-Protection',
-            value: '1; mode=block',
+            value: "frame-ancestors 'self'; object-src 'none'; base-uri 'self'",
           },
           {
             key: 'Referrer-Policy',

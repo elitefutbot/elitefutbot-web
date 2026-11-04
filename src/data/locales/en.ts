@@ -173,16 +173,13 @@ export const enLocale: LocaleDictionary = {
         title: "Free Beta",
         price: "€0",
         period: "Forever Free",
-        desc: "Essential sniping tools to experience the speed of Elite FUT SNIPER.",
+        desc:
+          "2 days of free access to every feature. Test the full bot, Humanization++ included, before you pay.",
         features: [
-          { text: "Local Chrome Extension" },
-          { text: "Manual & Auto-Snipe Modes" },
-          { text: "Basic Market Filters" },
-          { text: "Standard Timing Delays" },
-          { text: "Community Discord Access" },
-          { text: "Advanced Humanization++ Mode", isNegative: true },
-          { text: "Live Futbin Price HUD", isNegative: true },
-          { text: "AI SBC Solver", isNegative: true },
+          "Full access to all features",
+          "Humanization++ anti-ban tech included",
+          "Live Futbin prices",
+          "Discord community support",
         ],
         cta: "Download Free Beta",
       },
@@ -348,6 +345,26 @@ export const enLocale: LocaleDictionary = {
         {
           q: "How do I get free beta access for the FC 27 & FC 26 sniping bot?",
           a: "Simply join our official Discord community! We offer free lifetime beta access for early adopters with step-by-step setup guides.",
+        },
+        {
+          q: "Do you offer refunds?",
+          a: "No. All purchases are final, which is why every new account gets a free 2-day trial with all features. You can cancel anytime to stop future renewals, but cancelling does not refund the current period.",
+        },
+        {
+          q: "What do I need to run Elite FUT SNIPER?",
+          a: "A desktop Chrome-based browser (Chrome, Brave, Opera or Edge) on Windows, macOS or ChromeOS, plus access to the EA FC Web App. Mobile access is coming soon.",
+        },
+        {
+          q: "How do I install it? Is it on the Chrome Web Store?",
+          a: "It is not listed on the Chrome Web Store. You download a ZIP file from your account dashboard, turn on Developer Mode in Chrome, and load it unpacked. The step-by-step guide at elitefutbot.com/install takes about 2 minutes.",
+        },
+        {
+          q: "Can I still get banned?",
+          a: "Using any automation tool, including Elite FUT SNIPER, can go against EA's terms and put your account at risk. Humanization++ is built to reduce that risk, and we have no ban reports to date, but we cannot guarantee your account will never be restricted. See our Terms of Service for details.",
+        },
+        {
+          q: "How many coins can I make?",
+          a: "It depends on the market, your filters, your budget and how long you run it, so we cannot promise any amount. The free 2-day trial lets you test it yourself before you pay.",
         },
       ],
     },
@@ -957,7 +974,7 @@ export const enLocale: LocaleDictionary = {
         },
         {
           q: "Can I use multiple accounts or tabs at once?",
-          a: "Yes. Because it runs locally in Google Chrome, you can create separate browser profiles to operate multiple accounts with isolated filters.",
+          a: "Yes, up to 2 devices at the same time with one Pro license (the free trial includes 1). Multi-tab sniping works inside each device.",
         },
       ],
     },

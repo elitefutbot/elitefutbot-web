@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import SetDocumentLang from "@/components/SetDocumentLang";
 import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
   ArrowRight,
@@ -94,80 +93,6 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const reviewsJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "@id": "https://www.elitefutbot.com/#software",
-    "name": "Elite FUT SNIPER",
-    "inLanguage": "en",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5.0",
-      "reviewCount": "8",
-      "ratingCount": "8",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "review": [
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "_mesirve_" },
-        "reviewBody": "You brighten people's lives by creating these extensions for FC26. 5 stars.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-07-01"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "George CHICKELDAY" },
-        "reviewBody": "This honestly is the best bot I have ever used it 100% gets me the cards im looking for with no problem and I am currently up 200k profit with the snipes i have done in the past 2 days of using it",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-10-01"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Patrunjel Regele" },
-        "reviewBody": "The menu for the sniper is great I really like it. The sniping itself works.",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-07-01"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "faresislol" },
-        "reviewBody": "alr thanks bro your goated ill give u a 5 star review",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-07-01"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Ry4n" },
-        "reviewBody": "cheap snipe get too it — Sniped 86 Pau Cubarsi for 8,400 coins, 4 cards bought in 1m 11s with 19,495 profit",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-09-30"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "astroa" },
-        "reviewBody": "yes its very good",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-07-01"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Phantom (GENO)" },
-        "reviewBody": "Bro it works I sniped TOTS YAMAL twice for 300k",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-07-01"
-      },
-      {
-        "@type": "Review",
-        "author": { "@type": "Person", "name": "Phantom (GENO)" },
-        "reviewBody": "this is the best one I use because I made the most quick coins",
-        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-        "datePublished": "2026-07-01"
-      }
-    ]
-  };
-
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -236,20 +161,55 @@ export default function Home() {
           "@type": "Answer",
           "text": "Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first FC 27 and FC 26 Autobuyer filters."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you offer refunds?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. All purchases are final, which is why every new account gets a free 2-day trial with all features. You can cancel anytime to stop future renewals, but cancelling does not refund the current period."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do I need to run Elite FUT SNIPER?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A desktop Chrome-based browser (Chrome, Brave, Opera or Edge) on Windows, macOS or ChromeOS, plus access to the EA FC Web App. Mobile access is coming soon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I install it? Is it on the Chrome Web Store?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is not listed on the Chrome Web Store. You download a ZIP file from your account dashboard, turn on Developer Mode in Chrome, and load it unpacked. The step-by-step guide at elitefutbot.com/install takes about 2 minutes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I still get banned?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Using any automation tool, including Elite FUT SNIPER, can go against EA's terms and put your account at risk. Humanization++ is built to reduce that risk, and we have no ban reports to date, but we cannot guarantee your account will never be restricted. See our Terms of Service for details."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How many coins can I make?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It depends on the market, your filters, your budget and how long you run it, so we cannot promise any amount. The free 2-day trial lets you test it yourself before you pay."
+        }
       }
     ]
   };
 
   return (
     <>
-      <SetDocumentLang lang="en" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsJsonLd) }}
       />
       <header className="relative pt-12 pb-16 lg:pt-20 lg:pb-24 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-primary/5 blur-[120px] rounded-full -z-10 pointer-events-none"></div>
@@ -656,7 +616,7 @@ export default function Home() {
                 </thead>
                 <tbody className="divide-y divide-white/5">
                   <tr className="hover:bg-white/[0.02] transition-colors">
-                    <td className="py-6 px-8 font-bold text-white">EA FC 27 &amp; FC 26 Native Support</td>
+                    <td className="py-6 px-8 font-bold text-white">EA FC 27 Native Support</td>
                     <td className="py-6 px-8 text-center bg-primary/5 border-l border-r border-primary/10">
                       <CheckCircle2 className="w-8 h-8 text-primary mx-auto" />
                     </td>
@@ -749,7 +709,7 @@ export default function Home() {
             <div className="glass-card rounded-3xl p-8 flex flex-col relative group" data-purpose="pricing-card">
               <div className="mb-8">
                 <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-3">
-                  2-Day Limited Access
+                  2-Day Full Access
                 </div>
                 <h3 className="text-xl font-bold mb-2 text-white">Free Trial</h3>
                 <div className="flex items-baseline gap-1">
@@ -757,21 +717,21 @@ export default function Home() {
                   <span className="text-gray-400 font-medium">/ 2 days</span>
                 </div>
                 <p className="text-sm text-gray-400 mt-4">
-                  2 days limited free access. Perfect for testing the waters and learning the basics of sniping.
+                  2 days of free access to every feature. Test the full bot, Humanization++ included, before you pay.
                 </p>
               </div>
               <ul className="space-y-4 mb-10 flex-grow">
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  2 Days Limited Free Access
+                  2 Days Free Access to All Features
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  Standard Filters
+                  All Filters
                 </li>
                 <li className="flex items-center gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  1 Active Account
+                  1 Active Device
                 </li>
                 <li className="flex items-start gap-3 text-sm text-gray-300">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" />
@@ -782,13 +742,13 @@ export default function Home() {
                     </span>
                   </div>
                 </li>
-                <li className="flex items-center gap-3 text-sm text-gray-400">
-                  <X className="w-4 h-4 text-red-400/70 shrink-0" />
+                <li className="flex items-center gap-3 text-sm text-gray-300">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
                   Multi-Tab Sniping
                 </li>
-                <li className="flex items-center gap-3 text-sm text-gray-400">
-                  <X className="w-4 h-4 text-red-400/70 shrink-0" />
-                  <span>No Humanization++ Tech <span className="text-xs text-gray-400">(Pro Only)</span></span>
+                <li className="flex items-center gap-3 text-sm text-gray-300">
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  Humanization++ Anti-Ban Tech Included
                 </li>
               </ul>
               <Link className="block text-center py-4 rounded-xl border border-white/10 hover:bg-white/5 transition-all font-bold text-white" href="/register">
@@ -845,7 +805,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
-                  Unlimited Multi-Account Support
+                  Up to 2 Active Devices
                 </li>
                 <li className="flex items-center gap-3 text-sm font-medium text-white pt-3.5 first:pt-0">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
@@ -1258,6 +1218,51 @@ export default function Home() {
               </button>
               <div className="px-6 pb-6 text-gray-400 text-sm">
                 Simply join our official Discord community! We are offering free lifetime beta access for early adopters. Once you join, you will receive step-by-step instructions on installing the browser extension and configuring your first <strong>FC 27 &amp; FC 26 Autobuyer</strong> filters.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">Do you offer refunds?</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                No. All purchases are final, which is why every new account gets a free 2-day trial with all features. You can cancel anytime to stop future renewals, but cancelling does not refund the current period.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">What do I need to run Elite FUT SNIPER?</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                A desktop Chrome-based browser (Chrome, Brave, Opera or Edge) on Windows, macOS or ChromeOS, plus access to the EA FC Web App. Mobile access is coming soon.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">How do I install it? Is it on the Chrome Web Store?</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                It is not listed on the Chrome Web Store. You download a ZIP file from your account dashboard, turn on Developer Mode in Chrome, and load it unpacked. The step-by-step guide at elitefutbot.com/install takes about 2 minutes.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">Can I still get banned?</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                Using any automation tool, including Elite FUT SNIPER, can go against EA&apos;s terms and put your account at risk. Humanization++ is built to reduce that risk, and we have no ban reports to date, but we cannot guarantee your account will never be restricted. See our Terms of Service for details.
+              </div>
+            </div>
+            <div className="glass-card rounded-2xl overflow-hidden border border-white/10 hover:border-primary/30 transition-all">
+              <button type="button" aria-expanded="true" className="w-full flex items-center justify-between p-6 text-left focus:outline-none">
+                <span className="font-bold text-white">How many coins can I make?</span>
+                <ChevronDown className="w-5 h-5 text-primary shrink-0" aria-hidden="true" />
+              </button>
+              <div className="px-6 pb-6 text-gray-400 text-sm">
+                It depends on the market, your filters, your budget and how long you run it, so we cannot promise any amount. The free 2-day trial lets you test it yourself before you pay.
               </div>
             </div>
           </div>

@@ -1,18 +1,4 @@
 import { NextResponse } from 'next/server';
-
-export const dynamic = 'force-static';
-export const revalidate = 86400; // 24 hours
-
-interface SitemapEntry {
-  url: string;
-  lastModified?: string;
-  changeFrequency?: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
-  priority?: number;
-  alternates?: {
-    languages?: Record<string, string>;
-  };
-}
-
 import {
   BASE_URL,
   ACTIVE_LOCALES,
@@ -20,475 +6,155 @@ import {
   getHreflangAlternates,
   getLocaleUrl,
 } from '@/data/locales/registry';
+import { SITEMAP_LASTMOD } from '@/data/sitemap-lastmod';
+
+export const dynamic = 'force-static';
+export const revalidate = 86400; // 24 hours
+
+interface SitemapEntry {
+  /** Absolute URL, written exactly as the page's canonical URL. */
+  url: string;
+  /** Real date of the last significant content change (see sitemap-lastmod.ts). */
+  lastModified?: string;
+  /** hreflang code -> absolute URL, only for pages that really exist per language. */
+  alternates?: Record<string, string>;
+}
+
+/**
+ * English-only pages. Pages translated into other languages come from the
+ * locale registry below (TRANSLATED_SUBPATHS x ACTIVE_LOCALES).
+ *
+ * After adding a page here, run `npm run sitemap:lastmod` so it gets a date.
+ * /volt-velocity is intentionally excluded: it is noindex, and a noindex URL
+ * in a sitemap sends Google conflicting signals.
+ */
+const STATIC_PATHS = [
+  "/sbc-solver",
+  "/ai-sbc-solver",
+  "/tools/tax-calculator",
+  "/tools/sniping-guide",
+  "/tools/comparison-guide",
+  "/fcautobuyer-vs-elitefutbot",
+  "/eafcsnipingbot-vs-elitefutbot",
+  "/remx-vs-elitefutbot",
+  "/abfut-vs-elitefutbot",
+  "/futeasy-vs-elitefutbot",
+  "/bakers-bot-vs-elitefutbot",
+  "/futsimpletrader-vs-elitefutbot",
+  "/futearn-vs-elitefutbot",
+  "/futsniper-vs-elitefutbot",
+  "/futsnipingbot-vs-elitefutbot",
+  "/futinator-vs-elitefutbot",
+  "/futbotmanager-vs-elitefutbot",
+  "/futmania-vs-elitefutbot",
+  "/futcoinbuddy-vs-elitefutbot",
+  "/futhunter-vs-elitefutbot",
+  "/futultimatesniper-vs-elitefutbot",
+  "/futdroid-vs-elitefutbot",
+  "/steviessniper-vs-elitefutbot",
+  "/futrich-vs-elitefutbot",
+  "/futlocker-vs-elitefutbot",
+  "/futtbot-vs-elitefutbot",
+  "/fifasnipebot-vs-elitefutbot",
+  "/fc26snipingbot-vs-elitefutbot",
+  "/easyfutweb-vs-elitefutbot",
+  "/futmaker-vs-elitefutbot",
+  "/snipesensei-vs-elitefutbot",
+  "/futsniperweb-vs-elitefutbot",
+  "/easysbc-vs-elitefutbot",
+  "/paletools-vs-elitefutbot",
+  "/futgg-vs-elitefutbot",
+  "/futsnipingbot24-vs-elitefutbot",
+  "/futgenie-vs-elitefutbot",
+  "/exesniper-vs-elitefutbot",
+  "/futbotclub-vs-elitefutbot",
+  "/shortfuts-vs-elitefutbot",
+  "/futcloud-vs-elitefutbot",
+  "/futmillionaire-vs-elitefutbot",
+  "/futstarz-vs-elitefutbot",
+  "/utsniper-vs-elitefutbot",
+  "/sniperbotitalia-vs-elitefutbot",
+  "/eafcsniper-vs-elitefutbot",
+  "/fcenhancer-vs-elitefutbot",
+  "/futtradebuddy-vs-elitefutbot",
+  "/futfun-vs-elitefutbot",
+  "/futcoinharvester-vs-elitefutbot",
+  "/futautobuyer-vs-elitefutbot",
+  "/lenabot-vs-elitefutbot",
+  "/magicbuyer-vs-elitefutbot",
+  "/raven-vs-elitefutbot",
+  "/fc27autotrader-vs-elitefutbot",
+  "/futisland-vs-elitefutbot",
+  "/nokafut-vs-elitefutbot",
+  "/cheatas-vs-elitefutbot",
+  "/fccopilot-vs-elitefutbot",
+  "/blog",
+  "/article/tactical-intel",
+  "/affiliate",
+  "/bakers-bot-developer",
+  "/contact",
+  "/bio",
+  "/install",
+  "/referral",
+  "/terms",
+  "/privacy",
+];
+
+/**
+ * Canonical form of a URL: the bare homepage has no trailing slash, matching
+ * the <link rel="canonical"> and hreflang tags in the page <head>.
+ */
+function canonical(url: string): string {
+  return url === `${BASE_URL}/` ? BASE_URL : url;
+}
+
+function pathOf(url: string): string {
+  return url.replace(BASE_URL, '') || '/';
+}
+
+function escapeXml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 
 export async function GET() {
-  const baseUrl = BASE_URL;
-  const currentDate = new Date().toISOString();
+  const entries: SitemapEntry[] = [];
 
-  // Dynamically generate entries for the 3 translatable pages from the central registry
-  const localizedEntries: SitemapEntry[] = [];
-
+  // Translated pages: one entry per language, each carrying the full hreflang set.
   for (const subpath of TRANSLATED_SUBPATHS) {
-    const alternates = getHreflangAlternates(subpath);
-    const isHome = subpath === '';
-    const changeFreq = isHome ? 'weekly' : 'daily';
-    const priority = isHome ? 1.0 : 0.95;
-
+    const alternates = Object.fromEntries(
+      Object.entries(getHreflangAlternates(subpath)).map(([lang, href]) => [lang, canonical(href)]),
+    );
     for (const locale of ACTIVE_LOCALES) {
-      localizedEntries.push({
-        url: getLocaleUrl(locale.prefix, subpath),
-        lastModified: currentDate,
-        changeFrequency: changeFreq,
-        priority: locale.isDefault ? priority : Math.min(priority, 0.95),
-        alternates: { languages: alternates },
-      });
+      const url = canonical(getLocaleUrl(locale.prefix, subpath));
+      entries.push({ url, lastModified: SITEMAP_LASTMOD[pathOf(url)], alternates });
     }
   }
 
-  const entries: SitemapEntry[] = [
-    ...localizedEntries,
-    {
-      url: `${baseUrl}/sbc-solver`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/ai-sbc-solver`,
-      lastModified: currentDate,
-      changeFrequency: 'daily',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/tools/tax-calculator`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/tools/sniping-guide`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/tools/comparison-guide`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    // Competitor comparison pages (All 54 platforms)
-    {
-      url: `${baseUrl}/fcautobuyer-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/eafcsnipingbot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/remx-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/abfut-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futeasy-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/bakers-bot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futsimpletrader-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futearn-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futsniper-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futsnipingbot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futinator-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futbotmanager-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futmania-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futcoinbuddy-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futhunter-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futultimatesniper-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futdroid-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/steviessniper-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futrich-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futlocker-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futtbot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/fifasnipebot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/fc26snipingbot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/easyfutweb-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futmaker-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/snipesensei-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futsniperweb-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/easysbc-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/paletools-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futgg-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futsnipingbot24-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futgenie-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/exesniper-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futbotclub-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/shortfuts-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futcloud-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futmillionaire-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futstarz-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/utsniper-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/sniperbotitalia-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/eafcsniper-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/fcenhancer-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futtradebuddy-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futfun-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futcoinharvester-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futautobuyer-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/lenabot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/magicbuyer-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/raven-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/fc27autotrader-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/futisland-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/nokafut-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/cheatas-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/fccopilot-vs-elitefutbot`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.85,
-    },
-    {
-      url: `${baseUrl}/blog`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/article/tactical-intel`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/affiliate`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    // /volt-velocity is intentionally excluded: the page is noindex (internal
-    // design-system showcase), and listing noindex URLs in a sitemap sends
-    // Google conflicting signals ("Submitted URL marked 'noindex'").
-    {
-      url: `${baseUrl}/bakers-bot-developer`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: currentDate,
-      changeFrequency: 'yearly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/bio`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/install`,
-      lastModified: currentDate,
-      changeFrequency: 'weekly',
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/referral`,
-      lastModified: currentDate,
-      changeFrequency: 'monthly',
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/terms`,
-      lastModified: currentDate,
-      changeFrequency: 'yearly',
-      priority: 0.4,
-    },
-    {
-      url: `${baseUrl}/privacy`,
-      lastModified: currentDate,
-      changeFrequency: 'yearly',
-      priority: 0.4,
-    },
-  ];
+  // English-only pages: no hreflang (they have no translated versions).
+  for (const path of STATIC_PATHS) {
+    entries.push({ url: `${BASE_URL}${path}`, lastModified: SITEMAP_LASTMOD[path] });
+  }
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>\n';
-  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+  xml +=
+    '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
 
   for (const entry of entries) {
     xml += '  <url>\n';
-    xml += `    <loc>${entry.url}</loc>\n`;
-
-    if (entry.alternates?.languages) {
-      for (const [lang, href] of Object.entries(entry.alternates.languages)) {
-        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${href}" />\n`;
+    xml += `    <loc>${escapeXml(entry.url)}</loc>\n`;
+    if (entry.alternates) {
+      for (const [lang, href] of Object.entries(entry.alternates)) {
+        xml += `    <xhtml:link rel="alternate" hreflang="${lang}" href="${escapeXml(href)}" />\n`;
       }
     }
-
+    // <lastmod> is left out when unknown: no date is better than a wrong one.
     if (entry.lastModified) {
       xml += `    <lastmod>${entry.lastModified}</lastmod>\n`;
-    }
-    if (entry.changeFrequency) {
-      xml += `    <changefreq>${entry.changeFrequency}</changefreq>\n`;
-    }
-    if (entry.priority !== undefined) {
-      xml += `    <priority>${entry.priority.toFixed(2)}</priority>\n`;
     }
     xml += '  </url>\n';
   }

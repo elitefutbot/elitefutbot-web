@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import LiteYouTubeEmbed from "@/components/LiteYouTubeEmbed";
-import SetDocumentLang from "@/components/SetDocumentLang";
 import { getHreflangAlternates } from "@/data/locales/registry";
 import EliteFeaturesSection from "@/components/EliteFeaturesSection";
 import {
@@ -359,7 +358,7 @@ const FAQS = [
   },
   {
     q: "Can I run multiple sniping accounts or multiple tabs simultaneously?",
-    a: "Yes. Because the extension runs locally in Google Chrome, you can set up separate Chrome browser profiles to operate multiple accounts concurrently with independent filter configurations and isolated session cookies.",
+    a: "Yes, up to 2 devices at the same time with one Pro license (the free trial includes 1). Multi-tab sniping works inside each device.",
   },
 ];
 
@@ -435,7 +434,6 @@ export default function FC27FeaturesPage() {
 
   return (
     <div className="bg-dark text-white min-h-screen">
-      <SetDocumentLang lang="en" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -16,7 +16,7 @@
 - Price: €19.90/year, renews automatically, cancel anytime (12 Spots Left at €19.90 · 88/100 sold · Next price: €29.90 · No monthly fees)
 - Features:
   - All Free Trial features included
-  - Unlimited Multi-Account & Multi-Tab local execution
+  - Up to 2 active devices (free trial: 1) & Multi-Tab local execution
   - Advanced Multi-Filter Search & Consumables Matrix (Country/Nation, Club, League, Position, Quality, Card Rarity, Ratings 83+, Consumables & Chem Styles)
   - High-Frequency Auto-Bidding Engine on Expiring Auctions
   - Auto-List & Auto-Sell with 5% EA Tax Net Profit Calculation

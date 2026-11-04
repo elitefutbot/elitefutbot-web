@@ -213,8 +213,11 @@ export function getLocaleUrl(prefix: string, subpath: string = ""): string {
  * - "x-default": English URL
  * - "en": English URL
  * - Every active locale's valid hreflang code -> localized URL
+ *
+ * Only accepts TRANSLATED_SUBPATHS: emitting alternates for an English-only
+ * page points Google at /<locale>/... URLs that 404.
  */
-export function getHreflangAlternates(subpath: string = ""): Record<string, string> {
+export function getHreflangAlternates(subpath: TranslatedSubpath = ""): Record<string, string> {
   const alternates: Record<string, string> = {
     "x-default": getLocaleUrl("", subpath),
   };

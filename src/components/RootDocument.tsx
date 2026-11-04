@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
 import { Inter, Space_Grotesk, Public_Sans, Cairo } from "next/font/google";
 import Script from "next/script";
 import VercelAnalyticsWrapper from "@/components/VercelAnalyticsWrapper";
 import AnalyticsScripts from "@/components/AnalyticsScripts";
 import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
-import "./globals.css";
+import "@/app/globals.css";
 
 const inter = Inter({
   subsets: ["latin", "latin-ext"],
@@ -31,64 +30,14 @@ const cairo = Cairo({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://www.elitefutbot.com'),
-  title: {
-    default: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
-    template: "%s | Elite FUT SNIPER"
-  },
-  description: "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
-  openGraph: {
-    title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
-    description: "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
-    url: "https://www.elitefutbot.com/",
-    siteName: "Elite FUT SNIPER",
-    images: [
-      {
-        url: "https://www.elitefutbot.com/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Elite FUT Sniper - EA FC 27 FUT Sniping Bot & Autobuyer",
-        type: "image/png",
-      }
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "EA FC 27 FUT Sniping Bot & Autobuyer | Elite FUT Sniper",
-    description: "Elite FUT Sniper is the #1 EA FC 27 FUT sniping bot, FUT FIFA snipe bot & Ultimate Team autobuyer (FC 27 compatible). 0 Transfer market bans & free trial.",
-    images: ["https://www.elitefutbot.com/og-image.png"],
-    creator: "@FutSnipeBot",
-  },
-  verification: {
-    other: {
-      "msvalidate.01": "DF183DB29828D77C74770B08A8F24DD0",
-      "yandex-verification": "a303969db4d28193",
-    }
-  },
-  icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
-      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
-      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
-    ],
-    apple: [
-      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-  },
-};
-
-const jsonLd = {
+const buildJsonLd = (lang: string) => ({
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "SoftwareApplication",
       "@id": "https://www.elitefutbot.com/#software",
       "name": "Elite FUT SNIPER",
-      "inLanguage": "en",
+      "inLanguage": lang,
       "applicationCategory": "GameApplication",
       "operatingSystem": "Web, Windows, macOS",
       "image": "https://www.elitefutbot.com/og-image.png",
@@ -103,45 +52,17 @@ const jsonLd = {
         "url": "https://www.elitefutbot.com/#pricing",
         "price": "19.90",
         "priceCurrency": "EUR",
-        "priceValidUntil": "2027-12-31",
         "availability": "https://schema.org/InStock",
         "seller": {
           "@type": "Organization",
           "name": "Elite FUT SNIPER"
         },
-        "shippingDetails": {
-          "@type": "OfferShippingDetails",
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "0",
-            "currency": "EUR"
-          },
-          "shippingDestination": [
-            {
-              "@type": "DefinedRegion",
-              "addressCountry": "US"
-            }
-          ],
-          "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 0,
-              "unitCode": "DAY"
-            },
-            "transitTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 0,
-              "unitCode": "DAY"
-            }
-          }
-        },
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "US",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "19.90",
+          "priceCurrency": "EUR",
+          "billingDuration": "P1Y",
+          "unitCode": "ANN"
         }
       },
     },
@@ -149,8 +70,12 @@ const jsonLd = {
       "@type": "Organization",
       "@id": "https://www.elitefutbot.com/#organization",
       "name": "Elite FUT SNIPER",
+      "alternateName": ["Elite FUT Bot", "EliteFutBot"],
       "url": "https://www.elitefutbot.com",
-      "logo": "https://www.elitefutbot.com/logo-elite.png",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.elitefutbot.com/logo-elite.png"
+      },
       "sameAs": [
         "https://www.tiktok.com/@elitefutbotx",
         "https://www.instagram.com/elitefutbot/",
@@ -162,30 +87,31 @@ const jsonLd = {
       "@id": "https://www.elitefutbot.com/#website",
       "url": "https://www.elitefutbot.com",
       "name": "Elite FUT SNIPER",
-      "inLanguage": "en",
+      "alternateName": "EliteFutBot",
+      "inLanguage": lang,
       "description": "World's fastest sniping bot and autobuyer for FC 26, FC 25 & FC 27.",
       "publisher": {
         "@id": "https://www.elitefutbot.com/#organization"
-      },
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.elitefutbot.com/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
       }
     }
   ]
-};
+});
 
-export default function RootLayout({
+/**
+ * The shared <html>/<body> shell. Each root layout passes the page language, so
+ * the server-rendered HTML carries the correct lang and dir (e.g. ar -> rtl).
+ */
+export default function RootDocument({
+  lang,
+  dir,
   children,
 }: Readonly<{
+  lang: string;
+  dir: "ltr" | "rtl";
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" dir="ltr" className="scroll-smooth" suppressHydrationWarning>
+    <html lang={lang} dir={dir} className="scroll-smooth" suppressHydrationWarning>
       <head>
         {/* Google Analytics with Next.js Script (Non-blocking / afterInteractive) */}
         <Script
@@ -232,7 +158,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://i.ytimg.com" />
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(buildJsonLd(lang)) }}
         />
       </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable} ${publicSans.variable} ${cairo.variable} font-sans antialiased overflow-x-hidden selection:bg-primary selection:text-dark min-h-screen flex flex-col`}>
