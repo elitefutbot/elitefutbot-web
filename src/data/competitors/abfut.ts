@@ -127,7 +127,7 @@ export const abFutData: CompetitorData = {
       {
         advertisedName: "Free Trial Availability",
         competitorReality: "Freemium app with gated features and in-app subscriptions.",
-        eliteAdvantage: "7 full days of unrestricted Pro access with zero payment info required.",
+        eliteAdvantage: "2 days of unrestricted Pro access with zero payment info required.",
       },
     ],
   },
@@ -172,16 +172,5 @@ export const abFutData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I tried using ABFut on my iPhone, but every time my screen locked the bot stopped working, and I never won any 59th-minute deals because of mobile lag. Switched to Elite FUT SNIPER on Chrome and sniped 8 meta cards my first evening.",
-      author: "Verified FUT Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "Giving my EA password to a mobile app always felt sketchy. Elite FUT SNIPER runs right in Chrome while I'm signed in normally, and the sub-20ms speed blows everything else away.",
-      author: "Weekend League Competitor",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

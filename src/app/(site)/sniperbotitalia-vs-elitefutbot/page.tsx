@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "SniperBot Italia vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "SniperBot Italia vs Elite FUT SNIPER review: audit unverified Telegram scripts, locale crashes, and Elite's universal 20ms Chrome bot with AI solver.",
+    "SniperBot Italia vs Elite FUT SNIPER: compare an Italian-language bot at €29.98 with Elite's €19.90/year extension, auto bidding and free trial.",
   keywords: [
     "sniperbot italia",
-    "sniper bot italia",
+    "sniperbotitalia",
     "sniperbot italia recensione",
+    "sniperbotitalia.it",
     "sniperbot italia vs elite fut sniper",
-    "sniperbot italia alternative",
-    "bot compravendita fifa",
-    "ea fc 26 bot compravendita",
+    "sniperbot fc 27",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "universal fut sniping bot",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/sniperbotitalia-vs-elitefutbot" },
   openGraph: {
     title: "SniperBot Italia vs Elite FUT SNIPER: 2026 Review",
     description:
-      "SniperBot Italia vs Elite FUT SNIPER review: audit unverified Telegram scripts, locale crashes, and Elite's universal 20ms Chrome bot with AI solver.",
+      "SniperBot Italia vs Elite FUT SNIPER: compare an Italian-language bot at €29.98 with Elite's €19.90/year extension, auto bidding and free trial.",
     url: "https://www.elitefutbot.com/sniperbotitalia-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SniperBot Italia vs Elite FUT SNIPER: 2026 Review",
     description:
-      "SniperBot Italia vs Elite FUT SNIPER review: audit unverified Telegram scripts, locale crashes, and Elite's universal 20ms Chrome bot with AI solver.",
+      "SniperBot Italia vs Elite FUT SNIPER: compare an Italian-language bot at €29.98 with Elite's €19.90/year extension, auto bidding and free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

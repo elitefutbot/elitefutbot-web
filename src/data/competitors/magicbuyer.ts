@@ -388,21 +388,5 @@ export const magicBuyerData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I used MagicBuyer from GitHub because it was free, but got hit with a 24-hour transfer market soft ban after just two hours of trading. Switched to Elite FUT SNIPER with Humanization++ and have made over 2 million coins with zero soft bans.",
-      author: "Verified Division 1 Competitor",
-      platform: "Competitive FUT Discord",
-    },
-    {
-      text: "From a web performance standpoint, injecting heavy automation scripts directly into the Web App's main thread with Tampermonkey is asking for trouble. Elite FUT SNIPER's isolated Side Panel HUD and WebSocket protocol hooks represent the correct, modern way to build Web App tools.",
-      author: "Senior Web Performance Engineer",
-      platform: "Developer Community",
-    },
-    {
-      text: "MagicBuyer broke every single time EA pushed a minor patch, leaving me stranded with broken code. Elite FUT SNIPER's sub-20ms speed and day-one FC 26/FC 27 updates make it worth ten times its €19.90 price.",
-      author: "Lead Security Architect",
-      platform: "Ultimate Team Market Insights",
-    },
-  ],
+  reviewQuotes: [],
 };

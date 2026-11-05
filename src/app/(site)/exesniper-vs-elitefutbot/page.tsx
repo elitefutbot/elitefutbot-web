@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "ExeSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "ExeSniper vs Elite FUT SNIPER review: compare unsafe .exe binaries, antivirus alerts, macro lag, and Elite's sandboxed 20ms Chrome extension with AI.",
+    "ExeSniper vs Elite FUT SNIPER: both are Chrome extensions. Compare free and premium tools, pricing clarity, auto bidding and Elite's free 2-day trial.",
   keywords: [
     "exesniper",
     "exe sniper",
     "exesniper review",
     "exesniper vs elite fut sniper",
-    "fifa exe bot",
-    "ea fc executable autobuyer",
-    "ea fc 26 sniping bot mac",
-    "exesniper trojan malware warning",
+    "exesniper premium",
+    "ea fc sniping bot chrome extension",
     "best ea fc sniping bot 2026",
-    "sandboxed chrome autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/exesniper-vs-elitefutbot" },
   openGraph: {
     title: "ExeSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "ExeSniper vs Elite FUT SNIPER review: compare unsafe .exe binaries, antivirus alerts, macro lag, and Elite's sandboxed 20ms Chrome extension with AI.",
+      "ExeSniper vs Elite FUT SNIPER: both are Chrome extensions. Compare free and premium tools, pricing clarity, auto bidding and Elite's free 2-day trial.",
     url: "https://www.elitefutbot.com/exesniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "ExeSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "ExeSniper vs Elite FUT SNIPER review: compare unsafe .exe binaries, antivirus alerts, macro lag, and Elite's sandboxed 20ms Chrome extension with AI.",
+      "ExeSniper vs Elite FUT SNIPER: both are Chrome extensions. Compare free and premium tools, pricing clarity, auto bidding and Elite's free 2-day trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

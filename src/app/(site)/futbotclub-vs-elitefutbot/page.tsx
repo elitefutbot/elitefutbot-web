@@ -7,24 +7,20 @@ export const metadata: Metadata = {
     absolute: "FUT Bot Club vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTBotClub vs Elite FUT SNIPER comparison: audit subscription costs, manual settings friction, and Elite's 20ms Chrome Side Panel with AI SBC solver.",
+    "FUT Bot Club vs Elite FUT SNIPER: FUTBot lists an auto buyer, bidder and SBC solver. Compare with Elite's €19.90/year extension and free trial.",
   keywords: [
     "fut bot club",
     "futbotclub",
-    "fut bot club review",
+    "futbot fc 27",
+    "futbot.club",
     "fut bot club vs elite fut sniper",
-    "community fut autobuyer",
-    "cloud bot server crash",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "zero telemetry fut sniper",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futbotclub-vs-elitefutbot" },
   openGraph: {
     title: "FUT Bot Club vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTBotClub vs Elite FUT SNIPER comparison: audit subscription costs, manual settings friction, and Elite's 20ms Chrome Side Panel with AI SBC solver.",
+      "FUT Bot Club vs Elite FUT SNIPER: FUTBot lists an auto buyer, bidder and SBC solver. Compare with Elite's €19.90/year extension and free trial.",
     url: "https://www.elitefutbot.com/futbotclub-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Bot Club vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTBotClub vs Elite FUT SNIPER comparison: audit subscription costs, manual settings friction, and Elite's 20ms Chrome Side Panel with AI SBC solver.",
+      "FUT Bot Club vs Elite FUT SNIPER: FUTBot lists an auto buyer, bidder and SBC solver. Compare with Elite's €19.90/year extension and free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -295,23 +295,7 @@ export const paleToolsData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I loved Paletools for UI shortcuts, but for actual coin making, Elite FUT SNIPER is on another planet. 20ms auto-sniping while I'm at work made me 18M coins in a month without me having to touch the keyboard.",
-      author: "Verified Competitive FUT Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "The AI SBC solver in Elite FUT SNIPER does what Paletools can't: it figures out complex chemistry puzzles with my untradeables and buys missing cards automatically in seconds.",
-      author: "Verified Ultimate Team Competitor",
-      platform: "Trustpilot Review",
-    },
-    {
-      text: "While Paletools is a beloved community mod, repetitive keybind spam and injected scripts have triggered documented permanent bans on official EA forums. Elite FUT SNIPER's decoupled Manifest V3 Side Panel HUD and Humanization++ engine maintain an unblemished 0-ban safety record.",
-      author: "Lead Security Architect",
-      platform: "Web Security & Automation Review",
-    },
-  ],
+  reviewQuotes: [],
 };
 
 export const palEToolsData = paleToolsData;

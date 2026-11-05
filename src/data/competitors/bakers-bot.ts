@@ -191,7 +191,7 @@ export const bakersBotData: CompetitorData = {
     },
     eliteModel: {
       title: "Elite FUT SNIPER All-Inclusive",
-      price: "$19.99/mo or $79.99/yr All-Inclusive",
+      price: "€19.90/year, all features included",
       inclusions: [
         "100% of all 11 modules included (Sub-20ms engine, Side Panel HUD, AI SBC solver)",
         "All VIP Discord trading filters, daily coin-making tricks, and alpha drops included at $0 extra",
@@ -338,21 +338,5 @@ export const bakersBotData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I used Baker's Bot for nearly 4 years, but it started catching constant soft-bans and the floating UI kept glitching and covering card prices. Upgrading to Elite gave me 20ms speed, zero bans with Humanization++, and the Side Panel HUD is night-and-day better.",
-      author: "Marcus K., Long-Time FUT Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "Baker's Bot advertises 'One Time Purchase', but to get any profitable sniping filters you have to pay a separate monthly Discord fee, and the bot hasn't had real engine updates in ages. Elite FUT SNIPER gives you all VIP filters, 20ms speeds, and the AI SBC solver in one clean package.",
-      author: "Tyler R., Verified FUT Trader",
-      platform: "Twitter / X",
-    },
-    {
-      text: "The AI SBC solver alone makes Elite FUT SNIPER worth ten times what Baker's Bot offers. With Baker's Bot, you're still manually building squads while floating buttons block your screen. Elite does 1-click SBC completion using untradeable fodder and snipes at sub-20ms with 0 bans.",
-      author: "Samuele B., Competitive FUT Player",
-      platform: "Reddit r/FIFA",
-    },
-  ],
+  reviewQuotes: [],
 };

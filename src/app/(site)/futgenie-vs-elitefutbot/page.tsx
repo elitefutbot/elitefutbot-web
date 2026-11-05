@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUT Genie vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTGenie vs Elite FUT SNIPER review: compare manual price lookups, lack of auto-buy, and Elite's autonomous sub-20ms Chrome extension with AI solver.",
+    "FUTGenie vs Elite FUT SNIPER: FUTGenie solves SBCs and opens packs, Elite snipes, bids and relists. Compare features, pricing and trials.",
   keywords: [
     "fut genie",
     "futgenie",
     "fut genie review",
     "fut genie vs elite fut sniper",
-    "futbin price overlay extension",
-    "ea fc 26 sniping bot",
+    "futgenie sbc solver",
+    "futgenie pricing",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "fut price badge overlay",
-    "ai sbc solver chrome extension",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futgenie-vs-elitefutbot" },
   openGraph: {
     title: "FUT Genie vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTGenie vs Elite FUT SNIPER review: compare manual price lookups, lack of auto-buy, and Elite's autonomous sub-20ms Chrome extension with AI solver.",
+      "FUTGenie vs Elite FUT SNIPER: FUTGenie solves SBCs and opens packs, Elite snipes, bids and relists. Compare features, pricing and trials.",
     url: "https://www.elitefutbot.com/futgenie-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Genie vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTGenie vs Elite FUT SNIPER review: compare manual price lookups, lack of auto-buy, and Elite's autonomous sub-20ms Chrome extension with AI solver.",
+      "FUTGenie vs Elite FUT SNIPER: FUTGenie solves SBCs and opens packs, Elite snipes, bids and relists. Compare features, pricing and trials.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

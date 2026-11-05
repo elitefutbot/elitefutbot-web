@@ -7,24 +7,19 @@ export const metadata: Metadata = {
     absolute: "FC27 Auto Trader vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "FC27 Auto Trader vs Elite FUT SNIPER review: compare linear delay soft bans, webhook risks, and Elite's sub-20ms Chrome Side Panel with AI solver.",
+    "FC27 Auto Trader vs Elite FUT SNIPER: compare a small store-listed sniping bot with Elite's €19.90/year extension, auto bidder and free trial.",
   keywords: [
     "fc27 auto trader",
-    "fc 27 auto trader",
+    "fc27autotrader",
     "fc27 auto trader review",
-    "data menu fc27 auto trader",
     "fc27 auto trader vs elite fut sniper",
-    "fc27 auto trader alternative",
     "ea fc 27 autobuyer",
-    "ea fc 27 sniping bot",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fc27autotrader-vs-elitefutbot" },
   openGraph: {
     title: "FC27 Auto Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC27 Auto Trader vs Elite FUT SNIPER review: compare linear delay soft bans, webhook risks, and Elite's sub-20ms Chrome Side Panel with AI solver.",
+      "FC27 Auto Trader vs Elite FUT SNIPER: compare a small store-listed sniping bot with Elite's €19.90/year extension, auto bidder and free trial.",
     url: "https://www.elitefutbot.com/fc27autotrader-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FC27 Auto Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC27 Auto Trader vs Elite FUT SNIPER review: compare linear delay soft bans, webhook risks, and Elite's sub-20ms Chrome Side Panel with AI solver.",
+      "FC27 Auto Trader vs Elite FUT SNIPER: compare a small store-listed sniping bot with Elite's €19.90/year extension, auto bidder and free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

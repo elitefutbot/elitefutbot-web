@@ -7,25 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUT Simple Trader vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "FUT Simple Trader vs Elite FUT SNIPER review: compare ban risks, pricing checks, external UI, and Elite's sub-20ms Chrome extension with AI solver.",
+    "FUT Simple Trader vs Elite FUT SNIPER: compare Pro and Premium tiers (€89 to €119 + VAT a year) with Elite's €19.90/year sniping extension.",
   keywords: [
     "fut simple trader",
     "futsimpletrader",
-    "futsimpletrader.com",
     "fut simple trader review",
-    "fut simple trader ban",
-    "fut simple trader autobuyer",
-    "futsimpletrader vs elite fut sniper",
-    "is fut simple trader safe fc 26",
-    "fc 26 sniping bot",
-    "fc 27 autobuyer",
-    "ai sbc solver",
+    "fut simple trader pricing",
+    "fut simple trader vs elite fut sniper",
+    "ea fc 27 sniping bot",
+    "ea fc 27 autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futsimpletrader-vs-elitefutbot" },
   openGraph: {
     title: "FUT Simple Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Simple Trader vs Elite FUT SNIPER review: compare ban risks, pricing checks, external UI, and Elite's sub-20ms Chrome extension with AI solver.",
+      "FUT Simple Trader vs Elite FUT SNIPER: compare Pro and Premium tiers (€89 to €119 + VAT a year) with Elite's €19.90/year sniping extension.",
     url: "https://www.elitefutbot.com/futsimpletrader-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -35,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Simple Trader vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Simple Trader vs Elite FUT SNIPER review: compare ban risks, pricing checks, external UI, and Elite's sub-20ms Chrome extension with AI solver.",
+      "FUT Simple Trader vs Elite FUT SNIPER: compare Pro and Premium tiers (€89 to €119 + VAT a year) with Elite's €19.90/year sniping extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

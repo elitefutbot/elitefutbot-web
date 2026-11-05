@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "UTSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "UTSniper vs Elite FUT SNIPER review: compare linear delay soft bans, floating overlays, DOM lag, and Elite's sub-20ms Chrome bot with AI SBC solver.",
+    "UTSniper vs Elite FUT SNIPER: compare a 1-week trial, Standard and Gold tiers and SBC solver with Elite's €19.90/year extension.",
   keywords: [
     "utsniper",
     "ut sniper",
     "utsniper review",
+    "utsniper pricing",
     "utsniper vs elite fut sniper",
-    "utsniper alternative",
-    "fut sniping extension",
-    "ea fc 26 sniping bot",
+    "utsniper free trial",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "gaussian jitter fut bot",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/utsniper-vs-elitefutbot" },
   openGraph: {
     title: "UTSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "UTSniper vs Elite FUT SNIPER review: compare linear delay soft bans, floating overlays, DOM lag, and Elite's sub-20ms Chrome bot with AI SBC solver.",
+      "UTSniper vs Elite FUT SNIPER: compare a 1-week trial, Standard and Gold tiers and SBC solver with Elite's €19.90/year extension.",
     url: "https://www.elitefutbot.com/utsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "UTSniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "UTSniper vs Elite FUT SNIPER review: compare linear delay soft bans, floating overlays, DOM lag, and Elite's sub-20ms Chrome bot with AI SBC solver.",
+      "UTSniper vs Elite FUT SNIPER: compare a 1-week trial, Standard and Gold tiers and SBC solver with Elite's €19.90/year extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -7,26 +7,21 @@ export const metadata: Metadata = {
     absolute: "Snipe Sensei vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "Snipe Sensei vs Elite FUT SNIPER review: compare £24.99 email script fees, DOM delays, ban risks, and Elite's sub-20ms Side Panel HUD with AI solver.",
+    "Snipe Sensei vs Elite FUT SNIPER: compare a one-time £24.99 license with a €19.90/year Chrome extension, auto bidding and a free 2-day trial.",
   keywords: [
     "snipe sensei",
     "snipesensei",
     "snipe sensei review",
     "snipesensei.com",
-    "snipe sensei bot",
-    "snipe sensei tiktok",
-    "is snipe sensei safe",
-    "snipe sensei ban",
     "snipe sensei vs elite fut sniper",
-    "ea fc 26 sniping bot",
-    "ea fc 27 autobuyer",
     "snipe sensei pricing",
+    "ea fc 27 autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/snipesensei-vs-elitefutbot" },
   openGraph: {
     title: "Snipe Sensei vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Snipe Sensei vs Elite FUT SNIPER review: compare £24.99 email script fees, DOM delays, ban risks, and Elite's sub-20ms Side Panel HUD with AI solver.",
+      "Snipe Sensei vs Elite FUT SNIPER: compare a one-time £24.99 license with a €19.90/year Chrome extension, auto bidding and a free 2-day trial.",
     url: "https://www.elitefutbot.com/snipesensei-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -36,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Snipe Sensei vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Snipe Sensei vs Elite FUT SNIPER review: compare £24.99 email script fees, DOM delays, ban risks, and Elite's sub-20ms Side Panel HUD with AI solver.",
+      "Snipe Sensei vs Elite FUT SNIPER: compare a one-time £24.99 license with a €19.90/year Chrome extension, auto bidding and a free 2-day trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -4,33 +4,29 @@ export const futGenieData: CompetitorData = {
   slug: "futgenie-vs-elitefutbot",
   competitorName: "FUT Genie",
   competitorType: "extension",
-  tagline: "Move Beyond Passive Price Tracking Overlays to Autonomous Sub-20ms Sniping & AI SBC Solving.",
+  tagline: "FUTGenie Solves SBCs. Elite FUT SNIPER Snipes, Bids and Trades Automatically.",
   summaryPassage:
-    "In a direct technical comparison between FUT Genie and Elite FUT SNIPER, FUT Genie is a passive browser extension that displays Futbin price badges and sound alerts on card tiles (requiring manual human reaction speeds of 500ms+ with no automated buying), whereas Elite FUT SNIPER is a fully autonomous in-browser engine executing sub-20ms snipes, automated relisting, and neural AI SBC solving with Humanization++ zero-ban protection for €19.90/year.",
+    "FUTGenie (futgenie.gg) is an AI SBC solver and pack-opening tool for the EA FC Web App. It comes as a Chrome extension and as iOS and Android apps, with a free daily allowance of solves and paid plans for unlimited use. Elite FUT SNIPER does a different job. It is an automated sniping bot and autobuyer that searches, buys, bids and relists cards in your browser for €19.90/year, with a free 2-day trial.",
   verdict:
-    "FUT Genie is an informational browser overlay that injects Futbin price badges and audio alerts onto player cards in the EA Web App. While helpful for casual price checks, it cannot buy cards or solve challenges autonomously—forcing users to manually react to sound alerts, where human motor latency (400ms–800ms) consistently loses 59th-minute snipes to automated engines. Elite FUT SNIPER transforms passive price monitoring into autonomous profit: executing sub-20ms protocol snipes, dynamically computing EA transfer tax margins, and providing 1-click neural AI SBC solving inside a docked Chrome Side Panel HUD for EA Sports FC 26 & FC 27.",
+    "Choose FUTGenie if you mainly want SBCs solved and packs opened fast. Choose Elite FUT SNIPER if you want to earn coins by sniping and bidding on the transfer market automatically. Many traders use both kinds of tool.",
   publishedDate: "2026-08-01",
   modifiedDate: "2026-09-09",
   fc27SupportNote:
-    "FUT Genie's injected price overlay frequently suffers from broken card badges and delayed price scraping on FC 27 Web App updates. Elite FUT SNIPER operates via native protocol hooks, executing sub-20ms trades directly on live in-memory transfer market data on day one.",
+    "FUTGenie lists FC 27 SBC support on its site. Elite FUT SNIPER supports both EA FC 27 and FC 26 with a single €19.90/year license.",
 
   competitorOverview:
-    "FUT Genie is a browser extension created to enhance the EA Web App with visual Futbin price badges, player rating lookups, and audio chimes when a card is listed below a target threshold. However, it lacks autonomous buying capabilities—users must still hear the audio chime, frantically move their mouse cursor, and manually click the Buy Now button. Furthermore, it contains zero automated relisting or neural AI SBC tools.",
+    "FUTGenie (futgenie.gg) is an unofficial companion tool for EA Sports FC Ultimate Team. Its main feature is an AI SBC solver that completes SBCs in seconds, with a free daily allowance and paid plans for unlimited solves. It also has a gauntlet squad builder, a bulk pack opener that organises your players, and a lock list that protects favourite players from solves. It runs as a Chrome extension and as iOS and Android apps, and says it has 800,000+ active users. Its guides mention mass bidding, but its homepage does not describe automated sniping or auto-buying.",
 
   competitorPros: [
-    "Useful on-card Futbin price badge overlays for manual market browsing",
-    "Configurable sound chimes when a player card meets search price criteria",
-    "100% in-browser extension with zero cloud credential sharing",
+    "AI SBC solving with a free daily allowance",
+    "Gauntlet squad builder and bulk pack opener",
+    "Chrome extension plus iOS and Android apps",
+    "Large user base (it claims 800,000+ active users)",
   ],
   competitorCons: [
-    "Not an autonomous autobuyer: Requires manual human clicking for every purchase",
-    "Sluggish human reaction latency (400ms–800ms) consistently loses meta 59th-minute snipes to 20ms bots",
-    "Injects DOM badges directly into card tiles, causing visual overlap and CSS layout tearing",
-    "Completely lacks an integrated neural AI SBC solver for club fodder management",
-    "No automated batch relisting or real-time profit tracking HUD",
-    "Audio alerts become irritating and useless when cards sell out in milliseconds",
-    "Cannot trade in the background while you work, sleep, or play games",
-    "Frequent price scraping delays of 30–60 seconds during high-traffic promo drops",
+    "Its site does not describe automated sniping or auto-buying",
+    "Pricing is not shown on its homepage",
+    "The free plan limits how many solves you get per day",
   ],
   elitePros: [
     "100% autonomous background sniping loop that searches, buys, and lists cards automatically",
@@ -42,236 +38,171 @@ export const futGenieData: CompetitorData = {
     "Flat €19.90/year single license with guaranteed day-one access for both EA Sports FC 26 and FC 27",
   ],
   idealFor: {
-    competitor: "Casual gamers wanting visual price tags on card tiles for manual market browsing.",
-    elite: "Competitive traders and club grinders wanting autonomous 20ms execution, automated profits, and 1-click AI SBC solving.",
+    competitor: "Players who want fast SBC solutions and bulk pack opening.",
+    elite: "Traders who want automated sniping, bidding and relisting to earn coins.",
   },
 
   communityIssuesAudit: {
-    headline: "Critical Limitations & Operational Friction in Passive Price Overlays",
+    headline: "Different Jobs: SBC Solving vs Automated Trading",
     subheadline:
-      "A technical evaluation of why passive price badge extensions cannot compete with autonomous sub-20ms bot engines.",
+      "FUTGenie and Elite FUT SNIPER solve different problems. Here is where each one fits.",
     issues: [
       {
-        title: "Human Motor Reaction Latency (400ms–800ms) & Sound Alert Frustration",
-        badge: "Human Latency Gap",
-        severity: "critical",
+        title: "Automated Sniping and Auto-Buying",
+        badge: "Different Focus",
+        severity: "warning",
         competitorFlaw:
-          "FUT Genie alerts users via an audio chime when an underpriced card appears. However, human biological reaction time—hearing the chime, visually locating the card, moving the cursor, and clicking 'Buy Now'—takes between 400ms and 800ms. In high-demand 59th-minute trading, autonomous bot engines buy the card in sub-30ms, meaning FUT Genie users are greeted with frustrating 'Listing Expired' popups 99% of the time.",
+          "FUTGenie's site describes SBC solving and pack tools. It does not describe automated sniping or auto-buying.",
         eliteSolution:
-          "Elite FUT SNIPER evaluates market listings directly via protocol-level WebSocket events in sub-20ms. It verifies profit margins after EA's 5% tax and fires purchase requests automatically before a human ear can even process an audio alert.",
+          "Elite FUT SNIPER searches the transfer market nonstop and buys cards that match your price filters automatically.",
       },
       {
-        title: "Injected DOM Badge Clutter & Card Layout Tearing",
-        badge: "DOM Clutter Risk",
-        severity: "high",
+        title: "Auto Bidding and Relisting",
+        badge: "Trading Automation",
+        severity: "warning",
         competitorFlaw:
-          "FUT Genie injects raw HTML price badges and rating overlays directly into the Web App transfer market card elements. When EA Sports deploys minor frontend CSS patches or responsive layout updates, these injected badges overlap official buy buttons, obscure chemistry styles, and cause sluggish page scrolling.",
+          "FUTGenie's guides mention mass bidding, but its site does not describe automatic relisting or a live profit display.",
         eliteSolution:
-          "Elite FUT SNIPER operates strictly inside Google Chrome's isolated Side Panel API. It leaves the official Web App canvas completely untouched, eliminating DOM conflicts, page lag, and visual clutter.",
+          "Elite FUT SNIPER has an auto bidder, automatic relisting with EA's 5% tax built in, and a live profit display in the Chrome Side Panel.",
       },
       {
-        title: "Complete Absence of an AI SBC Solver & Autonomous Relisting",
-        badge: "Zero SBC & Relist",
-        severity: "high",
+        title: "Pricing Clarity",
+        badge: "Pricing",
+        severity: "warning",
         competitorFlaw:
-          "FUT Genie provides zero automated club inventory management. Users cannot solve repeatable SBCs with club untradeables, and any sniped cards must be manually priced, taxed, and relisted by hand one-by-one, requiring hours of tedious manual screen time.",
+          "FUTGenie shows a free daily allowance of solves, but paid plan prices are on its separate pricing page.",
         eliteSolution:
-          "Elite FUT SNIPER includes an integrated neural AI SBC solver that solves chemistry in sub-500ms and auto-buys missing pieces in 1 click. Furthermore, its dynamic relisting engine automatically calculates 5% EA tax floors and reprices 100 cards in 3 seconds.",
+          "Elite FUT SNIPER costs €19.90/year with all features included, plus a free 2-day trial.",
       },
     ],
   },
 
   advertisedFeaturesAudit: {
-    headline: "Direct Reality Audit: FUT Genie Marketing Claims vs Elite FUT SNIPER",
+    headline: "Feature Comparison: FUTGenie vs Elite FUT SNIPER",
     subheadline:
-      "A technical comparison contrasting passive price overlay tags against Elite FUT SNIPER's autonomous in-browser trading suite.",
+      "What each tool says it does, side by side.",
     features: [
       {
-        advertisedName: "On-Card Futbin Price Badges",
+        advertisedName: "Automated Sniping",
         competitorReality:
-          "Displays passive price tags that suffer from 30–60 second API caching delays during peak promo drops.",
+          "Not described on its site.",
         eliteAdvantage:
-          "Real-time streaming Futbin pricing integrated into an autonomous 20ms buyer with automatic 5% EA tax deductions.",
+          "Searches the market continuously and buys matching cards automatically (sub-20ms).",
       },
       {
-        advertisedName: "Audio Sniping Alerts",
+        advertisedName: "Auto Bidding",
         competitorReality:
-          "Plays sound alerts when deals appear, but human reaction time (500ms+) is too slow to beat 20ms bots.",
+          "Mass bidding is mentioned in its guides.",
         eliteAdvantage:
-          "Autonomous 24/7 background execution snapping undervalued cards in sub-20ms without requiring human reaction.",
+          "Built-in auto bidder.",
       },
       {
-        advertisedName: "In-Browser Extension Format",
+        advertisedName: "Automated Relisting",
         competitorReality:
-          "Injects cluttered badge elements directly over Web App player card tiles, disrupting native layouts.",
+          "Not described on its site.",
         eliteAdvantage:
-          "Docked Chrome Side Panel HUD that sits cleanly alongside the Web App with zero DOM canvas interference.",
+          "Batch relisting with EA's 5% tax built in.",
       },
       {
-        advertisedName: "AI SBC Solving Automation",
+        advertisedName: "Live Profit Display",
         competitorReality:
-          "Completely nonexistent. FUT Genie has zero squad building or chemistry calculation features.",
+          "Not described on its site.",
         eliteAdvantage:
-          "Neural AI SBC solver that evaluates club untradeables, solves chemistry in sub-500ms, and auto-submits in 1 click.",
+          "Live profit display in the Chrome Side Panel.",
       },
       {
-        advertisedName: "Automated Relisting Engine",
+        advertisedName: "Pack Opening",
         competitorReality:
-          "Not supported. Players must manually calculate market floors, factor in tax, and relist cards by hand.",
+          "Bulk pack opener that organises players.",
         eliteAdvantage:
-          "Intelligent batch repricing that checks live market floors, applies 5% EA tax deductions, and relists 100 cards in 3 seconds.",
+          "Not a focus of Elite FUT SNIPER.",
       },
       {
-        advertisedName: "Concurrent Multi-Filter Trading",
+        advertisedName: "Install",
         competitorReality:
-          "Can only monitor one player search at a time, requiring constant manual typing between different trading targets.",
+          "Chrome extension plus iOS and Android apps.",
         eliteAdvantage:
-          "Parallel multi-filter sniping engine capable of monitoring 15+ player filters simultaneously in one continuous loop.",
+          "Chrome extension, from the Chrome Web Store or installed manually.",
       },
       {
-        advertisedName: "Anti-Ban Protection Engine",
+        advertisedName: "Price",
         competitorReality:
-          "Irrelevant for FUT Genie since it cannot buy cards, leaving users exposed when clicking rapidly.",
+          "Free daily allowance, paid plans on its site.",
         eliteAdvantage:
-          "Humanization++ mode with Gaussian randomized delays, authentic mouse kinematics, and adaptive circuit breakers (0 bans).",
-      },
-      {
-        advertisedName: "Hands-Free Background Execution",
-        competitorReality:
-          "Requires the user to remain seated at their desk, staring at the screen and waiting for audio chimes.",
-        eliteAdvantage:
-          "Generates coins hands-free 24/7 in the background while you work, sleep, stream, or play matches.",
-      },
-      {
-        advertisedName: "Live Profit Analytics Tracking",
-        competitorReality:
-          "Offers no profit calculation, net coin accumulation counter, or trading session history.",
-        eliteAdvantage:
-          "Persistent real-time HUD showing net profit, coin accumulation rates, and historical trading telemetry.",
-      },
-      {
-        advertisedName: "EA FC 27 Day-One Compatibility",
-        competitorReality:
-          "Injected DOM hooks break when EA rewrites Web App component wrappers for FC 27.",
-        eliteAdvantage:
-          "Native forward-compatible protocol architecture guaranteeing seamless zero-downtime day-one compatibility for FC 26 & FC 27.",
-      },
-      {
-        advertisedName: "Browser Security & Isolation",
-        competitorReality:
-          "Third-party content scripts inject directly into the main page context, causing tab rendering lag.",
-        eliteAdvantage:
-          "Verified 1-click Google Chrome Web Store extension operating in an isolated background worker thread.",
-      },
-      {
-        advertisedName: "Commercial Support & Updates",
-        competitorReality:
-          "Basic community extension with slow patch releases when EA updates Web App layouts.",
-        eliteAdvantage:
-          "Commercial enterprise-grade bot actively updated weekly by dedicated software architects with 24/7 VIP Discord support.",
+          "€19.90/year, all features, free 2-day trial.",
       },
     ],
   },
 
-  uiComparison: {
-    headline: "UI Ergonomics: Injected Card Badge Clutter vs Docked Chrome Side Panel HUD",
-    subheadline:
-      "Contrasting the visual interference of on-card badge overlays against an isolated, hardware-accelerated Chrome Side Panel HUD.",
-    competitorUi: {
-      title: "FUT Genie Injected Badge Overlay",
-      badge: "In-Page DOM Badge Injection",
-      description:
-        "Injects price badges, rating tags, and sound listeners directly onto active transfer market player card tiles.",
-      drawbacks: [
-        "Injected badges overlap chemistry styles, position tags, and official buy buttons",
-        "Causes visual tearing and misaligned elements when scrolling through market search results",
-        "Audio chimes play constantly during busy searches, becoming annoying and distracting",
-        "Does not display comprehensive profit tracking or active trading loop telemetry",
-      ],
-    },
-    eliteUi: {
-      title: "Elite FUT SNIPER Native Chrome Side Panel HUD",
-      badge: "Hardware-Accelerated Side Panel",
-      description:
-        "A dedicated Chrome Side Panel that docks cleanly alongside the official Web App, keeping the gameplay canvas 100% clean and responsive.",
-      benefits: [
-        "Zero interference with the official Web App DOM or navigation controls",
-        "Live HUD displaying real-time profit tracking, coin telemetry, and active filters at a glance",
-        "Instant 1-click toggling between high-speed 20ms sniping and neural AI SBC solving",
-        "Hardware-accelerated rendering with zero impact on browser tab performance",
-      ],
-    },
-  },
-
   pricingTeardown: {
-    headline: "Pricing & ROI Teardown: Passive Free Overlay vs Autonomous Coin Generation",
+    headline: "Pricing: Free Daily Solves vs One Yearly License",
     subheadline:
-      "Why relying on passive price overlays leaves millions of coins on the table compared to Elite FUT SNIPER.",
+      "FUTGenie and Elite FUT SNIPER are priced for different jobs.",
     competitorModel: {
-      title: "FUT Genie Free Overlay Extension",
-      price: "Free / Freemium",
+      title: "FUTGenie",
+      price: "Free daily allowance, paid plans for unlimited use (see futgenie.gg for current prices)",
       hiddenCosts: [
-        "Zero automated coin generation: You must still manually sit and click for every single trade",
-        "Audio alerts fail against sub-50ms bot competition, resulting in missed 59th-minute snipes",
-        "Zero AI SBC solving capabilities — requires wasting hours on manual squad building",
-        "Requires purchasing a separate autobuyer tool if you want hands-free market profits",
+        "The free plan limits solves per day",
+        "Unlimited solving needs a paid plan",
+        "Sniping and auto-buying are not described on its site",
       ],
     },
     eliteModel: {
-      title: "Elite FUT SNIPER Universal Single License",
-      price: "€19.90 / year (Flat Single Fee)",
+      title: "Elite FUT SNIPER",
+      price: "€19.90 / year",
       inclusions: [
-        "Autonomous sub-20ms direct protocol transfer market sniping bot with dynamic auto-relisting",
-        "Integrated neural AI SBC solver with 1-click auto-buying and club untradeable optimization",
-        "Humanization++ anti-ban technology with a proven 0-ban track record across all seasons",
-        "Docked Chrome Side Panel HUD, official auto-updates, and 24/7 VIP Discord trading support",
-        "Guaranteed Day-One launch access for both EA Sports FC 26 & FC 27 at $0 extra cost",
+        "Automated sniping and auto-buying",
+        "Auto bidder",
+        "Automatic relisting with EA's 5% tax built in",
+        "Live profit display in a Chrome Side Panel",
+        "Free 2-day trial, no card needed",
+        "Covers EA FC 26 and FC 27",
       ],
     },
     summary:
-      "FUT Genie shows you prices, but cannot make you coins. Elite FUT SNIPER automates the entire process: sniping in sub-20ms, relisting with 5% EA tax deductions, and solving SBCs in 1 click for just €19.90/year.",
+      "FUTGenie and Elite FUT SNIPER are priced for different jobs. FUTGenie charges for unlimited SBC solving. Elite costs €19.90/year for automated trading.",
   },
 
   keyStatistics: [
-    { label: "Execution Model", value: "Autonomous 24/7", source: "Bot Execution vs Passive Price Overlay Comparison" },
-    { label: "Execution Latency", value: "< 20ms Direct Protocol", source: "In-Browser WebSocket Benchmark" },
-    { label: "AI SBC Chemistry Solver", value: "Sub-500ms Neural Engine", source: "Neural SBC Optimization Suite" },
-    { label: "Account Safety Record", value: "0 Bans To Date", source: "Humanization++ Anti-Ban Telemetry Audit" },
+    { label: "Main Focus", value: "SBC solving (FUTGenie) vs sniping and bidding (Elite)", source: "futgenie.gg and elitefutbot.com" },
+    { label: "Elite Price", value: "€19.90/year", source: "elitefutbot.com" },
+    { label: "Elite Free Trial", value: "2 days", source: "elitefutbot.com" },
+    { label: "FUTGenie Users", value: "800,000+ (claimed)", source: "futgenie.gg" },
   ],
 
   citations: [
+    { label: "FUTGenie official site", url: "https://futgenie.gg" },
     { label: "Price Overlay Extensions vs Autonomous Sniping Bots", url: "https://www.elitefutbot.com/tools/comparison-guide" },
     { label: "Automated Profit Generation in Ultimate Team", url: "https://www.elitefutbot.com/tools/sniping-guide" },
     { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
   ],
 
   comparisonRows: [
-    { feature: "Primary Functionality", elite: "Autonomous 20ms Sniping & AI SBC Solving", competitor: "Passive Market Price Tracking Overlay", winner: "elite" },
-    { feature: "Market Sniping Execution", elite: "Sub-20ms Autonomous Purchase Execution", competitor: "Not Supported (Player Must Click Manually)", winner: "elite" },
-    { feature: "AI SBC Chemistry Solver", elite: "Built-In Sub-500ms Neural Solver", competitor: "Not Supported (Trading Only)", winner: "elite" },
-    { feature: "Auto-Buy Missing Fodder", elite: "Instant Sub-20ms Market Auto-Purchase", competitor: "Not Supported", winner: "elite" },
-    { feature: "UI Ergonomics & Layout", elite: "Docked Chrome Side Panel (Zero Clutter)", competitor: "Injected Price Badges on Card Tiles", winner: "elite" },
-    { feature: "Reaction & Execution Speed", elite: "Sub-20ms Direct In-Browser WebSocket", competitor: "Manual Human Reaction (400ms–800ms)", winner: "elite" },
-    { feature: "Concurrent Multi-Filter Sniping", elite: "Up to 15+ Target Filters Simultaneously", competitor: "Single Filter Execution Only", winner: "elite" },
-    { feature: "Live Profit Analytics", elite: "Real-Time Net Profit & EA Tax Deduction", competitor: "Static Delayed Price Feeds Only", winner: "elite" },
-    { feature: "Automated Batch Relisting", elite: "Dynamic Market Floor Repricing in 3s", competitor: "Not Supported", winner: "elite" },
-    { feature: "Anti-Ban Protection", elite: "Humanization++ Bézier Physics (0 Bans)", competitor: "Manual User Clicks Only", winner: "elite" },
-    { feature: "Session Sandboxing & DOM Security", elite: "Isolated Side Panel Memory (Zero Mutations)", competitor: "Injected DOM Badges (Prone to CSS Clashes)", winner: "elite" },
-    { feature: "FC 27 Day-One Readiness", elite: "Guaranteed Day-One Launch Included", competitor: "Price Scraping API Updates Required", winner: "elite" },
-    { feature: "Hands-Free Coin Generation", elite: "Generates Millions Hands-Free 24/7", competitor: "Zero Coin Generation (Manual Only)", winner: "elite" },
-    { feature: "Support & VIP Community", elite: "24/7 VIP Discord + Active Core Engineers", competitor: "Basic Web Forum Support", winner: "elite" },
+    { feature: "Main Purpose", elite: "Automated sniping, bidding and trading", competitor: "AI SBC solving and pack opening", winner: "tie" },
+    { feature: "Automated Sniping and Auto-Buy", elite: "Yes, sub-20ms", competitor: "Not described on its site", winner: "elite" },
+    { feature: "Auto Bidding", elite: "Built-in auto bidder", competitor: "Mass bidding mentioned in guides", winner: "elite" },
+    { feature: "Automated Relisting", elite: "Yes, with EA's 5% tax built in", competitor: "Not described on its site", winner: "elite" },
+    { feature: "Live Profit Display", elite: "Yes, in the Side Panel", competitor: "Not described on its site", winner: "elite" },
+    { feature: "Pack Opening", elite: "Not a focus", competitor: "Bulk pack opener", winner: "competitor" },
+    { feature: "Price", elite: "€19.90/year, all features", competitor: "Free daily allowance, paid plans for unlimited use", winner: "tie" },
+    { feature: "Free Access", elite: "2-day free trial", competitor: "Free daily allowance, no expiry", winner: "competitor" },
   ],
 
   faqs: [
     {
-      question: "Can I use FUT Genie alongside Elite FUT SNIPER?",
+      question: "Can I use FUTGenie alongside Elite FUT SNIPER?",
       answer:
-        "Yes! You can keep FUT Genie active to view on-card price badges while Elite FUT SNIPER runs in your Chrome Side Panel to autonomously snipe deals and solve SBCs. They operate independently without conflict.",
+        "They do different jobs, so many traders use both: FUTGenie for SBCs and Elite FUT SNIPER for sniping and trading.",
     },
     {
-      question: "Why is autonomous sniping better than manually buying cards with FUT Genie's audio alerts?",
+      question: "Does FUTGenie have an AI SBC solver?",
       answer:
-        "FUT Genie alerts you with a sound when a card appears, but human reaction times (400ms to 800ms) are far too slow to compete against automated bots on high-value 59th-minute deals that sell in under 50ms. Elite FUT SNIPER detects and purchases the card in under 20ms.",
+        "Yes. It is FUTGenie's main feature, with a free daily allowance and paid plans for unlimited solves.",
+    },
+    {
+      question: "Does FUTGenie snipe or auto-buy cards?",
+      answer:
+        "Its site describes SBC solving, a gauntlet builder and pack opening. It does not describe automated sniping or auto-buying. Its guides mention mass bidding.",
     },
     {
       question: "Does Elite FUT SNIPER show profit statistics?",
@@ -284,27 +215,11 @@ export const futGenieData: CompetitorData = {
         "Yes! Elite FUT SNIPER integrates live Futbin pricing directly into the Side Panel and calculates net profit margins after automatically deducting EA's 5% market tax from every transaction.",
     },
     {
-      question: "Does FUT Genie have an AI SBC solver?",
+      question: "What is the price difference between Elite FUT SNIPER and FUTGenie?",
       answer:
-        "No. FUT Genie is strictly a price overlay extension. It cannot evaluate your club's untradeable cards, solve chemistry constraints, or auto-submit SBCs. Elite FUT SNIPER includes an integrated neural AI SBC solver that completes repeatable SBCs in under 15 seconds.",
-    },
-    {
-      question: "What is the price difference between Elite FUT SNIPER and FUT Genie?",
-      answer:
-        "FUT Genie offers free or freemium price badges but cannot make you coins autonomously. Elite FUT SNIPER costs a flat single fee of €19.90 per year for complete sub-20ms autonomous sniping, neural AI SBC solving, and guaranteed day-one FC 26 & FC 27 support.",
+        "FUTGenie has a free daily allowance and paid plans for unlimited solves (see futgenie.gg for prices). Elite FUT SNIPER costs €19.90 per year with all features, plus a free 2-day trial.",
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "FUT Genie alerted me to great deals, but I could never click fast enough to beat the bots. Elite FUT SNIPER automatically snipes them in 20ms and relists them for profit while I'm at work. Best tool in FC 26.",
-      author: "Verified Ligue 1 Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "The combination of 20ms auto-sniping and the AI SBC solver makes this an absolute must-have. Clean side-panel UI and zero visual clutter on my cards.",
-      author: "Verified Ultimate Team Competitor",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

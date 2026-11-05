@@ -7,23 +7,21 @@ export const metadata: Metadata = {
     absolute: "FutFun vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTFun vs Elite FUT SNIPER review: audit browser script bugs, DOM polling delays, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
+    "FutFun vs Elite FUT SNIPER: compare a cloud bot that keeps 30% of profit with Elite's flat €19.90/year Chrome extension and free trial.",
   keywords: [
     "futfun",
+    "fut fun",
     "futfun review",
+    "futfun.com",
+    "futfun 30%",
     "futfun vs elite fut sniper",
-    "futfun alternative",
-    "futfun commission",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futfun-vs-elitefutbot" },
   openGraph: {
     title: "FutFun vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTFun vs Elite FUT SNIPER review: audit browser script bugs, DOM polling delays, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
+      "FutFun vs Elite FUT SNIPER: compare a cloud bot that keeps 30% of profit with Elite's flat €19.90/year Chrome extension and free trial.",
     url: "https://www.elitefutbot.com/futfun-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -33,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FutFun vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTFun vs Elite FUT SNIPER review: audit browser script bugs, DOM polling delays, and Elite's sub-20ms docked Chrome Side Panel with neural AI solver.",
+      "FutFun vs Elite FUT SNIPER: compare a cloud bot that keeps 30% of profit with Elite's flat €19.90/year Chrome extension and free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

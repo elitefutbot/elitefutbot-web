@@ -7,26 +7,21 @@ export const metadata: Metadata = {
     absolute: "Stevie's Sniper vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "Stevie's Sniper vs Elite FUT SNIPER review: audit £50 Gold filter paywalls, 2% ban rates, search caps, and Elite's sub-20ms Side Panel with AI.",
+    "Stevie's Sniper vs Elite FUT SNIPER: compare one-time Silver (£29) and Gold (£69) licenses with Elite's €19.90/year extension and free trial.",
   keywords: [
     "stevies sniper",
-    "stevie's sniper",
-    "stevies sniper review",
+    "steviessniper",
     "steviessniper.com",
-    "stevies sniper ban",
-    "is stevies sniper safe",
-    "stevies sniper vs elite fut sniper",
-    "ea fc 26 sniping bot",
+    "stevie's sniper review",
+    "stevie's sniper price",
+    "stevie's sniper vs elite fut sniper",
     "ea fc 27 autobuyer",
-    "stevies sniper filters",
-    "stevies sniper pricing",
-    "stevies sniper silver gold tier",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/steviessniper-vs-elitefutbot" },
   openGraph: {
     title: "Stevie's Sniper vs Elite FUT SNIPER: 2026 Review",
     description:
-      "Stevie's Sniper vs Elite FUT SNIPER review: audit £50 Gold filter paywalls, 2% ban rates, search caps, and Elite's sub-20ms Side Panel with AI.",
+      "Stevie's Sniper vs Elite FUT SNIPER: compare one-time Silver (£29) and Gold (£69) licenses with Elite's €19.90/year extension and free trial.",
     url: "https://www.elitefutbot.com/steviessniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -36,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Stevie's Sniper vs Elite FUT SNIPER: 2026 Review",
     description:
-      "Stevie's Sniper vs Elite FUT SNIPER review: audit £50 Gold filter paywalls, 2% ban rates, search caps, and Elite's sub-20ms Side Panel with AI.",
+      "Stevie's Sniper vs Elite FUT SNIPER: compare one-time Silver (£29) and Gold (£69) licenses with Elite's €19.90/year extension and free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

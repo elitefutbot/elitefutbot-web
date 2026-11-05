@@ -7,25 +7,21 @@ export const metadata: Metadata = {
     absolute: "Lena Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "Lena Bot vs Elite FUT SNIPER review: compare Remote Play streaming lag, $120/yr console fees, and Elite's sub-20ms local Chrome extension with AI.",
+    "Lena Bot vs Elite FUT SNIPER: console-farming software at $10 per console a month compared with Elite's €19.90/year Chrome extension.",
   keywords: [
     "lena bot",
-    "lena bot review",
     "lenabot",
     "lenabot.com",
+    "lena bot review",
     "lena bot vs elite fut sniper",
-    "lena bot alternative",
-    "ea fc 26 autobuyer",
-    "ea fc 27 sniping bot",
-    "fut coin muling bot",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
+    "ea fc console farming",
+    "ea fc 27 autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/lenabot-vs-elitefutbot" },
   openGraph: {
     title: "Lena Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Lena Bot vs Elite FUT SNIPER review: compare Remote Play streaming lag, $120/yr console fees, and Elite's sub-20ms local Chrome extension with AI.",
+      "Lena Bot vs Elite FUT SNIPER: console-farming software at $10 per console a month compared with Elite's €19.90/year Chrome extension.",
     url: "https://www.elitefutbot.com/lenabot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -35,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Lena Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Lena Bot vs Elite FUT SNIPER review: compare Remote Play streaming lag, $120/yr console fees, and Elite's sub-20ms local Chrome extension with AI.",
+      "Lena Bot vs Elite FUT SNIPER: console-farming software at $10 per console a month compared with Elite's €19.90/year Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -139,12 +139,15 @@ export default function SiteFooter() {
             <nav className="space-y-6" aria-labelledby="footer-comparisons">
               <h2 id="footer-comparisons" className="text-white font-black text-xs uppercase tracking-[0.2em] font-headline">Top Comparisons</h2>
               <ul className="space-y-2 text-sm font-medium">
-                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/bakers-bot-vs-elitefutbot">vs Baker&apos;s Bot</Link></li>
-                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futsimpletrader-vs-elitefutbot">vs Simple Trader</Link></li>
-                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futmania-vs-elitefutbot">vs FUTMania</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futgenie-vs-elitefutbot">vs FUTGenie</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/fcenhancer-vs-elitefutbot">vs FC27 Enhancer</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futcloud-vs-elitefutbot">vs FUTCloud</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futfun-vs-elitefutbot">vs FutFun</Link></li>
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/steviessniper-vs-elitefutbot">vs Stevie&apos;s Sniper</Link></li>
-                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/paletools-vs-elitefutbot">vs Paletools</Link></li>
-                <li><Link className="text-primary hover:underline transition-colors focus-visible:text-primary focus-visible:outline-none block py-1 font-bold text-xs" href="/tools/comparison-guide">View All 54 Comparisons &rarr;</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futtbot-vs-elitefutbot">vs Futtbot</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/utsniper-vs-elitefutbot">vs UTSniper</Link></li>
+                <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/futrich-vs-elitefutbot">vs FUTRich</Link></li>
+                <li><Link className="text-primary hover:underline transition-colors focus-visible:text-primary focus-visible:outline-none block py-1 font-bold text-xs" href="/tools/comparison-guide">View All Comparisons &rarr;</Link></li>
               </ul>
             </nav>
 
@@ -171,80 +174,6 @@ export default function SiteFooter() {
                 <li><Link className="text-gray-400 hover:text-primary transition-colors focus-visible:text-primary focus-visible:outline-none block py-1.5" href="/links">Direct Links</Link></li>
               </ul>
             </nav>
-          </div>
-        </div>
-
-        {/* Quick Comparisons Pill Cloud for SEO / GEO Crawlers */}
-        <div className="pt-8 pb-12 border-t border-white/5 space-y-4">
-          <div className="flex items-center justify-between">
-            <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-gray-400">Direct Competitor Breakdowns</span>
-            <Link href="/tools/comparison-guide" className="text-xs text-primary font-bold hover:underline font-mono">Explore Hub (54 Tools)</Link>
-          </div>
-          <div className="flex flex-wrap gap-3 text-xs">
-            {[
-              { slug: "fcautobuyer-vs-elitefutbot", name: "FC AutoBuyer" },
-              { slug: "eafcsnipingbot-vs-elitefutbot", name: "EAFC Sniping Bot" },
-              { slug: "remx-vs-elitefutbot", name: "RemX Sniping Bot" },
-              { slug: "abfut-vs-elitefutbot", name: "ABFut 27" },
-              { slug: "futeasy-vs-elitefutbot", name: "FutEasy" },
-              { slug: "bakers-bot-vs-elitefutbot", name: "Baker's Bot" },
-              { slug: "futsimpletrader-vs-elitefutbot", name: "FUT Simple Trader" },
-              { slug: "futearn-vs-elitefutbot", name: "FutEarn" },
-              { slug: "futsniper-vs-elitefutbot", name: "FUT Sniper" },
-              { slug: "futsnipingbot-vs-elitefutbot", name: "FUT Sniping Bot" },
-              { slug: "futinator-vs-elitefutbot", name: "Futinator" },
-              { slug: "futbotmanager-vs-elitefutbot", name: "FutBotManager" },
-              { slug: "futmania-vs-elitefutbot", name: "FUTMania" },
-              { slug: "futcoinbuddy-vs-elitefutbot", name: "Futcoinbuddy" },
-              { slug: "futhunter-vs-elitefutbot", name: "FUT Hunter" },
-              { slug: "futultimatesniper-vs-elitefutbot", name: "FUT Ultimate Sniper" },
-              { slug: "futdroid-vs-elitefutbot", name: "FUTDroid" },
-              { slug: "steviessniper-vs-elitefutbot", name: "Stevie's Sniper" },
-              { slug: "futrich-vs-elitefutbot", name: "FUTRich" },
-              { slug: "futlocker-vs-elitefutbot", name: "FUT Locker" },
-              { slug: "futtbot-vs-elitefutbot", name: "Futtbot" },
-              { slug: "fifasnipebot-vs-elitefutbot", name: "FIFA Snipe Bot" },
-              { slug: "fc26snipingbot-vs-elitefutbot", name: "FC26 Sniping Bot" },
-              { slug: "easyfutweb-vs-elitefutbot", name: "EasyFUTWeb" },
-              { slug: "futmaker-vs-elitefutbot", name: "FUT Maker" },
-              { slug: "snipesensei-vs-elitefutbot", name: "Snipe Sensei" },
-              { slug: "futsniperweb-vs-elitefutbot", name: "FUT Sniper Web" },
-              { slug: "easysbc-vs-elitefutbot", name: "EasySBC" },
-              { slug: "paletools-vs-elitefutbot", name: "Paletools" },
-              { slug: "futgg-vs-elitefutbot", name: "FUT.GG" },
-              { slug: "futsnipingbot24-vs-elitefutbot", name: "FUT Sniping Bot 24" },
-              { slug: "futgenie-vs-elitefutbot", name: "FUT Genie" },
-              { slug: "exesniper-vs-elitefutbot", name: "ExeSniper" },
-              { slug: "futbotclub-vs-elitefutbot", name: "FUT Bot Club" },
-              { slug: "shortfuts-vs-elitefutbot", name: "Shortfuts" },
-              { slug: "futcloud-vs-elitefutbot", name: "FUTCloud" },
-              { slug: "futmillionaire-vs-elitefutbot", name: "FUTMillionaire" },
-              { slug: "futstarz-vs-elitefutbot", name: "FutStarz" },
-              { slug: "utsniper-vs-elitefutbot", name: "UTSniper" },
-              { slug: "sniperbotitalia-vs-elitefutbot", name: "SniperBot Italia" },
-              { slug: "eafcsniper-vs-elitefutbot", name: "EAFC Sniper" },
-              { slug: "fcenhancer-vs-elitefutbot", name: "FC Enhancer" },
-              { slug: "futtradebuddy-vs-elitefutbot", name: "FUT Trade Buddy" },
-              { slug: "futfun-vs-elitefutbot", name: "FutFun" },
-              { slug: "futcoinharvester-vs-elitefutbot", name: "FUT Coin Harvester" },
-              { slug: "futautobuyer-vs-elitefutbot", name: "FUT Auto Buyer" },
-              { slug: "lenabot-vs-elitefutbot", name: "Lena Bot" },
-              { slug: "magicbuyer-vs-elitefutbot", name: "MagicBuyer" },
-              { slug: "raven-vs-elitefutbot", name: "Raven" },
-              { slug: "fc27autotrader-vs-elitefutbot", name: "FC27 Auto Trader" },
-              { slug: "futisland-vs-elitefutbot", name: "FUT ISLAND" },
-              { slug: "nokafut-vs-elitefutbot", name: "NokaFut" },
-              { slug: "cheatas-vs-elitefutbot", name: "Cheat.as" },
-              { slug: "fccopilot-vs-elitefutbot", name: "FC Copilot" },
-            ].map((item) => (
-              <Link
-                key={item.slug}
-                href={`/${item.slug}`}
-                className="px-3.5 py-2 min-h-[36px] my-0.5 inline-flex items-center rounded-xl bg-white/[0.04] hover:bg-primary/10 border border-white/10 hover:border-primary/40 text-gray-300 hover:text-primary transition-all text-xs font-medium"
-              >
-                vs {item.name}
-              </Link>
-            ))}
           </div>
         </div>
 

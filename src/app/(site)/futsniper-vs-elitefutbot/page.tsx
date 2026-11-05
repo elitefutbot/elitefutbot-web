@@ -7,27 +7,23 @@ export const metadata: Metadata = {
     absolute: "FUT Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUT Sniper vs Elite FUT SNIPER review: compare unsigned zip risks, DOM macro clickers, ban telemetry, and Elite's sub-20ms Chrome bot with AI solver.",
+    "FUTSniper and FUT SNIPER BOT vs Elite FUT SNIPER: compare futsniper.online ($4.99+/month, 3-day trial) and futsniperbot.com (24h free) with Elite.",
   keywords: [
     "futsniper",
     "fut sniper",
     "futsniper review",
-    "futsniper.com",
-    "futsniperbot",
+    "futsniper.online",
     "futsniperbot.com",
     "fut sniper bot",
-    "is fut sniper safe",
-    "futsniper ban",
+    "futsniper pricing",
     "futsniper vs elite fut sniper",
-    "fc 26 sniping bot",
-    "fc 27 autobuyer",
-    "ai sbc solver",
+    "ea fc 27 autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futsniper-vs-elitefutbot" },
   openGraph: {
     title: "FUT Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Sniper vs Elite FUT SNIPER review: compare unsigned zip risks, DOM macro clickers, ban telemetry, and Elite's sub-20ms Chrome bot with AI solver.",
+      "FUTSniper and FUT SNIPER BOT vs Elite FUT SNIPER: compare futsniper.online ($4.99+/month, 3-day trial) and futsniperbot.com (24h free) with Elite.",
     url: "https://www.elitefutbot.com/futsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -37,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUT Sniper vs Elite FUT SNIPER review: compare unsigned zip risks, DOM macro clickers, ban telemetry, and Elite's sub-20ms Chrome bot with AI solver.",
+      "FUTSniper and FUT SNIPER BOT vs Elite FUT SNIPER: compare futsniper.online ($4.99+/month, 3-day trial) and futsniperbot.com (24h free) with Elite.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

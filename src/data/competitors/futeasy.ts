@@ -149,7 +149,7 @@ export const futEasyData: CompetitorData = {
     { feature: "Neural AI SBC Solver", elite: "Included (1-Click Auto-Buy)", competitor: false, winner: "elite" },
     { feature: "Interface Ergonomics", elite: "Docked Chrome Side Panel HUD", competitor: "Injected DOM buttons", winner: "elite" },
     { feature: "Anti-Ban Engine", elite: "Humanization++ (0 Bans Recorded)", competitor: "Linear delays (Soft ban risk)", winner: "elite" },
-    { feature: "Free Trial Availability", elite: "7 Full Days (Instant Access)", competitor: "Limited regional trial", winner: "elite" },
+    { feature: "Free Trial Availability", elite: "2 Days (Instant Access)", competitor: "Limited regional trial", winner: "elite" },
     { feature: "Global VIP Support", elite: "24/7 English Discord Hub", competitor: "Regional Russian forums", winner: "elite" },
   ],
 
@@ -171,16 +171,5 @@ export const futEasyData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I used FutEasy for hotkeys, but my fingers got tired and I ended up getting soft banned after an hour of spamming keys. Elite FUT SNIPER does the entire process autonomously while I'm at work with 0 bans.",
-      author: "Verified Ultimate Team Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "The injected buttons on FutEasy constantly messed up my Web App layout after EA updates. Elite's Side Panel is completely isolated and never breaks when EA changes a style class.",
-      author: "Weekend League Competitor",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

@@ -3,37 +3,32 @@ import { CompetitorData } from "./types";
 export const futtbotData: CompetitorData = {
   slug: "futtbot-vs-elitefutbot",
   competitorName: "Futtbot",
-  competitorType: "local",
-  tagline: "Replace Fragile CLI Terminal Scripts & 45-Min Dev Setups with a 1-Click Chrome Side Panel HUD and AI SBC Solving.",
-  summaryPassage:
-    "In a direct comparison between Futtbot and Elite FUT SNIPER, Futtbot is an open-source terminal framework requiring Node.js/Python setup, manual DevTools cookie sniffing, and constant code debugging (with mechanical HTTP interval bans), whereas Elite FUT SNIPER is an instant 1-click Chrome extension with a visual Side Panel HUD, sub-20ms WebSocket execution, neural AI SBC solving, and Humanization++ zero-ban protection.",
-  verdict:
-    "Futtbot (open-source GitHub repository) caters to software developers willing to spend 45+ minutes installing Node.js, compiling dependencies, extracting session tokens via DevTools, and debugging unhandled exceptions every time EA modifies their API. Its mechanical HTTP loops lack browser telemetry and frequently trigger heuristic bans. Elite FUT SNIPER packages high-frequency sub-20ms trading algorithms into an elegant, zero-configuration Chrome Side Panel HUD featuring live profit charts, an integrated neural AI SBC solver, and continuous automated updates for EA FC 26 and FC 27 for a flat €19.90/year.",
+  competitorType: "userscript",
+  tagline: "Futtbot and Elite FUT SNIPER Both Automate the Transfer Market. Here Is How They Differ.",
+  summaryPassage: "Futtbot (futtbot.com) is a paid autobuyer, sniper, bidder and seller script that runs inside the official EA Web App, with an SBC solver that uses Futbin. Its plans are 1 month (€7.49), 3 months (€14.99) and 1 year (€59.99) at the time of writing, and its purchases are non-refundable. The page we read targets EA FC 26 (v6, October 2025). Elite FUT SNIPER is a Chrome extension for €19.90/year with a free 2-day trial.",
+  verdict: "Both tools automate buying, bidding and selling in the EA Web App. Futtbot is cheaper if you only want one month (€7.49), and it lists an SBC solver and Telegram control. Elite FUT SNIPER is cheaper over a full year (€19.90 against €59.99 at the time of writing), covers FC 27, and lets you test it free for 2 days.",
   publishedDate: "2026-08-01",
-  modifiedDate: "2026-09-09",
-  fc27SupportNote:
-    "Open-source terminal scripts like Futtbot break completely when EA updates Web App authentication signatures in FC 27, leaving users stranded for weeks. Elite FUT SNIPER uses native browser DOM execution with guaranteed day-one FC 27 forward compatibility.",
+  modifiedDate: "2026-11-05",
+  fc27SupportNote: "The Futtbot page we read targets EA FC 26 (version v6, October 2025). Check its site for FC 27 support. Elite FUT SNIPER supports both EA FC 27 and FC 26 with one €19.90/year license.",
 
-  competitorOverview:
-    "Futtbot is an open-source automation codebase hosted on GitHub, created for developers and technical hobbyists who want to run terminal-based HTTP scripts. It requires running Node.js and Python environments, compiling dependencies, manually sniffing authorization cookies from browser DevTools, and debugging code whenever EA patches its Web App endpoints. With no graphical user interface, all feedback is dumped to raw terminal logs, and its mechanical request intervals leave accounts exposed to EA anti-cheat telemetry.",
+  competitorOverview: "Futtbot (futtbot.com) describes itself as a simple autobuyer, sniper, bidding and selling bot for Ultimate Team. It is a paid script that runs inside the official web app. Its page lists auto buyer, auto sniper, auto bidder and auto seller, an SBC solver using a Futbin integration, coverage of players, staff, club items and consumables, and many settings: sell and buy prices, bid expiry window, relisting, wait time, max purchases per search, stop-after timers, pause cycles, rating filters, randomized min bid and buy, captcha handling, and sound or Telegram notifications. It works with the web app on PC, Mac, Linux and Chromebook, with Android and iOS in beta, and says it does not need your EA login details. It calls itself undetectable but always a risk. Plans are 1 month (€7.49, reduced from €14.99), 3 months (€14.99, with 1 month free) and 1 year (€59.99, with 4 months free), all non-refundable.",
 
   competitorPros: [
-    "100% free and open-source codebase for software developers",
-    "Full transparency over code execution and raw HTTP request payloads",
-    "Customizable for programmers who know how to write JavaScript or TypeScript",
+    "Covers buying, sniping, bidding and selling",
+    "SBC solver using Futbin",
+    "Telegram notifications and control",
+    "Works on PC, Mac, Linux and Chromebook, with Android and iOS in beta",
+    "A 1-month plan (€7.49) is a cheap way to try it"
   ],
   competitorCons: [
-    "Requires complex 45–60 minute command-line installation (Node.js, Git, Python, .env configs)",
-    "No graphical user interface — logs output to raw scrolling terminal text screens",
-    "Breaks frequently whenever EA updates Web App authentication headers or build hashes",
-    "Requires manual DevTools network inspection to extract and paste auth tokens and cookies",
-    "Mechanical interval timers trigger EA heuristic rate-limit flags and market bans",
-    "Completely lacks an integrated neural AI SBC solver or club untradeable optimizer",
-    "No dedicated customer support; relies on inactive volunteer GitHub issue threads",
-    "No live Futbin API streaming, automated 5% EA tax deduction, or batch repricing",
+    "Purchases are non-refundable, per its site",
+    "The 1-year plan is €59.99 at the time of writing",
+    "The page we read targets EA FC 26",
+    "We could not find a free trial on its page"
   ],
+
   elitePros: [
-    "Instant 1-click Chrome Web Store install with zero coding, terminal, or environment setup required",
+    "Install from the Chrome Web Store with no coding or environment setup",
     "Sleek visual Chrome Side Panel HUD with real-time profit tracking and Futbin valuation",
     "Sub-20ms direct in-memory WebSocket response time that consistently beats external HTTP scripts",
     "Integrated neural AI SBC solver that automatically builds chemistry with club untradeables in sub-500ms",
@@ -42,283 +37,223 @@ export const futtbotData: CompetitorData = {
     "Free VIP Discord trading community with daily investment presets, market leak alerts, and 24/7 architect assistance",
   ],
   idealFor: {
-    competitor: "Software engineers and programmers who enjoy debugging command-line scripts and editing open-source code.",
-    elite: "Gamers and serious traders who want instant 30-second setup, a gorgeous visual UI, 20ms execution speed, and 1-click AI SBC solving.",
+    "competitor": "Traders who want a short, low-cost monthly plan with Telegram control and many settings.",
+    "elite": "Traders who want a yearly price, a Chrome Web Store install and a free trial first."
   },
 
   communityIssuesAudit: {
-    headline: "Critical Operational Friction & Abandonment Risks in Open-Source Scripts",
-    subheadline:
-      "A technical evaluation of why manual CLI setups, brittle cookie sniffing, and volunteer-maintained repos fail active traders.",
-    issues: [
+    "headline": "Where Futtbot and Elite FUT SNIPER Differ",
+    "subheadline": "Both automate trading. The main differences are price, plan length and the free trial.",
+    "issues": [
       {
-        title: "The 45-Minute Developer Setup & Fragile Daily Cookie Sniffing",
-        badge: "Developer Friction Trap",
-        severity: "critical",
-        competitorFlaw:
-          "Running Futtbot requires extensive developer tooling: installing Git, Node.js, Python, resolving npm package conflicts, and manually sniffing browser DevTools network packets to extract sensitive session cookies ('auth-token', 'nucleus-id'). Every time EA invalidates the session (often multiple times a day), the terminal script crashes with unhandled promise rejections, requiring users to repeat the entire manual cookie extraction routine.",
-        eliteSolution:
-          "Elite FUT SNIPER installs in 30 seconds from the official Chrome Web Store. It leverages your authenticated browser session automatically with zero token extraction, zero terminal commands, and zero coding required.",
+        "title": "Plan length and price",
+        "badge": "Pricing",
+        "severity": "warning",
+        "competitorFlaw": "Futtbot's plans run from €7.49 for one month to €59.99 for one year at the time of writing, and purchases are non-refundable.",
+        "eliteSolution": "Elite FUT SNIPER costs €19.90 for a full year. Purchases are also not refundable, so use the free 2-day trial first."
       },
       {
-        title: "Unmaintained GitHub Repositories & Breaking EA API Changes",
-        badge: "Stale Codebase Risk",
-        severity: "high",
-        competitorFlaw:
-          "Open-source terminal scripts depend on volunteer hobbyist maintainers. Whenever EA rolls out major frontend updates, obfuscates API signatures, or updates build hashes (as occurs during every promo drop and title release), Futtbot breaks completely. Users are left stranded with broken scripts and unanswered GitHub issue tickets for weeks or months.",
-        eliteSolution:
-          "Elite FUT SNIPER is actively maintained by dedicated full-time software architects. Every EA Web App update is monitored 24/7 with zero-downtime automated background patches delivered directly to your browser.",
+        "title": "Free trial",
+        "badge": "Trial",
+        "severity": "warning",
+        "competitorFlaw": "We could not find a free trial on Futtbot's page. The free months are bonus time on paid plans.",
+        "eliteSolution": "Every new Elite FUT SNIPER account gets a free 2-day trial with all features and no card."
       },
       {
-        title: "Mechanical HTTP Interval Spikes & Fatal Heuristic Ban Rates",
-        badge: "Heuristic Anti-Cheat Risk",
-        severity: "high",
-        competitorFlaw:
-          "Futtbot executes external HTTP requests via Node.js or Python scripts outside the browser sandbox. Because these scripts lack authentic browser DOM telemetry, mouse movement physics, and Gaussian jitter, their rigid request rhythms stand out blatantly in EA's server-side telemetry, resulting in rapid transfer market soft-bans and permanent coin wipes.",
-        eliteSolution:
-          "Elite FUT SNIPER operates directly within the browser's native DOM context using Humanization++ Bézier mouse physics, Gaussian normal distribution jitter, and adaptive circuit breakers (0 bans to date).",
-      },
-    ],
+        "title": "Game version",
+        "badge": "FC 27 support",
+        "severity": "warning",
+        "competitorFlaw": "The Futtbot page we read targets EA FC 26 (version v6, October 2025).",
+        "eliteSolution": "Elite FUT SNIPER supports both EA FC 27 and FC 26 with one license."
+      }
+    ]
   },
 
   advertisedFeaturesAudit: {
-    headline: "Direct Reality Audit: Futtbot CLI Claims vs Elite FUT SNIPER",
-    subheadline:
-      "A feature-by-feature technical evaluation of open-source CLI script capabilities versus Elite FUT SNIPER's modern browser architecture.",
-    features: [
+    "headline": "Feature Comparison: Futtbot vs Elite FUT SNIPER",
+    "subheadline": "What each tool says it does, side by side.",
+    "features": [
       {
-        advertisedName: "Terminal Command Line Interface",
-        competitorReality:
-          "Dumps raw scrolling ASCII text and JSON error logs into a terminal window with zero visual card previews or profit telemetry.",
-        eliteAdvantage:
-          "Sleek hardware-accelerated Chrome Side Panel HUD with live profit graphs, card badges, and 1-click filter toggles.",
+        "advertisedName": "Sniping and auto-buying",
+        "competitorReality": "Yes. Auto buyer and auto sniper.",
+        "eliteAdvantage": "Searches continuously and buys matching cards automatically (sub-20ms)."
       },
       {
-        advertisedName: "Open-Source Script Repository",
-        competitorReality:
-          "Unmaintained GitHub codebase where EA API patches break endpoints, leaving users to debug TypeScript/Python stack traces manually.",
-        eliteAdvantage:
-          "Fully maintained commercial extension with continuous background cloud updates and zero maintenance requirements.",
+        "advertisedName": "Bidding",
+        "competitorReality": "Yes. Auto bidder.",
+        "eliteAdvantage": "Built-in auto bidder."
       },
       {
-        advertisedName: "Node.js / Python Execution Loop",
-        competitorReality:
-          "Relies on standard external HTTP request libraries (Axios, Requests) operating at 40ms–90ms network latency outside the browser context.",
-        eliteAdvantage:
-          "Sub-20ms direct protocol WebSocket execution operating natively inside the active browser memory space.",
+        "advertisedName": "Selling and relisting",
+        "competitorReality": "Yes. Auto seller with relisting.",
+        "eliteAdvantage": "Batch relisting with EA's 5% tax built in."
       },
       {
-        advertisedName: "Manual Session Token Configuration",
-        competitorReality:
-          "Requires opening browser DevTools Network tab, extracting raw bearer tokens and cookie strings, and pasting them into .env files.",
-        eliteAdvantage:
-          "Zero configuration; automatically leverages your active, authenticated Web App browser session securely.",
+        "advertisedName": "SBC solver",
+        "competitorReality": "SBC solver using a Futbin integration.",
+        "eliteAdvantage": "See Elite's feature page for current SBC status."
       },
       {
-        advertisedName: "Interval-Based Sniping Timer",
-        competitorReality:
-          "Uses rigid setInterval or sleep() commands that generate uniform request spikes, triggering EA rate-limit 429 and 521 blocks.",
-        eliteAdvantage:
-          "Humanization++ engine with Gaussian normal distribution jitter, micro-hesitations, and authentic Bézier curves (0 bans).",
+        "advertisedName": "Platforms",
+        "competitorReality": "PC, Mac, Linux, Chromebook; Android and iOS in beta.",
+        "eliteAdvantage": "Chrome on desktop."
       },
       {
-        advertisedName: "AI SBC Solving Engine",
-        competitorReality:
-          "Completely unsupported. Futtbot offers zero squad challenge solving, forcing hours of manual card assembly.",
-        eliteAdvantage:
-          "Integrated neural AI SBC solver that scans club untradeables, solves chemistry in sub-500ms, and auto-submits in 1 click.",
-      },
-      {
-        advertisedName: "JSON Filter Configuration",
-        competitorReality:
-          "Requires hand-editing complex JSON files with player asset IDs and price caps; syntax typos cause the entire script to crash.",
-        eliteAdvantage:
-          "Intuitive visual filter builder with cloud preset sync and instant 1-click import from VIP Discord.",
-      },
-      {
-        advertisedName: "Automatic Relisting Script",
-        competitorReality:
-          "Basic script that relists cards at static prices without checking real-time market fluctuations or EA 5% tax thresholds.",
-        eliteAdvantage:
-          "Autonomous batch repricing that checks live Futbin market floors, subtracts EA 5% tax, and relists 100 cards in 3s.",
-      },
-      {
-        advertisedName: "Multi-Filter Search Loops",
-        competitorReality:
-          "Executes filters sequentially one-by-one; changing filters requires killing the terminal process and editing config files.",
-        eliteAdvantage:
-          "Concurrent parallel search engine monitoring 15+ target presets simultaneously in real time.",
-      },
-      {
-        advertisedName: "Anti-Captcha Error Handling",
-        competitorReality:
-          "Freezes terminal output upon encountering an EA FunCaptcha, leaving your account locked until you notice hours later.",
-        eliteAdvantage:
-          "Proactive safety circuit breakers that pause requests before detection limits and send mobile Discord webhook alerts.",
-      },
-      {
-        advertisedName: "CLI Profit Statistics Log",
-        competitorReality:
-          "Prints basic text logs that reset every time the terminal script restarts or crashes.",
-        eliteAdvantage:
-          "Persistent real-time HUD displaying net profit, coin accumulation rates, and historical trading telemetry.",
-      },
-      {
-        advertisedName: "Cross-Platform CLI Scripts",
-        competitorReality:
-          "Requires configuring platform-specific Node/Python paths, PATH environment variables, and build tools on Windows and Mac.",
-        eliteAdvantage:
-          "100% universal 1-click Chrome extension running seamlessly across macOS, Windows, Linux, and ChromeOS.",
-      },
-    ],
-  },
-
-  uiComparison: {
-    headline: "UI Ergonomics: Command-Line Terminal Windows vs Native Chrome Side Panel HUD",
-    subheadline:
-      "Contrasting the frustration of raw terminal text screens against an integrated, hardware-accelerated Chrome Side Panel HUD.",
-    competitorUi: {
-      title: "Futtbot Terminal CLI",
-      badge: "Command-Line Terminal Output",
-      description:
-        "A standalone command-line console running in a separate terminal window, dumping scrolling ASCII text and JSON request payloads.",
-      drawbacks: [
-        "Requires keeping dedicated terminal windows open alongside your browser",
-        "Zero visual card art, chemistry links, or graphical market trends",
-        "Config changes require terminating the process, editing JSON, and restarting",
-        "Raw error stack traces on failed requests with zero user-friendly explanations",
-      ],
-    },
-    eliteUi: {
-      title: "Elite FUT SNIPER Native Chrome Side Panel HUD",
-      badge: "Hardware-Accelerated Side Panel",
-      description:
-        "A dedicated Chrome Side Panel that docks cleanly alongside the official Web App, keeping the gameplay canvas 100% clean and responsive.",
-      benefits: [
-        "Zero interference with the official Web App DOM or navigation controls",
-        "Live HUD displaying real-time profit tracking, coin telemetry, and active filters",
-        "Instant 1-click toggling between high-speed 20ms sniping and neural AI SBC solving",
-        "Full visual preview of player card ratings, chemistry links, and market floors",
-      ],
-    },
+        "advertisedName": "Price",
+        "competitorReality": "€7.49 (1 month), €14.99 (3 months), €59.99 (1 year), non-refundable.",
+        "eliteAdvantage": "€19.90/year, free 2-day trial."
+      }
+    ]
   },
 
   pricingTeardown: {
-    headline: "Pricing Reality: 'Free' Open-Source Time Sink vs Flat €19.90 Annual License",
-    subheadline:
-      "Analyzing why 'free' open-source scripts end up costing hundreds in wasted developer time and ban losses compared to Elite FUT SNIPER.",
-    competitorModel: {
-      title: "Futtbot Open-Source Model",
-      price: "$0 (Open-Source GitHub Codebase)",
-      hiddenCosts: [
-        "Requires 45–60 minutes of setup installing Node.js, Python, Git, and packages",
-        "Daily token expiration forces repeated manual cookie extraction routines",
-        "High ban risk from mechanical HTTP requests threatens total club liquidation",
-        "Zero AI SBC solving; hours lost manually grinding SBC upgrades",
-        "Unmaintained repositories leave you stranded when EA updates their API",
-      ],
+    "headline": "Pricing: Monthly Plans vs One Yearly License",
+    "subheadline": "Futtbot sells short plans. Elite FUT SNIPER sells one yearly license.",
+    "competitorModel": {
+      "title": "Futtbot",
+      "price": "€7.49 (1 month) · €14.99 (3 months) · €59.99 (1 year), at the time of writing",
+      "hiddenCosts": [
+        "Purchases are non-refundable",
+        "We could not find a free trial",
+        "The 1-year plan costs more than Elite's €19.90/year"
+      ]
     },
-    eliteModel: {
-      title: "Elite FUT SNIPER All-Inclusive License",
-      price: "€19.90 / year (Flat Fee)",
-      inclusions: [
-        "Full 365 days of unrestricted access to all 11 modules",
-        "Sub-20ms sniping engine and neural AI SBC solver included free",
-        "Humanization++ anti-ban technology with 0 bans to date on primary accounts",
-        "Free VIP Discord trading presets, market alerts, and direct architect support",
-        "Seamless day-one support for both EA FC 26 and FC 27 included at no extra cost",
-      ],
+    "eliteModel": {
+      "title": "Elite FUT SNIPER",
+      "price": "€19.90 / year",
+      "inclusions": [
+        "Automated sniping and auto-buying",
+        "Auto bidder",
+        "Automatic relisting with EA's 5% tax built in",
+        "Live profit display in a Chrome Side Panel",
+        "Free 2-day trial, no card needed",
+        "Covers EA FC 26 and FC 27"
+      ]
     },
-    summary:
-      "While Futtbot is free on GitHub, the hours spent debugging scripts, extracting cookies, and risking market bans far outweigh its value. Elite FUT SNIPER provides a turnkey, professional Chrome Side Panel HUD with 20ms speed and an AI SBC solver for a flat €19.90/year.",
+    "summary": "Futtbot is cheaper for one month. Elite FUT SNIPER is cheaper over a year and starts with a free 2-day trial."
   },
 
   keyStatistics: [
-    { label: "Technical Setup Time", value: "30 Seconds (Elite) vs 45–60 Minutes (CLI)", source: "Onboarding & Deployment Usability Audit" },
-    { label: "User Interface Quality", value: "Chrome Side Panel HUD vs Raw Terminal Text", source: "UI/UX Ergonomics Benchmark" },
-    { label: "AI SBC Engine Included", value: "Neural AI Included vs 0 SBC Tools", source: "SBC Engine Architecture Audit" },
-    { label: "Anti-Ban Protection", value: "0 Bans (Humanization++) vs Heuristic CLI Risk", source: "Telemetry & Anti-Cheat Audit" },
+    {
+      "label": "Futtbot 1-year price",
+      "value": "€59.99 (at the time of writing)",
+      "source": "futtbot.com"
+    },
+    {
+      "label": "Elite 1-year price",
+      "value": "€19.90",
+      "source": "elitefutbot.com"
+    },
+    {
+      "label": "Futtbot game version",
+      "value": "EA FC 26 (v6, October 2025)",
+      "source": "futtbot.com"
+    },
+    {
+      "label": "Elite free trial",
+      "value": "2 days",
+      "source": "elitefutbot.com"
+    }
   ],
 
   citations: [
-    { label: "Open-Source Script vs Chrome Extension Bot Analysis", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Token Signature Security in Web Automation", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
-    { label: "FC 27 Native Browser Architecture", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
-    { label: "Safe Extension Practices for EA Web App", url: "https://www.elitefutbot.com/tools/sniping-guide" },
+    {
+      "label": "Futtbot official site",
+      "url": "https://futtbot.com"
+    },
+    {
+      "label": "Elite FUT SNIPER comparison guide",
+      "url": "https://www.elitefutbot.com/tools/comparison-guide"
+    },
+    {
+      "label": "Automated Profit Generation in Ultimate Team",
+      "url": "https://www.elitefutbot.com/tools/sniping-guide"
+    },
+    {
+      "label": "EA Sports FC 27 Architecture Specification",
+      "url": "https://www.elitefutbot.com/fc27-fut-snipe-bot"
+    }
   ],
 
   comparisonRows: [
-    { feature: "User Interface & Workflow", elite: "Docked Chrome Side Panel HUD with Live Telemetry & Net Profit Charts", competitor: "Raw Terminal CLI / Command-Line Logs with Zero Graphical Interface", winner: "elite" },
-    { feature: "Technical Setup & Onboarding Time", elite: "Instant 1-Click Chrome Web Store Install (30 Seconds, Zero Code)", competitor: "45–60 Min Developer Setup (Node.js, Git, Python, Terminal & .env Files)", winner: "elite" },
-    { feature: "Authentication & Cookie Handover", elite: "Zero Credential Handover (Operates Naturally in Active Browser Session)", competitor: "Manual DevTools Extraction of Auth Tokens, Nucleus IDs & Cookies", winner: "elite" },
-    { feature: "Market Execution Speed", elite: "Sub-20ms Direct Protocol WebSocket Layer Execution", competitor: "40ms–90ms Node.js / Python HTTP Loop Latency", winner: "elite" },
-    { feature: "Anti-Ban Security Architecture", elite: "Humanization++ Bézier Physics & Gaussian Jitter (0 Bans to Date)", competitor: "Mechanical Linear Interval Delays Easily Flagged by Heuristic Anti-Cheat", winner: "elite" },
-    { feature: "AI SBC Chemistry Solver", elite: "Integrated Neural AI Solver (Club Untradeables & 500ms Solutions)", competitor: "Not Supported (CLI Scripts Only; Zero SBC Automation)", winner: "elite" },
-    { feature: "Maintenance & Update Reliability", elite: "Automated Zero-Downtime Background Updates by Dedicated Engineers", competitor: "Abandoned GitHub Repos Requiring Manual Git Pulls & Code Fixes", winner: "elite" },
-    { feature: "Multi-Filter Concurrent Scanning", elite: "Concurrent Parallel Scanning Across 15+ Filters Simultaneously", competitor: "Single Active CLI Filter Loop Requiring Terminal Restart to Change", winner: "elite" },
-    { feature: "Automated 5% EA Tax & Relisting", elite: "Autonomous Instant Relisting with Live Futbin Break-Even Tax Floors", competitor: "Manual Relist Parameters or Basic Hardcoded Pricing Scripts", winner: "elite" },
-    { feature: "Live Market Valuation & Telemetry", elite: "Real-Time Futbin API Socket Streaming with Visual Net Profit HUD", competitor: "Static Scraped JSON Dumps with No Live Valuation Feed", winner: "elite" },
-    { feature: "EA FC 26 & FC 27 Forward Compatibility", elite: "Pre-Configured Day-One Support for Both Titles in Flat License", competitor: "Breaks on Game Launch Until Volunteer Community Code PRs Land", winner: "elite" },
-    { feature: "Batch Transfer List Repricing", elite: "Automated 100-Card Batch Repricing with EA Tax Floor in 3s", competitor: "Not Supported (Requires Individual CLI Execution)", winner: "elite" },
-    { feature: "Community & Technical Support", elite: "24/7 VIP Discord Community with Core Software Architects", competitor: "Unanswered GitHub Issue Threads and Inactive Volunteer Repos", winner: "elite" },
-    { feature: "Pricing Model & Long-Term Value", elite: "€19.90 All-Inclusive 365-Day License (Covers FC 26 & FC 27)", competitor: "Free Codebase but High Hidden Cost in Developer Time & Ban Loss", winner: "elite" },
+    {
+      "feature": "Sniping and auto-buy",
+      "elite": "Yes, sub-20ms",
+      "competitor": "Yes",
+      "winner": "tie"
+    },
+    {
+      "feature": "Bidding",
+      "elite": "Built-in auto bidder",
+      "competitor": "Yes",
+      "winner": "tie"
+    },
+    {
+      "feature": "Selling and relisting",
+      "elite": "Yes, 5% tax built in",
+      "competitor": "Yes",
+      "winner": "tie"
+    },
+    {
+      "feature": "SBC solver",
+      "elite": "See Elite's feature page",
+      "competitor": "SBC solver using Futbin",
+      "winner": "tie"
+    },
+    {
+      "feature": "Telegram control",
+      "elite": "Side Panel display",
+      "competitor": "Telegram notifications",
+      "winner": "competitor"
+    },
+    {
+      "feature": "Shortest plan",
+      "elite": "No monthly plan",
+      "competitor": "1 month at €7.49",
+      "winner": "competitor"
+    },
+    {
+      "feature": "Price for one year",
+      "elite": "€19.90",
+      "competitor": "€59.99",
+      "winner": "elite"
+    },
+    {
+      "feature": "Free trial",
+      "elite": "2-day free trial",
+      "competitor": "None found",
+      "winner": "elite"
+    }
   ],
 
   faqs: [
     {
-      question: "Do I need any programming experience to use Elite FUT SNIPER compared to Futtbot?",
-      answer:
-        "None whatsoever. Futtbot requires installing Git, Node.js, Python, configuring .env files, and extracting raw authentication cookies from DevTools. Elite FUT SNIPER installs in 30 seconds from the official Chrome Web Store and provides an intuitive, visual Chrome Side Panel HUD directly inside your browser.",
+      "question": "Is Futtbot free or open source?",
+      "answer": "No. Its site presents Futtbot as a paid script with 1-month, 3-month and 1-year plans."
     },
     {
-      question: "Why do open-source terminal scripts like Futtbot break so frequently?",
-      answer:
-        "EA Sports frequently updates authentication tokens, obfuscates API endpoints, and changes frontend build hashes. When this happens, open-source repositories break until a volunteer developer submits a patch. Elite FUT SNIPER is maintained full-time by dedicated software architects who deploy automated, zero-downtime background patches immediately.",
+      "question": "Does Futtbot need my EA password?",
+      "answer": "Its site says it does not need your EA login details."
     },
     {
-      question: "Why are Futtbot's HTTP requests more prone to account bans than Elite FUT SNIPER?",
-      answer:
-        "Futtbot executes external HTTP requests from outside the browser sandbox using fixed millisecond intervals. Because it lacks authentic DOM telemetry, mouse movement physics, and Gaussian jitter, EA's server-side heuristic anti-cheat easily identifies the uniform request signatures. Elite FUT SNIPER operates natively inside Chrome with Humanization++ Bézier cursor dynamics and Gaussian jitter, maintaining an unbroken track record of 0 bans across all seasons.",
+      "question": "Does Futtbot have an SBC solver?",
+      "answer": "Yes. Its site lists an SBC solver that uses a Futbin integration."
     },
     {
-      question: "Does Futtbot include an AI SBC solver?",
-      answer:
-        "No. Futtbot contains zero SBC solving functionality. Elite FUT SNIPER features an integrated neural AI SBC solver that evaluates your club's untradeable inventory, solves chemistry in sub-500ms, and auto-submits squads in 1 click without buying unnecessary cards.",
+      "question": "How does the price compare?",
+      "answer": "At the time of writing Futtbot costs €7.49 for one month and €59.99 for one year. Elite FUT SNIPER costs €19.90 for one year, with a free 2-day trial."
     },
     {
-      question: "Can Elite FUT SNIPER run while I actively use the Web App for manual tasks?",
-      answer:
-        "Yes! Because Elite FUT SNIPER docks neatly into the native Chrome Side Panel HUD, your Web App viewport remains 100% clean and unobstructed. You can open packs, manage your active squad, and monitor automated trading simultaneously.",
+      "question": "Does Elite FUT SNIPER show profit statistics?",
+      "answer": "Yes. Elite FUT SNIPER's Side Panel HUD provides a live real-time breakdown of total cards sniped, gross profit, EA 5% tax deductions, net coins earned, and profit per hour."
     },
     {
-      question: "How does multi-filter trading compare between Futtbot and Elite FUT SNIPER?",
-      answer:
-        "Futtbot executes a single filter loop at a time, requiring you to terminate the terminal process, edit JSON config files, and restart the script to change targets. Elite FUT SNIPER runs concurrent parallel searches across 15+ complex trading filters simultaneously in a single session.",
-    },
-    {
-      question: "Does Elite FUT SNIPER calculate EA's 5% transfer tax automatically?",
-      answer:
-        "Yes. Elite FUT SNIPER automatically computes the 5% EA transfer tax on every card and dynamically adjusts your buy limits against live Futbin market floors, ensuring every single snipe secures your designated net profit margin.",
-    },
+      "question": "Can I try Elite FUT SNIPER for free?",
+      "answer": "Yes. Every new account gets a free 2-day trial with all features and no card needed. After that, Pro costs €19.90 per year. Purchases are not refundable, so the trial is the time to test it."
+    }
   ],
 
-  reviewQuotes: [
-    {
-      text: "I spent hours trying to get Futtbot terminal scripts working after every EA patch, only to have tokens expire every few hours. Elite FUT SNIPER installed in 30 seconds, runs in the side panel, and hasn't broken once.",
-      author: "Viktor M., Software Engineer & FUT Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "The difference in convenience is night and day. A real visual HUD, instant AI SBC solving, and zero terminal errors. Elite FUT SNIPER is miles ahead of any open-source script.",
-      author: "Lukas B., Verified Ultimate Team Trader",
-      platform: "Trustpilot Review",
-    },
-    {
-      text: "Futtbot got my secondary account transfer market banned because of its linear HTTP delays. Switched to Elite FUT SNIPER for my main club and traded safely all season with 0 bans.",
-      author: "Alexandre T., Division Rivals Rank 1",
-      platform: "Reddit r/FUTTrading",
-    },
-  ],
+  reviewQuotes: [],
 };
 
 export const futtBotData = futtbotData;

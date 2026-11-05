@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "NokaFut vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "NokaFut vs Elite FUT SNIPER review: compare NOLTOK hotkey delays, DOM latency, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
+    "NokaFut vs Elite FUT SNIPER: a free toolkit with paid tiers (from €5.99/month) compared with Elite's €19.90/year sniping extension.",
   keywords: [
     "nokafut",
     "noka fut",
-    "noltok method",
     "nokafut review",
-    "noka fut vs elite fut sniper",
-    "nokafut alternative",
-    "ea fc 26 autobuyer",
-    "ea fc 27 sniping bot",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
+    "nokafut premium",
+    "nokafut vs elite fut sniper",
+    "nokafut sbc solver",
+    "ea fc 27 tools",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/nokafut-vs-elitefutbot" },
   openGraph: {
     title: "NokaFut vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "NokaFut vs Elite FUT SNIPER review: compare NOLTOK hotkey delays, DOM latency, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
+      "NokaFut vs Elite FUT SNIPER: a free toolkit with paid tiers (from €5.99/month) compared with Elite's €19.90/year sniping extension.",
     url: "https://www.elitefutbot.com/nokafut-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NokaFut vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "NokaFut vs Elite FUT SNIPER review: compare NOLTOK hotkey delays, DOM latency, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
+      "NokaFut vs Elite FUT SNIPER: a free toolkit with paid tiers (from €5.99/month) compared with Elite's €19.90/year sniping extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

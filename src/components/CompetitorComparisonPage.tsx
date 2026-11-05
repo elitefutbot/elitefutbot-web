@@ -54,14 +54,12 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Sub-20ms direct in-memory WebSocket response; captures 59th-minute deals before cloud relays.",
     competitorSpec: (compType, compName) => {
       if (compType === "cloud" || compType === "web-app")
-        return `${compName} relies on remote proxy queues adding 150ms–350ms latency, losing high-demand meta snipes.`;
+        return `${compName} runs on remote servers, so its speed depends on that server connection.`;
       if (compType === "desktop-app")
-        return `${compName} runs through heavy desktop wrapper virtualization with 70ms–140ms macro lag.`;
-      if (compType === "userscript")
-        return `${compName} injects scripts into the main render thread with 50ms–100ms script lag and frequent crashes.`;
+        return `${compName} runs as a separate desktop application outside your browser.`;
       if (compType === "informational" || compType === "discord-alerts")
-        return `${compName} does not support automated sniping; relies on manual clicking with 400ms–800ms human reaction time.`;
-      return `${compName} uses standard DOM polling (60ms–120ms) without native in-memory WebSocket acceleration.`;
+        return `${compName} is an information or alert service, not an automated buyer.`;
+      return `Check ${compName}'s own site for its search and buy speed.`;
     },
   },
   {
@@ -72,8 +70,8 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Automatically computes 5% EA transfer tax and relists sniped cards at target profit margins 24/7.",
     competitorSpec: (compType, compName) => {
       if (compType === "informational" || compType === "discord-alerts")
-        return `${compName} provides no automated listing; cards must be listed manually one-by-one.`;
-      return `${compName} provides basic relisting without automated 5% EA tax net profit margin calculation.`;
+        return `${compName} provides alerts, so cards are listed by hand.`;
+      return `Check ${compName}'s own site for how it handles relisting and EA's 5% tax.`;
     },
   },
   {
@@ -84,8 +82,8 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Granular min/max buy-now, bid ceilings, exact rating bounds (83+, 84+, 88+), chemistry styles, and concurrent multi-card queries.",
     competitorSpec: (compType, compName) => {
       if (compType === "informational")
-        return `${compName} provides database filters but cannot execute searches inside the Web App.`;
-      return `${compName} supports single-player search filters only, missing concurrent multi-target query execution.`;
+        return `${compName} provides database filters but does not run searches inside the Web App.`;
+      return `Check ${compName}'s own site for its filter and multi-search options.`;
     },
   },
   {
@@ -95,9 +93,7 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     icon: Tag,
     eliteSpec: "Integrates real-time Futbin market valuations directly on Web App card tiles to prevent overpaying.",
     competitorSpec: (compType, compName) => {
-      if (compName === "FUT Genie" || compName === "Paletools" || compName === "FUT.GG")
-        return `${compName} provides price badge lookups, but lacks automated 20ms execution on price drops.`;
-      return `${compName} lacks real-time Futbin price integration, requiring manual price checks in separate tabs.`;
+      return `Check ${compName}'s own site for live price reference features.`;
     },
   },
   {
@@ -108,8 +104,8 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Statistical Gaussian distribution curves with randomized micro-pauses (1,200ms–2,800ms) mimicking organic human rhythms.",
     competitorSpec: (compType, compName) => {
       if (compType === "cloud")
-        return `${compName} runs from shared datacenter IP subnets easily flagged by EA cluster detection.`;
-      return `${compName} uses rigid linear millisecond timers (e.g. fixed intervals) that create detectable square-wave patterns.`;
+        return `${compName} runs from remote servers rather than your own browser session.`;
+      return `Check ${compName}'s own site for how it handles anti-detection.`;
     },
   },
   {
@@ -119,7 +115,7 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     icon: MousePointerClick,
     eliteSpec: "Authentic Bézier mouse curve physics, randomized click coordinates, and human dwell times. Verified 0 bans to date.",
     competitorSpec: (compType, compName) => {
-      return `${compName} lacks Bézier mouse physics and natural coordinate randomization, firing raw programmatic events.`;
+      return `Check ${compName}'s own site for how it handles click behavior and anti-detection.`;
     },
   },
   {
@@ -130,10 +126,10 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Docks cleanly inside Chrome's Side Panel API, keeping the Web App completely unobstructed at 60 FPS.",
     competitorSpec: (compType, compName) => {
       if (compType === "desktop-app")
-        return `${compName} operates in a separate desktop window that takes over your screen.`;
+        return `${compName} operates in a separate desktop window.`;
       if (compType === "cloud" || compType === "web-app")
         return `${compName} uses an external web dashboard separate from the Web App.`;
-      return `${compName} injects floating banners and overlay buttons directly onto the Web App screen, causing UI clutter.`;
+      return `Check ${compName}'s own site for how its interface works alongside the Web App.`;
     },
   },
   {
@@ -143,7 +139,7 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     icon: Globe,
     eliteSpec: "Centralized cloud dashboard to manage device activations, monitor live session telemetry, and view license details.",
     competitorSpec: (compType, compName) => {
-      return `${compName} lacks centralized cloud session overview or relies on disconnected local files.`;
+      return `Check ${compName}'s own site for its account and device management options.`;
     },
   },
   {
@@ -154,8 +150,8 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Included daily free low-budget filters, coin-making tips/tricks, 24/7 technical setup assistance, and VIP Paid-Member alpha sniping drops.",
     competitorSpec: (compType, compName) => {
       if (compType === "discord-alerts")
-        return `${compName} charges monthly subscription fees ($20–$30/mo) for signal callouts alone.`;
-      return `${compName} provides limited community forum support without verified daily trading filter drops.`;
+        return `${compName} is centered on paid alert or signal services; check its site for pricing.`;
+      return `Check ${compName}'s own site for community support and shared filters.`;
     },
   },
   {
@@ -165,7 +161,7 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     icon: BarChart3,
     eliteSpec: "Real-time live session counter tracking snipes completed, gross profit, EA 5% tax deduction, and net coins/hr.",
     competitorSpec: (compType, compName) => {
-      return `${compName} displays basic buy count counters only, requiring manual math to calculate true net profit after EA tax.`;
+      return `Check ${compName}'s own site for live session stats and profit tracking.`;
     },
   },
   {
@@ -176,10 +172,10 @@ const ELEVEN_MODULES: ElevenModuleSpec[] = [
     eliteSpec: "Zero EA password or 2FA handover. Authenticates via local browser session tokens in Google Chrome.",
     competitorSpec: (compType, compName) => {
       if (compType === "cloud" || compType === "web-app")
-        return `${compName} requires uploading your EA password and 2FA backup codes to third-party servers.`;
+        return `${compName} runs on remote servers; check what account details it asks for.`;
       if (compType === "desktop-app")
-        return `${compName} requires installing unsigned executables with full administrative disk access.`;
-      return `${compName} operates locally but lacks isolated Manifest V3 extension sandboxing.`;
+        return `${compName} is a desktop application installed outside the browser.`;
+      return `Check ${compName}'s own site for how it handles login and permissions.`;
     },
   },
 ];
@@ -1039,7 +1035,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed font-normal">
                   {data.competitorType === "cloud" || data.competitorType === "web-app"
-                    ? `${data.competitorName} requires you to upload your EA account passwords, 2FA backup codes, and session cookies to external datacenter servers. Elite FUT SNIPER operates 100% locally inside your Chrome sandbox — your credentials never leave your personal computer.`
+                    ? `${data.competitorName} runs on external servers, so check what account details it asks for. Elite FUT SNIPER operates 100% locally inside your Chrome browser session and never asks for your EA password.`
                     : `Elite FUT SNIPER runs directly inside your authentic Web App session in Google Chrome. No external desktop binaries or risky userscripts required.`}
                 </p>
               </div>
@@ -1060,7 +1056,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                   3. Real-Time AI SBC Solver
                 </div>
                 <p className="text-sm text-gray-300 leading-relaxed font-normal">
-                  Unlike {data.competitorName}, Elite FUT SNIPER features an integrated AI SBC solver that analyzes your live club inventory in real-time, calculates optimal chemistry solutions with untradeables, and automatically snipes missing cards at rock-bottom prices.
+                  Elite FUT SNIPER features an integrated AI SBC solver that analyzes your live club inventory in real-time, calculates optimal chemistry solutions with untradeables, and automatically snipes missing cards at rock-bottom prices.
                 </p>
               </div>
 
@@ -1153,7 +1149,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
                   Integrated Neural AI SBC Solver vs {data.competitorName}
                 </h3>
                 <p className="text-xs text-gray-300 leading-relaxed font-normal">
-                  While {data.competitorName} requires manual card puzzle solving or external blueprint copying, Elite FUT SNIPER features an integer linear programming AI engine that scans your club untradeables and builds chemistry-compliant squads in 1 click.
+                  Elite FUT SNIPER features an integer linear programming AI engine that scans your club untradeables and builds chemistry-compliant squads in 1 click.
                 </p>
               </div>
               <Link
@@ -1360,7 +1356,8 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
             </div>
           </section>
 
-          {/* Community Feedback */}
+          {/* Community Feedback (hidden when there are no verified quotes) */}
+          {data.reviewQuotes.length > 0 && (
           <section className="space-y-6" aria-label="Community Reviews">
             <div className="space-y-1">
               <span className="text-primary text-xs font-bold uppercase tracking-widest">Community Feedback</span>
@@ -1391,6 +1388,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               ))}
             </div>
           </section>
+          )}
 
           {/* Call to Action */}
           <section
@@ -1408,7 +1406,7 @@ export default function CompetitorComparisonPage({ data }: { data: CompetitorDat
               Ready to Leave {data.competitorName} Behind?
             </h2>
             <p className="relative text-gray-300 max-w-xl mx-auto text-sm sm:text-base leading-relaxed font-normal">
-              Join thousands of FUT traders using Elite FUT SNIPER — the only 100% local Chrome extension with &lt; 20ms sniping speeds, AI SBC solving, zero password sharing, and full day-one FC 27 &amp; FC 26 support.
+              Try Elite FUT SNIPER, a 100% local Chrome extension with &lt; 20ms sniping speeds, AI SBC solving, zero password sharing, and full day-one FC 27 &amp; FC 26 support.
             </p>
             <div className="relative flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
               <Link

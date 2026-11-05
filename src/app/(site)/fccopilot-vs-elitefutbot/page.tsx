@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FC Copilot vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FC Copilot vs Elite FUT SNIPER review: compare manual overlay friction, subscription costs, and Elite's automated 20ms Chrome extension with AI solver.",
+    "FC Copilot vs Elite FUT SNIPER: both are Chrome extensions. Compare store ratings, price clarity, auto bidding and Elite's free 2-day trial.",
   keywords: [
     "fc copilot",
     "fccopilot",
     "fc copilot review",
-    "fc copilot futbotmanager",
+    "fccopilot.com",
     "fc copilot vs elite fut sniper",
-    "fc copilot alternative",
-    "ea fc 26 autobuyer",
-    "ea fc 27 sniping bot",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
+    "ea fc 27 autobuyer",
+    "ea fc sniping bot",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fccopilot-vs-elitefutbot" },
   openGraph: {
     title: "FC Copilot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC Copilot vs Elite FUT SNIPER review: compare manual overlay friction, subscription costs, and Elite's automated 20ms Chrome extension with AI solver.",
+      "FC Copilot vs Elite FUT SNIPER: both are Chrome extensions. Compare store ratings, price clarity, auto bidding and Elite's free 2-day trial.",
     url: "https://www.elitefutbot.com/fccopilot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FC Copilot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC Copilot vs Elite FUT SNIPER review: compare manual overlay friction, subscription costs, and Elite's automated 20ms Chrome extension with AI solver.",
+      "FC Copilot vs Elite FUT SNIPER: both are Chrome extensions. Compare store ratings, price clarity, auto bidding and Elite's free 2-day trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

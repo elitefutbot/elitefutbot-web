@@ -298,21 +298,5 @@ export const futHunterData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I tried FUT Hunter for a month, but running that heavy Windows software with proxies felt like running an illegal coin-mining rig. Elite FUT SNIPER runs cleanly right in Chrome on my Mac, snipes at 20ms, and my 12M main club has never had a single warning.",
-      author: "Marco T., Elite Division Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "The fact that FUT Hunter advertises 15 Billion coins sold through third-party APIs was an immediate red flag for my personal club. Elite FUT SNIPER is built purely for squad building and individual trading. The AI SBC solver alone saves me hours every weekend.",
-      author: "Julian K., FUT Champions Verified",
-      platform: "Reddit r/FUTTrading",
-    },
-    {
-      text: "Switched from FUT Hunter after their €20/month subscription kept draining my PayPal while burning 3GB of RAM on my PC. Elite FUT SNIPER is €19.90 once a year, uses 40MB RAM, and catches 59th-minute snipes instantly.",
-      author: "Dominik S., Verified Trader",
-      platform: "FUT Trading Forum",
-    },
-  ],
+  reviewQuotes: [],
 };

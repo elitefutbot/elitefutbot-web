@@ -388,21 +388,5 @@ export const futAutoBuyerData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I tried the scripts from futautobuyer.com and was hit with a 24-hour transfer market soft ban on my second day because of the mechanical delay loops. Switched to Elite FUT SNIPER with Humanization++ and have been trading smoothly for months with zero bans.",
-      author: "Verified Division 1 Competitor",
-      platform: "Ultimate Team Trading Discord",
-    },
-    {
-      text: "From a security engineering standpoint, unmaintained userscripts with hardcoded DOM selectors are a disaster waiting to happen. Elite FUT SNIPER's isolated Side Panel HUD and direct WebSocket protocol hooks represent the modern standard for safe, high-speed trading.",
-      author: "Security Research Engineer",
-      platform: "Web Security & Automation Review",
-    },
-    {
-      text: "The difference in speed and reliability is night and day. Generic macro scripts take 120ms and break on every EA patch. Elite FUT SNIPER snipes in under 20ms and the integrated AI SBC solver has saved me dozens of hours of grinding.",
-      author: "Lead Architecture Specialist",
-      platform: "Competitive FUT Trader Guild",
-    },
-  ],
+  reviewQuotes: [],
 };

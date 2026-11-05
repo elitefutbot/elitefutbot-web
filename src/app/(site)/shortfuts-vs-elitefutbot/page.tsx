@@ -7,24 +7,20 @@ export const metadata: Metadata = {
     absolute: "Shortfuts vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "Shortfuts vs Elite FUT SNIPER review: compare manual keybind mashing, human reaction delay, and Elite's autonomous 20ms Chrome Side Panel with AI.",
+    "shortfuts vs Elite FUT SNIPER: a keyboard-shortcut extension compared with an automated sniping, bidding and relisting extension.",
   keywords: [
     "shortfuts",
-    "short futs",
     "shortfuts review",
+    "shortfuts fut",
+    "shortfuts.com",
     "shortfuts vs elite fut sniper",
-    "shortfuts chrome extension",
-    "ea fc 26 sniping bot",
-    "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "shortfuts alternative",
-    "autonomous fut autobuyer",
+    "fut keyboard shortcuts",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/shortfuts-vs-elitefutbot" },
   openGraph: {
     title: "Shortfuts vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Shortfuts vs Elite FUT SNIPER review: compare manual keybind mashing, human reaction delay, and Elite's autonomous 20ms Chrome Side Panel with AI.",
+      "shortfuts vs Elite FUT SNIPER: a keyboard-shortcut extension compared with an automated sniping, bidding and relisting extension.",
     url: "https://www.elitefutbot.com/shortfuts-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Shortfuts vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Shortfuts vs Elite FUT SNIPER review: compare manual keybind mashing, human reaction delay, and Elite's autonomous 20ms Chrome Side Panel with AI.",
+      "shortfuts vs Elite FUT SNIPER: a keyboard-shortcut extension compared with an automated sniping, bidding and relisting extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };
