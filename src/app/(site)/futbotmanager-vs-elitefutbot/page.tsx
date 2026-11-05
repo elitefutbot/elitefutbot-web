@@ -7,28 +7,21 @@ export const metadata: Metadata = {
     absolute: "FutBotManager vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTBotManager vs Elite FUT SNIPER comparison: audit external app complexity, ban risks, and Elite's sub-20ms in-browser Chrome extension with AI.",
+    "FutBotManager vs Elite FUT SNIPER: compare FC Copilot, a Chrome Web Store extension, with Elite's €19.90/year extension, auto bidding and free trial.",
   keywords: [
     "futbotmanager",
+    "fut bot manager",
     "futbotmanager review",
-    "futbotmanager.com",
-    "futbotmanager pro",
     "fc copilot",
-    "fbm points",
-    "futbotmanager ban",
-    "is futbotmanager safe",
     "futbotmanager vs elite fut sniper",
-    "futbotmanager pricing",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "ai sbc solver",
-    "futbotmanager download",
+    "ea fc sniping bot",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futbotmanager-vs-elitefutbot" },
   openGraph: {
     title: "FutBotManager vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTBotManager vs Elite FUT SNIPER comparison: audit external app complexity, ban risks, and Elite's sub-20ms in-browser Chrome extension with AI.",
+      "FutBotManager vs Elite FUT SNIPER: compare FC Copilot, a Chrome Web Store extension, with Elite's €19.90/year extension, auto bidding and free trial.",
     url: "https://www.elitefutbot.com/futbotmanager-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -38,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FutBotManager vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTBotManager vs Elite FUT SNIPER comparison: audit external app complexity, ban risks, and Elite's sub-20ms in-browser Chrome extension with AI.",
+      "FutBotManager vs Elite FUT SNIPER: compare FC Copilot, a Chrome Web Store extension, with Elite's €19.90/year extension, auto bidding and free trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

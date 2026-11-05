@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUT Sniping Bot 24 vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "FUT Sniping Bot 24 vs Elite FUT SNIPER: audit abandoned FC 24 codebases, Manifest V2 blocks, and Elite's active 20ms Chrome engine with AI solver.",
+    "FUT Sniping Bot 24 vs Elite FUT SNIPER: a site describing FC 24 compared with Elite's FC 27 and FC 26 extension at €19.90/year.",
   keywords: [
     "fut sniping bot 24",
     "futsnipingbot24",
-    "fut sniping bot 24 review",
+    "futsnipingbot24.com",
     "fut sniping bot 24 vs elite fut sniper",
-    "fc 24 autobuyer github",
-    "ea fc 26 sniping bot",
+    "fc 24 autobuyer",
     "ea fc 27 autobuyer",
-    "abandoned fut bot",
-    "best ea fc sniping bot 2026",
-    "manifest v3 fifa autobuyer",
   ],
+  robots: { index: false, follow: true },
   alternates: { canonical: "https://www.elitefutbot.com/futsnipingbot24-vs-elitefutbot" },
   openGraph: {
     title: "FUT Sniping Bot 24 vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Sniping Bot 24 vs Elite FUT SNIPER: audit abandoned FC 24 codebases, Manifest V2 blocks, and Elite's active 20ms Chrome engine with AI solver.",
+      "FUT Sniping Bot 24 vs Elite FUT SNIPER: a site describing FC 24 compared with Elite's FC 27 and FC 26 extension at €19.90/year.",
     url: "https://www.elitefutbot.com/futsnipingbot24-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Sniping Bot 24 vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Sniping Bot 24 vs Elite FUT SNIPER: audit abandoned FC 24 codebases, Manifest V2 blocks, and Elite's active 20ms Chrome engine with AI solver.",
+      "FUT Sniping Bot 24 vs Elite FUT SNIPER: a site describing FC 24 compared with Elite's FC 27 and FC 26 extension at €19.90/year.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

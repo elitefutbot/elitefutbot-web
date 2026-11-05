@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUT Coin Harvester vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "FUT Coin Harvester vs Elite FUT SNIPER: compare desktop macro risks, laggy searches, and Elite's sub-20ms local Chrome extension with AI SBC solver.",
+    "FUT Coin Harvester vs Elite FUT SNIPER: a Windows trading bot compared with a Chrome extension. See pricing, trials, bidding and relisting.",
   keywords: [
     "fut coin harvester",
-    "fut coin harvester review",
     "futcoinharvester",
+    "fut coin harvester review",
+    "futcoinharvester.com",
     "fut coin harvester vs elite fut sniper",
-    "fut coin harvester alternative",
-    "ea fc 26 autobuyer",
-    "ea fc 27 sniping bot",
-    "cloud autobuyer ban risk",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
+    "fut coin harvester pricing",
+    "ea fc 27 autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futcoinharvester-vs-elitefutbot" },
   openGraph: {
     title: "FUT Coin Harvester vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Coin Harvester vs Elite FUT SNIPER: compare desktop macro risks, laggy searches, and Elite's sub-20ms local Chrome extension with AI SBC solver.",
+      "FUT Coin Harvester vs Elite FUT SNIPER: a Windows trading bot compared with a Chrome extension. See pricing, trials, bidding and relisting.",
     url: "https://www.elitefutbot.com/futcoinharvester-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Coin Harvester vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Coin Harvester vs Elite FUT SNIPER: compare desktop macro risks, laggy searches, and Elite's sub-20ms local Chrome extension with AI SBC solver.",
+      "FUT Coin Harvester vs Elite FUT SNIPER: a Windows trading bot compared with a Chrome extension. See pricing, trials, bidding and relisting.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

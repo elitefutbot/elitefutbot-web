@@ -295,16 +295,5 @@ export const easySbcData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I used to spend 45 minutes alt-tabbing between EasySBC and the Web App to copy players, only to find the solution cards were price-fixed. Elite FUT SNIPER scans my club and completes the entire SBC in 15 seconds. Incredible.",
-      author: "Verified SBC Grinder",
-      platform: "Discord Community",
-    },
-    {
-      text: "Having the AI solver use my own untradeable club fodder and auto-buy the missing links saved me over 700k coins this season. Plus the 20ms sniping bot made me millions on the side. Best €19.90 ever spent.",
-      author: "Verified Ultimate Team Competitor",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

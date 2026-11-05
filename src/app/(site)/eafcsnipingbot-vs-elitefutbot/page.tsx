@@ -7,23 +7,20 @@ export const metadata: Metadata = {
     absolute: "EAFC Sniping Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "EAFC Sniping Bot vs Elite FUT SNIPER review: compare 12-hour trials, legacy DOM injection lag, sub-20ms WebSocket execution, and AI SBC solving.",
+    "EAFC Sniping Bot vs Elite FUT SNIPER: compare a one-time FC 27 license and 12-hour trial with Elite's €19.90/year extension and 2-day trial.",
   keywords: [
     "eafc sniping bot",
-    "eafc sniping bot review",
+    "eafcsnipingbot",
     "eafcsnipingbot.com",
+    "eafc sniping bot review",
     "eafc sniping bot vs elite fut sniper",
-    "ea fc 27 sniping bot",
     "ea fc 27 autobuyer",
-    "fut 27 autobuyer",
-    "best fc 27 trading bot",
-    "ai sbc solver extension",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/eafcsnipingbot-vs-elitefutbot" },
   openGraph: {
     title: "EAFC Sniping Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EAFC Sniping Bot vs Elite FUT SNIPER review: compare 12-hour trials, legacy DOM injection lag, sub-20ms WebSocket execution, and AI SBC solving.",
+      "EAFC Sniping Bot vs Elite FUT SNIPER: compare a one-time FC 27 license and 12-hour trial with Elite's €19.90/year extension and 2-day trial.",
     url: "https://www.elitefutbot.com/eafcsnipingbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -33,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EAFC Sniping Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EAFC Sniping Bot vs Elite FUT SNIPER review: compare 12-hour trials, legacy DOM injection lag, sub-20ms WebSocket execution, and AI SBC solving.",
+      "EAFC Sniping Bot vs Elite FUT SNIPER: compare a one-time FC 27 license and 12-hour trial with Elite's €19.90/year extension and 2-day trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

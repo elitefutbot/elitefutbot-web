@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUT Trade Buddy vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "FUT Trade Buddy vs Elite FUT SNIPER review: compare linear delay soft bans, single-filter bidding, and Elite's sub-20ms Chrome extension with AI.",
+    "FUT Trade Buddy vs Elite FUT SNIPER: a delisted FC 26 autobuyer compared with Elite's available €19.90/year Chrome extension.",
   keywords: [
     "fut trade buddy",
-    "fut trade buddy review",
     "futtradebuddy",
+    "fut trade buddy review",
     "fut trade buddy chrome extension",
     "fut trade buddy vs elite fut sniper",
-    "fut trade buddy alternative",
-    "ea fc 26 autobuyer",
-    "ea fc 27 sniping bot",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
+    "ea fc 27 autobuyer",
   ],
+  robots: { index: false, follow: true },
   alternates: { canonical: "https://www.elitefutbot.com/futtradebuddy-vs-elitefutbot" },
   openGraph: {
     title: "FUT Trade Buddy vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Trade Buddy vs Elite FUT SNIPER review: compare linear delay soft bans, single-filter bidding, and Elite's sub-20ms Chrome extension with AI.",
+      "FUT Trade Buddy vs Elite FUT SNIPER: a delisted FC 26 autobuyer compared with Elite's available €19.90/year Chrome extension.",
     url: "https://www.elitefutbot.com/futtradebuddy-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUT Trade Buddy vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FUT Trade Buddy vs Elite FUT SNIPER review: compare linear delay soft bans, single-filter bidding, and Elite's sub-20ms Chrome extension with AI.",
+      "FUT Trade Buddy vs Elite FUT SNIPER: a delisted FC 26 autobuyer compared with Elite's available €19.90/year Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FC AutoBuyer vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FC AutoBuyer vs Elite FUT SNIPER review: compare open beta keys, ban safety limits, sub-20ms WebSocket speed, and integrated AI SBC solving.",
+    "FC AutoBuyer vs Elite FUT SNIPER: compare a £7.99 one-month extension and 2-hour trial with Elite's €19.90/year license and 2-day trial.",
   keywords: [
     "fc autobuyer",
-    "fc autobuyer review",
-    "fc autobuyer vs elite fut sniper",
-    "fc autobuyer free beta",
+    "fcautobuyer",
     "fcautobuyer.com",
+    "fc autobuyer review",
+    "fc autobuyer price",
+    "fc autobuyer vs elite fut sniper",
     "ea fc 27 autobuyer",
-    "ea fc 27 sniping bot",
-    "fc 27 web app bot",
-    "best ea fc autobuyer 2026",
-    "ai sbc solver extension",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fcautobuyer-vs-elitefutbot" },
   openGraph: {
     title: "FC AutoBuyer vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC AutoBuyer vs Elite FUT SNIPER review: compare open beta keys, ban safety limits, sub-20ms WebSocket speed, and integrated AI SBC solving.",
+      "FC AutoBuyer vs Elite FUT SNIPER: compare a £7.99 one-month extension and 2-hour trial with Elite's €19.90/year license and 2-day trial.",
     url: "https://www.elitefutbot.com/fcautobuyer-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FC AutoBuyer vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FC AutoBuyer vs Elite FUT SNIPER review: compare open beta keys, ban safety limits, sub-20ms WebSocket speed, and integrated AI SBC solving.",
+      "FC AutoBuyer vs Elite FUT SNIPER: compare a £7.99 one-month extension and 2-hour trial with Elite's €19.90/year license and 2-day trial.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

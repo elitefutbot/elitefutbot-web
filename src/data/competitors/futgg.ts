@@ -4,35 +4,26 @@ export const futGgData: CompetitorData = {
   slug: "futgg-vs-elitefutbot",
   competitorName: "FUT.GG",
   competitorType: "database",
-  tagline: "Move Beyond Passive Database Lookups to Active In-Browser Sub-20ms Sniping & AI SBC Solving.",
-  summaryPassage:
-    "In a direct technical comparison between FUT.GG and Elite FUT SNIPER, FUT.GG is a passive web database for card attributes, evolution calculators, and price graphs (with zero automated market trading or SBC buying), whereas Elite FUT SNIPER is an active in-browser Chrome extension delivering sub-20ms autonomous market sniping, 1-click neural AI SBC solving using club untradeables, and Humanization++ zero-ban protection for €19.90/year.",
-  verdict:
-    "FUT.GG is an informational reference database for checking player attributes, evolution planning, and market price charts. However, it is strictly a passive research portal with zero automation capabilities—it cannot execute transfer market searches, cannot snipe undervalued cards, and cannot auto-submit SBCs. Elite FUT SNIPER transforms market intelligence into active profit: operating natively inside the EA Web App at sub-20ms speeds, solving SBCs using club untradeables in sub-500ms, and auto-buying missing fodder in 1 click for EA Sports FC 26 & FC 27.",
+  tagline: "FUT.GG Is a Database and SBC Site. Elite FUT SNIPER Is an Automated Trading Extension.",
+  summaryPassage: "FUT.GG (fut.gg) is a website for EA SPORTS FC 27 Ultimate Team with a player database, SBC and objective listings, a Squad Builder, Evolutions, an Evo Lab and GG Club, plus mobile apps on Google Play and the App Store. Its homepage does not describe sniping or an autobuyer. Elite FUT SNIPER is a Chrome extension that snipes, bids and relists automatically, for €19.90/year with a free 2-day trial.",
+  verdict: "FUT.GG and Elite FUT SNIPER do different jobs: FUT.GG is a reference site for players, SBCs and squads, and Elite FUT SNIPER automates transfer market trading. Most traders use a database like FUT.GG alongside a trading tool.",
   publishedDate: "2026-08-01",
-  modifiedDate: "2026-09-09",
-  fc27SupportNote:
-    "FUT.GG updates its card database when FC 27 launches, but players must still execute every single market search and purchase manually by hand. Elite FUT SNIPER provides active, automated sub-20ms sniping and AI SBC execution on FC 27 launch day.",
+  modifiedDate: "2026-11-05",
+  fc27SupportNote: "FUT.GG's homepage is built around EA SPORTS FC 27. Elite FUT SNIPER supports both EA FC 27 and FC 26 with one €19.90/year license.",
 
-  competitorOverview:
-    "FUT.GG is a web portal and community database focused on card stats, playstyles, evolution paths, and price tracking. While it provides detailed analytical charts and community squad lists, it offers zero automation or in-game interaction. Users must manually memorize price thresholds, switch tabs to the Web App, and attempt to buy cards by hand, consistently losing 59th-minute deals to automated bot engines.",
+  competitorOverview: "FUT.GG is a website for EA SPORTS FC 27 Ultimate Team. Its homepage lists a player database, SBC and objective listings, a Squad Builder, Evolutions, an Evo Lab, price ranges, momentum trends and GG Club, which it describes as an official EA SPORTS FC community partner. Mobile apps are linked on Google Play and the App Store. The homepage we read does not mention an extension, sniping or an autobuyer, and lists no pricing.",
 
   competitorPros: [
-    "Comprehensive player database with playstyles, traits, and stat breakdowns",
-    "Interactive evolution chain calculators and visual squad builder",
-    "Real-time market price charts and historical trend indices",
-    "Free public access supported by web advertising",
+    "Large player database and SBC listings",
+    "Squad Builder, Evolutions and Evo Lab",
+    "Price ranges and momentum trends",
+    "Mobile apps on Google Play and the App Store"
   ],
   competitorCons: [
-    "Passive informational database only: Zero automated sniping, buying, or relisting features",
-    "Cannot interact with your active EA Web App session or club inventory",
-    "Community squad solutions suffer from severe market price-fixing and card extinction",
-    "Forces tedious manual alt-tabbing to look up prices and manually enter search filters",
-    "Lacks an automated neural AI SBC solver to build chemistry from club untradeables",
-    "Cannot generate coins in the background while you work, sleep, or play matches",
-    "Contains ad trackers and external third-party analytics scripts on page loads",
-    "Requires manual human reaction speeds (400ms+) that consistently lose 59th-minute snipes",
+    "The homepage we read does not describe sniping or an autobuyer",
+    "It is a reference site, not an automated trading tool"
   ],
+
   elitePros: [
     "Active in-browser automation suite executing autonomous snipes in sub-20ms intervals",
     "Integrated real-time Futbin price feeds and 5% EA transfer tax deductions overlaid directly on cards",
@@ -40,272 +31,186 @@ export const futGgData: CompetitorData = {
     "Humanization++ mode with Gaussian micro-jitter and authentic Bézier cursor physics (0 bans across all seasons)",
     "Docked Chrome Side Panel HUD leaving the official Web App viewport completely clean and responsive",
     "Parallel multi-filter engine scanning 15+ player targets simultaneously in one continuous loop",
-    "Single flat €19.90/year license covering both FC 26 and FC 27 with guaranteed day-one access",
+    "Single flat €19.90/year license covering both FC 26 and FC 27 with day-one support",
   ],
   idealFor: {
-    competitor: "Gamers looking for an external web database to plan evolution trees or research card traits.",
-    elite: "Competitive traders and grinders who want to turn market opportunities into millions of coins via autonomous 20ms sniping and instant AI SBC solving.",
+    "competitor": "Players who want player data, SBC guides and squad planning.",
+    "elite": "Traders who want automated sniping, bidding and relisting."
   },
 
   communityIssuesAudit: {
-    headline: "Critical Operational Gaps in Passive Informational Databases",
-    subheadline:
-      "A technical evaluation of why passive card databases cannot replace active in-browser automation and AI solving engines.",
-    issues: [
+    "headline": "Different Jobs: Reference Site vs Trading Extension",
+    "subheadline": "FUT.GG and Elite FUT SNIPER are built for different tasks and work well together.",
+    "issues": [
       {
-        title: "Passive Data Paralysis & Zero Automated Market Execution",
-        badge: "No Automation",
-        severity: "critical",
-        competitorFlaw:
-          "FUT.GG provides extensive charts, stat cards, and evolution trees, but provides zero automation. A player can spend hours researching an underpriced card or market fluctuation, but still must manually switch to the EA Web App and attempt to buy the card by hand. By the time a human types the filters and clicks search, automated bots running at 20ms have already sniped the supply.",
-        eliteSolution:
-          "Elite FUT SNIPER turns market intelligence into automated execution. It monitors the transfer market continuously in memory at sub-20ms speeds, snapping up undervalued cards and relisting them with automated 5% EA tax factoring the exact millisecond they hit the market.",
+        "title": "What it does",
+        "badge": "Different focus",
+        "severity": "warning",
+        "competitorFlaw": "FUT.GG lists players, SBCs, evolutions and prices for you to read and plan with.",
+        "eliteSolution": "Elite FUT SNIPER searches the transfer market and buys, bids and relists automatically."
       },
       {
-        title: "Community Squad Price-Gouging & Card Extinction",
-        badge: "Price-Fixing Trap",
-        severity: "high",
-        competitorFlaw:
-          "FUT.GG features public community SBC solutions. When a popular solution is shared, thousands of visitors rush to buy the exact same recommended cards (e.g. an 83-rated CB or CM). Market price-fixers exploit this visibility, buying up the card supply and tripling prices, forcing latecomers to pay exorbitant coin premiums.",
-        eliteSolution:
-          "Elite FUT SNIPER's neural AI engine generates private, unique chemistry combinations tailored specifically to the untradeable cards already sitting in your club. It bypasses public template cards, selecting mathematically cheaper alternative links that protect you from market price gouging.",
+        "title": "Automation",
+        "badge": "Automation",
+        "severity": "warning",
+        "competitorFlaw": "The FUT.GG homepage we read does not describe sniping or an autobuyer.",
+        "eliteSolution": "Elite FUT SNIPER automates buying and selling with a live profit display."
       },
       {
-        title: "Manual Screen Alt-Tabbing & Disconnected Workflow",
-        badge: "Information Lag",
-        severity: "high",
-        competitorFlaw:
-          "Using FUT.GG requires constantly switching back and forth between your browser Web App session and external website tabs. This fragmented workflow causes eye strain, misremembered prices, and frustrating menu navigation delays during high-intensity market hours.",
-        eliteSolution:
-          "Elite FUT SNIPER integrates directly into Google Chrome's native Side Panel API. It displays live market telemetry, coin accumulation rates, and active filters alongside the official Web App canvas with zero tab switching required.",
-      },
-    ],
+        "title": "Cost",
+        "badge": "Pricing",
+        "severity": "warning",
+        "competitorFlaw": "The FUT.GG homepage we read lists no pricing.",
+        "eliteSolution": "Elite FUT SNIPER costs €19.90 a year, with a free 2-day trial."
+      }
+    ]
   },
 
   advertisedFeaturesAudit: {
-    headline: "Direct Reality Audit: FUT.GG Capabilities vs Elite FUT SNIPER",
-    subheadline:
-      "A technical comparison contrasting passive database viewing against Elite FUT SNIPER's autonomous in-browser trading suite.",
-    features: [
+    "headline": "Feature Comparison: FUT.GG vs Elite FUT SNIPER",
+    "subheadline": "What each tool says it does, side by side.",
+    "features": [
       {
-        advertisedName: "Player Attribute & Trait Database",
-        competitorReality:
-          "Excellent for checking in-game stats, but completely passive with no transfer market buying capability.",
-        eliteAdvantage:
-          "Displays real-time market valuations and live tax margins directly inside the Web App, backed by an autonomous 20ms buyer.",
+        "advertisedName": "Player database",
+        "competitorReality": "Yes.",
+        "eliteAdvantage": "Live Futbin pricing in the Side Panel."
       },
       {
-        advertisedName: "Evolution Simulator & Planner",
-        competitorReality:
-          "Useful visual planner for evolutions, but users must manually buy each required base card on the market.",
-        eliteAdvantage:
-          "Sub-20ms sniping engine that instantly snipes extinct or price-capped evolution base cards before human buyers can react.",
+        "advertisedName": "SBC help",
+        "competitorReality": "SBC and objective listings.",
+        "eliteAdvantage": "See Elite's feature page for current SBC status."
       },
       {
-        advertisedName: "Community SBC Squad Blueprints",
-        competitorReality:
-          "Fixed public templates that suffer from severe price-fixing and market supply extinction.",
-        eliteAdvantage:
-          "Private neural AI SBC solver that optimizes untradeables from your club and auto-buys missing pieces in 1 click.",
+        "advertisedName": "Automated trading",
+        "competitorReality": "Not described on the homepage we read.",
+        "eliteAdvantage": "Sniping, auto bidder and batch relisting."
       },
       {
-        advertisedName: "Historical Price Graphs",
-        competitorReality:
-          "Displays delayed historical trend lines, but cannot act on live price spikes or execute automatic flips.",
-        eliteAdvantage:
-          "Real-time streaming FUTBIN and FUT.GG integration with dynamic undercut percentages, automatically relisting 100 cards in 3 seconds.",
+        "advertisedName": "Platforms",
+        "competitorReality": "Website plus Android and iOS apps.",
+        "eliteAdvantage": "Chrome on desktop."
       },
       {
-        advertisedName: "Autonomous Sniping Loop",
-        competitorReality:
-          "Completely nonexistent. FUT.GG does not contain an autobuyer or transfer market automation loop.",
-        eliteAdvantage:
-          "Autonomous 24/7 background sniping engine running hands-free with parallel multi-filter scanning at sub-20ms speeds.",
-      },
-      {
-        advertisedName: "Anti-Ban Protection Engine",
-        competitorReality:
-          "Irrelevant for FUT.GG since it cannot interact with the game, leaving users exposed when trading manually.",
-        eliteAdvantage:
-          "Humanization++ mode with Gaussian randomized delays, authentic mouse kinematics, and adaptive circuit breakers (0 bans).",
-      },
-      {
-        advertisedName: "In-Browser Web App Integration",
-        competitorReality:
-          "Runs as an external website with zero integration into the official EA Web App DOM or Chrome APIs.",
-        eliteAdvantage:
-          "Docked Chrome Side Panel HUD docking cleanly alongside the Web App with zero viewport clutter or tab switching.",
-      },
-      {
-        advertisedName: "1-Click SBC Auto-Buying",
-        competitorReality:
-          "Completely unsupported. Users must manually search, place, and submit cards card-by-card.",
-        eliteAdvantage:
-          "1-Click Auto-Buy purchases missing fodder cards at sub-20ms speed and slots them into your squad automatically.",
-      },
-      {
-        advertisedName: "Live EA 5% Transfer Tax Deduction",
-        competitorReality:
-          "Lacks automated trading tools and does not compute real-time profit breakevens for active listings.",
-        eliteAdvantage:
-          "Automatic 5% EA transfer tax calculation built into every search, ensuring 100% of sniped cards are profitable.",
-      },
-      {
-        advertisedName: "EA FC 27 Launch Day Readiness",
-        competitorReality:
-          "Updates database cards, but leaves players to manually execute trades during the frantic launch window.",
-        eliteAdvantage:
-          "Native forward-compatible extension architecture ready to snipe high-value early-access cards on day one of FC 27.",
-      },
-      {
-        advertisedName: "Privacy & Session Security",
-        competitorReality:
-          "Ad-supported website containing third-party tracking scripts, cookies, and fingerprinting tags.",
-        eliteAdvantage:
-          "100% sandboxed Manifest V3 Chrome extension with zero credential sharing, tracking, or telemetry.",
-      },
-      {
-        advertisedName: "Commercial Value & ROI",
-        competitorReality:
-          "Free informational database that generates zero automated coins or fodder savings for your club.",
-        eliteAdvantage:
-          "Flat €19.90/year single license delivering millions of coins in automated profit and hundreds of hours saved on SBCs.",
-      },
-    ],
-  },
-
-  uiComparison: {
-    headline: "UI Ergonomics: External Website Browsing vs Docked Chrome Side Panel HUD",
-    subheadline:
-      "Contrasting the friction of tab switching against an integrated in-browser HUD docking directly alongside the Web App.",
-    competitorUi: {
-      title: "FUT.GG External Website Tab",
-      badge: "External Web Database",
-      description:
-        "A separate external website displaying card stats, evolution trees, and price charts that you must browse manually.",
-      drawbacks: [
-        "Requires constant alt-tabbing between your active Web App session and the external database",
-        "Forces players to memorize card prices and manually re-enter search filters on the transfer market",
-        "No direct connection to the Web App DOM or transfer market search filters",
-        "Ad banners and third-party trackers slow down browser tab rendering during heavy sessions",
-      ],
-    },
-    eliteUi: {
-      title: "Elite FUT SNIPER Native Chrome Side Panel HUD",
-      badge: "Hardware-Accelerated Side Panel",
-      description:
-        "A dedicated Chrome Side Panel that docks cleanly alongside the official Web App, providing real-time telemetry and 1-click execution.",
-      benefits: [
-        "Docks seamlessly alongside the official Web App with zero need to switch tabs or windows",
-        "Live HUD displaying real-time profit tracking, coin telemetry, and active filters at a glance",
-        "Instant 1-click toggling between high-speed 20ms sniping and neural AI SBC solving",
-        "100% local in-browser execution with zero credential handover or external server relaying",
-      ],
-    },
+        "advertisedName": "Price",
+        "competitorReality": "No pricing on the homepage we read.",
+        "eliteAdvantage": "€19.90/year, free 2-day trial."
+      }
+    ]
   },
 
   pricingTeardown: {
-    headline: "Pricing & Commercial Value Teardown: Free Passive Data vs Autonomous Profit",
-    subheadline:
-      "Why relying solely on a free database leaves millions of coins on the table compared to Elite FUT SNIPER.",
-    competitorModel: {
-      title: "FUT.GG Free Web Database",
-      price: "Free (Ad-Supported)",
-      hiddenCosts: [
-        "Zero automated coin generation — requires you to spend hours manually searching and buying cards",
-        "Public SBC templates result in massive price-fixing spikes that drain your club coin balance",
-        "Information lag: By the time you read about a market drop, bot traders have already bought the cards",
-        "Requires purchasing a separate commercial autobuyer if you want hands-free trading",
-      ],
+    "headline": "Pricing: Reference Site vs Trading Extension",
+    "subheadline": "The two products do different jobs, so the price is not like for like.",
+    "competitorModel": {
+      "title": "FUT.GG",
+      "price": "No pricing on the homepage we read",
+      "hiddenCosts": [
+        "Not a trading tool",
+        "Check its site for any premium options"
+      ]
     },
-    eliteModel: {
-      title: "Elite FUT SNIPER Commercial Enterprise License",
-      price: "€19.90 / year (Flat Single Fee)",
-      inclusions: [
-        "Autonomous sub-20ms direct protocol transfer market sniping bot with dynamic auto-relisting",
-        "Integrated neural AI SBC solver with 1-click auto-buying and club untradeable optimization",
-        "Humanization++ anti-ban technology with a proven 0-ban track record across all seasons",
-        "Docked Chrome Side Panel HUD, official auto-updates, and 24/7 VIP Discord trading support",
-        "Guaranteed Day-One launch access for both EA Sports FC 26 & FC 27 at $0 extra cost",
-      ],
+    "eliteModel": {
+      "title": "Elite FUT SNIPER",
+      "price": "€19.90 / year",
+      "inclusions": [
+        "Automated sniping and auto-buying",
+        "Auto bidder",
+        "Automatic relisting with EA's 5% tax built in",
+        "Live profit display in a Chrome Side Panel",
+        "Free 2-day trial, no card needed",
+        "Covers EA FC 26 and FC 27"
+      ]
     },
-    summary:
-      "FUT.GG is great for research, but cannot make you coins. Elite FUT SNIPER transforms market opportunities into automated profit with 20ms sniping and 1-click neural AI SBC solving for just €19.90/year.",
+    "summary": "FUT.GG is a reference site. Elite FUT SNIPER is a trading tool. Many traders use both."
   },
 
   keyStatistics: [
-    { label: "Functionality Model", value: "Active Automation", source: "Bot Execution vs Passive Database Review" },
-    { label: "Execution Speed", value: "< 20ms Direct Protocol", source: "In-Browser WebSocket Benchmark" },
-    { label: "AI SBC Chemistry Solver", value: "Sub-500ms Neural Solver", source: "Club Inventory Chemistry Optimizer" },
-    { label: "Autonomous Coin Generation", value: "24/7 Hands-Free", source: "Live Background Trading Telemetry" },
+    {
+      "label": "FUT.GG type",
+      "value": "Database and SBC site",
+      "source": "fut.gg"
+    },
+    {
+      "label": "FUT.GG mobile apps",
+      "value": "Google Play and App Store",
+      "source": "fut.gg"
+    },
+    {
+      "label": "Elite price",
+      "value": "€19.90/year",
+      "source": "elitefutbot.com"
+    },
+    {
+      "label": "Elite free trial",
+      "value": "2 days",
+      "source": "elitefutbot.com"
+    }
   ],
 
   citations: [
-    { label: "Passive Database vs Active Sniping Bot Comparison", url: "https://www.elitefutbot.com/tools/comparison-guide" },
-    { label: "Transforming FUT Market Data into Automated Profit", url: "https://www.elitefutbot.com/tools/sniping-guide" },
-    { label: "EA Sports FC 27 Architecture Specification", url: "https://www.elitefutbot.com/fc27-fut-snipe-bot" },
+    {
+      "label": "FUT.GG",
+      "url": "https://www.fut.gg"
+    },
+    {
+      "label": "Elite FUT SNIPER comparison guide",
+      "url": "https://www.elitefutbot.com/tools/comparison-guide"
+    },
+    {
+      "label": "Automated Profit Generation in Ultimate Team",
+      "url": "https://www.elitefutbot.com/tools/sniping-guide"
+    },
+    {
+      "label": "EA Sports FC 27 Architecture Specification",
+      "url": "https://www.elitefutbot.com/fc27-fut-snipe-bot"
+    }
   ],
 
   comparisonRows: [
-    { feature: "Primary Functionality", elite: "Autonomous 20ms Sniping & AI SBC Solving", competitor: "Passive Database, Card Reviews & Price Tracking", winner: "elite" },
-    { feature: "Market Sniping Execution", elite: "1-Click Autonomous In-Browser Buying", competitor: "Not Supported (Information Portal Only)", winner: "elite" },
-    { feature: "AI SBC Chemistry Solver", elite: "Built-In Sub-500ms Neural Solver", competitor: "Static Community Squad Blueprints", winner: "elite" },
-    { feature: "Auto-Buy Missing Fodder", elite: "Instant Sub-20ms Market Auto-Purchase", competitor: "Not Supported (Player Buys Manually)", winner: "elite" },
-    { feature: "Workflow Integration", elite: "Docked Chrome Side Panel Inside Web App", competitor: "Separate External Website Tab", winner: "elite" },
-    { feature: "Reaction & Sniping Speed", elite: "Sub-20ms Direct WebSocket Triggers", competitor: "Manual Human Web App Actions (450ms+)", winner: "elite" },
-    { feature: "Concurrent Multi-Filter Sniping", elite: "Up to 15+ Target Filters Simultaneously", competitor: "Not Supported", winner: "elite" },
-    { feature: "Live Profit Analytics", elite: "Real-Time Net Profit & EA Tax Deduction", competitor: "Historical Price Graphs Only", winner: "elite" },
-    { feature: "Automated Batch Relisting", elite: "Dynamic Market Floor Repricing in 3s", competitor: "Not Supported", winner: "elite" },
-    { feature: "Anti-Ban Protection", elite: "Humanization++ Bézier Physics (0 Bans)", competitor: "Manual User Clicks Only", winner: "elite" },
-    { feature: "Privacy & Session Security", elite: "100% Sandboxed Manifest V3 Security", competitor: "Ad-Supported Website with Tracking Cookies", winner: "elite" },
-    { feature: "FC 27 Day-One Compatibility", elite: "Guaranteed Day-One Launch Included", competitor: "Static Database Card Updates Only", winner: "elite" },
-    { feature: "Autonomous Coin Generation", elite: "Generates Millions Hands-Free 24/7", competitor: "Zero Coin Generation (Informational Only)", winner: "elite" },
-    { feature: "Support & VIP Community", elite: "24/7 VIP Discord + Active Core Engineers", competitor: "Public Community Forums Only", winner: "elite" },
+    {
+      "feature": "Main purpose",
+      "elite": "Automated trading",
+      "competitor": "Database, SBCs and squad tools",
+      "winner": "tie"
+    },
+    {
+      "feature": "Automated sniping",
+      "elite": "Yes, sub-20ms",
+      "competitor": "Not described",
+      "winner": "elite"
+    },
+    {
+      "feature": "Player database",
+      "elite": "Futbin prices in the Side Panel",
+      "competitor": "Full database",
+      "winner": "competitor"
+    },
+    {
+      "feature": "Mobile apps",
+      "elite": "Not available yet",
+      "competitor": "Google Play and App Store",
+      "winner": "competitor"
+    }
   ],
 
   faqs: [
     {
-      question: "Can I use FUT.GG price data alongside Elite FUT SNIPER?",
-      answer:
-        "Yes! Many traders research meta player trends, evolution requirements, and price ceilings on FUT.GG and then configure those exact filter parameters into Elite FUT SNIPER's Chrome Side Panel HUD to autonomously snipe and relist cards for maximum profit.",
+      "question": "Is FUT.GG a sniping bot?",
+      "answer": "No. The homepage we read describes a player database, SBC listings and squad tools, not an autobuyer."
     },
     {
-      question: "How does Elite FUT SNIPER differ from FUT.GG's community SBC solutions?",
-      answer:
-        "FUT.GG displays static community squads where solution cards frequently get price-fixed or go extinct on the market. Elite FUT SNIPER uses an integrated neural AI solver to generate private, unique solutions tailored to the untradeable cards already in your club, buying missing pieces automatically in sub-500ms.",
+      "question": "Can I use FUT.GG with Elite FUT SNIPER?",
+      "answer": "Yes. They do different jobs, so many traders use a reference site alongside a trading extension."
     },
     {
-      question: "Does FUT.GG have an autobuyer or transfer market bot?",
-      answer:
-        "No. FUT.GG is purely an informational website and database. It cannot interact with your EA account or execute any actions on the Web App transfer market. Elite FUT SNIPER is the dedicated Google Chrome extension that executes autonomous sub-20ms snipes and auto-relists cards.",
+      "question": "Does Elite FUT SNIPER show profit statistics?",
+      "answer": "Yes. Elite FUT SNIPER's Side Panel HUD provides a live real-time breakdown of total cards sniped, gross profit, EA 5% tax deductions, net coins earned, and profit per hour."
     },
     {
-      question: "Why is an automated in-browser sniper better than manual searching after checking FUT.GG?",
-      answer:
-        "High-value 59th-minute player listings are sniped within 30 to 50 milliseconds. By the time a player sees a price on FUT.GG, switches tabs to the Web App, and clicks search, the card has already been bought by automated bots. Elite FUT SNIPER evaluates market listings directly in memory and executes purchases in under 20ms.",
-    },
-    {
-      question: "Does Elite FUT SNIPER require an active Web App session to trade?",
-      answer:
-        "Yes. Elite FUT SNIPER operates directly on your authentic EA FC Web App session inside Google Chrome, ensuring all actions run safely under your genuine residential IP address with zero password sharing.",
-    },
-    {
-      question: "What is the price of Elite FUT SNIPER compared to FUT.GG?",
-      answer:
-        "FUT.GG is a free, ad-supported database that provides no automated coin generation. Elite FUT SNIPER costs a flat single fee of €19.90 per year for unlimited sub-20ms autonomous sniping, neural AI SBC solving, and guaranteed day-one access for both EA Sports FC 26 & FC 27.",
-    },
+      "question": "Can I try Elite FUT SNIPER for free?",
+      "answer": "Yes. Every new account gets a free 2-day trial with all features and no card needed. After that, Pro costs €19.90 per year. Purchases are not refundable, so the trial is the time to test it."
+    }
   ],
 
-  reviewQuotes: [
-    {
-      text: "FUT.GG is great for checking card stats, but Elite FUT SNIPER actually makes the coins. Automated 20ms sniping changed how I build my team—made over 14M coins in 3 weeks.",
-      author: "Verified Division 1 FUT Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "Instead of staring at price graphs on FUT.GG all night, I let Elite FUT SNIPER snipe fodder in the background and solve my daily SBCs in 15 seconds. Incredible tool.",
-      author: "Verified Ultimate Team Competitor",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

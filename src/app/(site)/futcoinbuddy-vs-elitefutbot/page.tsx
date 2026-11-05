@@ -7,25 +7,21 @@ export const metadata: Metadata = {
     absolute: "Futcoinbuddy vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTCoinBuddy vs Elite FUT SNIPER review: compare macro click lag, soft bans, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
+    "Futcoinbuddy vs Elite FUT SNIPER: the Futcoinbuddy store listing was removed in September 2026. Compare with Elite's available €19.90/year extension.",
   keywords: [
     "futcoinbuddy",
+    "fut coin buddy",
     "futcoinbuddy review",
     "futcoinbuddy chrome extension",
-    "futcoinbuddy.com",
-    "futcoinbuddy ban",
-    "is futcoinbuddy safe",
     "futcoinbuddy vs elite fut sniper",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "ai sbc solver",
-    "futcoinbuddy download",
   ],
+  robots: { index: false, follow: true },
   alternates: { canonical: "https://www.elitefutbot.com/futcoinbuddy-vs-elitefutbot" },
   openGraph: {
     title: "Futcoinbuddy vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTCoinBuddy vs Elite FUT SNIPER review: compare macro click lag, soft bans, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
+      "Futcoinbuddy vs Elite FUT SNIPER: the Futcoinbuddy store listing was removed in September 2026. Compare with Elite's available €19.90/year extension.",
     url: "https://www.elitefutbot.com/futcoinbuddy-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -35,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Futcoinbuddy vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTCoinBuddy vs Elite FUT SNIPER review: compare macro click lag, soft bans, and Elite's autonomous sub-20ms Chrome Side Panel with neural AI solver.",
+      "Futcoinbuddy vs Elite FUT SNIPER: the Futcoinbuddy store listing was removed in September 2026. Compare with Elite's available €19.90/year extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -7,25 +7,21 @@ export const metadata: Metadata = {
     absolute: "Futtbot vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "Futtbot vs Elite FUT SNIPER review: compare CLI script setup friction, breaking Node updates, and Elite's sub-20ms Chrome Side Panel HUD with AI solver.",
+    "Futtbot vs Elite FUT SNIPER: compare plans (from €7.49 a month), SBC solver, the free trial and Elite's €19.90/year Chrome extension.",
   keywords: [
     "futtbot",
     "futtbot review",
-    "futtbot github",
+    "futtbot price",
+    "futtbot plans",
     "futtbot vs elite fut sniper",
-    "ea fc open source sniping bot",
-    "futtbot nodejs python",
     "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "is futtbot safe",
-    "futtbot ban risk",
-    "fifa cli trading bot",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futtbot-vs-elitefutbot" },
   openGraph: {
     title: "Futtbot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Futtbot vs Elite FUT SNIPER review: compare CLI script setup friction, breaking Node updates, and Elite's sub-20ms Chrome Side Panel HUD with AI solver.",
+      "Futtbot vs Elite FUT SNIPER: compare plans (from €7.49 a month), SBC solver, the free trial and Elite's €19.90/year Chrome extension.",
     url: "https://www.elitefutbot.com/futtbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -35,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Futtbot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Futtbot vs Elite FUT SNIPER review: compare CLI script setup friction, breaking Node updates, and Elite's sub-20ms Chrome Side Panel HUD with AI solver.",
+      "Futtbot vs Elite FUT SNIPER: compare plans (from €7.49 a month), SBC solver, the free trial and Elite's €19.90/year Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FC26 Sniping Bot vs Elite FUT SNIPER: 2026 Review",
   },
   description:
-    "FC26 Sniping Bot vs Elite FUT SNIPER review: audit single-season repurchases, 80ms lag, ban flags, and Elite's unified 20ms FC 27 bot with AI solver.",
+    "FC26 Sniping Bot PRO+ (powered by FUTReveal) vs Elite FUT SNIPER: a coming-soon FC 26 bot compared with Elite's available €19.90/year extension.",
   keywords: [
     "fc26 sniping bot",
+    "fc26 sniping bot pro+",
     "fc26snipingbot",
-    "fc26 sniping bot review",
-    "fc 26 sniping bot vs elite fut sniper",
-    "ea fc 26 autobuyer extension",
-    "ea sports fc 27 sniping bot",
-    "title locked sniping bot",
-    "fc26 sniping bot ban risk",
-    "best ea fc sniping bot 2026",
-    "ai sbc solver extension",
+    "fc26snipingbot.com",
+    "futreveal",
+    "fc26 sniping bot vs elite fut sniper",
+    "ea fc 27 autobuyer",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fc26snipingbot-vs-elitefutbot" },
   openGraph: {
     title: "FC26 Sniping Bot vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC26 Sniping Bot vs Elite FUT SNIPER review: audit single-season repurchases, 80ms lag, ban flags, and Elite's unified 20ms FC 27 bot with AI solver.",
+      "FC26 Sniping Bot PRO+ (powered by FUTReveal) vs Elite FUT SNIPER: a coming-soon FC 26 bot compared with Elite's available €19.90/year extension.",
     url: "https://www.elitefutbot.com/fc26snipingbot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FC26 Sniping Bot vs Elite FUT SNIPER: 2026 Review",
     description:
-      "FC26 Sniping Bot vs Elite FUT SNIPER review: audit single-season repurchases, 80ms lag, ban flags, and Elite's unified 20ms FC 27 bot with AI solver.",
+      "FC26 Sniping Bot PRO+ (powered by FUTReveal) vs Elite FUT SNIPER: a coming-soon FC 26 bot compared with Elite's available €19.90/year extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

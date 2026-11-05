@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FIFA Snipe Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FIFA Snipe Bot vs Elite FUT SNIPER review: audit legacy FIFA scripts, DOM polling delays, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+    "FIFA snipe bot guide: five checks before you buy, and how Elite FUT SNIPER compares. fifasnipebot.com now redirects to Baker's Bot.",
   keywords: [
     "fifa snipe bot",
     "fifasnipebot",
+    "fifasnipebot.com",
     "fifa snipe bot review",
-    "fifa sniping bot github",
-    "fifa snipe bot vs elite fut sniper",
-    "legacy fifa autobuyer",
-    "ea fc 26 sniping bot",
+    "fifa sniping bot",
+    "ea fc snipe bot",
     "ea fc 27 autobuyer",
-    "fifa bot ban risk",
-    "is fifa snipe bot safe",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/fifasnipebot-vs-elitefutbot" },
   openGraph: {
     title: "FIFA Snipe Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FIFA Snipe Bot vs Elite FUT SNIPER review: audit legacy FIFA scripts, DOM polling delays, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+      "FIFA snipe bot guide: five checks before you buy, and how Elite FUT SNIPER compares. fifasnipebot.com now redirects to Baker's Bot.",
     url: "https://www.elitefutbot.com/fifasnipebot-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FIFA Snipe Bot vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FIFA Snipe Bot vs Elite FUT SNIPER review: audit legacy FIFA scripts, DOM polling delays, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+      "FIFA snipe bot guide: five checks before you buy, and how Elite FUT SNIPER compares. fifasnipebot.com now redirects to Baker's Bot.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

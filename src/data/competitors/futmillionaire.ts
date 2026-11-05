@@ -296,16 +296,5 @@ export const futMillionaireData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I subscribed to FUTMillionaire for years back in FIFA 19, but paying $23 every single month for clunky desktop software got old. Elite FUT SNIPER in Chrome is 10x faster, cleaner, and the AI SBC solver is unbelievable.",
-      author: "Verified Ultimate Team Veteran",
-      platform: "Discord Community",
-    },
-    {
-      text: "The difference in resource usage and speed is huge. Running Elite FUT SNIPER silently in the side panel while working on my Mac makes trading effortless. Saved over $250 on subscriptions.",
-      author: "Verified Division 1 Trader",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

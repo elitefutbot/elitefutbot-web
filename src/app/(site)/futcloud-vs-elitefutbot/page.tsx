@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUTCloud vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTCloud vs Elite FUT SNIPER review: compare cloud server queues, shared IP ban risks, and Elite's 100% local sub-20ms Chrome extension with AI solver.",
+    "FUTCLOUD vs Elite FUT SNIPER: compare a free cloud bot with a 50/50 profit split to Elite's flat €19.90/year Chrome extension.",
   keywords: [
     "futcloud",
     "fut cloud",
     "futcloud review",
+    "futcloud.com",
+    "futcloud 50/50",
     "futcloud vs elite fut sniper",
-    "cloud fut autobuyer",
-    "ea fc 26 cloud bot",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
-    "futcloud alternative",
-    "zero ban fut sniper",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futcloud-vs-elitefutbot" },
   openGraph: {
     title: "FUTCloud vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTCloud vs Elite FUT SNIPER review: compare cloud server queues, shared IP ban risks, and Elite's 100% local sub-20ms Chrome extension with AI solver.",
+      "FUTCLOUD vs Elite FUT SNIPER: compare a free cloud bot with a 50/50 profit split to Elite's flat €19.90/year Chrome extension.",
     url: "https://www.elitefutbot.com/futcloud-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUTCloud vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTCloud vs Elite FUT SNIPER review: compare cloud server queues, shared IP ban risks, and Elite's 100% local sub-20ms Chrome extension with AI solver.",
+      "FUTCLOUD vs Elite FUT SNIPER: compare a free cloud bot with a 50/50 profit split to Elite's flat €19.90/year Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

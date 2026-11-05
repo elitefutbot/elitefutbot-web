@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "EAFC Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "EAFC Sniper vs Elite FUT SNIPER review: audit seasonal re-buy fees, overlay banners, script lag, and Elite's 20ms Chrome Side Panel with AI solver.",
+    "EAFC Sniper vs Elite FUT SNIPER: compare a $19 to $37.99 FC 26 tool with a 24-hour trial to Elite's €19.90/year FC 27 and FC 26 extension.",
   keywords: [
     "eafc sniper",
     "eafcsniper",
     "futsnipe",
-    "store futsnipe",
     "eafc sniper review",
+    "eafc sniper price",
     "eafc sniper vs elite fut sniper",
-    "eafc sniper alternative",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "best ea fc trading bot 2026",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/eafcsniper-vs-elitefutbot" },
   openGraph: {
     title: "EAFC Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EAFC Sniper vs Elite FUT SNIPER review: audit seasonal re-buy fees, overlay banners, script lag, and Elite's 20ms Chrome Side Panel with AI solver.",
+      "EAFC Sniper vs Elite FUT SNIPER: compare a $19 to $37.99 FC 26 tool with a 24-hour trial to Elite's €19.90/year FC 27 and FC 26 extension.",
     url: "https://www.elitefutbot.com/eafcsniper-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EAFC Sniper vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "EAFC Sniper vs Elite FUT SNIPER review: audit seasonal re-buy fees, overlay banners, script lag, and Elite's 20ms Chrome Side Panel with AI solver.",
+      "EAFC Sniper vs Elite FUT SNIPER: compare a $19 to $37.99 FC 26 tool with a 24-hour trial to Elite's €19.90/year FC 27 and FC 26 extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

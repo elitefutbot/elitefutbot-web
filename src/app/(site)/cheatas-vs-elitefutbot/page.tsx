@@ -7,24 +7,20 @@ export const metadata: Metadata = {
     absolute: "Cheat.as vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "Cheat.as vs Elite FUT SNIPER review: compare $29/mo launchers, EA Anti-Cheat ban risks, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+    "Cheat.as vs Elite FUT SNIPER: compare a $20/month cheat-software bundle with Elite's focused €19.90/year transfer market extension.",
   keywords: [
     "cheat.as",
-    "cheat as fut bot",
-    "cheat as sniping bot",
+    "cheatas",
     "cheat.as review",
-    "cheat as vs elite fut sniper",
-    "cheat.as alternative",
-    "ea fc 26 autobuyer",
-    "ea fc 27 sniping bot",
-    "best ea fc trading bot 2026",
-    "ai sbc solver chrome extension",
+    "cheat.as fc 27",
+    "cheat.as vs elite fut sniper",
+    "ea fc 27 bot",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/cheatas-vs-elitefutbot" },
   openGraph: {
     title: "Cheat.as vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Cheat.as vs Elite FUT SNIPER review: compare $29/mo launchers, EA Anti-Cheat ban risks, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+      "Cheat.as vs Elite FUT SNIPER: compare a $20/month cheat-software bundle with Elite's focused €19.90/year transfer market extension.",
     url: "https://www.elitefutbot.com/cheatas-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Cheat.as vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "Cheat.as vs Elite FUT SNIPER review: compare $29/mo launchers, EA Anti-Cheat ban risks, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+      "Cheat.as vs Elite FUT SNIPER: compare a $20/month cheat-software bundle with Elite's focused €19.90/year transfer market extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

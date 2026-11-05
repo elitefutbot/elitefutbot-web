@@ -295,16 +295,5 @@ export const easyFutWebData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I used Tampermonkey scripts for years, but they constantly crashed the tab during 6 PM promo drops. Switching to Elite FUT SNIPER in the Side Panel was a revelation—rock-solid stability, 20ms snipes, and 0 bans.",
-      author: "Verified Bundesliga Trader",
-      platform: "Discord Community",
-    },
-    {
-      text: "No more broken buttons after EA updates or sketchy script managers reading all my tabs. Elite FUT SNIPER installs in 1 click, snaps 59th-minute deals effortlessly, and the AI SBC solver saves me hours every weekend.",
-      author: "Verified Ultimate Team Competitor",
-      platform: "Trustpilot Review",
-    },
-  ],
+  reviewQuotes: [],
 };

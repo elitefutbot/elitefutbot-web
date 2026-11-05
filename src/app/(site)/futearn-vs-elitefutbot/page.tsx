@@ -7,27 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUTEarn vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTEarn vs Elite FUT SNIPER review: compare high subscription costs, manual trading filters, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+    "FUTEarn vs Elite FUT SNIPER: a free cloud service that keeps 50% of profit compared with Elite's flat €19.90/year Chrome extension.",
   keywords: [
     "futearn",
+    "fut earn",
     "futearn review",
     "futearn.com",
-    "futearn bot",
-    "futearn autobuyer",
-    "futearn ban",
-    "is futearn safe",
+    "futearn 50% profit",
     "futearn vs elite fut sniper",
-    "cloud fut autobuyer",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "ai sbc solver",
-    "fut sniping bot 0 ban",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futearn-vs-elitefutbot" },
   openGraph: {
     title: "FUTEarn vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTEarn vs Elite FUT SNIPER review: compare high subscription costs, manual trading filters, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+      "FUTEarn vs Elite FUT SNIPER: a free cloud service that keeps 50% of profit compared with Elite's flat €19.90/year Chrome extension.",
     url: "https://www.elitefutbot.com/futearn-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -37,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUTEarn vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTEarn vs Elite FUT SNIPER review: compare high subscription costs, manual trading filters, and Elite's sub-20ms Chrome extension with AI SBC solver.",
+      "FUTEarn vs Elite FUT SNIPER: a free cloud service that keeps 50% of profit compared with Elite's flat €19.90/year Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

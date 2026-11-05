@@ -7,24 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUTDroid vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTDroid vs Elite FUT SNIPER review: compare Android emulator setups, UI lag, and Elite's native sub-20ms Chrome Side Panel with neural AI SBC solver.",
+    "FUTDroid vs Elite FUT SNIPER: an EA FC 25 store listing last updated in 2024 compared with Elite's FC 27 and FC 26 extension at €19.90/year.",
   keywords: [
     "futdroid",
+    "fut droid",
     "futdroid review",
-    "futdroid chrome extension",
-    "futdroid apk",
-    "futdroid ban",
-    "is futdroid safe",
+    "futdroid sniping bot",
     "futdroid vs elite fut sniper",
-    "ea fc 26 sniping bot",
     "ea fc 27 autobuyer",
-    "futdroid download",
   ],
+  robots: { index: false, follow: true },
   alternates: { canonical: "https://www.elitefutbot.com/futdroid-vs-elitefutbot" },
   openGraph: {
     title: "FUTDroid vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTDroid vs Elite FUT SNIPER review: compare Android emulator setups, UI lag, and Elite's native sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUTDroid vs Elite FUT SNIPER: an EA FC 25 store listing last updated in 2024 compared with Elite's FC 27 and FC 26 extension at €19.90/year.",
     url: "https://www.elitefutbot.com/futdroid-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -34,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUTDroid vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTDroid vs Elite FUT SNIPER review: compare Android emulator setups, UI lag, and Elite's native sub-20ms Chrome Side Panel with neural AI SBC solver.",
+      "FUTDroid vs Elite FUT SNIPER: an EA FC 25 store listing last updated in 2024 compared with Elite's FC 27 and FC 26 extension at €19.90/year.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

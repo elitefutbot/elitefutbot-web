@@ -7,26 +7,21 @@ export const metadata: Metadata = {
     absolute: "FUTRich vs Elite FUT SNIPER: 2026 Review & Comparison",
   },
   description:
-    "FUTRich vs Elite FUT SNIPER review: compare €39.99 single-title lock, device limits, macro risks, and Elite's sub-20ms Side Panel HUD for FC 26 & FC 27.",
+    "FUTRich vs Elite FUT SNIPER: compare FUTRich's €14.99 to €79.99 plans and 5-day trial with Elite's €19.90/year Chrome extension.",
   keywords: [
     "futrich",
     "futrich review",
-    "futrich sniping bot",
-    "futrich vs elite fut sniper",
-    "futrich autobuyer",
-    "futrich ban",
-    "is futrich safe",
     "futrich pricing",
-    "ea fc 26 sniping bot",
+    "futrich free trial",
+    "futrich vs elite fut sniper",
+    "fut sniping bot",
     "ea fc 27 autobuyer",
-    "futrich sbc solver",
-    "futrich extension",
   ],
   alternates: { canonical: "https://www.elitefutbot.com/futrich-vs-elitefutbot" },
   openGraph: {
     title: "FUTRich vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTRich vs Elite FUT SNIPER review: compare €39.99 single-title lock, device limits, macro risks, and Elite's sub-20ms Side Panel HUD for FC 26 & FC 27.",
+      "FUTRich vs Elite FUT SNIPER: compare FUTRich's €14.99 to €79.99 plans and 5-day trial with Elite's €19.90/year Chrome extension.",
     url: "https://www.elitefutbot.com/futrich-vs-elitefutbot",
     siteName: "Elite FUT SNIPER",
     type: "article",
@@ -36,7 +31,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "FUTRich vs Elite FUT SNIPER: 2026 Review & Comparison",
     description:
-      "FUTRich vs Elite FUT SNIPER review: compare €39.99 single-title lock, device limits, macro risks, and Elite's sub-20ms Side Panel HUD for FC 26 & FC 27.",
+      "FUTRich vs Elite FUT SNIPER: compare FUTRich's €14.99 to €79.99 plans and 5-day trial with Elite's €19.90/year Chrome extension.",
     images: ["https://www.elitefutbot.com/og-image.png"],
   },
 };

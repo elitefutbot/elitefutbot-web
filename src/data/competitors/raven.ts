@@ -388,21 +388,5 @@ export const ravenData: CompetitorData = {
     },
   ],
 
-  reviewQuotes: [
-    {
-      text: "I used Raven from GitHub during FIFA 23, but when FC 25 and FC 26 came out, the script was completely broken with selector errors. Switched to Elite FUT SNIPER and was blown away by the sub-20ms speed, the clean Side Panel HUD, and the AI SBC solver.",
-      author: "Verified Division 1 Competitor",
-      platform: "Ultimate Team Trading Discord",
-    },
-    {
-      text: "From a security engineering standpoint, unmaintained userscripts running on the page's main thread are brittle and trigger soft bans easily. Elite FUT SNIPER's isolated Manifest V3 Side Panel HUD and WebSocket protocol hooks represent the modern gold standard for safe, high-speed trading.",
-      author: "Senior Security Architect",
-      platform: "Web Security & Automation Review",
-    },
-    {
-      text: "The difference in speed and reliability is night and day. Raven took 110ms and broke on every EA patch. Elite FUT SNIPER snipes in under 20ms and the integrated AI SBC solver has saved me dozens of hours of grinding.",
-      author: "Principal Frontend Engineer",
-      platform: "Competitive FUT Trader Guild",
-    },
-  ],
+  reviewQuotes: [],
 };
