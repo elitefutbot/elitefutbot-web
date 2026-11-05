@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 // gets a 403). Drive's direct-download URL for the shared file — switch back
 // to /api/download once the token is fixed.
 const EXTENSION_DOWNLOAD_URL =
-  "https://drive.google.com/uc?export=download&id=1exSkh5uomow7LgA64tkVGteOg7NzGk0G";
+  "https://drive.google.com/uc?export=download&id=1kW1V3Hprl-94hvdM4kFU8MdDaNLtIy2v";
 
 export function DownloadExtensionButton({
   className,
