@@ -32,7 +32,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl md:text-6xl font-headline font-extrabold tracking-tight text-white">
             Privacy <span className="text-primary italic">Policy</span>
           </h1>
-          <p className="text-sm text-gray-400 font-medium">Last updated: November 5, 2026</p>
+          <p className="text-sm text-gray-400 font-medium">Last updated: November 24, 2026</p>
         </div>
 
         <div className="prose prose-invert max-w-none space-y-8 text-gray-400 leading-relaxed text-sm md:text-base">
@@ -53,10 +53,34 @@ export default function PrivacyPage() {
               We collect information to provide a reliable user experience, manage trial eligibility, and facilitate digital SaaS transaction processing. This includes:
             </p>
             <ul className="list-disc pl-6 space-y-2">
-              <li><strong>Account Registration &amp; 2-Day Trial Data:</strong> When you register or activate our 2-day free trial (e.g., using Discord authorization or email), we collect your email address, username, profile identifier, and hardware/device fingerprints necessary to enforce trial duration, prevent duplicate trial abuse, and maintain license integrity.</li>
+              <li><strong>Account Registration &amp; 2-Day Trial Data:</strong> When you register or activate our 2-day free trial, we collect your email address, name (if provided), phone number (if provided), and a password, which we store only as a salted hash. To enforce trial duration, prevent duplicate trial abuse, and maintain license integrity, we also record the IP address and approximate country (derived from the IP) used at registration and at each login, and a random device identifier (see below).</li>
+              <li><strong>Extension Device Identifier:</strong> The Chrome extension generates a random identifier (a UUID) the first time it runs and stores it locally in your browser. It is not derived from your hardware and contains no personal information. It is sent to our servers with each request so we can enforce the number of devices allowed per license (one for trials, two for paid licenses).</li>
+              <li><strong>Extension Usage Data Sent to Our Servers:</strong> While you are signed in, the extension sends us: your bot status (idle, running, or stopped) and last-active time; the search filters currently active; the name, price, and trade ID of players the bot has bought, shown on your dashboard; and your running totals of purchases and estimated profit. This powers your dashboard, statistics, and notifications. If you enable push notifications, we also store a push notification token (Firebase Cloud Messaging).</li>
+              <li><strong>Data Stored Locally in Your Browser:</strong> Your bot settings, filters, preferences, and sign-in tokens are stored in your browser using chrome.storage and localStorage. Your EA account username, password, or session cookies are never read, collected, or transmitted by us.</li>
               <li><strong>Billing &amp; Transaction Details:</strong> When you purchase a software license or subscription, payments are processed by <strong>Stripe</strong>. You enter your card and billing details directly at Stripe Checkout. <strong>We do not store your credit card numbers or banking passwords on our servers.</strong> We receive from Stripe a transaction reference, your billing email, subscription status, renewal dates, and product tokens, which we use to verify your digital license entitlement. Because SaaS licenses are delivered immediately and purchases are final and non-refundable (see our Terms of Service), transaction records are securely logged for accounting, tax, and fraud prevention.</li>
-              <li><strong>Usage &amp; Performance Data:</strong> We automatically collect information about how you interact with our website and extension companion, including IP address, browser type, device information, and diagnostic telemetry, to help us optimize performance and safeguard platform security.</li>
+              <li><strong>Website Usage &amp; Performance Data:</strong> When you visit our website, we automatically collect information such as IP address, browser type, device information, pages viewed, and diagnostic telemetry, to help us optimize performance and safeguard platform security.</li>
             </ul>
+            <p>
+              <strong>What we do not collect:</strong> we do not collect your EA/EA FC login credentials, payment card numbers, browsing history outside the sites listed below, or the content of other web pages.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-headline font-bold text-white border-b border-white/10 pb-2">
+              Browser Extension: Permissions &amp; Page Access
+            </h2>
+            <p>
+              The Elite FUT SNIPER Chrome extension requests only the access it needs for its single purpose of helping you trade on the EA FC Ultimate Team Web App:
+            </p>
+            <ul className="list-disc pl-6 space-y-2">
+              <li><strong>ea.com Ultimate Team Web App:</strong> A content script runs on the Web App to read transfer-market listings and perform the search, buy, and list actions you configure. This data is processed locally in your browser and is not sent to us, except the purchase summary described above.</li>
+              <li><strong>futbin.com and fut.gg:</strong> The extension opens these sites in background tabs to read publicly displayed player prices, which are used locally to compute your buy and sell values. No personal data is sent to these sites by us.</li>
+              <li><strong>Our API (elitefutbot-backend-three.vercel.app):</strong> Used for sign-in, license checks, and the data described in Section 2.</li>
+              <li><strong>storage, tabs, scripting, sidePanel:</strong> Used to save your settings, find and open the tabs above, inject the price-reading script, and display the extension side panel. We do not use tab access to read your browsing history or any other site.</li>
+            </ul>
+            <p>
+              The extension does not use remote code. All executable code is bundled in the extension package.
+            </p>
           </section>
 
           <section className="space-y-4">
@@ -87,8 +111,22 @@ export default function PrivacyPage() {
               <li><strong>Payment Processors:</strong> We use Stripe to securely process payments and manage subscriptions (license keys purchased earlier were processed by Gumroad). These providers adhere to strict industry security standards and have their own privacy policies.</li>
               <li><strong>Analytics:</strong> We use analytics tools, including Google Tag Manager, Google Analytics, and Microsoft Clarity, to understand how the website is used and to improve it. Clarity may record how you interact with pages (such as clicks and scrolling).</li>
               <li><strong>Hosting &amp; Infrastructure:</strong> Our web services, APIs, and databases are hosted on secure modern cloud infrastructure (such as Vercel).</li>
+              <li><strong>Push Notifications:</strong> If you enable notifications, Google Firebase Cloud Messaging delivers them using your push token.</li>
               <li><strong>Legal Compliance &amp; Protection:</strong> We may disclose information if required to do so by law or in response to valid requests by public authorities, or to defend against fraudulent chargeback attempts.</li>
             </ul>
+            <p>
+              <strong>Limited Use disclosure:</strong> The use of information received through the Chrome extension adheres to the{" "}
+              <a href="https://developer.chrome.com/docs/webstore/program-policies/limited-use" className="text-primary underline hover:underline">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. We use this data only to provide and improve the extension&apos;s single purpose; we do not sell it, do not use or transfer it for advertising, creditworthiness, or lending purposes, and do not allow humans to read it except with your consent, for security or abuse investigation, to comply with law, or in aggregated and anonymized form.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-headline font-bold text-white border-b border-white/10 pb-2">
+              Data Storage &amp; Retention
+            </h2>
+            <p>
+              Account and usage data is stored in a MongoDB database hosted on cloud infrastructure and is transmitted over HTTPS. Passwords are hashed and never stored in plain text. We keep account data for as long as your account exists. Transaction records are retained as required for accounting, tax, and fraud-prevention obligations. When you ask us to delete your account, we delete your personal data from active systems, except records we are legally required to keep. Data stored locally in your browser is removed when you sign out, clear extension data, or uninstall the extension.
+            </p>
           </section>
 
           <section className="space-y-4">
@@ -123,6 +161,15 @@ export default function PrivacyPage() {
             </h2>
             <p>
               We implement industry-standard security measures (such as SSL encryption and tokenized authentication) to safeguard your personal data from unauthorized access, alteration, or disclosure. However, please note that no method of transmission over the Internet or electronic storage is 100% secure.
+            </p>
+          </section>
+
+          <section className="space-y-4">
+            <h2 className="text-2xl font-headline font-bold text-white border-b border-white/10 pb-2">
+              Children&apos;s Privacy &amp; Policy Changes
+            </h2>
+            <p>
+              Our services are not directed to children under 13 (or the minimum age in your country), and we do not knowingly collect their data. We may update this policy from time to time; changes are posted on this page with a new &quot;Last updated&quot; date.
             </p>
           </section>
 
